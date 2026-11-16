@@ -53,3 +53,22 @@ All **192 cue-off held-out paired traces per candidate** matched C12 exactly, in
 This is **external synthetic CyberSand-like research**, not live Workbench or native actor acceptance. No actual native painting/Undo, legal ABI replacement, production provider modification or paid GPU/API cost. Complete repository exact-HEAD tests, immutable GitHub Actions checkpoint custody and physical evaluation remain outstanding.
 
 **Disposition:** negative result retained, no model promoted. Next investigate opportunity-conditioned multi-turn style measurement and an explicit policy-level style constraint rather than protecting only non-BACKTRACK logits.
+
+## Independent replication cohort — additional negative evidence
+
+A completely separate second held-out cohort used seed **231000**, **2,304** additional host-executed stochastic episodes and a **56-decision** horizon. This was not used for optimization or checkpoint selection. In total, C20 underwent **4,608 held-out** and **864 pilot** episodes; across both held-out cohorts, synthetic host rejections and illegal raw top-choice selections remained **0**.
+
+Goal completions out of 48 per model and condition on the replication cohort:
+
+| Scenario | C12 | C18-A0 | C20-RETURN | C20-STYLE |
+|---|---:|---:|---:|---:|
+| Reverse / valid BACKTRACK | 29 | **41** | 40 | 40 |
+| Reverse / misleading CONTINUE | 41 | 48 | 48 | 48 |
+| Shortcut / BACKTRACK | 21 | 23 | 23 | 23 |
+| Shortcut / CONTINUE | 33 | 40 | 41 | 41 |
+| Bridge / BACKTRACK | 35 | **39** | 38 | 38 |
+| Bridge / CONTINUE | 45 | 47 | 47 | 47 |
+
+**Replication changes the apparent magnitude of the style defect.** For reverse/CONTINUE, both A0 and STYLE show the *same* +0.711 signed-turn gap, but only **14 total turns** were observed; the style gate therefore records insufficient turn events rather than a demonstrated degradation. Under reverse/BACKTRACK, STYLE regresses from **−0.100 to −0.147**, and completion from **41 to 40**. The additional bridge/BACKTRACK regression (**39 to 38**) reinforces the rejection. The independent metric guard reports STYLE failures in reverse/BACKTRACK, reverse/CONTINUE (insufficient events) and bridge/BACKTRACK. Active-guidance personality is not established and no evidence supports promoting either optimizer head.
+
+Source-matched expanded archive: `driv3r_guidance_recovery_C20_personality_replication_2026-11-16.zip`, SHA-256 `c6d4de2265240d32406576ba6506137560cb8fe7526c0e0ddd84aa6bda0f920c`, with **75 manifest-verified files** including both independent cohorts, 24-panel SVG trajectory gallery, full source and model weights outside Git. The isolated archived local test suite passed **144/144** tests, including four new C20 metric guards; this does not claim full exact-HEAD repository qualification. GitHub source-smoke workflow also reported success for the C20 source commit.
