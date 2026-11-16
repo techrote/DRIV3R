@@ -81,9 +81,14 @@ def example(seed, good, split):
     world = corridor(seed, good)
     path = route_to_dead_end(world)
     validate_path(world, path)
-    local = [''.join('.' if (HUB[0]+dx, HUB[1]+dy) in world['open']
-                     else 'P' if (HUB[0]+dx, HUB[1]+dy) in world['protected']
-                     else '#' for dx in range(-2, 3)) for dy in range(-2, 3)]
+    # Seeded material texture on otherwise non-traversable local surfaces.
+    # Both counterfactual halves see exactly the same 5x5 material grid.
+    def token(x,y):
+        if (x,y) in world['open']:return '.'
+        if (x,y) in world['protected']:return 'P'
+        return ('#','s','m')[int(digest([seed,x,y])[:8],16)%3]
+    local=[''.join(token(HUB[0]+dx,HUB[1]+dy) for dx in range(-2,3))
+           for dy in range(-2,3)]
     visits = Counter(path)
     adjacent = {'LEFT': (8, 11), 'RIGHT': (8, 13)}
     memory = [visits[adjacent[a]] for a in ACTIONS]
@@ -118,6 +123,7 @@ def check_partitions(rows):
         world_ids.add(r['world_sha256'])
         if r['teacher_action'] not in r['observation']['legal']:
             raise ValueError('illegal teacher')
+    unique_visible_pairs=set()
     for split in SEEDS:
         ss = [r for r in rows if r['split'] == split]
         if len(ss) != len(SEEDS[split])*2:
@@ -130,6 +136,10 @@ def check_partitions(rows):
                 raise ValueError('unpaired worlds')
             if pair[0]['observation'] != pair[1]['observation']:
                 raise ValueError(f'local alias broken {group}')
+            observable_key=digest(pair[0]['observation'])
+            if observable_key in unique_visible_pairs:
+                raise ValueError('duplicate model-visible world pair')
+            unique_visible_pairs.add(observable_key)
             if pair[0]['teacher_action'] == pair[1]['teacher_action']:
                 raise ValueError('pair labels do not conflict')
             if pair[0]['host_observed_memory'] == pair[1]['host_observed_memory']:
@@ -154,7 +164,8 @@ def features(rows, mode):
             hist=[float(v['RIGHT'])/2, float(v['LEFT'])/2]
         else:
             raise ValueError('unknown feature arm')
-        flat=[float(c=='.') for line in obs['local_5x5'] for c in line]
+        flat=[float(c==kind) for line in obs['local_5x5'] for c in line
+              for kind in ('.','P','#','s','m')]
         x.append(flat+[obs['goal_delta'][0]/32, obs['goal_delta'][1]/32]+hist)
     return np.array(x, dtype=np.float64)
 
