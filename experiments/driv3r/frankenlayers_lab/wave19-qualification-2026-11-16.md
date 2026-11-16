@@ -66,11 +66,11 @@ on PR or push and do not create additional experiment-specific workflows.
 
 * New source tests exercise parent five-argument call binding, fold-global
   restoration on exception, per-episode loop-state reset, raw/learned/host
-  action legality and multi-axis scoring.
-* Four isolated source tests executed locally with dependency stubs:
-  **4/4 passed**. This checks the new control logic, not integration with
+  action legality, exact runner ABI, clean checked-out SHA and multi-axis scoring.
+* Six isolated source tests executed locally with dependency stubs:
+  **6/6 passed**. This checks the new control logic, not integration with
   actual models or the imported dependency tree.
-* The repository's source-smoke [run 43978766546](https://github.com/techrote/DRIV3R/actions/runs/43978766546)
+* The repository's source-smoke [run 43979259782](https://github.com/techrote/DRIV3R/actions/runs/43979259782)
   passed on the request commit; it checks Python syntax and forbidden
   automatic workflows, **not** the four unit tests or real inference.
 * Neither the two held-out evaluation folds nor model/adapter training has
