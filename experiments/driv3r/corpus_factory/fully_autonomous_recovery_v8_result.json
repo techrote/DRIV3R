@@ -21,7 +21,8 @@
     "compared_hard_negative_actions": 6768,
     "train_jsonl_sha256": "6ae2de0fde163616ebf2887c2b92f350e96f848b858af16ed335e64df34286c3",
     "memory_weights_sha256": "9f08f64759d8ba5501a4d5b5005de9b0b4ebb89e972db2b533cdc377f1596257",
-    "sham_weights_sha256": "a6532ce86406b9a45e55fc962e329898497dd1df25837b413e50b79fd58e52c9"
+    "sham_weights_sha256": "a6532ce86406b9a45e55fc962e329898497dd1df25837b413e50b79fd58e52c9",
+    "short_prev_weights_sha256": "81e6f6e15fe043a14856df4f243d398d5ba919cdf69cb0c68f2a1863236e28b1"
   },
   "evaluation": {
     "DEV": {
@@ -61,6 +62,19 @@
         "mean_retraces": 175,
         "mean_painted": 2,
         "mean_steps": 176,
+        "illegal_moves": 0,
+        "protected_entries": 0
+      },
+      "short_prev_only": {
+        "episodes": 24,
+        "paired_groups": 12,
+        "solved": 24,
+        "both_solved_pairs": 12,
+        "mean_unique": 59.917,
+        "mean_two_step_returns": 0.5,
+        "mean_retraces": 10.917,
+        "mean_painted": 58.917,
+        "mean_steps": 69.833,
         "illegal_moves": 0,
         "protected_entries": 0
       }
@@ -104,6 +118,19 @@
         "mean_steps": 176,
         "illegal_moves": 0,
         "protected_entries": 0
+      },
+      "short_prev_only": {
+        "episodes": 64,
+        "paired_groups": 32,
+        "solved": 64,
+        "both_solved_pairs": 32,
+        "mean_unique": 60.25,
+        "mean_two_step_returns": 0.5,
+        "mean_retraces": 11.25,
+        "mean_painted": 59.25,
+        "mean_steps": 70.5,
+        "illegal_moves": 0,
+        "protected_entries": 0
       }
     },
     "HELDOUT_unseen": {
@@ -145,6 +172,19 @@
         "mean_steps": 176,
         "illegal_moves": 0,
         "protected_entries": 0
+      },
+      "short_prev_only": {
+        "episodes": 64,
+        "paired_groups": 32,
+        "solved": 64,
+        "both_solved_pairs": 32,
+        "mean_unique": 64.25,
+        "mean_two_step_returns": 0.5,
+        "mean_retraces": 11.25,
+        "mean_painted": 63.25,
+        "mean_steps": 74.5,
+        "illegal_moves": 0,
+        "protected_entries": 0
       }
     }
   },
@@ -161,6 +201,7 @@
     "Counterfactual good-arm pairs are correlated and share nearby observations",
     "HELDOUT_unseen is a changed synthetic grammar, not an external engine",
     "The sham policy is denied all route-history features but shares input dimension",
+    "Immediate prior-cell feature alone equals full route history in this tree-corridor grammar; long-memory necessity unproven",
     "No official game DEV evaluation or production model checkpoint"
   ]
 }

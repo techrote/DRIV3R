@@ -27,8 +27,25 @@ Run `node fully_autonomous_recovery_v8.js /NEW/output/directory`. This writes a 
 - TRAIN JSONL SHA-256: `6ae2de0fde163616ebf2887c2b92f350e96f848b858af16ed335e64df34286c3`
 - Memory-weight JSON SHA-256: `9f08f64759d8ba5501a4d5b5005de9b0b4ebb89e972db2b533cdc377f1596257`
 - Sham-weight JSON SHA-256: `a6532ce86406b9a45e55fc962e329898497dd1df25837b413e50b79fd58e52c9`
-- Report SHA-256: `055bf7a9b990a91cb0f027c401f8074bd9a7615cc64889eb85c6c1ba57294378`
+- Report SHA-256: `c7b8d030d0a4ab94722350963b356984da3aa6c40583377920c0aac3c8711ec4`
 
 **Scientific limits:** This is a constructed tree-corridor environment; the supervisor is a frontier-first synthetic heuristic. It is not a full CyberSand action menu, material simulation, runtime receipt, native model checkpoint, or autonomous paint-choice demonstration. Shared scenario grammar creates substantial correlation. The switchback holdout is distinct at the corridor-construction level, not proof of unrestricted topology transfer. Do not promote this model or imply native/production acceptance.
 
 There are no Actions artifacts in this run: only the source and small source-matched report/gallery are checked into Git, while full generated TRAIN corpora remain reproducible locally rather than in immutable hosted storage. No game-side changes, paid compute or merge.
+
+## Crucial causal qualification: one-step memory alone is sufficient
+
+A fourth dimension-matched 24-epoch logistic learner receives only the *immediate previous-cell* history signal, with all longer visitation and recency signals masked during training and inference. It uses identical TRAIN scenario decisions, hard negatives and optimizer settings. Results:
+
+| World-disjoint split | Full route history | Previous-cell only | No memory |
+| --- | ---: | ---: | ---: |
+| DEV (24 episodes) | 24/24 | 24/24 | 0/24 |
+| HELDOUT straight (64 episodes) | 64/64 | 64/64 | 0/64 |
+| HELDOUT unseen switchback (64 episodes) | 64/64 | 64/64 | 0/64 |
+
+**Correction to interpretation:** The success gap against zero-memory sham does NOT demonstrate that long-horizon memory is useful. Immediate anti-reversal alone gets the same complete-episode success and path statistics as full memory. The sham gets stuck near the entrance in short two-step oscillations, so that baseline is not a controlled test of the later ambiguous fork. The earlier scripted-prelude v7 test is a separate, narrower finding. Neither experiment establishes fully autonomous long-memory-dependent recovery.
+
+Future study must construct genuinely loopy, model-generated histories in which the last step cannot reveal the explored bad arm. Compare full history against short-memory controls while holding the action policy, training volume and external generator constant. Do not promote the v8 result as evidence of long-memory necessity.
+
+- Short-memory weight JSON SHA-256: `81e6f6e15fe043a14856df4f243d398d5ba919cdf69cb0c68f2a1863236e28b1`.
+- Updated report SHA-256: `c7b8d030d0a4ab94722350963b356984da3aa6c40583377920c0aac3c8711ec4`.

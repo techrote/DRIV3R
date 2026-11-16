@@ -63,7 +63,7 @@ function feature(w,st,c,mask){
  const a=[...DIR.map(x=>+(x[0]===c.d)),(dist(st.p)-dist(c.p))/8,(c.p[0]-st.p[0])/8,
    (c.p[1]-st.p[1])/8,legal(w,c.p).length/4,+(!vis),Math.min(vis,6)/6,
    +(prev===c.k),+(age<=6),Math.min(age,30)/30,+(st.p[0]===4&&st.p[1]===13)];
- if(mask)for(let j=8;j<=12;j++)a[j]=0;
+ if(mask===2){for(const j of [8,9,11,12])a[j]=0;}else if(mask)for(let j=8;j<=12;j++)a[j]=0;
  if(a.length!==ND)throw Error("feature dimension mismatch");return a;
 }
 function teacher(w,st,choices){
@@ -112,7 +112,7 @@ function fit(rows,mask){
  const comparisons=[];
  for(const r of rows)for(const z of r.decisions){const idx=z.legal_actions.indexOf(z.teacher_action);
    for(let i=0;i<z.legal_actions.length;i++)if(i!==idx){const a=z.candidate_features[idx].slice(),b=z.candidate_features[i].slice();
-     if(mask)for(let j=8;j<=12;j++){a[j]=0;b[j]=0;}
+     if(mask===2){for(const j of [8,9,11,12]){a[j]=0;b[j]=0;}}else if(mask)for(let j=8;j<=12;j++){a[j]=0;b[j]=0;}
      comparisons.push(a.map((v,j)=>v-b[j]));}}
  const w=Array(ND).fill(0);
  for(let epoch=0;epoch<EPOCHS;epoch++){
@@ -177,9 +177,9 @@ function main(){
  }
  const corpus=trainCorpus(sets.TRAIN);
  const trainJSONL=corpus.map(x=>JSON.stringify(x)).join("\n")+"\n";
- const actual=fit(corpus,false),sham=fit(corpus,true);
+ const actual=fit(corpus,false),sham=fit(corpus,true),short=fit(corpus,2);
  const models={memory:{weights:actual.weights,mask:false},sham:{weights:sham.weights,mask:true},
-   memory_masked:{weights:actual.weights,mask:true}};
+   memory_masked:{weights:actual.weights,mask:true},short_prev_only:{weights:short.weights,mask:2}};
  const scores={DEV:score(sets.DEV,models),HELDOUT_same:score(sets.HELDOUT_same,models),
    HELDOUT_unseen:score(sets.HELDOUT_unseen,models)};
  for(const group of Object.values(scores))for(const result of Object.values(group)){
@@ -192,7 +192,7 @@ function main(){
    training:{algorithm:"deterministic pairwise logistic SGD",epochs:EPOCHS,feature_dimension:ND,
      train_worlds:corpus.length,train_decisions:corpus.reduce((n,x)=>n+x.decisions.length,0),
      compared_hard_negative_actions:actual.comparisons,train_jsonl_sha256:sha256(trainJSONL),
-     memory_weights_sha256:actual.sha256,sham_weights_sha256:sham.sha256},
+     memory_weights_sha256:actual.sha256,sham_weights_sha256:sham.sha256,short_prev_weights_sha256:short.sha256},
    evaluation:scores,budget:BUDGET,
    safety:{all_moves_host_legal:true,paint_on_unprotected_passable_cells_only:true,native_receipt:false,game_modifications:0},
    limitations:["Synthetic generator/host, not CyberSand native evidence",
@@ -200,6 +200,7 @@ function main(){
      "Counterfactual good-arm pairs are correlated and share nearby observations",
      "HELDOUT_unseen is a changed synthetic grammar, not an external engine",
      "The sham policy is denied all route-history features but shares input dimension",
+     "Immediate prior-cell feature alone equals full route history in this tree-corridor grammar; long-memory necessity unproven",
      "No official game DEV evaluation or production model checkpoint"]};
  return {report,trainJSONL,svg:gallery(sets.HELDOUT_unseen,models)};
 }
