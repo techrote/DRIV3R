@@ -1,0 +1,93 @@
+{
+  "schema": "DRIV3R-P16-evidence-ledger/v1",
+  "date": "2026-11-16",
+  "qualification": "LOCAL_EXECUTED_INDEPENDENT_REPLAY_NO_HOSTED_ACTIONS",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "frozen_model": "W16_142_input_auxiliary_PyTorch_head_not_root_LM",
+  "source_sha256": "9a9f61038bb1a4f68395816a8296fb8957a8a8f166610921c2a9db6502308d9c",
+  "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
+  "ranker_sha256": "fece7f68288df0c1fc5777b10c8c68694206842f48d49fae0533e84bb1db91f9",
+  "primary_source_git_blob": "b2da4fc9da4ed92dc12ec6cf457a13b0242612c2",
+  "primary_test_git_blob": "076de445319681ec5aacb1c230bb16d65d36c6ee",
+  "seeds": [
+    2903,
+    2917,
+    2927,
+    2939,
+    2953,
+    2969,
+    2971,
+    2987,
+    2999,
+    3011,
+    3023,
+    3037
+  ],
+  "mask_topologies": [
+    "alternating_teeth",
+    "two_gate_cage",
+    "island_chain"
+  ],
+  "model_trajectories": 432,
+  "model_forwards": 54064,
+  "distinct_trajectory_sha256": 243,
+  "model_actions_host_legal": true,
+  "original_P11_control_PNGs_reproduced": 6,
+  "original_archived_PNG_matches_on_new_seeds": 0,
+  "identical_independent_trace_png_pairs": 432,
+  "test_count": 9,
+  "tests_passed": 9,
+  "policies": {
+    "original_late": {
+      "contacts": 694,
+      "goals": 105,
+      "mean_novel": 106.16666666666667,
+      "mean_branches": 18.97222222222222
+    },
+    "position_veto": {
+      "contacts": 0,
+      "goals": 105,
+      "mean_novel": 99.72222222222223,
+      "mean_branches": 17.62962962962963
+    },
+    "exit_aware_veto": {
+      "contacts": 0,
+      "goals": 103,
+      "mean_novel": 100.52777777777777,
+      "mean_branches": 17.574074074074073
+    },
+    "two_ring_veto": {
+      "contacts": 0,
+      "goals": 105,
+      "mean_novel": 102.69444444444444,
+      "mean_branches": 18.12037037037037
+    }
+  },
+  "paired_comparisons": 108,
+  "independent_seed_blocks": 12,
+  "baseline_vs_two_ring_novel_gain": 2.9722222222222223,
+  "bootstrap95_two_ring_novel": [
+    0.6111111111111112,
+    5.694444444444445
+  ],
+  "frozen_proxy_ranker": {
+    "agreement": 464,
+    "comparisons": 520,
+    "transparent_baseline_agreement": 510,
+    "labels": "deterministic_proxy_only"
+  },
+  "human_ratings": 0,
+  "owner_ratings": 0,
+  "optimizer_updates": 0,
+  "local_archive_sha256": "88695f08f7dadf7d507cfb920775f3e61855cf9461f52a6ab47d248131f1a873",
+  "primary_results_sha256": "a529e73b5d4191b07f56fdb441b7c7e0c3250ba023de056cce4c776c080b7bff",
+  "matched_pairs_sha256": "b98b9b0f13fb0442321b50233f3eff0219e6f253ea3bef08b9c7323e0f2d7abd",
+  "caveats": [
+    "Synthetic W0: no actual protected-material writes",
+    "Only 12 new independent seeds",
+    "No native gameplay evaluation",
+    "No human preferences or root Sprocket language model inference"
+  ]
+}
