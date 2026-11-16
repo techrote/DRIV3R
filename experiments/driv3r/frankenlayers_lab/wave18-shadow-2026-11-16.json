@@ -1,0 +1,74 @@
+{
+  "basis": "original Wave-17 guarded observations and real-model sidecar proposals",
+  "counterfactual_trajectory_measured": false,
+  "limitations": "Shadow replay stops at first changed action; later positions, legality, novelty, survival and geometry response are unknown until a full inference rerun.",
+  "new_model_inference": false,
+  "original_archive_sha256": "dcaf7539d39c7b1a28b4f1be00ad427e71cffe8a6378500b928d123c914db0d9",
+  "results": {
+    "east_open": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 36,
+      "wall_shield_candidates_in_prefix": 0,
+      "first_shadow_divergence": null
+    },
+    "east_blocked": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 16,
+      "wall_shield_candidates_in_prefix": 3,
+      "first_shadow_divergence": {
+        "tick": 15,
+        "pose": [
+          8,
+          48,
+          1
+        ],
+        "historical": "RIGHT",
+        "shadow": "BRANCH",
+        "raw": "RIGHT",
+        "learned": "BRANCH",
+        "repeats": 2,
+        "oscillating": true
+      }
+    },
+    "north_blocked": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 36,
+      "wall_shield_candidates_in_prefix": 5,
+      "first_shadow_divergence": null
+    },
+    "south_blocked": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 9,
+      "wall_shield_candidates_in_prefix": 4,
+      "first_shadow_divergence": {
+        "tick": 8,
+        "pose": [
+          7,
+          48,
+          0
+        ],
+        "historical": "RIGHT",
+        "shadow": "BRANCH",
+        "raw": "RIGHT",
+        "learned": "BRANCH",
+        "repeats": 3,
+        "oscillating": true
+      }
+    },
+    "far_open": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 36,
+      "wall_shield_candidates_in_prefix": 0,
+      "first_shadow_divergence": null
+    },
+    "far_blocked": {
+      "historical_decisions": 36,
+      "validated_on_policy_prefix": 36,
+      "wall_shield_candidates_in_prefix": 0,
+      "first_shadow_divergence": null
+    }
+  },
+  "schema": "frankenlayers-wave18-original-trace-shadow/1",
+  "source_run": 43947574492,
+  "verified_payloads": 193
+}
