@@ -37,3 +37,15 @@ python -m experiments.driv3r.training.long_horizon.side_exit_cost_lab --verify /
 Use fresh output directories for seeds 601 and 602. Exact hashes for `side_exit_cost_lab.py` and its imported dependencies are recorded in each `report.json`; each `SHA256SUMS.json` hashes every checkpoint and trajectory. Store checkpoint and original trajectory evidence outside Git history in an immutable, opt-in GitHub Actions artifact when available; the initial evidence was produced locally and is not claimed to have been uploaded to Actions. **No new GitHub Actions workflow has been added** and routine PR/push CI must not train this lab automatically.
 
 **Next discriminating experiment:** impose variable graph branching and limited recovery budgets over unfamiliar structures; evaluate an autonomous neural continuation rather than keeping the teacher in control after one fork. Explicitly include class-balanced linear controls, a hard-coded threshold oracle and an always-relocate comparator. Prioritize independent spatial goals and long-horizon survival, rather than high supervised fork agreement alone.
+
+## Checkpoint and original evidence custody
+
+SHA-256 checkpoint identities (local immutable files, **not yet uploaded as GitHub Actions artifacts**):
+
+| Seed | Budget-only | Linear geometry | Nonlinear geometry |
+| --- | --- | --- | --- |
+| 600 | `00bf4efe6b42f7ded4a7f6b29093da0d765ce66abaf2913bddda069c9b702bb7` | `4b15d1c85796030a5bbd40d3cef76546d0b7ba3619ea79e43946c0469fcf47af` | `d14c18828d158e5e9c876db2309504766e13d70d0cd67578b295be3ddfd41719` |
+| 601 | `b39bd8ac804454322fe9fb41efa05c60eaff3879d49593cc64e5f3b59f99af0f` | `13b1daa1410700f9ff8b83599d128dff3d52fe3e836d1dd8f784e4bd32a84b27` | `a50c6b35cb00dc1546179eb0d3c3b14cd183bd4dcb61ce15d1e33b65ab675d1d` |
+| 602 | `55827e128dbe9200438cf16112ec825af57fb4ebb8ce14c2f1fcd68c5554755b` | `858769eca7b3984553f7b0f6c1b4e991a2531334f51bb947571d4778d5db7fc7` | `2f041ae1ac8fc8995bbc5b289648eadd010f5bcfd451df67c15919e5e0bd7769` |
+
+Original local evidence archive SHA-256: `49ad8e4dd86f77b83c6f917562034f584fbe994011673b027e46364c2477e192`. Source ZIP SHA-256: `84a6bbde5c5d95ffbac22c6d66274b6ef80bad70957745c4291f1f5d7956e290`. Source `side_exit_cost_lab.py` SHA-256: `592e589b5ffcb13b546084911339498573765fd9efb8a62dff9af8df26d6a57c`. Original local result manifests verify 79 files per seed, including JSON traces, model weights and trajectory PNGs. These local ZIP files are a handoff; **there is no claim they are retained permanently by GitHub Actions or by this PR**.
