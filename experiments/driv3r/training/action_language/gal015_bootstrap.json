@@ -1,0 +1,18 @@
+{
+  "schema": "gal-015-cluster-bootstrap/1",
+  "seed_clusters": 12,
+  "resamples": 5000,
+  "seed": 551015,
+  "completion_gain_vs_greedy_95pct": [
+    0.2361,
+    0.3611
+  ],
+  "model_calls_difference_vs_greedy_95pct": [
+    -24.8125,
+    -20.9167
+  ],
+  "decision_difference_trained_vs_untrained_95pct": [
+    -0.5069,
+    0.0694
+  ]
+}
