@@ -15,7 +15,7 @@ jobs:
         run: python3 -m compileall -q experiments/driv3r experiments/agent_painter scripts
       - name: Verify no automatic experiment workflows
         run: |
-          if grep -R -n -E '(^[[:space:]]*schedule:|cron:)' .github/workflows; then
+          if grep -R -n -E '^[[:space:]]{2,}schedule:|^[[:space:]]{2,}-[[:space:]]cron:' .github/workflows; then
             echo 'DRIV3R research workflows must not schedule GPU/model training automatically.'
             exit 1
           fi
