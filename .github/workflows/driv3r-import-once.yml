@@ -1,0 +1,28 @@
+name: One-shot verified DRIV3R repository import
+on:
+  push:
+    branches:
+      - research/import-consolidated-worm-labs
+permissions:
+  contents: write
+concurrency:
+  group: driv3r-foundation-one-shot
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import exact pinned Neurounner research snapshot
+        run: python3 scripts/import_from_neurounner.py
+      - name: Check Python syntax without executing trained models
+        run: python3 -m compileall -q experiments/driv3r experiments/agent_painter
+      - name: Commit the snapshot and retire this bootstrap workflow
+        run: |
+          git config user.name 'driv3r-import[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- experiments/driv3r experiments/agent_painter docs/driv3r-migration docs/provenance
+          git rm -f .github/workflows/driv3r-import-once.yml
+          git commit -m 'research: source-verified DRIV3R standalone import'
+          git push origin HEAD:refs/heads/research/import-consolidated-worm-labs
