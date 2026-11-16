@@ -4,7 +4,7 @@
 
 ## Scientific question
 
-Can a bounded, trainable residual on personality-preferred **legal INK** actions restore the painting character that host-attested recovery (\`C18-A0\`) suppresses, without degrading valid recovery or trusting misleading cues? Previous C20/C21 experiments used cramped corridors and rarely observed two-sided turn opportunities. Here an external synthetic host uses one-ring open side pockets during training and two-ring, independently slitted and transformed hook/zigzag topologies for held-out evaluation. This does **not** establish CyberSand physical integration or native ABI compatibility.
+Can a bounded, trainable residual on personality-preferred **legal INK** actions restore the painting character that host-attested recovery (`C18-A0`) suppresses, without degrading valid recovery or trusting misleading cues? Previous C20/C21 experiments used cramped corridors and rarely observed two-sided turn opportunities. Here an external synthetic host uses one-ring open side pockets during training and two-ring, independently slitted and transformed hook/zigzag topologies for held-out evaluation. This does **not** establish CyberSand physical integration or native ABI compatibility.
 
 ## Method and fixed boundaries
 
@@ -33,10 +33,10 @@ All **144 no-guidance matched trajectories per new head** preserve exact action-
 
 ## Hash and reproducibility record
 
-- Source SHA-256: \`8bb680b89e584bfabe9617a0dd2f07dd4cfe0729fb58b0ab4e96a6af7539309d\`
-- Training observation tensor SHA-256: \`86a4e1734185f5135362bcc1af819e8397d8bdb6d4b76a9fcbdedd4cf49c5137\`
-- C22-BOUNDED checkpoint SHA-256: \`f16e486f15c84caf8264918aea8bbe5f2dd9fd657aa4ea523ad51c608ece4005\`
-- C22-STRONG checkpoint SHA-256: \`5e2afbd699104452043ade457ac59dc270e95a84c7299cc5f4e96d0b1a24c649\`
+- Source SHA-256: `8bb680b89e584bfabe9617a0dd2f07dd4cfe0729fb58b0ab4e96a6af7539309d`
+- Training observation tensor SHA-256: `86a4e1734185f5135362bcc1af819e8397d8bdb6d4b76a9fcbdedd4cf49c5137`
+- C22-BOUNDED checkpoint SHA-256: `f16e486f15c84caf8264918aea8bbe5f2dd9fd657aa4ea523ad51c608ece4005`
+- C22-STRONG checkpoint SHA-256: `5e2afbd699104452043ade457ac59dc270e95a84c7299cc5f4e96d0b1a24c649`
 - Two complete independent CPU optimizer executions reproduced **byte-identical safetensors** for both variants. The 2,880-episode withheld evaluation was performed once, not twice. An interrupted secondary evaluation must not be counted as replication.
 - The full checkpoint and source-matched trajectories are packaged as a **local research archive** for custody; no Git model binaries and no claim of immutable GitHub Actions artifact custody.
 - A self-contained 4-case source regression suite passes; this does not substitute for full exact-head CI or independent CyberSand runtime acceptance.
@@ -47,4 +47,4 @@ This is a controlled synthetic simulator whose policy observes historical candid
 
 **Retain C12 as the preferred trained policy and C18-A0 as the stronger untrained reference. Do not promote either C22 adapter.** C22 shows that meaningful opportunity-rich matched trials are feasible. Next candidate should use joint *return-constrained, opportunity-conditioned* optimization with held-out host-executed validation and non-regression gates for misleading feedback.
 
-Repository governance: only \`techrote/DRIV3R\` Draft/HOLD PR #1, only \`experiments/driv3r/training/guidance_recovery/**\`. CyberSand and Neurounner are read-only.
+Repository governance: only `techrote/DRIV3R` Draft/HOLD PR #1, only `experiments/driv3r/training/guidance_recovery/**`. CyberSand and Neurounner are read-only.
