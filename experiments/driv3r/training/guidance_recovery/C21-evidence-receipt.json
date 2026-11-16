@@ -1,0 +1,77 @@
+{
+  "schema": "driv3r-guidance-c21-evidence/1",
+  "date": "2026-11-16",
+  "disposition": "REJECT_C21_RETURN_AND_OPPORTUNITY",
+  "research_only": true,
+  "training": {
+    "seed": 220201,
+    "optimizer_seed": 210221,
+    "menus": 324,
+    "counterfactual_host_executed_suffixes": 1296,
+    "legal_personality_preferred_ink_menus": 156,
+    "optimizer_updates_per_variant": 144,
+    "optimizer_update_total": 288,
+    "repeated_optimizers_byte_identical": true,
+    "source_sha256": "4285da3a4123bd43e5d03c6e35d8bcc83a2c96a0f4e293f92d90967df7495e5e",
+    "training_input_sha256": "2fc55ae9d76c0fea1fdc5b77e15261ea00afa3fee1d9708d0aea94610045226c",
+    "source_groups": {
+      "forced_back_wins": 123,
+      "forced_forward_wins": 53,
+      "ties": 148
+    }
+  },
+  "checkpoints": {
+    "C21-RETURN": "22a8bf1b6efe3719ecb696a4d1d51867d7af65fd7b7bdd9dd427d834b56b0472",
+    "C21-OPPORTUNITY": "6d2c8e5c7e96c83a3f18f9da6b8f3d648a6420f4672e4a22215448440bd8a028",
+    "frozen_C20_STYLE": "bd358be59c842f386c691e9434f2e9c45df2e52ef3ca1ee518f1c1a135d3a0a7"
+  },
+  "heldout": {
+    "seed": 240201,
+    "episodes": 3240,
+    "horizon": 56,
+    "models": 5,
+    "per_model": 648,
+    "recorded_trajectories_sha256": "b9a2908c0cc191df5d94dd6d1cf795bbe33177a90b7d631f21c705422820b1c4",
+    "replayed_episodes": 3240,
+    "host_rejected": 0,
+    "illegal_raw_top1": 0,
+    "no_guidance_C12_exact_pairs_per_candidate": 216,
+    "same_state_legal_preferred_ink_menus": 1704,
+    "same_state_active_backtrack_legal_preferred_ink_mass": {
+      "C12": 0.2503519,
+      "C18-A0": 0.2220566,
+      "C20-STYLE": 0.2218097,
+      "C21-RETURN": 0.2226614,
+      "C21-OPPORTUNITY": 0.2227581
+    },
+    "same_state_active_continue_legal_preferred_ink_mass": {
+      "C18-A0": 0.216319,
+      "C21-RETURN": 0.2150161,
+      "C21-OPPORTUNITY": 0.2153476
+    }
+  },
+  "validation": {
+    "seed": 230201,
+    "episodes": 1440,
+    "horizon": 40,
+    "recorded_trajectories_sha256": "e9e2e1d1106e497c1f1e8ac0f64391a03402f85571d630cd6035efcae808c379"
+  },
+  "tests": {
+    "local_available": 148,
+    "local_passed": 148,
+    "exact_PR_HEAD_including_archive_dependencies": false
+  },
+  "bundle": {
+    "sha256": "65d110b07c47dfd268d8259b4b383389c22e61581477cc8b343739a2b9a7db3f",
+    "entry_count": 78,
+    "immutable_Actions_custody": false
+  },
+  "dependencies": "This C21 source requires the externally archived historical C13/C14/C18/C19 research harness and model prerequisites, which are not fully materialized in the DRIV3R PR branch. Source import alone is not scientific reproduction.",
+  "prohibited_changes": [
+    "CyberSand",
+    "Neurounner",
+    "DRIV3R_main",
+    "native_game",
+    "provider_defaults"
+  ]
+}
