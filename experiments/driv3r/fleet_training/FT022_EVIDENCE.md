@@ -41,3 +41,18 @@ The strongest result is transferable **sequential behaviour** from legal route d
 Next: matched training-world count, additional fixed heldout seeds, trajectory-style action legality against authoritative read-only CyberSand evidence, a recovery-only intervention at dead-end states rather than arbitrary detours, and immutable hosted checkpoint/artifact custody using only an existing minimal opt-in DRIV3R mechanism if one is available. Do not create a new workflow per experiment, and do not run training automatically on push/PR.
 
 **Repository policy:** research files and ledger only inside experiments/driv3r/fleet_training/; DRIV3R PR #1 remains Draft/HOLD; no CyberSand/Neurounner mutations; no merge or Ready transition.
+
+
+## FT-022B — fresh-seed guarded validation (same source/checkpoints, no retraining)
+
+After the original run, four frozen and eight trained policies were evaluated against **96 additional guarded-world seeds** (four niches × 24 worlds), all disjoint from the original 96 world identities. These reuse the *same synthetic guarded generator*, so this is a fresh-seed validation, **not a new environment family**. The second check involved **288 further matched autonomous episodes, zero optimizer updates**, and no game-side writes.
+
+| Policy | Final-goal completions | Goal-switch arrivals | Mean painted cells | Mean RETRACE actions |
+|---|---:|---:|---:|---:|
+| Frozen FT-021 | 6/96 | 16 | 6.36 | 33.59 |
+| Direct legal-route | **31/96** | **51** | **14.72** | 27.48 |
+| Route + scripted recovery | 19/96 | 36 | 10.80 | **36.38** |
+
+On these matched worlds, direct-route versus frozen: **25 improved, zero regressed, 71 tied**; direct-route versus recovery: **15 improved, three regressed, 78 tied**. The principal FT-022 result survives this fresh-seed check: legal-route continuation substantially improves two-goal completion over frozen FT-021, whereas naïve recovery detours produce more retracing but lower goal completion.
+
+The full local FT-022B audit JSON SHA-256 is **6f677edb648e1e66718348e1043608397bc2694f35a84e642e5507b8334b47e9**. It includes all 288 episode outcomes, original eight child-checkpoint hashes, policy/source identity and the explicit independent seed label UNSEEN-VALIDATION-2; this audit remains a local session artifact and is **not an immutable hosted artifact**. Legality and protected-cell assertions executed in all episodes, but independent model-logit recomputation and native CyberSand validation were not performed. Neither FT-022 nor this extension resolves the hosted artifact-custody HOLD gate.
