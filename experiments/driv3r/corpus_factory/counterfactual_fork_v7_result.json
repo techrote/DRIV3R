@@ -61,8 +61,8 @@
     "Do not interpret as native CyberSand or full agent competence"
   ],
   "coefficients_sha256": {
-    "memory": "cd20465039b43e514ea81b4fe5ded45f3eef3e647eeee04afc4db40543f0efca",
-    "sham": "1000e4856f79c2a20e120cff5e1a9827a39b99bf59eb06ea0ccb893371f87a77"
+    "memory": "5fb38bdb3d7b5504fbab05cc9a9417b4a8c04d979598b83fb6c5062b9af8bc23",
+    "sham": "705fd5dc34a0a93b773d53b42e9427a657161a0de0f0ae48b5b3c9a63e2b9ad9"
   },
   "data": {
     "DEV": {
@@ -87,10 +87,10 @@
   "schema": "driv3r/synthetic-counterfactual-fork-v7",
   "source": "novel-independent-synthetic-host",
   "train_rows": 512,
-  "train_sha256": "1fd63ab815e4e7c43b626fe514a247d5a174472591afb2be31ec575960ebffea",
+  "train_sha256": "311bf2a65e11e3ef1331f1abafbc513d08a40af3a3f6e6e21a29bc7cfcce9828",
   "training": {
     "epochs": 24,
-    "feature_dimension": 29,
+    "feature_dimension": 129,
     "optimizer": "sklearn.SGDClassifier(log_loss)",
     "seeds_train_only": true
   }
