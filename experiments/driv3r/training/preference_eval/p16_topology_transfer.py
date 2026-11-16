@@ -244,7 +244,7 @@ def experiment(source_bytes, out, images=False, p14_ranker_bytes=None):
     (out/'P16-results.json').write_text(json.dumps(report,indent=2,sort_keys=True)+'\n')
     (out/'P16-matched.json').write_text(json.dumps(paired,indent=2,sort_keys=True)+'\n')
     (out/'P16-index.json').write_text(json.dumps(rows,indent=2,sort_keys=True)+'\n')
-    (out/'P16-SHA256SUMS.txt').write_text('\n'.join(f'{base.sha(p.read_bytes())}  {p.name}' for p in sorted(out.iterdir()) if p.is_file())+'\n')
+    (out/'P16-SHA256SUMS.txt').write_text('\n'.join(f'{base.sha(p.read_bytes())}  {p.name}' for p in sorted(out.iterdir()) if p.is_file() and p.name!='P16-SHA256SUMS.txt')+'\n')
     return report
 
 if __name__=='__main__':
