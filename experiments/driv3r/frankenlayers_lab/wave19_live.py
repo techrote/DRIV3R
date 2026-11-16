@@ -11,6 +11,7 @@ import json
 import math
 from pathlib import Path
 import statistics
+import subprocess
 
 from experiments.driv3r.backend import PINS, sha256_file
 from experiments.driv3r.frankenlayers import infer as paired
@@ -172,6 +173,21 @@ def compare(folds):
     return result
 
 
+def validate_source_checkout(declared):
+    """Refuse to attribute evidence to a different or dirty source tree."""
+    root = Path(__file__).resolve().parents[3]
+    def git(*args):
+        return subprocess.run(['git', *args], cwd=root, check=True, capture_output=True,
+                              text=True, timeout=10).stdout.strip()
+    actual = git('rev-parse', '--verify', 'HEAD')
+    if actual != declared:
+        raise ValueError('Passed source SHA differs from checked-out Git HEAD')
+    if git('status', '--porcelain', '--untracked-files=normal', '--',
+           'experiments/driv3r/frankenlayers_lab'):
+        raise ValueError('Frankenlayers source tree has uncommitted/untracked changes')
+    return actual
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     for key in ('binary', 'model-q8', 'model-q4', 'quant-receipt', 'w0', 'output'):
@@ -180,6 +196,7 @@ def main():
     a = p.parse_args()
     if a.output.exists() or len(a.source_sha) != 40 or any(c not in '0123456789abcdef' for c in a.source_sha):
         raise ValueError('Immutable evidence destination or exact source SHA missing')
+    validate_source_checkout(a.source_sha)
     if sha256_file(a.model_q8) != PINS['model']['sha256']:
         raise ValueError('Q8 donor integrity mismatch')
     receipt = json.loads(a.quant_receipt.read_text())
