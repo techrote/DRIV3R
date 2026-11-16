@@ -1,5 +1,7 @@
 """Source-only Wave 19 qualification: no model files or external runner required."""
 import json
+import inspect
+from types import SimpleNamespace
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
@@ -10,6 +12,25 @@ from experiments.driv3r.frankenlayers_lab import wave19_live as w
 
 
 class Wave19Tests(unittest.TestCase):
+    def test_imported_parent_run_arm_signature_is_exactly_five_arguments(self):
+        self.assertEqual(list(inspect.signature(w.paired.run_arm).parameters),
+                         ['binary', 'model', 'w0', 'mode', 'out'])
+
+    def test_evidence_sha_requires_matching_clean_git_checkout(self):
+        def mock_run(args, **kwargs):
+            if args[1:3] == ['rev-parse', '--verify']:
+                return SimpleNamespace(stdout='a'*40 + '\\n')
+            return SimpleNamespace(stdout='')
+        with patch.object(w.subprocess, 'run', side_effect=mock_run):
+            self.assertEqual(w.validate_source_checkout('a'*40), 'a'*40)
+            with self.assertRaises(ValueError):
+                w.validate_source_checkout('b'*40)
+        def dirty_run(args, **kwargs):
+            return SimpleNamespace(stdout='a'*40 if args[1] == 'rev-parse' else ' M experiments/driv3r/frankenlayers_lab/wave19_live.py')
+        with patch.object(w.subprocess, 'run', side_effect=dirty_run):
+            with self.assertRaises(ValueError):
+                w.validate_source_checkout('a'*40)
+
     def test_fold_context_binds_actual_parent_contract_and_restores_on_error(self):
         before = (w.paired.SEED, w.paired.STEPS, w.paired.FAMILIES,
                   cf.SEED, cf.STEPS, cf.FAMILY, cf.ALL_VARIANTS, cf.PAIRS, cf.variant_obstacles)
