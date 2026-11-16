@@ -11,9 +11,10 @@ import argparse
 import collections
 import hashlib
 import json
-import math
 import random
 import resource
+import sys
+import sklearn
 import statistics
 import struct
 import time
@@ -143,15 +144,6 @@ def observation_features(ep):
         assert w.pos==tuple(s['next_position'])
     assert len(out)==len(ep['steps'])
     return out
-
-
-def context(w,tick):
-    prior=w.actions
-    repeats=1-len(set(w.path))/max(1,len(w.path))
-    # QL-018 used unique visited coordinates / all prior positions, not current live path.
-    return np.asarray([1.,min(tick/96.,1.),repeats,
-        prior[-8:].count('BRANCH')/8.,prior[-8:].count('RETRACE')/8.,
-        float('RETRACE' in w.legal())],dtype=np.float32)
 
 
 def context_from_positions(w,tick,positions):
@@ -319,6 +311,10 @@ def run(args):
                          'q4_packed_sha256':sha(z18[f'ql018-models/{policy}-context-q4.bin']),
                          'latency':tm,'prospective':per}
     report={'schema':'ql019-w0-surrogate-onpolicy-v1',
+        'experiment_source_sha256':sha(Path(__file__).read_bytes()),
+        'python_version':sys.version.split()[0],
+        'numpy_version':np.__version__,
+        'sklearn_version':sklearn.__version__,
         'ql017_zip_sha256':sha(Path(args.ql017).read_bytes()),
         'ql018_zip_sha256':sha(Path(args.ql018).read_bytes()),
         'ql017_source_sha':q17['source_sha'],
