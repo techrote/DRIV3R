@@ -1,0 +1,24 @@
+# Python build/interpreter outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+
+# Local experiment products; preserve machine-readable research results in Git.
+*.egg-info/
+dist/
+build/
+.cache/
+models-cache/
+checkpoints/
+artifacts/
+
+# Local notebook and editor scratch
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
