@@ -9,7 +9,7 @@
   "source_sha256": "9a9f61038bb1a4f68395816a8296fb8957a8a8f166610921c2a9db6502308d9c",
   "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
   "ranker_sha256": "fece7f68288df0c1fc5777b10c8c68694206842f48d49fae0533e84bb1db91f9",
-  "primary_source_git_blob": "b2da4fc9da4ed92dc12ec6cf457a13b0242612c2",
+  "primary_source_git_blob": "1c3d32bbad07ff0f4eaf407199b64a14515cbe1a",
   "primary_test_git_blob": "076de445319681ec5aacb1c230bb16d65d36c6ee",
   "seeds": [
     2903,
@@ -81,7 +81,7 @@
   "human_ratings": 0,
   "owner_ratings": 0,
   "optimizer_updates": 0,
-  "local_archive_sha256": "88695f08f7dadf7d507cfb920775f3e61855cf9461f52a6ab47d248131f1a873",
+  "local_archive_sha256": "3b893b8df8e35971c95f0a10605ae70ea40a7fd8509c1d768bb06a712e1ce82c",
   "primary_results_sha256": "a529e73b5d4191b07f56fdb441b7c7e0c3250ba023de056cce4c776c080b7bff",
   "matched_pairs_sha256": "b98b9b0f13fb0442321b50233f3eff0219e6f253ea3bef08b9c7323e0f2d7abd",
   "caveats": [
