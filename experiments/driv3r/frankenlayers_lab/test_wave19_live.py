@@ -19,7 +19,7 @@ class Wave19Tests(unittest.TestCase):
     def test_evidence_sha_requires_matching_clean_git_checkout(self):
         def mock_run(args, **kwargs):
             if args[1:3] == ['rev-parse', '--verify']:
-                return SimpleNamespace(stdout='a'*40 + '\\n')
+                return SimpleNamespace(stdout='a'*40 + '\n')
             return SimpleNamespace(stdout='')
         with patch.object(w.subprocess, 'run', side_effect=mock_run):
             self.assertEqual(w.validate_source_checkout('a'*40), 'a'*40)
