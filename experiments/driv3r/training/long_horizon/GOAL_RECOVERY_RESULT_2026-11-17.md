@@ -107,3 +107,27 @@ including variable recovery limits, goals with dead-end bait, and control
 for the engineered recovery-budget inequality. Pre-register a target/ink/
 STOP composite metric, retain the zero-masked control, and require a native
 host-contract comparison before advocating integration.
+
+## Post-training counterfactual: mask recovery features at inference
+
+An independent source-matched audit restored the **same trained treatment
+checkpoints**, zero-masked their eight recovery features *only at inference*,
+then replayed all 64 matched DEVELOPMENT scenarios. There was no retraining
+or teacher-controlled continuation. This is an inference ablation, not a
+new checkpoint or structural heldout campaign.
+
+| Treatment seed | Features on: goals / ink / early STOP | Features masked: goals / ink / early STOP |
+| --- | --- | --- |
+| 615 | 107 / 137.344 / 5 | 87 / 135.750 / 4 |
+| 616 | 118 / 141.062 / 1 | 107 / 138.781 / 3 |
+| **Combined** | **225 / 139.203 / 6** | **194 / 137.266 / 7** |
+
+The live recovery features help goal attainment on both trained seeds, but
+their immediate survival contribution is **not consistent**: seed 615
+stops slightly less often when recovery features are masked. Furthermore,
+the masked treatment checkpoints still outperform separately trained
+goal-only controls in mean painting and early STOP, implying that some
+differences survive in learned shared weights when the live features are
+removed. The gross two-arm result cannot be attributed entirely to
+recovery information at inference. Do not treat this fixture-specific
+difference as proof of general long-horizon planning.
