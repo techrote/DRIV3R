@@ -1,0 +1,50 @@
+{
+  "cautions": [
+    "synthetic only",
+    "checkpoint custody is local until immutable Actions artifact is verified",
+    "strict condition gate fails",
+    "no native personality acceptance"
+  ],
+  "checkpoints_sha256": {
+    "C48-HARD": "3a9776a0598f9257b9c4c305ffe26e9bc108ed8635780ecb5dfbb83e74e6f848",
+    "C48-SHUFFLED": "3506e98ddb7c0157f16897eaf5b8b94361a5bb3e7be57ebede7b4439f0488784"
+  },
+  "commit_status": "unpublished-at-receipt-generation",
+  "experiment": {
+    "graphs": {
+      "blind": 16,
+      "online": 96,
+      "train": 128
+    },
+    "guided_per_policy": 288,
+    "models": {
+      "C18-A0": 88,
+      "C34-RESET": 100,
+      "C40-PAIR": 109,
+      "C47-ALIGNED": 104,
+      "C48-HARD": 103,
+      "C48-RANDOM": 104,
+      "C48-SHUFFLED": 101
+    }
+  },
+  "files_sha256": {
+    "C48-gallery.svg": "ba983a60a8f15cf2969080a3416ec43038bc17584950d7893f96bf266f31870b",
+    "C48-hard-case-guidance-2026-11-17.md": "204a053b40d3c64dfa22d5ea0e22c9a96bc20341202c0007987d921271b34eb3",
+    "C48-summary.json": "bb6a0a796ae2fc57dc28628b6ee5ac954e33bdba3d3ca6762f5ff3d85eec0ded",
+    "c48_gallery.py": "d8e10aabf45e1502e9148be0d664234055d24b08c45caa053c09f1d38181a125",
+    "c48_hard_case_guidance.py": "ae9be385e8739bd619fcfc40dd4631934336ae8565f3eeae271ae6f28909c4cb",
+    "test_c48_hard_case_guidance.py": "cc22a1cd4bd01076ccd425ccf18f9fe4ff901d0b062d92036af4d7b2e6c37152"
+  },
+  "predecessors": {
+    "C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+    "C47_checkpoint_sha256": "98e0c277ce01964b0851c1e60c6445c94d062ad9f590ca1619af69d317658e06",
+    "C47_source_git_blob": "a89d852a858de828415686098b74efe205e9567c"
+  },
+  "schema": "C48-research-evidence/1",
+  "source_sha256": "ae9be385e8739bd619fcfc40dd4631934336ae8565f3eeae271ae6f28909c4cb",
+  "train_graph_sets": {
+    "blind": "5a6d8e0395066c7dabcdcc8b97b79bb3f2fe017b48e6e051372c1469baf4908d",
+    "online": "04c7da12235e535914fc5175ffed84cd59684ed8c016e658c49007fc08172a6f",
+    "train": "65bf0f7215ad40acfef3ff2a7a8ca155bf3772d501766e9e15d817c0e6950324"
+  }
+}
