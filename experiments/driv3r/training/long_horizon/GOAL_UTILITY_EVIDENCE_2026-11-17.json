@@ -1,0 +1,233 @@
+{
+  "experiment": "GOAL-UTILITY-001",
+  "version": "goal-utility/1",
+  "date": "2026-11-17",
+  "repository": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "baseline_head_before_edit": "4c53751ddfef56766976812373620c5e56350b70",
+  "split": "development",
+  "developer_goal_selection_after_prior_seed_inspection": true,
+  "structural_heldout_opened": false,
+  "optimizer_updates": 0,
+  "paid_compute": false,
+  "native_receipts": 0,
+  "goals": {
+    "north_exit": [
+      53,
+      45
+    ],
+    "south_spur": [
+      54,
+      50
+    ]
+  },
+  "development_seeds": [
+    3001,
+    3002,
+    3101,
+    3102,
+    3201,
+    3202,
+    3301,
+    3302
+  ],
+  "policy_seeds": [
+    811,
+    814
+  ],
+  "arms": [
+    "frozen",
+    "always_move",
+    "contrastive",
+    "outcome"
+  ],
+  "first_actions": [
+    "MOVE_S",
+    "BACKTRACK"
+  ],
+  "prehistory_legal_actions": 28,
+  "recovery_spent_before_fork": 11,
+  "horizon": 128,
+  "episodes": 256,
+  "paired_comparisons": 128,
+  "decisions": 19144,
+  "run_wall_seconds": 21.151,
+  "run_peak_rss_kib": 138768,
+  "mean_model_inference_ms": 0.050879,
+  "independent_replay_verified_episodes": 256,
+  "independent_replay_verified_decisions": 19144,
+  "manifest_files": 257,
+  "source_archive_sha256": "bb0be90bb1cceab1b42496a5cac66f39d7b2a881de25228fba1a87a7a642ace1",
+  "full_original_run_report_sha256": "bf99bbc7d5f3137fa897f8e2be49b2a95a4ba99454a6490754c50d4b7490fd97",
+  "full_original_manifest_sha256": "e244168e4a6b9cc81892857598702ff8022c82eef7a8cd70ec8f6d8135fd03c6",
+  "source_sha256": {
+    "goal_utility_audit.py": "a976d4c25bcfc9cebefd2b18c818a81ec99e301a421ac622d6e3abf4ad4b296d",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "recovery_debt_audit.py": "3eb614835bac0d9d3d4161e768e9767f22f1f62c89a71c35e0829f69b79b79d8",
+    "retrace_choice_lab.py": "571b6fd14eb62629ddec1d59c64cfa51c97ed27ae96f99264baa0977519bc693",
+    "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "checkpoint_sha256": {
+    "811": {
+      "always_move": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36",
+      "contrastive": "d5bb12e68b876c02a64342e7ca504db17ce63f5880b788adf41f84422dc575b3",
+      "frozen": "69b86b0c49798d6b9124de7409a46ac77375da2e9b8e0fd2498529a27565deaa",
+      "outcome": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36"
+    },
+    "814": {
+      "always_move": "8f2679834211e6bc45b49ad72bda425784b106d6eb90a8eeff0fd62ba1a6bc50",
+      "contrastive": "2dafe85a1c334258fa67b8b8b84f04d8f7a02feb7649b9a14649697926006c35",
+      "frozen": "42b92fc39c9d9a4628377a406db42850411778110d5cef3f55cde9015ea39f38",
+      "outcome": "eccd186db01abaa1ab820a8f361226a5cc4b1c32e40e2c51a905aed9d886414b"
+    }
+  },
+  "action_counts": {
+    "BACKTRACK": 215,
+    "MOVE_E": 5167,
+    "MOVE_N": 4576,
+    "MOVE_S": 4173,
+    "MOVE_W": 4835,
+    "RELOCATE_START": 10,
+    "STOP": 168
+  },
+  "goals_summary": {
+    "north_exit": {
+      "success_backtrack": 64,
+      "success_move": 57,
+      "median_hit_backtrack": 4,
+      "median_hit_move": 20,
+      "all_model_pairs_backtrack_time_advantage_min": 12,
+      "robust_worlds_margin8": 8,
+      "fast_first_choice_counts": {
+        "frozen": 10,
+        "always_move": 0,
+        "contrastive": 16,
+        "outcome": 7
+      },
+      "time_delta_move_minus_back_by_world_seed": {
+        "3001": [
+          12,
+          125
+        ],
+        "3002": [
+          12,
+          24
+        ],
+        "3101": [
+          12,
+          26
+        ],
+        "3102": [
+          12,
+          125
+        ],
+        "3201": [
+          12,
+          125
+        ],
+        "3202": [
+          12,
+          125
+        ],
+        "3301": [
+          12,
+          125
+        ],
+        "3302": [
+          12,
+          24
+        ]
+      }
+    },
+    "south_spur": {
+      "success_backtrack": 60,
+      "success_move": 64,
+      "median_hit_backtrack": 14,
+      "median_hit_move": 2,
+      "all_model_pairs_move_time_advantage_min": 10,
+      "robust_worlds_margin8": 8,
+      "fast_first_choice_counts": {
+        "frozen": 16,
+        "always_move": 16,
+        "contrastive": 16,
+        "outcome": 16
+      },
+      "time_delta_move_minus_back_by_world_seed": {
+        "3001": [
+          -46,
+          -10
+        ],
+        "3002": [
+          -127,
+          -10
+        ],
+        "3101": [
+          -26,
+          -10
+        ],
+        "3102": [
+          -24,
+          -10
+        ],
+        "3201": [
+          -58,
+          -10
+        ],
+        "3202": [
+          -34,
+          -10
+        ],
+        "3301": [
+          -46,
+          -10
+        ],
+        "3302": [
+          -127,
+          -10
+        ]
+      }
+    }
+  },
+  "first_action_probability_examples": [
+    {
+      "world_seed": 3201,
+      "goal": "north_exit",
+      "model_seed": 811,
+      "arm": "always_move",
+      "menu": {
+        "BACKTRACK": 0.00029124,
+        "MOVE_S": 0.99854302,
+        "RELOCATE_START": 0.00116192,
+        "STOP": 0.00000382
+      },
+      "first_greedy": "MOVE_S",
+      "north_hit_step_after_move": 22,
+      "north_hit_step_after_backtrack": 4
+    },
+    {
+      "world_seed": 3201,
+      "goal": "north_exit",
+      "model_seed": 811,
+      "arm": "contrastive",
+      "menu": {
+        "BACKTRACK": 0.98109369,
+        "MOVE_S": 0.01890194,
+        "RELOCATE_START": 0.00000423,
+        "STOP": 1.4e-7
+      },
+      "first_greedy": "BACKTRACK",
+      "north_hit_step_after_move": 18,
+      "north_hit_step_after_backtrack": 4
+    }
+  ],
+  "limitations": [
+    "Goal coordinates chosen exploratory after earlier j=0 DEVELOPMENT pilot; fresh procedural seeds are not structural holdout.",
+    "Capped missed-target time is horizon+1, not observed arrival.",
+    "Binary goal success saturates and paint totals remain controller-dependent.",
+    "No new model trained; all checkpoint binaries remain local, not immutable Actions artifacts.",
+    "Synthetic World and goal features are not CyberSand native ABI; no physical acceptance.",
+    "Full 256 transcripts and SHA-256 manifests locally retained, not committed as binaries to Git history."
+  ]
+}
