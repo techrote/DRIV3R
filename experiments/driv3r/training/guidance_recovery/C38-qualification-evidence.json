@@ -1,0 +1,83 @@
+{
+  "checkpoint_replica_identical": true,
+  "checkpoints_sha256": {
+    "C38-PERMUTED": "0fd3fde41ca4fb33ae02a807444d7987de9e9fc3d345cef43565999f5b8b83b6",
+    "C38-SIGN": "c178ce087333f841dd5c242dd38235333ce4d68d441402668f0966304cfaf2af"
+  },
+  "condition_regression_counts_vs_C34_RESET": {
+    "C18-A0": [2,1,2],
+    "C34-RESET": [0,0,0],
+    "C37-LEARNED": [0,1,1],
+    "C37-SHUFFLED": [0,1,0],
+    "C38-PERMUTED": [0,1,2],
+    "C38-SIGN": [0,0,1]
+  },
+  "evidence_sha256": {
+    "C38-cohort-A.json": "bf7ce3937556f73893cb67731d239c732d7823c843263437a90a18d0a83ed320",
+    "C38-cohort-B.json": "3edf8c2f49f53dac874e31b5686107c504e2c1558acba3b1c264bc0035b0c5fb",
+    "C38-cohort-C.json": "84249da85e99247621778f46b2218b44ed9f864606e0b86cc64c46ac076c1b4a",
+    "C38-heldout-labels.json": "f6eb0207688d5f63fd4c85e2da9dd49170e21539fbc424e7164832e72451eccb",
+    "C38-training-receipts.json": "4f3a8a832c2e49b76675538302d6077372aa8cabb580b447bac9c011fd9c0c4b"
+  },
+  "goal_events": {
+    "C18-A0": [6,4,9],
+    "C34-RESET": [8,4,10],
+    "C37-LEARNED": [8,4,9],
+    "C37-SHUFFLED": [8,5,10],
+    "C38-PERMUTED": [8,4,8],
+    "C38-SIGN": [8,5,9]
+  },
+  "heldout_graphs": 91,
+  "heldout_nonzero": 295,
+  "heldout_prediction": {
+    "C37-LEARNED": {
+      "accuracy": 0.708475,
+      "braid": 0.634146,
+      "continuous_mae": 0.549338,
+      "tree": 0.761628
+    },
+    "C37-SHUFFLED": {
+      "accuracy": 0.532203,
+      "braid": 0.235772,
+      "continuous_mae": 0.664233,
+      "tree": 0.744186
+    },
+    "C38-PERMUTED": {
+      "accuracy": 0.532203,
+      "braid": 0.235772,
+      "continuous_mae": 0.945631,
+      "tree": 0.744186
+    },
+    "C38-SIGN": {
+      "accuracy": 0.755932,
+      "braid": 0.764228,
+      "continuous_mae": 0.742274,
+      "tree": 0.75
+    }
+  },
+  "heldout_states": 362,
+  "host_rejections": 0,
+  "limitations": "native ABI and trajectory-personality untested; checkpoints are in local archive pending immutable Actions artifact custody",
+  "optimizer_updates_per_head": 144,
+  "raw_illegal_top1": 0,
+  "schema": "driv3r-c38-summary/1",
+  "source_sha256": "c7cf1243ca9f45d0dc6553c761d419056e225dd918df82e8cd34d0d13b599967",
+  "testing": "pytest: 5 passed",
+  "train": {
+    "dataset_sha256": "aef850dc8c5234956910ff068e1e3b8ec3aa492f572a571c126af98c764d4fa7",
+    "executed_receipts_sha256": "2ac2395b8fafb8c7259780fb8755ab56c3d79fb5b7476259ff7f2ce52d03491c",
+    "nonzero_targets": 282,
+    "positive_sign": 177,
+    "shuffled_label_sha256": "dc6b846bfa4b7b7afbe8d0ef759a564693b8886b6ac38e5accbfcc9a0bcf8342",
+    "train_graphs": 80,
+    "train_samples": 320
+  },
+  "unguided_exact_per_cohort": {
+    "C18-A0": [8,8,8],
+    "C34-RESET": [8,8,8],
+    "C37-LEARNED": [8,8,8],
+    "C37-SHUFFLED": [8,8,8],
+    "C38-PERMUTED": [8,8,8],
+    "C38-SIGN": [8,8,8]
+  }
+}
