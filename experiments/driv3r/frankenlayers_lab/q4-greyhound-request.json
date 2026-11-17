@@ -1,0 +1,29 @@
+{
+  "schema": "driv3r/greyhound-q4-request/1",
+  "nonce": "owner-20261117-q4-upper-01",
+  "tier": "upper",
+  "branch": "research/import-consolidated-worm-labs",
+  "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+  "q4_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+  "q4_bytes": 1099629888,
+  "steps_per_episode": 24,
+  "folds": [
+    [
+      7703,
+      "pipework"
+    ],
+    [
+      8807,
+      "greebles"
+    ]
+  ],
+  "max_parallel": 1,
+  "cpu_only": true,
+  "paid_gpu": false,
+  "paid_api": false,
+  "merge": false,
+  "ready": false,
+  "native_game": false,
+  "automatic_on_routine_push": false,
+  "intent": "Owner-authorised bounded first Q4/real-System-One GREYHOUND continuation; explicit request-file push only; exact official Q4 donor, source-pinned host; STOP and crashes retained."
+}
