@@ -1,0 +1,20 @@
+{
+  "archive_created": "2026-11-17",
+  "blind_sha256": "202c4e2783e890be4d6a3aced9f928677d36e75f849fef323e36ac7b12659453",
+  "checkpoint_sha256": {
+    "C45-GATE": "47c1830f649a49475e613522cc1329d1b24b4a80c63472da67653418cbdaf96b",
+    "C45-SHUFFLE": "ceec7d7dd643aad4e883b2a079f33ce17f73b81710b2ce78d56c22febfe28d7f"
+  },
+  "checkpoint_status": "local archive only; immutable Actions artifact custody outstanding",
+  "full_online_episodes_sha256": "bf8ae278133c80f612ac2fe1e4158df50ed613422d080aca806d19556f1d6130",
+  "gallery_sha256": "a525afe0feb61bddde2df971dc0cda1cf4e30a027685f077548a57a0ef53d3e0",
+  "git_scope": "techrote/DRIV3R PR #1, experiments/driv3r/training/guidance_recovery/**",
+  "local_archive_entries": 142,
+  "local_archive_sha256": "04aba86681234b0e6c05a504d26ad06a0d3847779adeb1f0dc0981663981f4ef",
+  "local_tests": "4/4 passed",
+  "provenance_qualification": "synthetic host; no native CyberSand acceptance",
+  "schema": "driv3r-c45-remote-source-and-local-checkpoint-custody/1",
+  "selected_trajectories_sha256": "41602e05dade598f58678bc5214b447b7c06719ecbdaa66c8405cadaba01af78",
+  "source_sha256": "049d47de50525c0f5b5e49f509006271de7be747d3ec84a56a95b3d00a8b9797",
+  "summary_sha256": "e63d0173a0de082f78cc47b9fbb7cbdcdf58d7ae0b4e03de417ac104ad6af40f"
+}
