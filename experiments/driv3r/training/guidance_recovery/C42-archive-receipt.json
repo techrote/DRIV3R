@@ -1,0 +1,31 @@
+{
+  "artifacts_sha256": {
+    "C42-blind.json": "18cc9628847f31126c8010778ee2a4f8c38fb0acd5515ee6d866dcc5027c819b",
+    "C42-cohort-A.json": "7d64f4c78ddf4ac0c9f9a632e5b08ae1a4bc1d68a77dc9f2f96493eaf0647b25",
+    "C42-cohort-B.json": "f91c7f06ecfa555bd77f1c096317638fb3bc3e99a5b97285f89374abde135ed0",
+    "C42-gallery.html": "e98603c5a152a7dd1ef219a50fb6966c9e1ab54450731b4299b858fcdf4f7f13",
+    "C42-selected-traces.json": "c5326f614484b9ab575faf97661b08a8a1febffa8e162c7429ccddb793e3c0f4",
+    "C42-summary.json": "263e3a92b4ef6efc833d0a9e438e38f61e2a6be0834d084f1b3b0f7a25c9c8a1",
+    "C42-wilson-kruskal-transfer-2026-11-17.md": "7f3cdaa073bb126474c3118bf77b13d410e629d2b2717c6761a3f9e6ece61130",
+    "c42_gallery.py": "9725735cee0afa5701ad3a3d877475a45c7ca31be77f69ce0bcf6ea9163840ef",
+    "c42_wilson_transfer.py": "897de854e6a2b1ab964fc784689a2fb6bf79f123e24a8aefb2a6fbe8bc9b1942",
+    "test_c42_wilson_transfer.py": "5a1f07b9816cd73aaec0cda670cdecc195a6da5d8d2e364001ba4b768cdcca98"
+  },
+  "checkpoints_sha256": {
+    "C42-PAIR": "375b814c04de11a90862147fbad7efb5ecb3c8307aa97b96d7b676c7a7860a2d",
+    "C42-RANDOM": "d769cb2e2df2fdf2389113cfba6c1618298ab7555c1dc9a30ec7f57ebe08bec4",
+    "C42-SHUFFLED": "039b166190552fa2906b109715bd38f370785f4771fa81f4ad6104955c1eeb61"
+  },
+  "input_archive": "driv3r_guidance_recovery_C41_prim_transfer_2026-11-17.zip",
+  "input_git_head_at_start": "9b9484f9083c4723fbe4ea964d6bbadcffbb84bd",
+  "limitations": [
+    "No Actions immutable checkpoint artifact",
+    "No native CyberSand acceptance",
+    "No broad tree-family sampling",
+    "Whole-trajectory personality not accepted"
+  ],
+  "matched_replayed_trajectories": 16,
+  "research_policy": "DRAFT/HOLD; no native ABI claim; checkpoint outside Git",
+  "schema": "driv3r-c42-archive-custody/1",
+  "source_sha256": "897de854e6a2b1ab964fc784689a2fb6bf79f123e24a8aefb2a6fbe8bc9b1942"
+}
