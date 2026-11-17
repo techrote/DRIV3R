@@ -20,6 +20,20 @@ class TestM19(unittest.TestCase):
         lora(x).square().sum().backward()
         self.assertIsNone(linear.weight.grad)
         self.assertGreater(float(lora.B.grad.detach().abs().sum()),0)
+    def test_eval_context_cap_is_enforced(self):
+        observed = []
+        def fake_tokenizer(texts, **kwargs):
+            observed.append(kwargs)
+            return kwargs
+        capped = m19.ContextCap(fake_tokenizer)
+        result = capped(['synthetic-game-observation'], max_length=128,
+                        truncation=False, return_tensors='pt')
+        self.assertEqual(result['max_length'], m19.CONTEXT_TOKENS)
+        self.assertEqual(result['max_length'], 96)
+        self.assertTrue(result['truncation'])
+        self.assertEqual(result['return_tensors'], 'pt')
+        self.assertEqual(len(observed), 1)
+
     def test_inject_last_two_only(self):
         class Layer(nn.Module):
             def __init__(self):
