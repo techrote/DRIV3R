@@ -22,3 +22,13 @@ node experiments/driv3r/corpus_factory/stateful_challenge_v11.js /NEW/OUTPUT/DIR
 ```
 
 Each output contains SHA-256-manifested TRAIN, DEV, and HELDOUT JSONL shards. Keep large generated corpora outside Git; use opt-in immutable Actions artifact publication when approved. The next consumer should compare full event/paint history against matched last32 and zero-history inputs on TRAIN/DEV, freeze model/hyperparameters, and then measure HELDOUT paired action accuracy and closed-loop transfer to independently generated synthetic worlds. No optimizer is run in this data lane.
+
+## Default full-generation qualification
+
+Two independent V8 runs of the committed source's pure dataset generator produced byte-identical records on all three splits, with exact paired aliases and legal oracle choices validated. The generation was executed in the research tool's JavaScript runtime, **not** Node CLI; the committed Node CLI test itself has not been executed. A separately checked pure-JS SHA-256 implementation (empty and `abc` known vectors) hashed the exact JSONL payloads. The following digests can be verified by the Node CLI in an independent executor:
+
+- TRAIN: 1536 rows; 11687034 bytes; SHA-256 `d04cd14c109e0c8fa389c2c58791c03ec4c7306625d0c085edbef8dfcc9b5dc6`
+- DEV: 576 rows; 4506714 bytes; SHA-256 `28118499ee8e768f60b0a2d25f568b22aa176d24b3b39675896174124e414f91`
+- HELDOUT: 576 rows; 4612320 bytes; SHA-256 `76444f56d1852d5daab6aeb79141f09ac1918b76bc76ea8d984ed51ac3c6ade1`
+
+All 2,688 rows cover 1,344 balanced counterfactual pairs and 448 worlds. The host prelude validator counted 222,976 cardinal movement steps, 65,408 accepted synthetic paint receipts and zero protected-cell entries. The corpus and SHA metadata remain locally generated and are **not yet immutable GitHub Actions artifacts**.

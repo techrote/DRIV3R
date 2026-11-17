@@ -32,6 +32,73 @@
   "safety": "only model_input features; counterfactual siblings grouped; separate HELDOUT; no primary SLM training in data lane",
   "known_failure": "host-scripted external-synthetic preludes, one oracle-labelled post-prelude decision; independent native ABI and full model-controlled rollouts not qualified",
   "next_consumer_experiment": "TRAIN/DEV full vs last32 vs zero-history on same pinned SLM, freeze checkpoint/hyperparams, then HELDOUT grammar shift and independent closed-loop synthetic challenge; report legal actions, paired accuracy, latency/RSS and negative outcomes",
-  "source_git_blob": "populate after GitHub commit",
-  "default_manifest": "generated on demand with SHA256 of shards"
+  "source_git_blob": "02c9687c3e8e97de3d7a03af0473d8985edfed7d",
+  "default_manifest": "experiments/driv3r/corpus_factory/V11_DEFAULT_MANIFEST.json",
+  "metrics": {
+    "counts": {
+      "TRAIN": {
+        "topologies": 16,
+        "grammars": [
+          "plain"
+        ],
+        "world_groups": 256,
+        "pairs": 768,
+        "rows": 1536,
+        "tasks": {
+          "delayed_shutter": 512,
+          "delayed_material_law": 512,
+          "periodic_motif": 512
+        }
+      },
+      "DEV": {
+        "topologies": 6,
+        "grammars": [
+          "single-spur"
+        ],
+        "world_groups": 96,
+        "pairs": 288,
+        "rows": 576,
+        "tasks": {
+          "delayed_shutter": 192,
+          "delayed_material_law": 192,
+          "periodic_motif": 192
+        }
+      },
+      "HELDOUT": {
+        "topologies": 6,
+        "grammars": [
+          "double-spur"
+        ],
+        "world_groups": 96,
+        "pairs": 288,
+        "rows": 576,
+        "tasks": {
+          "delayed_shutter": 192,
+          "delayed_material_law": 192,
+          "periodic_motif": 192
+        }
+      }
+    },
+    "host_applied_movement_steps": 222976,
+    "synthetic_paint_receipts": 65408,
+    "near_duplicate_world_groups_rejected": 0,
+    "shards": {
+      "TRAIN": {
+        "rows": 1536,
+        "sha256": "d04cd14c109e0c8fa389c2c58791c03ec4c7306625d0c085edbef8dfcc9b5dc6",
+        "bytes": 11687034
+      },
+      "DEV": {
+        "rows": 576,
+        "sha256": "28118499ee8e768f60b0a2d25f568b22aa176d24b3b39675896174124e414f91",
+        "bytes": 4506714
+      },
+      "HELDOUT": {
+        "rows": 576,
+        "sha256": "76444f56d1852d5daab6aeb79141f09ac1918b76bc76ea8d984ed51ac3c6ade1",
+        "bytes": 4612320
+      }
+    },
+    "qualification": "two independent pure V8 deterministic full-default generations, pair/legal/alias checks; native Node CLI integration not executed"
+  }
 }
