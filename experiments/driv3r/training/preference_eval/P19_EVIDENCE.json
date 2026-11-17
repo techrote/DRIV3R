@@ -1,0 +1,151 @@
+{
+  "actual_pretrained_LFM350_stock_lora_visual_tie_controls_excluded": 9,
+  "assistant_model_derived_rating_rows": 112,
+  "assistant_model_derived_vote_counts": {
+    "A": 46,
+    "B": 48,
+    "TIE": 18
+  },
+  "binary_distinct_cell_correct": 73,
+  "binary_model_correct": 30,
+  "binary_transparent_niche_correct": 64,
+  "blank_owner_rating_rows": 112,
+  "blind_a4_svg_pages": 14,
+  "blinding_note": "Ratings were made from earlier images whose pair ID prefixes signalled original source cohort (P18/P19). Final B19 galleries remove this cue but do not retrospectively blind the same reviewer.",
+  "consumer": "After real root-SLM matched original sourced traces, four-niche owner A/B/TIE/SKIP votes and heldout world-family splits; no probe promotion",
+  "cpu_ranking_models_trained": 8,
+  "cpu_torch_adam_updates": 1600,
+  "date_utc": "2026-11-17",
+  "evaluations": {
+    "BRANCHER": {
+      "train_historical_test_W16": {
+        "coverage_rule_correct": 12,
+        "local_checkpoint_sha256": "011483427d0af4186c54c20f2791b222b40cb3c151c0741ec2c88ce2231878bb",
+        "model_correct": 5,
+        "n_test": 15,
+        "n_train": 10,
+        "optimizer_updates": 200,
+        "training_ms": 44.4,
+        "transparent_niche_rule_correct": 10,
+        "weights_sha256": "7071a20e836b4d4e4701d1475874f891b4433ea7205882458c23d7adde2011c0"
+      },
+      "train_on_W16_test_historical": {
+        "coverage_rule_correct": 6,
+        "local_checkpoint_sha256": "344b7763046b16cd6248d7376daddba581d08b3f65beba36c63ec8cec152bb81",
+        "model_correct": 3,
+        "n_test": 10,
+        "n_train": 15,
+        "optimizer_updates": 200,
+        "training_ms": 43.52,
+        "transparent_niche_rule_correct": 6,
+        "weights_sha256": "f131b0ae94d2da09f69dc55a3532a94f7b4de14f8c6853d072e94134c098d504"
+      }
+    },
+    "CHAOTIC_ARTIST": {
+      "train_historical_test_W16": {
+        "coverage_rule_correct": 13,
+        "local_checkpoint_sha256": "e4d46cba3de00ac94dd61736094dc1f5b26700ae2fd226bb83dcfbce4555bbe4",
+        "model_correct": 3,
+        "n_test": 14,
+        "n_train": 10,
+        "optimizer_updates": 200,
+        "training_ms": 44.13,
+        "transparent_niche_rule_correct": 11,
+        "weights_sha256": "4fb0ba4885c91d0546ee71f7f2ac6f70212e932efffd0ecf7cfae928da11dba5"
+      },
+      "train_on_W16_test_historical": {
+        "coverage_rule_correct": 6,
+        "local_checkpoint_sha256": "acb0b59ebb0617d08ef928be6bdd3244916ebf58ebba83e66046ad3c9bd55cca",
+        "model_correct": 3,
+        "n_test": 10,
+        "n_train": 14,
+        "optimizer_updates": 200,
+        "training_ms": 43.87,
+        "transparent_niche_rule_correct": 6,
+        "weights_sha256": "d1fbf3330eaa897e561638ef7acdd349fba9a5073b97f17481dc9766d8e24cec"
+      }
+    },
+    "CURLER": {
+      "train_historical_test_W16": {
+        "coverage_rule_correct": 12,
+        "local_checkpoint_sha256": "0efb4ac33f5d46a2fcc026e0a60bb83523423065163aaa9369d3141d1f6c7c6b",
+        "model_correct": 7,
+        "n_test": 15,
+        "n_train": 8,
+        "optimizer_updates": 200,
+        "training_ms": 42.29,
+        "transparent_niche_rule_correct": 12,
+        "weights_sha256": "0dd795f47fb4c865cfb0541f71e8fed3b83ef876b8e3a90dcb79ed366c690001"
+      },
+      "train_on_W16_test_historical": {
+        "coverage_rule_correct": 6,
+        "local_checkpoint_sha256": "ac68eff0953b498113866065c7cd89daf1094ab14e34a2f7ababbfee319d9fc6",
+        "model_correct": 2,
+        "n_test": 8,
+        "n_train": 15,
+        "optimizer_updates": 200,
+        "training_ms": 48.84,
+        "transparent_niche_rule_correct": 3,
+        "weights_sha256": "75f7162f49fa6e04b682f98f988737e6b7a6ff2f39e0e10b6d0d4b1988c70935"
+      }
+    },
+    "MEANDERER": {
+      "train_historical_test_W16": {
+        "coverage_rule_correct": 13,
+        "local_checkpoint_sha256": "3a343a0bc6ed77dc9c689f6a8227087fa9a1cd85627301d4000ff55869145251",
+        "model_correct": 4,
+        "n_test": 13,
+        "n_train": 9,
+        "optimizer_updates": 200,
+        "training_ms": 54.54,
+        "transparent_niche_rule_correct": 11,
+        "weights_sha256": "5c2268ce35e8c0087d5ffa8550ee6ffa2148dcf53ffeb2df99d45e822ec0c0f6"
+      },
+      "train_on_W16_test_historical": {
+        "coverage_rule_correct": 5,
+        "local_checkpoint_sha256": "4d6085ee20bb0780d95438e80f86ab7a4d1a30d8e4f98e85cc0a20ed67139c7d",
+        "model_correct": 3,
+        "n_test": 9,
+        "n_train": 13,
+        "optimizer_updates": 200,
+        "training_ms": 1624.83,
+        "transparent_niche_rule_correct": 5,
+        "weights_sha256": "42350417097d6efb3be56569ecf8a3fb2b05cb063fd614119def0d1d8a838e7b"
+      }
+    }
+  },
+  "external_repo_writes": false,
+  "four_niches": [
+    "BRANCHER",
+    "CHAOTIC_ARTIST",
+    "CURLER",
+    "MEANDERER"
+  ],
+  "frozen_W16_aux_head_original_pairs": 18,
+  "historical_original_pairs": 10,
+  "local_adversarial_tests": "10/10 PASS",
+  "merge": false,
+  "n_binary_test_ratings_correlated": 94,
+  "new_native_cybersand_gameplay": 0,
+  "new_target_pretrained_SLM_forwards": 0,
+  "only_owned_dir": "experiments/driv3r/training/preference_eval",
+  "owner_human_ratings": 0,
+  "paid_compute": false,
+  "pilot_cohort_blinding_compromised": true,
+  "pr": 1,
+  "producer_original_nonidentical_pairs": 28,
+  "qualification": "LOCAL_ONLY_NOT_NEW_ACTIONS",
+  "real_SLM_optimizer_updates": 0,
+  "repository": "techrote/DRIV3R",
+  "schema": "driv3r.preference_eval.p19.cross_model_original_visual_pilot/1",
+  "source_disjoint_arms": [
+    "train_historical_test_W16",
+    "train_on_W16_test_historical"
+  ],
+  "source_original_archives_sha256": {
+    "P10": "ab0f24fd2ffe3c9c30e5bc77f8f66bea0e823b9776bab3f5811b7fefab236fa6",
+    "P18": "b6651d1747b7bbe18469d98a08c7147f8ccc61ea54506cce5488918fb6ac13de"
+  },
+  "trained_checkpoints_location": "local ZIP only (not Git, not immutable DRIV3R Actions artifact)",
+  "warning": "Negative cross-source transfer; labels are one assistant visual assessor, exposed cohort before final B19 sheets; no human preference inference or statistically independent rating count."
+}

@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P18",
-  "status": "ORIGINAL_14_PRODUCER_BYTES_REVERIFIED_9_REAL_LFM350_STOCK_LORA_VISUAL_TIES_FOUR_NICHE_BALLOTS_UNRATED_RANKER_WITHHELD",
-  "latest_findings": "P18_FINDINGS.md",
+  "latest": "P19",
+  "status": "P19_ORIGINAL_CROSSMODEL_ASSISTANT_VISUAL_PILOT_TRAINED_RANKER_FAILED_SOURCE_TRANSFER_NOT_PROMOTED",
+  "latest_findings": "P19_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -51,19 +51,22 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "Real GP350006 pretrained LFM350 step96 LoRA yields changed six-way logits at 216/216 paired ticks but identical 9/9 original 24-decision stock-vs-trained applied trajectories; these are short greedy controls only. Stock d1 128 LEFT decisions yield degenerate looping.",
-  "artifact_status": "LOCAL_SOURCE_ORIGINAL_ZIPS_BESTIARY_NOT_DRIV3R_ACTIONS_IMMUTABLE",
-  "local_tests": "7/7 PASS (source-byte audit, real LFM350 source comparison and anonymous catch masking)",
+  "negative_result": "P19 original cross-source model-derived visual pilot: trained pairwise probes 30/94 correct versus simple niche rule 64/94 and distinct-cell coverage 73/94; same 28 matched original pairs rated for four niches; subjective assessor source-cohort blinding was compromised; NO ranker promotion.",
+  "artifact_status": "P19_LOCAL_CPU_ORIGINAL_SOURCES_AND_TRAINED_TINY_PROBES_NOT_DRIV3R_ACTIONS_IMMUTABLE",
+  "local_tests": "P19 10/10 PASS; source-original SHA-pinned, no human labels",
   "new_model_forwards": 0,
-  "new_optimizer_steps": 0,
+  "new_optimizer_steps": 1600,
   "human_ratings": 0,
   "blockers": [
     "No valid blind owner/human comparisons; all 52 niche ballot rows blank. A trained reward ranker would be circular synthetic pseudo-aesthetic scoring.",
     "Ten nonidentical historical original pairs belong to just three same-world/horizon blocks, not independent held-out model/world-family strata.",
     "GP350-018 fully changing-observation sampled pretrained LFM350, Tiny pretrained/Population original and new executed Franken structural mutants remain unexecuted in this lab.",
-    "No GitHub Actions immutable P18 artifact; original source ZIPs and manifest exist in the checksum-verified local evidence pack, not Git; models cannot be re-run here without pinned root weights, CPU host and opt-in dispatch."
+    "No GitHub Actions immutable P18 artifact; original source ZIPs and manifest exist in the checksum-verified local evidence pack, not Git; models cannot be re-run here without pinned root weights, CPU host and opt-in dispatch.",
+    "P19 original 28 pairs span correlated P10 W16 and P18 historical sources; 112 GPT-6-assistant visual labels only (no owner/human), visual assessor saw early cohort-prefixed images.",
+    "Pinned real LFM350/SmolLM2/Franken full pretrained forward inference is unavailable to this lab; new GP350018, Tiny M19, Population P20, Franken W20 declared not executed.",
+    "P19 source and tiny checkpoint evidence is LOCAL only; no immutable DRIV3R Actions model artifacts."
   ],
-  "next_consumer_experiment": "After GP350-018 real full-root matched sampled A/B/C source execution and actual Tiny/Population/Franken model trajectories, create world-family/source-disjoint blind four-niche paired galleries with new original paths, collect owner A/B/tie/skip, audit hidden identical catch trials and train a CPU ranker only if valid independent labels and held-out strata. For Population/Distillation, provide lane-local hard negatives: stock d1 4-cell loop, early STOP, oscillation and trained-LFM visual tie.",
+  "next_consumer_experiment": "Obtain real-source original closed-loop matched greedy/sampled pretrained LFM GP350018, Tiny/Population SmolLM2 and Franken structural mutant outputs; collect blind owner 4-niche A/B/TIE/SKIP on source/world-disjoint pairs, audit attention ties, then test trainable rankers against transparent baselines; do not promote P19 visual-pilot probes.",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -100,5 +103,31 @@
     "local_source_bundle_sha256": "b6651d1747b7bbe18469d98a08c7147f8ccc61ea54506cce5488918fb6ac13de",
     "bundle_bytes": 8179398,
     "findings": "Actual source receipt and trained LFM logits changed but greedy path unchanged in 9/9 source-original 24-tick controls. This is negative visual transfer, not new inference."
+  },
+  "p19": {
+    "p18_bundle_sha256": "b6651d1747b7bbe18469d98a08c7147f8ccc61ea54506cce5488918fb6ac13de",
+    "p10_bundle_sha256": "ab0f24fd2ffe3c9c30e5bc77f8f66bea0e823b9776bab3f5811b7fefab236fa6",
+    "original_nonidentical_matched_pairs": 28,
+    "source_historical": 10,
+    "source_W16_aux": 18,
+    "model_derived_visual_votes": 112,
+    "human_owner_votes": 0,
+    "nontie_test_ratings_correlated": 94,
+    "niches": [
+      "MEANDERER",
+      "CURLER",
+      "BRANCHER",
+      "CHAOTIC_ARTIST"
+    ],
+    "trained_probe_correct": 30,
+    "transparent_niche_correct": 64,
+    "coverage_correct": 73,
+    "pytorch_cpu_pairwise_models_trained": 8,
+    "optimizer_updates": 1600,
+    "tests": "10/10 PASS",
+    "model_assessor_cohort_blind": false,
+    "not_promoted": true,
+    "not_native_cybersand": true,
+    "no_new_root_SLM_inference": true
   }
 }
