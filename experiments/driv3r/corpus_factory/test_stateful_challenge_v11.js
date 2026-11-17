@@ -35,4 +35,12 @@ for(const [split,rows] of Object.entries(a.shards)){
 }
 assert.deepEqual(Object.fromEntries(signatures),{TRAIN:96,DEV:36,HELDOUT:36});
 assert.equal(a.summary.host_applied_movement_steps>10000,true);
+for(const rows of Object.values(a.shards))for(const r of rows){
+ assert.equal(r.model_input.local_material_7x7[3][2],"s");
+ assert.equal(r.model_input.local_material_7x7[3][4],"m");
+ if(r.task==="delayed_material_law"){
+  const e=r.model_input.history.history_events[0];
+  assert.deepEqual(e.traversal_costs,e.law==="DRY"?{SAND:1,METAL:7}:{SAND:7,METAL:1});
+ }
+}
 console.log("PASS v11: paired counterfactuals, last32 alias, route legality, hashes pending CLI generation, split grammar isolation");

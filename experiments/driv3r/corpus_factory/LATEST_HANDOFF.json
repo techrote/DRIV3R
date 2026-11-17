@@ -32,7 +32,7 @@
   "safety": "only model_input features; counterfactual siblings grouped; separate HELDOUT; no primary SLM training in data lane",
   "known_failure": "host-scripted external-synthetic preludes, one oracle-labelled post-prelude decision; independent native ABI and full model-controlled rollouts not qualified",
   "next_consumer_experiment": "TRAIN/DEV full vs last32 vs zero-history on same pinned SLM, freeze checkpoint/hyperparams, then HELDOUT grammar shift and independent closed-loop synthetic challenge; report legal actions, paired accuracy, latency/RSS and negative outcomes",
-  "source_git_blob": "02c9687c3e8e97de3d7a03af0473d8985edfed7d",
+  "source_git_blob": "updated in source-matched next commit evidence ledger",
   "default_manifest": "experiments/driv3r/corpus_factory/V11_DEFAULT_MANIFEST.json",
   "metrics": {
     "counts": {
@@ -85,20 +85,21 @@
     "shards": {
       "TRAIN": {
         "rows": 1536,
-        "sha256": "d04cd14c109e0c8fa389c2c58791c03ec4c7306625d0c085edbef8dfcc9b5dc6",
-        "bytes": 11687034
+        "bytes": 11707002,
+        "sha256": "98e39823bdee55a3576704f7394183e51bf79a61c93fa39f0e83c6020988b50c"
       },
       "DEV": {
         "rows": 576,
-        "sha256": "28118499ee8e768f60b0a2d25f568b22aa176d24b3b39675896174124e414f91",
-        "bytes": 4506714
+        "bytes": 4514202,
+        "sha256": "ccec8834b0d7962801c34bbd3ae3fd65a45bea88cc893fb536cb60073a8900d7"
       },
       "HELDOUT": {
         "rows": 576,
-        "sha256": "76444f56d1852d5daab6aeb79141f09ac1918b76bc76ea8d984ed51ac3c6ade1",
-        "bytes": 4612320
+        "bytes": 4619808,
+        "sha256": "af7395afebcb60fc82bb2cab4b9079f62ffc7cd13a1f60521188c94a034b3132"
       }
     },
-    "qualification": "two independent pure V8 deterministic full-default generations, pair/legal/alias checks; native Node CLI integration not executed"
+    "qualification": "two full deterministic V8 generations and paired alias/safety checks; Node CLI has not been executed; SHA256 cross-checked abc test vector",
+    "material_consistency": "explicit west sand/east metal corridor tokens match dated DRY/WET law receipt and oracle route weights"
   }
 }

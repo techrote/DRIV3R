@@ -32,3 +32,11 @@ Two independent V8 runs of the committed source's pure dataset generator produce
 - HELDOUT: 576 rows; 4612320 bytes; SHA-256 `76444f56d1852d5daab6aeb79141f09ac1918b76bc76ea8d984ed51ac3c6ade1`
 
 All 2,688 rows cover 1,344 balanced counterfactual pairs and 448 worlds. The host prelude validator counted 222,976 cardinal movement steps, 65,408 accepted synthetic paint receipts and zero protected-cell entries. The corpus and SHA metadata remain locally generated and are **not yet immutable GitHub Actions artifacts**.
+
+## Source-matched material-consistency remediation
+
+The initial v11 generator emitted randomly mixed material tokens on traversable left/right corridors while the material-law oracle treated the entire western branch as sand and eastern branch as metal. That was physically inconsistent. Corrected the synthetic host's rendered corridor tokens to west=sand / east=metal, left the surrounding material noise and protected cells unchanged, and added explicit per-material costs to the old law-change receipt. Revalidated the full default corpus and regenerated the SHA-256 shard manifest. This correction supersedes previous v11 shard hashes; no earlier default corpus was published as an Actions artifact.
+
+- TRAIN: 1536 rows, 11707002 bytes; SHA-256 `98e39823bdee55a3576704f7394183e51bf79a61c93fa39f0e83c6020988b50c`
+- DEV: 576 rows, 4514202 bytes; SHA-256 `ccec8834b0d7962801c34bbd3ae3fd65a45bea88cc893fb536cb60073a8900d7`
+- HELDOUT: 576 rows, 4619808 bytes; SHA-256 `af7395afebcb60fc82bb2cab4b9079f62ffc7cd13a1f60521188c94a034b3132`

@@ -43,7 +43,7 @@ function generateDataset(styleSeeds=16){
     const [x,y]=p;if(x<0||y<0||x>=w.w||y>=w.h)return "#";
     if(w.protectedCells.has(key(p)))return "P";
     const z=h32("v11-mat/"+w.style+"/"+key(p))%7;
-    return w.open.has(key(p))?[".",".","s","m","r",".","w"][z]:["#","s","m","r","#","#","w"][z];
+    if(w.open.has(key(p)))return x<w.cx?"s":x>w.cx?"m":".";return ["#","s","m","r","#","#","w"][z];
   }
   function view(w,p){
     const out=[];for(let dy=-3;dy<=3;dy++){
@@ -140,7 +140,7 @@ function generateDataset(styleSeeds=16){
       target=nextAction(best.path);
       context={objective:"minimise traversal cost under most recent remote material-law receipt",
         goal,executed_positions:path,history_events:[
-          {step:0,kind:"material_law_changed",law,west_material:"SAND",east_material:"METAL"},
+          {step:0,kind:"material_law_changed",law,west_material:"SAND",east_material:"METAL",traversal_costs:law==="DRY"?{SAND:1,METAL:7}:{SAND:7,METAL:1}},
           {step:path.length-18,kind:"ambient_status",change:"none"},
           {step:path.length-4,kind:"ambient_status",change:"none"}]};
       controlContext={objective:context.objective,goal,executed_positions:path.slice(-32),
