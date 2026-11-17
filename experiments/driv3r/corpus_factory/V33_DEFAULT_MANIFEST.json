@@ -1,0 +1,141 @@
+{
+  "schema": "driv3r/corpus_factory/offpolicy-recovery-v33/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "offpolicy_recovery_v33.js",
+  "generator_sha256": "4deb78bb348c8d7c395e4cf23994085f0d08cbbb51ec675dd4aa5e0783b7aaad",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "quick": false,
+  "oracle": "exact shortest successful suffix by v32 reverse BFS, five ternary target statuses, dynamic latched gate",
+  "challenge": "Matched four-way remote-error history; legal wrong-first navigation is genuinely executed, then independently certified optimal terminal recovery; per-legal-action regret available as supervised preference targets.",
+  "information_separation": "oracle_action_costs, accepted intervention, episode metadata and labels are teacher-only; never supply as model observation.",
+  "caveats": [
+    "Synthetic host, not native CyberSand.",
+    "Older remote wrong paint and gate opener are scripted host-accepted actions.",
+    "Only navigation mistakes injected after the agent start; no autonomous neural policy evaluated.",
+    "Model latency/RSS and checkpoint are not measured."
+  ],
+  "first_action_recent64_uniform_ceiling": 0.25,
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "worlds_considered": 64,
+      "qualified_four_way_families": 64,
+      "rejected": [],
+      "episodes": 512,
+      "clean_episodes": 256,
+      "offpolicy_recovery_episodes": 256,
+      "decisions": 14912,
+      "corrective_erasures": 1024,
+      "accepted_detrimental_first_actions": 256,
+      "total_proven_first_action_regret": 512,
+      "clean_suffix_steps": 7328,
+      "recovery_suffix_steps": 7584,
+      "train_zero_weight": 0,
+      "unique_full_inputs": 14912,
+      "first_actions_clean": {
+        "MOVE_W": 64,
+        "MOVE_E": 64,
+        "MOVE_S": 64,
+        "BACKTRACK": 64
+      },
+      "strict_gate_causal_clean": 64
+    },
+    "DEV": {
+      "groups": 4,
+      "worlds_considered": 32,
+      "qualified_four_way_families": 32,
+      "rejected": [],
+      "episodes": 256,
+      "clean_episodes": 128,
+      "offpolicy_recovery_episodes": 128,
+      "decisions": 12544,
+      "corrective_erasures": 512,
+      "accepted_detrimental_first_actions": 128,
+      "total_proven_first_action_regret": 256,
+      "clean_suffix_steps": 6208,
+      "recovery_suffix_steps": 6336,
+      "train_zero_weight": 0,
+      "unique_full_inputs": 12544,
+      "first_actions_clean": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "strict_gate_causal_clean": 32
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "worlds_considered": 32,
+      "qualified_four_way_families": 32,
+      "rejected": [],
+      "episodes": 256,
+      "clean_episodes": 128,
+      "offpolicy_recovery_episodes": 128,
+      "decisions": 17024,
+      "corrective_erasures": 512,
+      "accepted_detrimental_first_actions": 128,
+      "total_proven_first_action_regret": 256,
+      "clean_suffix_steps": 8448,
+      "recovery_suffix_steps": 8576,
+      "train_zero_weight": 0,
+      "unique_full_inputs": 17024,
+      "first_actions_clean": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "strict_gate_causal_clean": 32
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 512,
+      "bytes": 12017440,
+      "sha256": "fce48547811ad2fc2225bc6ad7770891f531a341f95732557f929d81c109f887"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 14912,
+      "bytes": 36010868,
+      "sha256": "574bcb2648582580a7eb11b9163b38812205f56dca36e02e696b1004d7f7303d"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 7156608,
+      "sha256": "3e3b36f8bfd74b405242c36c373557b015d8e88fb94c59dabf4f32acba489867"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 12544,
+      "bytes": 35985120,
+      "sha256": "6ba9f54289c9366ada840766e12174ce61887882ad4d459584baa6757717a355"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 8178688,
+      "sha256": "ba951adc907a62c15502b2bdb3ebba5600345d7665ae125c16a5dae20498d82f"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 17024,
+      "bytes": 56251008,
+      "sha256": "6a75e09e2d89118ee496bd3ead559d194c41166f58441256f8992116563fd61a"
+    }
+  }
+}
