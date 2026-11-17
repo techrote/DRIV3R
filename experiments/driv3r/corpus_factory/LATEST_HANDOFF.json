@@ -6,62 +6,131 @@
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
   "draft_hold": true,
-  "current_version": 28,
-  "status": "LOCAL_CORPUS_REPRODUCED; NO_REAL_SLM_OR_NATIVE_CYBERSAND_ACCEPTANCE",
-  "generator": "remote_error_alias_v28.js",
-  "generator_sha256": "c94a1f563193ca1edc78555a2a2b20eab06732cf28e196b1effe450214b811fb",
-  "manifest": "V28_DEFAULT_MANIFEST.json",
-  "manifest_sha256": "c33f0ec1df1a9338cd535eaa18154a3a2ae74bf05fbe42ed221bd8ca450c6bc6",
+  "current_version": 29,
+  "status": "FULL_LOCAL_CORPUS_REPRODUCED; SYNTHETIC_ONLY; NO_REAL_SLM_OR_NATIVE_ACCEPTANCE",
+  "generator": "compound_remote_v29.js",
+  "generator_sha256": "8f4aac216b5e2da7dcd2d9600b0b9533190fc31cc8f8c5eb5fa70b1b5616c386",
+  "manifest": "V29_DEFAULT_MANIFEST.json",
+  "manifest_sha256": "95eb2d10720fbf2bb278d338d55faa0f377ec4c608a67f546813fbd39687f643",
   "best_checkpoint": null,
-  "latest_verified_local_corpus": {
-    "pairs": 122,
-    "episodes": 244,
-    "decisions": 5212,
-    "expert_corrective_erase": 244,
-    "TRAIN": {
-      "pairs": 59,
-      "episodes": 118,
-      "decisions": 2226,
-      "duplicate_zero_weight": 296
+  "checkpoint_artifact": null,
+  "corpus": {
+    "pairs": 115,
+    "episodes": 230,
+    "decisions": 5086,
+    "expert_corrective_erase": 460,
+    "split_metrics": {
+      "TRAIN": {
+        "pairs": 59,
+        "episodes": 118,
+        "decisions": 2296,
+        "erases": 236,
+        "zero_weight": 304,
+        "missing_strict_worlds": [
+          {
+            "group": 1,
+            "variant": 6
+          },
+          {
+            "group": 3,
+            "variant": 6
+          },
+          {
+            "group": 4,
+            "variant": 7
+          },
+          {
+            "group": 5,
+            "variant": 6
+          },
+          {
+            "group": 7,
+            "variant": 6
+          }
+        ]
+      },
+      "DEV": {
+        "pairs": 28,
+        "episodes": 56,
+        "decisions": 1270,
+        "erases": 112,
+        "zero_weight": 0,
+        "missing_strict_worlds": [
+          {
+            "group": 1,
+            "variant": 6
+          },
+          {
+            "group": 2,
+            "variant": 7
+          },
+          {
+            "group": 3,
+            "variant": 6
+          },
+          {
+            "group": 4,
+            "variant": 7
+          }
+        ]
+      },
+      "HELDOUT": {
+        "pairs": 28,
+        "episodes": 56,
+        "decisions": 1520,
+        "erases": 112,
+        "zero_weight": 0,
+        "missing_strict_worlds": [
+          {
+            "group": 1,
+            "variant": 7
+          },
+          {
+            "group": 2,
+            "variant": 7
+          },
+          {
+            "group": 3,
+            "variant": 7
+          },
+          {
+            "group": 4,
+            "variant": 7
+          }
+        ]
+      }
     },
-    "DEV": {
-      "pairs": 31,
-      "episodes": 62,
-      "decisions": 1356
-    },
-    "HELDOUT": {
-      "pairs": 32,
-      "episodes": 64,
-      "decisions": 1630
-    },
-    "all_episodes_terminal_success": true,
-    "two_independent_full_generations_byte_identical": true,
-    "observation_hash_replay": "5212/5212",
-    "min_wrong_choice_regret": 2,
-    "cross_split_exact_input_overlap": 0,
-    "cross_split_geometry_overlap": 0,
-    "complete_input_target_conflicts": 0
+    "strict_pair_min_wrong_choice_regret": 2,
+    "strict_pair_min_remote_edges": 3,
+    "restricted_first_action_theoretical_ceiling": 0.5,
+    "independent_full_generations_byte_identical": true,
+    "observation_sha256_reconstruction": "5086/5086",
+    "complete_input_target_conflicts": 0,
+    "cross_split_world_geometry_overlap": 0,
+    "cross_split_exact_input_overlap": 0
   },
-  "challenge": "Paired remote wrong-material painting locations with identical current legal observations and last-64 histories; distinct first legal repair actions, minimum 2-step suffix regret.",
-  "restricted_first_action_theoretical_ceiling": 0.5,
   "generator_cpu": {
-    "second_full_wall_seconds": 36.19,
-    "second_full_peak_rss_kib": 595080
+    "first_full_wall_s": 34.11,
+    "first_full_peak_rss_kib": 540396,
+    "second_full_wall_s": 34.69,
+    "second_full_peak_rss_kib": 486488
   },
   "negative_results": [
-    "Six out of 128 candidate worlds lacked a qualifying strict pair: five TRAIN and one DEV.",
-    "296 exact repeated TRAIN observations zero-weighted; not additional unique examples.",
-    "No actual model weights updated; no checkpoint inference metrics; no native CyberSand evaluation."
+    "13/128 candidate worlds rejected for lack of strict paired contrasts",
+    "304 exact TRAIN repeats downweighted to zero",
+    "No LFM/Sprocket root forwards or optimizer updates in this lane; no model latency/RSS measures; no native CyberSand evaluation."
   ],
+  "challenge": "Two remote wrong-material cells in a synthetic gated graph; after 160 accepted distractor moves, identical survey/local view/legal/recent64 require opposite optimal first recovery actions; both require >=2 suffix regret for the wrong action.",
   "limitations": [
-    "Synthetic graph host and static remote survey permit symbolic reconstruction.",
-    "Prelabel paint/intervention and 64+ drift movements scripted; suffixes oracle, not learned model rollouts.",
-    "Strict near-alias scenarios do not prove generalization to native CyberSand or exclude all grammar shortcuts.",
-    "Dataset shards not yet uploaded as immutable GitHub Actions artifact."
+    "Synthetic three-target graph and symbolic oracle; not native CyberSand.",
+    "Prelabel intervention and drift scripted, oracle controls suffix.",
+    "Full old survey and old paint receipts permit a symbolic memory interpreter.",
+    "Generated JSONL is reproducible locally, not yet pinned in immutable Actions artifacts."
   ],
-  "next_consumer_experiment": "Pinned LFM2.5-350M or Sprocket-500M model training using TRAIN and DEV, fully closed-loop HELDOUT paired repair, full-history versus last64 versus survey-only; measure accuracy, realized regret, completion, residual wrong paint, illegal actions, actual latency p50/p95 and RSS.",
+  "cross_lane_consumer_blocker": "LFM350 GP350-018 and Sprocket-500M handoffs report no pinned root-model execution possible in this executor; this lane does not train policies.",
+  "next_consumer_experiment": "Pinned actual LFM350/Sprocket root LoRA with TRAIN->DEV selection->single held-out opening; closed-loop paired two-hit repair, full-history vs last64 vs survey-only, report terminal success, realized regret, exact contamination removal, latency p50/p95 and model RSS; no proxy tiny-network substitution.",
+  "synthetic_not_native": true,
   "no_paid_api_gpu": true,
   "no_other_lab_edits": true,
-  "no_main_edits": true,
-  "synthetic_not_native": true
+  "no_main_edits": true
 }
