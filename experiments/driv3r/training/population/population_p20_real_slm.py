@@ -60,6 +60,9 @@ def root_preflight(root, expected_sha256, *, require_packages=True):
         for name in ("config.json", "tokenizer.json", "model.safetensors"):
             if not (path / name).is_file():
                 result["failures"].append("missing "+name)
+        for name in ("config.json","tokenizer.json"):
+            file=path/name
+            if file.is_file():result[name+"_sha256"]=digest(file)
         if weights.is_file():
             result["model_safetensors_sha256"] = digest(weights)
             if result["model_safetensors_sha256"] != expected_sha256:
@@ -224,7 +227,10 @@ def evaluation(torch,backbone,tok,head,niche,pairs,horizon):
           for seed,card in pairs]
     latency=[t for row in rows for t in row["latency_ms"]]
     latency.sort()
-    return {"episodes":len(rows),
+    desc=[r["descriptor"] for r in rows]
+    mean_descriptor=[round(statistics.mean(d[i] for d in desc),5)
+                     for i in range(len(desc[0]))]
+    return {"episodes":len(rows), "mean_descriptor":mean_descriptor,
             "inference_latency_p50_ms":round(statistics.median(latency),3),
             "inference_latency_p95_ms":round(latency[int(.95*(len(latency)-1))],3),
             "mean_reward_proxy":round(statistics.mean(r["reward_proxy"] for r in rows),5),
@@ -359,6 +365,15 @@ def main(argv=None):
                     for r in members:
                         r["selection_qualified"]=False
                         r["selection_reward_frontier"]=False
+        # Compare independently trained niche behaviours, not merely reward.
+        # Descriptors are geometry/style proxies, never human artistic ratings.
+        import math
+        report["across_niche_descriptor_diversity"]={}
+        for arm in ("frozen_head","lora"):
+            ds=[r["heldout"]["mean_descriptor"] for r in report["arm_results"] if r["arm"]==arm]
+            distances=[math.dist(a,b) for i,a in enumerate(ds) for b in ds[i+1:]]
+            report["across_niche_descriptor_diversity"][arm]=(
+                round(statistics.mean(distances),5) if distances else None)
         report["status"]="COMPLETED"
     except BaseException as e:
         report["status"]="FAILED"
