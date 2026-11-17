@@ -1,0 +1,610 @@
+{
+  "absence_of_sensor_specific_causality": "sham_conserve matches conserve on trap cases; triggering the guard with completed read budget rather than observed obstacle gives the same trap action stream",
+  "actions_only_from_host_menu": true,
+  "checkpoint_training_this_experiment": false,
+  "heldout_sealed": true,
+  "known_risks": [
+    "heuristic action suppression, not neural recovery understanding",
+    "synthetic action/observation interface only",
+    "two previously trained 1033-parameter checkpoints, not independent new training",
+    "DEVELOPMENT families known from prior work; additional seeds/orientations are not structural HELDOUT",
+    "guard aggressively suppresses STOP even when host offers it; still host legal",
+    "no immutable Actions artifacts"
+  ],
+  "native_validation": false,
+  "original_checkpoint_provenance": {
+    "811": {
+      "parameters": 1033,
+      "prior_source_sha256": {
+        "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+        "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+        "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+        "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+        "menu_alias_lab.py": "ab812b1f21d3de6aa3a51562b82cb2f76f8a67dc15c70d74401dc4a90edbf739",
+        "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+        "recovery_fork_lab.py": "97a569eec43b2a73bd390cc31012c719e33a73af9de7316a6d75356860abfb70",
+        "sensing_probe_lab.py": "848bb5772cc251baa03a41fa83a070d1b5bed53cce87d0ffb90028438df3b800",
+        "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+        "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+        "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+      },
+      "sha256": "69b86b0c49798d6b9124de7409a46ac77375da2e9b8e0fd2498529a27565deaa",
+      "source_campaign": "sequential-probe/1"
+    },
+    "814": {
+      "parameters": 1033,
+      "prior_source_sha256": {
+        "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+        "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+        "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+        "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+        "menu_alias_lab.py": "ab812b1f21d3de6aa3a51562b82cb2f76f8a67dc15c70d74401dc4a90edbf739",
+        "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+        "recovery_fork_lab.py": "97a569eec43b2a73bd390cc31012c719e33a73af9de7316a6d75356860abfb70",
+        "sensing_probe_lab.py": "848bb5772cc251baa03a41fa83a070d1b5bed53cce87d0ffb90028438df3b800",
+        "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+        "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+        "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+      },
+      "sha256": "42b92fc39c9d9a4628377a406db42850411778110d5cef3f55cde9015ea39f38",
+      "source_campaign": "sequential-probe/1"
+    }
+  },
+  "paired": {
+    "combined/open/anti_reverse": {
+      "arm_stops": 1,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 32,
+      "raw_stops": 1,
+      "unchanged": 32,
+      "worse": 0
+    },
+    "combined/open/conserve": {
+      "arm_stops": 1,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 32,
+      "raw_stops": 1,
+      "unchanged": 32,
+      "worse": 0
+    },
+    "combined/open/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        -0.188,
+        5.594
+      ],
+      "improved": 7,
+      "mean_delta": 2.0,
+      "n": 32,
+      "raw_stops": 1,
+      "unchanged": 24,
+      "worse": 1
+    },
+    "combined/trap/anti_reverse": {
+      "arm_stops": 10,
+      "ci95_percentile": [
+        -11.031,
+        21.906
+      ],
+      "improved": 19,
+      "mean_delta": 5.5,
+      "n": 32,
+      "raw_stops": 14,
+      "unchanged": 5,
+      "worse": 8
+    },
+    "combined/trap/conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        25.998,
+        58.845
+      ],
+      "improved": 32,
+      "mean_delta": 41.844,
+      "n": 32,
+      "raw_stops": 14,
+      "unchanged": 0,
+      "worse": 0
+    },
+    "combined/trap/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        25.812,
+        59.562
+      ],
+      "improved": 32,
+      "mean_delta": 41.844,
+      "n": 32,
+      "raw_stops": 14,
+      "unchanged": 0,
+      "worse": 0
+    },
+    "run/open/anti_reverse": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 16,
+      "raw_stops": 0,
+      "unchanged": 16,
+      "worse": 0
+    },
+    "run/open/conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 16,
+      "raw_stops": 0,
+      "unchanged": 16,
+      "worse": 0
+    },
+    "run/open/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        -1.188,
+        2.062
+      ],
+      "improved": 3,
+      "mean_delta": 0.375,
+      "n": 16,
+      "raw_stops": 0,
+      "unchanged": 12,
+      "worse": 1
+    },
+    "run/trap/anti_reverse": {
+      "arm_stops": 3,
+      "ci95_percentile": [
+        1.5,
+        43.938
+      ],
+      "improved": 9,
+      "mean_delta": 22.188,
+      "n": 16,
+      "raw_stops": 6,
+      "unchanged": 5,
+      "worse": 2
+    },
+    "run/trap/conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        19.625,
+        74.938
+      ],
+      "improved": 16,
+      "mean_delta": 47.125,
+      "n": 16,
+      "raw_stops": 6,
+      "unchanged": 0,
+      "worse": 0
+    },
+    "run/trap/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        20.062,
+        74.875
+      ],
+      "improved": 16,
+      "mean_delta": 47.125,
+      "n": 16,
+      "raw_stops": 6,
+      "unchanged": 0,
+      "worse": 0
+    },
+    "validation/open/anti_reverse": {
+      "arm_stops": 1,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 16,
+      "raw_stops": 1,
+      "unchanged": 16,
+      "worse": 0
+    },
+    "validation/open/conserve": {
+      "arm_stops": 1,
+      "ci95_percentile": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "mean_delta": 0.0,
+      "n": 16,
+      "raw_stops": 1,
+      "unchanged": 16,
+      "worse": 0
+    },
+    "validation/open/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        0.062,
+        10.127
+      ],
+      "improved": 4,
+      "mean_delta": 3.625,
+      "n": 16,
+      "raw_stops": 1,
+      "unchanged": 12,
+      "worse": 0
+    },
+    "validation/trap/anti_reverse": {
+      "arm_stops": 7,
+      "ci95_percentile": [
+        -34.689,
+        9.002
+      ],
+      "improved": 10,
+      "mean_delta": -11.188,
+      "n": 16,
+      "raw_stops": 8,
+      "unchanged": 0,
+      "worse": 6
+    },
+    "validation/trap/conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        18.062,
+        57.003
+      ],
+      "improved": 16,
+      "mean_delta": 36.562,
+      "n": 16,
+      "raw_stops": 8,
+      "unchanged": 0,
+      "worse": 0
+    },
+    "validation/trap/sham_conserve": {
+      "arm_stops": 0,
+      "ci95_percentile": [
+        18.311,
+        57.062
+      ],
+      "improved": 16,
+      "mean_delta": 36.562,
+      "n": 16,
+      "raw_stops": 8,
+      "unchanged": 0,
+      "worse": 0
+    }
+  },
+  "partitions": {
+    "run": {
+      "archive_root": "driv3r_loop_guard_20261117_run",
+      "decisions": 15374,
+      "elapsed_seconds": 17.196,
+      "episodes": 128,
+      "manifest_sha256": "d210b8141ecb9c86ba04cdf99e82cd73baf909b1604cb3ea4e6415726ae9310e",
+      "peak_rss_kib": 144400,
+      "summary": {
+        "open/anti_reverse": {
+          "action_counts": {
+            "BACKTRACK": 26,
+            "MOVE_E": 697,
+            "MOVE_N": 362,
+            "MOVE_S": 490,
+            "MOVE_W": 473
+          },
+          "detected": 0,
+          "early_stop": 0,
+          "guarded_actions": 0,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.139268,
+          "mean_paint": 126.375,
+          "mean_recoveries": 1.625,
+          "n": 16
+        },
+        "open/conserve": {
+          "action_counts": {
+            "BACKTRACK": 26,
+            "MOVE_E": 697,
+            "MOVE_N": 362,
+            "MOVE_S": 490,
+            "MOVE_W": 473
+          },
+          "detected": 0,
+          "early_stop": 0,
+          "guarded_actions": 0,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.14416,
+          "mean_paint": 126.375,
+          "mean_recoveries": 1.625,
+          "n": 16
+        },
+        "open/raw": {
+          "action_counts": {
+            "BACKTRACK": 26,
+            "MOVE_E": 697,
+            "MOVE_N": 362,
+            "MOVE_S": 490,
+            "MOVE_W": 473
+          },
+          "detected": 0,
+          "early_stop": 0,
+          "guarded_actions": 0,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.141992,
+          "mean_paint": 126.375,
+          "mean_recoveries": 1.625,
+          "n": 16
+        },
+        "open/sham_conserve": {
+          "action_counts": {
+            "BACKTRACK": 20,
+            "MOVE_E": 715,
+            "MOVE_N": 368,
+            "MOVE_S": 480,
+            "MOVE_W": 465
+          },
+          "detected": 0,
+          "early_stop": 0,
+          "guarded_actions": 1980,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.14648,
+          "mean_paint": 126.75,
+          "mean_recoveries": 1.25,
+          "n": 16
+        },
+        "trap/anti_reverse": {
+          "action_counts": {
+            "BACKTRACK": 126,
+            "MOVE_E": 380,
+            "MOVE_N": 424,
+            "MOVE_S": 521,
+            "MOVE_W": 256,
+            "STOP": 3
+          },
+          "detected": 16,
+          "early_stop": 3,
+          "guarded_actions": 47,
+          "mean_decisions": 106.875,
+          "mean_latency_ms": 0.136283,
+          "mean_paint": 98.812,
+          "mean_recoveries": 7.875,
+          "n": 16
+        },
+        "trap/conserve": {
+          "action_counts": {
+            "BACKTRACK": 68,
+            "MOVE_E": 598,
+            "MOVE_N": 404,
+            "MOVE_S": 588,
+            "MOVE_W": 390
+          },
+          "detected": 16,
+          "early_stop": 0,
+          "guarded_actions": 1916,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.149694,
+          "mean_paint": 123.75,
+          "mean_recoveries": 4.25,
+          "n": 16
+        },
+        "trap/raw": {
+          "action_counts": {
+            "BACKTRACK": 144,
+            "MOVE_E": 312,
+            "MOVE_N": 325,
+            "MOVE_S": 367,
+            "MOVE_W": 222,
+            "STOP": 6
+          },
+          "detected": 16,
+          "early_stop": 6,
+          "guarded_actions": 0,
+          "mean_decisions": 86,
+          "mean_latency_ms": 0.131019,
+          "mean_paint": 76.625,
+          "mean_recoveries": 9,
+          "n": 16
+        },
+        "trap/sham_conserve": {
+          "action_counts": {
+            "BACKTRACK": 68,
+            "MOVE_E": 598,
+            "MOVE_N": 404,
+            "MOVE_S": 588,
+            "MOVE_W": 390
+          },
+          "detected": 16,
+          "early_stop": 0,
+          "guarded_actions": 1916,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.152711,
+          "mean_paint": 123.75,
+          "mean_recoveries": 4.25,
+          "n": 16
+        }
+      }
+    },
+    "validation": {
+      "archive_root": "driv3r_loop_guard_20261117_validation",
+      "decisions": 15024,
+      "elapsed_seconds": 16.432,
+      "episodes": 128,
+      "manifest_sha256": "dbbbba811a5b01baf679998ad7999b4829f1a708402276e32595c99d5b7035e7",
+      "peak_rss_kib": 143776,
+      "summary": {
+        "open/anti_reverse": {
+          "action_counts": {
+            "BACKTRACK": 44,
+            "MOVE_E": 426,
+            "MOVE_N": 596,
+            "MOVE_S": 397,
+            "MOVE_W": 535,
+            "RELOCATE_START": 2,
+            "STOP": 1
+          },
+          "detected": 0,
+          "early_stop": 1,
+          "guarded_actions": 0,
+          "mean_decisions": 125.062,
+          "mean_latency_ms": 0.140374,
+          "mean_paint": 122.125,
+          "mean_recoveries": 2.875,
+          "n": 16
+        },
+        "open/conserve": {
+          "action_counts": {
+            "BACKTRACK": 44,
+            "MOVE_E": 426,
+            "MOVE_N": 596,
+            "MOVE_S": 397,
+            "MOVE_W": 535,
+            "RELOCATE_START": 2,
+            "STOP": 1
+          },
+          "detected": 0,
+          "early_stop": 1,
+          "guarded_actions": 0,
+          "mean_decisions": 125.062,
+          "mean_latency_ms": 0.140375,
+          "mean_paint": 122.125,
+          "mean_recoveries": 2.875,
+          "n": 16
+        },
+        "open/raw": {
+          "action_counts": {
+            "BACKTRACK": 44,
+            "MOVE_E": 426,
+            "MOVE_N": 596,
+            "MOVE_S": 397,
+            "MOVE_W": 535,
+            "RELOCATE_START": 2,
+            "STOP": 1
+          },
+          "detected": 0,
+          "early_stop": 1,
+          "guarded_actions": 0,
+          "mean_decisions": 125.062,
+          "mean_latency_ms": 0.135482,
+          "mean_paint": 122.125,
+          "mean_recoveries": 2.875,
+          "n": 16
+        },
+        "open/sham_conserve": {
+          "action_counts": {
+            "BACKTRACK": 34,
+            "MOVE_E": 442,
+            "MOVE_N": 611,
+            "MOVE_S": 414,
+            "MOVE_W": 545,
+            "RELOCATE_START": 2
+          },
+          "detected": 0,
+          "early_stop": 0,
+          "guarded_actions": 1964,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.145391,
+          "mean_paint": 125.75,
+          "mean_recoveries": 2.25,
+          "n": 16
+        },
+        "trap/anti_reverse": {
+          "action_counts": {
+            "BACKTRACK": 124,
+            "MOVE_E": 232,
+            "MOVE_N": 420,
+            "MOVE_S": 238,
+            "MOVE_W": 312,
+            "STOP": 7
+          },
+          "detected": 16,
+          "early_stop": 7,
+          "guarded_actions": 36,
+          "mean_decisions": 83.312,
+          "mean_latency_ms": 0.12929,
+          "mean_paint": 75.125,
+          "mean_recoveries": 7.75,
+          "n": 16
+        },
+        "trap/conserve": {
+          "action_counts": {
+            "BACKTRACK": 82,
+            "MOVE_E": 499,
+            "MOVE_N": 554,
+            "MOVE_S": 351,
+            "MOVE_W": 562
+          },
+          "detected": 16,
+          "early_stop": 0,
+          "guarded_actions": 1902,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.147378,
+          "mean_paint": 122.875,
+          "mean_recoveries": 5.125,
+          "n": 16
+        },
+        "trap/raw": {
+          "action_counts": {
+            "BACKTRACK": 155,
+            "MOVE_E": 211,
+            "MOVE_N": 526,
+            "MOVE_S": 372,
+            "MOVE_W": 272,
+            "STOP": 8
+          },
+          "detected": 16,
+          "early_stop": 8,
+          "guarded_actions": 0,
+          "mean_decisions": 96.5,
+          "mean_latency_ms": 0.13318,
+          "mean_paint": 86.312,
+          "mean_recoveries": 9.688,
+          "n": 16
+        },
+        "trap/sham_conserve": {
+          "action_counts": {
+            "BACKTRACK": 82,
+            "MOVE_E": 499,
+            "MOVE_N": 554,
+            "MOVE_S": 351,
+            "MOVE_W": 562
+          },
+          "detected": 16,
+          "early_stop": 0,
+          "guarded_actions": 1902,
+          "mean_decisions": 128,
+          "mean_latency_ms": 0.145724,
+          "mean_paint": 122.875,
+          "mean_recoveries": 5.125,
+          "n": 16
+        }
+      }
+    }
+  },
+  "research": "synthetic DEVELOPMENT only, no model training this run",
+  "source_sha256": {
+    "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+    "loop_guard_lab.py": "4c89373c31596078695c04df9a6fa59962c2b01840850b26b82fff5e2999eca6",
+    "menu_alias_lab.py": "ab812b1f21d3de6aa3a51562b82cb2f76f8a67dc15c70d74401dc4a90edbf739",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "recovery_fork_lab.py": "97a569eec43b2a73bd390cc31012c719e33a73af9de7316a6d75356860abfb70",
+    "sensing_probe_lab.py": "848bb5772cc251baa03a41fa83a070d1b5bed53cce87d0ffb90028438df3b800",
+    "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "version": "loop-guard/1"
+}
