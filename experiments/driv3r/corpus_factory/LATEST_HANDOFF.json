@@ -6,131 +6,82 @@
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
   "draft_hold": true,
-  "current_version": 29,
-  "status": "FULL_LOCAL_CORPUS_REPRODUCED; SYNTHETIC_ONLY; NO_REAL_SLM_OR_NATIVE_ACCEPTANCE",
-  "generator": "compound_remote_v29.js",
-  "generator_sha256": "8f4aac216b5e2da7dcd2d9600b0b9533190fc31cc8f8c5eb5fa70b1b5616c386",
-  "manifest": "V29_DEFAULT_MANIFEST.json",
-  "manifest_sha256": "95eb2d10720fbf2bb278d338d55faa0f377ec4c608a67f546813fbd39687f643",
+  "current_version": 30,
+  "status": "QUALIFIED_SYNTHETIC_DUAL_HISTORY_COUNTERFACTUAL; NO_NATIVE_OR_REAL_SLM_EVAL",
+  "generator": "dual_history_v30.js",
+  "generator_sha256": "75dc358b9ecd3cc1d79838b0aab8b1ab9572904dfe10790de4a06066814d6e43",
+  "bounded_view": "bounded_view_v30.js",
+  "bounded_view_sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89",
+  "manifest": "V30_DEFAULT_MANIFEST.json",
+  "manifest_sha256": "eba2db423ad9f252316ff5e4060edf37049fa26ded6f1da536586ca36c02053e",
   "best_checkpoint": null,
   "checkpoint_artifact": null,
   "corpus": {
-    "pairs": 115,
-    "episodes": 230,
-    "decisions": 5086,
-    "expert_corrective_erase": 460,
-    "split_metrics": {
+    "synthetic_host_not_native": true,
+    "pairs": 128,
+    "episodes": 256,
+    "decisions": 7104,
+    "corrective_erasures": 512,
+    "splits": {
       "TRAIN": {
-        "pairs": 59,
-        "episodes": 118,
-        "decisions": 2296,
-        "erases": 236,
-        "zero_weight": 304,
-        "missing_strict_worlds": [
-          {
-            "group": 1,
-            "variant": 6
-          },
-          {
-            "group": 3,
-            "variant": 6
-          },
-          {
-            "group": 4,
-            "variant": 7
-          },
-          {
-            "group": 5,
-            "variant": 6
-          },
-          {
-            "group": 7,
-            "variant": 6
-          }
-        ]
+        "pairs": 64,
+        "episodes": 128,
+        "decisions": 2368,
+        "erases": 256
       },
       "DEV": {
-        "pairs": 28,
-        "episodes": 56,
-        "decisions": 1270,
-        "erases": 112,
-        "zero_weight": 0,
-        "missing_strict_worlds": [
-          {
-            "group": 1,
-            "variant": 6
-          },
-          {
-            "group": 2,
-            "variant": 7
-          },
-          {
-            "group": 3,
-            "variant": 6
-          },
-          {
-            "group": 4,
-            "variant": 7
-          }
-        ]
+        "pairs": 32,
+        "episodes": 64,
+        "decisions": 2016,
+        "erases": 128
       },
       "HELDOUT": {
-        "pairs": 28,
-        "episodes": 56,
-        "decisions": 1520,
-        "erases": 112,
-        "zero_weight": 0,
-        "missing_strict_worlds": [
-          {
-            "group": 1,
-            "variant": 7
-          },
-          {
-            "group": 2,
-            "variant": 7
-          },
-          {
-            "group": 3,
-            "variant": 7
-          },
-          {
-            "group": 4,
-            "variant": 7
-          }
-        ]
+        "pairs": 32,
+        "episodes": 64,
+        "decisions": 2720,
+        "erases": 128
       }
     },
-    "strict_pair_min_wrong_choice_regret": 2,
-    "strict_pair_min_remote_edges": 3,
-    "restricted_first_action_theoretical_ceiling": 0.5,
-    "independent_full_generations_byte_identical": true,
-    "observation_sha256_reconstruction": "5086/5086",
-    "complete_input_target_conflicts": 0,
-    "cross_split_world_geometry_overlap": 0,
-    "cross_split_exact_input_overlap": 0
+    "qualifiers": {
+      "qualified_worlds": "128/128",
+      "oracle_episodes_completed": "256/256",
+      "reconstructed_sha256": "7104/7104",
+      "accepted_oracle_receipts": "7104/7104",
+      "first_choice_balanced": {
+        "BACKTRACK": 128,
+        "MOVE_E": 128
+      },
+      "min_wrong_choice_regret_steps": 2,
+      "heldout_min_remote_edges": 8,
+      "exact_input_conflicts": 0,
+      "cross_split_exact_input_overlap": 0,
+      "cross_split_topology_overlap": 0,
+      "exact_train_duplicate_inputs": 0,
+      "no_memory_projection_alias_pairs": 128,
+      "last_paint_only_projection_alias_pairs": 128,
+      "theoretical_restricted_first_action_ceiling": 0.5
+    },
+    "shard_publication": "six reproducible local JSONL shards, SHA-256 in manifest; immutable Actions artifact not yet available",
+    "repeated_full_generation_byte_identical": true,
+    "peak_rss_kib_second_full": 181132,
+    "wall_s_second_full": 4.2
   },
-  "generator_cpu": {
-    "first_full_wall_s": 34.11,
-    "first_full_peak_rss_kib": 540396,
-    "second_full_wall_s": 34.69,
-    "second_full_peak_rss_kib": 486488
-  },
+  "scientific_improvement": "v29 last prior PAINT receipt could expose remote contamination arm. v30 holds the latest PAINT receipt identical, while an earlier remote PAINT differs, and changes optimal first action after 160 accepted legal distractor movements.",
+  "host_legal": "synthetic Host action application and receipts; not native CyberSand action ABI",
   "negative_results": [
-    "13/128 candidate worlds rejected for lack of strict paired contrasts",
-    "304 exact TRAIN repeats downweighted to zero",
-    "No LFM/Sprocket root forwards or optimizer updates in this lane; no model latency/RSS measures; no native CyberSand evaluation."
+    "No real LFM350/Sprocket forward passes, optimizer updates, inference latency or model RSS measured here.",
+    "A symbolic interpreter of complete ordered old PAINT receipts can solve the pairs; learned memory competence untested.",
+    "Scripted, but accepted host-legal prelabel painting and navigation; only three targets, schematic orthogonal graph.",
+    "Prompt cap measured in 2048 JSON characters, not tokenizer tokens.",
+    "No immutable Actions corpus artifact dispatched; no paid compute."
   ],
-  "challenge": "Two remote wrong-material cells in a synthetic gated graph; after 160 accepted distractor moves, identical survey/local view/legal/recent64 require opposite optimal first recovery actions; both require >=2 suffix regret for the wrong action.",
-  "limitations": [
-    "Synthetic three-target graph and symbolic oracle; not native CyberSand.",
-    "Prelabel intervention and drift scripted, oracle controls suffix.",
-    "Full old survey and old paint receipts permit a symbolic memory interpreter.",
-    "Generated JSONL is reproducible locally, not yet pinned in immutable Actions artifacts."
-  ],
-  "cross_lane_consumer_blocker": "LFM350 GP350-018 and Sprocket-500M handoffs report no pinned root-model execution possible in this executor; this lane does not train policies.",
-  "next_consumer_experiment": "Pinned actual LFM350/Sprocket root LoRA with TRAIN->DEV selection->single held-out opening; closed-loop paired two-hit repair, full-history vs last64 vs survey-only, report terminal success, realized regret, exact contamination removal, latency p50/p95 and model RSS; no proxy tiny-network substitution.",
-  "synthetic_not_native": true,
-  "no_paid_api_gpu": true,
+  "cross_lane_evidence": {
+    "lfm350": "GP350-018 source-only preflight; root model inference unavailable in executor; historical frozen LoRA baseline GP350-006 step96",
+    "sprocket": "Pinned 500M root model/dependencies unavailable, no workflow_dispatch; no real LoRA update"
+  },
+  "next_consumer_experiment": "Pinned actual LFM350/Sprocket TRAIN->DEV->HELDOUT, blind paired complete closed-loop recovery with full durable history vs latest-PAINT-only vs no-memory/recent64; report terminal success, contamination removal, suffix regret, raw preference illegality, p50/p95 CPU forward latency and model RSS, exact model/checkpoint/seed hashes.",
   "no_other_lab_edits": true,
-  "no_main_edits": true
+  "no_main_edits": true,
+  "no_paid_API_GPU": true,
+  "no_native_game_edits": true
 }

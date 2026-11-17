@@ -1,0 +1,147 @@
+{
+  "schema": "driv3r/corpus_factory/dual-history-v30/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "dual_history_v30.js",
+  "generator_sha256": "75dc358b9ecd3cc1d79838b0aab8b1ab9572904dfe10790de4a06066814d6e43",
+  "dependencies": [
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    },
+    {
+      "file": "remote_error_alias_v28.js",
+      "sha256": "c94a1f563193ca1edc78555a2a2b20eab06732cf28e196b1effe450214b811fb"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "oracle": "v26 terminal reverse-BFS shortest-successful suffix",
+  "quick": false,
+  "split_worlds_disjoint": true,
+  "challenge": "Two remote wrong-material cells, 160 accepted legal distractor moves, identical most recent PAINT receipt, equal recent64 and no-memory view, different earlier wrong location and optimal first move, >=2 strict suffix regret.",
+  "restricted_first_action_theoretical_ceiling": 0.5,
+  "last_paint_only_first_action_theoretical_ceiling": 0.5,
+  "bounded_view_source_sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89",
+  "warning": "Only observation reconstructed from state + initial_history + events_added + positions_added is model input. Episode metadata, hidden_interventions, oracle costs, pair IDs, split and targets are held out from policy.",
+  "limitations": [
+    "Synthetic graph, only 3 paint targets and two-hit episodes, host-legal scripted prelude.",
+    "Symbols, complete remote survey and full history permit deterministic solver.",
+    "No real SLM training or native CyberSand replay."
+  ],
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "worlds_considered": 64,
+      "pairs": 64,
+      "missing_strict_worlds": [],
+      "episodes": 128,
+      "decisions": 2368,
+      "erases": 256,
+      "first_action": {
+        "BACKTRACK": 64,
+        "MOVE_E": 64
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 3,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_input_count": 2368
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "pairs": 32,
+      "missing_strict_worlds": [],
+      "episodes": 64,
+      "decisions": 2016,
+      "erases": 128,
+      "first_action": {
+        "BACKTRACK": 32,
+        "MOVE_E": 32
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 5,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_input_count": 2016
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "pairs": 32,
+      "missing_strict_worlds": [],
+      "episodes": 64,
+      "decisions": 2720,
+      "erases": 128,
+      "first_action": {
+        "BACKTRACK": 32,
+        "MOVE_E": 32
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 8,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_input_count": 2720
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 128,
+      "bytes": 2531520,
+      "sha256": "37fcccfd6c7f6654704f7fc364ee62e47075912da378982e851237aca3b12259"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 2368,
+      "bytes": 4596624,
+      "sha256": "5241f08d8f206adad73711555daa00ba0f7f80c5dedd9e367de18b08907f4566"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 64,
+      "bytes": 1386064,
+      "sha256": "6d2965662011bd3926d14712809dc49ce3fdb70a0739c1d5a5c09b537fc39651"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 2016,
+      "bytes": 4292264,
+      "sha256": "f9b0954daabdd1c83ab2dceee389ea1dfe3ed67fe5076ffad8e0cc5d3f12d8e5"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 64,
+      "bytes": 1504480,
+      "sha256": "3e4d94ba8b0ce8ba6219fd87f9742ef28dc18940bc6a58587cdd2182e752616d"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 2720,
+      "bytes": 6261824,
+      "sha256": "1fbf6175d451821e45033f83c5a89555fb27d33ad177ecba8781aca1e006d1e9"
+    }
+  }
+}
