@@ -1,0 +1,98 @@
+{
+  "schema": "driv3r/corpus_factory/compact-v24/manifest",
+  "label": "LOSSLESS synthetic-v23 corpus replay; NOT native CyberSand",
+  "generator": "compact_trace_v24.js",
+  "parent": "noncommutative_mission_v23.js",
+  "generator_sha256": "c7c39280f0cadb29b2fd0dfa3e2f5e516d8e0625c3dcfec3dfe51515bd52c755",
+  "parent_sha256": "4ab6dde5bc08fe9ee5860912f3ed8c0cd9e739e309b2418a32c744aa0b918fa7",
+  "quick": false,
+  "world_and_programme_split_protection": true,
+  "split_disjoint_programmes": true,
+  "reconstruction_sha256_verification_available": true,
+  "splits": {
+    "TRAIN": {
+      "world_groups": 12,
+      "episodes": 192,
+      "decisions": 12496,
+      "unique_inputs": 12000,
+      "exact_duplicate_inputs": 496,
+      "zero_weight_train_duplicates": 496,
+      "corrective_erases": 384,
+      "accepted_paints": 1344,
+      "first_target_state_balance": [
+        48,
+        48,
+        48,
+        48
+      ]
+    },
+    "DEV": {
+      "world_groups": 6,
+      "episodes": 96,
+      "decisions": 10032,
+      "unique_inputs": 9984,
+      "exact_duplicate_inputs": 48,
+      "zero_weight_train_duplicates": 0,
+      "corrective_erases": 352,
+      "accepted_paints": 832,
+      "first_target_state_balance": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    "HELDOUT": {
+      "world_groups": 6,
+      "episodes": 96,
+      "decisions": 15392,
+      "unique_inputs": 15344,
+      "exact_duplicate_inputs": 48,
+      "zero_weight_train_duplicates": 0,
+      "corrective_erases": 528,
+      "accepted_paints": 1008,
+      "first_target_state_balance": [
+        24,
+        24,
+        24,
+        24
+      ]
+    }
+  },
+  "episodes": 384,
+  "decisions": 37920,
+  "raw_observation_bytes_estimate": 709723536,
+  "compact_bytes": 134516562,
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "1fc79227fbb4e2e5420a32a6f6c6f6dbbbd928b99c491d679570a4c0ad55a471",
+      "bytes": 1569704,
+      "rows": 192
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "31caee837221a128e482793036c543efe4c91a539bbacd9b5e0ce19da234eba1",
+      "bytes": 43069072,
+      "rows": 12496
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "dd5e315e5701ef706f8b7b8347f1334ab7a928f7bca8b7e098aa0be894c1a465",
+      "bytes": 1027652,
+      "rows": 96
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "2638ede42bf9ca3302aaa3c91dca1f5b40b72fa73cd3c611d609b9b5bf2a6674",
+      "bytes": 34521174,
+      "rows": 10032
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "a62bb3617d5b3dc0e645e7ecf29420be1af35315d8f28c2314e01a9b8022a4fc",
+      "bytes": 1333620,
+      "rows": 96
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "a8d2a68041490b72906c8bbdaedd27d8bb06a641038a5b039703a0fe89b67c04",
+      "bytes": 52995340,
+      "rows": 15392
+    }
+  }
+}
