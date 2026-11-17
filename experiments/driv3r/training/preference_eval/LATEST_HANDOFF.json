@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P19",
-  "status": "P19_ORIGINAL_CROSSMODEL_ASSISTANT_VISUAL_PILOT_TRAINED_RANKER_FAILED_SOURCE_TRANSFER_NOT_PROMOTED",
-  "latest_findings": "P19_FINDINGS.md",
+  "latest": "P20",
+  "status": "P20_ORIGINAL_PRODUCER_STOP_PREFIX_CONFOUND_CONFIRMED_NO_RANKER_PROMOTION",
+  "latest_findings": "P20_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -51,11 +51,11 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "P19 original cross-source model-derived visual pilot: trained pairwise probes 30/94 correct versus simple niche rule 64/94 and distinct-cell coverage 73/94; same 28 matched original pairs rated for four niches; subjective assessor source-cohort blinding was compromised; NO ranker promotion.",
-  "artifact_status": "P19_LOCAL_CPU_ORIGINAL_SOURCES_AND_TRAINED_TINY_PROBES_NOT_DRIV3R_ACTIONS_IMMUTABLE",
-  "local_tests": "P19 10/10 PASS; source-original SHA-pinned, no human labels",
+  "negative_result": "P20 reverified original P19/P18/P10 sources: 18/18 W16 style pairs are SAME frozen W16 movement actions until early STOP, so only continuation length differs; 53/57 non-tie assistant (not human) ratings prefer longer; only 10 cross-model historical nonidentical pairs from three original world blocks. P19 proxy ranker remains rejected.",
+  "artifact_status": "P20_LOCAL_CPU_ORIGINAL_INPUT_ZIP_CHECKED_NOT_ACTIONS_IMMUTABLE; source/tests/audit committed; original A4 SVGs regenerable",
+  "local_tests": "P20 strict source-auditor 2/2 PASS; P19 producer check re-executed; 18/18 W16 STOP-only prefix verified",
   "new_model_forwards": 0,
-  "new_optimizer_steps": 1600,
+  "new_optimizer_steps": 0,
   "human_ratings": 0,
   "blockers": [
     "No valid blind owner/human comparisons; all 52 niche ballot rows blank. A trained reward ranker would be circular synthetic pseudo-aesthetic scoring.",
@@ -64,9 +64,12 @@
     "No GitHub Actions immutable P18 artifact; original source ZIPs and manifest exist in the checksum-verified local evidence pack, not Git; models cannot be re-run here without pinned root weights, CPU host and opt-in dispatch.",
     "P19 original 28 pairs span correlated P10 W16 and P18 historical sources; 112 GPT-6-assistant visual labels only (no owner/human), visual assessor saw early cohort-prefixed images.",
     "Pinned real LFM350/SmolLM2/Franken full pretrained forward inference is unavailable to this lab; new GP350018, Tiny M19, Population P20, Franken W20 declared not executed.",
-    "P19 source and tiny checkpoint evidence is LOCAL only; no immutable DRIV3R Actions model artifacts."
+    "P19 source and tiny checkpoint evidence is LOCAL only; no immutable DRIV3R Actions model artifacts.",
+    "P20 original-source audit: all 18 W16 paired training/test candidate paintings are same-policy STOP truncations; correlated assistant visual labels favor longer in 53/57 non-ties, so P19 labels are unsuitable for independent artistic preference training.",
+    "Cross-model aesthetic evidence remains only 10 historical nonidentical comparisons across 3 world blocks, plus 9 identical original pretrained LFM350 stock/step96 LoRA trajectories; zero blind owner judgments.",
+    "Real pretrained model roots/tokenizers unavailable in this CPU runner, no permitted explicit opt-in Actions dispatch; cannot truthfully claim fresh LFM GP350-018, Tiny M19, Population P20, Sprocket or Franken W20 original model outputs."
   ],
-  "next_consumer_experiment": "Obtain real-source original closed-loop matched greedy/sampled pretrained LFM GP350018, Tiny/Population SmolLM2 and Franken structural mutant outputs; collect blind owner 4-niche A/B/TIE/SKIP on source/world-disjoint pairs, audit attention ties, then test trainable rankers against transparent baselines; do not promote P19 visual-pilot probes.",
+  "next_consumer_experiment": "Predeclared source/world-disjoint real pretrained GP350-018 matched decoding plus Tiny/Population/Franken original applied trajectories, blind owner four-niche A/B/TIE/SKIP (use P20 ten-pair historical deck as limited pilot); then evaluate learned ranking vs explicit controls. W16 STOP-prefix pairs are termination-length controls only, not model style pairs.",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -129,5 +132,24 @@
     "not_promoted": true,
     "not_native_cybersand": true,
     "no_new_root_SLM_inference": true
+  },
+  "p20": {
+    "strict_audit": "P20_STRICT_AUDIT.json",
+    "audit_git_blob": "2e8df1505ce39ccfa909d70ceeff9af439d6dc69",
+    "source": "p20_strict_pair_gate.py",
+    "source_git_blob": "1652b95608b98cc397a77ba96e91371169150806",
+    "tests": "test_p20_strict_pair_gate.py",
+    "tests_git_blob": "9a42357ced028255d67a85eba5fc3228972c2816",
+    "original_P19_zip_sha256": "6c3df53ac82692fb057556fa874c9f7e7727cf3bac0afed5a2bfe0d604dc484d",
+    "W16_style_pairs_actually_STOP_only_prefix": 18,
+    "assistant_non_tie_prefers_longer": "53/57",
+    "historical_original_distinct_pairs": 10,
+    "historical_independent_world_blocks": 3,
+    "original_LFM350_stock_vs_step96_greedy_identical_paths": 9,
+    "owner_human_ratings": 0,
+    "new_pretrained_SLM_forwards": 0,
+    "new_optimizer_updates": 0,
+    "promotion": false,
+    "qualification": "LOCAL_ONLY_NO_IMMUTABLE_ACTIONS_MODEL_ARTIFACT"
   }
 }
