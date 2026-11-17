@@ -1,154 +1,67 @@
 {
-  "schema": "driv3r/corpus_factory/handoff-v1",
+  "schema": "driv3r.corpus_factory.latest_handoff/1",
   "updated_utc": "2026-11-17",
+  "lane": "experiments/driv3r/corpus_factory",
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "role": "DATA ONLY, not SLM trainer",
-  "version": "paint-recovery-v27",
-  "source": "experiments/driv3r/corpus_factory/paint_recovery_v27.js",
-  "source_sha256": "6fe483084103f3d2fcaabf539bd6cf6eea22abf03f16a69dfad4ea2f83343538",
-  "test": "experiments/driv3r/corpus_factory/test_paint_recovery_v27.js",
-  "test_sha256": "d99602ce189539cf8c3f7ffb83e216e89fb4d5e888db415576f6aff9caefd396",
-  "manifest": "experiments/driv3r/corpus_factory/V27_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "2cf3e5ff9d968b1b67a9824f1375146e1923bbb903480f586b10f93e6ad0d08e",
-  "source_dependencies": [
-    {
-      "path": "experiments/driv3r/corpus_factory/causal_gate_v26.js",
-      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
-    },
-    {
-      "path": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
-      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
-    }
-  ],
-  "best_checkpoint_or_artifact": "Reproducible local six-shard v27 synthetic corpus. No trained SLM checkpoint or immutable Actions artifact.",
-  "splits": {
+  "draft_hold": true,
+  "current_version": 28,
+  "status": "LOCAL_CORPUS_REPRODUCED; NO_REAL_SLM_OR_NATIVE_CYBERSAND_ACCEPTANCE",
+  "generator": "remote_error_alias_v28.js",
+  "generator_sha256": "c94a1f563193ca1edc78555a2a2b20eab06732cf28e196b1effe450214b811fb",
+  "manifest": "V28_DEFAULT_MANIFEST.json",
+  "manifest_sha256": "c33f0ec1df1a9338cd535eaa18154a3a2ae74bf05fbe42ed221bd8ca450c6bc6",
+  "best_checkpoint": null,
+  "latest_verified_local_corpus": {
+    "pairs": 122,
+    "episodes": 244,
+    "decisions": 5212,
+    "expert_corrective_erase": 244,
     "TRAIN": {
-      "groups": 8,
-      "group_ids": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "episodes": 192,
-      "decisions": 3391,
-      "unique_inputs": 2975,
-      "exact_duplicates": 416,
-      "near_downweighted": 1133,
-      "near_ambiguous": 0,
-      "modes": {
-        "correct-paint-control": 64,
-        "wrong-material-recovery": 64,
-        "wrong-branch-and-material-recovery": 64
-      },
-      "corrective_erases": 128,
-      "accepted_bad_paints": 128,
-      "accepted_wrong_branches": 64,
-      "strict_causal_episodes": 143,
-      "frozen_gate_harmful_recommendations": 483,
-      "frozen_gate_illegal_recommendations": 72,
-      "min_train_weight": 0,
-      "zero_weight": 1549
+      "pairs": 59,
+      "episodes": 118,
+      "decisions": 2226,
+      "duplicate_zero_weight": 296
     },
     "DEV": {
-      "groups": 4,
-      "group_ids": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "episodes": 96,
-      "decisions": 2040,
-      "unique_inputs": 2040,
-      "exact_duplicates": 0,
-      "near_downweighted": 0,
-      "near_ambiguous": 0,
-      "modes": {
-        "correct-paint-control": 32,
-        "wrong-material-recovery": 32,
-        "wrong-branch-and-material-recovery": 32
-      },
-      "corrective_erases": 64,
-      "accepted_bad_paints": 64,
-      "accepted_wrong_branches": 32,
-      "strict_causal_episodes": 58,
-      "frozen_gate_harmful_recommendations": 230,
-      "frozen_gate_illegal_recommendations": 36,
-      "min_train_weight": 1,
-      "zero_weight": 0
+      "pairs": 31,
+      "episodes": 62,
+      "decisions": 1356
     },
     "HELDOUT": {
-      "groups": 4,
-      "group_ids": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "episodes": 96,
-      "decisions": 2260,
-      "unique_inputs": 2260,
-      "exact_duplicates": 0,
-      "near_downweighted": 0,
-      "near_ambiguous": 0,
-      "modes": {
-        "correct-paint-control": 32,
-        "wrong-material-recovery": 32,
-        "wrong-branch-and-material-recovery": 32
-      },
-      "corrective_erases": 64,
-      "accepted_bad_paints": 64,
-      "accepted_wrong_branches": 32,
-      "strict_causal_episodes": 45,
-      "frozen_gate_harmful_recommendations": 226,
-      "frozen_gate_illegal_recommendations": 30,
-      "min_train_weight": 1,
-      "zero_weight": 0
-    }
-  },
-  "metrics": {
-    "episodes": 384,
-    "labelled_decisions": 7691,
-    "accepted_wrong_paint_prefixes": 256,
-    "oracle_corrective_erasures": 256,
-    "accepted_wrong_branch_prefixes": 128,
-    "strict_causal_suffix_episodes": 246,
-    "frozen_gate_strictly_harmful_recommendations": 939,
-    "frozen_gate_illegal_recommendations": 138,
-    "oracle_terminal_success": "384/384",
-    "train_exact_duplicates_zero_weight": 416,
-    "train_near_downweighted": 1133,
-    "train_zero_weight": 1549,
-    "cross_split_world_or_input_overlap": 0,
-    "contradictory_complete_model_input_labels": 0,
-    "full_corpus_reconstruction_sha_checks": 7691,
-    "actual_SLM_forwards_or_updates": 0,
+      "pairs": 32,
+      "episodes": 64,
+      "decisions": 1630
+    },
+    "all_episodes_terminal_success": true,
     "two_independent_full_generations_byte_identical": true,
-    "two_generator_wall_seconds": [
-      51.92,
-      50.8
-    ],
-    "two_generator_peak_rss_kib": [
-      516472,
-      626084
-    ],
-    "full_regression_validation_passed": true,
-    "regression_wall_seconds": 35.39,
-    "regression_peak_rss_kib": 515580
+    "observation_hash_replay": "5212/5212",
+    "min_wrong_choice_regret": 2,
+    "cross_split_exact_input_overlap": 0,
+    "cross_split_geometry_overlap": 0,
+    "complete_input_target_conflicts": 0
   },
-  "negative_result": "This is not a proven old-memory-only challenge: repeated public painted_correct counters expose whether paint was correct even after first paint receipt ages beyond the last64 window. Two-workshop/loop graph remains synthetic and oracle prefix/distractor actions scripted.",
-  "known_failure": "A heldout SLM can still exploit fixed topology/recipe regularities; model completion, latency and RSS untested. 72+ oscillating travel moves are scripted. No native CyberSand ABI conformance; no immutable Actions shard artifact. Root LFM/Sprocket weights unavailable in current restricted worker environments.",
-  "consumer_protocol": "Reconstruct observation from episode.initial_history plus per-decision events_added/positions_added and state in observation_keys order. Verify model_input_sha256; present ONLY that reconstructed observation, never the target, episode mode, intervention, difficulty, frozen-gate audit, training_weight or receipt. Use TRAIN weighted rows, DEV for tuning, HELDOUT once for evaluation.",
-  "next_useful_consumer_experiment": "Actual pinned LFM2.5-350M / Sprocket-500M CPU adapter training (consumer lane) with full-history versus last64 and count-only ablations. Closed-loop HELDOUT compare wrong-material recovery vs correct controls and strict-causal reroutes; record completion, corrected-cell identification, erroneous paint persistence, retrace, false STOP, raw illegal preference, per-forward p50/p95/p99 latency and peak RSS.",
-  "synthetic_host_not_native": true,
-  "paid_compute_used": false,
-  "cybersand_or_neurounner_writes": false,
-  "owner_merge_gate": "DRAFT/HOLD, no main changes or merge/Ready/automerge"
+  "challenge": "Paired remote wrong-material painting locations with identical current legal observations and last-64 histories; distinct first legal repair actions, minimum 2-step suffix regret.",
+  "restricted_first_action_theoretical_ceiling": 0.5,
+  "generator_cpu": {
+    "second_full_wall_seconds": 36.19,
+    "second_full_peak_rss_kib": 595080
+  },
+  "negative_results": [
+    "Six out of 128 candidate worlds lacked a qualifying strict pair: five TRAIN and one DEV.",
+    "296 exact repeated TRAIN observations zero-weighted; not additional unique examples.",
+    "No actual model weights updated; no checkpoint inference metrics; no native CyberSand evaluation."
+  ],
+  "limitations": [
+    "Synthetic graph host and static remote survey permit symbolic reconstruction.",
+    "Prelabel paint/intervention and 64+ drift movements scripted; suffixes oracle, not learned model rollouts.",
+    "Strict near-alias scenarios do not prove generalization to native CyberSand or exclude all grammar shortcuts.",
+    "Dataset shards not yet uploaded as immutable GitHub Actions artifact."
+  ],
+  "next_consumer_experiment": "Pinned LFM2.5-350M or Sprocket-500M model training using TRAIN and DEV, fully closed-loop HELDOUT paired repair, full-history versus last64 versus survey-only; measure accuracy, realized regret, completion, residual wrong paint, illegal actions, actual latency p50/p95 and RSS.",
+  "no_paid_api_gpu": true,
+  "no_other_lab_edits": true,
+  "no_main_edits": true,
+  "synthetic_not_native": true
 }
