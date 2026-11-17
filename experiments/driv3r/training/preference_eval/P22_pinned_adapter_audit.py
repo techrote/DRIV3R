@@ -129,13 +129,10 @@ def run(archives,out):
       'new_optimizer_steps':0,'new_root_weights_available':False,
       'native_cybersand_gameplay':False,
       'caveat':'These are real historical LoRA checkpoint tensors and original full-model GP350-012 logits, NOT fresh inference. Same-source shared prefix only; after diverging the model observations no longer match. Two independent seeds; no aesthetic-preference generalisation claim.'}
-    (out/'P22_RESULTS.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'
-')
-    (out/'P22_WORLD_DETAILS.json').write_text(json.dumps(rows,indent=2,sort_keys=True)+'
-')
+    (out/'P22_RESULTS.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+    (out/'P22_WORLD_DETAILS.json').write_text(json.dumps(rows,indent=2,sort_keys=True)+'\n')
     manifest={p.name:digest(p.read_bytes()) for p in sorted(out.iterdir())}
-    (out/'SHA256SUMS.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'
-')
+    (out/'SHA256SUMS.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
     return result
 
 if __name__=='__main__':
