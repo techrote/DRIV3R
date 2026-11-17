@@ -47,3 +47,18 @@ This is a strong **negative result for the tested delayed-score construction**, 
 - All work is scoped to `experiments/driv3r/training/long_horizon/**`, source-faithful *synthetic* worlds only. No actual native receipts, no sealed structural heldout use, no physical CyberSand gameplay, no paid compute and no external repository writes.
 
 **Disposition:** retain negative result, do not merge or promote the Draft/HOLD PR.
+
+## Exact checkpoint SHA-256 ledger
+
+| Training seed | Model | SHA-256 of original NPZ | Adam updates |
+|---|---|---|---:|
+| 631 | frozen | 304c5ded6e8122ebec368ed77b3509106989b4bfaf2347c06bad039d1bbdc516 | 180 |
+| 631 | imitation | aa5fa0c4188bfb060e0f2f9a5b5ecb266416e5677a050eba3777fddf7d598ce2 | 240 |
+| 631 | short_cost | 63269c817dfe92d76d07d70e217acc14510c8846d2a73a255ff7b5f4f03acaa0 | 240 |
+| 631 | delayed_target | c7204890d49cba15c01ed171d787c088eaa24ff105c5a9cae5211b08588c6ede | 240 |
+| 632 | frozen | 4b8a13581c5b597028112f37b900c09cc94a8bc28e8df931c1783afb4a271565 | 180 |
+| 632 | imitation | dde1a02438a199aece530a937ae096f93e63951c81937dfee6e9eabaf9620a1c | 240 |
+| 632 | short_cost | b7d7d74c875f46c253e87eddb8b0c579bcbac7a1a03febdaa77cbc6d9954e1fc | 240 |
+| 632 | delayed_target | 5c2ae40f5a9b74a41f123550353695077f7e8c187ed30f388bd5be68acbc729f | 240 |
+
+Exact executed trainer SHA-256: e36bd22fc41528203eb75528e62303b5889f685b08943a597be68378c3dcc3e3. Original locally verified evidence ZIP SHA-256: bb860ca38d78ce3525808ce78d5e64dcb35676806d1b145175722810d5561222 (88 archive entries; not an Actions artifact).
