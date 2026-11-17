@@ -1,6 +1,6 @@
 {
   "schema": "driv3r.fleet_training.latest_handoff/v1",
-  "observed_utc": "2026-11-17T00:05:52Z",
+  "observed_utc": "2026-11-17T00:55:08Z",
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pr": 1,
@@ -9,8 +9,8 @@
     "techrote/cybersand",
     "techrote/neurounner"
   ],
-  "remote_head_inspected_before_write": "519121ada7ba37665f9ee6b0c7a9ab6f01f3535a",
-  "disposition": "REAL_SLM_EXECUTION_BLOCKED_IN_THIS_RUN; DO_NOT_SUBSTITUTE_SURROGATES",
+  "remote_head_inspected_before_write": "a512c7ed56dfc69d6b4fa7e63dc23962690b0236",
+  "disposition": "REAL_PRETRAINED_SLM_EXECUTION_BLOCKED; NO_SURROGATE_SUBSTITUTION; NO_DISPATCH",
   "actual_work_performed": {
     "fetched_driv3r_pr_and_branch_tree": true,
     "inspected_other_lane_handoffs": [
@@ -141,5 +141,36 @@
     "Historical synthetic Python W0 is not native CyberSand; original CyberSand and Neurounner were read-only.",
     "No PR/branch/issue created, no workflow dispatched, no game-side modifications.",
     "No end-to-end genuine model training or inference claimed for this invocation."
-  ]
+  ],
+  "fresh_fleet_assessment": {
+    "assessed_at_utc": "2026-11-17T00:55:08Z",
+    "only_writable_pr": "https://github.com/techrote/DRIV3R/pull/1",
+    "exact_head_inspected": "a512c7ed56dfc69d6b4fa7e63dc23962690b0236",
+    "workflows_verified": ".github/workflows/research-smoke.yml (source smoke / manual source smoke only; no model training entrypoint)",
+    "latest_real_model_consumer": "lfm_game_policy GP350-018, runner gp350018_matched_decoder.py, runner blob 7d6d575273ecd7ae90be9545a69eae0053b084e4, pinned LiquidAI/LFM2.5-350M@9921cd4d82c0e3986887aa4b376f9446729ef8a3, GP006 adapter SHA256 436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+    "next_real_execution": "Bounded 64-decision matched stock vs GP006 frozen full-LFM closed-loop A/B/C decoding on synthetic W0, unchanged initial worlds and pinned source; measure true trajectory deviation, STOP, legal menu, novel cells, time, RSS, logs",
+    "cross_lane_snapshot": {
+      "lfm350": "GP350-018 implemented; archived-logit analytic preflight only; 0 fresh full-LFM forwards",
+      "sprocket": "Sprocket-500M root rank-8 LoRA blocked: missing pinned ~1 GB weights and transformers/PEFT; 0 root updates",
+      "model_zoo": "MZ-019 Falcon3-1B-1.58bit pretrained runtime unavailable; 0 trained steps",
+      "frankenlayers": "Wave20 d1 Q8 graph masks source-only; missing 1.846 GB GGUF, llama.cpp, W0 backend; 0 fresh inference",
+      "smol": "Historical genuine two-resident SmolLM2-135M benchmark retained as capacity control, not rerun"
+    },
+    "execution_resources": {
+      "local_cpu_torch": true,
+      "local_transformers": false,
+      "local_peft": false,
+      "local_llama_cpp": false,
+      "target_weight_files": 0,
+      "external_model_download": "DNS resolution unavailable in executor (github.com/huggingface.co)",
+      "github_actions_dispatch_connector": "No workflow_dispatch action exposed for model jobs; existing source-smoke workflow cannot run the target",
+      "cost": "No paid GPU/API usage"
+    },
+    "active_fleet_leases": [],
+    "new_model_forwards": 0,
+    "new_optimizer_updates": 0,
+    "new_checkpoint_artifacts": 0,
+    "race_prevention": "Read PR head and existing handoff blob before updating this fleet-owned file; no workflow or model job dispatched",
+    "decision": "No further surrogate-only policy/training work or orchestration framework. Pause this lane's recurring invocation until a source-pinned executable pretrained model/checkpoint or an opt-in model-running environment is available."
+  }
 }
