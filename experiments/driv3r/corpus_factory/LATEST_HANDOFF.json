@@ -4,47 +4,44 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "synthetic-sequential-replay-v12",
-  "role": "corpus only; no model-weight updates",
-  "source": "experiments/driv3r/corpus_factory/replay_rollouts_v12.js",
-  "test": "experiments/driv3r/corpus_factory/test_replay_rollouts_v12.js",
-  "parent_generator": "experiments/driv3r/corpus_factory/stateful_challenge_v11.js",
-  "parent_source_git_blob": "be98237e63992da967b9a4ce309c549c11e67285",
-  "artifact": "node experiments/driv3r/corpus_factory/replay_rollouts_v12.js NEW_DIR 2",
-  "provenance": "external synthetic host / v11-derived; not native CyberSand ABI or physical acceptance",
+  "version": "composed-relay-shutter-replay-v13",
+  "role": "data-only synthetic host and split corpus; no optimizer",
+  "source": "experiments/driv3r/corpus_factory/relay_memory_v13.js",
+  "source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "test": "experiments/driv3r/corpus_factory/test_relay_memory_v13.js",
+  "test_git_blob": "e724529a46fb0c42d529ec749a8e06246e495867",
+  "manifest": "experiments/driv3r/corpus_factory/V13_DEFAULT_MANIFEST.json",
+  "artifact_command": "node experiments/driv3r/corpus_factory/relay_memory_v13.js NEW_DIR 4",
+  "best_checkpoint_or_artifact": "No corpus-lane checkpoint; source-pinned deterministic TRAIN/DEV/HELDOUT episode and decision shards with SHA-256 and replay host",
   "counts": {
     "TRAIN": {
-      "episodes": 128,
-      "pairs": 64,
-      "world_groups": 32,
-      "decisions": 896,
-      "mean_expert_moves": 58
+      "episodes": 256,
+      "pairs": 128,
+      "world_groups": 64,
+      "decisions": 2304
     },
     "DEV": {
-      "episodes": 48,
-      "pairs": 24,
-      "world_groups": 12,
-      "decisions": 336,
-      "mean_expert_moves": 76
+      "episodes": 64,
+      "pairs": 32,
+      "world_groups": 16,
+      "decisions": 576
     },
     "HELDOUT": {
-      "episodes": 48,
-      "pairs": 24,
-      "world_groups": 12,
-      "decisions": 336,
-      "mean_expert_moves": 92.66666666666667
+      "episodes": 96,
+      "pairs": 48,
+      "world_groups": 24,
+      "decisions": 864
     }
   },
-  "applied_oracle_moves": 15520,
-  "model_input_contract": "Only decision.model_input or replay_host.observe(host) may be supplied to model. Privileged host state, expert path, controls, labels and metadata are not model features.",
-  "partitions": "v11 topology- and world-disjoint TRAIN, DEV and sealed HELDOUT (separate oracle episodes/decision shards)",
-  "validation": "Two pure-JS V8 deterministic generations + host oracle replay, illegal-action rejection and initial observation consistency; committed Node CLI tests still require independent execution",
-  "known_failure": "Scripted v11 preludes and deterministic oracle navigation only; no model-controlled closed-loop success, no runtime native-ABI equivalence; 7 selected decisions per episode are correlated",
-  "best_checkpoint_or_artifact": "No model checkpoint in corpus lane. Executable deterministic v12 TRAIN/DEV/HELDOUT episode and decision JSONL exporter; each CLI output has SHA-256 manifest.",
-  "next_useful_consumer_experiment": "Pin LFM350 GP006/stock or Sprocket actual root; train on TRAIN only then compare full history vs last32 and history-masked control on DEV. Freeze before HELDOUT; run all steps with host replay createHost/observe/apply, score arrival/violations/cost plus p50/p95 CPU latency and peak RSS.",
+  "counterfactual_pairs": 208,
+  "synthetic_host_applied_oracle_moves": 27936,
+  "legal_strict_hard_negatives": 4160,
+  "ablation": "208/208 opposite first actions under identical last64/current observation; theoretical restricted-history max 50%",
+  "provenance": "external synthetic graph; NOT native CyberSand contract or acceptance",
+  "validation": "Node 22 standalone PASS; 2 CLI generations identical manifest and six shard hashes; source blobs verified",
+  "known_failure": "scripted prelude, symbolic two-event rule, no actual trained SLM evaluation or native ABI; no painting in host",
+  "next_useful_consumer_experiment": "Use actual pinned LFM GP350-006/stock or available Sprocket root (blocked), train on TRAIN only; freeze after DEV; compare full-event vs last64/last1 in fully model-controlled sealed HELDOUT with arrival, path stretch, illegal preference, latency/RSS by world group",
   "paid_compute": false,
   "game_files_modified": false,
-  "main_unchanged": true,
-  "source_git_blob": "e022e88965dfd1013a80eba6aca3847d7c0acff1",
-  "test_git_blob": "73b04e5cbf73e73b95e91c3454d4ea291a1bbaca"
+  "main_unchanged": true
 }

@@ -1,0 +1,88 @@
+{
+  "schema": "driv3r/corpus-factory-v13",
+  "version": "relay-memory-v13",
+  "source": "external deterministic synthetic host; NOT native CyberSand ABI",
+  "native_receipt": false,
+  "generator": "relay_memory_v13.js",
+  "source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "test_git_blob": "e724529a46fb0c42d529ec749a8e06246e495867",
+  "generator_sha256": "8f3e0ca564da1fa449f870c1dc6f06746b23345f29c736cd39bdaf237bce6fb4",
+  "test_sha256": "7c5434c3e0c1ca2ac59c7ca2f70262977bc6763b4fa2400b2e2184efc54b3341",
+  "cli_default_manifest_sha256": "6415b3f68d5301284d5194b26d80fae9f70f1911ff9a202a1d2c7d9896f03927",
+  "style_seeds_requested": 4,
+  "counts": {
+    "TRAIN": {
+      "episodes": 256,
+      "pairs": 128,
+      "world_groups": 64,
+      "decisions": 2304
+    },
+    "DEV": {
+      "episodes": 64,
+      "pairs": 32,
+      "world_groups": 16,
+      "decisions": 576
+    },
+    "HELDOUT": {
+      "episodes": 96,
+      "pairs": 48,
+      "world_groups": 24,
+      "decisions": 864
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 1117680,
+      "sha256": "54e8115858eda0ac7c03b523201287a8acf02271284f27cab6c3b53ed00d1203",
+      "usage": "TRAIN only"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 2304,
+      "bytes": 11626072,
+      "sha256": "29974f97f29e1538c312815352881b2b20150ab5819367dc7659eed2d9d8dbcf",
+      "usage": "TRAIN only"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 64,
+      "bytes": 298720,
+      "sha256": "12a03a485419a871655964a3b6d57fc8db15d0e9e0caf253559784044987c4d1",
+      "usage": "evaluation only; NEVER optimize"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 576,
+      "bytes": 2925888,
+      "sha256": "e803763f3c43f389a7efb51174011e808d69ce8307de3a007bb20003f65c451b",
+      "usage": "evaluation only; NEVER optimize"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 484048,
+      "sha256": "a46229d6ba35ac95cc6607c4d547a2800f74fb4b4541281152044d0925b64f7b",
+      "usage": "evaluation only; NEVER optimize"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 864,
+      "bytes": 4456040,
+      "sha256": "f60487593de780e60b7bb3088ba11d249f0733244ac5215349af87dc9398296a",
+      "usage": "evaluation only; NEVER optimize"
+    }
+  },
+  "applied_oracle_moves": 27936,
+  "protected_entries": 0,
+  "counterfactual_pairs": 208,
+  "rejected_near_duplicate_worlds": 0,
+  "strictly_suboptimal_legal_annotations": 4160,
+  "split_policy": "topology/geometry disjoint; paired siblings and world styles stay within one partition",
+  "causal_challenge": "two remote relay events compose with wiring; identical last64/current observations with opposite shortest first actions",
+  "model_input_contract": "Only observe(host) or row.model_input; never episode.expert/privileged_host/metadata/controls",
+  "validation": "Node 22.16 test PASS; two complete CLI shard/manifests byte-identical; source Git SHA verified",
+  "limitations": [
+    "Expert trajectories are synthetic BFS labels, not trained-model results",
+    "Prelude is scripted; only junction onward model-controllable",
+    "Not CyberSand canonical native ABI, material physics, or paint receipt acceptance",
+    "Episode decisions correlated; report world-group outcomes",
+    "HELDOUT sealed; never use for model selection or optimization",
+    "No immutable Actions artifact of generated shards yet"
+  ]
+}
