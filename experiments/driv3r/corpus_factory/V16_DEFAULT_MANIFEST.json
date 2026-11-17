@@ -1,0 +1,181 @@
+{
+  "schema": "driv3r/corpus-factory-ordered-relay-v16",
+  "version": "ordered-relay-v16",
+  "source": "external v13 deterministic host; NOT native CyberSand ABI",
+  "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "counts": {
+    "TRAIN": {
+      "episodes": 384,
+      "decisions": 3456,
+      "world_groups": 32,
+      "families": 32,
+      "topology_groups": 16,
+      "alpha_receipts_per_episode": 8,
+      "beta_decoys_per_alpha": 1
+    },
+    "DEV": {
+      "episodes": 96,
+      "decisions": 864,
+      "world_groups": 8,
+      "families": 8,
+      "topology_groups": 4,
+      "alpha_receipts_per_episode": 8,
+      "beta_decoys_per_alpha": 2
+    },
+    "HELDOUT": {
+      "episodes": 144,
+      "decisions": 1296,
+      "world_groups": 12,
+      "families": 12,
+      "topology_groups": 6,
+      "alpha_receipts_per_episode": 8,
+      "beta_decoys_per_alpha": 3
+    }
+  },
+  "style_seeds": 2,
+  "noncommutative_families": 52,
+  "expert_moves": 41904,
+  "scripted_prefix_moves": 168480,
+  "strict_hard_negatives": 6240,
+  "illegal_oracle_moves": 0,
+  "protected_entries": 0,
+  "first_action_control_ceiling_by_split": {
+    "TRAIN": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 8,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last2": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 2
+      }
+    },
+    "DEV": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 10,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last2": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 3
+      }
+    },
+    "HELDOUT": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 9,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last": {
+        "correct": 8,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last2": {
+        "correct": 9,
+        "denominator": 12,
+        "classes": 6
+      }
+    }
+  },
+  "source_worlds": {
+    "TRAIN": {
+      "episodes": 128,
+      "pairs": 64,
+      "world_groups": 32,
+      "decisions": 1152
+    },
+    "DEV": {
+      "episodes": 32,
+      "pairs": 16,
+      "world_groups": 8,
+      "decisions": 288
+    },
+    "HELDOUT": {
+      "episodes": 48,
+      "pairs": 24,
+      "world_groups": 12,
+      "decisions": 432
+    }
+  },
+  "split_policy": "world/topology-disjoint; 12 correlated permutations in one split",
+  "challenge": "Every family shares identical latest64, goal, legal menu, local terrain and event multiset; eight ordered ALPHA instructions produce six opposed labels; BETA events are ignored decoys; 36 orderings are disjoint across splits",
+  "usage": "TRAIN is optimizer-only; DEV tuning-only; HELDOUT sealed until fixed model selection",
+  "model_view": "Only observe(host) or row.model_input, never parent/intervention/expert/controls/metadata",
+  "limitations": [
+    "Scripted sensor-event prelude; only post-prefix rollout model-controllable",
+    "One deterministic U-loop grammar, no native simulation or verified CyberSand ABI",
+    "Host environmental gate instructions are synthetic events, NOT model-writable actions",
+    "Full history contains ordered events; recent-event-only baselines remain partially predictive, and split-specific ceilings are reported",
+    "Correlated permutations and path rows; report world-grouped/paired held-out results, not iid row confidence",
+    "No trained SLM results or material-paint acceptance"
+  ],
+  "generator": "ordered_relay_v16.js",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 4536256,
+      "sha256": "5315533673d3e2cbca457a7c9504efe340ea6f7f62d28710d317f073ec1f0ef1",
+      "usage": "optimizer TRAIN only"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 3456,
+      "bytes": 42106584,
+      "sha256": "cf7e7ea5c0e135b6a246c443f0c6ac92623bebe5b52391f58927223537690d7f",
+      "usage": "optimizer TRAIN only"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 1238368,
+      "sha256": "5886898275d00dff61dc58123ffc1ea7391de5d25470337dff60600e685a7d64",
+      "usage": "DEV selection only"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 864,
+      "bytes": 11872248,
+      "sha256": "ebbc798515baaba92b4d0a5d261316aebc6941f8123d5ca1bac07b452c11cde7",
+      "usage": "DEV selection only"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 144,
+      "bytes": 2024592,
+      "sha256": "c67c1e914e1b0adcf0d94d6a62e58ccd89d3629bd75392dbb55191cb8abb1a72",
+      "usage": "HELDOUT evaluation only"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 1296,
+      "bytes": 19855560,
+      "sha256": "e26d627a50c88cb0576b886a4d76ea05fc978aa93cdf08fe96d2119c7843b1aa",
+      "usage": "HELDOUT evaluation only"
+    }
+  }
+}
