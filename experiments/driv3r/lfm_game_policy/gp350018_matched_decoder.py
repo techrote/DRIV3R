@@ -19,6 +19,7 @@ import resource
 import signal
 import statistics
 import time
+import zipfile
 
 import lfm350 as c
 import gp350_paired_margin_train as g
@@ -46,6 +47,13 @@ def percentile(values, p):
         return None
     a = sorted(values)
     return a[min(len(a)-1, max(0, math.ceil(p * len(a))-1))]
+
+def current_rss_kib():
+    """Current resident set on Linux; independent of lifetime peak."""
+    try:
+        return int(Path("/proc/self/statm").read_text().split()[1]) * os.sysconf("SC_PAGE_SIZE") // 1024
+    except (OSError, ValueError, IndexError, AttributeError):
+        return None
 
 def probs(logits, legal, kind, temp, mixture):
     """Return host-legal probabilities; NEVER sample or score illegal actions."""
@@ -146,6 +154,7 @@ def episode(w0, model, tok, ids, out, stage, arm, size, seed, family,
     name, kind, temp, mix = arm
     rows = []
     latencies = []
+    rss_samples = []
     def selector(obs):
         c.check(not STOP_REQUESTED and time.monotonic()-started < deadline-120,
                 "GP350018 CPU deadline reached (partial evidence retained)")
@@ -161,10 +170,14 @@ def episode(w0, model, tok, ids, out, stage, arm, size, seed, family,
         raw = c.ACTIONS[max(range(6),key=lambda i: scores[i])]
         c.check(applied in legal, "decoder violated host authority")
         latencies.append(latency)
+        rss = current_rss_kib()
+        if rss is not None:
+            rss_samples.append(rss)
         rows.append({"tick":obs["tick"],"obs":obs,"obs_sha256":
             c.sha_bytes(c.canonical(obs).encode()),"legal":legal,"six_logits":scores,
             "raw":raw,"raw_legal":raw in legal,"probabilities":distribution,
-            "sampling_u":u,"applied":applied,"model_forward_ms":latency})
+            "sampling_u":u,"applied":applied,"model_forward_ms":latency,
+            "current_rss_kib":rss})
         return applied
 
     record = w0.run(seed, mode="callback", family=family, size=size,
@@ -195,8 +208,45 @@ def episode(w0, model, tok, ids, out, stage, arm, size, seed, family,
             "host_illegal":m["invalid_raw_choices"],"model_forward_p50_ms":percentile(latencies,.5),
             "model_forward_p95_ms":percentile(latencies,.95),
             "model_forward_max_ms":max(latencies),
+            "current_rss_p50_kib":percentile(rss_samples,.5),
+            "current_rss_p95_kib":percentile(rss_samples,.95),
+            "current_rss_max_kib":max(rss_samples) if rss_samples else None,
+            "rss_source":"/proc/self/statm" if rss_samples else "UNAVAILABLE",
             "shape":shape(record,rows),"png":pic,"png_sha256":c.sha_bytes(png),
             "svg":trace,"svg_sha256":c.sha_bytes(rawsvg)}
+
+GOLDEN_SHA256 = {
+    "stock": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+    "gp006": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+}
+
+def golden_greedy_receipt(out, row, stage, archive):
+    """Check actual A-greedy prefix against historical full-LFM GP350-012 receipts.
+
+    Only matching initial world and successive greedy observations qualify.
+    No off-policy model-logit interpolation or intervened-arm matching is claimed.
+    """
+    key = "stock" if stage == "stock" else "gp350006"
+    source = f"original-experiment/{key}-s{row['size']}-{row['seed']}-{row['family']}.json"
+    original = json.loads(archive.read(source))
+    filename = (f"{stage}-A-greedy-s{row['size']}-{row['seed']}-"
+                f"{row['family']}-{row['turn_budget']}.json")
+    current = json.loads((out / filename).read_text())
+    old, new = original["decisions"], current["decisions"]
+    c.check(len(old) >= len(new) and len(new) == row["executed"],
+            "golden-prefix decision count mismatch " + source)
+    max_delta = 0.0
+    for turn, (prior, now) in enumerate(zip(old, new)):
+        c.check(prior["obs"] == now["obs"] and prior["applied"] == now["applied"],
+                f"historical frozen-model greedy mismatch {source} at {turn}")
+        c.check(len(prior["six_logits"]) == len(now["six_logits"]) == 6,
+                "golden logits are not six-way scores")
+        max_delta = max(max_delta, *(abs(float(a)-float(b))
+                        for a,b in zip(prior["six_logits"], now["six_logits"])))
+    c.check(max_delta < 0.25, "golden full-model logit drift")
+    return {"archive_receipt":source,"verified_prefix_decisions":len(new),
+            "max_abs_six_logit_delta":max_delta,
+            "intervened_arms_can_diverge":True}
 
 def self_test():
     legal = ["LEFT","STOP"]
@@ -238,6 +288,12 @@ def run(args):
         c.check(args.adapter is not None and c.sha(args.adapter/"adapter_model.safetensors")
                 == MODEL_ADAPTER_SHA256,"pinned GP006 adapter custody failed")
     w0=c.load_w0(args.w0)
+    golden = zipfile.ZipFile(args.golden, "r") if args.golden is not None else None
+    golden_digest = c.sha(args.golden) if args.golden is not None else None
+    if golden is not None:
+        c.check(golden_digest == GOLDEN_SHA256[args.stage],
+                "historical GP350-012 archive custody mismatch")
+        c.check(golden.testzip() is None, "historical GP350-012 archive CRC failed")
     c.save_json(args.out/"lease.json",{"schema":SCHEMA,"model":c.MODEL,
         "model_revision":c.REVISION,"source_sha":os.getenv("GITHUB_SHA"),
         "run_id":os.getenv("GITHUB_RUN_ID"),"run_attempt":os.getenv("GITHUB_RUN_ATTEMPT"),
@@ -246,7 +302,7 @@ def run(args):
         "policy_arms":ARMS,"worlds":worlds,"families":c.FAMILIES,
         "turn_budget":args.turns,"optimizer_updates":0,"native":False,
         "model_vision_capable":False,"original_W13_is_NOT_matched_control":True,
-        "draft_hold":True})
+        "draft_hold":True,"golden_gp350012_sha256":golden_digest})
     info=HfApi().model_info(c.MODEL,revision=c.REVISION)
     c.check(info.sha==c.REVISION, "LFM350 upstream pin drift")
     snapshot_download(c.MODEL,revision=c.REVISION,local_dir=args.cache,max_workers=2,
@@ -258,6 +314,11 @@ def run(args):
     c.check(any(p.endswith(".safetensors") for p in manifest),
             "pinned full LFM350 weights unavailable")
     c.save_json(args.out/"model-files-sha256.json",manifest)
+    if golden is not None:
+        expected=json.loads(golden.read("original-experiment/full-model-manifest.json"))
+        c.check(expected["revision"]==c.REVISION and
+                all(manifest.get(name)==sha for name,sha in expected["sha256"].items()),
+                "pinned historical full-model hashes do not match")
     tok=AutoTokenizer.from_pretrained(args.cache,local_files_only=True,trust_remote_code=False)
     ids=c.id_map(tok)
     base=AutoModelForCausalLM.from_pretrained(args.cache,local_files_only=True,
@@ -273,6 +334,7 @@ def run(args):
     model.eval()
     frozen=c.base_fingerprint(model)
     result=[]
+    golden_results=[]
     first={}
     for size,seed in worlds:
         for family in c.FAMILIES:
@@ -288,6 +350,9 @@ def run(args):
                     first[key]=(row["initial_observation_sha256"],row["initial_legal"])
                 c.check(row["host_illegal"]==0,"host legality failed")
                 result.append(row)
+                if golden is not None and arm[0]=="A-greedy":
+                    golden_results.append(golden_greedy_receipt(args.out,row,
+                                                                 args.stage,golden))
                 print(c.canonical({"GP350018_EPISODE":row}),flush=True)
     c.check(c.base_fingerprint(model)==frozen,"pretrained parent fingerprint changed")
     for row in result:
@@ -298,6 +363,8 @@ def run(args):
         "adapter_sha256":MODEL_ADAPTER_SHA256 if args.stage=="gp006" else None,
         "worlds":worlds,"arms":ARMS,"families":c.FAMILIES,"turn_budget":args.turns,
         "outcomes":result,"episodes":len(result),
+        "golden_gp350012_sha256":golden_digest,
+        "historical_A_greedy_verified_episodes":golden_results,
         "full_model_decisions":sum(x["executed"] for x in result),
         "host_illegal_actions":sum(x["host_illegal"] for x in result),
         "raw_illegal_preferences":sum(x["raw_illegal_preferences"] for x in result),
@@ -305,7 +372,8 @@ def run(args):
         "native":False,"synthetic_W0_only":True,"matched_d1":"NOT RUN",
         "initial_worlds_matched_only":True,"post_action_menus_may_diverge":True,
         "wall_seconds":time.monotonic()-started,"cpu_seconds":time.process_time(),
-        "peak_rss_kib":resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
+        "peak_rss_kib":resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        "per_forward_current_rss_included":True}
     c.save_json(args.out/"summary.json",summary)
     print(c.canonical({"GP350018_COMPLETE":args.stage,
                        "episodes":len(result),"decisions":summary["full_model_decisions"]}),
@@ -317,6 +385,8 @@ def main():
     p.add_argument("--w0",type=Path)
     p.add_argument("--cache",type=Path)
     p.add_argument("--adapter",type=Path)
+    p.add_argument("--golden",type=Path,
+                   help="Optional original GP350-012 128-turn ZIP for strict A-greedy baseline and model-manifest audit")
     p.add_argument("--out",type=Path)
     p.add_argument("--stage",choices=("stock","gp006"))
     p.add_argument("--turns",type=int,choices=(64,128),default=64)
