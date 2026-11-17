@@ -1,0 +1,68 @@
+{
+  "schema": "driv3r.preference_eval.latest_handoff/1",
+  "as_of_utc": "2026-11-17",
+  "writable_repo": "techrote/DRIV3R",
+  "only_writable_pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "draft_hold": true,
+  "latest": "P17",
+  "status": "ORIGINAL_W16_SOURCE_AUDITED_HISTORICAL_MULTIMODEL_CURATED_NOT_DIRECT_SOURCE_REVERIFIED_CROSS_MODEL_TRAINING_BLOCKED",
+  "latest_findings": "P17_FINDINGS.md",
+  "best_source_grounded_control": {
+    "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
+    "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
+    "p10_original_archive_sha256": "ab0f24fd2ffe3c9c30e5bc77f8f66bea0e823b9776bab3f5811b7fefab236fa6",
+    "p16_original_archive_sha256": "3b893b8df8e35971c95f0a10605ae70ea40a7fd8509c1d768bb06a712e1ce82c",
+    "source_verified_unique_original_episodes": 63,
+    "original_receipts": 135,
+    "duplicate_control_receipts": 72,
+    "provisional_shape_viable": 47,
+    "mean_turn90_rate": 0.43,
+    "mean_distinct_cells": 106.19,
+    "mean_2step_reversals": 9.52,
+    "mean_graph_junctions": 8.06,
+    "mean_graph_cycles": 4.46,
+    "host_applied_legality": "63/63 full original W0 episode receipts checked, not native CyberSand ABI"
+  },
+  "historical_crossmodel": {
+    "source_manifest": "driv3r_wormpaths_source_manifest.json",
+    "source_manifest_sha256": "873d208e370bec2d26586af1c86545957deef4b01fc5a9521f3630fd1920a88d",
+    "provenance": "secondary curated original-position source records; original producer artifact IDs + JSON sha256 retained",
+    "historical_specimens": 14,
+    "model_applied_specimens": 12,
+    "native_game_reference_specimens": 2,
+    "same_world_same_horizon_pairs_without_labels": 10,
+    "independent_original_producer_bytes_reverified_in_p17": false,
+    "pretrained_slm_crossmodel_heldout_ranker_trained": false
+  },
+  "niches": [
+    "MEANDERER",
+    "CURLER",
+    "BRANCHER",
+    "CHAOTIC_ARTIST"
+  ],
+  "negative_result": "100% ninety-degree turns on d1 stock can be a degenerate four-cell loop, not a successful Curler/Meanderer; shape-only proxies cannot confer preference or intentionality.",
+  "artifact_status": "LOCAL_ONLY_NOT_IMMUTABLE_ACTIONS",
+  "local_tests": "7/7 PASS",
+  "new_model_forwards": 0,
+  "new_optimizer_steps": 0,
+  "human_ratings": 0,
+  "blockers": [
+    "LFM GP350-018 sampled new closed-loop inference not yet run (greedy-state logits alone do not establish changed-trajectory outcomes)",
+    "Pinned full pretrained Tiny/SmolLM2, LFM350 and Franken d1 source weights/runner not available here; GitHub workflow dispatch unavailable",
+    "Cross-model original same-world/horizon multi-world training/heldout pairs with owner labels not available",
+    "Original 14 curated producer JSON bytes absent from this runtime; only historical source hashes/positions present"
+  ],
+  "next_consumer_experiment": "Obtain source-byte-verifiable matched original LFM stock/GP006 decoding controls, executed Franken full action/position receipts, Tiny pretrained original rollouts and Population pretrained output over world-disjoint seeds. Generate blind four-niche A4 source-matched comparisons, collect owner ballots, then train a bounded multiobjective ranker with held-out model families and transparent baselines. Keep all production safety claims with CyberSand.",
+  "lanes_read_only": [
+    "experiments/driv3r/lfm_game_policy",
+    "experiments/driv3r/frankenlayers_lab",
+    "experiments/driv3r/training/tiny_policy",
+    "experiments/driv3r/training/population",
+    "experiments/driv3r/training/distillation"
+  ],
+  "game_modified": false,
+  "external_repo_writes": false,
+  "merges": false,
+  "paid_compute": false
+}
