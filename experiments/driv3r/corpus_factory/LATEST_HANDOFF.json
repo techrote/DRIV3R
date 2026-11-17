@@ -6,80 +6,64 @@
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
   "draft_hold": true,
-  "current_version": 30,
-  "status": "QUALIFIED_SYNTHETIC_DUAL_HISTORY_COUNTERFACTUAL; NO_NATIVE_OR_REAL_SLM_EVAL",
-  "generator": "dual_history_v30.js",
-  "generator_sha256": "75dc358b9ecd3cc1d79838b0aab8b1ab9572904dfe10790de4a06066814d6e43",
-  "bounded_view": "bounded_view_v30.js",
-  "bounded_view_sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89",
-  "manifest": "V30_DEFAULT_MANIFEST.json",
-  "manifest_sha256": "eba2db423ad9f252316ff5e4060edf37049fa26ded6f1da536586ca36c02053e",
+  "current_version": 31,
+  "status": "QUALIFIED_SYNTHETIC_FOUR_WAY_OLD_PAINT_COUNTERFACTUAL; NO_NATIVE_OR_REAL_SLM_EVAL",
+  "generator": "four_arm_repair_v31.js",
+  "generator_sha256": "386715f6b2d7ccdcd651262d50e4c137f09d24e21152715a8b1c74df9c0a9acf",
+  "regression_test": "test_four_arm_repair_v31.js",
+  "regression_test_sha256": "3eabce1ffe1f5cf6122622d54de00b55e5969cafbccf7979c98c6a2dfd314359",
+  "manifest": "V31_DEFAULT_MANIFEST.json",
+  "manifest_sha256": "6f7cf7e96865ab547cf15e82e9435cabee87bec11e9e1b3c57313bc9652d2246",
   "best_checkpoint": null,
   "checkpoint_artifact": null,
   "corpus": {
     "synthetic_host_not_native": true,
-    "pairs": 128,
-    "episodes": 256,
-    "decisions": 7104,
-    "corrective_erasures": 512,
+    "counterfactual_families": 128,
+    "episodes": 512,
+    "decisions": 21984,
+    "corrective_erasures": 1024,
     "splits": {
-      "TRAIN": {
-        "pairs": 64,
-        "episodes": 128,
-        "decisions": 2368,
-        "erases": 256
-      },
-      "DEV": {
-        "pairs": 32,
-        "episodes": 64,
-        "decisions": 2016,
-        "erases": 128
-      },
-      "HELDOUT": {
-        "pairs": 32,
-        "episodes": 64,
-        "decisions": 2720,
-        "erases": 128
-      }
+      "TRAIN": {"groups": 8, "families": 64, "episodes": 256, "decisions": 7328, "erasures": 512},
+      "DEV": {"groups": 4, "families": 32, "episodes": 128, "decisions": 6208, "erasures": 256},
+      "HELDOUT": {"groups": 4, "families": 32, "episodes": 128, "decisions": 8448, "erasures": 256}
     },
     "qualifiers": {
-      "qualified_worlds": "128/128",
-      "oracle_episodes_completed": "256/256",
-      "reconstructed_sha256": "7104/7104",
-      "accepted_oracle_receipts": "7104/7104",
-      "first_choice_balanced": {
-        "BACKTRACK": 128,
-        "MOVE_E": 128
-      },
-      "min_wrong_choice_regret_steps": 2,
-      "heldout_min_remote_edges": 8,
+      "strict_four_way_worlds": "128/128",
+      "oracle_episodes_completed": "512/512",
+      "host_replayed_decisions": "21984/21984",
+      "full_observation_sha256_verified": "21984/21984",
+      "counterfactual_no_memory_projection_equal": "128/128",
+      "counterfactual_last_paint_projection_equal": "128/128",
+      "counterfactual_recent64_equal": "128/128",
+      "distinct_optimal_first_actions_per_family": 4,
+      "min_wrong_first_action_regret": 2,
+      "theoretical_restricted_first_action_ceiling": 0.25,
       "exact_input_conflicts": 0,
       "cross_split_exact_input_overlap": 0,
-      "cross_split_topology_overlap": 0,
+      "cross_split_graph_geometry_overlap": 0,
       "exact_train_duplicate_inputs": 0,
-      "no_memory_projection_alias_pairs": 128,
-      "last_paint_only_projection_alias_pairs": 128,
-      "theoretical_restricted_first_action_ceiling": 0.5
+      "rejected_candidate_worlds": 0
     },
-    "shard_publication": "six reproducible local JSONL shards, SHA-256 in manifest; immutable Actions artifact not yet available",
     "repeated_full_generation_byte_identical": true,
-    "peak_rss_kib_second_full": 181132,
-    "wall_s_second_full": 4.2
+    "wall_s_second_full": 12.96,
+    "peak_rss_kib_second_full": 410164,
+    "shard_publication": "six deterministic local JSONL shards, SHA-256 in manifest; immutable Actions artifact not yet available"
   },
-  "scientific_improvement": "v29 last prior PAINT receipt could expose remote contamination arm. v30 holds the latest PAINT receipt identical, while an earlier remote PAINT differs, and changes optimal first action after 160 accepted legal distractor movements.",
-  "host_legal": "synthetic Host action application and receipts; not native CyberSand action ABI",
+  "scientific_improvement": "v30 reduced a two-arm, latest-PAINT-only shortcut; v31 introduces four older wrong-paint locations in five-target worlds with the most recent PAINT receipt and recent64 identical. Each case requires one of four distinct optimal legal first actions with >=2-step wrong-choice regret.",
   "negative_results": [
-    "No real LFM350/Sprocket forward passes, optimizer updates, inference latency or model RSS measured here.",
-    "A symbolic interpreter of complete ordered old PAINT receipts can solve the pairs; learned memory competence untested.",
-    "Scripted, but accepted host-legal prelabel painting and navigation; only three targets, schematic orthogonal graph.",
-    "Prompt cap measured in 2048 JSON characters, not tokenizer tokens.",
-    "No immutable Actions corpus artifact dispatched; no paid compute."
+    "No real LFM350/Sprocket forward passes, optimizer updates, inference latency or model RSS in this lane.",
+    "Synthetic, scripted-but-host-accepted prelude and simplified orthogonal corridor topology; not native CyberSand.",
+    "Symbolic old-PAINT event reader can solve the first-action challenge; neural long-term memory unproven.",
+    "Gate transitions occur, but causal influence on optimal suffix was not established.",
+    "Materials A/B are abstract labels, not native physics/reactions.",
+    "8192 model-input limit measures JSON characters, not token count.",
+    "No paid compute and no immutable Actions shard artifact."
   ],
   "cross_lane_evidence": {
-    "lfm350": "GP350-018 source-only preflight; root model inference unavailable in executor; historical frozen LoRA baseline GP350-006 step96",
-    "sprocket": "Pinned 500M root model/dependencies unavailable, no workflow_dispatch; no real LoRA update"
+    "lfm350": "v30 prior handoff reports root-model inference unavailable in worker; no evidence of successful full native-game model-control.",
+    "sprocket": "v30 prior handoff reports pinned root-model/dependency execution blocker."
   },
-  "next_consumer_experiment": "Pinned actual LFM350/Sprocket TRAIN->DEV->HELDOUT, blind paired complete closed-loop recovery with full durable history vs latest-PAINT-only vs no-memory/recent64; report terminal success, contamination removal, suffix regret, raw preference illegality, p50/p95 CPU forward latency and model RSS, exact model/checkpoint/seed hashes.",
+  "next_consumer_experiment": "Pinned actual LFM350/Sprocket TRAIN->DEV->HELDOUT four-way family closed-loop recovery: compare durable-history vs last-PAINT-only vs recent64/no-memory, measure terminal success, residual remote contamination, suffix regret, legality, p50/p95 CPU forward latency, model RSS, exact checkpoint/seed/source hashes.",
   "no_other_lab_edits": true,
   "no_main_edits": true,
   "no_paid_API_GPU": true,

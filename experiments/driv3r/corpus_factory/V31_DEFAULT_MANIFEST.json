@@ -1,0 +1,144 @@
+{
+  "schema": "driv3r/corpus_factory/four-arm-v31/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "four_arm_repair_v31.js",
+  "generator_sha256": "386715f6b2d7ccdcd651262d50e4c137f09d24e21152715a8b1c74df9c0a9acf",
+  "dependencies": [
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "quick": false,
+  "oracle": "exact reverse BFS of five-ternary-target status x node position, post-latch, STOP included",
+  "challenge": "Four older wrong-material locations, identical latest wrong PAINT, equal recent64 and public no-memory/last-paint-only projection; same material law per family, four strictly different optimal first moves.",
+  "restricted_first_action_theoretical_ceiling": 0.25,
+  "last_paint_only_first_action_theoretical_ceiling": 0.25,
+  "consumer_warning": "Use reconstructed observation or bounded_model_input only; episode metadata/hidden_interventions/split/pair_id/oracle labels are not policy inputs. JSON length cap is characters, not tokenizer tokens.",
+  "limitations": [
+    "Synthetic graph and scripted host-accepted prelude, no native CyberSand acceptance.",
+    "Only five paintable targets and simple radial corridors.",
+    "No real SLM training or latency/RSS measured."
+  ],
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "worlds_considered": 64,
+      "strict_four_way_worlds": 64,
+      "rejected": [],
+      "episodes": 256,
+      "decisions": 7328,
+      "corrective_erasures": 512,
+      "first_action": {
+        "MOVE_W": 64,
+        "MOVE_E": 64,
+        "MOVE_S": 64,
+        "BACKTRACK": 64
+      },
+      "min_wrong_first_regret": 2,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 7328
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "strict_four_way_worlds": 32,
+      "rejected": [],
+      "episodes": 128,
+      "decisions": 6208,
+      "corrective_erasures": 256,
+      "first_action": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "min_wrong_first_regret": 2,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 6208
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "strict_four_way_worlds": 32,
+      "rejected": [],
+      "episodes": 128,
+      "decisions": 8448,
+      "corrective_erasures": 256,
+      "first_action": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "min_wrong_first_regret": 2,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 8448
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 5798720,
+      "sha256": "a7164c327cde43040b7661a990e78a00e81d54e8c5e4dc86c79a0bacdf652542"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 7328,
+      "bytes": 16477232,
+      "sha256": "c52689870408aabe9f6a6a33d615f3f533e70ffba58c76398bff26fb615510d9"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 128,
+      "bytes": 3473088,
+      "sha256": "9b4bf5c7625d5771b10565d8803d34c5608c5bd5c6d74832b52e4a8fb5503b30"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 6208,
+      "bytes": 16823512,
+      "sha256": "6aad86f92604f9fc869f8b8522deca2883049972699e4790dbea495ecc1d843c"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 128,
+      "bytes": 3984128,
+      "sha256": "9ec1014e825cfbe14630963fc70a2f70a2b889fc0282b7667f2cd6451a0a5dd9"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 8448,
+      "bytes": 26597888,
+      "sha256": "e2f8b0e4b5760bc2d973dd06b6ea7f838af0c58fce2045a9aa76a6fc0835d687"
+    }
+  }
+}
