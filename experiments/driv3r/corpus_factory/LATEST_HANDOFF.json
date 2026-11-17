@@ -32,7 +32,7 @@
   "safety": "only model_input features; counterfactual siblings grouped; separate HELDOUT; no primary SLM training in data lane",
   "known_failure": "host-scripted external-synthetic preludes, one oracle-labelled post-prelude decision; independent native ABI and full model-controlled rollouts not qualified",
   "next_consumer_experiment": "TRAIN/DEV full vs last32 vs zero-history on same pinned SLM, freeze checkpoint/hyperparams, then HELDOUT grammar shift and independent closed-loop synthetic challenge; report legal actions, paired accuracy, latency/RSS and negative outcomes",
-  "source_git_blob": "updated in source-matched next commit evidence ledger",
+  "source_git_blob": "be98237e63992da967b9a4ce309c549c11e67285",
   "default_manifest": "experiments/driv3r/corpus_factory/V11_DEFAULT_MANIFEST.json",
   "metrics": {
     "counts": {
@@ -101,5 +101,7 @@
     },
     "qualification": "two full deterministic V8 generations and paired alias/safety checks; Node CLI has not been executed; SHA256 cross-checked abc test vector",
     "material_consistency": "explicit west sand/east metal corridor tokens match dated DRY/WET law receipt and oracle route weights"
-  }
+  },
+  "test_git_blob": "e0621e9be204d3c4367371dc20d7f975a5ec51c3",
+  "source_commit": "1ac6184521773b62dc630adf8eaf2f871a876220"
 }
