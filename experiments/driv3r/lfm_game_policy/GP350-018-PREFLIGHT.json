@@ -1,0 +1,98 @@
+{
+  "schema": "driv3r.lfm350.gp350018-archived-preflight/1",
+  "status": "HISTORICAL-OBSERVATION-ONLY; NO NEW MODEL FORWARDS OR CLOSED-LOOP INTERVENTION",
+  "method": "Analytic action probabilities computed from each historical GP350-012 greedy-policy W0 decision six-logit vector with its recorded host-legal menu. Distributional outcomes after sampled action are UNKNOWN; no native claim.",
+  "reference_model": "LiquidAI/LFM2.5-350M",
+  "model_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+  "model_forwards_this_run": 0,
+  "optimizer_updates_this_run": 0,
+  "closed_loop_episodes_this_run": 0,
+  "archive_integrity": {
+    "gp350006": {
+      "sha256": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+      "entries": 187,
+      "crc": "PASS"
+    },
+    "stock": {
+      "sha256": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+      "entries": 103,
+      "crc": "PASS"
+    }
+  },
+  "paired_128_turn_archived_decisions_per_model": 1536,
+  "source_sha": {
+    "stock": "620c87ab880165a32fc79696fe8f1c4b2f3f129f",
+    "gp350006": "e60b1a6b94ac3b71ff4414b1596b3d950eaaeecf"
+  },
+  "archive_stage": {
+    "stock": {
+      "episodes": 12,
+      "unmasked_raw_illegal": 47,
+      "arm_expected_probabilities": {
+        "A-greedy": {
+          "non_greedy": 0,
+          "stop": 0,
+          "left_right": 0.04102
+        },
+        "B-t1p25": {
+          "non_greedy": 0.31146,
+          "stop": 0.00102,
+          "left_right": 0.31484
+        },
+        "B-t2p50": {
+          "non_greedy": 0.48569,
+          "stop": 0.01893,
+          "left_right": 0.39647
+        },
+        "C-m0p10": {
+          "non_greedy": 0.36162,
+          "stop": 0.01962,
+          "left_right": 0.31129
+        },
+        "C-m0p25": {
+          "non_greedy": 0.43686,
+          "stop": 0.04751,
+          "left_right": 0.30596
+        }
+      }
+    },
+    "gp350006": {
+      "episodes": 12,
+      "unmasked_raw_illegal": 0,
+      "arm_expected_probabilities": {
+        "A-greedy": {
+          "non_greedy": 0,
+          "stop": 0,
+          "left_right": 0.04883
+        },
+        "B-t1p25": {
+          "non_greedy": 0.00401,
+          "stop": 0.00007,
+          "left_right": 0.04959
+        },
+        "B-t2p50": {
+          "non_greedy": 0.05833,
+          "stop": 0.00648,
+          "left_right": 0.05817
+        },
+        "C-m0p10": {
+          "non_greedy": 0.08598,
+          "stop": 0.01769,
+          "left_right": 0.07707
+        },
+        "C-m0p25": {
+          "non_greedy": 0.20894,
+          "stop": 0.04411,
+          "left_right": 0.11828
+        }
+      }
+    }
+  },
+  "scientific_cautions": [
+    "The 128-turn source episodes are all greedy; changing a choice would change future observations/legal menus. Values are per-observation probability expectations, not results of sampled rollouts.",
+    "The original LFM W13 is a different VL model, an aesthetic reference only.",
+    "Flat host mixture includes STOP whenever host-legal; nonterminal continuation may collapse. The experiment must report this without excluding STOP or inventing a rescue heuristic.",
+    "GP006 large top-two logit margins imply B sampling alone may barely alter it at modest temperatures; C mixture has a stronger chance but STOP cost."
+  ],
+  "required_next_measurement": "Run gp350018_matched_decoder.py against pinned stock and GP006 adapter in the same synthetic W0 host, preserve exact six-logit receipts and compare fully closed-loop changing-observation traces."
+}
