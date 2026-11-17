@@ -1,0 +1,7381 @@
+[
+  {
+    "action_sha256": "8a1aea11dce550b984cb6ebc530fd328125f8420c314690e0693c58a969dfc05",
+    "actions_sha": "8a1aea11dce550b984cb6ebc530fd328125f8420c314690e0693c58a969dfc05",
+    "arm": 1.0,
+    "backtracks": 7,
+    "directive": "backtrack",
+    "end_distance": 6,
+    "first_backtrack": 1,
+    "goal": [
+      3,
+      8
+    ],
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "ink_sha256": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "max_back_probability": 0.0,
+    "model": "C18-A0",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.9894,
+        "step": 1
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "C18-A0",
+        "pos": [
+          5,
+          2
+        ],
+        "prob_back": 0.5662,
+        "step": 2
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "C18-A0",
+        "pos": [
+          6,
+          2
+        ],
+        "prob_back": 0.4804,
+        "step": 3
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "C18-A0",
+        "pos": [
+          7,
+          2
+        ],
+        "prob_back": 0.7109,
+        "step": 4
+      },
+      {
+        "action": "INK",
+        "distance": 11,
+        "phase": "C18-A0",
+        "pos": [
+          8,
+          2
+        ],
+        "prob_back": 0.6842,
+        "step": 5
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "C18-A0",
+        "pos": [
+          7,
+          2
+        ],
+        "prob_back": 0.7776,
+        "step": 6
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "C18-A0",
+        "pos": [
+          6,
+          2
+        ],
+        "prob_back": 0.2195,
+        "step": 7
+      },
+      {
+        "action": "INK",
+        "distance": 8,
+        "phase": "C18-A0",
+        "pos": [
+          5,
+          2
+        ],
+        "prob_back": 0.2617,
+        "step": 8
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.3287,
+        "step": 9
+      },
+      {
+        "action": "INK",
+        "distance": 8,
+        "phase": "C18-A0",
+        "pos": [
+          5,
+          2
+        ],
+        "prob_back": 0.1775,
+        "step": 10
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.0976,
+        "step": 11
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "C18-A0",
+        "pos": [
+          5,
+          2
+        ],
+        "prob_back": 0.1675,
+        "step": 12
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.0313,
+        "step": 13
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0109,
+        "step": 14
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.1863,
+        "step": 15
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0382,
+        "step": 16
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.1847,
+        "step": 17
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0353,
+        "step": 18
+      },
+      {
+        "action": "LIFT",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.1831,
+        "step": 19
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0331,
+        "step": 20
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.1814,
+        "step": 21
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0314,
+        "step": 22
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.1797,
+        "step": 23
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.0301,
+        "step": 24
+      },
+      {
+        "action": "STOP",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          2
+        ],
+        "prob_back": 0.178,
+        "step": 25
+      }
+    ],
+    "personality": 1,
+    "prefix_sha256": "791a9830f5d94d65d32ef256ceccc6a90413ef98cb7aa7598d94d277682ed812",
+    "probe_decisions": 0,
+    "probe_steps": 0,
+    "protected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ]
+    ],
+    "raw_illegal_top1": 0,
+    "reconsider_decisions": 0,
+    "released": 0,
+    "scenario": "off-early",
+    "seed": 1065945,
+    "steps": 25,
+    "stopped": true,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "actions_sha": "14eaded9ba20a51feef3d07c2c5196f2ecc0d0b592f89b5f82ce57e1144534b9",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "max_modified_probability": 0.9850000000000001,
+    "model": "C32-SAFE",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 13,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 14,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 15,
+        "phase": "retrace",
+        "pos": [
+          12,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 14,
+        "phase": "retrace",
+        "pos": [
+          12,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 13,
+        "phase": "retrace",
+        "pos": [
+          12,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          12,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          6
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "STOP",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "791a9830f5d94d65d32ef256ceccc6a90413ef98cb7aa7598d94d277682ed812",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 45,
+    "scenario": "off-early",
+    "seed": 1065945,
+    "steps": 45,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "actions_sha": "14eaded9ba20a51feef3d07c2c5196f2ecc0d0b592f89b5f82ce57e1144534b9",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "max_modified_probability": 0.9850000000000001,
+    "model": "C32-WATCH",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 13,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 14,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 15,
+        "phase": "retrace",
+        "pos": [
+          12,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 14,
+        "phase": "retrace",
+        "pos": [
+          12,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 13,
+        "phase": "retrace",
+        "pos": [
+          12,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          12,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          6
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "STOP",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "791a9830f5d94d65d32ef256ceccc6a90413ef98cb7aa7598d94d277682ed812",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 45,
+    "scenario": "off-early",
+    "seed": 1065945,
+    "steps": 45,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "action_sha256": "fd828b7d56e4ac3a03d7281cf5920724455f6b1348134d9945e6285fff13643a",
+    "actions_sha": "fd828b7d56e4ac3a03d7281cf5920724455f6b1348134d9945e6285fff13643a",
+    "arm": 1.0,
+    "backtracks": 8,
+    "directive": "backtrack",
+    "end_distance": 6,
+    "first_backtrack": 1,
+    "goal": [
+      10,
+      8
+    ],
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "ink_sha256": "6b951d78cbb2c667404b4391e076feb0d1ec970bc0266748837b402c42d47d62",
+    "max_back_probability": 0.0,
+    "model": "C18-A0",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "C18-A0",
+        "pos": [
+          4,
+          2
+        ],
+        "prob_back": 0.9995,
+        "step": 1
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "C18-A0",
+        "pos": [
+          5,
+          2
+        ],
+        "prob_back": 0.9933,
+        "step": 2
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "C18-A0",
+        "pos": [
+          6,
+          2
+        ],
+        "prob_back": 0.9902,
+        "step": 3
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "C18-A0",
+        "pos": [
+          7,
+          2
+        ],
+        "prob_back": 0.9871,
+        "step": 4
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "C18-A0",
+        "pos": [
+          8,
+          2
+        ],
+        "prob_back": 0.9823,
+        "step": 5
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          9,
+          2
+        ],
+        "prob_back": 0.9773,
+        "step": 6
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          10,
+          2
+        ],
+        "prob_back": 0.9749,
+        "step": 7
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "C18-A0",
+        "pos": [
+          11,
+          2
+        ],
+        "prob_back": 0.6789,
+        "step": 8
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          10,
+          2
+        ],
+        "prob_back": 0.042,
+        "step": 9
+      },
+      {
+        "action": "STOP",
+        "distance": 6,
+        "phase": "C18-A0",
+        "pos": [
+          10,
+          2
+        ],
+        "prob_back": 0.1168,
+        "step": 10
+      }
+    ],
+    "personality": 1,
+    "prefix_sha256": "0d31bb533f85fd515ce0d20caeb22b95b55137f9b0fa45dddd774f803b1c0c97",
+    "probe_decisions": 0,
+    "probe_steps": 0,
+    "protected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ]
+    ],
+    "raw_illegal_top1": 0,
+    "reconsider_decisions": 0,
+    "released": 0,
+    "scenario": "off-late",
+    "seed": 969436,
+    "steps": 10,
+    "stopped": true,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "actions_sha": "f42ebb5e7e9602a5c1ece3f35c97a1779a379548af744575738e7f877f9fb475",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "bdf0b5fdc6a28eadd64b5bd6248f842af3b25bb01ee8f31e84a7cb718db9372a",
+    "max_modified_probability": 0.9850000000000001,
+    "model": "C32-SAFE",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          12,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          12,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          12,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          12,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          6
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          12,
+          11
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          11,
+          11
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          10,
+          11
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "probe",
+        "pos": [
+          10,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 1,
+        "phase": "probe",
+        "pos": [
+          10,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 0,
+        "phase": "probe",
+        "pos": [
+          10,
+          8
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "0d31bb533f85fd515ce0d20caeb22b95b55137f9b0fa45dddd774f803b1c0c97",
+    "probes": 3,
+    "raw_illegal_top1": 0,
+    "retreats": 78,
+    "scenario": "off-late",
+    "seed": 969436,
+    "steps": 81,
+    "strength": 1.0,
+    "success": 1
+  },
+  {
+    "actions_sha": "f42ebb5e7e9602a5c1ece3f35c97a1779a379548af744575738e7f877f9fb475",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "bdf0b5fdc6a28eadd64b5bd6248f842af3b25bb01ee8f31e84a7cb718db9372a",
+    "max_modified_probability": 0.9850000000000001,
+    "model": "C32-WATCH",
+    "path": [
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          10,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          11,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          12,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          12,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          12,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          12,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          6
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          7
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "retrace",
+        "pos": [
+          12,
+          8
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          12,
+          9
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          12,
+          10
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          12,
+          11
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          11,
+          11
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          10,
+          11
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 2,
+        "phase": "probe",
+        "pos": [
+          10,
+          10
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 1,
+        "phase": "probe",
+        "pos": [
+          10,
+          9
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 0,
+        "phase": "probe",
+        "pos": [
+          10,
+          8
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "0d31bb533f85fd515ce0d20caeb22b95b55137f9b0fa45dddd774f803b1c0c97",
+    "probes": 3,
+    "raw_illegal_top1": 0,
+    "retreats": 78,
+    "scenario": "off-late",
+    "seed": 969436,
+    "steps": 81,
+    "strength": 1.0,
+    "success": 1
+  },
+  {
+    "action_sha256": "5e10ca38dd86af07dea814c929caa15b67bcd82646f66537acb91a3dcfc73dc1",
+    "actions_sha": "5e10ca38dd86af07dea814c929caa15b67bcd82646f66537acb91a3dcfc73dc1",
+    "arm": 1.0,
+    "backtracks": 5,
+    "directive": "backtrack",
+    "end_distance": 3,
+    "first_backtrack": 4,
+    "goal": [
+      3,
+      8
+    ],
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "c4238b29dc7857154ccba84b37c5a4c61208f81d4c425cd57423a09760fd3ac0",
+    "ink_sha256": "c4238b29dc7857154ccba84b37c5a4c61208f81d4c425cd57423a09760fd3ac0",
+    "max_back_probability": 0.0,
+    "model": "C18-A0",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.0224,
+        "step": 1
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.001,
+        "step": 2
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0167,
+        "step": 3
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.7663,
+        "step": 4
+      },
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.3464,
+        "step": 5
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.9634,
+        "step": 6
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.6746,
+        "step": 7
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1354,
+        "step": 8
+      },
+      {
+        "action": "LIFT",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.6362,
+        "step": 9
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.4022,
+        "step": 10
+      },
+      {
+        "action": "LIFT",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.1326,
+        "step": 11
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.371,
+        "step": 12
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0088,
+        "step": 13
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1137,
+        "step": 14
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.1013,
+        "step": 15
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1119,
+        "step": 16
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.092,
+        "step": 17
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1102,
+        "step": 18
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0846,
+        "step": 19
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1086,
+        "step": 20
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0785,
+        "step": 21
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.107,
+        "step": 22
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0732,
+        "step": 23
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1055,
+        "step": 24
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0688,
+        "step": 25
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1041,
+        "step": 26
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.065,
+        "step": 27
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1028,
+        "step": 28
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0618,
+        "step": 29
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1016,
+        "step": 30
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0591,
+        "step": 31
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.1006,
+        "step": 32
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0569,
+        "step": 33
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.0998,
+        "step": 34
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0552,
+        "step": 35
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.0991,
+        "step": 36
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0538,
+        "step": 37
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.0986,
+        "step": 38
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0528,
+        "step": 39
+      },
+      {
+        "action": "STOP",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0983,
+        "step": 40
+      }
+    ],
+    "personality": 1,
+    "prefix_sha256": "11df6742873a3b74aa8e647ac8d8febd6ce1b582a1718128c4a0e4f086c49aa2",
+    "probe_decisions": 0,
+    "probe_steps": 0,
+    "protected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ]
+    ],
+    "raw_illegal_top1": 0,
+    "reconsider_decisions": 0,
+    "released": 0,
+    "scenario": "lure3",
+    "seed": 733435,
+    "steps": 40,
+    "stopped": true,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "actions_sha": "5e10ca38dd86af07dea814c929caa15b67bcd82646f66537acb91a3dcfc73dc1",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "c4238b29dc7857154ccba84b37c5a4c61208f81d4c425cd57423a09760fd3ac0",
+    "max_modified_probability": 0,
+    "model": "C32-SAFE",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "STOP",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "11df6742873a3b74aa8e647ac8d8febd6ce1b582a1718128c4a0e4f086c49aa2",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 0,
+    "scenario": "lure3",
+    "seed": 733435,
+    "steps": 40,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "actions_sha": "f571311146ee3816848c9ebee88e95da063670034b79264479314cc860507a87",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "c4238b29dc7857154ccba84b37c5a4c61208f81d4c425cd57423a09760fd3ac0",
+    "max_modified_probability": 0.9849999999999999,
+    "model": "C32-WATCH",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "watch",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "watch",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "watch",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          3,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 12,
+        "phase": "retrace",
+        "pos": [
+          9,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 11,
+        "phase": "retrace",
+        "pos": [
+          8,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 10,
+        "phase": "retrace",
+        "pos": [
+          7,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 9,
+        "phase": "retrace",
+        "pos": [
+          6,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 8,
+        "phase": "retrace",
+        "pos": [
+          5,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          3,
+          2
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 7,
+        "phase": "retrace",
+        "pos": [
+          4,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 6,
+        "phase": "retrace",
+        "pos": [
+          3,
+          2
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 5,
+        "phase": "retrace",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "LIFT",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "BACKTRACK",
+        "distance": 4,
+        "phase": "retrace",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "STOP",
+        "distance": 3,
+        "phase": "retrace",
+        "pos": [
+          3,
+          5
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "11df6742873a3b74aa8e647ac8d8febd6ce1b582a1718128c4a0e4f086c49aa2",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 37,
+    "scenario": "lure3",
+    "seed": 733435,
+    "steps": 40,
+    "strength": 1.0,
+    "success": 0
+  },
+  {
+    "action_sha256": "ee75e28fa590b0198ae76d9e43a7b7c4bf2a0fb0e0c2fba5e8426055ec5f53e2",
+    "actions_sha": "ee75e28fa590b0198ae76d9e43a7b7c4bf2a0fb0e0c2fba5e8426055ec5f53e2",
+    "arm": 1.0,
+    "backtracks": 0,
+    "directive": "backtrack",
+    "end_distance": 0,
+    "first_backtrack": null,
+    "goal": [
+      3,
+      8
+    ],
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "4d24a7a39d3287fd50432bbf9d7b34c88bf0cb3caa847e2d09ddaba5df1296ee",
+    "ink_sha256": "4d24a7a39d3287fd50432bbf9d7b34c88bf0cb3caa847e2d09ddaba5df1296ee",
+    "max_back_probability": 0.0,
+    "model": "C18-A0",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          3
+        ],
+        "prob_back": 0.0224,
+        "step": 1
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          4
+        ],
+        "prob_back": 0.001,
+        "step": 2
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          5
+        ],
+        "prob_back": 0.0011,
+        "step": 3
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          6
+        ],
+        "prob_back": 0.0014,
+        "step": 4
+      },
+      {
+        "action": "INK",
+        "distance": 1,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          7
+        ],
+        "prob_back": 0.0011,
+        "step": 5
+      },
+      {
+        "action": "INK",
+        "distance": 0,
+        "phase": "C18-A0",
+        "pos": [
+          3,
+          8
+        ],
+        "prob_back": 0.001,
+        "step": 6
+      }
+    ],
+    "personality": 1,
+    "prefix_sha256": "efb8240c43efa66c4355b25946bd20c71d77f621aa5f8bcd54efdcffcd804ee9",
+    "probe_decisions": 0,
+    "probe_steps": 0,
+    "protected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ]
+    ],
+    "raw_illegal_top1": 0,
+    "reconsider_decisions": 0,
+    "released": 0,
+    "scenario": "shortcut",
+    "seed": 1058646,
+    "steps": 6,
+    "stopped": false,
+    "strength": 1.0,
+    "success": 1
+  },
+  {
+    "actions_sha": "ee75e28fa590b0198ae76d9e43a7b7c4bf2a0fb0e0c2fba5e8426055ec5f53e2",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "4d24a7a39d3287fd50432bbf9d7b34c88bf0cb3caa847e2d09ddaba5df1296ee",
+    "max_modified_probability": 0,
+    "model": "C32-SAFE",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "released",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "released",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "released",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "released",
+        "pos": [
+          3,
+          6
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 1,
+        "phase": "released",
+        "pos": [
+          3,
+          7
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 0,
+        "phase": "released",
+        "pos": [
+          3,
+          8
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "efb8240c43efa66c4355b25946bd20c71d77f621aa5f8bcd54efdcffcd804ee9",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 0,
+    "scenario": "shortcut",
+    "seed": 1058646,
+    "steps": 6,
+    "strength": 1.0,
+    "success": 1
+  },
+  {
+    "actions_sha": "ee75e28fa590b0198ae76d9e43a7b7c4bf2a0fb0e0c2fba5e8426055ec5f53e2",
+    "arm": 1.0,
+    "directive": "backtrack",
+    "host_rejected": 0,
+    "i": 0,
+    "ink_sha": "4d24a7a39d3287fd50432bbf9d7b34c88bf0cb3caa847e2d09ddaba5df1296ee",
+    "max_modified_probability": 0,
+    "model": "C32-WATCH",
+    "path": [
+      {
+        "action": "INK",
+        "distance": 5,
+        "phase": "watch",
+        "pos": [
+          3,
+          3
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 4,
+        "phase": "watch",
+        "pos": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 3,
+        "phase": "watch",
+        "pos": [
+          3,
+          5
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 2,
+        "phase": "watch",
+        "pos": [
+          3,
+          6
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 1,
+        "phase": "watch",
+        "pos": [
+          3,
+          7
+        ]
+      },
+      {
+        "action": "INK",
+        "distance": 0,
+        "phase": "watch",
+        "pos": [
+          3,
+          8
+        ]
+      }
+    ],
+    "personality": 1,
+    "prefix_sha": "efb8240c43efa66c4355b25946bd20c71d77f621aa5f8bcd54efdcffcd804ee9",
+    "probes": 0,
+    "raw_illegal_top1": 0,
+    "retreats": 0,
+    "scenario": "shortcut",
+    "seed": 1058646,
+    "steps": 6,
+    "strength": 1.0,
+    "success": 1
+  }
+]

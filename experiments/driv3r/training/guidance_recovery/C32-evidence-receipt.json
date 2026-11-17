@@ -1,0 +1,62 @@
+{
+  "archive": {
+    "bytes": 513760,
+    "sha256": "0cdf3db9b1b9b09e3e94ef16d1d2997c3220b73f9444ef5bbc9ad062c80c1657"
+  },
+  "checkpoint": {
+    "bytes": 668,
+    "sha256": "37129cbed56fd90a85005c2759d9792a0346ea01211ac978fcf9bcc0a7fd16d6"
+  },
+  "checkpoints_two_replicas_identical": true,
+  "cohort_A_trajectories": {
+    "bytes": 1186222,
+    "sha256": "1414f13bf81d6810f3f606e94a9d6bd27f48306417f6c53709c422d68e5b11c0"
+  },
+  "cohort_B_trajectories": {
+    "bytes": 1318039,
+    "sha256": "a2d3c208257e794533ebc1af91a267b0947735931ac40dda1ff38276a432a8e4"
+  },
+  "date": "2026-11-17",
+  "disposition": "Draft/HOLD no merge no Ready no auto-merge no CyberSand or Neurounner writes",
+  "exploratory_cohorts": {
+    "A": {
+      "bytes": 602247,
+      "sha256": "fea369330615aa8dc352ecabab644fd399aed2e0bfce41e02fc738a0d7887c06"
+    },
+    "B": {
+      "bytes": 719662,
+      "sha256": "d2654be286fdb4522dec11a1c7d1ae6a4b22add0ff12a42c09110bfdca875077"
+    }
+  },
+  "gallery_generator": {
+    "bytes": 3114,
+    "sha256": "65b7ea0f06e4983b175a5a2738af0e7247b07b63d637e790799d58364f70fbb6"
+  },
+  "gallery_traces": {
+    "bytes": 105846,
+    "sha256": "54e2f1cd46a3a5f654bcb75a3f7fce7412b1b99592c52d9caf96199c893bbddb"
+  },
+  "local_targeted_tests": "7/7 PASS",
+  "metrics": {
+    "bytes": 13151,
+    "sha256": "5374d769e0bf0b604e2ff9462e5a99cc1e990965361f65575efdc4f5626d3209"
+  },
+  "report": {
+    "bytes": 6199,
+    "sha256": "8d4ca924633978f3dd3202fb85c801b6740d490c48f9b274ea58c77f455d71b3"
+  },
+  "schema": "driv3r-c32-offstack-recovery-evidence/1",
+  "scientific_status": "synthetic-only research; no native acceptance; no evidence of learned gameplay advantage; immutable Actions checkpoint custody outstanding",
+  "scope": "techrote/DRIV3R#1 research/import-consolidated-worm-labs experiments/driv3r/training/guidance_recovery/",
+  "source": {
+    "bytes": 15120,
+    "sha256": "11b8f7bde48a52840a7c882a99738b60b628fc9e5a89ce34dff26fb9906de543"
+  },
+  "tests": {
+    "bytes": 3461,
+    "sha256": "ff1f242a75d076b8c460cf8d67249fc74a93654ac89bcfee81c40fa846d300cc"
+  },
+  "total_exploratory_episodes": 840,
+  "total_primary_episodes": 2240,
+  "training_updates": 140
+}
