@@ -4,59 +4,34 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "dynamic-choice-v10",
-  "artifact": "node experiments/driv3r/corpus_factory/dynamic_challenge_v10.js NEW_DIR 12",
-  "provenance": "deterministic external synthetic host only; no native CyberSand ABI receipt",
-  "source_path": "experiments/driv3r/corpus_factory/dynamic_challenge_v10.js",
-  "source_git_blob": "3647f3f9141c0c86312a0e49d9331d823773f238",
-  "test_git_blob": "a696887d61548ffa5f368d343184bc13965a06c5",
-  "default_manifest_path": "experiments/driv3r/corpus_factory/V10_DEFAULT_MANIFEST.json",
-  "metrics": {
+  "version": "stateful-causal-v11",
+  "artifact": "node experiments/driv3r/corpus_factory/stateful_challenge_v11.js NEW_DIR 16",
+  "source": "experiments/driv3r/corpus_factory/stateful_challenge_v11.js",
+  "provenance": "independent external synthetic host; explicitly NOT native CyberSand ABI",
+  "baseline": "v8 last-cell memory equalled full on tree corridors; v10 motif last receipt was enough",
+  "controls": "full ordered history vs last32 and zero-history, with exact paired aliases",
+  "expected_counts": {
     "TRAIN": {
-      "topology_groups": 18,
-      "world_groups": 216,
-      "paired_counterfactuals": 648,
-      "rows": 1296,
-      "sha256": "96893ccb181297e08dc34189d1ee74380d4e420a4e75b15fa793122eca1ad3cd"
+      "rows": 1536,
+      "pairs": 768
     },
     "DEV": {
-      "topology_groups": 6,
-      "world_groups": 72,
-      "paired_counterfactuals": 216,
-      "rows": 432,
-      "sha256": "56df16574cb63a70bafcfab48478bc1e7d40b6faa135b8b8325a1a7532d5c697"
+      "rows": 576,
+      "pairs": 288
     },
     "HELDOUT": {
-      "topology_groups": 6,
-      "world_groups": 72,
-      "paired_counterfactuals": 216,
-      "rows": 432,
-      "sha256": "c8f3e1c481d6f4e0ab4852c717ed24122e017af9a93ed3cca9fd555b74908fe5"
-    },
-    "executed_synthetic_moves": 95328,
-    "host_protected_entries": 0,
-    "near_duplicate_world_groups_rejected": 0,
-    "repeated_generation_byte_identical": true,
-    "node_22_seconds": [
-      1.89,
-      1.81
-    ],
-    "peak_rss_kb": [
-      119868,
-      119832
-    ]
+      "rows": 576,
+      "pairs": 288
+    }
   },
-  "tasks": [
-    "shutter_recovery: history/last12 alias with changing remote gate",
-    "goal_retarget: differing new beacon coordinates",
-    "motif_echo: opposite remote paint continuations"
-  ],
-  "invariant": "Within shutter sibling pairs, local materials, legal actions, position, goal and last12 positions match; oracle action labels oppose. Topology groups and siblings never cross TRAIN/DEV/HELDOUT.",
-  "model_inputs": "Use model_input only; no top-level metadata, target, oracle evidence, controls or hard negatives as features.",
-  "cross_lane_observations": {
-    "sprocket_game_policy": "Root 500M absent in local executor; no new real root LoRA inference",
-    "lfm_game_policy": "GP350-018 decoder preflight; no new full LFM inference; premature RETRACE remains an observed failure"
+  "split_grammar": {
+    "TRAIN": "plain",
+    "DEV": "single-spur",
+    "HELDOUT": "double-spur"
   },
-  "known_failure": "Synthetic host-only oracle-labelled post-prelude decisions, not independently generated fully model-controlled gameplay; motif needs only short history. No native ABI validation or hosted immutable corpus artifact.",
-  "next_consumer_experiment": "Train/evaluate actual pinned Sprocket or LFM model on TRAIN only when assets/opt-in worker become available. Compare full event history vs last12-only and zero-history on paired held-out shutter worlds, then independent-generator closed-loop survival, goal completion, false retrace, RSS/latency. Do not expose HELDOUT for model selection."
+  "safety": "only model_input features; counterfactual siblings grouped; separate HELDOUT; no primary SLM training in data lane",
+  "known_failure": "host-scripted external-synthetic preludes, one oracle-labelled post-prelude decision; independent native ABI and full model-controlled rollouts not qualified",
+  "next_consumer_experiment": "TRAIN/DEV full vs last32 vs zero-history on same pinned SLM, freeze checkpoint/hyperparams, then HELDOUT grammar shift and independent closed-loop synthetic challenge; report legal actions, paired accuracy, latency/RSS and negative outcomes",
+  "source_git_blob": "populate after GitHub commit",
+  "default_manifest": "generated on demand with SHA256 of shards"
 }
