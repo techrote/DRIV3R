@@ -46,7 +46,18 @@ WAVE15_FLOWS: dict[str, tuple[int, ...]] = {
     "aero4_no2_tailflip": (0, 4, 20, 10),
     "aero5_no2_echo10": (0, 4, 10, 20, 10),
 }
-LAB_FLOWS: dict[str, tuple[int, ...]] = {**WAVE1_FLOWS, **WAVE2_FLOWS, **WAVE3_FLOWS, **WAVE5_FLOWS, **WAVE6_FLOWS, **WAVE14_FLOWS, **WAVE15_FLOWS}
+# Wave 20: new structural lobotomies, NOT permutations of seeds or output rules.
+# Six previously untested masks: two distinct identities at each 8/6/4 executed steps.
+# They are hypotheses until pinned real inference and host replay pass.
+WAVE20_FLOWS: dict[str, tuple[int, ...]] = {
+    "grey8_cut": (0, 1, 2, 4, 8, 10, 20, 23),
+    "witch8_cut": (0, 2, 4, 7, 10, 14, 20, 23),
+    "route6_cut": (0, 2, 4, 10, 18, 20),
+    "tail6_cut": (0, 1, 4, 10, 20, 23),
+    "curl4_cut": (0, 4, 10, 23),
+    "branch4_cut": (0, 2, 10, 23),
+}
+LAB_FLOWS: dict[str, tuple[int, ...]] = {**WAVE1_FLOWS, **WAVE2_FLOWS, **WAVE3_FLOWS, **WAVE5_FLOWS, **WAVE6_FLOWS, **WAVE14_FLOWS, **WAVE15_FLOWS, **WAVE20_FLOWS}
 EXPECTED_LENGTHS = {
     "skele6": 6, "aero6": 6, "skele4": 4, "aero4": 4,
     "tailspin4": 4, "needle4": 4,
@@ -55,6 +66,9 @@ EXPECTED_LENGTHS = {
     "aero4_no2": 4,
     "aero4_bridge": 4,
     "aero4_no2_tailflip": 4, "aero5_no2_echo10": 5,
+    "grey8_cut": 8, "witch8_cut": 8,
+    "route6_cut": 6, "tail6_cut": 6,
+    "curl4_cut": 4, "branch4_cut": 4,
 }
 
 def validate_flows(flows: dict[str, tuple[int, ...]] = LAB_FLOWS) -> None:
@@ -89,7 +103,10 @@ def validate_flows(flows: dict[str, tuple[int, ...]] = LAB_FLOWS) -> None:
         elif name in WAVE14_FLOWS:
             if layers != WAVE14_FLOWS[name]:
                 raise ValueError(f"{name}: wave-14 flow changed")
-        elif layers != WAVE15_FLOWS[name]:
-            raise ValueError(f"{name}: wave-15 flow changed")
+        elif name in WAVE15_FLOWS:
+            if layers != WAVE15_FLOWS[name]:
+                raise ValueError(f"{name}: wave-15 flow changed")
+        elif layers != WAVE20_FLOWS[name]:
+            raise ValueError(f"{name}: wave-20 flow changed")
 
 validate_flows()

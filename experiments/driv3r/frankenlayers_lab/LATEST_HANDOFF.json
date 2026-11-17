@@ -1,88 +1,37 @@
 {
   "schema": "driv3r/frankenlayers-latest-handoff/v1",
-  "owner_direction_date": "2026-11-16",
-  "branch": "research/import-consolidated-worm-labs",
+  "dated": "2026-11-17",
+  "lab": "frankenlayers_lab",
+  "status": "WAVE20_STRUCTURAL_GRAPH_SOURCE_COMMITTED_NOT_INFERRED",
+  "repository": "techrote/DRIV3R",
   "pr": 1,
-  "status": "whole-layer-removal-priority-accepted; no new model inference completed in this handoff",
-  "mission": "Produce genuinely shortened executed neural graphs for emergent Meanderer, Curler, Brancher and Chaotic Artist worm trajectory candidates",
-  "benchmark_identity": {
-    "model": "LiquidAI/d1-2B Q8 System One",
-    "donor_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
-    "llama_source_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
-    "controlled_environment": "Synthetic W0 legal host; native CyberSand is not part of this lab"
-  },
-  "earlier_verified_guide": {
-    "historical_source": "experiments/driv3r/frankenlayers_lab/results-2026-11-16.md",
-    "viable_sparse_spine": "aero4_no2",
+  "branch": "research/import-consolidated-worm-labs",
+  "current_best_historical": {
+    "candidate": "aero4_no2",
     "executed_source_layers": [
       0,
       4,
       10,
       20
     ],
-    "counterexample": "aero4_no2_tailflip produced early STOP; keep negative evidence",
-    "legacy_experiment_location": "techrote/cybersand historical Actions artifacts; not transferred to DRIV3R"
+    "quant": "Q4_K_M requantized from Q8",
+    "wave16_heldout_novel_cells_raw": 162,
+    "wave16_p50_seconds_raw": 0.395,
+    "limitations": "Historical synthetic W0 run, not native; wave17 different seed produced 91 new cells; no demonstrated objective completion"
   },
-  "next_substantive_work": {
-    "operation": "Remove full executed neural layers in the model decision graph; Q8 weights unchanged and unused dropped blocks not computed",
-    "priority": "Try new structurally distinct 6-layer and 4-layer execution masks with full/sliding attention guard, not heuristic turning, frozen-score calibration or repeated surrogate-only studies",
-    "candidates_are_hypotheses_not_results": [
-      {
-        "name": "route6",
-        "executed_layers": [
-          0,
-          2,
-          4,
-          10,
-          18,
-          20
-        ]
-      },
-      {
-        "name": "tail6",
-        "executed_layers": [
-          0,
-          2,
-          4,
-          10,
-          20,
-          23
-        ]
-      },
-      {
-        "name": "curl4",
-        "executed_layers": [
-          0,
-          4,
-          10,
-          23
-        ]
-      },
-      {
-        "name": "branch4",
-        "executed_layers": [
-          0,
-          2,
-          10,
-          23
-        ]
-      }
-    ],
-    "controls": [
-      "original_stock_Q8",
-      "prior_viable_aero4_no2",
-      "historical_greyhound",
-      "historical_branchwitch"
-    ],
-    "protocol": "Patch/build pinned llama.cpp, retain source/build hashes, run real live /v1/systemone on matched initial W0 worlds, measure legal outputs and spontaneous STOP, build unsmoothed per-step SVG and original JSON traces, compute paired timing and peak RSS; no native claim",
-    "artistic_niches": [
-      "Meanderer",
-      "Curler",
-      "Brancher",
-      "Chaotic Artist"
-    ],
-    "exclusion": "Do not count STOP-only models, 2-cell oscillations, forced sawtooths or post-hoc action heuristics as expressive successes"
-  },
-  "run_environment_note": "The immediate chat invocation could inspect remote source but had no pinned Q8/llama.cpp runtime or network-enabled build environment; no new model execution, train result, PNG, speedup or shape was fabricated.",
-  "governance": "Existing Draft/HOLD DRIV3R PR #1 only; no new PR/branch, no merge, no Ready; CyberSand and Neurounner read-only"
+  "immutable_q8_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+  "pinned_llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+  "fresh_candidate_catalogue": "run-request-wave20.json",
+  "manual_inference_driver": "wave20_structural.py",
+  "source_test": "test_wave20_structural.py",
+  "actual_new_inference": "NOT_EXECUTED",
+  "precise_blocker": "This session cannot acquire the 1.846 GB Q8 GGUF/build pinned llama.cpp or dispatch an Actions job; imported DRIV3R checkout also lacks the externally mounted legacy backend/process and W0 modules needed for parent run_arm. Source smoke cannot substitute.",
+  "next_consumer": "Run source-pinned, manual CPU Q8 W20 experiment with six structural masks + stock/GREYHOUND/BRANCHWITCH/aero4_no2 controls; preserve real full six-way W0 decisions and trajectories, then offer only qualified neural candidates to Preference Lab and Extreme Quant/Distillation.",
+  "exclusions": [
+    "No native CyberSand acceptance",
+    "No novel model scores",
+    "No false niche labels",
+    "No posthoc guards or surrogate weights",
+    "No changes to external repos"
+  ]
 }
