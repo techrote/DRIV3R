@@ -1,0 +1,97 @@
+{
+  "schema": "driv3r/corpus_factory/v21-manifest",
+  "label": "synthetic host, not native CyberSand",
+  "generator": "recipe_grounded_v21.js",
+  "scale": 1,
+  "split_config": {
+    "TRAIN": {
+      "groups": 20,
+      "min": 14,
+      "max": 19,
+      "detours": 2
+    },
+    "DEV": {
+      "groups": 8,
+      "min": 20,
+      "max": 25,
+      "detours": 3
+    },
+    "HELDOUT": {
+      "groups": 8,
+      "min": 26,
+      "max": 33,
+      "detours": 4
+    }
+  },
+  "summaries": {
+    "TRAIN": {
+      "world_groups": 20,
+      "episodes": 160,
+      "decisions": 6880,
+      "oracle_actions": 6880,
+      "intentionally_refused_initial_actions": 56,
+      "shutter_events": 160,
+      "exact_duplicate_inputs": 240,
+      "unique_model_inputs": 6640,
+      "train_downweighted_duplicates": 240
+    },
+    "DEV": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 3920,
+      "oracle_actions": 3920,
+      "intentionally_refused_initial_actions": 24,
+      "shutter_events": 64,
+      "exact_duplicate_inputs": 12,
+      "unique_model_inputs": 3908,
+      "train_downweighted_duplicates": 0
+    },
+    "HELDOUT": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 4848,
+      "oracle_actions": 4848,
+      "intentionally_refused_initial_actions": 24,
+      "shutter_events": 64,
+      "exact_duplicate_inputs": 12,
+      "unique_model_inputs": 4836,
+      "train_downweighted_duplicates": 0
+    }
+  },
+  "world_fingerprint_sha256": "e291cfa345d03c1f9711646effa560f2ab3fe1f635266c17dd09f96e314e2b15",
+  "world_group_count": 36,
+  "episodes": 288,
+  "decisions": 15648,
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "91bb20effc6828188512355053d440820e9c1f9ac820f49ccb2a47188a538751",
+      "bytes": 1550648,
+      "rows": 160
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "e00d0b2f0e9566159f01fe925a3e09678e00429cadcfa79c201ba5ded9961bd3",
+      "bytes": 78329216,
+      "rows": 6880
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "c39040f98430dfdb6b0ab7b0f68a4bd36ea329861ceed69eb9c54d1dc482b8bc",
+      "bytes": 620040,
+      "rows": 64
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "f90671fabe4f2b2f760cadc47fb51043c35d045e8b5ebfd0dca8edb444a24799",
+      "bytes": 47664936,
+      "rows": 3920
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "5a9ce65b521bad2946ebcf0a36df5ed06c806fad879d32c4aa938bf7bd99601e",
+      "bytes": 620808,
+      "rows": 64
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "137a0d5769bdbb39374e58014fc28409e64c25ebf8476427a5564b8fab1f0e2b",
+      "bytes": 61952288,
+      "rows": 4848
+    }
+  }
+}
