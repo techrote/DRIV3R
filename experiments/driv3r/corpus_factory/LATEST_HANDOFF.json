@@ -4,17 +4,25 @@
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "role": "DATA ONLY: synthetic causal-gate and accepted-wrong-branch recovery corpus; not policy trainer",
-  "version": "causal-gate-v26",
-  "source": "experiments/driv3r/corpus_factory/causal_gate_v26.js",
-  "source_sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c",
-  "source_dependency": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
-  "dependency_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
-  "test": "experiments/driv3r/corpus_factory/test_causal_gate_v26.js",
-  "test_sha256": "6f172afef2e6e6a9f4da90c43151d626c873aea971bfb71ad9fcb60a53275b8b",
-  "manifest": "experiments/driv3r/corpus_factory/V26_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "4425b93d05469a2dec1d2211a2b49c81e9417af8343424276b6632ae23c76bb2",
-  "best_checkpoint_or_artifact": "Reproducible local 6-shard v26 synthetic corpus; NO trained SLM checkpoint and NO immutable Actions shard artifact",
+  "role": "DATA ONLY, not SLM trainer",
+  "version": "paint-recovery-v27",
+  "source": "experiments/driv3r/corpus_factory/paint_recovery_v27.js",
+  "source_sha256": "6fe483084103f3d2fcaabf539bd6cf6eea22abf03f16a69dfad4ea2f83343538",
+  "test": "experiments/driv3r/corpus_factory/test_paint_recovery_v27.js",
+  "test_sha256": "d99602ce189539cf8c3f7ffb83e216e89fb4d5e888db415576f6aff9caefd396",
+  "manifest": "experiments/driv3r/corpus_factory/V27_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "2cf3e5ff9d968b1b67a9824f1375146e1923bbb903480f586b10f93e6ad0d08e",
+  "source_dependencies": [
+    {
+      "path": "experiments/driv3r/corpus_factory/causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "path": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "best_checkpoint_or_artifact": "Reproducible local six-shard v27 synthetic corpus. No trained SLM checkpoint or immutable Actions artifact.",
   "splits": {
     "TRAIN": {
       "groups": 8,
@@ -28,30 +36,25 @@
         6,
         7
       ],
-      "episodes": 128,
-      "clean_episodes": 64,
-      "wrong_first_recovery_episodes": 64,
-      "decisions": 1984,
-      "unique_inputs": 1744,
-      "duplicate_inputs": 240,
-      "first_action": {
-        "BACKTRACK": 32,
-        "MOVE_N": 32
+      "episodes": 192,
+      "decisions": 3391,
+      "unique_inputs": 2975,
+      "exact_duplicates": 416,
+      "near_downweighted": 1133,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 64,
+        "wrong-material-recovery": 64,
+        "wrong-branch-and-material-recovery": 64
       },
-      "gate_initial": {
-        "open": 32,
-        "closed": 32
-      },
-      "gate_transitions": 128,
-      "causal_clean_episode_count": 12,
-      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 43,
-      "frozen_gate_illegal_clean_only": 3,
-      "frozen_gate_strict_regret_clean_only": 37,
-      "strict_causal_clean_episodes": 12,
-      "paint_actions": 256,
-      "erase_actions": 0,
-      "retrace_actions": 334,
-      "min_first_regret": 2
+      "corrective_erases": 128,
+      "accepted_bad_paints": 128,
+      "accepted_wrong_branches": 64,
+      "strict_causal_episodes": 143,
+      "frozen_gate_harmful_recommendations": 483,
+      "frozen_gate_illegal_recommendations": 72,
+      "min_train_weight": 0,
+      "zero_weight": 1549
     },
     "DEV": {
       "groups": 4,
@@ -61,30 +64,25 @@
         3,
         4
       ],
-      "episodes": 64,
-      "clean_episodes": 32,
-      "wrong_first_recovery_episodes": 32,
-      "decisions": 1148,
-      "unique_inputs": 1148,
-      "duplicate_inputs": 0,
-      "first_action": {
-        "BACKTRACK": 16,
-        "MOVE_N": 16
+      "episodes": 96,
+      "decisions": 2040,
+      "unique_inputs": 2040,
+      "exact_duplicates": 0,
+      "near_downweighted": 0,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 32,
+        "wrong-material-recovery": 32,
+        "wrong-branch-and-material-recovery": 32
       },
-      "gate_initial": {
-        "open": 16,
-        "closed": 16
-      },
-      "gate_transitions": 64,
-      "causal_clean_episode_count": 10,
-      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 42,
-      "frozen_gate_illegal_clean_only": 2,
-      "frozen_gate_strict_regret_clean_only": 38,
-      "strict_causal_clean_episodes": 10,
-      "paint_actions": 128,
-      "erase_actions": 0,
-      "retrace_actions": 160,
-      "min_first_regret": 2
+      "corrective_erases": 64,
+      "accepted_bad_paints": 64,
+      "accepted_wrong_branches": 32,
+      "strict_causal_episodes": 58,
+      "frozen_gate_harmful_recommendations": 230,
+      "frozen_gate_illegal_recommendations": 36,
+      "min_train_weight": 1,
+      "zero_weight": 0
     },
     "HELDOUT": {
       "groups": 4,
@@ -94,68 +92,63 @@
         3,
         4
       ],
-      "episodes": 64,
-      "clean_episodes": 32,
-      "wrong_first_recovery_episodes": 32,
-      "decisions": 1320,
-      "unique_inputs": 1320,
-      "duplicate_inputs": 0,
-      "first_action": {
-        "BACKTRACK": 16,
-        "MOVE_N": 16
+      "episodes": 96,
+      "decisions": 2260,
+      "unique_inputs": 2260,
+      "exact_duplicates": 0,
+      "near_downweighted": 0,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 32,
+        "wrong-material-recovery": 32,
+        "wrong-branch-and-material-recovery": 32
       },
-      "gate_initial": {
-        "open": 16,
-        "closed": 16
-      },
-      "gate_transitions": 64,
-      "causal_clean_episode_count": 8,
-      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 38,
-      "frozen_gate_illegal_clean_only": 0,
-      "frozen_gate_strict_regret_clean_only": 38,
-      "strict_causal_clean_episodes": 8,
-      "paint_actions": 128,
-      "erase_actions": 0,
-      "retrace_actions": 160,
-      "min_first_regret": 2
+      "corrective_erases": 64,
+      "accepted_bad_paints": 64,
+      "accepted_wrong_branches": 32,
+      "strict_causal_episodes": 45,
+      "frozen_gate_harmful_recommendations": 226,
+      "frozen_gate_illegal_recommendations": 30,
+      "min_train_weight": 1,
+      "zero_weight": 0
     }
   },
   "metrics": {
-    "world_groups": 16,
-    "episodes": 256,
-    "clean_episodes": 128,
-    "accepted_wrong_first_recovery_episodes": 128,
-    "labelled_decisions": 4452,
-    "oracle_goal_completion": "256/256",
-    "accepted_gate_transitions": 256,
-    "accepted_expert_paint_operations": 512,
-    "accepted_expert_erasures": 0,
-    "clean_first_action_BALANCED": "64 BACKTRACK / 64 MOVE_N; half open/closed per group",
-    "min_accepted_alternative_first_action_regret": 2,
-    "causally_consequential_clean_episodes": 30,
-    "frozen_gate_illegal_recommendations": 5,
-    "frozen_gate_strict_regret_recommendations": 113,
-    "negative_causal_control_clean_episodes": 98,
-    "duplicate_train_downweighted": 240,
-    "conflicting_full_input_labels": 0,
-    "cross_split_exact_input_overlap": 0,
-    "two_byte_identical_full_generations": true,
-    "generator_wall_seconds": [
-      31.16,
-      29.29
+    "episodes": 384,
+    "labelled_decisions": 7691,
+    "accepted_wrong_paint_prefixes": 256,
+    "oracle_corrective_erasures": 256,
+    "accepted_wrong_branch_prefixes": 128,
+    "strict_causal_suffix_episodes": 246,
+    "frozen_gate_strictly_harmful_recommendations": 939,
+    "frozen_gate_illegal_recommendations": 138,
+    "oracle_terminal_success": "384/384",
+    "train_exact_duplicates_zero_weight": 416,
+    "train_near_downweighted": 1133,
+    "train_zero_weight": 1549,
+    "cross_split_world_or_input_overlap": 0,
+    "contradictory_complete_model_input_labels": 0,
+    "full_corpus_reconstruction_sha_checks": 7691,
+    "actual_SLM_forwards_or_updates": 0,
+    "two_independent_full_generations_byte_identical": true,
+    "two_generator_wall_seconds": [
+      51.92,
+      50.8
     ],
-    "generator_peak_rss_kib": [
-      535992,
-      468300
+    "two_generator_peak_rss_kib": [
+      516472,
+      626084
     ],
-    "actual_SLM_forward_or_updates": 0
+    "full_regression_validation_passed": true,
+    "regression_wall_seconds": 35.39,
+    "regression_peak_rss_kib": 515580
   },
-  "known_failure": "Synthetic v25-derived loop grammar; only 30/128 clean oracle routes causally discriminate gate freeze; no model-controlled policy or native CyberSand ABI acceptance. No expert erase actions. No immutable Actions shard artifact.",
-  "negative_result": "An actual gate transition is not sufficient evidence of causal route demand: 98/128 clean episodes show no strictly harmful frozen-gate choice on expert suffix. Earlier v25 distal blockage was a distractor, not causal. Avoid promoting easy gate cases as hard positive examples.",
-  "consumer_protocol": "Read episode initial_history; replay ordered decision events_added/positions_added; reconstruct complete model input using observation_keys and state; validate model_input_sha256. Feed only reconstructed observation, never target, receipt, difficulty, intervention descriptor, frozen-gate audit or suffix cost. Respect TRAIN weights, DEV selection, untouched HELDOUT.",
-  "next_useful_consumer_experiment": "Pinned real LFM/Sprocket CPU model closed-loop HELDOUT on strict-causal vs negative-control gate worlds and accepted-wrong-first recoveries; compare full remote memory vs latest64 vs frozen-gate vs symbolic oracle. Report terminal goal/paint correctness, false BACKTRACK, premature STOP, realized regret, action refusal, p50/p95/p99 inference latency, model peak RSS.",
+  "negative_result": "This is not a proven old-memory-only challenge: repeated public painted_correct counters expose whether paint was correct even after first paint receipt ages beyond the last64 window. Two-workshop/loop graph remains synthetic and oracle prefix/distractor actions scripted.",
+  "known_failure": "A heldout SLM can still exploit fixed topology/recipe regularities; model completion, latency and RSS untested. 72+ oscillating travel moves are scripted. No native CyberSand ABI conformance; no immutable Actions shard artifact. Root LFM/Sprocket weights unavailable in current restricted worker environments.",
+  "consumer_protocol": "Reconstruct observation from episode.initial_history plus per-decision events_added/positions_added and state in observation_keys order. Verify model_input_sha256; present ONLY that reconstructed observation, never the target, episode mode, intervention, difficulty, frozen-gate audit, training_weight or receipt. Use TRAIN weighted rows, DEV for tuning, HELDOUT once for evaluation.",
+  "next_useful_consumer_experiment": "Actual pinned LFM2.5-350M / Sprocket-500M CPU adapter training (consumer lane) with full-history versus last64 and count-only ablations. Closed-loop HELDOUT compare wrong-material recovery vs correct controls and strict-causal reroutes; record completion, corrected-cell identification, erroneous paint persistence, retrace, false STOP, raw illegal preference, per-forward p50/p95/p99 latency and peak RSS.",
   "synthetic_host_not_native": true,
   "paid_compute_used": false,
   "cybersand_or_neurounner_writes": false,
-  "owner_merge_gate": "DRAFT/HOLD; do not merge/promote Ready/auto-merge; no DRIV3R main edits"
+  "owner_merge_gate": "DRAFT/HOLD, no main changes or merge/Ready/automerge"
 }
