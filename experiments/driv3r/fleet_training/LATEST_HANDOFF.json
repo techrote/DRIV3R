@@ -1,0 +1,145 @@
+{
+  "schema": "driv3r.fleet_training.latest_handoff/v1",
+  "observed_utc": "2026-11-17T00:05:52Z",
+  "repository": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "pr": 1,
+  "pr_status": "Draft/HOLD; no merge/Ready",
+  "read_only_references": [
+    "techrote/cybersand",
+    "techrote/neurounner"
+  ],
+  "remote_head_inspected_before_write": "519121ada7ba37665f9ee6b0c7a9ab6f01f3535a",
+  "disposition": "REAL_SLM_EXECUTION_BLOCKED_IN_THIS_RUN; DO_NOT_SUBSTITUTE_SURROGATES",
+  "actual_work_performed": {
+    "fetched_driv3r_pr_and_branch_tree": true,
+    "inspected_other_lane_handoffs": [
+      "experiments/driv3r/lfm_game_policy/GP350-017-EVIDENCE.md",
+      "experiments/driv3r/frankenlayers_lab/LATEST_HANDOFF.json",
+      "experiments/agent_painter/lanes/sprocket/W27_LOCAL_REPLAY_2026-11-16.md",
+      "experiments/driv3r/wormbrain/fleet/README.md",
+      "experiments/driv3r/model_zoo/pythia70/README.md"
+    ],
+    "read_only_source_archive": {
+      "repository": "techrote/cybersand",
+      "run_id": 43943992509,
+      "artifact_id": 14266902004,
+      "sha256": "a4a83e6b1bfcbdb05e35b96e3adc9b218dafe59b0c6b76c416c51efd0162469f",
+      "zip_entries": 87,
+      "zip_crc": "PASS",
+      "archive_contents": "Original model-scored scores/trajectories/PNGs/leases and model-asset digests; NOT model.safetensors, adapter checkpoint binaries, or optimizer state"
+    },
+    "local_runtime": {
+      "torch_cpu_installed": true,
+      "transformers_installed": false,
+      "model_weight_files_found": 0,
+      "huggingface_cache_available": false,
+      "container_git_remote_access": "FAILED DNS github.com",
+      "model_file_download": "NOT_AVAILABLE_IN_THIS_EXECUTOR"
+    },
+    "workflows_observed": {
+      "only_driv3r_workflow": ".github/workflows/research-smoke.yml",
+      "activity": "source compileall/syntax; no pretrained download, optimizer, inference, or experiment artifact custody",
+      "recent_runs_inspected": 30,
+      "heavy_jobs_observed": 0
+    },
+    "new_real_slm_forwards": 0,
+    "new_real_slm_optimizer_updates": 0,
+    "new_checkpoints": 0,
+    "new_training_dispatches": 0,
+    "new_paid_spend": 0
+  },
+  "recent_fleet_benchmarks_only_auxiliary": {
+    "ft020": {
+      "model_type": "four 20x24x1 NumPy policies; NOT SLM",
+      "one_resident_decisions_per_s": 12944,
+      "two_resident_decisions_per_s": 9389,
+      "menus_per_model": 5000,
+      "warning": "single local timing, process-start overhead, no hosted qualification"
+    },
+    "ft021": {
+      "model_type": "NumPy 20x24x1; NOT SLM",
+      "one_resident_900_updates_seconds": 1.313264,
+      "two_resident_900_updates_seconds": 1.161988,
+      "warning": "single local trial; opposing outcomes in 150-step case"
+    },
+    "ft022": {
+      "model_type": "NumPy synthetic W0; NOT SLM",
+      "legal_route_final_goal_completion": "39/96 original; 31/96 fresh-seed guarded",
+      "frozen": "5/96 original; 6/96 fresh-seed guarded",
+      "warning": "no native CyberSand ABI qualification; checkpoint ZIP not in immutable Actions custody"
+    }
+  },
+  "current_lease_status": [
+    {
+      "lane": "fleet_training",
+      "model": "none",
+      "lease": "none active",
+      "status": "NO_DISPATCH",
+      "reason": "No target-model binaries/runtime or approved opt-in DRIV3R heavy-run entrypoint; old FT020-022 control-family must not be repeated as substitute"
+    },
+    {
+      "lane": "lfm_game_policy",
+      "model": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "candidate_checkpoint_sha256": "e37999047767861cfb7c05d64310d503505eeff3795c755d547b5e8aaa81cdf7",
+      "historical_artifact": 14266902004,
+      "lease": "UNCLAIMED",
+      "status": "BLOCKED_NEW_EXECUTION",
+      "issue": "GP350-017 scalar RETRACE calibration worsened both held-out false-positive counts; only 3 distinct trapped states per world size. Need full model+adapter binaries, disjoint trapped topologies, native-ABI check, fresh closed-loop SLM inference"
+    },
+    {
+      "lane": "agent_painter/sprocket",
+      "model": "Sprocket 500M root",
+      "candidate_checkpoint_sha256": "0d311bd2d9d7713dea8e140caef2dae0e2dbff3e1069de3f17857f247c793ae2",
+      "lease": "UNCLAIMED",
+      "status": "NOT_A_ROOT_SLM_CHECKPOINT",
+      "issue": "W27 trained a rank-24 auxiliary gate over frozen experts, root_forwards=0 and root_updates=0; bundle documented as local-only; do not mislabel as trained root LoRA"
+    },
+    {
+      "lane": "agent_painter/smol",
+      "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "lease": "UNCLAIMED",
+      "status": "HISTORICAL_INFERENCE_ONLY",
+      "issue": "Historical genuine 2-resident 4-vCPU comparison already attained 1.8831x serial-to-dual for 16 decisions and ~1.86 GiB sampled combined RSS; no new model run, avoid duplicating"
+    },
+    {
+      "lane": "frankenlayers_lab",
+      "model": "LiquidAI/d1-2B Q8 System One",
+      "donor_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+      "lease": "UNCLAIMED",
+      "status": "MODEL_RUNTIME_ABSENT",
+      "issue": "Proposed 4/6 executed-layer masks require pinned Q8 GGUF and llama.cpp; four mask candidates are hypotheses not results"
+    }
+  ],
+  "capacity_decision": {
+    "current_genuinely_active_models_this_fleet": 0,
+    "target_genuinely_active_models": 4,
+    "supported_prior_per_runner_evidence": "Two separately resident SmolLM2-135M processes on one 4-vCPU hosted runner; 1.8831x serial/dual phase speedup on 16 authentic forwards, 1.86 GiB sampled combined RSS; NOT universal four-resident proof",
+    "recommendation": "Initially cap at two real Smol resident processes on a comparable 4-vCPU CPU runner; schedule two independent runners only when quota and model-specific memory permit. Requalify LFM, Sprocket and d1 individually before mixed loading.",
+    "no_cross_runner_monotonic_clock_overlap_claims": true,
+    "no_duplicate_dispatches": true
+  },
+  "next_useful_consumer_experiment": {
+    "priority": "GP350 real checkpoint closed-loop RETRACE validation, not another scalar/NumPy control",
+    "source_model": "LiquidAI/LFM2.5-350M@9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+    "candidate_step36_sha256": "e37999047767861cfb7c05d64310d503505eeff3795c755d547b5e8aaa81cdf7",
+    "requirements": [
+      "Recover and hash-check actual model/adapter checkpoint bytes; the audited artifact #14266902004 does NOT carry weights",
+      "Provide bounded opt-in Actions CPU execution path on DRIV3R (not routine push/PR training) without editing another lab's files",
+      "Freeze exact host-legal current CyberSand ABI read-only contract and independent trap-topology world identities, with no train/test state overlap",
+      "Compare original GP006 conservative parent, GP014 step18/36/54, unchanged stock and transparent legal-host controls",
+      "Run real independent SLM forward decisions in closed-loop held-out trajectories; report false RETRACE/true recovery, illegal raw preferences, new cells, retrace counts, CPU/RSS/wall, original action receipts and failure logs",
+      "Keep large immutable checkpoint and trajectory bundles in Actions artifacts; retain unpromoted negative candidates"
+    ],
+    "minimal_first_budget": "1 ordinary 4-vCPU CPU runner, 1 real model process initially, 2 held-out world-size families, bounded 8-16 cases per arm; only scale after actual RSS/latency and world-state independence established",
+    "present_blocker": "No runnable pre-trained model binaries and no approved DRIV3R opt-in heavy-run job are available to this executor. Access or handoff from the target lane/runner is required; do not fabricate outputs or create an alternate toy family."
+  },
+  "provenance_notes": [
+    "All prior FT020/021/022 results remain labelled auxiliary controls, not pretrained SLM progress.",
+    "Historical synthetic Python W0 is not native CyberSand; original CyberSand and Neurounner were read-only.",
+    "No PR/branch/issue created, no workflow dispatched, no game-side modifications.",
+    "No end-to-end genuine model training or inference claimed for this invocation."
+  ]
+}
