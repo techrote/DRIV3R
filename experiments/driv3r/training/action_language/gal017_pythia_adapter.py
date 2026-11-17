@@ -170,14 +170,18 @@ def load_slm():
         import torch
         from transformers import AutoModelForCausalLM,AutoTokenizer
         from peft import LoraConfig,get_peft_model
-        from huggingface_hub import HfApi, hf_hub_download
+        from huggingface_hub import hf_hub_download
     except ImportError as ex:
         raise RuntimeError('BLOCKED: pinned pretrained Pythia-70M requires torch, transformers, peft, huggingface_hub and accessible base-model weights; no substitute model permitted') from ex
-    info=HfApi().model_info(MODEL_ID,revision=MODEL_REVISION)
-    if info.sha!=MODEL_REVISION:
-        raise RuntimeError('model revision verification failed')
+    # Cache-only and revision-pinned. Do not call HfApi.model_info:
+    # that would silently require an outbound request on an offline CPU runner.
+    tensor_file=hf_hub_download(repo_id=MODEL_ID,filename='model.safetensors',
+                                revision=MODEL_REVISION,local_files_only=True)
+    if not tensor_file:raise RuntimeError('pinned model tensor unavailable offline')
+    base_sha=hashlib.sha256(Path(tensor_file).read_bytes()).hexdigest()
     torch.set_num_threads(2)
-    tok=AutoTokenizer.from_pretrained(MODEL_ID,revision=MODEL_REVISION,trust_remote_code=False)
+    tok=AutoTokenizer.from_pretrained(MODEL_ID,revision=MODEL_REVISION,
+                                      trust_remote_code=False,local_files_only=True)
     if tok.pad_token is None:tok.pad_token=tok.eos_token
     # Pythia/GPT-NeoX uses one token for a subset of leading-space codes.
     ids=[]
@@ -188,21 +192,18 @@ def load_slm():
         ids.append(candidate[0])
     if len(set(ids))!=len(ids):raise RuntimeError('token code collision')
     base=AutoModelForCausalLM.from_pretrained(MODEL_ID,revision=MODEL_REVISION,
-                            trust_remote_code=False,torch_dtype=torch.float32,use_safetensors=True)
+                            trust_remote_code=False,torch_dtype=torch.float32,
+                            use_safetensors=True,local_files_only=True)
     base.eval()
-    # The revision is immutable; hash the actual downloaded tensor bytes too.
-    tensor_file=hf_hub_download(repo_id=MODEL_ID,filename='model.safetensors',revision=MODEL_REVISION,local_files_only=True)
-    if not tensor_file:raise RuntimeError('base model tensor provenance cannot be verified')
-    base_sha=hashlib.sha256(Path(tensor_file).read_bytes()).hexdigest()
     model=get_peft_model(base,LoraConfig(r=4,lora_alpha=8,lora_dropout=0.0,
                      target_modules=['query_key_value'],task_type='CAUSAL_LM',bias='none'))
     return torch,tok,model,ids,base_sha
 
 def slm_logits(torch,tok,model,ids,prompt,max_tokens=512,stock=False):
-    tokens=tok(prompt,return_tensors='pt',truncation=True,max_length=max_tokens)
-    # The host menu is at the end: fail closed if context truncates it.
+    # Never silently drop the host's legal catalog at the end of the prompt.
+    tokens=tok(prompt,return_tensors='pt',truncation=False)
     if len(tokens['input_ids'][0])>=max_tokens:
-        raise RuntimeError('prompt truncated: unsafe action catalog')
+        raise RuntimeError('prompt exceeds safe context budget: legal catalog not scored')
     ctx=model.disable_adapter() if stock else contextlib.nullcontext()
     with ctx:
         out=model(**tokens).logits[0,-1]

@@ -97,11 +97,22 @@ class TestAdapterContract(unittest.TestCase):
                 return [x.ALPHABET.index(self_check)+1]
         class Base:
             def eval(self):pass
-        fake_transformers.AutoTokenizer=SimpleNamespace(from_pretrained=lambda *a,**k:Tok())
-        fake_transformers.AutoModelForCausalLM=SimpleNamespace(from_pretrained=lambda *a,**k:Base())
+        seen=[]
+        def tokenizer_loader(*a,**k):
+            self.assertTrue(k.get('local_files_only'))
+            self.assertEqual(k.get('revision'),x.MODEL_REVISION)
+            seen.append('tokenizer')
+            return Tok()
+        def model_loader(*a,**k):
+            self.assertTrue(k.get('local_files_only'))
+            self.assertEqual(k.get('revision'),x.MODEL_REVISION)
+            seen.append('model')
+            return Base()
+        fake_transformers.AutoTokenizer=SimpleNamespace(from_pretrained=tokenizer_loader)
+        fake_transformers.AutoModelForCausalLM=SimpleNamespace(from_pretrained=model_loader)
         fake_peft.LoraConfig=lambda **k:k
         fake_peft.get_peft_model=lambda base,config:('lora',base,config)
-        fake_hub.HfApi=lambda:SimpleNamespace(model_info=lambda *a,**k:SimpleNamespace(sha=x.MODEL_REVISION))
+        fake_hub.HfApi=lambda: (_ for _ in ()).throw(AssertionError('offline loader attempted network metadata'))
         with TemporaryDirectory() as tmp:
             content=b'fake-checkpoint-only-not-a-trained-model'
             weight=Path(tmp)/'model.safetensors'
@@ -109,6 +120,7 @@ class TestAdapterContract(unittest.TestCase):
             requested=[]
             def download(**kwargs):
                 requested.append(kwargs)
+                seen.append('download')
                 return str(weight)
             fake_hub.hf_hub_download=download
             with patch.dict(sys.modules,{'torch':fake_torch,'transformers':fake_transformers,
@@ -119,8 +131,19 @@ class TestAdapterContract(unittest.TestCase):
             self.assertEqual(model[2]['target_modules'],['query_key_value'])
             self.assertEqual(codes,list(range(1,37)))
             self.assertEqual(actual_hash,hashlib.sha256(content).hexdigest())
+            self.assertEqual(seen,['download','tokenizer','model'])
             self.assertEqual(requested,[{'repo_id':x.MODEL_ID,'filename':'model.safetensors',
                 'revision':x.MODEL_REVISION,'local_files_only':True}])
+
+    def test_rejects_overbudget_context_without_truncation(self):
+        class FakeTokenizer:
+            def __call__(self,prompt,**kwargs):
+                self.kwargs=kwargs
+                return {'input_ids':[list(range(513))]}
+        tok=FakeTokenizer()
+        with self.assertRaisesRegex(RuntimeError,'prompt exceeds safe context'):
+            x.slm_logits(None,tok,None,[], 'legal: A=STOP. Choice:',max_tokens=512)
+        self.assertIs(tok.kwargs.get('truncation'),False)
 
     def test_fail_closed_without_pretrained_runtime(self):
         # This local runtime has no Transformers/PEFT/weights. Do not claim SLM training.
