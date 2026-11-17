@@ -1,0 +1,250 @@
+{
+  "checkpoint_repeated_byte_identical": true,
+  "checkpoint_sha256": "1871728f0e7b1b68d3844d103062cee3014a7c8911fcdb8ddbcb5d8adfff6ffb",
+  "evaluation": {
+    "episodes_per_cohort": 640,
+    "episodes_total": 1280,
+    "guided_per_model_per_cohort": 128,
+    "max_decisions": 85,
+    "n_world_indices_per_cohort": 1,
+    "prefix_actions": 24,
+    "results": {
+      "A": {
+        "C18-A0": {
+          "braid": 17,
+          "first": 17,
+          "guided_episodes": 128,
+          "guided_total": 25,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 0,
+          "rearms": 0,
+          "regressed_vs_A0": {},
+          "regressed_vs_C32": {
+            "('braid', 'detour', False, 'backtrack', 1.0)": 1,
+            "('braid', 'detour', True, 'backtrack', 1.0)": 2,
+            "('braid', 'forward', True, 'backtrack', 1.0)": 1,
+            "('tree', 'detour', False, 'backtrack', 0.35)": 1,
+            "('tree', 'detour', False, 'backtrack', 1.0)": 2,
+            "('tree', 'detour', True, 'backtrack', 1.0)": 1,
+            "('tree', 'forward', True, 'backtrack', 0.35)": 1
+          },
+          "second": 8,
+          "tree": 8,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C32-WATCH": {
+          "braid": 19,
+          "first": 23,
+          "guided_episodes": 128,
+          "guided_total": 32,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 3,
+          "rearms": 0,
+          "regressed_vs_A0": {
+            "('braid', 'forward', False, 'backtrack', 1.0)": 1,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 1
+          },
+          "regressed_vs_C32": {},
+          "second": 9,
+          "tree": 13,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C34-HEAD": {
+          "braid": 19,
+          "first": 22,
+          "guided_episodes": 128,
+          "guided_total": 33,
+          "head_decisions": 3456,
+          "head_modified": 3456,
+          "host_rejections": 0,
+          "raw_illegal_top1": 3,
+          "rearms": 28,
+          "regressed_vs_A0": {
+            "('braid', 'forward', False, 'backtrack', 1.0)": 1,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 1
+          },
+          "regressed_vs_C32": {
+            "('braid', 'detour', True, 'backtrack', 1.0)": 1
+          },
+          "second": 11,
+          "tree": 14,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C34-RESET": {
+          "braid": 23,
+          "first": 23,
+          "guided_episodes": 128,
+          "guided_total": 36,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 3,
+          "rearms": 26,
+          "regressed_vs_A0": {
+            "('braid', 'forward', False, 'backtrack', 1.0)": 1,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 1
+          },
+          "regressed_vs_C32": {},
+          "second": 13,
+          "tree": 13,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        }
+      },
+      "B": {
+        "C18-A0": {
+          "braid": 16,
+          "first": 24,
+          "guided_episodes": 128,
+          "guided_total": 27,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 0,
+          "rearms": 0,
+          "regressed_vs_A0": {},
+          "regressed_vs_C32": {
+            "('braid', 'detour', True, 'backtrack', 1.0)": 2,
+            "('braid', 'forward', False, 'backtrack', 1.0)": 1,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 2,
+            "('tree', 'detour', False, 'backtrack', 0.35)": 2,
+            "('tree', 'detour', False, 'backtrack', 1.0)": 2
+          },
+          "second": 3,
+          "tree": 11,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C32-WATCH": {
+          "braid": 18,
+          "first": 26,
+          "guided_episodes": 128,
+          "guided_total": 31,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 4,
+          "rearms": 0,
+          "regressed_vs_A0": {
+            "('braid', 'detour', False, 'backtrack', 1.0)": 1,
+            "('braid', 'detour', True, 'backtrack', 0.35)": 2,
+            "('tree', 'detour', True, 'backtrack', 1.0)": 1,
+            "('tree', 'forward', True, 'backtrack', 1.0)": 1
+          },
+          "regressed_vs_C32": {},
+          "second": 5,
+          "tree": 13,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C34-HEAD": {
+          "braid": 15,
+          "first": 30,
+          "guided_episodes": 128,
+          "guided_total": 34,
+          "head_decisions": 3518,
+          "head_modified": 3518,
+          "host_rejections": 0,
+          "raw_illegal_top1": 1,
+          "rearms": 26,
+          "regressed_vs_A0": {
+            "('braid', 'detour', False, 'backtrack', 1.0)": 1,
+            "('braid', 'detour', True, 'backtrack', 0.35)": 1
+          },
+          "regressed_vs_C32": {
+            "('braid', 'detour', True, 'backtrack', 1.0)": 2,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 2
+          },
+          "second": 4,
+          "tree": 19,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        },
+        "C34-RESET": {
+          "braid": 17,
+          "first": 26,
+          "guided_episodes": 128,
+          "guided_total": 32,
+          "head_decisions": 0,
+          "head_modified": 0,
+          "host_rejections": 0,
+          "raw_illegal_top1": 1,
+          "rearms": 24,
+          "regressed_vs_A0": {
+            "('braid', 'detour', False, 'backtrack', 1.0)": 1,
+            "('braid', 'detour', True, 'backtrack', 0.35)": 2,
+            "('tree', 'detour', True, 'backtrack', 1.0)": 1
+          },
+          "regressed_vs_C32": {
+            "('braid', 'detour', True, 'backtrack', 1.0)": 1,
+            "('braid', 'forward', True, 'backtrack', 0.35)": 1
+          },
+          "second": 6,
+          "tree": 15,
+          "unguided_identical": 32,
+          "unguided_n": 32
+        }
+      }
+    },
+    "second_goal_change_decision": 50,
+    "seeds": {
+      "A": 340701,
+      "B": 540704
+    },
+    "topology_families": [
+      "independent DFS tree",
+      "braid with +14 edges"
+    ],
+    "uncued_per_model_per_cohort": 32
+  },
+  "gates": {
+    "host_rejected_actions": "ZERO",
+    "immutable_Actions_checkpoint_custody": "NOT_YET",
+    "native_CyberSand_validation": "NOT_PERFORMED",
+    "no_guidance_hashes": "PASS_ALL",
+    "overall": "REJECT",
+    "protected_material_violations": "ZERO",
+    "strict_condition_level_nonregression": "FAIL",
+    "trained_head_improves_reset": "NOT_PROVEN"
+  },
+  "optimizer": {
+    "data_sha256": "70c3ebb97c7a25d901c85fbd1795c3cdb684890d49d195751d3dc075209c375c",
+    "delta_negative": 98,
+    "delta_positive": 183,
+    "examples": 314,
+    "losses": [
+      3.112709,
+      2.876097,
+      2.800217,
+      2.659576,
+      2.649092,
+      2.655128,
+      2.636866,
+      2.611436,
+      2.646435,
+      2.629928,
+      2.66995,
+      2.616487,
+      2.624907,
+      2.630063
+    ],
+    "train_mae": 0.5962165594100952,
+    "updates": 140
+  },
+  "schema": "driv3r-c34-evidence/1",
+  "source_sha256": "8fbe9c748b5ed838a226041097574d6381481cde45e769bc3e4ec736206d8d26",
+  "source_verified_prerequisite_git_blob_sha1": {
+    "c28_temporal_option.py": "4ad56a930bbb8040c84e2a444046f59b1e357de0",
+    "c32_offstack_recovery.py": "3091f382ae5b47231ca4d97fa75328f13ef15bf2",
+    "c33_irregular_recovery.py": "0cae89ecf0c4cedf9eb3550d6dc9baf055d9fd89",
+    "experiment.py": "cf67d48228f6512e8a6262b357c2fcc3bd04d9dd"
+  },
+  "utc_date": "2026-11-17"
+}
