@@ -1,6 +1,7 @@
 {
   "blank_owner_rating_rows": 64,
   "blind_A4_sheets": 8,
+  "blind_gallery_horizon_visible": false,
   "by_seed_GP006_GP010": {
     "9803": {
       "gp010_changed_vs_gp006": 2,
@@ -66,7 +67,7 @@
   "schema": "driv3r.preference_eval.p23_original_crossmodel_niche_gate/1",
   "source_git_path": "experiments/driv3r/training/preference_eval/p23_matched_niche_gate.py",
   "source_original_trajectories": 50,
-  "source_sha256": "08069513336a7edf5bfe0844e43cc460a1db22ac06018e0f3d7d41f5b36b88ac",
+  "source_sha256": "b198d664af90203038df0456014784d98a29094ba2f1da63bc9a464811277b53",
   "source_tests": "6/6 PASS with fixtures; 4/4 independent tests PASS without fixtures (2 source-dependent skipped); 2 byte-identical output reruns, original ZIP corruption rejection",
   "test_sha256": "e33ccc1df2b8c371833fb4ac9b3eb1a8d820575a9a9a98467898d73472054dce",
   "treatment_of_matches": "Only 4/12 nonidentical GP006-GP010 full path comparisons treated as aesthetic candidates; other 8 excluded except 2 hidden identical-image control trials."

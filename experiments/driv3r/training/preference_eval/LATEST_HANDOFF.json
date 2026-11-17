@@ -226,7 +226,7 @@
   },
   "p23": {
     "source": "p23_matched_niche_gate.py",
-    "source_sha256": "08069513336a7edf5bfe0844e43cc460a1db22ac06018e0f3d7d41f5b36b88ac",
+    "source_sha256": "b198d664af90203038df0456014784d98a29094ba2f1da63bc9a464811277b53",
     "tests": "test_p23_matched_niche_gate.py",
     "test_sha256": "e33ccc1df2b8c371833fb4ac9b3eb1a8d820575a9a9a98467898d73472054dce",
     "evidence_file": "P23_RESULTS.json",
@@ -243,6 +243,7 @@
     "new_root_SLMS_forwards": 0,
     "new_optimizer_updates": 0,
     "owner_human_labels": 0,
-    "artifact_qualification": "local-only original source-verified"
+    "artifact_qualification": "local-only original source-verified",
+    "blind_gallery_horizon_visible": false
   }
 }

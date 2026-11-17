@@ -64,7 +64,7 @@ def svg(pairs):
         lo_x=min(p[0] for p in pts);lo_y=min(p[1] for p in pts)
         span_x=max(p[0] for p in pts)-lo_x+1;span_y=max(p[1] for p in pts)-lo_y+1
         scale=min(76/span_x,88/span_y)
-        lines.append(f'<text x="10" y="{y}" font-family="monospace" font-size="4">{pair["blind_id"]} · {len(a["positions"])-1} applied steps each</text>')
+        lines.append(f'<text x="10" y="{y}" font-family="monospace" font-size="4">{pair["blind_id"]}</text>')
         for col,arm in enumerate((a,b)):
             x=10+col*99
             lines += [f'<rect x="{x}" y="{y+5}" width="91" height="111" fill="white" stroke="#c7c7c7" stroke-width=".35"/>',
