@@ -1,0 +1,54 @@
+{
+  "schema": "driv3r/corpus_factory/handoff-v1",
+  "updated_utc": "2026-11-17",
+  "research_home": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "pull_request": 1,
+  "version": "cycle-memory-v9",
+  "artifact": "run Node.js cycle_memory_v9.js to emit versioned TRAIN/DEV/HELDOUT JSONL plus SHA256 manifest",
+  "provenance": "external synthetic host only; no canonical CyberSand execution",
+  "metrics": {
+    "TRAIN": {
+      "topologies": 36,
+      "world_groups": 576,
+      "pairs": 1152,
+      "rows": 2304,
+      "by_task": {
+        "memory": 1152,
+        "material_law": 1152
+      },
+      "max_prelude_steps": 140,
+      "min_prelude_steps": 14
+    },
+    "DEV": {
+      "topologies": 12,
+      "world_groups": 192,
+      "pairs": 384,
+      "rows": 768,
+      "by_task": {
+        "memory": 384,
+        "material_law": 384
+      },
+      "max_prelude_steps": 172,
+      "min_prelude_steps": 14
+    },
+    "HELDOUT": {
+      "topologies": 12,
+      "world_groups": 192,
+      "pairs": 384,
+      "rows": 768,
+      "by_task": {
+        "memory": 384,
+        "material_law": 384
+      },
+      "max_prelude_steps": 164,
+      "min_prelude_steps": 18
+    }
+  },
+  "pair_count": 1920,
+  "host_applied_prelude_steps": 270336,
+  "invariant": "for memory pairs, local7x7, legal moves and last12 positions are bit-identical, but oracle labels reverse",
+  "source": "experiments/driv3r/corpus_factory/cycle_memory_v9.js",
+  "known_failure": "Only decision after a scripted prelude is labeled; no learned-model autonomous-loop completion demonstrated. No native-ABI acceptance.",
+  "next_consumer_experiment": "Train primary SLM on TRAIN model_input only; use DEV for selection and untouched HELDOUT for an equal-seed long-vs-short-history closed-loop check; keep independent topology groups."
+}
