@@ -1,0 +1,88 @@
+{
+  "schema": "driv3r/corpus_factory/v20-manifest",
+  "label": "synthetic host, not native CyberSand",
+  "generator": "topology_relay_v20.js",
+  "scale": 1,
+  "split_config": {
+    "TRAIN": {
+      "groups": 20,
+      "min": 14,
+      "max": 19,
+      "detours": 2
+    },
+    "DEV": {
+      "groups": 8,
+      "min": 20,
+      "max": 25,
+      "detours": 3
+    },
+    "HELDOUT": {
+      "groups": 8,
+      "min": 26,
+      "max": 33,
+      "detours": 4
+    }
+  },
+  "summaries": {
+    "TRAIN": {
+      "world_groups": 20,
+      "episodes": 160,
+      "decisions": 6872,
+      "oracle_actions": 6872,
+      "intentionally_refused_initial_actions": 56,
+      "shutter_events": 160
+    },
+    "DEV": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 3712,
+      "oracle_actions": 3712,
+      "intentionally_refused_initial_actions": 24,
+      "shutter_events": 64
+    },
+    "HELDOUT": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 5056,
+      "oracle_actions": 5056,
+      "intentionally_refused_initial_actions": 24,
+      "shutter_events": 64
+    }
+  },
+  "world_fingerprint_sha256": "70169435ed9d173fd0d2c4e6519db3210b8c511878bf6d91e32c3c81e77f5f33",
+  "world_group_count": 36,
+  "episodes": 288,
+  "decisions": 15640,
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "7556be363830da28719c6bc7f4d1d1ba7d24323314dd003d489617c3e04c20fb",
+      "bytes": 1368968,
+      "rows": 160
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "4ad0231e5b987ae300f7b92bc47a3bcd839bf083c18db85c56c38275660f7cb1",
+      "bytes": 70368838,
+      "rows": 6872
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "ade8875450aa77e57f4068d189e898ae72e0f178c24097939a2ca06c86dfa55d",
+      "bytes": 547368,
+      "rows": 64
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "c30348586584aa62d00fde5db77a04f91e6c6fe8ce2ac1e503e62ae5fa3939d9",
+      "bytes": 40354972,
+      "rows": 3712
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "9bf96ae6cf2d243f7edae54b8522a15313c88821012f20b26a87e8fc8e267008",
+      "bytes": 548136,
+      "rows": 64
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "b70ce07b5730e25c9f18f557aa675f44eb081ac98c58580649a553f418b27312",
+      "bytes": 59532868,
+      "rows": 5056
+    }
+  }
+}
