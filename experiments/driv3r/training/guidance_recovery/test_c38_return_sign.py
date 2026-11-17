@@ -1,5 +1,7 @@
 """Targeted checks for C38 return-sign research (no native/production calls)."""
 import json
+import os
+import pytest
 from pathlib import Path
 import numpy as np
 import torch
@@ -40,8 +42,10 @@ def test_withheld_world_is_executed_and_legal():
 
 
 def test_committed_evidence_invariants():
-    p=Path('/mnt/data/C38_work/output/C38-summary.json')
-    if not p.exists():return
+    location=os.getenv('C38_EVIDENCE_JSON')
+    if not location:pytest.skip('Set C38_EVIDENCE_JSON to an independently produced summary')
+    p=Path(location)
+    assert p.is_file(), 'Requested evidence must exist' 
     q=json.loads(p.read_text())
     assert q['training_reproduction_identical']
     for cohort,models in q['policy'].items():
