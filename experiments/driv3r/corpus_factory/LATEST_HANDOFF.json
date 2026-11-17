@@ -4,63 +4,53 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "off-policy-recovery-v14",
-  "role": "data-only synthetic recovery corpus; no model optimizer",
-  "source": "experiments/driv3r/corpus_factory/recovery_curriculum_v14.js",
-  "source_git_blob": "8eca20207f6819550e9cb92965a469825d85c563",
+  "version": "delayed-probe-v15",
+  "role": "data-only source-traceable synthetic recovery/memory corpus, no optimizer",
+  "source": "experiments/driv3r/corpus_factory/delayed_probe_v15.js",
+  "source_git_blob": "8966b3638d375c907c8a8b520767c24f0efe59f2",
   "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
-  "test": "experiments/driv3r/corpus_factory/test_recovery_curriculum_v14.js",
-  "test_git_blob": "5699b16820cf2589098a707adb9d05fd04462f7c",
-  "manifest": "experiments/driv3r/corpus_factory/V14_DEFAULT_MANIFEST.json",
-  "artifact_command": "node experiments/driv3r/corpus_factory/recovery_curriculum_v14.js NEW_DIR 2",
-  "best_checkpoint_or_artifact": "Source-pinned deterministic corpus generator, validated default TRAIN/DEV/HELDOUT shard SHA256 manifest; no checkpoint and no immutable Actions artifact",
+  "test": "experiments/driv3r/corpus_factory/test_delayed_probe_v15.js",
+  "test_git_blob": "fe1d71f99e10402fb93dc4f385e3ac83ad7b50a5",
+  "manifest": "experiments/driv3r/corpus_factory/V15_DEFAULT_MANIFEST.json",
+  "artifact_command": "node experiments/driv3r/corpus_factory/delayed_probe_v15.js NEW_OUTPUT_DIRECTORY 2",
+  "best_checkpoint_or_artifact": "Deterministic source-pinned v15 TRAIN/DEV/HELDOUT synthetic dataset generator and six locally verified SHA256 shards; no model checkpoint and no immutable Actions artifact",
   "counts": {
     "TRAIN": {
-      "episodes": 384,
-      "decisions": 4992,
+      "episodes": 256,
+      "decisions": 2304,
       "world_groups": 32,
-      "topologies": 16,
-      "interventions": {
-        "closed_gate_probe": 128,
-        "shutter_reversal": 128,
-        "goal_retarget": 128
-      }
+      "quartets": 64,
+      "topology_groups": 16
     },
     "DEV": {
-      "episodes": 96,
-      "decisions": 1248,
+      "episodes": 64,
+      "decisions": 576,
       "world_groups": 8,
-      "topologies": 4,
-      "interventions": {
-        "closed_gate_probe": 32,
-        "shutter_reversal": 32,
-        "goal_retarget": 32
-      }
+      "quartets": 16,
+      "topology_groups": 4
     },
     "HELDOUT": {
-      "episodes": 144,
-      "decisions": 1872,
+      "episodes": 96,
+      "decisions": 864,
       "world_groups": 12,
-      "topologies": 6,
-      "interventions": {
-        "closed_gate_probe": 48,
-        "shutter_reversal": 48,
-        "goal_retarget": 48
-      }
+      "quartets": 24,
+      "topology_groups": 6
     }
   },
   "metrics": {
-    "accepted_intervention_moves": 22120,
-    "oracle_recovery_moves": 58544,
-    "rejected_prefix_moves": 208,
-    "strict_hard_negative_actions": 8128,
-    "protected_entries": 0,
-    "illegal_oracle_moves": 0
+    "counterfactual_quartets": 104,
+    "expert_moves": 27936,
+    "host_refused_probe_moves": 208,
+    "neutral_washout_moves": 52416,
+    "strict_hard_negatives": 4160,
+    "illegal_oracle_moves": 0,
+    "protected_entries": 0
   },
-  "provenance": "synthetic v13 host extension, NOT native CyberSand ABI or physical acceptance",
-  "validation": "Node22 standalone PASS, 2 identical full CLI generations, strict world-group and topology split, source/test hashes",
-  "known_failure": "scripted prefixes and ancient prelude; no SLM closed-loop results; v14 interventions do not preserve v13 last64 alias; no native brush or material physics",
-  "next_useful_consumer_experiment": "On actual pinned SLM adapter, use TRAIN and DEV, then seal model/settings before HELDOUT; compare full history vs last64/last1 in 3 post-error modes, world-group arrival, path stretch, rejected actions, p50/p95 latency, peak RSS",
+  "provenance": "v13 external synthetic host and v15 scripted probe/inversion; NOT CyberSand native ABI or native receipts",
+  "qualification": "Node 22.16 standalone regression PASS, 2 byte-identical CLI runs, 104 verified counterfactual quartets, source/test hashes",
+  "known_failure": "Scripted probe/inversion/washout; constrained U-loop topology; full history can reveal probe from older executed positions/timestamps even when one event receipt is withheld; no primary SLM closed-loop results, no native game acceptance, no immutable artifact",
+  "leakage_correction": "Single-event ablation strips receipt timestamps; otherwise accepted/rejected probe step offsets leaked causal state",
+  "next_useful_consumer_experiment": "Pinned real LFM/Sprocket adapter: compare full history, last64, timestamp-normalized event-only/probe-only/inversion-only on post-prefix DEV then sealed HELDOUT, world/quartet-grouped goals, stretch, rejected actions, p50/p95 inference latency, peak RSS",
   "paid_compute": false,
   "game_files_modified": false,
   "main_unchanged": true
