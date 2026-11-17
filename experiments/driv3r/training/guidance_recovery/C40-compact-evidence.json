@@ -1,0 +1,192 @@
+{
+  "checkpoint_sha256": {
+    "C40-PAIR": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+    "C40-RANDOM": "3f61ad5c1831abeefe0790854e7ce8bc8833b81513f06a8b2ca71e045ae9d0f2",
+    "C40-SHUFFLED": "6beb1c25c0d9c3b2bcf7ee62fd98c67de076f4efad71e038668fb74380868a13"
+  },
+  "holdout": {
+    "graphs": 112,
+    "models": {
+      "C40-PAIR": {
+        "by_family": {
+          "braid": 0.333929,
+          "tree": 0.155952
+        },
+        "mean_oracle_regret": 0.24494,
+        "oracle_top1": 201,
+        "states": 336
+      },
+      "C40-RANDOM": {
+        "by_family": {
+          "braid": 0.161905,
+          "tree": 0.533333
+        },
+        "mean_oracle_regret": 0.347619,
+        "oracle_top1": 142,
+        "states": 336
+      },
+      "C40-SHUFFLED": {
+        "by_family": {
+          "braid": 0.205952,
+          "tree": 0.415476
+        },
+        "mean_oracle_regret": 0.310714,
+        "oracle_top1": 152,
+        "states": 336
+      }
+    },
+    "states": 336
+  },
+  "limitations": [
+    "synthetic host only",
+    "no native CyberSand acceptance",
+    "no whole-trajectory personality acceptance",
+    "no immutable GitHub Actions checkpoint custody",
+    "no demonstrated broad independent-generator generalization"
+  ],
+  "offline_bootstrap": {
+    "C40-RANDOM": {
+      "descriptive_95pct_interval": [
+        -0.002679,
+        0.209844
+      ],
+      "graph_clusters": 112,
+      "mean_regret_reduction": 0.102679
+    },
+    "C40-SHUFFLED": {
+      "descriptive_95pct_interval": [
+        -0.022321,
+        0.158929
+      ],
+      "graph_clusters": 112,
+      "mean_regret_reduction": 0.065774
+    }
+  },
+  "online": {
+    "changed_trajectories_vs_RESET": {
+      "C40-PAIR": 53,
+      "C40-RANDOM": 27,
+      "C40-SHUFFLED": 39
+    },
+    "episodes": 960,
+    "goals": {
+      "C18-A0": 48,
+      "C34-RESET": 50,
+      "C40-PAIR": 54,
+      "C40-RANDOM": 51,
+      "C40-SHUFFLED": 49
+    },
+    "graph_clusters": 64,
+    "guided_episodes": 640,
+    "host_rejections": 0,
+    "no_guidance_exact": {
+      "C18-A0": [
+        64,
+        64
+      ],
+      "C34-RESET": [
+        64,
+        64
+      ],
+      "C40-PAIR": [
+        64,
+        64
+      ],
+      "C40-RANDOM": [
+        64,
+        64
+      ],
+      "C40-SHUFFLED": [
+        64,
+        64
+      ]
+    },
+    "paired_bootstrap": {
+      "C34-RESET": {
+        "descriptive_95pct_interval": [
+          1,
+          8
+        ],
+        "graph_clusters": 64,
+        "negative_clusters": 0,
+        "paired_goal_delta": 4,
+        "positive_clusters": 4
+      },
+      "C40-RANDOM": {
+        "descriptive_95pct_interval": [
+          0,
+          7
+        ],
+        "graph_clusters": 64,
+        "negative_clusters": 0,
+        "paired_goal_delta": 3,
+        "positive_clusters": 3
+      },
+      "C40-SHUFFLED": {
+        "descriptive_95pct_interval": [
+          1,
+          9
+        ],
+        "graph_clusters": 64,
+        "negative_clusters": 0,
+        "paired_goal_delta": 5,
+        "positive_clusters": 5
+      }
+    },
+    "raw_illegal_top_choices": 9,
+    "regressions_vs_RESET": {
+      "C18-A0": 7,
+      "C34-RESET": 0,
+      "C40-PAIR": 0,
+      "C40-RANDOM": 0,
+      "C40-SHUFFLED": 2
+    }
+  },
+  "previous_C39_same_holdout": {
+    "graphs": 112,
+    "models": {
+      "C39-ALIGNED": {
+        "by_family": {
+          "braid": 0.378571,
+          "tree": 0.208333
+        },
+        "mean_oracle_regret": 0.293452,
+        "oracle_top1": 186,
+        "states": 336
+      },
+      "C39-RANDOM": {
+        "by_family": {
+          "braid": 0.379167,
+          "tree": 0.233333
+        },
+        "mean_oracle_regret": 0.30625,
+        "oracle_top1": 176,
+        "states": 336
+      },
+      "C39-SHUFFLED": {
+        "by_family": {
+          "braid": 0.152381,
+          "tree": 0.518452
+        },
+        "mean_oracle_regret": 0.335417,
+        "oracle_top1": 156,
+        "states": 336
+      }
+    },
+    "states": 336
+  },
+  "replay": {
+    "actions": 7076,
+    "graph_hash_overlap": 0,
+    "traces": 160
+  },
+  "schema": "driv3r-c40-public-evidence/1",
+  "source_sha256": "8e70272a00b62c0c47d0bc69f55872054416de5840087a4b79e526bccf1618bd",
+  "train": {
+    "candidate_examples": 850,
+    "graphs": 56,
+    "optimizer_updates_per_trained_head": 1176,
+    "replicated_byte_identical": true,
+    "states": 168
+  }
+}
