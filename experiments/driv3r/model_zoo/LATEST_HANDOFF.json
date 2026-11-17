@@ -4,70 +4,51 @@
   "repo": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pr": 1,
-  "latest": "MZ-021",
-  "status": "SCRATCH_MIN_GRU_TRAINED_REJECT_PROMOTION",
-  "source_ref": "lucidrains/mingru-pytorch@9fe95d623b2a30f5cbc689e4640dc62403da0df5",
-  "source_license": "MIT",
-  "upstream_weights_loaded": false,
-  "local_executed_run_sha256": "daaa31a9d67cb4bc7300d91b393105dffbaa26600ece9511ab0b216ee7b7f5b9",
-  "synthetic_host_source_git_blobs": {
-    "world": "79431f615972a5f243bbb8c6a5e0c1d0372d2d87",
-    "counterfactual": "943197c3757c01c0b96baf809f0d71122595faa9"
+  "latest": "MZ-022",
+  "status": "BLOCKED_PRETRAINED_HYBRID_MODEL_ACQUISITION",
+  "model": "ibm-granite/granite-4.0-h-350m",
+  "upstream_revision": "3b17b717b8f2f5d305b0a92c1491e239aeda19c8",
+  "upstream_card_license": "apache-2.0",
+  "upstream_architecture": "GraniteMoeHybridForCausalLM, 28 Mamba2 and 4 attention layers; ~340M parameters reported; NOT measured",
+  "upstream_config_url": "https://huggingface.co/ibm-granite/granite-4.0-h-350m/blob/3b17b717b8f2f5d305b0a92c1491e239aeda19c8/config.json",
+  "pretrained_weights_loaded": false,
+  "pretrained_weights_sha256": null,
+  "trained_adapter_checkpoint_sha256": null,
+  "model_optimizer_updates": 0,
+  "closed_loop_rollouts": 0,
+  "cpu_model_p50_ms": null,
+  "cpu_model_p95_ms": null,
+  "model_process_rss_mib": null,
+  "class_accuracy": null,
+  "raw_illegal_actions": null,
+  "context_tokens": null,
+  "preflight": {
+    "local_python_syntax": "PASS",
+    "unit_tests": "5/5 PASS",
+    "runtime_dependency_missing": "transformers",
+    "pinned_checkpoint_present": false,
+    "dns": "huggingface.co and github.com failed with gaierror -3",
+    "executed_run_sha256": "9053797251048ddb35a1c3fb35a1d7f3cf2daee7a250229c242c315be00b43f8",
+    "executed_run_git_blob": "da5180694cbc91df0693399eb7286910db99af78"
   },
-  "model_parameters": 20612807,
-  "actual_full_weight_optimizer_updates": 64,
-  "train_examples": 754,
-  "train_world_seed_range": [
-    400,
-    423
-  ],
-  "dev_world_seeds": [
-    900,
-    901,
-    902,
-    903
-  ],
-  "test_world_seeds": [
-    1200,
-    1201,
-    1202,
-    1203
-  ],
-  "heldout_rollout_seeds": [
-    1807,
-    1808,
-    1809,
-    1810
-  ],
-  "heldout_raw_action_accuracy": "29/124 = 23.39%",
-  "linear_control_raw_action_accuracy": "23/124 = 18.55%",
-  "heldout_raw_illegal": "7/124",
-  "changed_goal_both_correct": "4/161",
-  "goal_reaching": "0/4 minGRU; 0/4 teacher",
-  "cached_cpu_p50_ms": 2.706,
-  "cached_cpu_p95_ms": 5.5542,
-  "whole_process_peak_rss_mib": 769.5,
-  "checkpoint_sha256": "3d1c343fa70958ccf1353ab802e50cff086205ec356f27bb9852e2967f3557d1",
-  "checkpoint_bytes": 82474613,
-  "immutable_actions_artifact": null,
-  "evidence_path": "experiments/driv3r/model_zoo/min_gru_mz021",
-  "source_qualification": "LOCAL_SEMANTIC_RECONSTRUCTION_NOT_EXACT_HEAD_REPLAY",
-  "warnings": [
-    "20.61M scratch-initialized actual minGRU recurrence trained; NOT pretrained SLM or official upstream implementation",
-    "64 optimizer steps and 4 held-out worlds: inadequate for promotion or model-family ranking",
-    "Local sandbox used independently reconstructed semantically equivalent host imports, not byte-identical DRIV3R fixtures",
-    "No class STOP in TRAIN labels; host legal mask cannot be counted as model legality",
-    "No native CyberSand tests; synthetic host does not implement native PAINT",
-    "Checkpoint remained local; no immutable Actions artifact or exact-HEAD CI"
-  ],
+  "evidence_path": "experiments/driv3r/model_zoo/granite_hybrid_mz022",
+  "own_lane_historical_best": "MZ-015: 209k diagonal and 237k GRU 32/32 synthetic turning maps historically reported; not exact-HEAD reproduced; below 20M SLM target",
   "previous_handoff": {
-    "latest": "MZ-020",
-    "model": "RetNet-derived 20.57M retention-state research port (scratch-initialized, not official pretrained RetNet)",
-    "status": "REJECT_PROMOTION_SCRATCH_POLICY_NEGATIVE",
-    "checkpoint_sha256_local_only": "fe5aae49a5ec14465edbad29889d21a75b069056e44b0bbedc0d54f9d6766b24"
+    "latest": "MZ-021",
+    "status": "SCRATCH_MIN_GRU_TRAINED_REJECT_PROMOTION",
+    "source_ref": "lucidrains/mingru-pytorch@9fe95d623b2a30f5cbc689e4640dc62403da0df5",
+    "checkpoint_sha256_local_only": "3d1c343fa70958ccf1353ab802e50cff086205ec356f27bb9852e2967f3557d1",
+    "main_empirical_result": "29/124 = 23.39%",
+    "evidence_path": "experiments/driv3r/model_zoo/min_gru_mz021"
   },
-  "historical_best": "MZ-015 209k diagonal and 237k GRU each reportedly 32/32 clean synthetic turning paths; pre-migration evidence only, not independently rerun; both below 20M target",
+  "next": "With real pretrained checkpoint + Transformers in network-enabled CPU runner, run one bounded 32-update frozen-pretrained-feature bottleneck adapter experiment with paired goal controls and held-out closed-loop trajectories; publish immutable Actions artifact. If failing, record exact loader/dependency error; do not invent a substitute.",
+  "warnings": [
+    "MZ-022 source-pin and architecture are verified against upstream card/config; model has NOT been loaded",
+    "No actual model weights/adapters trained or latency measured in this increment",
+    "No native CyberSand, no canonical production ABI, no actual PAINT",
+    "Prepared script has been syntax-tested and pure tests passed locally, but full training path remains untested",
+    "Large pretrained checkpoints do not belong in Git; no new workflows or paid compute"
+  ],
   "ranked_zoo_path": "experiments/driv3r/model_zoo/RANKED_ZOO.json",
-  "next": "Do not polish scratch minGRU or optimize quantization kernels. Source-pin and acquire an actual pretrained, architecturally different 20M–1B family, run real CPU adapter/block updates on the fixed common host, and publish checkpoint + closed-loop traces in opt-in immutable Actions artifact. If acquisition is blocked, record exact dependency/network failure and hand off.",
-  "constraints": "Only DRIV3R PR #1 model_zoo/**; CyberSand/Neurounner read-only; Draft/HOLD; no auto training or paid GPU."
+  "constraints": "DRIV3R PR #1 only, Draft/HOLD; other repos read-only"
 }

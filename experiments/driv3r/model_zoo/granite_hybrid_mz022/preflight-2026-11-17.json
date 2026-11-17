@@ -1,0 +1,35 @@
+{
+  "schema": "DRIV3R-MZ022-ENV_PREFLIGHT-v1",
+  "time_utc": "2026-11-17",
+  "model": "ibm-granite/granite-4.0-h-350m",
+  "revision": "3b17b717b8f2f5d305b0a92c1491e239aeda19c8",
+  "source_sha256": "9053797251048ddb35a1c3fb35a1d7f3cf2daee7a250229c242c315be00b43f8",
+  "source_git_blob": "da5180694cbc91df0693399eb7286910db99af78",
+  "test_sha256": "a5998bd485ea7cdc02ad82be1d313c9f352d90af128d55ee6cadd3938d994a59",
+  "source_syntax": "PASS",
+  "unit_tests": {
+    "passed": 5,
+    "failed": 0,
+    "scope": "local deterministic guards only"
+  },
+  "dependencies_present": {
+    "torch": true,
+    "transformers": false,
+    "huggingface_hub": true,
+    "safetensors": true
+  },
+  "pinned_checkpoint_cached": false,
+  "dns_tests": {
+    "huggingface.co": "gaierror [Errno -3] Temporary failure in name resolution",
+    "github.com": "gaierror [Errno -3] Temporary failure in name resolution"
+  },
+  "model_loaded": false,
+  "optimizer_updates": 0,
+  "heldout_rollouts": 0,
+  "cpu_latency_ms": null,
+  "rss_mib": null,
+  "status": "BLOCKED_MODEL_ACQUISITION",
+  "license_source": "https://huggingface.co/ibm-granite/granite-4.0-h-350m/blob/3b17b717b8f2f5d305b0a92c1491e239aeda19c8/README.md",
+  "config_source": "https://huggingface.co/ibm-granite/granite-4.0-h-350m/blob/3b17b717b8f2f5d305b0a92c1491e239aeda19c8/config.json",
+  "scientific_caveat": "Source-card and syntax qualification only, NOT verified model load or empirical model performance."
+}

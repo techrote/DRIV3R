@@ -2,10 +2,21 @@
   "schema": "DRIV3R_MODEL_ZOO_RANKED_CANDIDATES_V1",
   "as_of_utc": "2026-11-17",
   "ranking_type": "priority_for_next_controlled_pretrained_experiment_not_validated_performance",
-  "evaluation_note": "Previous runs imported from external research repos are historical evidence, NOT independent reproductions at current DRIV3R head. No cross-architecture ranking from unmatched curricula/training compute. Synthetic host is not CyberSand.",
+  "evaluation_note": "Prior empirical results are historical, not exact-HEAD reproductions. MZ-022 is source-pinned preflight only: no real pretrained model loaded; ranking is experiment priority, not performance.",
   "candidates": [
     {
       "rank": 1,
+      "name": "ibm-granite/granite-4.0-h-350m",
+      "architecture": "pretrained hybrid Mamba2 + attention, ~340M",
+      "source_rev": "3b17b717b8f2f5d305b0a92c1491e239aeda19c8",
+      "license": "Apache-2.0 per pinned model card",
+      "category": "pretrained_hybrid_candidate_blocked_runtime",
+      "rationale": "New attention+Mamba2 hybrid with a permissive model card; distinct from prior scratch/RWKV/Mamba/BitNet. Best next source-qualified architecture diversity probe.",
+      "qualification": "MZ-022 source/card/config checked, 5/5 local pure tests; no Transformers/cache/network, no model load or training; no performance claim.",
+      "next": "Obtain pinned weights/compatible Transformers in permitted CPU environment, run bounded adapter head on common host; retain checkpoint and traces in immutable artifact."
+    },
+    {
+      "rank": 2,
       "name": "Hakureirm/rwkv7-0.1b-hf",
       "architecture": "pretrained RWKV-7 recurrent",
       "source_rev": "16136bb51c0cf16356f410956d38b48f249c73e1",
@@ -15,7 +26,7 @@
       "next": "source-pinned controlled recurrent training/closed-loop test; isolate custom modeling code"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "answerdotai/ModernBERT-base",
       "architecture": "149M pretrained bidirectional encoder",
       "source_rev": "8949b909ec900327062f0ebf497f51aef5e6f0c8",
@@ -25,7 +36,7 @@
       "next": "matched host/action split against frozen-encoder and structured controls"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "state-spaces/mamba-130m-hf",
       "architecture": "130M selective state-space pretrained",
       "source_rev": "historical pin starts 1e76775; verify full immutable commit before new load",
@@ -35,7 +46,7 @@
       "next": "resolve full upstream commit and run CPU load/actual-weight head with paired-goal controls"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Qwen/Qwen3-0.6B",
       "architecture": "0.6B pretrained instruction transformer",
       "source_rev": "c1899de289a04d12100db370d81485cdf75e47ca",
@@ -45,7 +56,7 @@
       "next": "bounded cached CPU preflight, then matched action probe if viable"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "EleutherAI/pythia-70m-deduped",
       "architecture": "70M pretrained GPT-NeoX decoder",
       "source_rev": "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c",
@@ -55,7 +66,7 @@
       "next": "reuse only in a matched new-family experiment; avoid standalone polishing"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "tiiuae/Falcon3-1B-Instruct-1.58bit",
       "architecture": "approximately 0.8B pretrained BitNet-like instruction model",
       "source_rev": "72fd3f95fcd82639c902304919629edda8c6f2b4",
@@ -65,7 +76,7 @@
       "next": "verified pinned model/BitNet-supported Transformers runtime -> real CPU load and 64-update common head; no kernel work"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "MZ-021 minGRU scratch 20.61M",
       "architecture": "four-layer minGRU-family recurrent policy + residual FFN",
       "source_rev": "lucidrains/mingru-pytorch@9fe95d623b2a30f5cbc689e4640dc62403da0df5 (MIT, equations reference)",
@@ -75,7 +86,7 @@
       "next": "Do not promote. Prioritize truly pretrained new-family onboarding/adapter experiment instead of another scratch recurrence."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "MZ-020 RetNet-derived scratch 20.57M",
       "architecture": "retention state recurrent policy; simplified TorchScale-derived structure",
       "source_rev": "microsoft/torchscale@4d1e0e82e5adf86dd424f1463192635b73fc8efc",
