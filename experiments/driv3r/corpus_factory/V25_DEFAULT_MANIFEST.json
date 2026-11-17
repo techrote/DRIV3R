@@ -1,0 +1,136 @@
+{
+  "schema": "driv3r/corpus_factory/outcome-forks-v25/manifest",
+  "host": "synthetic-not-native-CyberSand",
+  "generator": "outcome_forks_v25.js",
+  "generator_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
+  "quick": false,
+  "oracle": "exhaustive reverse-BFS over pos,previous,paint-status with terminal quota/exit and contamination recovery",
+  "oracle_actions_entire_post_prelude": true,
+  "initial_preparatory_history_scripted": true,
+  "distal_obstruction_not_proxy_label": true,
+  "suffix_counterfactual_outcomes": true,
+  "full_last64_alias_within_family": true,
+  "split_worlds_disjoint": true,
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "episodes": 64,
+      "decisions": 904,
+      "unique_inputs": 792,
+      "duplicate_inputs": 112,
+      "first_action": {
+        "BACKTRACK": 32,
+        "MOVE_N": 32
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "paint_actions": 128,
+      "retrace_actions": 156,
+      "min_counterfactual_regret": 2
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 32,
+      "decisions": 512,
+      "unique_inputs": 512,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "paint_actions": 64,
+      "retrace_actions": 80,
+      "min_counterfactual_regret": 2
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 32,
+      "decisions": 600,
+      "unique_inputs": 600,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "paint_actions": 64,
+      "retrace_actions": 80,
+      "min_counterfactual_regret": 2
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "2c2b43b4acbaaa3c00f1d9b808eb14572b024834c2ff0d6071af91b38f3fdbca",
+      "bytes": 490032,
+      "rows": 64
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "3eb855efee7658d77381fbb80fe03e72274920f85b3feb36e97786c8bbe095a2",
+      "bytes": 900390,
+      "rows": 904
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "de7e666879744b493ac98259fc7b4c0177b549667731080018617abe8a65294c",
+      "bytes": 253488,
+      "rows": 32
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "f1836f6b1dcf454ffb3f38ea485697b7b985c8558865f107459e15104438b7c7",
+      "bytes": 508880,
+      "rows": 512
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "905e91e56199d4a56bbaa05f46a9587ba264f2a40d1ed8aa88c533fdb1cb73fb",
+      "bytes": 266656,
+      "rows": 32
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "b61308f3c96b5a4738230fd8a90cd052d2115d2b4f340def275501404053f698",
+      "bytes": 598760,
+      "rows": 600
+    }
+  }
+}

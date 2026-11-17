@@ -4,87 +4,133 @@
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "role": "DATA ONLY \u2014 compact model-consumer corpus, not trainer",
-  "version": "compact-trace-v24",
-  "source": "experiments/driv3r/corpus_factory/compact_trace_v24.js",
-  "source_sha256": "c7c39280f0cadb29b2fd0dfa3e2f5e516d8e0625c3dcfec3dfe51515bd52c755",
-  "parent": "noncommutative_mission_v23.js",
-  "parent_sha256": "4ab6dde5bc08fe9ee5860912f3ed8c0cd9e739e309b2418a32c744aa0b918fa7",
-  "test": "experiments/driv3r/corpus_factory/test_compact_trace_v24.js",
-  "manifest": "experiments/driv3r/corpus_factory/V24_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "5c9b13e65969a63f471b5e1f7b1d8e57d203f1996cb7de3bbd451468b60c3a8a",
-  "best_checkpoint_or_artifact": "Locally reproducible six-shard compact v24 synthetic data corpus; no SLM checkpoint or immutable Actions shard artifact",
+  "role": "DATA ONLY: synthetic terminal-outcome-solved corpus, not policy trainer",
+  "version": "suffix-outcome-forks-v25",
+  "source": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
+  "source_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
+  "test": "experiments/driv3r/corpus_factory/test_outcome_forks_v25.js",
+  "test_sha256": "a2aacfba15540435303e5301cda43df3ae9cd85909ff72a5dd83a7722483eb92",
+  "manifest": "experiments/driv3r/corpus_factory/V25_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "5a55a0987374c422e444a7809a927a086f48968a6b9f63ede2d7a904747ed180",
+  "best_checkpoint_or_artifact": "Reproducible six-shard synthetic v25 corpus generated locally; NO trained SLM checkpoint and NO immutable Actions shard artifact",
   "splits": {
     "TRAIN": {
-      "world_groups": 12,
-      "episodes": 192,
-      "decisions": 12496,
-      "unique_inputs": 12000,
-      "exact_duplicate_inputs": 496,
-      "zero_weight_train_duplicates": 496,
-      "corrective_erases": 384,
-      "accepted_paints": 1344,
-      "first_target_state_balance": [
-        48,
-        48,
-        48,
-        48
-      ]
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "episodes": 64,
+      "decisions": 904,
+      "unique_inputs": 792,
+      "duplicate_inputs": 112,
+      "first_action": {
+        "BACKTRACK": 32,
+        "MOVE_N": 32
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "paint_actions": 128,
+      "retrace_actions": 156,
+      "min_counterfactual_regret": 2
     },
     "DEV": {
-      "world_groups": 6,
-      "episodes": 96,
-      "decisions": 10032,
-      "unique_inputs": 9984,
-      "exact_duplicate_inputs": 48,
-      "zero_weight_train_duplicates": 0,
-      "corrective_erases": 352,
-      "accepted_paints": 832,
-      "first_target_state_balance": [
-        24,
-        24,
-        24,
-        24
-      ]
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 32,
+      "decisions": 512,
+      "unique_inputs": 512,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "paint_actions": 64,
+      "retrace_actions": 80,
+      "min_counterfactual_regret": 2
     },
     "HELDOUT": {
-      "world_groups": 6,
-      "episodes": 96,
-      "decisions": 15392,
-      "unique_inputs": 15344,
-      "exact_duplicate_inputs": 48,
-      "zero_weight_train_duplicates": 0,
-      "corrective_erases": 528,
-      "accepted_paints": 1008,
-      "first_target_state_balance": [
-        24,
-        24,
-        24,
-        24
-      ]
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 32,
+      "decisions": 600,
+      "unique_inputs": 600,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "blocked_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "open_distal_spur": {
+        "BACKTRACK": 8,
+        "MOVE_N": 8
+      },
+      "paint_actions": 64,
+      "retrace_actions": 80,
+      "min_counterfactual_regret": 2
     }
   },
-  "qualification": {
-    "oracle_terminal_success": "384/384",
-    "exact_label_and_reconstruction_alignment": "5,184/5,184 quick + 3 sampled full oracle comparisons",
-    "complete_deterministic_generations": 2,
-    "accepted_illegal_oracle_actions": 0,
+  "metrics": {
+    "episodes": 128,
+    "labelled_decisions": 2016,
+    "oracle_goal_completion": "128/128",
+    "max_step_regret_on_wrong_first_action_min": 2,
+    "blocked_proxy_accuracy_ceiling": 0.5,
+    "latest64_first_action_ceiling": 0.5,
+    "duplicate_train_downweighted": 112,
+    "conflicting_observation_labels": 0,
     "split_geometry_overlap": 0,
-    "split_programme_overlap": 0,
-    "cross_split_exact_input_overlap": 0,
-    "contradictory_complete_input_labels": 0,
-    "reduction_percent": 81.05,
-    "generator_wall_seconds": 11.68,
-    "generator_peak_rss_kib": 102912,
-    "named_SLM_forwards_or_updates": 0
+    "cross_split_input_overlap": 0,
+    "full_deterministic_generations": 2,
+    "generator_wall_seconds_range": [
+      14.78,
+      15.76
+    ],
+    "generator_peak_rss_kib_range": [
+      518368,
+      519528
+    ],
+    "actual_SLM_updates_or_forwards": 0
   },
-  "known_failure": "v24 adds no scenario diversity: two synthetic workshops and a four-state symbolic programme remain. Trainer root models/runtime and immutable Actions artifact remain unavailable. Compression does not establish actual SLM skill.",
-  "negative_result": "v23 full history repeated per decision produces ~709.7 MB model-input alone; v24 avoids ~81% redundant serialization without truncating event memory. DEV/HELDOUT still have 48 exact duplicate evaluation inputs each; report both episode- and unique-state metrics.",
-  "consumer_protocol": "Read episodes initial_history, apply ordered per-decision events_added/positions_added; use observation_keys to reconstruct full model_input and verify sha256; never feed targets/receipts/scenario metadata as features; use TRAIN training_weight; run new model-controlled heldout episodes.",
-  "next_useful_consumer_experiment": "Real pinned LFM/Sprocket SLM train TRAIN, tune DEV, heldout closed-loop with full history vs last64 + symbolic controls; measure correct goals/materials/recovery/latency and model RSS. Next data generator: 4-way geometry and premature RETRACE contrasts.",
+  "known_failure": "DISTAL blockage is matched irrelevant distractor, not causal; small two-of-three paint tasks and simple graph grammar; remote scan and prefix scripted; no native CyberSand observation/action ABI verification; no actual SLM or immutable Actions artifacts.",
+  "negative_result": "LFM and long_horizon blocked-spur RETRACE proxy labels have worsened 128-turn sustained painting despite improved local matches; this lane switches to exhaustive suffix outcome supervision with >=2-step regret.",
+  "consumer_protocol": "Read episodes.initial_history; append ordered decision.events_added and .positions_added; reconstruct exactly using observation_keys and state; check model_input_sha256; only feed reconstructed model input, never target/receipt/difficulty/blocked_distal_spur or suffix costs. Respect TRAIN training_weight and world_group split.",
+  "next_useful_consumer_experiment": "Pinned actual LFM/Sprocket closed-loop HELDOUT full-history vs last64 vs blocked-only vs symbolic oracle; measure first-action stratified decision, realized regret, 2-of-3 quota terminal success, premature STOP, recovery, p50/p95/p99 inference latency and peak model RSS.",
   "synthetic_host_not_native": true,
   "paid_compute_used": false,
   "cybersand_or_neurounner_writes": false,
-  "main_unchanged": true,
-  "owner_merge_gate": "DRAFT/HOLD DO NOT MERGE OR PROMOTE READY"
+  "owner_merge_gate": "DRAFT/HOLD; DO NOT MERGE, PROMOTE READY, OR WRITE DRIV3R main"
 }
