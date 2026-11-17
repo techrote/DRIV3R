@@ -1,0 +1,102 @@
+{
+  "schema": "driv3r.lfm350.latest-handoff/1",
+  "updated_utc": "2026-11-17",
+  "lane": "experiments/driv3r/lfm_game_policy",
+  "repository": "techrote/DRIV3R",
+  "only_mutable_pr": 1,
+  "latest_experiment": "GP350-018",
+  "status": "DECODER RUNNER PUBLISHED AND SOURCE-SMOKE COMPILED; NEW FROZEN LFM INFERENCE NOT EXECUTED",
+  "next_research_question": "Can legal temperature sampling or a modest flat-host probability mixture restore nondegenerate irregular CyberSand-like worm trajectories without STOP collapse, coverage loss, or false recovery?",
+  "best_validated_navigation_control": {
+    "name": "GP350-006 step96, frozen LiquidAI LFM2.5-350M rank-8 q/v LoRA",
+    "model_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+    "adapter_sha256": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+    "source_read_only_run": 43806503356,
+    "source_read_only_artifact_id": 14199280586,
+    "matched_128_turn_GP350012": {
+      "episodes": 12,
+      "decisions": 1536,
+      "mean_distinct_trail_cells": 128.5,
+      "revisit_moves": 6,
+      "raw_illegal_preferences": 0,
+      "host_illegal_actions": 0,
+      "anticipatory_pressure_turns": "75/75",
+      "BRANCH": 0,
+      "RETRACE": 0
+    },
+    "status": "Strong conservative navigation baseline, not promoted to native CyberSand"
+  },
+  "untuned_actual_LFM_control": {
+    "stage": "GP350012 original stock",
+    "model_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+    "source_read_only_run": 43910803355,
+    "matched_128_turn": {
+      "episodes": 12,
+      "decisions": 1536,
+      "mean_distinct_trail_cells": 124.67,
+      "revisit_moves": 52,
+      "raw_illegal_preferences": 47,
+      "host_illegal_actions": 0,
+      "anticipatory_pressure_turns": "63/138",
+      "BRANCH": 0,
+      "RETRACE": 0
+    }
+  },
+  "d1_matched_control": "NOT RUN: historical d1/other-model evidence is context only.",
+  "historical_negative_results": [
+    "GP350010 step24 introduced selective Greebles branching but 128-turn Greebles coverage fell to 116 vs GP006 128.5; revisits rose to 56 vs GP006 6 across families.",
+    "GP350014 step72 correctly selected trapped RETRACE 13/24 but all 25 observed autonomous RETRACEs occurred with an open unexplored arm; coverage fell to 60.58 vs parent 65 and 135 BRANCH actions.",
+    "GP350015 step36 trapped RETRACE apparent 10/12 collapses to 5 successes over 6 distinct locally trapped states; 45 premature autonomous RETRACEs.",
+    "GP350017 320 AdamW updates modified external scalar calibrators ONLY; held-out premature retraces worsened. This is not an LFM weight update."
+  ],
+  "current_source": {
+    "runner": "gp350018_matched_decoder.py",
+    "runner_git_blob": "7d6d575273ecd7ae90be9545a69eae0053b084e4",
+    "published_at_commit": "72edd479acf2f701a9cfd84432d55ec51b1a0b74",
+    "preflight": "GP350-018-PREFLIGHT.json",
+    "experimental_request": "gp350-018-request.json",
+    "synthetic_W0_commit": "4bb9d6e1d0d0d78183f87d1e3c29648edafacf61",
+    "synthetic_W0_git_blob": "8979b6f0296e81051194bacc907992d38e006605"
+  },
+  "current_analytic_archive_preflight": {
+    "source": "GP350-012 original archived full-LFM logits, greedy on-policy states only",
+    "verified_archive_entries": 290,
+    "archived_model_decisions": 3072,
+    "original_128_turn_episodes": 24,
+    "sampled_closed_loop_episodes_this_run": 0,
+    "new_LFM_forwards_this_run": 0,
+    "expected_non_greedy_probability": {
+      "stock_B_t2p50": 0.48569,
+      "GP006_B_t2p50": 0.05833,
+      "GP006_C_m0p25": 0.20894
+    },
+    "expected_STOP_risk": {
+      "stock_C_m0p25": 0.04751,
+      "GP006_C_m0p25": 0.04411
+    },
+    "caveat": "These are only expected actions at previously visited greedy states. Different decisions change all later observations."
+  },
+  "execution_blocker": {
+    "reason": "No action for dispatching an opt-in GH Actions model job through the connected GitHub API; this environment has no cached pinned full LFM350/tokenizer and lacks transformers/PEFT, and external network for model download is unavailable.",
+    "not_attempted": "No new optimizer or frozen full LFM inference run executed here; source-smoke compileall is NOT a model experiment.",
+    "what_unblocks": "Explicit opt-in DRIV3R CPU model job (no automatic training) using pinned actual LFM350 and read-only W0, with original GP006 adapter restored from immutable artifact.",
+    "upload": "Store complete JSON/PNG/SVG/gallery and provenance in immutable Actions artifacts, not repository Git."
+  },
+  "handoff_to_preference_lab": {
+    "path": "experiments/driv3r/training/preference_eval",
+    "reference_result": "P16 shows useful protected-position topology control but its ranker has no human aesthetic labels; it is an auxiliary W16 head, NOT actual LFM350.",
+    "after_GP350018_artifacts_exist": "Blind paired trajectory-gallery review of same initial world and motif for four niches: Meanderer (travelling irregular zigzags), Curler (hooks and partial spirals), Brancher (selective junctions/offshoots), Chaotic artist (diversity without becoming trapped).",
+    "paired_controls": "Frozen original LFM350 stock and GP006 under identical A/B/C decode arms; W13 VL visual reference unpaired.",
+    "controls": "Do not reveal model/arm labels before visual judgement; combine preferences with STOP, legal, unique territory and stagnation metrics.",
+    "contact_status": "Handoff stored lane-locally; no edits or comment to Preference Lab."
+  },
+  "next_actions": [
+    "Execute 64-turn source-pinned GP350018 A/B/C jobs separately for stock and GP006 on the identical initial W0 worlds; 128-turn extended only after bounded 64-turn evidence.",
+    "Audit deterministic replay and true changing-observation episode receipts, compare branch/retrace/STOP and p50/p95 forward latency plus RSS.",
+    "If decoding fails, design next genuine GP006-initialized LoRA recovery/style curriculum with world-geometry split before optimizer; do not add another scalar calibrator.",
+    "Keep #1 Draft/HOLD; never modify CyberSand, Neurounner or other lab paths."
+  ],
+  "paid_GPU_or_API": false,
+  "game_files_modified": false,
+  "no_merged_or_ready": true
+}
