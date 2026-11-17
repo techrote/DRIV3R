@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P17",
-  "status": "ORIGINAL_W16_SOURCE_AUDITED_HISTORICAL_MULTIMODEL_CURATED_NOT_DIRECT_SOURCE_REVERIFIED_CROSS_MODEL_TRAINING_BLOCKED",
-  "latest_findings": "P17_FINDINGS.md",
+  "latest": "P18",
+  "status": "ORIGINAL_14_PRODUCER_BYTES_REVERIFIED_9_REAL_LFM350_STOCK_LORA_VISUAL_TIES_FOUR_NICHE_BALLOTS_UNRATED_RANKER_WITHHELD",
+  "latest_findings": "P18_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -33,7 +33,17 @@
     "native_game_reference_specimens": 2,
     "same_world_same_horizon_pairs_without_labels": 10,
     "independent_original_producer_bytes_reverified_in_p17": false,
-    "pretrained_slm_crossmodel_heldout_ranker_trained": false
+    "pretrained_slm_crossmodel_heldout_ranker_trained": false,
+    "independent_original_producer_bytes_reverified_in_p18": true,
+    "original_verified_producer_episodes": 14,
+    "source_verified_applied_actions": 1096,
+    "original_source_native_references": 2,
+    "original_source_model_W0_trajectories": 12,
+    "original_host_menu_violations": 0,
+    "same_world_same_horizon_nonidentical_pairs_without_labels": 10,
+    "independent_nonidentical_pair_source_world_blocks": 3,
+    "original_identical_catch_pairs": 3,
+    "original_pretrained_LFM350_paired_24turn_worlds": 9
   },
   "niches": [
     "MEANDERER",
@@ -41,19 +51,19 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "100% ninety-degree turns on d1 stock can be a degenerate four-cell loop, not a successful Curler/Meanderer; shape-only proxies cannot confer preference or intentionality.",
-  "artifact_status": "LOCAL_ONLY_NOT_IMMUTABLE_ACTIONS",
-  "local_tests": "7/7 PASS",
+  "negative_result": "Real GP350006 pretrained LFM350 step96 LoRA yields changed six-way logits at 216/216 paired ticks but identical 9/9 original 24-decision stock-vs-trained applied trajectories; these are short greedy controls only. Stock d1 128 LEFT decisions yield degenerate looping.",
+  "artifact_status": "LOCAL_SOURCE_ORIGINAL_ZIPS_BESTIARY_NOT_DRIV3R_ACTIONS_IMMUTABLE",
+  "local_tests": "7/7 PASS (source-byte audit, real LFM350 source comparison and anonymous catch masking)",
   "new_model_forwards": 0,
   "new_optimizer_steps": 0,
   "human_ratings": 0,
   "blockers": [
-    "LFM GP350-018 sampled new closed-loop inference not yet run (greedy-state logits alone do not establish changed-trajectory outcomes)",
-    "Pinned full pretrained Tiny/SmolLM2, LFM350 and Franken d1 source weights/runner not available here; GitHub workflow dispatch unavailable",
-    "Cross-model original same-world/horizon multi-world training/heldout pairs with owner labels not available",
-    "Original 14 curated producer JSON bytes absent from this runtime; only historical source hashes/positions present"
+    "No valid blind owner/human comparisons; all 52 niche ballot rows blank. A trained reward ranker would be circular synthetic pseudo-aesthetic scoring.",
+    "Ten nonidentical historical original pairs belong to just three same-world/horizon blocks, not independent held-out model/world-family strata.",
+    "GP350-018 fully changing-observation sampled pretrained LFM350, Tiny pretrained/Population original and new executed Franken structural mutants remain unexecuted in this lab.",
+    "No GitHub Actions immutable P18 artifact; original source ZIPs and manifest exist in the checksum-verified local evidence pack, not Git; models cannot be re-run here without pinned root weights, CPU host and opt-in dispatch."
   ],
-  "next_consumer_experiment": "Obtain source-byte-verifiable matched original LFM stock/GP006 decoding controls, executed Franken full action/position receipts, Tiny pretrained original rollouts and Population pretrained output over world-disjoint seeds. Generate blind four-niche A4 source-matched comparisons, collect owner ballots, then train a bounded multiobjective ranker with held-out model families and transparent baselines. Keep all production safety claims with CyberSand.",
+  "next_consumer_experiment": "After GP350-018 real full-root matched sampled A/B/C source execution and actual Tiny/Population/Franken model trajectories, create world-family/source-disjoint blind four-niche paired galleries with new original paths, collect owner A/B/tie/skip, audit hidden identical catch trials and train a CPU ranker only if valid independent labels and held-out strata. For Population/Distillation, provide lane-local hard negatives: stock d1 4-cell loop, early STOP, oscillation and trained-LFM visual tie.",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -64,5 +74,31 @@
   "game_modified": false,
   "external_repo_writes": false,
   "merges": false,
-  "paid_compute": false
+  "paid_compute": false,
+  "p18": {
+    "source": "p18_reverify_ballots.py",
+    "source_git_blob": "2cff3ff9a8311bd849ba29ae75be7ca8e842396a",
+    "source_tests": "test_p18_reverify_ballots.py",
+    "tests_git_blob": "be79d397bf813336bedaebaff1b76d70449ffed2",
+    "source_evidence": "P18_EVIDENCE.json",
+    "original_native_plus_W0_applied_decisions": 1096,
+    "original_historical_sources_verified": 14,
+    "original_host_menu_violations": 0,
+    "actual_pretrained_LFM350_original_artifact_id": 14199280586,
+    "actual_LFM350_rank8_step96_adapter_sha256": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+    "actual_LFM350_stock_vs_trained_matched_24turn_pairs": 9,
+    "identical_stock_vs_trained_original_paths": 9,
+    "changed_six_logit_vectors_of_paired_ticks": "216/216",
+    "original_LFM350_applied_model_decisions_audited": 432,
+    "new_root_SLM_inference_or_training_in_P18": 0,
+    "blind_A4_SVG_pages": 7,
+    "blind_pairs": 13,
+    "nonidentical_original_pairs": 10,
+    "identical_visual_catch_pairs": 3,
+    "four_niche_blank_questionnaire_rows": 52,
+    "owner_ratings": 0,
+    "local_source_bundle_sha256": "b6651d1747b7bbe18469d98a08c7147f8ccc61ea54506cce5488918fb6ac13de",
+    "bundle_bytes": 8179398,
+    "findings": "Actual source receipt and trained LFM logits changed but greedy path unchanged in 9/9 source-original 24-tick controls. This is negative visual transfer, not new inference."
+  }
 }
