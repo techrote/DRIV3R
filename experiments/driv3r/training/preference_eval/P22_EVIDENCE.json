@@ -70,8 +70,8 @@
     "8cf5c62d936b32c3ea86388a5e7073841b756ebcb08a640a96adfebb70f624b4",
     "f184f38d617a711b395312d10d348605552bc38e6460485d9c22629e3b57f914",
     "2b1202e61c59ec3cedbf0c5f2021510128dc0084e57488de6eca834f4c2f5c1e",
-    "9234fe5a2c356f2381b1b324206d7571a9f934ef6f2b00a3bc0a80ae92910674b46def61a60a91714",
-    "a4fe5a2c356f2381b1b324206d7571a9f934ef6f2b00a3bc0a80ae92910674b46def61a60a91714"
+    "3b1b324206d7571a9f934ef6f2b00a3bc0a80ae92910674b46def61a60a91714",
+    "a4fe5a2c356f2381eacf126c49841cdc5034d761728f5cce308918bf990baf80"
   ],
   "qualification": "local historical source-tensor re-evaluation; NO new full-root inference, no optimizer steps, no native game evaluation, no human aesthetic labels, no hosted Actions artifact",
   "root_weights_available": false,
@@ -83,5 +83,7 @@
     "No GitHub Actions workflow_dispatch connector, no permitted background execution path",
     "Only two independent original seed blocks; archive heldout worlds not source-disjoint model families",
     "No blind human/owner aesthetic preferences; do not train another proxy ranker"
-  ]
+  ],
+  "original_results_json_sha256": "f2b5221aa99df572a3b52b3f38948ff1bacd825d19b8d7c97e2abc386d410dd6",
+  "original_world_detail_json_sha256": "fa58ec8a3d6666f56cb6a7ef3a1ea9d7efcc185eda76a9e013dfb2a638680307"
 }
