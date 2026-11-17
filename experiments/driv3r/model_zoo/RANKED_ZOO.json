@@ -66,6 +66,16 @@
     },
     {
       "rank": 7,
+      "name": "MZ-021 minGRU scratch 20.61M",
+      "architecture": "four-layer minGRU-family recurrent policy + residual FFN",
+      "source_rev": "lucidrains/mingru-pytorch@9fe95d623b2a30f5cbc689e4640dc62403da0df5 (MIT, equations reference)",
+      "category": "trained_scratch_architectural_negative_no_pretrained_weights",
+      "rationale": "Real 64-step full-weight 20.61M CPU training, but 23.39% heldout teacher accuracy and 0/4 goal reaches; only tiny structural linear control and poor synthetic teacher endpoint.",
+      "qualification": "Local reconstructed host; 29/124 TEST vs linear 23/124, 7/124 illegal, 4/161 goal pair both-correct, cached p50 2.706ms; no exact-HEAD CI or immutable checkpoint.",
+      "next": "Do not promote. Prioritize truly pretrained new-family onboarding/adapter experiment instead of another scratch recurrence."
+    },
+    {
+      "rank": 8,
       "name": "MZ-020 RetNet-derived scratch 20.57M",
       "architecture": "retention state recurrent policy; simplified TorchScale-derived structure",
       "source_rev": "microsoft/torchscale@4d1e0e82e5adf86dd424f1463192635b73fc8efc",
