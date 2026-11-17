@@ -1,0 +1,22 @@
+{
+  "schema": "DRIV3R_MODEL_ZOO_HANDOFF_v1",
+  "as_of_utc": "2026-11-17",
+  "owned_path": "experiments/driv3r/model_zoo/**",
+  "latest": "MZ-019",
+  "model": "tiiuae/Falcon3-1B-Instruct-1.58bit",
+  "upstream_sha": "72fd3f95fcd82639c902304919629edda8c6f2b4",
+  "checkpoint": null,
+  "status": "BLOCKED_PRETRAINED_RUNTIME",
+  "loadability": "not tested with actual weights",
+  "trained_steps": 0,
+  "real_pretrained_cpu_p50_ms": null,
+  "real_pretrained_peak_rss": null,
+  "heldout_action_accuracy": null,
+  "legal_raw_rate": null,
+  "closed_loop_success": null,
+  "obstacle": "No transformers installed in isolated CPU environment; Hugging Face DNS unreachable and no pinned model cache",
+  "historical_best": "MZ-015 diagonal/GRU 32/32 clean synthetic turning paths; old evidence only, not independently rerun",
+  "next": "Real pinned Falcon3 BitNet CPU load -> bounded 64-update matched trained-head / structured control -> split and 4x4 closed-loop trajectories; retain checkpoint in immutable Actions artifact",
+  "constraints": "No external repository writes, no new workflow/PR/branch, synthetic host != CyberSand",
+  "published_in": "techrote/DRIV3R PR #1"
+}
