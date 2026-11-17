@@ -1,0 +1,74 @@
+{
+  "schema": "driv3r-c43-goal-outcome-compact/1",
+  "date": "2026-11-17",
+  "source_sha256": "46203e540b95d44c4b581da2c8bec1bc3b0e12a1bf920841bf28cbab315dd746",
+  "source_bundle_blob_sha": "527c57aeb1e923c728be36b38ae1430186769486",
+  "test_sha256": "f37f30ae0149fa536bf8cba56417bc00d576faf2b8396fa8bdca22f2e3a50ae4",
+  "graphs": {
+    "train": 64,
+    "blind": 32,
+    "online": 64
+  },
+  "episodes": 1536,
+  "guided_per_policy": 192,
+  "unguided_per_policy": 64,
+  "guided_goals": {
+    "C18-A0": 49,
+    "C34-RESET": 48,
+    "C40-PAIR": 48,
+    "C43-OUTCOME": 48,
+    "C43-SHUFFLED": 50,
+    "C43-RANDOM": 49
+  },
+  "regression_condition_count": {
+    "C18-A0": 9,
+    "C34-RESET": 0,
+    "C40-PAIR": 6,
+    "C43-OUTCOME": 0,
+    "C43-SHUFFLED": 0,
+    "C43-RANDOM": 0
+  },
+  "blind_mean_outcome_regret": {
+    "C40-PAIR": 0.526036,
+    "C43-OUTCOME": 0.281398,
+    "C43-SHUFFLED": 0.15827,
+    "C43-RANDOM": 0.125381
+  },
+  "paired_cluster_bootstrap_95": {
+    "C43-OUTCOME_vs_RESET": {
+      "delta": 0,
+      "interval": [
+        0,
+        0
+      ]
+    },
+    "C43-OUTCOME_vs_SHUFFLED": {
+      "delta": -2,
+      "interval": [
+        -5,
+        0
+      ]
+    }
+  },
+  "action_changed_states_while_guided": {
+    "C43-OUTCOME": 6183
+  },
+  "raw_illegal_top1": {
+    "C43-OUTCOME": 4
+  },
+  "synthetic_host_rejections": 0,
+  "unguided_action_and_ink_hash_exact": true,
+  "checkpoints_sha256": {
+    "C43-OUTCOME": "df4e70c5644b327429bca64ef2a8c8f9c4d11ee89984cb8ad49dee34b4018bc5",
+    "C43-SHUFFLED": "63e00f3f593067dcf0ad47ca3cebd4a798c24292daffefbf07857e1e7ab63828",
+    "C43-RANDOM": "824b139348d166c770196dcfe34687452ea0a521b90d46d1524bf31e29204655"
+  },
+  "local_archive_manifest_sha256": "0e740ce773b468052f3b1e0af1171b97f26f6db35e80de44f10fe44ed7f6982f",
+  "source_artifacts_in_git": true,
+  "model_artifacts_in_git": false,
+  "scientific_reproduction_complete": false,
+  "loss_custody": "optimizer curves and source-label receipts not retained; later cohort evaluation resumed deterministically",
+  "native_acceptance": false,
+  "promotion": "REJECT",
+  "draft_hold": true
+}
