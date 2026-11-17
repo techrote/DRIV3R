@@ -4,43 +4,63 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "composed-relay-shutter-replay-v13",
-  "role": "data-only synthetic host and split corpus; no optimizer",
-  "source": "experiments/driv3r/corpus_factory/relay_memory_v13.js",
-  "source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
-  "test": "experiments/driv3r/corpus_factory/test_relay_memory_v13.js",
-  "test_git_blob": "e724529a46fb0c42d529ec749a8e06246e495867",
-  "manifest": "experiments/driv3r/corpus_factory/V13_DEFAULT_MANIFEST.json",
-  "artifact_command": "node experiments/driv3r/corpus_factory/relay_memory_v13.js NEW_DIR 4",
-  "best_checkpoint_or_artifact": "No corpus-lane checkpoint; source-pinned deterministic TRAIN/DEV/HELDOUT episode and decision shards with SHA-256 and replay host",
+  "version": "off-policy-recovery-v14",
+  "role": "data-only synthetic recovery corpus; no model optimizer",
+  "source": "experiments/driv3r/corpus_factory/recovery_curriculum_v14.js",
+  "source_git_blob": "8eca20207f6819550e9cb92965a469825d85c563",
+  "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "test": "experiments/driv3r/corpus_factory/test_recovery_curriculum_v14.js",
+  "test_git_blob": "5699b16820cf2589098a707adb9d05fd04462f7c",
+  "manifest": "experiments/driv3r/corpus_factory/V14_DEFAULT_MANIFEST.json",
+  "artifact_command": "node experiments/driv3r/corpus_factory/recovery_curriculum_v14.js NEW_DIR 2",
+  "best_checkpoint_or_artifact": "Source-pinned deterministic corpus generator, validated default TRAIN/DEV/HELDOUT shard SHA256 manifest; no checkpoint and no immutable Actions artifact",
   "counts": {
     "TRAIN": {
-      "episodes": 256,
-      "pairs": 128,
-      "world_groups": 64,
-      "decisions": 2304
+      "episodes": 384,
+      "decisions": 4992,
+      "world_groups": 32,
+      "topologies": 16,
+      "interventions": {
+        "closed_gate_probe": 128,
+        "shutter_reversal": 128,
+        "goal_retarget": 128
+      }
     },
     "DEV": {
-      "episodes": 64,
-      "pairs": 32,
-      "world_groups": 16,
-      "decisions": 576
+      "episodes": 96,
+      "decisions": 1248,
+      "world_groups": 8,
+      "topologies": 4,
+      "interventions": {
+        "closed_gate_probe": 32,
+        "shutter_reversal": 32,
+        "goal_retarget": 32
+      }
     },
     "HELDOUT": {
-      "episodes": 96,
-      "pairs": 48,
-      "world_groups": 24,
-      "decisions": 864
+      "episodes": 144,
+      "decisions": 1872,
+      "world_groups": 12,
+      "topologies": 6,
+      "interventions": {
+        "closed_gate_probe": 48,
+        "shutter_reversal": 48,
+        "goal_retarget": 48
+      }
     }
   },
-  "counterfactual_pairs": 208,
-  "synthetic_host_applied_oracle_moves": 27936,
-  "legal_strict_hard_negatives": 4160,
-  "ablation": "208/208 opposite first actions under identical last64/current observation; theoretical restricted-history max 50%",
-  "provenance": "external synthetic graph; NOT native CyberSand contract or acceptance",
-  "validation": "Node 22 standalone PASS; 2 CLI generations identical manifest and six shard hashes; source blobs verified",
-  "known_failure": "scripted prelude, symbolic two-event rule, no actual trained SLM evaluation or native ABI; no painting in host",
-  "next_useful_consumer_experiment": "Use actual pinned LFM GP350-006/stock or available Sprocket root (blocked), train on TRAIN only; freeze after DEV; compare full-event vs last64/last1 in fully model-controlled sealed HELDOUT with arrival, path stretch, illegal preference, latency/RSS by world group",
+  "metrics": {
+    "accepted_intervention_moves": 22120,
+    "oracle_recovery_moves": 58544,
+    "rejected_prefix_moves": 208,
+    "strict_hard_negative_actions": 8128,
+    "protected_entries": 0,
+    "illegal_oracle_moves": 0
+  },
+  "provenance": "synthetic v13 host extension, NOT native CyberSand ABI or physical acceptance",
+  "validation": "Node22 standalone PASS, 2 identical full CLI generations, strict world-group and topology split, source/test hashes",
+  "known_failure": "scripted prefixes and ancient prelude; no SLM closed-loop results; v14 interventions do not preserve v13 last64 alias; no native brush or material physics",
+  "next_useful_consumer_experiment": "On actual pinned SLM adapter, use TRAIN and DEV, then seal model/settings before HELDOUT; compare full history vs last64/last1 in 3 post-error modes, world-group arrival, path stretch, rejected actions, p50/p95 latency, peak RSS",
   "paid_compute": false,
   "game_files_modified": false,
   "main_unchanged": true
