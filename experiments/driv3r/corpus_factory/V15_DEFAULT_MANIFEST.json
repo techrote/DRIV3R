@@ -1,0 +1,86 @@
+{
+  "schema": "driv3r/corpus-factory-delayed-probe-v15",
+  "version": "delayed-probe-v15",
+  "source": "read-only v13 synthetic host, not CyberSand native ABI",
+  "source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "style_seeds": 2,
+  "counts": {
+    "TRAIN": {
+      "episodes": 256,
+      "decisions": 2304,
+      "world_groups": 32,
+      "quartets": 64,
+      "topology_groups": 16
+    },
+    "DEV": {
+      "episodes": 64,
+      "decisions": 576,
+      "world_groups": 8,
+      "quartets": 16,
+      "topology_groups": 4
+    },
+    "HELDOUT": {
+      "episodes": 96,
+      "decisions": 864,
+      "world_groups": 12,
+      "quartets": 24,
+      "topology_groups": 6
+    }
+  },
+  "counterfactual_quartets": 104,
+  "expert_moves": 27936,
+  "host_refused_probe_moves": 208,
+  "neutral_washout_moves": 52416,
+  "strict_hard_negatives": 4160,
+  "illegal_oracle_moves": 0,
+  "protected_entries": 0,
+  "split_policy": "source world and topology-disjoint; correlated probe/inversion quartets in one split",
+  "model_view": "Only observe(host) or row.model_input; never episode fields or row controls/targets",
+  "alias": "Each quartet has identical last64/current material/legal/goals, 2 WEST/2 EAST expert labels; probe-only and inversion-only each mathematically capped at 50% on paired first actions",
+  "limitations": [
+    "Synthetic v13 corridor grammar and scripted probe/inversion/washout, not native CyberSand",
+    "One remote accepted/rejected probe per episode, at most one inversion; no stochastic physics",
+    "Only post-intervention trajectory is model-controllable; oracle labels are not SLM results",
+    "All decisions within a quartet/world correlated; evaluate by world groups, not row count",
+    "Proof of initial-action alias does not prove full closed-loop learnability; HELDOUT sealed"
+  ],
+  "generator": "delayed_probe_v15.js",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 2787200,
+      "sha256": "1c8f0a938079cda55a7fb56cd8537c11633ec51a670e37892e9a3d82bdb02fd7",
+      "usage": "TRAIN only"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 2304,
+      "bytes": 21160784,
+      "sha256": "8ba12822725367b31595fbae001e924ae5620d592b4f80f405f20e7eddecb7fe",
+      "usage": "TRAIN only"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 64,
+      "bytes": 732576,
+      "sha256": "82c097b6e2081e51878420caba94026b0cd40cb56d848c680017f3d0ad92813c",
+      "usage": "evaluation only, never optimize"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 576,
+      "bytes": 5385968,
+      "sha256": "9911b82c8a741555393fbf3d7e2d769ccf3987e89facb251e034c8c23263f746",
+      "usage": "evaluation only, never optimize"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 1173648,
+      "sha256": "eb6107af1307eaad8a0be1367db88b40e13e50c3f0a1dfdcf41e575ee60fb2f8",
+      "usage": "evaluation only, never optimize"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 864,
+      "bytes": 8288576,
+      "sha256": "e2d106366354189ec7da84463f332b0d87ed8d6d1a509320a9142a4bdd945c2f",
+      "usage": "evaluation only, never optimize"
+    }
+  }
+}
