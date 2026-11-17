@@ -4,8 +4,8 @@
   "lane": "experiments/driv3r/lfm_game_policy",
   "repository": "techrote/DRIV3R",
   "only_mutable_pr": 1,
-  "latest_experiment": "GP350-018",
-  "status": "DECODER RUNNER PUBLISHED AND SOURCE-SMOKE COMPILED; NEW FROZEN LFM INFERENCE NOT EXECUTED",
+  "latest_experiment": "GP350-018 frozen decoder hardening / original greedy archive acceptance gate",
+  "status": "GP350-018: frozen full-LFM source-pinned decoder runner hardened and source-smoke qualified; NO NEW FULL-MODEL INFERENCE OR OPTIMIZER UPDATE",
   "next_research_question": "Can legal temperature sampling or a modest flat-host probability mixture restore nondegenerate irregular CyberSand-like worm trajectories without STOP collapse, coverage loss, or false recovery?",
   "best_validated_navigation_control": {
     "name": "GP350-006 step96, frozen LiquidAI LFM2.5-350M rank-8 q/v LoRA",
@@ -51,12 +51,15 @@
   ],
   "current_source": {
     "runner": "gp350018_matched_decoder.py",
-    "runner_git_blob": "7d6d575273ecd7ae90be9545a69eae0053b084e4",
+    "runner_git_blob": "fea9c1fc553377e0306d6a6ca890ab77fb5c0e78",
     "published_at_commit": "72edd479acf2f701a9cfd84432d55ec51b1a0b74",
     "preflight": "GP350-018-PREFLIGHT.json",
     "experimental_request": "gp350-018-request.json",
     "synthetic_W0_commit": "4bb9d6e1d0d0d78183f87d1e3c29648edafacf61",
-    "synthetic_W0_git_blob": "8979b6f0296e81051194bacc907992d38e006605"
+    "synthetic_W0_git_blob": "8979b6f0296e81051194bacc907992d38e006605",
+    "latest_committed_source_sha": "efba2f248d1bfded37d174a18f3f787fad95af1c",
+    "archive_hazard_record": "GP350-018-PREFLIGHT.json/conditional_fixed_greedy_trace_stop_hazard",
+    "source_smoke_run": "https://github.com/techrote/DRIV3R/actions/runs/43995170337"
   },
   "current_analytic_archive_preflight": {
     "source": "GP350-012 original archived full-LFM logits, greedy on-policy states only",
@@ -74,13 +77,27 @@
       "stock_C_m0p25": 0.04751,
       "GP006_C_m0p25": 0.04411
     },
-    "caveat": "These are only expected actions at previously visited greedy states. Different decisions change all later observations."
+    "caveat": "These are only expected actions at previously visited greedy states. Different decisions change all later observations.",
+    "conditional_fixed_path_stop_risk": {
+      "status": "NOT CLOSED LOOP; 12 original historical greedy episodes per stage; fixed conditional STOP probability products only",
+      "GP006_C_m0p25_64_turn_no_stop_product_mean": 0.064241,
+      "GP006_C_m0p25_128_turn_no_stop_product_mean": 0.003233,
+      "GP006_C_m0p10_64_turn_no_stop_product_mean": 0.33776,
+      "GP006_B_t2p50_64_turn_no_stop_product_mean": 0.708395,
+      "GP006_B_t1p25_64_turn_expected_non_greedy_decisions": 0.193,
+      "evidence_file": "GP350-018-PREFLIGHT.json",
+      "warning": "Those are conditional products along archival greedy states; sampled decoder actions change all future observations, so not actual episode-survival estimates"
+    }
   },
   "execution_blocker": {
-    "reason": "No action for dispatching an opt-in GH Actions model job through the connected GitHub API; this environment has no cached pinned full LFM350/tokenizer and lacks transformers/PEFT, and external network for model download is unavailable.",
+    "reason": "GitHub connector has no workflow-dispatch action for the opt-in CPU LFM job; local execution environment has no pinned LiquidAI/LFM2.5-350M base weights/tokenizer, transformers or PEFT, and no DNS/network download. Only read-only historical LoRA adapter files and logits are available.",
     "not_attempted": "No new optimizer or frozen full LFM inference run executed here; source-smoke compileall is NOT a model experiment.",
-    "what_unblocks": "Explicit opt-in DRIV3R CPU model job (no automatic training) using pinned actual LFM350 and read-only W0, with original GP006 adapter restored from immutable artifact.",
-    "upload": "Store complete JSON/PNG/SVG/gallery and provenance in immutable Actions artifacts, not repository Git."
+    "what_unblocks": "An approved explicit opt-in DRIV3R-only CPU Action with model download and a way to dispatch it, or a network-enabled CPU host with pinned model cache; run gp350018_matched_decoder.py --golden matching GP350-012 ZIP and --stage stock/gp006. No routine push-triggered training.",
+    "upload": "Store complete JSON/PNG/SVG/gallery and provenance in immutable Actions artifacts, not repository Git.",
+    "current_cpu_model_weights_cached": false,
+    "github_action_dispatch_supported": false,
+    "exact_historical_artifacts_for_baseline": "GP350-012 stock SHA-256 0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd; GP350-012 gp006 SHA-256 88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+    "last_source_smoke": "2026-11-17: PASS, Actions #43995170337 (compileall only, not model run)"
   },
   "handoff_to_preference_lab": {
     "path": "experiments/driv3r/training/preference_eval",
@@ -91,10 +108,10 @@
     "contact_status": "Handoff stored lane-locally; no edits or comment to Preference Lab."
   },
   "next_actions": [
-    "Execute 64-turn source-pinned GP350018 A/B/C jobs separately for stock and GP006 on the identical initial W0 worlds; 128-turn extended only after bounded 64-turn evidence.",
-    "Audit deterministic replay and true changing-observation episode receipts, compare branch/retrace/STOP and p50/p95 forward latency plus RSS.",
-    "If decoding fails, design next genuine GP006-initialized LoRA recovery/style curriculum with world-geometry split before optimizer; do not add another scalar calibrator.",
-    "Keep #1 Draft/HOLD; never modify CyberSand, Neurounner or other lab paths."
+    "Execute GP350-018 true closed-loop 64-turn A/B/C on frozen stock and GP006, with separate original GP350-012 --golden archives. First 64 decisions of A-greedy must match archived 128-turn prefix and pinned model-file hashes.",
+    "Audit output 30 episodes/stage: six-way original model logits, host-legal choices, original PNG and SVG gallery, per-forward p50/p95 CPU latency and current RSS, survival/nonterminal and coverage. Only initial W0 states are shared across decoder arms.",
+    "Retain risky flat-host C-m0p25 arm as an explicitly predeclared negative control, rather than silently dropping STOP or adding heuristic steering; do not infer real survival from preflight fixed-path products.",
+    "Only after decoder A/B/C results, consider a bounded real GP006-initialized LFM LoRA recovery/style optimizer wave with disjoint geometry evaluation. No new scalar calibrators, no external repo mutations."
   ],
   "paid_GPU_or_API": false,
   "game_files_modified": false,
