@@ -1,0 +1,137 @@
+{
+  "schema": "driv3r.lfm350.gp350018-request/1",
+  "experiment": "GP350-018 matched decoding (frozen actual LFM350)",
+  "status": "IMPLEMENTED, PRE-EXECUTION; NO NEW MODEL FORWARDS VERIFIED",
+  "owner_directive": "First test decoding for wiggly nondegenerate worm behaviour before any more style/retrace LoRA updates.",
+  "source": {
+    "repo": "techrote/DRIV3R",
+    "branch": "research/import-consolidated-worm-labs",
+    "pr": 1,
+    "runner": "experiments/driv3r/lfm_game_policy/gp350018_matched_decoder.py",
+    "known_commit": "72edd479acf2f701a9cfd84432d55ec51b1a0b74",
+    "synthetic_W0_readonly_repo": "techrote/cybersand",
+    "synthetic_W0_exact_commit": "4bb9d6e1d0d0d78183f87d1e3c29648edafacf61",
+    "synthetic_W0_path": "experiments/agent_painter/worm/common/worm.py",
+    "synthetic_W0_git_blob": "8979b6f0296e81051194bacc907992d38e006605"
+  },
+  "models": {
+    "stock": {
+      "model": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "weights": "full frozen original"
+    },
+    "gp350006": {
+      "model": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "rank8_lora_sha256": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+      "old_read_only_actions_run": 43806503356,
+      "old_read_only_artifact_id": 14199280586,
+      "artifacts_expired_at_last_check": false
+    }
+  },
+  "decoder_arms": [
+    {
+      "label": "A-greedy",
+      "mode": "highest host-legal logit"
+    },
+    {
+      "label": "B-t1p25",
+      "mode": "legal softmax sample",
+      "temperature": 1.25
+    },
+    {
+      "label": "B-t2p50",
+      "mode": "legal softmax sample",
+      "temperature": 2.5
+    },
+    {
+      "label": "C-m0p10",
+      "mode": "0.90 model legal softmax at temperature 1.25 + 0.10 uniform host-legal probability"
+    },
+    {
+      "label": "C-m0p25",
+      "mode": "0.75 model legal softmax at temperature 1.25 + 0.25 uniform host-legal probability"
+    }
+  ],
+  "default_worlds": [
+    {
+      "size": 24,
+      "seed": 9803
+    },
+    {
+      "size": 64,
+      "seed": 9821
+    }
+  ],
+  "extended_worlds": [
+    {
+      "size": 24,
+      "seed": 9803
+    },
+    {
+      "size": 24,
+      "seed": 9821
+    },
+    {
+      "size": 64,
+      "seed": 9803
+    },
+    {
+      "size": 64,
+      "seed": 9821
+    }
+  ],
+  "families": [
+    "greebles",
+    "pipework",
+    "architecture"
+  ],
+  "episodes_per_stage_default": 30,
+  "maximum_model_decisions_per_stage_default": 1920,
+  "turn_budgets": [
+    64,
+    128
+  ],
+  "default_turns": 64,
+  "matched_only_at_initial_observation": true,
+  "fixed_synthetic_host_authoritative": true,
+  "unmodified_model_weights": true,
+  "real_model_forwards_required": true,
+  "score_representation": "gp350_paired_margin_train.rich_score on six single-token action logits, trained GP006 prompt version",
+  "stochastic_seed_method": "stage-independent, world/size/family/tick deterministic SHA-256 common random uniform",
+  "preserves": [
+    "raw actual six-way logits",
+    "host-legal menus",
+    "legal probability vector",
+    "sample u",
+    "applied action",
+    "W0 event receipts",
+    "source W0 replay equivalence",
+    "original PNG and SVG gallery with SHA256",
+    "HEAD source SHA",
+    "base model file hashes",
+    "adapter SHA256",
+    "p50/p95 full model forward latency",
+    "peak RSS",
+    "STOP and 2-step oscillation",
+    "longest geometric straight",
+    "heading change",
+    "hooks proxy and BRANCH/RETRACE",
+    "distinct head/trail coverage"
+  ],
+  "decision_gates": [
+    "Host illegal applied action count must remain 0",
+    "Nonterminal episode continuation must be measured; do not hide premature STOP under fixed budgets",
+    "Model-probability choices must be causally rolled out via original W0 callback and verified by exact deterministic W0 replay",
+    "Report only initial observations/menus as matched across arms; all subsequent host states may diverge",
+    "Aesthetic movement alone is insufficient; report coverage, branch/retrace/STOP, obstacle and revisit behavior by family and world",
+    "No checkpoint/model promotion until independent held-out assessment and Preference Lab blind four-niche visual review"
+  ],
+  "execution_instruction": "Use an approved explicit one-off CPU run with DRIV3R checked out at exact source commit and read-only CyberSand checked out at pinned W0 commit. Install pinned runtime compatible with c.REVISION and rank-8 PEFT; invoke runner separately for --stage stock and --stage gp006, providing --w0, --cache, --out and for gp006 --adapter. Archive outputs to immutable Actions artifacts. No Actions workflow added/auto-training enabled by this request.",
+  "prior_analytical_preflight": "GP350-018-PREFLIGHT.json",
+  "blocker": "No GitHub Actions workflow-dispatch capability or compatible local cached LFM350 weights available in this execution environment. No genuine new inference result is claimed from code/preflight/compile checks.",
+  "cost": "No paid API or GPU authorized or used.",
+  "draft_hold": true,
+  "native_CyberSand_accepted": false,
+  "matched_d1": "NOT RUN"
+}
