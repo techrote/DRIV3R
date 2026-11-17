@@ -29,7 +29,7 @@
     "protected_entries": 0,
     "accepted_illegal_oracle_actions": 0,
     "last64_bag_first2_last2_theoretical_first_action_ceiling": "6/12 (50%) per family",
-    "first3_last3_theoretical_first_action_ceiling": "7/12 (58.3%) per family",
+    "first3_last3_theoretical_first_action_ceiling": {"TRAIN": {"first3": "7/12", "last3": "7/12"}, "DEV": {"first3": "7/12", "last3": "7/12"}, "HELDOUT": {"first3": "7/12", "last3": "8/12"}},
     "standalone_regression": "7/7 PASS",
     "independent_generations": 2,
     "byte_identical": true,
