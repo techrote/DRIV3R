@@ -27,7 +27,7 @@
   },
   "outputs": {
     "local_evidence_zip_sha256": "d117e6766441c4f22d045ebc5a28442caac13921176c7f458f7305aea66a3ef4",
-    "local_evidence_size_bytes": 22919972,
+    "local_evidence_size_bytes": 22918566,
     "original_w16_catalogue_sha256": "d7e0dc1500b999e8976d18e8c6831acc5efc407f8ee28170195aa9e9aeffbc1e",
     "historical_crossmodel_catalogue_sha256": "135eeaf930c9d4a3c2b7c10eb6a2d19c716cf296f9f6e759f1ff5d47aad2cf59",
     "manifest_entries_hash_verified": "19/19",
