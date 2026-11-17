@@ -1,0 +1,40 @@
+{
+  "archive_bytes": 734616,
+  "archive_manifest_entries": 139,
+  "archive_name": "driv3r_guidance_recovery_C35_cross_generator_2026-11-17.zip",
+  "archive_sha256": "cae6e6abf95daee598f5abd7cefa9e37d7b31e2262af40cee0baf4bcaf0b2727",
+  "checkpoint_repeated_byte_identical": true,
+  "checkpoint_sha256": {
+    "C35-CAL-0.safetensors": "a3d857b36346459bb340aee0cbbb3eb205ef498f3233a47465c896ae03b6828f",
+    "C35-CAL-1.safetensors": "faa66ad21b522242db31f0cb9bc18437681c3a8c879d4fbd2bb5a859fb15aa58",
+    "C35-CAL-2.safetensors": "c9b9d5355279ffad24a5923ad1a078ddee004e0d04e915abf8595110a69a1af2"
+  },
+  "code_sha256": {
+    "c35_ablation.py": "b80591102ce9c42a3dd5efab4ff139c24591f383a84a1d6f5b2711b5090bc73a",
+    "c35_cross_generator_calibration.py": "45ec9fe84bd2d1cde5b61896bb97909b19f26ff86591bd255ab0b03975ad0724",
+    "c35_eval_partition.py": "344555195bfaa83e039b7b83e19c1a40c71d752cc54c28c7b5cf052648eed008",
+    "c35_gallery.py": "50647afc0386021e1b2e991bf75ea84d483be520a41b6483bd80c3c7f783454d"
+  },
+  "date": "2026-11-17",
+  "files_staged_to_git": [
+    "c35_cross_generator_calibration.py",
+    "c35_eval_partition.py",
+    "c35_ablation.py",
+    "c35_gallery.py",
+    "test_c35_cross_generator_calibration.py",
+    "C35-cross-generator-calibration-2026-11-17.md",
+    "C35-summary.json",
+    "C35-selected-traces.json",
+    "C35-evidence-receipt.json"
+  ],
+  "gallery_panels_replay_verified": 24,
+  "immutable_github_actions_artifact": false,
+  "native_cybersand_test": false,
+  "raw_training_and_full_policy_trajectories_in_archive_only": true,
+  "schema": "driv3r-c35-evidence-custody/1",
+  "selected_gallery_sha256": "1b20535fdea97dae45fb621c61ac6f36809f34f878384bd8e4eba91d385dd86a",
+  "source_identity_head_at_study": "4c8448d045e61e5888844b04a0b298dcfe5879c9",
+  "status": "research-only/rejected-for-promotion",
+  "test_results": "8/8 passed local",
+  "test_sha256": "2f37bea782d638ac575f03a71e58fd2d38ea3f9491843db122ae6681478a153a"
+}
