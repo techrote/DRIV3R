@@ -1,0 +1,17 @@
+{
+  "schema": "driv3r-c38-local-archive-custody/1",
+  "date": "2026-11-17",
+  "archive_basename": "driv3r_guidance_recovery_C38_return_sign_2026-11-17.zip",
+  "archive_sha256": "4b76c7161e5059e849ce5f88b305e81a2b91a5002c6166be61e2cc7094c437fc",
+  "archive_bytes": 470333,
+  "manifest_entries": 126,
+  "manifest_sha256": "8b727c321be50ab39748b3c4c76a9f89ad89bfdafe79acd78f7a5a3a0747ae33",
+  "source_git_blobs": {
+    "c38_return_sign.py": "62502e1df779092e3c3175de763dc127ffa1cf8f",
+    "test_c38_return_sign.py": "3f52bf950a4602f4c697e674c0c8eb3e3beeba4c",
+    "c38_gallery.py": "57068aabe41c28f722415630880858a7a280da77"
+  },
+  "checkpoint_artifact_custody": "PENDING: user-visible local archive only, not immutable GitHub Actions artifact",
+  "validation": "5/5 targeted local pytest passed; training repeated bitwise-identically",
+  "promotion": "REJECT / Draft-HOLD; no native acceptance"
+}
