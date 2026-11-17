@@ -6,7 +6,7 @@
   "branch": "research/import-consolidated-worm-labs",
   "owned_dir": "experiments/driv3r/training/tiny_policy/",
   "latest_experiment": "M19",
-  "status": "REAL_PRETRAINED_RUN_BLOCKED_SOURCE_READY",
+  "status": "REAL_PRETRAINED_RUN_BLOCKED_SOURCE_HARDENED",
   "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
   "adapter": "rank-4 alpha-8 LoRA on final two layer q_proj/v_proj plus trainable 5-action head",
@@ -17,12 +17,12 @@
   "mechanical_preflight": {
     "python_syntax": "PASS",
     "torch_cpu": "2.10.0+cpu",
-    "preflight_tests": "3/3 PASS",
+    "preflight_tests": "Prior 3/3 PASS; new 4th assertion added but not executed in this run",
     "uses_pretrained_weights": false
   },
   "explicit_m19_trial": {
     "script": "m19_adapter.py",
-    "budget": "24 AdamW updates per head arm; batch 2; 2 threads; 96 token context",
+    "budget": "24 AdamW updates per frozen and LoRA arm, 2 threads, batch 2, consistently 96 token context",
     "evaluation": "two held-out M15 seeds x three families x six arm policies x 24-action cap",
     "controls": [
       "untuned head",
@@ -37,14 +37,28 @@
     "execution_status": "NOT RUN"
   },
   "blockers": [
-    "No installed transformers package",
-    "No pinned HF model weights in local cache",
-    "No network DNS access for Hugging Face in this execution container",
-    "GitHub connector offers no permitted workflow_dispatch",
-    "The sole DRIV3R research-smoke workflow does not run model training"
+    "No transformers installation in available local environment (torch 2.10.0+cpu present)",
+    "No pinned Hugging Face model/tokenizer weights in any inspected local cache",
+    "DNS/network unavailable to GitHub and Hugging Face from CPU container; direct HF download failed",
+    "Connected GitHub API exposes no workflow_dispatch mutation; available DRIV3R workflow is source-smoke only",
+    "No authorized opt-in real-model CPU runner available in this execution context"
   ],
   "historical_evidence": "M15 real pretrained backbone inference plus frozen head training in earlier CyberSand hosted artifacts; M17-M18 scratch model progression remains weak at goal completion",
-  "conclusion": "No game-policy improvement or pretrained LoRA qualification can be claimed. Local tests validate adapter mechanics only.",
-  "next": "Execute M19 once in an explicit opt-in DRIV3R Actions CPU run with source-pinned HF assets; archive complete output as immutable Actions artifact, independently audit held-out game-like trajectories, reject if no gain over simpler controls",
-  "restrictions": "Only owned DRIV3R lane modified. CyberSand and Neurounner read-only. PR #1 Draft/HOLD; no merge/Ready/auto-merge."
+  "conclusion": "M19 remains SOURCE-ONLY. These consistency repairs make a future real-model test more auditable, but there is NO basis to claim LoRA performance, legality, latency or checkpoint promotion.",
+  "next": "Provision pinned SmolLM2-135M tokenizer/weights and transformers in an explicitly opt-in CPU Actions runner; run M19 24+24 matched updates; audit saved all-arm checkpoint and 96-token closed-loop traces on held-out topology; capture model/file/source SHA256 and p50/p95+RSS; publish binary only to immutable Actions artifact.",
+  "restrictions": "Only owned DRIV3R lane modified. CyberSand and Neurounner read-only. PR #1 Draft/HOLD; no merge/Ready/auto-merge.",
+  "source_hardening": {
+    "scope": "M19 real-pretrained trial correctness only; NO optimizer/inference run",
+    "source_commit_before_handoff": "9bfb7ffab0ab21beea1a69205671080bc58645e6",
+    "issues_corrected": [
+      "M15 trajectory called tokenizer with max_length=128 while M19 optimizer used max_length=96; evaluation now enforces 96",
+      "Explicit right-padding required by hidden() last-token indexing",
+      "Checkpoint now includes stock, frozen-head, and LoRA-head control weights, rather than LoRA head alone"
+    ],
+    "test_added": "test_eval_context_cap_is_enforced; not yet executed on this head",
+    "new_pretrained_forwards": 0,
+    "new_pretrained_optimizer_updates": 0,
+    "new_checkpoint_artifact": null,
+    "real_model_latency_rss": null
+  }
 }
