@@ -24,6 +24,7 @@ ACTIONS = ("N", "E", "S", "W", "RETRACE", "STOP")
 TRAIN_CARDS = (0, 1, 2, 3)
 HOLDOUT_CARDS = (4, 5)
 MAX_UPDATES = 12
+FORWARD_CALLS = 0
 
 def digest(path):
     h = hashlib.sha256()
@@ -161,7 +162,9 @@ def encode(tok, texts):
     return tok(texts,return_tensors="pt",padding=True,truncation=True,max_length=128)
 
 def states(torch,backbone,tokens):
+    global FORWARD_CALLS
     h=backbone(**tokens,use_cache=False).last_hidden_state
+    FORWARD_CALLS += 1
     pos=tokens["attention_mask"].sum(dim=-1)-1
     return h[torch.arange(len(pos)),pos].float()
 
@@ -219,7 +222,12 @@ def rollout(torch,backbone,tok,head,niche,seed,card,horizon):
 def evaluation(torch,backbone,tok,head,niche,pairs,horizon):
     rows=[rollout(torch,backbone,tok,head,niche,seed,card,horizon)
           for seed,card in pairs]
-    return {"episodes":len(rows),"mean_reward_proxy":round(statistics.mean(r["reward_proxy"] for r in rows),5),
+    latency=[t for row in rows for t in row["latency_ms"]]
+    latency.sort()
+    return {"episodes":len(rows),
+            "inference_latency_p50_ms":round(statistics.median(latency),3),
+            "inference_latency_p95_ms":round(latency[int(.95*(len(latency)-1))],3),
+            "mean_reward_proxy":round(statistics.mean(r["reward_proxy"] for r in rows),5),
             "mean_steps":round(statistics.mean(r["steps"] for r in rows),3),
             "early_stop_rate":round(statistics.mean(r["early_stop"] for r in rows),4),
             "switch_rate":round(statistics.mean(r["goal_switched"] for r in rows),4),
@@ -297,13 +305,27 @@ def main(argv=None):
                             else:torch.nn.init.kaiming_uniform_(p,a=5**.5)
                     head=nn.Linear(backbone.config.hidden_size,len(ACTIONS))
                     history=fit_arm(torch,backbone,tok,head,train,batches,train_lora=arm=="lora")
-                    report["actual_root_forwards"]+=a.updates
                     report["actual_lora_updates"]+=a.updates if arm=="lora" else 0
                     torch.nn.utils.clip_grad_norm_(list(head.parameters()),1.)
                     head.eval().requires_grad_(False)
                     # Both selection and heldout are complete closed-loop rollouts.
                     dev=evaluation(torch,backbone,tok,head,niche,split["selection"],a.horizon)
                     hold=evaluation(torch,backbone,tok,head,niche,split["heldout"],a.horizon)
+                    # An independent legal-action replay writes original trajectory art.
+                    # These are synthetic painting traces, NOT native CyberSand screenshots.
+                    from population_p19_viable_novelty import scenario
+                    from population_lab import draw_svg
+                    (a.output/"gallery").mkdir(exist_ok=True)
+                    for trace in hold["rows"]:
+                        world=scenario(trace["seed"],trace["card"],a.horizon)
+                        for action in trace["actions"]:
+                            assert action in world.legal()
+                            world.step(action)
+                        assert world.steps==trace["steps"] and len(world.painted)-1==trace["painted"]
+                        stem=f'{seed}-{niche}-{arm}-{trace["seed"]}-{trace["card"]}'
+                        art=a.output/"gallery"/(stem+".svg")
+                        art.write_text(draw_svg(world))
+                        trace["svg"]=str(art.relative_to(a.output))
                     tensors={"head.weight":head.weight.detach().cpu().contiguous(),
                              "head.bias":head.bias.detach().cpu().contiguous()}
                     if arm=="lora":
@@ -318,12 +340,32 @@ def main(argv=None):
                          "selection":dev,"heldout":hold,
                          "lineage":"independent same-seed head/LoRA initialization; no offspring crossover"}
                     report["arm_results"].append(row)
+        # No scalar winner. Preserve all checkpoints; flag useful alternatives
+        # using only selection episodes. HELDOUT metrics never pick champions.
+        for niche in niches:
+            for seed in seeds:
+                members=[r for r in report["arm_results"]
+                         if r["niche"]==niche and r["seed"]==seed]
+                viable=[r for r in members
+                        if r["selection"]["early_stop_rate"]<=.5
+                        and r["selection"]["switch_rate"]>=.75]
+                if viable:
+                    best=max(r["selection"]["mean_reward_proxy"] for r in viable)
+                    for r in members:
+                        r["selection_qualified"]=r in viable
+                        r["selection_reward_frontier"]=r in viable and (
+                            r["selection"]["mean_reward_proxy"]>=best-2.0)
+                else:
+                    for r in members:
+                        r["selection_qualified"]=False
+                        r["selection_reward_frontier"]=False
         report["status"]="COMPLETED"
     except BaseException as e:
         report["status"]="FAILED"
         report["failure"]=repr(e)
         raise
     finally:
+        report["actual_root_forwards"]=FORWARD_CALLS
         report["wall_seconds"]=round(time.perf_counter()-started,3)
         report["peak_rss_kib"]=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
         (a.output/"report.json").write_text(json.dumps(report,indent=2,sort_keys=True)+"\n")
