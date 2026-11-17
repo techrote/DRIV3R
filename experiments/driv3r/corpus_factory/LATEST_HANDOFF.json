@@ -4,104 +4,47 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "stateful-causal-v11",
-  "artifact": "node experiments/driv3r/corpus_factory/stateful_challenge_v11.js NEW_DIR 16",
-  "source": "experiments/driv3r/corpus_factory/stateful_challenge_v11.js",
-  "provenance": "independent external synthetic host; explicitly NOT native CyberSand ABI",
-  "baseline": "v8 last-cell memory equalled full on tree corridors; v10 motif last receipt was enough",
-  "controls": "full ordered history vs last32 and zero-history, with exact paired aliases",
-  "expected_counts": {
+  "version": "synthetic-sequential-replay-v12",
+  "role": "corpus only; no model-weight updates",
+  "source": "experiments/driv3r/corpus_factory/replay_rollouts_v12.js",
+  "test": "experiments/driv3r/corpus_factory/test_replay_rollouts_v12.js",
+  "parent_generator": "experiments/driv3r/corpus_factory/stateful_challenge_v11.js",
+  "parent_source_git_blob": "be98237e63992da967b9a4ce309c549c11e67285",
+  "artifact": "node experiments/driv3r/corpus_factory/replay_rollouts_v12.js NEW_DIR 2",
+  "provenance": "external synthetic host / v11-derived; not native CyberSand ABI or physical acceptance",
+  "counts": {
     "TRAIN": {
-      "rows": 1536,
-      "pairs": 768
+      "episodes": 128,
+      "pairs": 64,
+      "world_groups": 32,
+      "decisions": 896,
+      "mean_expert_moves": 58
     },
     "DEV": {
-      "rows": 576,
-      "pairs": 288
+      "episodes": 48,
+      "pairs": 24,
+      "world_groups": 12,
+      "decisions": 336,
+      "mean_expert_moves": 76
     },
     "HELDOUT": {
-      "rows": 576,
-      "pairs": 288
+      "episodes": 48,
+      "pairs": 24,
+      "world_groups": 12,
+      "decisions": 336,
+      "mean_expert_moves": 92.66666666666667
     }
   },
-  "split_grammar": {
-    "TRAIN": "plain",
-    "DEV": "single-spur",
-    "HELDOUT": "double-spur"
-  },
-  "safety": "only model_input features; counterfactual siblings grouped; separate HELDOUT; no primary SLM training in data lane",
-  "known_failure": "host-scripted external-synthetic preludes, one oracle-labelled post-prelude decision; independent native ABI and full model-controlled rollouts not qualified",
-  "next_consumer_experiment": "TRAIN/DEV full vs last32 vs zero-history on same pinned SLM, freeze checkpoint/hyperparams, then HELDOUT grammar shift and independent closed-loop synthetic challenge; report legal actions, paired accuracy, latency/RSS and negative outcomes",
-  "source_git_blob": "be98237e63992da967b9a4ce309c549c11e67285",
-  "default_manifest": "experiments/driv3r/corpus_factory/V11_DEFAULT_MANIFEST.json",
-  "metrics": {
-    "counts": {
-      "TRAIN": {
-        "topologies": 16,
-        "grammars": [
-          "plain"
-        ],
-        "world_groups": 256,
-        "pairs": 768,
-        "rows": 1536,
-        "tasks": {
-          "delayed_shutter": 512,
-          "delayed_material_law": 512,
-          "periodic_motif": 512
-        }
-      },
-      "DEV": {
-        "topologies": 6,
-        "grammars": [
-          "single-spur"
-        ],
-        "world_groups": 96,
-        "pairs": 288,
-        "rows": 576,
-        "tasks": {
-          "delayed_shutter": 192,
-          "delayed_material_law": 192,
-          "periodic_motif": 192
-        }
-      },
-      "HELDOUT": {
-        "topologies": 6,
-        "grammars": [
-          "double-spur"
-        ],
-        "world_groups": 96,
-        "pairs": 288,
-        "rows": 576,
-        "tasks": {
-          "delayed_shutter": 192,
-          "delayed_material_law": 192,
-          "periodic_motif": 192
-        }
-      }
-    },
-    "host_applied_movement_steps": 222976,
-    "synthetic_paint_receipts": 65408,
-    "near_duplicate_world_groups_rejected": 0,
-    "shards": {
-      "TRAIN": {
-        "rows": 1536,
-        "bytes": 11707002,
-        "sha256": "98e39823bdee55a3576704f7394183e51bf79a61c93fa39f0e83c6020988b50c"
-      },
-      "DEV": {
-        "rows": 576,
-        "bytes": 4514202,
-        "sha256": "ccec8834b0d7962801c34bbd3ae3fd65a45bea88cc893fb536cb60073a8900d7"
-      },
-      "HELDOUT": {
-        "rows": 576,
-        "bytes": 4619808,
-        "sha256": "af7395afebcb60fc82bb2cab4b9079f62ffc7cd13a1f60521188c94a034b3132"
-      }
-    },
-    "qualification": "two full deterministic V8 generations and paired alias/safety checks; Node CLI has not been executed; SHA256 cross-checked abc test vector",
-    "material_consistency": "explicit west sand/east metal corridor tokens match dated DRY/WET law receipt and oracle route weights"
-  },
-  "test_git_blob": "e0621e9be204d3c4367371dc20d7f975a5ec51c3",
-  "source_commit": "1ac6184521773b62dc630adf8eaf2f871a876220"
+  "applied_oracle_moves": 15520,
+  "model_input_contract": "Only decision.model_input or replay_host.observe(host) may be supplied to model. Privileged host state, expert path, controls, labels and metadata are not model features.",
+  "partitions": "v11 topology- and world-disjoint TRAIN, DEV and sealed HELDOUT (separate oracle episodes/decision shards)",
+  "validation": "Two pure-JS V8 deterministic generations + host oracle replay, illegal-action rejection and initial observation consistency; committed Node CLI tests still require independent execution",
+  "known_failure": "Scripted v11 preludes and deterministic oracle navigation only; no model-controlled closed-loop success, no runtime native-ABI equivalence; 7 selected decisions per episode are correlated",
+  "best_checkpoint_or_artifact": "No model checkpoint in corpus lane. Executable deterministic v12 TRAIN/DEV/HELDOUT episode and decision JSONL exporter; each CLI output has SHA-256 manifest.",
+  "next_useful_consumer_experiment": "Pin LFM350 GP006/stock or Sprocket actual root; train on TRAIN only then compare full history vs last32 and history-masked control on DEV. Freeze before HELDOUT; run all steps with host replay createHost/observe/apply, score arrival/violations/cost plus p50/p95 CPU latency and peak RSS.",
+  "paid_compute": false,
+  "game_files_modified": false,
+  "main_unchanged": true,
+  "source_git_blob": "e022e88965dfd1013a80eba6aca3847d7c0acff1",
+  "test_git_blob": "73b04e5cbf73e73b95e91c3454d4ea291a1bbaca"
 }
