@@ -10,6 +10,17 @@ from . import m15_pretrained_goal as m15
 
 MODEL = 'smollm2-135m'
 MAX_STEPS = 24
+CONTEXT_TOKENS = 96
+
+class ContextCap:
+    """Make M15 closed-loop inference obey the same token budget as M19 training."""
+    def __init__(self, tokenizer):
+        self.tokenizer = tokenizer
+    def __call__(self, *args, **kwargs):
+        kwargs['truncation'] = True
+        kwargs['max_length'] = CONTEXT_TOKENS
+        return self.tokenizer(*args, **kwargs)
+
 
 class LowRank(nn.Module):
     def __init__(self, base, rank=4):
@@ -40,7 +51,7 @@ def adapter_parameters(model):
 
 def encode(tok, rows):
     return tok([r['text'] for r in rows], return_tensors='pt',
-               padding=True, truncation=True, max_length=96)
+               padding=True, truncation=True, max_length=CONTEXT_TOKENS)
 
 def hidden(model, tokens):
     t=model(**tokens, use_cache=False).last_hidden_state
@@ -82,7 +93,7 @@ def evaluate(model,tok,heads,output,steps):
                     for p,original in saved: p.copy_(original if name=='lora' else torch.zeros_like(original))
                 opts={k:(v,mu,sd) for k,v in heads.items()}
                 out=output/'rollouts'/f'{seed}-{family}-{name}'
-                row=m15.trajectory(torch,MODEL,seed,family,name,opts,tok,model,out)
+                row=m15.trajectory(torch,MODEL,seed,family,name,opts,ContextCap(tok),model,out)
                 rows.append(row)
     return rows
 
@@ -118,13 +129,15 @@ def main():
         if HfApi().model_info(ident,revision=rev).sha!=rev: raise RuntimeError('revision mismatch')
         tok=AutoTokenizer.from_pretrained(ident,revision=rev,trust_remote_code=False)
         if tok.pad_token is None:tok.pad_token=tok.eos_token
+        tok.padding_side='right'  # hidden() selects the rightmost non-padding token
         model=AutoModel.from_pretrained(ident,revision=rev,use_safetensors=True,trust_remote_code=False)
         model.eval().requires_grad_(False)
         names=inject(model)
         trainrows=m15.collect('train')
         report.update({'model_id':ident,'revision':rev,'license':license_name,'trained_names':names,
           'training_id_sha256':hashlib.sha256(json.dumps([r['id'] for r in trainrows]).encode()).hexdigest(),
-          'trainable_params':sum(p.numel() for _,p in adapter_parameters(model))})
+          'trainable_params':sum(p.numel() for _,p in adapter_parameters(model)),
+          'context_tokens':CONTEXT_TOKENS,'padding_side':tok.padding_side})
         initial=nn.Linear(model.config.hidden_size,5)
         stock=copy.deepcopy(initial).eval().requires_grad_(False)
         rng=random.Random(19001)
@@ -143,7 +156,11 @@ def main():
             for p,v in saved_b:p.copy_(v)
         report['dev_lora']=probe(model,tok,lora,dev)
         tensors={n:p.detach().cpu().contiguous() for n,p in adapter_parameters(model)}
-        tensors.update({f'head.{n}':p.detach().cpu().contiguous() for n,p in lora.state_dict().items()})
+        # Preserve ALL comparison arms: a saved LoRA-only head cannot reproduce stock/frozen controls.
+        for arm,head in (('stock',stock),('frozen',frozen),('lora',lora)):
+            tensors.update({f'heads.{arm}.{n}':p.detach().cpu().contiguous()
+                            for n,p in head.state_dict().items()})
+        report['checkpoint_heads']=['stock','frozen','lora']
         target=a.out/'m19-adapter.safetensors';save_file(tensors,str(target))
         report['checkpoint_sha256']=hashlib.sha256(target.read_bytes()).hexdigest()
         result=evaluate(model,tok,{'stock':stock,'frozen':frozen,'lora':lora},a.out,a.steps)
