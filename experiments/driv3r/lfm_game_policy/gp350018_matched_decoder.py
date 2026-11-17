@@ -68,8 +68,8 @@ def probs(logits, legal, kind, temp, mixture):
             for a, w in zip(legal, weights)}
 
 def sampling_uniform(size, seed, family, arm, tick):
-    """Common random numbers for first matched observation, keyed per turn."""
-    key = f"gp350018|{size}|{seed}|{family}|{arm}|{tick}"
+    """Stage-independent common random number at each local tick across arms."""
+    key = f"gp350018|{size}|{seed}|{family}|{tick}"
     return random.Random(int.from_bytes(hashlib.sha256(key.encode()).digest()[:8], "big")).random()
 
 def pick(probabilities, u):
@@ -109,8 +109,9 @@ def shape(record, decisions):
         "longest_constant_displacement_run": longest,
         "heading_vector_changes": changes,
         "consecutive_same_side_turn_pairs_proxy": hooks_proxy,
-        "new_territory_distinct_cells": distinct,
-        "novel_cells_per_decision": (distinct-1)/max(1,len(decisions)),
+        "distinct_head_positions": distinct,
+        "host_distinct_trail_cells": record["metrics"]["unique_trail_cells"],
+        "new_head_positions_per_decision": (distinct-1)/max(1,len(decisions)),
         "actions": dict(collections.Counter(actions)),
         "branch_actions": actions.count("BRANCH"),
         "retrace_actions": actions.count("RETRACE"),
@@ -211,6 +212,8 @@ def self_test():
         assert all(pick(p,x) in legal for x in (.0,.19,.49,.77,.9999))
     assert sampling_uniform(24,9803,"greebles","B-t1p25",3) == \
            sampling_uniform(24,9803,"greebles","B-t1p25",3)
+    assert sampling_uniform(24,9803,"greebles","B-t1p25",3) == \
+           sampling_uniform(24,9803,"greebles","C-m0p25",3)
     assert sampling_uniform(24,9803,"greebles","B-t1p25",3) != \
            sampling_uniform(24,9803,"greebles","B-t1p25",4)
     assert percentile([4,8,2,6],.95)==8
@@ -318,7 +321,7 @@ def main():
     p.add_argument("--stage",choices=("stock","gp006"))
     p.add_argument("--turns",type=int,choices=(64,128),default=64)
     p.add_argument("--extended",action="store_true")
-    p.add_argument("--deadline",type=int,default=2700)
+    p.add_argument("--deadline",type=int,default=4400)
     args=p.parse_args()
     self_test()
     if args.self_test:
