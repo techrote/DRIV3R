@@ -1,0 +1,164 @@
+{
+  "schema": "driv3r/corpus-factory-motif-branch-v18",
+  "version": "motif-branch-v18",
+  "source": "independent synthetic authoring host; NOT native CyberSand ABI",
+  "order_source_git_blob": "014a25750f368f68b3397d0e413f7faca5ea4c67",
+  "world_seeds": 2,
+  "counts": {
+    "TRAIN": {
+      "episodes": 48,
+      "decisions": 1800,
+      "families": 4,
+      "topology_groups": 2
+    },
+    "DEV": {
+      "episodes": 24,
+      "decisions": 948,
+      "families": 2,
+      "topology_groups": 2
+    },
+    "HELDOUT": {
+      "episodes": 24,
+      "decisions": 996,
+      "families": 2,
+      "topology_groups": 2
+    }
+  },
+  "families": 8,
+  "expert_actions": 3744,
+  "accepted_oracle_paint_receipts": 480,
+  "protected_entries": 0,
+  "illegal_oracle_actions": 0,
+  "initial_first_action_last64_bag_ceiling": "50% by 12-way family",
+  "first_action_control_ceiling_by_split": {
+    "TRAIN": {
+      "bag": {
+        "correct": 24,
+        "denominator": 48,
+        "classes": 4
+      },
+      "first2": {
+        "correct": 24,
+        "denominator": 48,
+        "classes": 4
+      },
+      "last2": {
+        "correct": 24,
+        "denominator": 48,
+        "classes": 4
+      },
+      "first3": {
+        "correct": 28,
+        "denominator": 48,
+        "classes": 8
+      },
+      "last3": {
+        "correct": 28,
+        "denominator": 48,
+        "classes": 12
+      }
+    },
+    "DEV": {
+      "bag": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "first2": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "last2": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "first3": {
+        "correct": 14,
+        "denominator": 24,
+        "classes": 6
+      },
+      "last3": {
+        "correct": 14,
+        "denominator": 24,
+        "classes": 6
+      }
+    },
+    "HELDOUT": {
+      "bag": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "first2": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "last2": {
+        "correct": 12,
+        "denominator": 24,
+        "classes": 2
+      },
+      "first3": {
+        "correct": 14,
+        "denominator": 24,
+        "classes": 6
+      },
+      "last3": {
+        "correct": 16,
+        "denominator": 24,
+        "classes": 6
+      }
+    }
+  },
+  "usage": "TRAIN optimizer only, DEV selection only, HELDOUT sealed until selection fixed",
+  "limitations": [
+    "Synthetic brush/navigation semantics unverified against native game",
+    "Scripted environmental history, only editing phase policy-controllable",
+    "One small corridor-and-bypass grammar",
+    "World variants correlated within topology; no cross-version independence from v17 order sequences",
+    "No real SLM trained or evaluated",
+    "Wrong paint can be corrected with ERASE; host reveals no correctness receipt"
+  ],
+  "generator": "motif_branch_v18.js",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 48,
+      "bytes": 295520,
+      "sha256": "1851ff489bd1a92605972c905b610cad8c7c826e5f64fbb7a2d88d4d011a97ab",
+      "usage": "TRAIN"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 1800,
+      "bytes": 11426088,
+      "sha256": "252e6e5cccc5e6c72c73f2d2fec0e08845bdac7887fc2c7322465c2f0ce1a2bc",
+      "usage": "TRAIN"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 24,
+      "bytes": 174088,
+      "sha256": "50600a700f434a742d9b2cc13f9d9ecd5372fd451409208a52ee99a401708eaf",
+      "usage": "DEV"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 948,
+      "bytes": 7071680,
+      "sha256": "009d1cbef6eed47c82dae0d8d42c4f50fb0d4dd0b54da8af409c8c2255ad0973",
+      "usage": "DEV"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 24,
+      "bytes": 201184,
+      "sha256": "9b3d7bec55e36e056eab393ef978e3ed2d3cc349b45417f03840b4575633c746",
+      "usage": "HELDOUT"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 996,
+      "bytes": 8562484,
+      "sha256": "7fa38e4d87d36e58e6669dc1c10ad19ba1c8e84f1bcfe41c3d9498cb0fb863cc",
+      "usage": "HELDOUT"
+    }
+  }
+}
