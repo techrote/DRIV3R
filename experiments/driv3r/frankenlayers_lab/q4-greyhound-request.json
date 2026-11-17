@@ -1,6 +1,6 @@
 {
   "schema": "driv3r/greyhound-q4-request/1",
-  "nonce": "owner-20261117-q4-upper-01",
+  "nonce": "repair1-20261117-q4-upper-no-webui",
   "tier": "upper",
   "branch": "research/import-consolidated-worm-labs",
   "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
@@ -25,5 +25,5 @@
   "ready": false,
   "native_game": false,
   "automatic_on_routine_push": false,
-  "intent": "Owner-authorised bounded first Q4/real-System-One GREYHOUND continuation; explicit request-file push only; exact official Q4 donor, source-pinned host; STOP and crashes retained."
+  "intent": "One material repair retry after original run 44202385937 failed at optional llama UI asset provisioning; compiled headless server with LLAMA_BUILD_UI=OFF and LLAMA_USE_PREBUILT_UI=OFF. Keep failed archive. Same immutable Q4 and upper-tier budget."
 }
