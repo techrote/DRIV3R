@@ -94,5 +94,132 @@
     "Flat host mixture includes STOP whenever host-legal; nonterminal continuation may collapse. The experiment must report this without excluding STOP or inventing a rescue heuristic.",
     "GP006 large top-two logit margins imply B sampling alone may barely alter it at modest temperatures; C mixture has a stronger chance but STOP cost."
   ],
-  "required_next_measurement": "Run gp350018_matched_decoder.py against pinned stock and GP006 adapter in the same synthetic W0 host, preserve exact six-logit receipts and compare fully closed-loop changing-observation traces."
+  "required_next_measurement": "Run gp350018_matched_decoder.py against pinned stock and GP006 adapter in the same synthetic W0 host, preserve exact six-logit receipts and compare fully closed-loop changing-observation traces.",
+  "conditional_fixed_greedy_trace_stop_hazard": {
+    "status": "POST-HOC DIAGNOSTIC ON GP350-012 GREEDY-TRAJECTORY OBSERVATIONS, NOT ACTUAL DECODER ROLLOUT",
+    "method": "For each original 128-step greedy model trajectory, calculate the full legal action probabilities under each declared GP350-018 arm; for 64/128 prefixes multiply (1-p(STOP)) along that fixed trace, then average 12 products per stage. Sum expected STOP draws and expected non-greedy draws. Altered actions invalidate subsequent observation and action-menu matching.",
+    "original_archive_sha256": {
+      "stock": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+      "gp006": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6"
+    },
+    "records_per_stage": 1536,
+    "number_of_source_episodes_per_stage": 12,
+    "each_row": "[mean fixed-path no-STOP product, expected non-greedy draws, expected STOP draws]",
+    "gp006": {
+      "64": {
+        "A-greedy": [
+          1,
+          0,
+          0
+        ],
+        "B-t1p25": [
+          0.99765,
+          0.193,
+          0.002
+        ],
+        "B-t2p50": [
+          0.708395,
+          3.62,
+          0.345
+        ],
+        "C-m0p10": [
+          0.33776,
+          5.499,
+          1.076
+        ],
+        "C-m0p25": [
+          0.064241,
+          13.459,
+          2.687
+        ]
+      },
+      "128": {
+        "A-greedy": [
+          1,
+          0,
+          0
+        ],
+        "B-t1p25": [
+          0.99111,
+          0.513,
+          0.009
+        ],
+        "B-t2p50": [
+          0.44018,
+          7.466,
+          0.829
+        ],
+        "C-m0p10": [
+          0.10251,
+          11.006,
+          2.264
+        ],
+        "C-m0p25": [
+          0.003233,
+          26.745,
+          5.646
+        ]
+      }
+    },
+    "stock": {
+      "64": {
+        "A-greedy": [
+          1,
+          0,
+          0
+        ],
+        "B-t1p25": [
+          0.94297,
+          20.653,
+          0.059
+        ],
+        "B-t2p50": [
+          0.313272,
+          32.473,
+          1.151
+        ],
+        "C-m0p10": [
+          0.310864,
+          23.882,
+          1.159
+        ],
+        "C-m0p25": [
+          0.056974,
+          28.724,
+          2.809
+        ]
+      },
+      "128": {
+        "A-greedy": [
+          1,
+          0,
+          0
+        ],
+        "B-t1p25": [
+          0.877566,
+          39.867,
+          0.131
+        ],
+        "B-t2p50": [
+          0.087274,
+          62.169,
+          2.423
+        ],
+        "C-m0p10": [
+          0.079599,
+          46.287,
+          2.511
+        ],
+        "C-m0p25": [
+          0.002037,
+          55.918,
+          6.081
+        ]
+      }
+    },
+    "scientific_interpretation": "The large STOP-mass of C-m0p25 makes it a high-risk, scientifically useful negative arm rather than a suggested deployment decoder. GP006 B-t1p25 is essentially unchanged. These are fixed-greedy-path probability products only, NOT estimated actual 64/128-turn intervention survival or predicted model performance.",
+    "new_full_model_forwards": 0,
+    "new_optimizer_updates": 0,
+    "native_CyberSand": false
+  }
 }
