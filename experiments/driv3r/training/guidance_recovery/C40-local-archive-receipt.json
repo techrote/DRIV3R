@@ -1,0 +1,14 @@
+{
+  "archive_bytes": 1032841,
+  "archive_sha256": "d20ae6bc53981a488241886db46cf22f0ac92c3ec137cc85595d7c4523d712ad",
+  "custody": "local verified archive only; immutable GitHub Actions custody NOT established",
+  "files_including_manifest": 169,
+  "manifest_records": 168,
+  "repo_source_git_blobs": {
+    "c40_audit.py": "7f3e641bd123868d3c70982db4c1174f88d0fb2e",
+    "c40_pairwise_rank.py": "c58de2825a66ae5ea5e6c8318efff8e85bdc2d7d",
+    "test_c40_pairwise_rank.py": "1304bcf1f6b358aa74630b78ea85c9ea6955582e"
+  },
+  "schema": "driv3r-c40-local-archive-receipt/1",
+  "scope": "techrote/DRIV3R PR #1 only"
+}
