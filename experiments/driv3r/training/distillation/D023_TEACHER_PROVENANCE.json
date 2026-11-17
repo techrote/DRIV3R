@@ -1,0 +1,71 @@
+{
+  "schema": "driv3r.distillation.d023-teacher-provenance/1",
+  "evidence_kind": "original frozen Q8 inference receipts, NOT fresh inference or native game replay",
+  "source_archives": {
+    "D022_evidence_sha256": "80d8ffde7d4aba32234f6c2030a6a2078c5eaac97c424ac89c54353a4f802fb2",
+    "D016_evidence_sha256": "238fa017dc0c3ee8da9def8397c54f59ec595d88696ee1b362c125c9a8cfa1d1",
+    "D001_original_jsonl_sha256": "140342c16a0b8c6c8d2c3bc6071767885b15096d5a53bbf304979f3015c86522",
+    "D016_original_jsonl_sha256": "8e4d2a2fa7a9f4ddfdb4a2d9e4f5108c82278a5173c9c120755c8a1300288727",
+    "D016_verified_inner_source_zips": 10
+  },
+  "original_anchor": {
+    "rows": 144,
+    "source_seed_counts": {
+      "570": 144
+    },
+    "unique_observations": 111,
+    "teacher_counts": {
+      "branchwitch": 48,
+      "greyhound": 48,
+      "stock": 48
+    },
+    "action_counts": {
+      "BRANCH": 87,
+      "LEFT": 43,
+      "RETRACE": 3,
+      "RIGHT": 11
+    },
+    "model_sha256": [
+      "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c"
+    ]
+  },
+  "franken_variants": {
+    "rows": 483,
+    "unique_observations": 286,
+    "variant_counts": {
+      "branchwitch": 48,
+      "branchwitch_drop21": 48,
+      "branchwitch_no_repeat10": 48,
+      "branchwitch_restore12": 3,
+      "branchwitch_restore8": 48,
+      "greyhound": 48,
+      "greyhound_restore12": 48,
+      "greyhound_restore16": 48,
+      "greyhound_restore5": 48,
+      "greyhound_restore7": 48,
+      "stock": 48
+    },
+    "action_counts": {
+      "BRANCH": 195,
+      "LEFT": 195,
+      "RETRACE": 38,
+      "RIGHT": 11,
+      "STOP": 3,
+      "STRAIGHT": 41
+    },
+    "source_seed_from_normalized_rows": null
+  },
+  "cross_archive_unique_observations": 286,
+  "shared_observations_between_archives": 111,
+  "legal_recorded_actions": 627,
+  "illegal_recorded_actions": 0,
+  "seed_independent_teacher_split_established": false,
+  "training_ready": false,
+  "caveats": [
+    "D001 original parent rows have only source seed 570; row random splits leak world conditions.",
+    "D016 normalized rows do not expose source seed; archive provenance does not establish independent worlds.",
+    "Cross-parent overlapping observations require group-by-world provenance before splitting.",
+    "These receipts are action samples, not complete changing-observation teacher rollouts.",
+    "Synthetic D018/D021/D022 student-state labels are NOT original teacher inference."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "driv3r.distillation.latest-handoff/1",
+  "as_of_utc": "2026-11-17",
+  "owned_path": "experiments/driv3r/training/distillation/",
+  "repository": "techrote/DRIV3R",
+  "only_writable_pr": 1,
+  "latest": "D023",
+  "status": "BLOCKED_PRETRAINED_SLM_RUNTIME; Q8_ORIGINAL_TEACHER_CORPUS_AUDITED",
+  "best_gameplay_control": {
+    "name": "D007",
+    "checkpoint_sha256": "1a4a35f8f15f979b8460121d31021d562a457de78d86de9b9d2fedbcec05e38f",
+    "status": "synthetic-only baseline, no native acceptance"
+  },
+  "selective_branch_teacher": {
+    "name": "D017 gate",
+    "checkpoint_sha256": "715dff35c08a4d19bb7f523925eace020f35bdcaa3bc7bfe44bf2aa67606f11f"
+  },
+  "compact_comparison": {
+    "name": "D021-mild",
+    "checkpoint_sha256": "9238f6ca4b6d54a099914cd6f61388acebf5acf743938918fe928c5f90a05f55",
+    "status": "seed-sensitive trap coverage; not promoted"
+  },
+  "d022_rejected": "two 120-Adam-update synthetic student passes yielded no robust improvement; do not continue nearby surrogate tuning",
+  "target_pretrained_model": {
+    "name": "EleutherAI/pythia-70m-deduped",
+    "revision": "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c",
+    "source": "read-only experiments/driv3r/model_zoo/pythia70/README.md",
+    "weights_available_in_this_runtime": false
+  },
+  "alternate_LFM": {
+    "name": "LiquidAI LFM2.5-350M",
+    "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+    "GP350006_adapter_sha256": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+    "artifact_id": 14199280586,
+    "base_weights_available": false
+  },
+  "d023_audit": {
+    "file": "D023_TEACHER_PROVENANCE.json",
+    "original_Q8_rows": 627,
+    "unique_observation_keys": 286,
+    "overlap_original_D001_keys_in_D016": 111,
+    "legal_recorded_actions": 627,
+    "illegal_recorded_actions": 0,
+    "independent_world_split_proven": false
+  },
+  "trained_pretrained_steps": 0,
+  "trained_pretrained_artifact": null,
+  "new_closed_loop_episodes": 0,
+  "measured_latency_ms": null,
+  "measured_rss_mb": null,
+  "blocker": "No pinned pretrained model/tokenizer locally; HF downloads unavailable; transformers/PEFT/tokenizers missing; GitHub connector has no bounded workflow dispatch",
+  "unblocks": "Explicit DRIV3R-only opt-in pretrained Pythia-70M CPU Actions job, or local immutable pretrained model/tokenizer availability",
+  "next_consumer_experiment": "Grouped-seed/world actual pretrained Pythia-70M model head + real last-block adapter vs frozen-head, style/coverage legality and trap-tail held-outs; do not leak duplicated parent states",
+  "artifacts_policy": "Actual checkpoints and large binary outputs must live in immutable DRIV3R Actions artifacts, not Git",
+  "game_files_modified": false,
+  "external_repos_writable": false,
+  "PR_Draft_HOLD": true
+}
