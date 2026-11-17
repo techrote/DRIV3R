@@ -280,7 +280,7 @@ def evaluate(binary, model, w0, legacy_root, patch_receipt, request, evidence, c
               "w0_git_blob_sha1": W0_SHA_BLOB, "patch_receipt_sha256": sha256_file(patch_receipt),
               "model_quant": "vendor Q4_K_M; NOT Q8 derived",
               "synthetic_host": True, "native_paint": False,
-              "no_smoothing": True, "post_action_endpoint_unknown": False,
+              "no_smoothing": True, "post_action_endpoint_unknown": True,
               "same_initial_host_seed": True, "later_states_diverge": True,
               "tiers": {k:list(v) for k,v in TIERS.items()},
               "source_flows": {k:list(PROGRESSION[k]) for k in modes if k in PROGRESSION},
