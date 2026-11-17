@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P22",
-  "status": "P22_REAL_LFM350_LORA_TENSOR_AND_CAUSALLY_ALIGNED_GREEDY_LOGIT_AUDIT_NO_NEW_ROOT_FORWARD",
-  "latest_findings": "P22_FINDINGS.md",
+  "latest": "P23",
+  "status": "P23_50_SOURCE_VERIFIED_ORIGINAL_TRAJECTORIES_BLIND_MATCHED_NICHE_GATE_NO_NEW_ROOT_INFERENCE",
+  "latest_findings": "P23_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -51,9 +51,9 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "Real GP010 LoRA branch pressure rose by roughly 5–7 logit-margin units per family on shared legal observations, yet GP006 vs GP010 paths remained identical 8/12; one Greebles 64-size seed fell from 129 to 89 visited cells. Do not promote aesthetic reward without owner labels.",
-  "artifact_status": "LOCAL_SOURCE_AND_HISTORICAL_ADAPTER_SHA256_VERIFIED_NOT_NEW_DRIV3R_ACTIONS_ARTIFACT",
-  "local_tests": "P20 strict source-auditor 2/2 PASS; P19 producer check re-executed; 18/18 W16 STOP-only prefix verified",
+  "negative_result": "8/12 GP006 vs GP010 original 128-action paths identical; of four changed, one Greebles world increases turns to 35.43% while unique cells fall 129→89 and repeated edges rise to 29.69%. No learned preference promotion without owner ratings.",
+  "artifact_status": "P23_LOCAL_HISTORICAL_ORIGINAL_SOURCE_SHA256_VERIFIED_NOT_NEW_DRIV3R_ACTIONS_ARTIFACT",
+  "local_tests": "P23 6/6 PASS with pinned original source archives (4/4 without source fixtures, 2 skipped); two byte-identical output reruns",
   "new_model_forwards": 0,
   "new_optimizer_steps": 0,
   "human_ratings": 0,
@@ -70,9 +70,10 @@
     "Real pretrained model roots/tokenizers unavailable in this CPU runner, no permitted explicit opt-in Actions dispatch; cannot truthfully claim fresh LFM GP350-018, Tiny M19, Population P20, Sprocket or Franken W20 original model outputs.",
     "P21 only 2 independent original seed blocks despite 36 source episodes and 36 matched pairs; cannot infer cross-model held-out creative preference superiority.",
     "GP350-018 changing-observation sampled decoder and Tiny/Population/Franken pretrained heldout rollouts not yet executable; no legal Actions dispatch or pinned weights here.",
-    "P22 direct original safetensors tensor audit succeeded; fresh LFM root inference remains blocked by missing pinned root weights/runtime and opt-in execution. Same-state logits comparable only through first differing action; two original seeds, zero owner labels."
+    "P22 direct original safetensors tensor audit succeeded; fresh LFM root inference remains blocked by missing pinned root weights/runtime and opt-in execution. Same-state logits comparable only through first differing action; two original seeds, zero owner labels.",
+    "P23 matched comparison gate: only 13 nonidentical synthetic W0 pairs from six distinct world blocks (not independent seeds); eight identical LFM GP006/GP010 paths, historical 16/36/128 step cohorts are not exchangeable, and all 64 blind owner ballot cells unlabelled."
   ],
-  "next_consumer_experiment": "Run genuinely changing-observation full pretrained GP350-018 greedy/sampled matched-decoder worlds with full-model source-pinned latency/RSS and collect Tiny/Population/Franken original model outputs on world-disjoint seeds. Blind owner four-niche rating first; independent preference ranking training only then.",
+  "next_consumer_experiment": "Collect genuinely blind owner ratings on four niches from P23 nonidentical matched historical original source deck; obtain source-pinned new LFM GP350-018 decoded and real Tiny/Population/Franken/Sprocket heldout model trajectories before preference-ranker training. Disentangle decoding from training on matched worlds; compare learned model with transparent baselines and preserve creative niche Pareto fronts.",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -222,5 +223,26 @@
     "owner_labels": 0,
     "limitations": "Historical original source and adapter weights only; no current root preload, no owner ratings, not native",
     "source_file": "P22_pinned_adapter_audit.py"
+  },
+  "p23": {
+    "source": "p23_matched_niche_gate.py",
+    "source_sha256": "08069513336a7edf5bfe0844e43cc460a1db22ac06018e0f3d7d41f5b36b88ac",
+    "tests": "test_p23_matched_niche_gate.py",
+    "test_sha256": "e33ccc1df2b8c371833fb4ac9b3eb1a8d820575a9a9a98467898d73472054dce",
+    "evidence_file": "P23_RESULTS.json",
+    "ballot": "P23_BLANK_OWNER_BALLOT.csv",
+    "source_original_trajectories": 50,
+    "original_applied_receipts": 5704,
+    "original_pretrained_lfm350_128turn_episodes": 36,
+    "source_model_or_W0_historical_episodes": 12,
+    "native_historical_references": 2,
+    "nonidentical_matched_pairs": 14,
+    "identical_hidden_controls": 2,
+    "original_GP006_GP010_changes": "4/12",
+    "independent_GP350_seed_blocks": 2,
+    "new_root_SLMS_forwards": 0,
+    "new_optimizer_updates": 0,
+    "owner_human_labels": 0,
+    "artifact_qualification": "local-only original source-verified"
   }
 }

@@ -1,0 +1,73 @@
+{
+  "blank_owner_rating_rows": 64,
+  "blind_A4_sheets": 8,
+  "by_seed_GP006_GP010": {
+    "9803": {
+      "gp010_changed_vs_gp006": 2,
+      "gp010_fewer_unique": 2,
+      "gp010_more_turns": 2,
+      "worlds": 6
+    },
+    "9821": {
+      "gp010_changed_vs_gp006": 2,
+      "gp010_fewer_unique": 1,
+      "gp010_more_turns": 2,
+      "worlds": 6
+    }
+  },
+  "distinct_source_world_blocks_in_nonidentical_model_pairs": 6,
+  "full_LFM128_identical_excluded": 8,
+  "high_turn_confinement_GP010_worlds": [
+    {
+      "gp006_unique": 129,
+      "gp010_repeated_edge": 0.296875,
+      "gp010_turn90": 0.354331,
+      "gp010_unique": 89,
+      "world": [
+        64,
+        9803,
+        "greebles"
+      ]
+    }
+  ],
+  "historical_manifest_sha256": "873d208e370bec2d26586af1c86545957deef4b01fc5a9521f3630fd1920a88d",
+  "historical_native_reference": 2,
+  "historical_original_model_W0": 12,
+  "historical_true_nonidentical_pairs": 10,
+  "human_owner_labels": 0,
+  "independent_source_seeds_in_LFM128": 2,
+  "independent_source_world_blocks_native_ref": 1,
+  "limitations": [
+    "Only two independent LFM128 source seed blocks; six distinct model world blocks are not six independent seeds.",
+    "Historical Franken 16-turn, native 36-turn and LFM/Mutagen 128-turn cohorts differ in host, horizon and world; no pooled efficacy or training labels.",
+    "The full original traced ZIPs and A4 galleries are local source-verifiable only; no DRIV3R Actions artifact in this run.",
+    "No owner ratings or new pretrained root inference. Hard-coded structural anti-degeneracy screens are not aesthetic preferences."
+  ],
+  "machine_aesthetic_labels": 0,
+  "matched_true_nonidentical_pairs": 14,
+  "new_optimizer_updates": 0,
+  "new_root_SLM_forwards": 0,
+  "nonidentical_full_LFM128_GP006_GP010": 4,
+  "original_model_applied_decisions_verified_by_upstream_auditors": 5704,
+  "original_model_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+  "original_source_read_only_artifacts": {
+    "gp006": 14244806761,
+    "gp010": 14245172930,
+    "stock": 14248333879
+  },
+  "p21_original_zip_sha256": {
+    "gp006": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+    "gp010": "fa6296ad600176b366b367965b86118fc432a92a63f55c8e0b5a44c488258920",
+    "stock": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd"
+  },
+  "qualification": "historical original-source check with SHA and legal menus via P18/P21; local-only; not newly Actions-qualified or native",
+  "real_pretrained_LFM350_episodes": 36,
+  "same_horizon_identical_visual_controls": 2,
+  "schema": "driv3r.preference_eval.p23_original_crossmodel_niche_gate/1",
+  "source_git_path": "experiments/driv3r/training/preference_eval/p23_matched_niche_gate.py",
+  "source_original_trajectories": 50,
+  "source_sha256": "08069513336a7edf5bfe0844e43cc460a1db22ac06018e0f3d7d41f5b36b88ac",
+  "source_tests": "6/6 PASS with fixtures; 4/4 independent tests PASS without fixtures (2 source-dependent skipped); 2 byte-identical output reruns, original ZIP corruption rejection",
+  "test_sha256": "e33ccc1df2b8c371833fb4ac9b3eb1a8d820575a9a9a98467898d73472054dce",
+  "treatment_of_matches": "Only 4/12 nonidentical GP006-GP010 full path comparisons treated as aesthetic candidates; other 8 excluded except 2 hidden identical-image control trials."
+}
