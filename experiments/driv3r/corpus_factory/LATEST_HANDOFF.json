@@ -4,42 +4,82 @@
   "research_home": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "role": "DATA ONLY: synthetic ordered-event memory corpus, no optimizer or policy training",
-  "version": "ordered-relay-v16",
-  "source": "experiments/driv3r/corpus_factory/ordered_relay_v16.js",
-  "source_git_blob": "5d64ac0558349f5efe7f40ff866204006a2a1fa7",
-  "test": "experiments/driv3r/corpus_factory/test_ordered_relay_v16.js",
-  "test_git_blob": "26e025ebed249113b17e473baa73b32c65f395cc",
+  "role": "DATA ONLY: alias-controlled ordered-gate corpus; no optimizer or champion policy",
+  "version": "aliased-order-v17",
+  "source": "experiments/driv3r/corpus_factory/aliased_order_v17.js",
+  "source_git_blob": "014a25750f368f68b3397d0e413f7faca5ea4c67",
+  "test": "experiments/driv3r/corpus_factory/test_aliased_order_v17.js",
+  "test_git_blob": "c715626d5e82fae97e92964cea171b32f0d2c191",
   "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
-  "manifest": "experiments/driv3r/corpus_factory/V16_DEFAULT_MANIFEST.json",
-  "manifest_sha256": "403e51b173af2e993652aa193d84f5f6b85e83cc35416039810ad2b22398c81e",
-  "artifact_command": "node experiments/driv3r/corpus_factory/ordered_relay_v16.js NEW_OUTPUT_DIRECTORY 2",
-  "best_checkpoint_or_artifact": "Deterministic v16 source plus six locally SHA256-verified partitions; no SLM checkpoint and no immutable Actions artifact",
+  "preceding_design_source_git_blob": "5d64ac0558349f5efe7f40ff866204006a2a1fa7",
+  "manifest": "experiments/driv3r/corpus_factory/V17_DEFAULT_MANIFEST.json",
+  "manifest_sha256": "cf0a517cf7e77acc0642c979a77c9bf2d78f25ea11dc0743469988cc97f661cb",
+  "artifact_command": "node experiments/driv3r/corpus_factory/aliased_order_v17.js NEW_OUTPUT_DIRECTORY 2",
+  "best_checkpoint_or_artifact": "Deterministic v17 generator, standalone test, six SHA256-local-verified shards; no SLM checkpoint, no immutable Actions artifact",
   "counts": {
-    "TRAIN": {"episodes":384,"decisions":3456,"world_groups":32,"orders":12},
-    "DEV": {"episodes":96,"decisions":864,"world_groups":8,"orders":12},
-    "HELDOUT": {"episodes":144,"decisions":1296,"world_groups":12,"orders":12}
+    "TRAIN": {
+      "episodes": 384,
+      "decisions": 3456,
+      "world_groups": 32,
+      "order_gap": 1
+    },
+    "DEV": {
+      "episodes": 96,
+      "decisions": 864,
+      "world_groups": 8,
+      "order_gap": 2
+    },
+    "HELDOUT": {
+      "episodes": 144,
+      "decisions": 1296,
+      "world_groups": 12,
+      "order_gap_range": [
+        3,
+        7
+      ]
+    }
   },
   "metrics": {
-    "families":52,
-    "disjoint_instruction_orders":36,
-    "oracle_prefix_moves":168480,
-    "expert_post_prefix_moves":41904,
-    "strictly_longer_legal_hard_negatives":6240,
-    "illegal_oracle_moves":0,
-    "protected_entries":0,
-    "bag_and_last64_first_action_theoretical_ceiling":"6/12=50% in all three splits",
-    "latest_two_ALPHA_first_action_theoretical_ceiling":{"TRAIN":"7/12","DEV":"7/12","HELDOUT":"9/12"},
-    "standalone_regression":"7/7 PASS",
-    "generation_repetitions":2,
-    "byte_identical":true,
-    "generation_time_seconds":[17.01,17.31],
-    "generation_peak_rss_kib":[399208,403400]
+    "families": 52,
+    "disjoint_instruction_orders": 36,
+    "oracle_prefix_moves": 213408,
+    "expert_post_prefix_moves": 41904,
+    "strictly_longer_legal_hard_negatives": 6240,
+    "illegal_oracle_moves": 0,
+    "protected_entries": 0,
+    "first_two_last_two_bag_last64_first_action_theoretical_ceiling": "6/12 = 50% in every split/family",
+    "first_three_theoretical_ceiling": {
+      "TRAIN": "7/12",
+      "DEV": "7/12",
+      "HELDOUT": "7/12"
+    },
+    "last_three_theoretical_ceiling": {
+      "TRAIN": "7/12",
+      "DEV": "7/12",
+      "HELDOUT": "8/12"
+    },
+    "standalone_regression": "7/7 PASS",
+    "generation_repetitions": 2,
+    "byte_identical": true,
+    "generation_time_seconds": [
+      21.55,
+      20.54
+    ],
+    "generation_peak_rss_kib": [
+      512404,
+      506304
+    ],
+    "new_root_model_forwards": 0,
+    "new_optimiser_updates": 0
   },
-  "known_failure":"Narrow synthetic corridor and scripted prior command events; models only control after prefix; no real SLM result, no native gameplay/brush acceptance, no immutable artifact; some short-event controls remain predictive",
-  "next_useful_consumer_experiment":"Pinned LFM or Sprocket primary SLM: TRAIN-only fitting, DEV model selection then sealed HELDOUT unseen instruction orders; report world-grouped first-action and full autonomous arrivals, path stretch, illegal/rejected actions, p50/p95 action latency and peak RSS; full-history versus last64, event-bag, first/latest/latest-two ALPHA ablations",
-  "provenance":"Synthetic v13 source SHA as pinned; no game code modifications, no native receipts",
-  "paid_compute":false,
-  "game_files_modified":false,
-  "main_unchanged":true
+  "known_failure": "Scripted events and narrow synthetic corridor; only post-prefix actions model-controllable; first3/last3 not perfectly ambiguous; cross-version same parent worlds; no actual LFM/Sprocket memory policy measured; no native ABI acceptance or immutable Actions artifact.",
+  "other_labs_read": {
+    "lfm_game_policy": "GP350-018 LATEST_HANDOFF; strongest pinned conservative GP350-006 LoRA, model revision 9921cd4d82c0e3986887aa4b376f9446729ef8a3; current executable lacks pinned model cache",
+    "sprocket_game_policy": "LATEST_HANDOFF root model revision eb157d4ddddc4619e661d4a2426bb2dd000fc668; named SLM training blocked by unavailable root/tokenizer and dependencies"
+  },
+  "next_useful_consumer_experiment": "Pinned actual LFM/Sprocket model: TRAIN-only fitting, DEV selection, sealed HELDOUT event-gap transfer; full-order vs last64/event-bag/first2/last2 controls; all post-prefix actions model-controlled; report family-conditional first-action, full goal completion, path stretch, rejected moves, inference latency p50/p95 and peak model RSS.",
+  "provenance": "Source-matched v13 external synthetic host; no CyberSand/Neurounner writes, no native receipt claims",
+  "paid_compute": false,
+  "game_files_modified": false,
+  "main_unchanged": true
 }
