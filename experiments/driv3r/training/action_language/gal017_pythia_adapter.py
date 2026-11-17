@@ -170,7 +170,7 @@ def load_slm():
         import torch
         from transformers import AutoModelForCausalLM,AutoTokenizer
         from peft import LoraConfig,get_peft_model
-        from huggingface_hub import HfApi, cached_file
+        from huggingface_hub import HfApi, hf_hub_download
     except ImportError as ex:
         raise RuntimeError('BLOCKED: pinned pretrained Pythia-70M requires torch, transformers, peft, huggingface_hub and accessible base-model weights; no substitute model permitted') from ex
     info=HfApi().model_info(MODEL_ID,revision=MODEL_REVISION)
@@ -191,7 +191,7 @@ def load_slm():
                             trust_remote_code=False,torch_dtype=torch.float32,use_safetensors=True)
     base.eval()
     # The revision is immutable; hash the actual downloaded tensor bytes too.
-    tensor_file=cached_file(MODEL_ID,'model.safetensors',revision=MODEL_REVISION,local_files_only=True)
+    tensor_file=hf_hub_download(repo_id=MODEL_ID,filename='model.safetensors',revision=MODEL_REVISION,local_files_only=True)
     if not tensor_file:raise RuntimeError('base model tensor provenance cannot be verified')
     base_sha=hashlib.sha256(Path(tensor_file).read_bytes()).hexdigest()
     model=get_peft_model(base,LoraConfig(r=4,lora_alpha=8,lora_dropout=0.0,

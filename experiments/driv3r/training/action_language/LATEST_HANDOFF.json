@@ -5,8 +5,8 @@
   "pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "owner_dir": "experiments/driv3r/training/action_language",
-  "status": "SLM_TRAINING_BLOCKED_SOURCE_READY",
-  "latest_program": "GAL-017",
+  "status": "SLM_TRAINING_BLOCKED_LOADER_API_REPAIRED",
+  "latest_program": "GAL-017a",
   "target_model": {
     "model_id": "EleutherAI/pythia-70m-deduped",
     "revision": "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c",
@@ -15,7 +15,9 @@
     "pretrained_model_loaded_this_increment": false,
     "optimizer_updates_this_increment": 0,
     "checkpoint_published_this_increment": false,
-    "blocker": "No pinned pretrained weights or Transformers/PEFT in this runtime, no container internet, and no available permitted GitHub Actions dispatch action; do not substitute surrogate."
+    "blocker": "No pinned pretrained Pythia-70M weights or Transformers/PEFT in available runtime; GitHub connector cannot dispatch an opt-in training workflow. Source now uses supported Hugging Face Hub API.",
+    "loader_api_regression_fixed": true,
+    "loader_fix": "Use public huggingface_hub.hf_hub_download() rather than nonexistent cached_file; fake pinned-snapshot contract test added. No real weights loaded."
   },
   "best_preexisting_synthetic_reference": {
     "program": "GAL-016",
@@ -38,15 +40,26 @@
     "is_learned_policy": false,
     "native_receipts": 0
   },
-  "heldout_seeds": [3009001, 3009002],
+  "heldout_seeds": [
+    3009001,
+    3009002
+  ],
   "known_failures": [
     "GAL-016 bounded memory loses frontier knowledge and route recovery",
     "GAL-016 changing host material defeats even unlimited memory in 7/64 synthetic cases",
     "No actual named SLM was evaluated by GAL-017",
-    "No measured real model inference call reduction or native game artistic quality"
+    "No measured real model inference call reduction or native game artistic quality",
+    "GAL-017 initial source used unavailable huggingface_hub.cached_file; fixed in GAL-017a, not yet validated against real weights."
   ],
-  "consumer_handoff": ["long_horizon", "guidance_recovery", "tiny_policy", "lfm_game_policy", "model_zoo", "corpus_factory"],
-  "next_experiment": "Run source-pinned 24-update Pythia-70M LoRA paired stock/adapted one-cell-vs-swept evaluation using existing opt-in CPU runner and immutable artifact storage; then test frontier-graph compression with a genuinely trained model, not another route-planner layer.",
+  "consumer_handoff": [
+    "long_horizon",
+    "guidance_recovery",
+    "tiny_policy",
+    "lfm_game_policy",
+    "model_zoo",
+    "corpus_factory"
+  ],
+  "next_experiment": "Execute 24-update Pythia-70M LoRA one-cell/swept paired closed-loop stock-versus-adapted run with pinned weight snapshot and immutable Actions artifact. Verify loader under real Transformers/PEFT first; do not report mock-loader tests as neural training.",
   "scope": {
     "game_modifications": 0,
     "cybersand_writes": 0,
