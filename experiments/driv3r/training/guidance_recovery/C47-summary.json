@@ -1,0 +1,392 @@
+{
+  "blind": {
+    "C47-ALIGNED": {
+      "false_positive_interventions": 0,
+      "incremental_goal_events_vs_RESET": 0,
+      "negative_diff": 0,
+      "positive_diff": 1,
+      "records": 48,
+      "selected_pair": 17,
+      "strict_win_precision": 0.0,
+      "ties": 47
+    },
+    "C47-RANDOM": {
+      "false_positive_interventions": 0,
+      "incremental_goal_events_vs_RESET": 0,
+      "negative_diff": 0,
+      "positive_diff": 1,
+      "records": 48,
+      "selected_pair": 8,
+      "strict_win_precision": 0.0,
+      "ties": 47
+    },
+    "C47-RAW-RULE": {
+      "false_positive_interventions": 0,
+      "incremental_goal_events_vs_RESET": 0,
+      "negative_diff": 0,
+      "positive_diff": 1,
+      "records": 48,
+      "selected_pair": 27,
+      "strict_win_precision": 0.0,
+      "ties": 47
+    },
+    "C47-SHUFFLED": {
+      "false_positive_interventions": 0,
+      "incremental_goal_events_vs_RESET": 0,
+      "negative_diff": 0,
+      "positive_diff": 1,
+      "records": 48,
+      "selected_pair": 17,
+      "strict_win_precision": 0.0,
+      "ties": 47
+    }
+  },
+  "checkpoints_sha256": {
+    "C47-ALIGNED": "98e0c277ce01964b0851c1e60c6445c94d062ad9f590ca1619af69d317658e06",
+    "C47-SHUFFLED": "897832af84b512f5ed7a232681e9e8153d4d503f890e57a6a1aaf911fdd0bb3e"
+  },
+  "graph_counts": {
+    "blind": 16,
+    "online": 48,
+    "train": 64
+  },
+  "graph_sets_sha256": {
+    "blind": "123332fcb39ebae6b4e6b1e6b2f17e1835ab606b6880958cd08df6a4081b0485",
+    "online": "d04a295786749aba401d5898ee112c491f4589f7cce3642130515299cdb5e8b3",
+    "train": "69ad481f882987941d1ca59e993c66edf03b633d7d163807a9233e6de804ba63"
+  },
+  "guided_episodes_per_policy": 144,
+  "limitations": [
+    "synthetic CyberSand-like host, not CyberSand native ABI or physical acceptance",
+    "episode-start fixed controller selector, no mid-trajectory feedback switching",
+    "label oracle uses matched full outcomes offline only; results rare and stochastic",
+    "starting-state features do not expose distant maze structure or true future utility",
+    "class weighting, 0.15 intervention threshold and 0.4 raw rule predetermined, no held-out tuning",
+    "graph-cluster bootstrap descriptive; not proof of neural superiority",
+    "trajectory-level personality preservation unproven; no native replay",
+    "trained checkpoints remain local; GitHub Actions immutable artifact custody pending"
+  ],
+  "models": {
+    "C18-A0": {
+      "by_family": {
+        "kruskal": 13,
+        "wilson": 21
+      },
+      "condition_regressions_vs_RESET": 2,
+      "guided_goal_events": 34,
+      "opposed": 244,
+      "preferred": 287,
+      "raw_illegal_top1": 0,
+      "selected_pair": 0,
+      "unguided_hash_equal": 48
+    },
+    "C34-RESET": {
+      "by_family": {
+        "kruskal": 12,
+        "wilson": 19
+      },
+      "condition_regressions_vs_RESET": 0,
+      "guided_goal_events": 31,
+      "opposed": 266,
+      "preferred": 361,
+      "raw_illegal_top1": 0,
+      "selected_pair": 0,
+      "unguided_hash_equal": 48
+    },
+    "C40-PAIR": {
+      "by_family": {
+        "kruskal": 12,
+        "wilson": 23
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_goal_events": 35,
+      "opposed": 286,
+      "preferred": 389,
+      "raw_illegal_top1": 0,
+      "selected_pair": 144,
+      "unguided_hash_equal": 48
+    },
+    "C47-ALIGNED": {
+      "by_family": {
+        "kruskal": 13,
+        "wilson": 21
+      },
+      "condition_regressions_vs_RESET": 2,
+      "guided_goal_events": 34,
+      "opposed": 272,
+      "preferred": 383,
+      "raw_illegal_top1": 0,
+      "selected_pair": 61,
+      "unguided_hash_equal": 48
+    },
+    "C47-RANDOM": {
+      "by_family": {
+        "kruskal": 12,
+        "wilson": 19
+      },
+      "condition_regressions_vs_RESET": 0,
+      "guided_goal_events": 31,
+      "opposed": 267,
+      "preferred": 362,
+      "raw_illegal_top1": 0,
+      "selected_pair": 25,
+      "unguided_hash_equal": 48
+    },
+    "C47-RAW-RULE": {
+      "by_family": {
+        "kruskal": 12,
+        "wilson": 21
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_goal_events": 33,
+      "opposed": 284,
+      "preferred": 371,
+      "raw_illegal_top1": 0,
+      "selected_pair": 83,
+      "unguided_hash_equal": 48
+    },
+    "C47-SHUFFLED": {
+      "by_family": {
+        "kruskal": 12,
+        "wilson": 22
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_goal_events": 34,
+      "opposed": 276,
+      "preferred": 367,
+      "raw_illegal_top1": 0,
+      "selected_pair": 75,
+      "unguided_hash_equal": 48
+    }
+  },
+  "optimizer": {
+    "aligned": {
+      "epoch_losses": [
+        2.104892,
+        1.950301,
+        1.669039,
+        1.640751,
+        1.628624,
+        1.664332,
+        1.57277,
+        1.512352,
+        1.380522,
+        1.547492,
+        1.523261,
+        1.324548,
+        1.354571,
+        1.357548,
+        1.397049,
+        1.375449,
+        1.311682,
+        1.375844,
+        1.246443,
+        1.374892,
+        1.332514,
+        1.33627,
+        1.295645,
+        1.357577,
+        1.395447,
+        1.348157,
+        1.252351,
+        1.333796,
+        1.375821,
+        1.374232,
+        1.334943,
+        1.224368
+      ],
+      "updates": 256
+    },
+    "differential_outcomes": {
+      "-1.0": 8,
+      "0.0": 174,
+      "1.0": 10
+    },
+    "normalization_sha256": "224967efb1da2cd773ef4fd2af7725cdc1833a25a9343201eb264fe68f1b577c",
+    "records": 192,
+    "shuffled": {
+      "epoch_losses": [
+        1.740432,
+        1.52097,
+        1.528227,
+        1.459982,
+        1.432586,
+        1.386682,
+        1.368111,
+        1.364084,
+        1.400888,
+        1.490783,
+        1.407435,
+        1.42688,
+        1.418811,
+        1.434561,
+        1.25225,
+        1.327324,
+        1.26882,
+        1.382856,
+        1.299242,
+        1.405111,
+        1.328055,
+        1.284161,
+        1.31938,
+        1.341581,
+        1.384735,
+        1.264588,
+        1.21388,
+        1.232807,
+        1.237494,
+        1.19618,
+        1.113295,
+        1.223925
+      ],
+      "updates": 256
+    },
+    "shuffled_sha256": "82deb7ab4c0834ef5f7e51344dbd1a805d4cfdc458c4fa34a67496e0462ce7c3",
+    "targets_sha256": "45c40111532a2331ce836022dd13ee2a3af5eae85a878b6e8e54b4b4805bbd49",
+    "train_graphs": 64
+  },
+  "paired": {
+    "C47-ALIGNED__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -3.0,
+        9.0
+      ],
+      "delta": 3,
+      "negative_graphs": 2,
+      "positive_graphs": 4
+    },
+    "C47-ALIGNED__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -5.0,
+        3.0
+      ],
+      "delta": -1,
+      "negative_graphs": 3,
+      "positive_graphs": 2
+    },
+    "C47-ALIGNED__C47-SHUFFLED": {
+      "95pct_graph_cluster_bootstrap": [
+        -4.0,
+        4.0
+      ],
+      "delta": 0,
+      "negative_graphs": 2,
+      "positive_graphs": 2
+    },
+    "C47-RANDOM__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C47-RANDOM__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -12.0,
+        3.0
+      ],
+      "delta": -4,
+      "negative_graphs": 7,
+      "positive_graphs": 4
+    },
+    "C47-RANDOM__C47-SHUFFLED": {
+      "95pct_graph_cluster_bootstrap": [
+        -10.0,
+        3.0
+      ],
+      "delta": -3,
+      "negative_graphs": 5,
+      "positive_graphs": 3
+    },
+    "C47-RAW-RULE__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -4.0,
+        9.0
+      ],
+      "delta": 2,
+      "negative_graphs": 3,
+      "positive_graphs": 4
+    },
+    "C47-RAW-RULE__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -6.0,
+        2.0
+      ],
+      "delta": -2,
+      "negative_graphs": 3,
+      "positive_graphs": 1
+    },
+    "C47-RAW-RULE__C47-SHUFFLED": {
+      "95pct_graph_cluster_bootstrap": [
+        -5.0,
+        2.0
+      ],
+      "delta": -1,
+      "negative_graphs": 2,
+      "positive_graphs": 1
+    },
+    "C47-SHUFFLED__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -3.0,
+        10.0
+      ],
+      "delta": 3,
+      "negative_graphs": 3,
+      "positive_graphs": 5
+    },
+    "C47-SHUFFLED__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -4.0,
+        2.0
+      ],
+      "delta": -1,
+      "negative_graphs": 2,
+      "positive_graphs": 1
+    }
+  },
+  "root_hashes": {
+    "C40-prior": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184"
+  },
+  "schema": "driv3r-c47-differential-goal-guidance/1",
+  "selection": {
+    "C18-A0": {
+      "C18-A0": 192,
+      "C34-RESET": 0,
+      "C40-PAIR": 0
+    },
+    "C34-RESET": {
+      "C18-A0": 0,
+      "C34-RESET": 192,
+      "C40-PAIR": 0
+    },
+    "C40-PAIR": {
+      "C18-A0": 0,
+      "C34-RESET": 0,
+      "C40-PAIR": 192
+    },
+    "C47-ALIGNED": {
+      "C18-A0": 0,
+      "C34-RESET": 115,
+      "C40-PAIR": 77
+    },
+    "C47-RANDOM": {
+      "C18-A0": 0,
+      "C34-RESET": 165,
+      "C40-PAIR": 27
+    },
+    "C47-RAW-RULE": {
+      "C18-A0": 0,
+      "C34-RESET": 84,
+      "C40-PAIR": 108
+    },
+    "C47-SHUFFLED": {
+      "C18-A0": 0,
+      "C34-RESET": 94,
+      "C40-PAIR": 98
+    }
+  },
+  "source_sha256": "2a466339a2396f5025458f3e9e8aea13f1f120525f62af5b4b99af981fabfebd",
+  "total_labeled_episodes": 1344
+}
