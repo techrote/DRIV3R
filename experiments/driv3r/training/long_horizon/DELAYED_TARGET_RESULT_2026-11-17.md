@@ -2,7 +2,7 @@
 
 **17 November 2026 · DRIV3R Draft/HOLD PR #1 · negative DEVELOPMENT result.**
 
-## Question and preregistered comparison
+## Question and matched comparison
 
 The preceding COST-RETARGET-001 result suggested that its five-action score overvalued immediate progress. Does a **12-decision** teacher lookahead, with a strong *actual target contact* reward, improve autonomous retargeting? Tested four controllers with identical 961-parameter architecture, initial weights per seed, TRAIN-state reservoir, optimizer minibatch budget, target instructions and DEVELOPMENT perturbations:
 
