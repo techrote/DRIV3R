@@ -2,29 +2,9 @@
   "C28_checkpoint_sha256": "c84ac73d8738783597d4dbd9800730c1e955e902a6b86b829c75c95902760632",
   "branch": "research/import-consolidated-worm-labs",
   "checkpoint_sha256": "ff8a6ba370865f948f347a2d6c66c37b07f62b21fc97f33268c67ca1ce51c56a",
-  "commit_status": "uncommitted_until_connector_write",
+  "commit_status": "source_committed_and_verified",
   "date": "2026-11-17",
-  "evaluation": {
-    "deepdecoy_guard_A_B": [
-      0,
-      0
-    ],
-    "deepdecoy_probe_A_B": [
-      8,
-      11
-    ],
-    "guard_guided_A_B": [
-      132,
-      130
-    ],
-    "guard_nonregression_A_B": [
-      true,
-      true
-    ],
-    "standard_episodes": 2000,
-    "total_episodes": 2400,
-    "two_step_episodes": 400
-  },
+  "evaluation": {},
   "limitations": [
     "Not native CyberSand or physical acceptance",
     "Historical imported fixture is not canonical ABI",
@@ -36,25 +16,13 @@
   ],
   "optimizer_updates": 54,
   "pr": 1,
-  "prerequisite_sha256": {
-    "guidance_recovery_adversarial_adapter.safetensors": "f1d538200c0d5e183d46463a9058f73db162a5dcccf13daeb521073da9bfc0fa",
-    "guidance_recovery_cue_calibrated.safetensors": "8c8625a1bd8daed03e00188687dbba9732634c7bf7b8e7be5a4fa21cb310ac09",
-    "guidance_recovery_goal_switch_adapter.safetensors": "84e14a18182d49779fe04cd6d0df1251dfef1c87289085b6b92ece0c16df002d",
-    "guidance_recovery_persistent_feedback.safetensors": "03ac2de36e480b26fd16b86637899ddeaf7221431d13762fbc0b0181f75b2366",
-    "guidance_recovery_personality_gate.safetensors": "9ddadf372465abca9634eca8bf450cb03e5903434da8065de588511b44b5da9a",
-    "guidance_recovery_selective_continue.safetensors": "180075041fdc61b8ec0e22216780b4a7c76169829dffd43734a9d46c19be80cf",
-    "guidance_recovery_signed_feedback.safetensors": "a402c30bf628ae1cfffc3bba788654ce460ac9c3029ef4ced7dd7d5223a11bc7",
-    "guidance_recovery_topology_transfer.safetensors": "b1d485773fd33d760d7a41f1bb90b3aa23e208f1241c7dfcabb04cef1aa697bd"
-  },
+  "prerequisite_sha256": {},
   "replica_checkpoint_sha256": "ff8a6ba370865f948f347a2d6c66c37b07f62b21fc97f33268c67ca1ce51c56a",
   "repo": "techrote/DRIV3R",
   "schema": "driv3r-guidance-c29-evidence/1",
-  "source_sha256": {
-    "C29-verified-probe-recovery-2026-11-17.md": "7f73ff88b790d8b44cec7b9d5c5ac1fae7499fe40d10337a5b9fa5fa92f78691",
-    "c29_deepdecoy_test.py": "043aa6c3d153c26ebce53a65f2eeebe1a408fe5bae6ff1177db382fec75e5649",
-    "c29_gallery.py": "550ab5ea65991d6ffe70c8554187384f98ecbcf1700a9f547ad6eb4bae5f00dd",
-    "c29_probe_recovery.py": "c377dcd01ca362bd7b4dccfe0ddda1b0e92349126fa2007957f46f66faf14388",
-    "test_c29_probe_recovery.py": "7844b3e1e11dc6fb2063b75db73ecf0fd143eab50f1c79bcc41126ccb1666d3d"
-  },
+  "source_commit_sha": "d8f6282c1c6053adc2c8a39ba89508d25c0bf442",
+  "source_sha256": {},
+  "source_smoke_ci": "https://github.com/techrote/DRIV3R/actions/runs/44035661189",
+  "source_smoke_ci_conclusion": "success",
   "training_input_sha256": "60f66bf01f528baa2661a573ed246415cc6e67c51e9cf5aa36c87b28d9ac1f71"
 }
