@@ -4,15 +4,17 @@
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "role": "DATA ONLY: synthetic terminal-outcome-solved corpus, not policy trainer",
-  "version": "suffix-outcome-forks-v25",
-  "source": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
-  "source_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
-  "test": "experiments/driv3r/corpus_factory/test_outcome_forks_v25.js",
-  "test_sha256": "a2aacfba15540435303e5301cda43df3ae9cd85909ff72a5dd83a7722483eb92",
-  "manifest": "experiments/driv3r/corpus_factory/V25_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "5a55a0987374c422e444a7809a927a086f48968a6b9f63ede2d7a904747ed180",
-  "best_checkpoint_or_artifact": "Reproducible six-shard synthetic v25 corpus generated locally; NO trained SLM checkpoint and NO immutable Actions shard artifact",
+  "role": "DATA ONLY: synthetic causal-gate and accepted-wrong-branch recovery corpus; not policy trainer",
+  "version": "causal-gate-v26",
+  "source": "experiments/driv3r/corpus_factory/causal_gate_v26.js",
+  "source_sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c",
+  "source_dependency": "experiments/driv3r/corpus_factory/outcome_forks_v25.js",
+  "dependency_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
+  "test": "experiments/driv3r/corpus_factory/test_causal_gate_v26.js",
+  "test_sha256": "6f172afef2e6e6a9f4da90c43151d626c873aea971bfb71ad9fcb60a53275b8b",
+  "manifest": "experiments/driv3r/corpus_factory/V26_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "4425b93d05469a2dec1d2211a2b49c81e9417af8343424276b6632ae23c76bb2",
+  "best_checkpoint_or_artifact": "Reproducible local 6-shard v26 synthetic corpus; NO trained SLM checkpoint and NO immutable Actions shard artifact",
   "splits": {
     "TRAIN": {
       "groups": 8,
@@ -26,25 +28,30 @@
         6,
         7
       ],
-      "episodes": 64,
-      "decisions": 904,
-      "unique_inputs": 792,
-      "duplicate_inputs": 112,
+      "episodes": 128,
+      "clean_episodes": 64,
+      "wrong_first_recovery_episodes": 64,
+      "decisions": 1984,
+      "unique_inputs": 1744,
+      "duplicate_inputs": 240,
       "first_action": {
         "BACKTRACK": 32,
         "MOVE_N": 32
       },
-      "blocked_distal_spur": {
-        "BACKTRACK": 16,
-        "MOVE_N": 16
+      "gate_initial": {
+        "open": 32,
+        "closed": 32
       },
-      "open_distal_spur": {
-        "BACKTRACK": 16,
-        "MOVE_N": 16
-      },
-      "paint_actions": 128,
-      "retrace_actions": 156,
-      "min_counterfactual_regret": 2
+      "gate_transitions": 128,
+      "causal_clean_episode_count": 12,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 43,
+      "frozen_gate_illegal_clean_only": 3,
+      "frozen_gate_strict_regret_clean_only": 37,
+      "strict_causal_clean_episodes": 12,
+      "paint_actions": 256,
+      "erase_actions": 0,
+      "retrace_actions": 334,
+      "min_first_regret": 2
     },
     "DEV": {
       "groups": 4,
@@ -54,25 +61,30 @@
         3,
         4
       ],
-      "episodes": 32,
-      "decisions": 512,
-      "unique_inputs": 512,
+      "episodes": 64,
+      "clean_episodes": 32,
+      "wrong_first_recovery_episodes": 32,
+      "decisions": 1148,
+      "unique_inputs": 1148,
       "duplicate_inputs": 0,
       "first_action": {
         "BACKTRACK": 16,
         "MOVE_N": 16
       },
-      "blocked_distal_spur": {
-        "BACKTRACK": 8,
-        "MOVE_N": 8
+      "gate_initial": {
+        "open": 16,
+        "closed": 16
       },
-      "open_distal_spur": {
-        "BACKTRACK": 8,
-        "MOVE_N": 8
-      },
-      "paint_actions": 64,
-      "retrace_actions": 80,
-      "min_counterfactual_regret": 2
+      "gate_transitions": 64,
+      "causal_clean_episode_count": 10,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 42,
+      "frozen_gate_illegal_clean_only": 2,
+      "frozen_gate_strict_regret_clean_only": 38,
+      "strict_causal_clean_episodes": 10,
+      "paint_actions": 128,
+      "erase_actions": 0,
+      "retrace_actions": 160,
+      "min_first_regret": 2
     },
     "HELDOUT": {
       "groups": 4,
@@ -82,55 +94,68 @@
         3,
         4
       ],
-      "episodes": 32,
-      "decisions": 600,
-      "unique_inputs": 600,
+      "episodes": 64,
+      "clean_episodes": 32,
+      "wrong_first_recovery_episodes": 32,
+      "decisions": 1320,
+      "unique_inputs": 1320,
       "duplicate_inputs": 0,
       "first_action": {
         "BACKTRACK": 16,
         "MOVE_N": 16
       },
-      "blocked_distal_spur": {
-        "BACKTRACK": 8,
-        "MOVE_N": 8
+      "gate_initial": {
+        "open": 16,
+        "closed": 16
       },
-      "open_distal_spur": {
-        "BACKTRACK": 8,
-        "MOVE_N": 8
-      },
-      "paint_actions": 64,
-      "retrace_actions": 80,
-      "min_counterfactual_regret": 2
+      "gate_transitions": 64,
+      "causal_clean_episode_count": 8,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 38,
+      "frozen_gate_illegal_clean_only": 0,
+      "frozen_gate_strict_regret_clean_only": 38,
+      "strict_causal_clean_episodes": 8,
+      "paint_actions": 128,
+      "erase_actions": 0,
+      "retrace_actions": 160,
+      "min_first_regret": 2
     }
   },
   "metrics": {
-    "episodes": 128,
-    "labelled_decisions": 2016,
-    "oracle_goal_completion": "128/128",
-    "max_step_regret_on_wrong_first_action_min": 2,
-    "blocked_proxy_accuracy_ceiling": 0.5,
-    "latest64_first_action_ceiling": 0.5,
-    "duplicate_train_downweighted": 112,
-    "conflicting_observation_labels": 0,
-    "split_geometry_overlap": 0,
-    "cross_split_input_overlap": 0,
-    "full_deterministic_generations": 2,
-    "generator_wall_seconds_range": [
-      14.78,
-      15.76
+    "world_groups": 16,
+    "episodes": 256,
+    "clean_episodes": 128,
+    "accepted_wrong_first_recovery_episodes": 128,
+    "labelled_decisions": 4452,
+    "oracle_goal_completion": "256/256",
+    "accepted_gate_transitions": 256,
+    "accepted_expert_paint_operations": 512,
+    "accepted_expert_erasures": 0,
+    "clean_first_action_BALANCED": "64 BACKTRACK / 64 MOVE_N; half open/closed per group",
+    "min_accepted_alternative_first_action_regret": 2,
+    "causally_consequential_clean_episodes": 30,
+    "frozen_gate_illegal_recommendations": 5,
+    "frozen_gate_strict_regret_recommendations": 113,
+    "negative_causal_control_clean_episodes": 98,
+    "duplicate_train_downweighted": 240,
+    "conflicting_full_input_labels": 0,
+    "cross_split_exact_input_overlap": 0,
+    "two_byte_identical_full_generations": true,
+    "generator_wall_seconds": [
+      31.16,
+      29.29
     ],
-    "generator_peak_rss_kib_range": [
-      518368,
-      519528
+    "generator_peak_rss_kib": [
+      535992,
+      468300
     ],
-    "actual_SLM_updates_or_forwards": 0
+    "actual_SLM_forward_or_updates": 0
   },
-  "known_failure": "DISTAL blockage is matched irrelevant distractor, not causal; small two-of-three paint tasks and simple graph grammar; remote scan and prefix scripted; no native CyberSand observation/action ABI verification; no actual SLM or immutable Actions artifacts.",
-  "negative_result": "LFM and long_horizon blocked-spur RETRACE proxy labels have worsened 128-turn sustained painting despite improved local matches; this lane switches to exhaustive suffix outcome supervision with >=2-step regret.",
-  "consumer_protocol": "Read episodes.initial_history; append ordered decision.events_added and .positions_added; reconstruct exactly using observation_keys and state; check model_input_sha256; only feed reconstructed model input, never target/receipt/difficulty/blocked_distal_spur or suffix costs. Respect TRAIN training_weight and world_group split.",
-  "next_useful_consumer_experiment": "Pinned actual LFM/Sprocket closed-loop HELDOUT full-history vs last64 vs blocked-only vs symbolic oracle; measure first-action stratified decision, realized regret, 2-of-3 quota terminal success, premature STOP, recovery, p50/p95/p99 inference latency and peak model RSS.",
+  "known_failure": "Synthetic v25-derived loop grammar; only 30/128 clean oracle routes causally discriminate gate freeze; no model-controlled policy or native CyberSand ABI acceptance. No expert erase actions. No immutable Actions shard artifact.",
+  "negative_result": "An actual gate transition is not sufficient evidence of causal route demand: 98/128 clean episodes show no strictly harmful frozen-gate choice on expert suffix. Earlier v25 distal blockage was a distractor, not causal. Avoid promoting easy gate cases as hard positive examples.",
+  "consumer_protocol": "Read episode initial_history; replay ordered decision events_added/positions_added; reconstruct complete model input using observation_keys and state; validate model_input_sha256. Feed only reconstructed observation, never target, receipt, difficulty, intervention descriptor, frozen-gate audit or suffix cost. Respect TRAIN weights, DEV selection, untouched HELDOUT.",
+  "next_useful_consumer_experiment": "Pinned real LFM/Sprocket CPU model closed-loop HELDOUT on strict-causal vs negative-control gate worlds and accepted-wrong-first recoveries; compare full remote memory vs latest64 vs frozen-gate vs symbolic oracle. Report terminal goal/paint correctness, false BACKTRACK, premature STOP, realized regret, action refusal, p50/p95/p99 inference latency, model peak RSS.",
   "synthetic_host_not_native": true,
   "paid_compute_used": false,
   "cybersand_or_neurounner_writes": false,
-  "owner_merge_gate": "DRAFT/HOLD; DO NOT MERGE, PROMOTE READY, OR WRITE DRIV3R main"
+  "owner_merge_gate": "DRAFT/HOLD; do not merge/promote Ready/auto-merge; no DRIV3R main edits"
 }
