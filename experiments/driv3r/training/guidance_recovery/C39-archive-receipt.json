@@ -1,0 +1,29 @@
+{
+  "allowed_branch": "research/import-consolidated-worm-labs",
+  "allowed_pr": 1,
+  "allowed_repository": "techrote/DRIV3R",
+  "archive_bytes": 643788,
+  "archive_name": "driv3r_guidance_recovery_C39_action_conditional_2026-11-17.zip",
+  "archive_sha256": "e34dd13d19fe1574b258ac6e7e9f11aa40d0863791ba703178f07324b10dd73a",
+  "artifact_custody": "Local SHA-256-verified archive only. Not GitHub Actions immutable-artifact custody.",
+  "audit_source_sha256": "cc810cd23324111cc28b66e2e1df6755fcbf30c755295d4771927952c510ea98",
+  "checkpoint_sha256": {
+    "C39-ALIGNED": "acffa5abc5a2d210954eed3ff615ca50f630121c931178e8901cdac2c7611cc2",
+    "C39-RANDOM": "7645e112378b47bc67013d678ef5d38a8e18020885cc667513848db83fd2badf",
+    "C39-SHUFFLED": "c4cdad8f5ee016301ffeeb106410fc80a031d823893b05163f60182ed5cc45fd"
+  },
+  "covered_file_count": 141,
+  "date": "2026-11-17",
+  "full_trajectories_sha256": {
+    "out/C39-cohort-A.json": "7f7c8696c6ad1f4b4c13238626f2488b24c89bdf30f1d95d3bbb27cdd4efbec3",
+    "out/C39-cohort-B.json": "6012a56043fccdf9466f1900756487643de6b2dfa76e74d176e93f40b0f84d01",
+    "out/C39-cohort-C.json": "383d9d6dca17e2ba0246a6c97f048ef77f2f74861a87ef546fd48f38357477b7",
+    "out/C39-cohort-D.json": "61ff0c74ba40e895460fcd6ec8e0534ba9d1518cb406b77e3d85398552ddf525",
+    "out/C39-cohort-E.json": "9671202fa836a60cb77ccc5d101ae5bab013d3f7656db9a23a34ae4c5c73eacc",
+    "out/C39-cohort-F.json": "567554c640038dd5c403084f51fa52054d24cd0812fe7c94d72111b1dd629920"
+  },
+  "research_status": "Rejected for promotion: 2 condition-level regressions and inconclusive graph-cluster uncertainty.",
+  "schema": "driv3r-c39-custody/1",
+  "source_sha256": "1af85ba6590934e5ef89c856a209fbd1b4badfddba75422e2c768c6dc9fd0de7",
+  "test_source_sha256": "3aef39a23d05922b71a7f55a76e62152aee1551fbed652ac5776a1301ff37471"
+}
