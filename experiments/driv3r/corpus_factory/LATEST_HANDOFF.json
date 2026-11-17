@@ -1,60 +1,42 @@
 {
   "schema": "driv3r/corpus_factory/handoff-v1",
   "updated_utc": "2026-11-17",
-  "research_home": "techrote/DRIV3R",
+  "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "pull_request": 1,
-  "version": "recipe-grounded-v21",
-  "role": "DATA ONLY — publicly observed recipe and unseen material laws; NOT policy training",
-  "source": "experiments/driv3r/corpus_factory/recipe_grounded_v21.js",
-  "source_git_blob": "19e8b18139263850930666cae119f58f8b993c82",
-  "test": "experiments/driv3r/corpus_factory/test_recipe_grounded_v21.js",
-  "test_git_blob": "39ba1abd5e757eefe64619f79ba7932e0cd8b8c0",
-  "manifest": "experiments/driv3r/corpus_factory/V21_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "0b98ffd189c4b8eea30a384852627b42055013fa4b15293f7ed81d25e4f2bdb5",
-  "artifact_command": "node experiments/driv3r/corpus_factory/recipe_grounded_v21.js NEW_EMPTY_DIRECTORY 1",
-  "best_checkpoint_or_artifact": "reproducible six-shard synthetic v21 corpus; no model checkpoint or immutable Actions artifact",
+  "version": "public-law-pulse-v22",
+  "role": "DATA ONLY; synthetic observed law changes, retarget and corrective painting, not policy training",
+  "source": "experiments/driv3r/corpus_factory/curriculum_pulse_v22.js",
+  "source_git_blob": "b6f744216859eb91bec925a42f053153c85a7d0d",
+  "test": "experiments/driv3r/corpus_factory/test_curriculum_pulse_v22.js",
+  "test_git_blob": "34d2e3d78ec0945741d8fa92b735fbad02ed0527",
+  "parent_source_git_blob": "19e8b18139263850930666cae119f58f8b993c82",
+  "manifest": "experiments/driv3r/corpus_factory/V22_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "7cfab215221cd3c4094719c4d0b145f5bc8aba5d6148450f91abfe9c683bcc63",
+  "artifact_command": "node experiments/driv3r/corpus_factory/curriculum_pulse_v22.js NEW_EMPTY_DIRECTORY 1",
+  "best_checkpoint_or_artifact": "six-shard reproducible v22 synthetic game-policy corpus; no neural checkpoint or immutable Actions artifact",
   "split_counts": {
-    "TRAIN": {
-      "world_groups": 20,
-      "episodes": 160,
-      "labels": 6880,
-      "unique_full_inputs": 6640,
-      "downweighted_duplicates": 240
-    },
-    "DEV": {
-      "world_groups": 8,
-      "episodes": 64,
-      "labels": 3920,
-      "unique_full_inputs": 3908
-    },
-    "HELDOUT": {
-      "world_groups": 8,
-      "episodes": 64,
-      "labels": 4848,
-      "unique_full_inputs": 4836
-    }
+    "TRAIN": {"groups": 24, "episodes": 192, "labels": 12488, "corrective_erases": 384, "public_pulses": 192, "zero_weight_duplicates": 872},
+    "DEV": {"groups": 8, "episodes": 64, "labels": 7144, "corrective_erases": 256, "public_pulses": 80},
+    "HELDOUT": {"groups": 8, "episodes": 64, "labels": 10200, "corrective_erases": 352, "public_pulses": 96}
   },
-  "metrics": {
-    "total_episodes": 288,
-    "oracle_completions": 288,
-    "total_labels": 15648,
-    "exact_duplicate_full_inputs": 264,
-    "conflicting_identical_labels": 0,
-    "local_regression": "11/11 PASS",
+  "qualification": {
+    "synthetic_oracle_success": "320/320",
+    "node_regression_sections": "9/9 PASS",
     "deterministic_full_generations": 2,
-    "generation_wall_seconds": 2.94,
-    "generator_peak_rss_kib": 73776,
-    "named_slm_weight_updates": 0,
-    "v20_conflicting_identical_canvas_observations": 44,
-    "v21_conflicting_identical_canvas_observations": 0
+    "cross_split_exact_input_overlaps": 0,
+    "contradictory_full_input_labels": 0,
+    "accepted_illegal_oracle_actions": 0,
+    "generator_wall_seconds": 7.78,
+    "generator_peak_rss_kib": 236596,
+    "new_named_slm_weight_updates": 0,
+    "new_named_slm_rollouts": 0
   },
-  "critical_fix": "V20 paint oracle used a hidden world palette and implicit slot index absent from observation. V21 exposes world-local paint law and visible nearby canvas slot, with distinct patterns on DEV and HELDOUT. TRAIN exact duplicate inputs are zero-weighted without loss of replay.",
-  "known_failure": "XOR route remains a simple symbolic rule; corridor skeleton and prelude scripted; no native CyberSand ABI acceptance or SLM-controlled rollout; LFM/Sprocket root caches and opt-in dispatch unavailable; shards not immutable Actions artifacts",
-  "next_useful_consumer_experiment": "Pinned real LFM/Sprocket closed-loop TRAIN/DEV selection then once-only HELDOUT transfer to unseen paint laws; compare full history vs last64/2-bit/zero-history, terminal correctness, reject counts, p50/p95 inference latency and RSS. No tiny-surrogate substitute.",
-  "provenance": "derived from archived v20 synthetic host; neither CyberSand nor Neurounner modified",
-  "paid_compute": false,
-  "game_files_modified": false,
-  "main_unchanged": true,
-  "science_fix": "undefined Matched canvas-state audit: v20 44 contradictions among 56 repeated full observations; v21 0 among 8."
+  "known_failure": "Synthetic v21 two-workshop/XOR grammar, scripted prelude, no native CyberSand acceptance or executed actual pretrained SLM; public palette swap is not chemical reaction; shards not immutable Actions artifacts",
+  "next_useful_consumer_experiment": "Pinned actual LFM/Sprocket/SmolLM train-on-TRAIN select-on-DEV then once-only model-controlled HELDOUT replay. Compare full history versus last64 and law/goal pulse ablations for exact motif, wrong-branch residue, accepted/rejected actions, latency p50/p95 and RSS. Do not use a tiny surrogate as main evidence.",
+  "training_permission": "data label generator only; no policy trained",
+  "synthetic_host_not_native": true,
+  "paid_compute_used": false,
+  "cybersand_or_neurounner_writes": false,
+  "main_unchanged": true
 }
