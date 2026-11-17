@@ -9,7 +9,7 @@
   "source": "experiments/driv3r/corpus_factory/recipe_grounded_v21.js",
   "source_git_blob": "19e8b18139263850930666cae119f58f8b993c82",
   "test": "experiments/driv3r/corpus_factory/test_recipe_grounded_v21.js",
-  "test_git_blob": "14a4e8b69341e110af85cb211f88bc111962c63e",
+  "test_git_blob": "39ba1abd5e757eefe64619f79ba7932e0cd8b8c0",
   "manifest": "experiments/driv3r/corpus_factory/V21_DEFAULT_MANIFEST.json",
   "generated_manifest_sha256": "0b98ffd189c4b8eea30a384852627b42055013fa4b15293f7ed81d25e4f2bdb5",
   "artifact_command": "node experiments/driv3r/corpus_factory/recipe_grounded_v21.js NEW_EMPTY_DIRECTORY 1",
@@ -41,11 +41,13 @@
     "total_labels": 15648,
     "exact_duplicate_full_inputs": 264,
     "conflicting_identical_labels": 0,
-    "local_regression": "10/10 PASS",
+    "local_regression": "11/11 PASS",
     "deterministic_full_generations": 2,
     "generation_wall_seconds": 2.94,
     "generator_peak_rss_kib": 73776,
-    "named_slm_weight_updates": 0
+    "named_slm_weight_updates": 0,
+    "v20_conflicting_identical_canvas_observations": 44,
+    "v21_conflicting_identical_canvas_observations": 0
   },
   "critical_fix": "V20 paint oracle used a hidden world palette and implicit slot index absent from observation. V21 exposes world-local paint law and visible nearby canvas slot, with distinct patterns on DEV and HELDOUT. TRAIN exact duplicate inputs are zero-weighted without loss of replay.",
   "known_failure": "XOR route remains a simple symbolic rule; corridor skeleton and prelude scripted; no native CyberSand ABI acceptance or SLM-controlled rollout; LFM/Sprocket root caches and opt-in dispatch unavailable; shards not immutable Actions artifacts",
@@ -53,5 +55,6 @@
   "provenance": "derived from archived v20 synthetic host; neither CyberSand nor Neurounner modified",
   "paid_compute": false,
   "game_files_modified": false,
-  "main_unchanged": true
+  "main_unchanged": true,
+  "science_fix": "undefined Matched canvas-state audit: v20 44 contradictions among 56 repeated full observations; v21 0 among 8."
 }

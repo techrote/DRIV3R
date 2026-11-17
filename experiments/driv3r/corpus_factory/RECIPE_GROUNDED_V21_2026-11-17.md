@@ -23,12 +23,15 @@ In TRAIN, 240 exactly repeated, same-label full model inputs are retained with `
 
 All 288 expert episodes complete in the synthetic host. There were 288 shutter events, 104 deliberately refused prelude protected moves, zero accepted protected entries and zero subsequent illegal expert actions. The historical three-receipt counterfactual families still show balanced NORTH/SOUTH first moves under last-64 or any one-/two-receipt restriction (50% theoretical ceiling); this is not measured neural-model accuracy. Additional tests show same-workshop siblings needing opposite paints at the same local tile when the old receipt-derived phase differs.
 
-Qualification: **10/10 standalone Node.js regression sections PASS**, including two independent byte-identical full six-shard generations, oracle trajectory replay, public recipe audit, unseen-law split checks, legal-actions and duplicate weights. One independent full generator run took 2.94 seconds and peaked at 73,776 KiB RSS (Node.js 22.16.0, Linux). These are *generator*, not SLM inference, metrics.
+Qualification: **11/11 standalone Node.js regression sections PASS**, including two independent byte-identical full six-shard generations, oracle trajectory replay, public recipe audit, unseen-law split checks, legal-actions and duplicate weights. One independent full generator run took 2.94 seconds and peaked at 73,776 KiB RSS (Node.js 22.16.0, Linux). These are *generator*, not SLM inference, metrics.
 
 Source Git blob: `19e8b18139263850930666cae119f58f8b993c82`.
 Test Git blob: `14a4e8b69341e110af85cb211f88bc111962c63e`.
 Generated `manifest.json` SHA-256: `0b98ffd189c4b8eea30a384852627b42055013fa4b15293f7ed81d25e4f2bdb5`.
 `V21_DEFAULT_MANIFEST.json` pins the six JSONL shard hashes, byte sizes and row counts. Large generated shards are deliberately **not committed** to Git.
+
+
+**Direct identifiability falsification:** At a matching first canvas cell across all 288 episode variants, v20 produced 56 identical complete model-visible observation repeats, **44 of which demanded conflicting paint actions** (e.g. identical input required PAINT_SAND in one world and PAINT_METAL in another). The v21 corrected projection produced 8 repeated inputs and **zero conflicting labels** among the same 288 candidate states. Regression #10 enforces that property for all world groups. This demonstrates that the v20 hidden palette was a real data defect rather than a speculative convenience issue.
 
 ## Reproduction and consumer contract
 

@@ -89,6 +89,17 @@ test('counterfactual siblings may require opposite paint while local tiles and p
   assert(!JSON.stringify(oa).includes('private_target'));
  }
 });
+test('globally ambiguous canvas observations cannot demand contradictory paint actions',()=>{
+ const states=new Map();let repeats=0;
+ for(const [split,cfg] of Object.entries(v.SPLITS))for(let group=0;group<cfg.groups;group++)for(let variant=0;variant<8;variant++){
+  const rec=v.makeRecord(split,group,variant),host=v.createHost(rec);
+  host.pos=rec.world.patches[rec.private_target.active][0];
+  const signature=digest(JSON.stringify(v.observe(host))),required=v.oracleAction(host);
+  if(states.has(signature)){repeats++;assert.equal(states.get(signature),required,'unobservable conflicting label');}
+  else states.set(signature,required);
+ }
+ assert(repeats>0);assert.equal(states.size,280);
+});
 test('CLI shards, hashes, reproducibility, overwrite rejection and counts',()=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'driv3r-v21-test-'));try{
   const a=path.join(tmp,'a'),b=path.join(tmp,'b'),one=v.recordStream(a),two=v.recordStream(b);
@@ -98,4 +109,4 @@ test('CLI shards, hashes, reproducibility, overwrite rejection and counts',()=>{
   assert(one.decisions>10000);
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
-console.log(`${passes}/10 sections PASS`);
+console.log(`${passes}/11 sections PASS`);
