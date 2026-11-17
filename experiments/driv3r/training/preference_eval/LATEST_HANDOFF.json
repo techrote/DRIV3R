@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P20",
-  "status": "P20_ORIGINAL_PRODUCER_STOP_PREFIX_CONFOUND_CONFIRMED_NO_RANKER_PROMOTION",
-  "latest_findings": "P20_FINDINGS.md",
+  "latest": "P21",
+  "status": "P21_36_ORIGINAL_PRETRAINED_LFM350_128TURN_EPISODES_SOURCE_VERIFIED_NO_RANKER_PROMOTION",
+  "latest_findings": "P21_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -51,7 +51,7 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "P20 reverified original P19/P18/P10 sources: 18/18 W16 style pairs are SAME frozen W16 movement actions until early STOP, so only continuation length differs; 53/57 non-tie assistant (not human) ratings prefer longer; only 10 cross-model historical nonidentical pairs from three original world blocks. P19 proxy ranker remains rejected.",
+  "negative_result": "P21 original full-LFM350 source-matched 128-turn trajectories show mostly straight greedy paths despite high coverage; GP010 sparsely BRANCHes only Greebles and lowers coverage; 8/12 GP006-vs-GP010 paths identical. P19 and P20 proxy rankers remain rejected; zero owner labels.",
   "artifact_status": "P20_LOCAL_CPU_ORIGINAL_INPUT_ZIP_CHECKED_NOT_ACTIONS_IMMUTABLE; source/tests/audit committed; original A4 SVGs regenerable",
   "local_tests": "P20 strict source-auditor 2/2 PASS; P19 producer check re-executed; 18/18 W16 STOP-only prefix verified",
   "new_model_forwards": 0,
@@ -67,9 +67,11 @@
     "P19 source and tiny checkpoint evidence is LOCAL only; no immutable DRIV3R Actions model artifacts.",
     "P20 original-source audit: all 18 W16 paired training/test candidate paintings are same-policy STOP truncations; correlated assistant visual labels favor longer in 53/57 non-ties, so P19 labels are unsuitable for independent artistic preference training.",
     "Cross-model aesthetic evidence remains only 10 historical nonidentical comparisons across 3 world blocks, plus 9 identical original pretrained LFM350 stock/step96 LoRA trajectories; zero blind owner judgments.",
-    "Real pretrained model roots/tokenizers unavailable in this CPU runner, no permitted explicit opt-in Actions dispatch; cannot truthfully claim fresh LFM GP350-018, Tiny M19, Population P20, Sprocket or Franken W20 original model outputs."
+    "Real pretrained model roots/tokenizers unavailable in this CPU runner, no permitted explicit opt-in Actions dispatch; cannot truthfully claim fresh LFM GP350-018, Tiny M19, Population P20, Sprocket or Franken W20 original model outputs.",
+    "P21 only 2 independent original seed blocks despite 36 source episodes and 36 matched pairs; cannot infer cross-model held-out creative preference superiority.",
+    "GP350-018 changing-observation sampled decoder and Tiny/Population/Franken pretrained heldout rollouts not yet executable; no legal Actions dispatch or pinned weights here."
   ],
-  "next_consumer_experiment": "Predeclared source/world-disjoint real pretrained GP350-018 matched decoding plus Tiny/Population/Franken original applied trajectories, blind owner four-niche A/B/TIE/SKIP (use P20 ten-pair historical deck as limited pilot); then evaluate learned ranking vs explicit controls. W16 STOP-prefix pairs are termination-length controls only, not model style pairs.",
+  "next_consumer_experiment": "Gather genuinely changing-observation GP350-018 greedy/sampled matched decoding and fresh Tiny/Population/Franken original pretrained outputs with world-disjoint trials and blind owner niche judgments; evaluate pairwise ranker only with independent owner-labelled comparisons",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -151,5 +153,55 @@
     "new_optimizer_updates": 0,
     "promotion": false,
     "qualification": "LOCAL_ONLY_NO_IMMUTABLE_ACTIONS_MODEL_ARTIFACT"
+  },
+  "p21": {
+    "evidence_file": "P21_EVIDENCE.json",
+    "source": "original read-only historical pretrained LFM2.5-350M GP350-012 hosted artifacts, actual 128-turn W0 closed-loop applied trajectories; NOT fresh inference",
+    "world_blocks": 12,
+    "independent_seeds": 2,
+    "source_original_episodes": 36,
+    "host_legal_applied_actions": 4608,
+    "illegal_applied_actions": 0,
+    "matched_three_stage_pairs": 36,
+    "nonidentical_pairs": 28,
+    "identical_pairs": 8,
+    "stages": {
+      "stock": {
+        "mean_distinct_cells": 124.66667,
+        "mean_90deg_turn_rate": 0.04134,
+        "branch_actions": 0,
+        "stop_actions": 0
+      },
+      "gp350006": {
+        "mean_distinct_cells": 128.5,
+        "mean_90deg_turn_rate": 0.04921,
+        "branch_actions": 0,
+        "stop_actions": 0
+      },
+      "gp350010_step24": {
+        "mean_distinct_cells": 124.33333,
+        "mean_90deg_turn_rate": 0.08858,
+        "branch_actions": 9,
+        "stop_actions": 0
+      }
+    },
+    "gp006_vs_gp010_distinct_worlds": "4/12",
+    "source_archives_sha256": {
+      "stock": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+      "gp006": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+      "gp010": "fa6296ad600176b366b367965b86118fc432a92a63f55c8e0b5a44c488258920"
+    },
+    "artifact_ids": {
+      "stock": 14248333879,
+      "gp006": 14244806761,
+      "gp010": 14245172930
+    },
+    "original_a4_blind_svg_sheets": 6,
+    "owner_human_ratings": 0,
+    "local_tests": "4/4 PASS; source-ZIP checksum/CRC, per-image producer hash, legal-menu and event/position alignment checks",
+    "new_pretrained_root_forwards": 0,
+    "new_adapter_training_updates": 0,
+    "limits": "synthetic W0; not native; only two independent seeds; no human artistic preferences; sources historical, not new model training; original three ZIP and A4 artifact in local evidence, not DRIV3R Actions",
+    "next": "Gather genuinely changing-observation GP350-018 greedy/sampled matched decoding and fresh Tiny/Population/Franken original pretrained outputs with world-disjoint trials and blind owner niche judgments; evaluate pairwise ranker only with independent owner-labelled comparisons"
   }
 }
