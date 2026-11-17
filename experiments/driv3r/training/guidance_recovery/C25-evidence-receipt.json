@@ -1,0 +1,67 @@
+{
+  "checkpoint_sha256": {
+    "C25-NOMEM": "8aa08d5fe0bd7c599acb92037e869bd8d70deb3e849d56fe61f2d7e3ab6df065",
+    "C25-ONLINE": "b71bf801761eabef8f3dbe217b7dafe3a0cb5aadf3243872375c1c3d3fe60080"
+  },
+  "cohorts": {
+    "a": {
+      "eval_seed": 250999,
+      "guided_goal_success": {
+        "C12": 445,
+        "C18-A0": 457,
+        "C25-NOMEM": 457,
+        "C25-ONLINE": 461
+      },
+      "heldout_episodes": 2880,
+      "metrics_sha256": "d7856a1b0a23d3aeac2cb8d471cb3f4fc1f6d8e94b3398c0086f60067cddfba8",
+      "regression_groups": {
+        "C25-NOMEM": 3,
+        "C25-ONLINE": 1
+      }
+    },
+    "b": {
+      "eval_seed": 251999,
+      "guided_goal_success": {
+        "C12": 585,
+        "C18-A0": 620,
+        "C25-NOMEM": 619,
+        "C25-ONLINE": 612
+      },
+      "heldout_episodes": 3840,
+      "metrics_sha256": "12417881a7612c61b4e73393e88c97cf4cab63a0427c0ef34f961d19998af7ec",
+      "regression_groups": {
+        "C25-NOMEM": 3,
+        "C25-ONLINE": 4
+      }
+    }
+  },
+  "date": "2026-11-17",
+  "disposition": "rejected; C18-A0 remains preferred untrained control, C12 preferred trained model",
+  "epochs": 12,
+  "feedback_nonzero_menus": 499,
+  "gallery_generator_sha256": "4508ec6fa7c7ab3e3ff90ecd94848d21066c540e5e4b65041b376f3c5b373b6e",
+  "limitations": [
+    "synthetic research-only host",
+    "no native CyberSand ABI qualification",
+    "immutable GitHub Actions checkpoint custody not achieved",
+    "full exact-HEAD scientific reproduction in repository not established"
+  ],
+  "local_unit_tests_passed": 169,
+  "optimizer_repetition_byte_identical": true,
+  "prerequisites": {
+    "base": "8c8625a1bd8daed03e00188687dbba9732634c7bf7b8e7be5a4fa21cb310ac09",
+    "c11": "a402c30bf628ae1cfffc3bba788654ce460ac9c3029ef4ced7dd7d5223a11bc7",
+    "c12": "180075041fdc61b8ec0e22216780b4a7c76169829dffd43734a9d46c19be80cf",
+    "c4": "f1d538200c0d5e183d46463a9058f73db162a5dcccf13daeb521073da9bfc0fa",
+    "c7": "9ddadf372465abca9634eca8bf450cb03e5903434da8065de588511b44b5da9a",
+    "c8": "b1d485773fd33d760d7a41f1bb90b3aa23e208f1241c7dfcabb04cef1aa697bd",
+    "c9": "03ac2de36e480b26fd16b86637899ddeaf7221431d13762fbc0b0181f75b2366"
+  },
+  "schema": "driv3r-c25-evidence-receipt/1",
+  "source_sha256": "66195d799ba182ba8d8b2ba0432a12e096bd53312bf8df1429c1683a2af640e2",
+  "tests_sha256": "9b4cee20fabcbf3fe42ca8d53ad8d6123ca6ed9894862fb91c1b6078fbe2389e",
+  "train_counterfactual_suffixes": 2534,
+  "train_menus": 1267,
+  "training_data_sha256": "2f3c8eb4e56bf9ba9db8786de28fbdac040815027bb230f244b278ffad6d0996",
+  "updates_per_head": 240
+}
