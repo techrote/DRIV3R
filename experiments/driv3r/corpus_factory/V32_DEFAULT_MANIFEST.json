@@ -1,0 +1,148 @@
+{
+  "schema": "driv3r/corpus_factory/causal-shortcut-v32/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "causal_shortcut_v32.js",
+  "generator_sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2",
+  "dependencies": [
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "quick": false,
+  "oracle": "exact reverse BFS of five-ternary-target status x node position, post-latch, STOP included",
+  "challenge": "Four remote wrong-material locations require four different corrections despite identical public recent64; initial closed root-east gate opens on first accepted paint and produces measured real alternate-route regret against frozen-closed control.",
+  "restricted_first_action_theoretical_ceiling": 0.25,
+  "last_paint_only_first_action_theoretical_ceiling": 0.25,
+  "consumer_warning": "Use reconstructed observation or bounded_model_input only; episode metadata/hidden_interventions/split/pair_id/oracle labels are not policy inputs. JSON length cap is characters, not tokenizer tokens.",
+  "limitations": [
+    "Synthetic graph and scripted host-accepted prelude, no native CyberSand acceptance.",
+    "Causal gate effect is evaluated after a scripted paint; not proof of adaptive learned action.",
+    "Only five paintable targets, a single gate and simple radial corridors.",
+    "No real SLM training or latency/RSS measured."
+  ],
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "worlds_considered": 64,
+      "strict_four_way_worlds": 64,
+      "rejected": [],
+      "episodes": 256,
+      "decisions": 7328,
+      "corrective_erasures": 512,
+      "first_action": {
+        "MOVE_W": 64,
+        "MOVE_E": 64,
+        "MOVE_S": 64,
+        "BACKTRACK": 64
+      },
+      "min_wrong_first_regret": 2,
+      "strict_frozen_gate_first_disagreements": 64,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 7328
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "strict_four_way_worlds": 32,
+      "rejected": [],
+      "episodes": 128,
+      "decisions": 6208,
+      "corrective_erasures": 256,
+      "first_action": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "min_wrong_first_regret": 2,
+      "strict_frozen_gate_first_disagreements": 32,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 6208
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "worlds_considered": 32,
+      "strict_four_way_worlds": 32,
+      "rejected": [],
+      "episodes": 128,
+      "decisions": 8448,
+      "corrective_erasures": 256,
+      "first_action": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "min_wrong_first_regret": 2,
+      "strict_frozen_gate_first_disagreements": 32,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_full_inputs": 8448
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 5883344,
+      "sha256": "dd3f4769c899f0ca0d7809baa453e67e1023d5e4afd237fcad56fe3131ff7413"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 7328,
+      "bytes": 16528960,
+      "sha256": "11c527dbe2195227797e544bc8e2660b743811ce39ebd0ae92245a2c8dfe8447"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 128,
+      "bytes": 3515712,
+      "sha256": "407e0e54ad7e0606dcf52b96e028e0e0b9378e6b6db418f7bebf01504788518e"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 6208,
+      "bytes": 16864408,
+      "sha256": "e79afbd0367f04fb3590c22d9c0c7eabec0818a9a4dbe550e11a065fedf1c4ed"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 128,
+      "bytes": 4026752,
+      "sha256": "9ac5381539af49c901e905bcad9b4565a8c225e31ddb9a21d0a2625a4eacc369"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 8448,
+      "bytes": 26653344,
+      "sha256": "75ac7b2759f053d8e7bb1a2182058f3f25b59c54a77554c69f4910e83da017f4"
+    }
+  }
+}
