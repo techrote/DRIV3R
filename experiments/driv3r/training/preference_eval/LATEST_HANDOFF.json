@@ -5,9 +5,9 @@
   "only_writable_pr": 1,
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold": true,
-  "latest": "P21",
-  "status": "P21_36_ORIGINAL_PRETRAINED_LFM350_128TURN_EPISODES_SOURCE_VERIFIED_NO_RANKER_PROMOTION",
-  "latest_findings": "P21_FINDINGS.md",
+  "latest": "P22",
+  "status": "P22_REAL_LFM350_LORA_TENSOR_AND_CAUSALLY_ALIGNED_GREEDY_LOGIT_AUDIT_NO_NEW_ROOT_FORWARD",
+  "latest_findings": "P22_FINDINGS.md",
   "best_source_grounded_control": {
     "kind": "frozen W16 142-feature auxiliary PyTorch MLP; original intact late-STOP synthetic W0 (not pretrained root SLM)",
     "checkpoint_sha256": "f5dc8482a145e39a0bfb10ba94617efad34dc957e3ff485afab3b13726fe90a9",
@@ -51,8 +51,8 @@
     "BRANCHER",
     "CHAOTIC_ARTIST"
   ],
-  "negative_result": "P21 original full-LFM350 source-matched 128-turn trajectories show mostly straight greedy paths despite high coverage; GP010 sparsely BRANCHes only Greebles and lowers coverage; 8/12 GP006-vs-GP010 paths identical. P19 and P20 proxy rankers remain rejected; zero owner labels.",
-  "artifact_status": "P20_LOCAL_CPU_ORIGINAL_INPUT_ZIP_CHECKED_NOT_ACTIONS_IMMUTABLE; source/tests/audit committed; original A4 SVGs regenerable",
+  "negative_result": "Real GP010 LoRA branch pressure rose by roughly 5–7 logit-margin units per family on shared legal observations, yet GP006 vs GP010 paths remained identical 8/12; one Greebles 64-size seed fell from 129 to 89 visited cells. Do not promote aesthetic reward without owner labels.",
+  "artifact_status": "LOCAL_SOURCE_AND_HISTORICAL_ADAPTER_SHA256_VERIFIED_NOT_NEW_DRIV3R_ACTIONS_ARTIFACT",
   "local_tests": "P20 strict source-auditor 2/2 PASS; P19 producer check re-executed; 18/18 W16 STOP-only prefix verified",
   "new_model_forwards": 0,
   "new_optimizer_steps": 0,
@@ -69,9 +69,10 @@
     "Cross-model aesthetic evidence remains only 10 historical nonidentical comparisons across 3 world blocks, plus 9 identical original pretrained LFM350 stock/step96 LoRA trajectories; zero blind owner judgments.",
     "Real pretrained model roots/tokenizers unavailable in this CPU runner, no permitted explicit opt-in Actions dispatch; cannot truthfully claim fresh LFM GP350-018, Tiny M19, Population P20, Sprocket or Franken W20 original model outputs.",
     "P21 only 2 independent original seed blocks despite 36 source episodes and 36 matched pairs; cannot infer cross-model held-out creative preference superiority.",
-    "GP350-018 changing-observation sampled decoder and Tiny/Population/Franken pretrained heldout rollouts not yet executable; no legal Actions dispatch or pinned weights here."
+    "GP350-018 changing-observation sampled decoder and Tiny/Population/Franken pretrained heldout rollouts not yet executable; no legal Actions dispatch or pinned weights here.",
+    "P22 direct original safetensors tensor audit succeeded; fresh LFM root inference remains blocked by missing pinned root weights/runtime and opt-in execution. Same-state logits comparable only through first differing action; two original seeds, zero owner labels."
   ],
-  "next_consumer_experiment": "Gather genuinely changing-observation GP350-018 greedy/sampled matched decoding and fresh Tiny/Population/Franken original pretrained outputs with world-disjoint trials and blind owner niche judgments; evaluate pairwise ranker only with independent owner-labelled comparisons",
+  "next_consumer_experiment": "Run genuinely changing-observation full pretrained GP350-018 greedy/sampled matched-decoder worlds with full-model source-pinned latency/RSS and collect Tiny/Population/Franken original model outputs on world-disjoint seeds. Blind owner four-niche rating first; independent preference ranking training only then.",
   "lanes_read_only": [
     "experiments/driv3r/lfm_game_policy",
     "experiments/driv3r/frankenlayers_lab",
@@ -203,5 +204,23 @@
     "new_adapter_training_updates": 0,
     "limits": "synthetic W0; not native; only two independent seeds; no human artistic preferences; sources historical, not new model training; original three ZIP and A4 artifact in local evidence, not DRIV3R Actions",
     "next": "Gather genuinely changing-observation GP350-018 greedy/sampled matched decoding and fresh Tiny/Population/Franken original pretrained outputs with world-disjoint trials and blind owner niche judgments; evaluate pairwise ranker only with independent owner-labelled comparisons"
+  },
+  "p22": {
+    "evidence_file": "P22_EVIDENCE.json",
+    "real_historical_adapters_checkpoint_verified": 4,
+    "real_trainable_lora_elements": 172032,
+    "original_closed_loop_full_model_decisions": 4608,
+    "host_legal_action_checks": 4608,
+    "same_obs_legal_branch_logit_pairs": 1061,
+    "paths_changed": "4/12",
+    "positive_branch_margin_child": 3,
+    "child_full_episode_branches": 9,
+    "independent_seeds": 2,
+    "real_full_model_forwards_new": 0,
+    "optimizer_updates_new": 0,
+    "tests": "7/7 local PASS",
+    "owner_labels": 0,
+    "limitations": "Historical original source and adapter weights only; no current root preload, no owner ratings, not native",
+    "source_file": "P22_pinned_adapter_audit.py"
   }
 }

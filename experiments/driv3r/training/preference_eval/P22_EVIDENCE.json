@@ -1,0 +1,87 @@
+{
+  "schema": "driv3r.preference_eval.p22_real_adapter_shared_prefix/1",
+  "date_utc": "2026-11-17",
+  "baseline_remote_sha": "0887a61e2adcdcddf289f3ceae59293a9a95dd3a",
+  "source_original_runs": [
+    43910803355,
+    43902984081
+  ],
+  "original_artifacts": {
+    "stock": 14248333879,
+    "gp350006": 14244806761,
+    "gp350010": 14245172930
+  },
+  "original_zip_sha256": {
+    "stock": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+    "gp350006": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+    "gp350010": "fa6296ad600176b366b367965b86118fc432a92a63f55c8e0b5a44c488258920"
+  },
+  "original_model_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+  "adapter_checkpoint_sha256": {
+    "gp006_step96": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c",
+    "gp010_step24": "047b2bacb61f6f04fb359e4d9839f6c198a17ba7db6dfb451d88e48846c66430",
+    "gp010_step48": "159892e47cf76cef24274cf8d76881fb56a2b20052ae82eae228b7c036669e7b",
+    "gp010_step72": "a829b47fdf424b66fa8ddedf59323d5e10406e0afd8d881a423194ea790dc82a"
+  },
+  "source_sha256": "6c4c65cb70a1865c55fd548ba077abcaaa59989cc659b1260c53f77f908434a6",
+  "tests_sha256": "3dcc77066b73ad0c2cc02d9c35c11a3ad824341414432144ee750c2aec16e952",
+  "validation": "7/7 local adversarial tests PASS, byte-identical independently repeated report/gallery generation; source ZIP, PNG, observation/action, greedy argmax and original adapter nested-parent checks",
+  "original_real_lfm350_closed_loop_episodes": 36,
+  "original_real_LFM_decision_receipts": 4608,
+  "original_world_blocks": 12,
+  "independent_seeds": 2,
+  "matched_full_horizon_128_action_paths_changed": 4,
+  "matched_full_horizon_unchanged": 8,
+  "comparable_same_state_legal_branch_logit_pairs": 1061,
+  "gp006_positive_branch_margin_on_same_states": 0,
+  "gp010_positive_branch_margin_on_same_states": 3,
+  "by_family": {
+    "architecture": {
+      "changed_worlds": 0,
+      "mean_branch_margin_shift": 6.411792,
+      "total_gp010_branch_actions": 0
+    },
+    "greebles": {
+      "changed_worlds": 3,
+      "mean_branch_margin_shift": 5.034166,
+      "total_gp010_branch_actions": 9
+    },
+    "pipework": {
+      "changed_worlds": 1,
+      "mean_branch_margin_shift": 6.808354,
+      "total_gp010_branch_actions": 0
+    }
+  },
+  "loRA_weight_assay": {
+    "rank": 8,
+    "alpha": 16,
+    "trainable_parameters": 172032,
+    "target_projections": 12,
+    "changed_effective_matrices_at_steps_24_48_72": 12,
+    "mean_parent_delta_frobenius_sum_by_checkpoint": {
+      "step24": 1.27794356,
+      "step48": 1.63063255,
+      "step72": 1.85287506
+    }
+  },
+  "blind_A4_source_replay_pages": 6,
+  "original_gallery_sha256": [
+    "ee853f94d8afd40da1993009adfe702834813779d581b66c88f4cfe8fa652903",
+    "8cf5c62d936b32c3ea86388a5e7073841b756ebcb08a640a96adfebb70f624b4",
+    "f184f38d617a711b395312d10d348605552bc38e6460485d9c22629e3b57f914",
+    "2b1202e61c59ec3cedbf0c5f2021510128dc0084e57488de6eca834f4c2f5c1e",
+    "9234fe5a2c356f2381b1b324206d7571a9f934ef6f2b00a3bc0a80ae92910674b46def61a60a91714",
+    "a4fe5a2c356f2381b1b324206d7571a9f934ef6f2b00a3bc0a80ae92910674b46def61a60a91714"
+  ],
+  "qualification": "local historical source-tensor re-evaluation; NO new full-root inference, no optimizer steps, no native game evaluation, no human aesthetic labels, no hosted Actions artifact",
+  "root_weights_available": false,
+  "owner_human_ratings": 0,
+  "new_pretrained_forwards": 0,
+  "new_optimizer_steps": 0,
+  "blockers": [
+    "No pinned LFM2.5-350M root weights/tokenizer or transformers runtime in current network-isolated CPU executor",
+    "No GitHub Actions workflow_dispatch connector, no permitted background execution path",
+    "Only two independent original seed blocks; archive heldout worlds not source-disjoint model families",
+    "No blind human/owner aesthetic preferences; do not train another proxy ranker"
+  ]
+}
