@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 885" width="1120" height="885">
+<rect width="100%" height="100%" fill="#0d1725"/>
+<text x="28" y="39" fill="#edf6f7" font-family="monospace" font-size="22">DRIV3R  /  BUDGET-CALIBRATION-001</text>
+<text x="28" y="62" fill="#9cb4bd" font-family="monospace" font-size="12">DEVELOPMENT synthetic World  |  source-replayed host receipts  |  same state, different trained policy</text>
+<rect x="28" y="93" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="43" y="116" fill="#12a89d" font-family="monospace" font-size="15" font-weight="bold">CALIBRATED</text>
+<text x="199" y="115" fill="#e9f0ef" font-family="monospace" font-size="12">budget 1, depth 3, rot 0°</text>
+<text x="43" y="136" fill="#a9eac6" font-family="monospace" font-size="12">target: STOP  |  first: STOP  |  CORRECT</text>
+<rect x="68" y="157" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="70" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="70" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="191" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="191" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="188,277 188,277" fill="none" stroke="#12a89d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="188" cy="261" r="5" fill="#fff"/>
+<circle cx="156" cy="245" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="299" y="176" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: NO</text>
+<text x="299" y="198" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 1</text>
+<text x="299" y="222" fill="#e1eced" font-family="monospace" font-size="11">STOP</text>
+<text x="299" y="254" fill="#819baa" font-family="monospace" font-size="10">SHA e9a07498ad239b0</text>
+<rect x="576" y="93" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="591" y="116" fill="#df714c" font-family="monospace" font-size="15" font-weight="bold">FIXED3</text>
+<text x="747" y="115" fill="#e9f0ef" font-family="monospace" font-size="12">budget 1, depth 3, rot 0°</text>
+<text x="591" y="136" fill="#fca8a8" font-family="monospace" font-size="12">target: STOP  |  first: BACKTRACK  |  INCORRECT</text>
+<rect x="616" y="157" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="618" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="618" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="191" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="191" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="207" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="223" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="239" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="255" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="271" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="736,277 720,277 720,277" fill="none" stroke="#df714c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="736" cy="261" r="5" fill="#fff"/>
+<circle cx="704" cy="245" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="847" y="176" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: NO</text>
+<text x="847" y="198" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 2</text>
+<text x="847" y="222" fill="#e1eced" font-family="monospace" font-size="11">BACK → STOP</text>
+<text x="847" y="254" fill="#819baa" font-family="monospace" font-size="10">SHA e9a07498ad239b0</text>
+<rect x="28" y="346" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="43" y="369" fill="#12a89d" font-family="monospace" font-size="15" font-weight="bold">CALIBRATED</text>
+<text x="199" y="368" fill="#e9f0ef" font-family="monospace" font-size="12">budget 5, depth 3, rot 90°</text>
+<text x="43" y="389" fill="#a9eac6" font-family="monospace" font-size="12">target: BACKTRACK  |  first: BACKTRACK  |  CORRECT</text>
+<rect x="68" y="410" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="86" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="524" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="524" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="412" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="428" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="444" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="460" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="412" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="428" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="92,530 92,514 108,514 108,498" fill="none" stroke="#12a89d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="92" cy="514" r="5" fill="#fff"/>
+<circle cx="108" cy="482" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="299" y="429" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: YES</text>
+<text x="299" y="451" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 3</text>
+<text x="299" y="475" fill="#e1eced" font-family="monospace" font-size="11">BACK → BACK → BACK</text>
+<text x="299" y="507" fill="#819baa" font-family="monospace" font-size="10">SHA b3885e232023218</text>
+<rect x="576" y="346" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="591" y="369" fill="#df714c" font-family="monospace" font-size="15" font-weight="bold">FIXED3</text>
+<text x="747" y="368" fill="#e9f0ef" font-family="monospace" font-size="12">budget 5, depth 3, rot 90°</text>
+<text x="591" y="389" fill="#fca8a8" font-family="monospace" font-size="12">target: BACKTRACK  |  first: STOP  |  INCORRECT</text>
+<rect x="616" y="410" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="634" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="524" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="524" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="476" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="412" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="428" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="444" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="460" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="492" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="508" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="412" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="428" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="640,530 640,530" fill="none" stroke="#df714c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="640" cy="514" r="5" fill="#fff"/>
+<circle cx="656" cy="482" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="847" y="429" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: NO</text>
+<text x="847" y="451" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 1</text>
+<text x="847" y="475" fill="#e1eced" font-family="monospace" font-size="11">STOP</text>
+<text x="847" y="507" fill="#819baa" font-family="monospace" font-size="10">SHA b3885e232023218</text>
+<rect x="28" y="599" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="43" y="622" fill="#12a89d" font-family="monospace" font-size="15" font-weight="bold">CALIBRATED</text>
+<text x="199" y="621" fill="#e9f0ef" font-family="monospace" font-size="12">budget 3, depth 3, rot 0°</text>
+<text x="43" y="642" fill="#fca8a8" font-family="monospace" font-size="12">target: BACKTRACK  |  first: STOP  |  INCORRECT</text>
+<rect x="68" y="663" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="70" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="70" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="86" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="102" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="118" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="134" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="150" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="166" y="777" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="182" y="777" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="188,783 188,783" fill="none" stroke="#12a89d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="188" cy="767" r="5" fill="#fff"/>
+<circle cx="172" cy="735" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="299" y="682" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: NO</text>
+<text x="299" y="704" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 1</text>
+<text x="299" y="728" fill="#e1eced" font-family="monospace" font-size="11">STOP</text>
+<text x="299" y="760" fill="#819baa" font-family="monospace" font-size="10">SHA 410071e44c74cb7</text>
+<rect x="576" y="599" width="532" height="240" rx="12" fill="#152436" stroke="#385165"/>
+<text x="591" y="622" fill="#df714c" font-family="monospace" font-size="15" font-weight="bold">FIXED3</text>
+<text x="747" y="621" fill="#e9f0ef" font-family="monospace" font-size="12">budget 3, depth 3, rot 0°</text>
+<text x="591" y="642" fill="#a9eac6" font-family="monospace" font-size="12">target: BACKTRACK  |  first: BACKTRACK  |  CORRECT</text>
+<rect x="616" y="663" width="160" height="160" rx="5" fill="#0b1623" stroke="#42566d"/>
+<rect x="618" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="618" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="634" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="650" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="713" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="666" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="682" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="698" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="714" y="777" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="729" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="745" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="761" width="12" height="12" rx="3" fill="#3f607c"/>
+<rect x="730" y="777" width="12" height="12" rx="3" fill="#3f607c"/>
+<polyline points="736,783 736,767 720,767 720,751" fill="none" stroke="#df714c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="736" cy="767" r="5" fill="#fff"/>
+<circle cx="720" cy="735" r="7" fill="none" stroke="#f4c46f" stroke-width="2"/>
+<text x="847" y="682" fill="#b1c9ce" font-family="monospace" font-size="12">Goal reached: YES</text>
+<text x="847" y="704" fill="#b1c9ce" font-family="monospace" font-size="12">Actions: 3</text>
+<text x="847" y="728" fill="#e1eced" font-family="monospace" font-size="11">BACK → BACK → BACK</text>
+<text x="847" y="760" fill="#819baa" font-family="monospace" font-size="10">SHA 410071e44c74cb7</text>
+<text x="28" y="868" fill="#89a4b1" font-family="monospace" font-size="11">Not native CyberSand. Cropped local ink; gold ring is goal, bright stroke is actual continuation. STOP is task-specific.</text>
+</svg>
