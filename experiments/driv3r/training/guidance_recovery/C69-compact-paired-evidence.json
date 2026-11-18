@@ -1,0 +1,211 @@
+{
+  "schema": "driv3r-c69-compact-paired-evidence/1",
+  "description": "Each two-character token means [movement-or-ink trace changed: 0/1][goal delta: +1/0/-1 encoded 1/0/-]. Graph order is shared by every vector. Intact-memory is reference. No-guidance, C18-A0 and C34-RESET traces were unchanged at 50% and 100%.",
+  "source_sha256": "5ab636ce0833d671f9e9027e07b48d98e98382f30f861a582dd629b22603f849",
+  "summary_sha256": "06a98ababf17c9edca9a2514fae6bd48f75f61521aa7c0f6b4eddfe0a15c8b07",
+  "full_ledger_sha256": "c052e5da9d03b035e32196c49fd611f38fff4f9c61bcc9599e716bd404b93486",
+  "gallery_sha256": "57c06b9471069a72a4c04966cdb28dca777d2d9e91ba721d5e9d4f31319ccdac",
+  "graph_ids": [
+    "14d94d5eed1f4e5964f60f92da8157c92260650e0cac3b0125dd2d0f757f6654",
+    "b9f4d1c99bc32ac927ba320efcba96384f27f813125dab820e706ecbfcb76053",
+    "616afea34044ef505aae1ecc3e8c6be08ef127bb5d510864ec6e187bc6afe0b8",
+    "b90b50f296847a3b209e3fe3192319bf2350dc577b8e4b98e37ff3f7be75b2d5",
+    "0de1d7ffba97567676c3ccd4aaa09ee581398b39f9b52ec4c854544120f00639",
+    "1f116b317399caa995dd39eb2f2778fade1bad8c068e8b3e9f5f164d52f47476",
+    "118bb16972af5d1f8f35f8d4904b9e1d26338d17bcbee77c3050672aa3147b0b",
+    "e746b94a75c98f93de2df0df92830a5ba32de73824e08b3af264e55e47bf4389",
+    "facb18b5f0c6843c2f0efefb2bebf270f2d9b757b63f48b5b01305cda0a1240b",
+    "b20b4312913e1abab4492cdcb006a3c450a76811cd83977e506174a19dc8abdd",
+    "1cb04bc54f154526ff79c3c264187a240267ebc309bfcf688abed8522686647c",
+    "d42eccbeb717003bb7c3b6238e3506d9ad7a8ade0069337ecb747c317ba7affc",
+    "594f70648581e323f815b50c5bef84d7611876806659f36f09fe009cadc49f1d",
+    "7b14b6533c6ed826739a717e510ae1c713c73e1db6dea5488d40dd23bf2faf71",
+    "a4aa547a7d27b0795ed5139da02ca321b14d26909af7125f39fcb74140bdc7bd",
+    "5107284241c12cd43dc4fc501fcd3483186ac4268df890558283c2326bdcd5f7",
+    "dffb546bdef2a6792be140f76b89fa1be099f1f5ead5f99959976d5b8604d65c",
+    "865338a410bea16165306ec840ca8a3c63e63ad3de62ea0826b58e7b0f1bcaf3",
+    "5096257fe30f8d16271fd36454a66efa10386412f2c73ad904eb4882e7e51167",
+    "d0cb45cbedb9a08dd68bfdf968396d6d4034c0c3392e2354b13344773e7c68d2"
+  ],
+  "prefix_attributes_columns": [
+    "family",
+    "tick",
+    "observed_menus",
+    "observed_edges",
+    "edges_after_full_erasure",
+    "observed_route_edges"
+  ],
+  "prefix_attributes": [
+    [
+      "tree",
+      19,
+      18,
+      37,
+      2,
+      4
+    ],
+    [
+      "tree",
+      19,
+      8,
+      17,
+      2,
+      6
+    ],
+    [
+      "tree",
+      19,
+      9,
+      18,
+      2,
+      8
+    ],
+    [
+      "tree",
+      29,
+      6,
+      12,
+      2,
+      4
+    ],
+    [
+      "braid",
+      19,
+      10,
+      21,
+      2,
+      8
+    ],
+    [
+      "braid",
+      19,
+      9,
+      23,
+      2,
+      8
+    ],
+    [
+      "braid",
+      19,
+      10,
+      23,
+      2,
+      6
+    ],
+    [
+      "braid",
+      19,
+      7,
+      16,
+      2,
+      7
+    ],
+    [
+      "prim",
+      19,
+      17,
+      36,
+      2,
+      8
+    ],
+    [
+      "prim",
+      19,
+      7,
+      15,
+      2,
+      7
+    ],
+    [
+      "prim",
+      19,
+      7,
+      14,
+      2,
+      4
+    ],
+    [
+      "prim",
+      19,
+      6,
+      13,
+      2,
+      4
+    ],
+    [
+      "wilson",
+      19,
+      11,
+      27,
+      2,
+      8
+    ],
+    [
+      "wilson",
+      19,
+      14,
+      31,
+      2,
+      6
+    ],
+    [
+      "wilson",
+      19,
+      8,
+      17,
+      2,
+      4
+    ],
+    [
+      "wilson",
+      19,
+      10,
+      22,
+      2,
+      4
+    ],
+    [
+      "kruskal",
+      19,
+      8,
+      17,
+      2,
+      6
+    ],
+    [
+      "kruskal",
+      19,
+      7,
+      14,
+      2,
+      6
+    ],
+    [
+      "kruskal",
+      19,
+      9,
+      18,
+      2,
+      8
+    ],
+    [
+      "kruskal",
+      19,
+      10,
+      22,
+      2,
+      8
+    ]
+  ],
+  "paired_trace_change_and_goal_delta": {
+    "FRONTIER/weak/50": "10,10,00,00,11,00,00,10,10,00,00,00,1-,00,00,00,1-,10,10,10",
+    "FRONTIER/weak/100": "00,11,00,00,10,10,00,10,10,00,00,00,10,00,00,00,00,00,00,00",
+    "FRONTIER/strong/50": "10,00,11,11,10,10,00,11,00,00,00,10,1-,10,00,00,10,10,10,10",
+    "FRONTIER/strong/100": "00,00,10,00,10,00,10,11,10,00,00,00,10,10,10,00,11,00,00,11",
+    "FROZEN/weak/50": "10,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00",
+    "FROZEN/weak/100": "10,00,00,00,10,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00",
+    "FROZEN/strong/50": "00,00,00,10,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00",
+    "FROZEN/strong/100": "10,00,00,10,10,00,00,00,1-,00,00,00,00,00,00,00,00,00,00,00"
+  },
+  "disclaimer": "Compact index derived from the complete executed C69 ledger, not a replacement for its per-action ledger, policy telemetry or trajectory gallery."
+}
