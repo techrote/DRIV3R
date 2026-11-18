@@ -1,0 +1,53 @@
+{
+  "schema": "driv3r/expression-recovery-request/v1",
+  "nonce": "owner-20261118-recover-expression-screen-01",
+  "phase": "screen",
+  "branch": "research/import-consolidated-worm-labs",
+  "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+  "q8_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+  "q8_bytes": 1846240576,
+  "q4_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+  "q4_bytes": 1099629888,
+  "temperature": 1.5,
+  "uniform_mixture": 0.25,
+  "decoders": [
+    "greedy",
+    "sampled"
+  ],
+  "quants": [
+    "q8",
+    "q4"
+  ],
+  "modes": [
+    "stock",
+    "greyhound",
+    "branchwitch",
+    "aero4_no2",
+    "grey3_cut"
+  ],
+  "folds": [
+    [
+      570,
+      "greebles"
+    ],
+    [
+      7703,
+      "pipework"
+    ],
+    [
+      8807,
+      "architecture"
+    ]
+  ],
+  "steps_per_episode": 40,
+  "max_parallel": 1,
+  "cpu_only": true,
+  "paid_api": false,
+  "paid_gpu": false,
+  "automatic_push_on_source": false,
+  "native_game": false,
+  "ready": false,
+  "merge": false,
+  "owner_ratings_supplied": false,
+  "intent": "Matched source-pinned real CPU Q8/Q4 on-policy candidate screen; raw greedy versus common-random-number temperature 1.5 plus 0.25 flat mixture. No forced zigzags. Paired W0 initial world and legal action menu; detect periodic 2..16 position cycles and score only as measured proxies."
+}
