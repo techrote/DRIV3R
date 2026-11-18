@@ -1,0 +1,504 @@
+{
+  "OOD_warning": "Historical checkpoints trained under a fixed 12-credit feature normalization; variable caps are out of training distribution.",
+  "experiment": "BUDGET-CAP-INTERVENTION-001",
+  "game_contract_warning": "Changing max_recoveries is a synthetic World.menu parameter; the native game does not expose this intervention.",
+  "heldout_opened": false,
+  "independent_state_count": 480,
+  "latency_model_only_median_ms": 0.010139,
+  "latency_model_only_p95_ms": 0.025448,
+  "model_feature_source_sha256": {
+    "budget_calibration_lab.py": "89de8ab12b5217ffb46307f5b10d3299c20381839e578ab2f7c3315af9846f3f",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "history_alias_lab.py": "98e41672fe4283e35fa5e2ce32263407d35c5a860d9a04231ebfbcddf9c04fdf",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "native_execution": false,
+  "new_source_sha256": {
+    "budget_cap_intervention_gallery.py": "459c7ac5bdfe019521eaf8f3622ded2eb5fb0b0d95247d5be27ddae1ac2920fb",
+    "budget_cap_intervention_lab.py": "9fbd81515e2b3f02d5d128afe225f36c7947838c43164769099a58e379532b3d",
+    "test_budget_cap_intervention_lab.py": "fcccf223d19c945a0e795e9afd74e8a1c023564732446923690118320203e474"
+  },
+  "optimizer_updates": 0,
+  "original_case_count": 480,
+  "original_checkpoints_sha256": {
+    "731-budget_blind.npz": "43436dbd3dd081037e89bd63e823170fcfdc100eacef2f96e1cf60e8974f5d0d",
+    "731-calibrated.npz": "466ccd8581e3fce3340d665d94fe132c2230ebd15720e2bc7e672100aa48523c",
+    "731-fixed3.npz": "edb8a140a5ba5b2f8da05ef27c49f5bc26892bc39e1503f65f0b3be193c76165",
+    "732-budget_blind.npz": "419088d81e7fb3fc425ea8fa2e678815c00ef8e7fcdddbf2add57bb124666921",
+    "732-calibrated.npz": "97b0d66364ad4e26b3541626d0073273bd05741723ff18b9fde59582f9fb6195",
+    "732-fixed3.npz": "322a0b1c6ef553f0a77301bdaa0a842550d202fadfc7b140cb96c51ba0843c30"
+  },
+  "original_episode_anchors_verified": 2880,
+  "original_episodes_sha256": "e38b26ae35394f051fdc08be547821012f89d62ce9ddc0bebc80d18588a71f33",
+  "original_evidence_archive_sha256": "06573cd6d9502f7e132b3b3effd16a9c74dff2654f5668c692c9c9407906c2f9",
+  "peak_rss_kib": 146212,
+  "probability_vectors": 8640,
+  "probability_vectors_file_sha256": "d70f59f261ff23eea3330b8dd31d26facb9a2ab9ca52425f0c978b2517bfcc13",
+  "receipt_warning": "No actions executed in counterfactuals; output vectors are not full action-receipt trajectories.",
+  "results": {
+    "budget_blind": {
+      "backtrack_probability_nonmonotone": 0,
+      "choice_order_inversions": 0,
+      "chosen_backtrack_by_budget": {
+        "1": 403,
+        "3": 403,
+        "5": 403
+      },
+      "correct_by_budget": {
+        "1": 773,
+        "3": 813,
+        "5": 805
+      },
+      "false_retreat_by_budget": {
+        "1": 139,
+        "3": 35,
+        "5": 27
+      },
+      "mean_backtrack_probability_by_budget": {
+        "1": 0.421217,
+        "3": 0.421217,
+        "5": 0.421217
+      },
+      "triads": 960
+    },
+    "calibrated": {
+      "backtrack_probability_nonmonotone": 788,
+      "choice_order_inversions": 14,
+      "chosen_backtrack_by_budget": {
+        "1": 375,
+        "3": 371,
+        "5": 361
+      },
+      "correct_by_budget": {
+        "1": 769,
+        "3": 795,
+        "5": 773
+      },
+      "false_retreat_by_budget": {
+        "1": 127,
+        "3": 28,
+        "5": 22
+      },
+      "mean_backtrack_probability_by_budget": {
+        "1": 0.401105,
+        "3": 0.394549,
+        "5": 0.390024
+      },
+      "triads": 960
+    },
+    "fixed3": {
+      "backtrack_probability_nonmonotone": 928,
+      "choice_order_inversions": 96,
+      "chosen_backtrack_by_budget": {
+        "1": 600,
+        "3": 548,
+        "5": 504
+      },
+      "correct_by_budget": {
+        "1": 672,
+        "3": 892,
+        "5": 864
+      },
+      "false_retreat_by_budget": {
+        "1": 288,
+        "3": 68,
+        "5": 48
+      },
+      "mean_backtrack_probability_by_budget": {
+        "1": 0.626475,
+        "3": 0.572098,
+        "5": 0.528121
+      },
+      "triads": 960
+    }
+  },
+  "selection_warning": "STOP denotes task-specific inability to reach a historical goal; not gameplay-wide stop advice.",
+  "source_commit": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
+  "trace_gallery_sha256": "469a199163a4565b99dd229305a82c92d74df00632a81333970823e33b163d3d",
+  "unique_triads": 2880,
+  "version": "budget-cap-intervention/1",
+  "wall_s": 5.375,
+  "witnesses": [
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5709626758,
+        0.5235835376,
+        0.4887777437
+      ],
+      "case": "8172452c9fdccad300fe88bce8818c25f4eac3c81ed72f5871e367815b0fb799",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 1,
+      "kind": "former_positive",
+      "original_budget": 1,
+      "rotation": 180,
+      "seed": 732,
+      "state_sha256": "c2c340846bafe19401a6bba778d151873aeeb5146f118b6ca58bbb40f13f25e0"
+    },
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5277494655,
+        0.4869200998,
+        0.4593149773
+      ],
+      "case": "8dc299e69ce37a6fdc06a1bc46cec336153151fe6d2e56cc17692ee429c791a7",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 732,
+      "state_sha256": "b7df1297785a5ebdeb7cc610db1f448c177f435c10f8677a84ce0407ce5240e2"
+    },
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5538010725,
+        0.5130299469,
+        0.4851559828
+      ],
+      "case": "9717e8a59cc785e7b7b14fd882e15e1ca1ea65c5af272e379565dcbb1c50c95e",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 3,
+      "rotation": 90,
+      "seed": 731,
+      "state_sha256": "adb93fdd302724912700cc6452455e6764426284b13d680af99a1336c96f5fa1"
+    },
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5536004492,
+        0.5191599962,
+        0.4950099881
+      ],
+      "case": "a062346256bdc296efefba57d0ea995fabbc2d79853e0eae12f5aa850d299db6",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 7,
+      "kind": "former_negative",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 732,
+      "state_sha256": "3f09ce3a054f2c5f845d3f90b2ca362216d800a8647e45db6f68886611159ef4"
+    },
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5665432164,
+        0.5190667351,
+        0.4842457887
+      ],
+      "case": "acc04f211dab1ea7ece8631384debf13717b2471d8f73d37ec4698d456b35e9e",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 1,
+      "kind": "former_positive",
+      "original_budget": 1,
+      "rotation": 0,
+      "seed": 732,
+      "state_sha256": "7cf9025c788877b09b7cc04ed7e768252bb60793b74e05d32104273bfc555f71"
+    },
+    {
+      "arm": "calibrated",
+      "backtrack_probs": [
+        0.5323814446,
+        0.4937096122,
+        0.4671076662
+      ],
+      "case": "be51df16858de4af47ff8ac49802158f5d50ff64d43558cc86814a26cf5ccbd8",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "410071e44c74cb782888ef6ef008a76c4d6d628dc4487e9e7b694779cc084b74"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.6679426673,
+        0.2654574467,
+        0.096707146
+      ],
+      "case": "846f9c61bf458b6b418cf7efbf14a7616141164a4909d92bf4a18f8e4cd7fe68",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 10,
+      "kind": "former_negative",
+      "original_budget": 1,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "bda481b48ecc6a146043aa3ca5da73532e01f2f154554f56851c49e8a02feb90"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.8479500399,
+        0.4100981861,
+        0.144648869
+      ],
+      "case": "864f477888b8045a68baaf3404ce0f896f0b0a7128603644aac179fe829213fc",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 7,
+      "kind": "former_negative",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "dbb72b433142dcc1ac10f12841ac16611644e060d7a372da74de02c4a3619ac7"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.9475564283,
+        0.5875302084,
+        0.21785808
+      ],
+      "case": "864f477888b8045a68baaf3404ce0f896f0b0a7128603644aac179fe829213fc",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "500860f56dcb2b35e1b2c397765227993def30f90ba62de2aea5bd5f95690e87"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.8723552992,
+        0.4537501587,
+        0.1651056157
+      ],
+      "case": "8dc299e69ce37a6fdc06a1bc46cec336153151fe6d2e56cc17692ee429c791a7",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 7,
+      "kind": "former_negative",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "acc496e80ebabf6e62ad0c746c8e31843910bae6172aa0555a9e114ceadee516"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.9578696869,
+        0.6336575252,
+        0.2473197401
+      ],
+      "case": "8dc299e69ce37a6fdc06a1bc46cec336153151fe6d2e56cc17692ee429c791a7",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "ab95e32e920b6fbdbd76201bda3a6d00e3b4f44658f69ff5f2c8d2667b630302"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.950368315,
+        0.5957442919,
+        0.2200552718
+      ],
+      "case": "9717e8a59cc785e7b7b14fd882e15e1ca1ea65c5af272e379565dcbb1c50c95e",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "9950279c2a0e706521a7e787b189d493d4c67cfbe1c8a40db9ebfe630a24ded7"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.764958495,
+        0.3182581399,
+        0.1092063631
+      ],
+      "case": "99ea2b72e37e85caadc3d36541e1192d26081488b0447859ba271f549ba69e24",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 11,
+      "kind": "former_negative",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "b2223a6de235ba410f1bc46f62b3b5da785cc663c84f3e9266c4763ae89c7b8a"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.8941470305,
+        0.4503341068,
+        0.1499348364
+      ],
+      "case": "a062346256bdc296efefba57d0ea995fabbc2d79853e0eae12f5aa850d299db6",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 7,
+      "kind": "former_negative",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "905b4a2b78ba8a038d7c65d592b997a97e94567957851811ba734caf87902379"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.764958495,
+        0.3182581399,
+        0.1092063631
+      ],
+      "case": "b6d3d80d16b0b5c4a37a0ec21419a4d334c3299cd9bdd2232134d51d41fca8de",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 11,
+      "kind": "former_negative",
+      "original_budget": 3,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "c74e04e384d5522e5169a6cefd28a5622aa33120f9a2cbd7594de49e2a2e8c6d"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.953965295,
+        0.638703251,
+        0.2664154282
+      ],
+      "case": "be51df16858de4af47ff8ac49802158f5d50ff64d43558cc86814a26cf5ccbd8",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "1445c50203bac63f2847a10075b70d4f72dc2c42c6db37ebdfffb66195ac4b9c"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.628729625,
+        0.1225218369,
+        0.0292493772
+      ],
+      "case": "be51df16858de4af47ff8ac49802158f5d50ff64d43558cc86814a26cf5ccbd8",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 5,
+      "kind": "former_negative",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 732,
+      "state_sha256": "1c0845932cbdf0115b7ca3f40acdd84f70cbff255218bf6e9cec7f376b76e5bc"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.6847146347,
+        0.30319203,
+        0.116791489
+      ],
+      "case": "c67bacf7c313923a0a281a3dc377123b885acc18615e08d695f30e4bb2dcb710",
+      "choices": [
+        "BACKTRACK",
+        "STOP",
+        "STOP"
+      ],
+      "depth": 9,
+      "kind": "former_negative",
+      "original_budget": 1,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "374fcb6ab6e1067d8017a73df45662b4ab7e7769b92b5bcacc458cbf1a318a3f"
+    },
+    {
+      "arm": "fixed3",
+      "backtrack_probs": [
+        0.9515968787,
+        0.6298125118,
+        0.2579373675
+      ],
+      "case": "c67bacf7c313923a0a281a3dc377123b885acc18615e08d695f30e4bb2dcb710",
+      "choices": [
+        "BACKTRACK",
+        "BACKTRACK",
+        "STOP"
+      ],
+      "depth": 3,
+      "kind": "former_positive",
+      "original_budget": 5,
+      "rotation": 0,
+      "seed": 731,
+      "state_sha256": "2767136f60c5008c015b067034d5946256400f2d969b23f31020cdab58677a22"
+    }
+  ]
+}
