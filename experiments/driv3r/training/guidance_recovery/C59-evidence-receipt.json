@@ -1,0 +1,48 @@
+{
+  "checkpoint_sha256": "af5f4af0c04f0a9d7f51c6b48254b2304c002177ee767af619ea758520fa4a89",
+  "date": "2026-11-18",
+  "files": {
+    "C59-observable-eligibility-personality-2026-11-18.md": {
+      "bytes": 8474,
+      "sha256": "ead0a2648b41d671f64f784ff5d906d416cae94d1d1ea3ebb06eae4d1edcb3a3"
+    },
+    "output/C59-executed-ledger.zlib.b64": {
+      "bytes": 42782,
+      "sha256": "d85499e9d0713df07f88a84dececc511c70e69885d28585de8b6726e10f28321"
+    },
+    "output/C59-gallery.svg": {
+      "bytes": 20316,
+      "sha256": "6668ecd03688b5a2605380beb1c401f06124fe4ea0dda4a0d23848379b88260b"
+    },
+    "output/C59-summary.json": {
+      "bytes": 71324,
+      "sha256": "69c2e52f4e8e4b425a15bee21877bc9985f820664812184cbe67cf21c7db6690"
+    },
+    "source/C59-extract-ledger.py": {
+      "bytes": 571,
+      "sha256": "6da906ccbbe9542517542cf803c59704cc7a1027144cb88753642667fea6a232"
+    },
+    "source/c59_eligibility_personality.py": {
+      "bytes": 14690,
+      "sha256": "57f1d293300661d60f608f0472e05fb0fb79ba068e1400c9c41afd8651460bde"
+    },
+    "source/c59_gallery.py": {
+      "bytes": 2277,
+      "sha256": "53e8c27867935c5ebf5e61dd4e77eeeeb4d297ca9728890baed36c75bb4ae2a3"
+    },
+    "source/test_c59_eligibility_personality.py": {
+      "bytes": 3443,
+      "sha256": "02f94f02392d5b6048a257061142b41f5a88eb95ea456bfa814f491731f47d70"
+    }
+  },
+  "frozen_checkpoint_sha256": "dd354cf413c834f9ae5d369e4724f13978e65d360cfb8c7522b16074d6df3381",
+  "full_ledger_uncompressed_sha256": "800d70dda4e6b6587da94b60d7ef4cd0b1946b5bdcf91c840f5416b50d60ca53",
+  "independent_refit": {
+    "checkpoint_byte_identical": true,
+    "online_byte_identical": true,
+    "summary_byte_identical": true,
+    "traces_byte_identical": true
+  },
+  "schema": "driv3r-c59-custody/1",
+  "source_c58_git_blob": "63c85e63a4067f8b6cd7580c8c999e6f8486c0c6"
+}

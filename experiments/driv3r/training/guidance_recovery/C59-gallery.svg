@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1020" width="1240" height="1020">
+<rect width="100%" height="100%" fill="#101827"/>
+<text x="20" y="29" fill="#f3f6ff" font-size="18" font-family="monospace">C59 | eligibility &amp; personality | host-executed paths</text>
+<text x="20" y="46" fill="#a9bad0" font-size="10" font-family="monospace">Only executed prefix and suffix positions; no inferred walls, terrain or unseen route lines</text>
+<rect x="14" y="60" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="75" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 0% / C34-RESET</text>
+<polyline points="179.0,133.0 179.0,144.0 179.0,155.0 168.0,155.0 179.0,155.0 179.0,144.0 179.0,155.0 179.0,144.0 179.0,155.0 179.0,144.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="179.0,155.0 179.0,144.0 179.0,155.0 179.0,144.0 179.0,155.0 168.0,155.0 157.0,155.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="157.0" cy="155.0" r="4" fill="#f4cc60"/>
+<text x="22" y="203" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=7 legal=PASS</text>
+<rect x="322" y="60" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="75" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 0% / C58-ALIGNED</text>
+<polyline points="487.0,133.0 487.0,144.0 487.0,155.0 476.0,155.0 487.0,155.0 487.0,144.0 487.0,155.0 487.0,144.0 487.0,155.0 487.0,144.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="487.0,155.0 476.0,155.0 465.0,155.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="465.0" cy="155.0" r="4" fill="#f4cc60"/>
+<text x="330" y="203" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="630" y="60" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="75" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 0% / C59-STRICT</text>
+<polyline points="795.0,133.0 795.0,144.0 795.0,155.0 784.0,155.0 795.0,155.0 795.0,144.0 795.0,155.0 795.0,144.0 795.0,155.0 795.0,144.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="795.0,155.0 784.0,155.0 773.0,155.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="773.0" cy="155.0" r="4" fill="#f4cc60"/>
+<text x="638" y="203" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="938" y="60" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="75" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 0% / C59-LEARNED</text>
+<polyline points="1103.0,133.0 1103.0,144.0 1103.0,155.0 1092.0,155.0 1103.0,155.0 1103.0,144.0 1103.0,155.0 1103.0,144.0 1103.0,155.0 1103.0,144.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1103.0,155.0 1092.0,155.0 1081.0,155.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1081.0" cy="155.0" r="4" fill="#f4cc60"/>
+<text x="946" y="203" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="14" y="220" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="235" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 50% / C34-RESET</text>
+<polyline points="179.0,293.0 179.0,304.0 179.0,315.0 168.0,315.0 179.0,315.0 179.0,304.0 179.0,315.0 179.0,304.0 179.0,315.0 179.0,304.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="179.0,315.0 179.0,304.0 179.0,315.0 179.0,304.0 179.0,315.0 168.0,315.0 157.0,315.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="157.0" cy="315.0" r="4" fill="#f4cc60"/>
+<text x="22" y="363" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=7 legal=PASS</text>
+<rect x="322" y="220" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="235" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 50% / C58-ALIGNED</text>
+<polyline points="487.0,293.0 487.0,304.0 487.0,315.0 476.0,315.0 487.0,315.0 487.0,304.0 487.0,315.0 487.0,304.0 487.0,315.0 487.0,304.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="487.0,315.0 476.0,315.0 465.0,315.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="465.0" cy="315.0" r="4" fill="#f4cc60"/>
+<text x="330" y="363" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="630" y="220" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="235" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 50% / C59-STRICT</text>
+<polyline points="795.0,293.0 795.0,304.0 795.0,315.0 784.0,315.0 795.0,315.0 795.0,304.0 795.0,315.0 795.0,304.0 795.0,315.0 795.0,304.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="795.0,315.0 784.0,315.0 773.0,315.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="773.0" cy="315.0" r="4" fill="#f4cc60"/>
+<text x="638" y="363" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="938" y="220" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="235" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 50% / C59-LEARNED</text>
+<polyline points="1103.0,293.0 1103.0,304.0 1103.0,315.0 1092.0,315.0 1103.0,315.0 1103.0,304.0 1103.0,315.0 1103.0,304.0 1103.0,315.0 1103.0,304.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1103.0,315.0 1092.0,315.0 1081.0,315.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1081.0" cy="315.0" r="4" fill="#f4cc60"/>
+<text x="946" y="363" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="14" y="380" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="395" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 100% / C34-RESET</text>
+<polyline points="179.0,453.0 179.0,464.0 179.0,475.0 168.0,475.0 179.0,475.0 179.0,464.0 179.0,475.0 179.0,464.0 179.0,475.0 179.0,464.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="179.0,475.0 179.0,464.0 179.0,475.0 179.0,464.0 179.0,475.0 168.0,475.0 157.0,475.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="157.0" cy="475.0" r="4" fill="#f4cc60"/>
+<text x="22" y="523" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=7 legal=PASS</text>
+<rect x="322" y="380" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="395" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 100% / C58-ALIGNED</text>
+<polyline points="487.0,453.0 487.0,464.0 487.0,475.0 476.0,475.0 487.0,475.0 487.0,464.0 487.0,475.0 487.0,464.0 487.0,475.0 487.0,464.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="487.0,475.0 476.0,475.0 465.0,475.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="465.0" cy="475.0" r="4" fill="#f4cc60"/>
+<text x="330" y="523" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=3 legal=PASS</text>
+<rect x="630" y="380" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="395" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 100% / C59-STRICT</text>
+<polyline points="795.0,453.0 795.0,464.0 795.0,475.0 784.0,475.0 795.0,475.0 795.0,464.0 795.0,475.0 795.0,464.0 795.0,475.0 795.0,464.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="795.0,475.0 795.0,464.0 795.0,475.0 795.0,464.0 795.0,475.0 784.0,475.0 773.0,475.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="773.0" cy="475.0" r="4" fill="#f4cc60"/>
+<text x="638" y="523" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=7 legal=PASS</text>
+<rect x="938" y="380" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="395" font-family="monospace" font-size="9" fill="#ecf2fa">wilson / observed / 100% / C59-LEARNED</text>
+<polyline points="1103.0,453.0 1103.0,464.0 1103.0,475.0 1092.0,475.0 1103.0,475.0 1103.0,464.0 1103.0,475.0 1103.0,464.0 1103.0,475.0 1103.0,464.0" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1103.0,475.0 1103.0,464.0 1103.0,475.0 1103.0,464.0 1103.0,475.0 1092.0,475.0 1081.0,475.0" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1081.0" cy="475.0" r="4" fill="#f4cc60"/>
+<text x="946" y="523" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=7 legal=PASS</text>
+<rect x="14" y="540" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="555" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 0% / C34-RESET</text>
+<polyline points="190.0,618.5 179.0,618.5 168.0,618.5 157.0,618.5 146.0,618.5 146.0,629.5 146.0,618.5 146.0,629.5 146.0,618.5 157.0,618.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="168.0,618.5 168.0,629.5 168.0,618.5 157.0,618.5 168.0,618.5 157.0,618.5 146.0,618.5 146.0,629.5 146.0,618.5 157.0,618.5 146.0,618.5 146.0,629.5 146.0,618.5 157.0,618.5 146.0,618.5 157.0,618.5 168.0,618.5 179.0,618.5 190.0,618.5 190.0,629.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="190.0" cy="629.5" r="4" fill="#f4cc60"/>
+<text x="22" y="683" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="322" y="540" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="555" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 0% / C58-ALIGNED</text>
+<polyline points="498.0,618.5 487.0,618.5 476.0,618.5 465.0,618.5 454.0,618.5 454.0,629.5 454.0,618.5 454.0,629.5 454.0,618.5 465.0,618.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="476.0,618.5 476.0,629.5 476.0,618.5 465.0,618.5 476.0,618.5 465.0,618.5 476.0,618.5 465.0,618.5 454.0,618.5 465.0,618.5 454.0,618.5 454.0,629.5 454.0,618.5 465.0,618.5 454.0,618.5 454.0,629.5 454.0,618.5 454.0,629.5 454.0,618.5 465.0,618.5 476.0,618.5 487.0,618.5 498.0,618.5 498.0,629.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="498.0" cy="629.5" r="4" fill="#f4cc60"/>
+<text x="330" y="683" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=24 legal=PASS</text>
+<rect x="630" y="540" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="555" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 0% / C59-STRICT</text>
+<polyline points="806.0,618.5 795.0,618.5 784.0,618.5 773.0,618.5 762.0,618.5 762.0,629.5 762.0,618.5 762.0,629.5 762.0,618.5 773.0,618.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="784.0,618.5 784.0,629.5 784.0,618.5 773.0,618.5 784.0,618.5 773.0,618.5 784.0,618.5 773.0,618.5 762.0,618.5 773.0,618.5 762.0,618.5 762.0,629.5 762.0,618.5 773.0,618.5 762.0,618.5 762.0,629.5 762.0,618.5 762.0,629.5 762.0,618.5 773.0,618.5 784.0,618.5 795.0,618.5 806.0,618.5 806.0,629.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="806.0" cy="629.5" r="4" fill="#f4cc60"/>
+<text x="638" y="683" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=24 legal=PASS</text>
+<rect x="938" y="540" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="555" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 0% / C59-LEARNED</text>
+<polyline points="1114.0,618.5 1103.0,618.5 1092.0,618.5 1081.0,618.5 1070.0,618.5 1070.0,629.5 1070.0,618.5 1070.0,629.5 1070.0,618.5 1081.0,618.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1092.0,618.5 1092.0,629.5 1092.0,618.5 1081.0,618.5 1092.0,618.5 1081.0,618.5 1092.0,618.5 1081.0,618.5 1070.0,618.5 1081.0,618.5 1070.0,618.5 1070.0,629.5 1070.0,618.5 1081.0,618.5 1070.0,618.5 1070.0,629.5 1070.0,618.5 1070.0,629.5 1070.0,618.5 1081.0,618.5 1092.0,618.5 1103.0,618.5 1114.0,618.5 1114.0,629.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1114.0" cy="629.5" r="4" fill="#f4cc60"/>
+<text x="946" y="683" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=24 legal=PASS</text>
+<rect x="14" y="700" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="715" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 50% / C34-RESET</text>
+<polyline points="190.0,778.5 179.0,778.5 168.0,778.5 157.0,778.5 146.0,778.5 146.0,789.5 146.0,778.5 146.0,789.5 146.0,778.5 157.0,778.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="168.0,778.5 168.0,789.5 168.0,778.5 157.0,778.5 168.0,778.5 157.0,778.5 146.0,778.5 146.0,789.5 146.0,778.5 157.0,778.5 146.0,778.5 146.0,789.5 146.0,778.5 157.0,778.5 146.0,778.5 157.0,778.5 168.0,778.5 179.0,778.5 190.0,778.5 190.0,789.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="190.0" cy="789.5" r="4" fill="#f4cc60"/>
+<text x="22" y="843" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="322" y="700" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="715" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 50% / C58-ALIGNED</text>
+<polyline points="498.0,778.5 487.0,778.5 476.0,778.5 465.0,778.5 454.0,778.5 454.0,789.5 454.0,778.5 454.0,789.5 454.0,778.5 465.0,778.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="476.0,778.5 476.0,789.5 476.0,778.5 465.0,778.5 476.0,778.5 465.0,778.5 476.0,778.5 465.0,778.5 454.0,778.5 465.0,778.5 454.0,778.5 454.0,789.5 454.0,778.5 465.0,778.5 454.0,778.5 454.0,789.5 454.0,778.5 454.0,789.5 454.0,778.5 465.0,778.5 476.0,778.5 487.0,778.5 498.0,778.5 498.0,789.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="498.0" cy="789.5" r="4" fill="#f4cc60"/>
+<text x="330" y="843" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=24 legal=PASS</text>
+<rect x="630" y="700" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="715" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 50% / C59-STRICT</text>
+<polyline points="806.0,778.5 795.0,778.5 784.0,778.5 773.0,778.5 762.0,778.5 762.0,789.5 762.0,778.5 762.0,789.5 762.0,778.5 773.0,778.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="784.0,778.5 784.0,789.5 784.0,778.5 773.0,778.5 784.0,778.5 773.0,778.5 762.0,778.5 762.0,789.5 762.0,778.5 773.0,778.5 762.0,778.5 762.0,789.5 762.0,778.5 773.0,778.5 762.0,778.5 773.0,778.5 784.0,778.5 795.0,778.5 806.0,778.5 806.0,789.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="806.0" cy="789.5" r="4" fill="#f4cc60"/>
+<text x="638" y="843" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="938" y="700" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="715" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 50% / C59-LEARNED</text>
+<polyline points="1114.0,778.5 1103.0,778.5 1092.0,778.5 1081.0,778.5 1070.0,778.5 1070.0,789.5 1070.0,778.5 1070.0,789.5 1070.0,778.5 1081.0,778.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1092.0,778.5 1092.0,789.5 1092.0,778.5 1081.0,778.5 1092.0,778.5 1081.0,778.5 1070.0,778.5 1070.0,789.5 1070.0,778.5 1081.0,778.5 1070.0,778.5 1070.0,789.5 1070.0,778.5 1081.0,778.5 1070.0,778.5 1081.0,778.5 1092.0,778.5 1103.0,778.5 1114.0,778.5 1114.0,789.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1114.0" cy="789.5" r="4" fill="#f4cc60"/>
+<text x="946" y="843" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="14" y="860" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="21" y="875" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 100% / C34-RESET</text>
+<polyline points="190.0,938.5 179.0,938.5 168.0,938.5 157.0,938.5 146.0,938.5 146.0,949.5 146.0,938.5 146.0,949.5 146.0,938.5 157.0,938.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="168.0,938.5 168.0,949.5 168.0,938.5 157.0,938.5 168.0,938.5 157.0,938.5 146.0,938.5 146.0,949.5 146.0,938.5 157.0,938.5 146.0,938.5 146.0,949.5 146.0,938.5 157.0,938.5 146.0,938.5 157.0,938.5 168.0,938.5 179.0,938.5 190.0,938.5 190.0,949.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="190.0" cy="949.5" r="4" fill="#f4cc60"/>
+<text x="22" y="1003" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="322" y="860" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="329" y="875" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 100% / C58-ALIGNED</text>
+<polyline points="498.0,938.5 487.0,938.5 476.0,938.5 465.0,938.5 454.0,938.5 454.0,949.5 454.0,938.5 454.0,949.5 454.0,938.5 465.0,938.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="476.0,938.5 476.0,949.5 476.0,938.5 465.0,938.5 476.0,938.5 465.0,938.5 476.0,938.5 465.0,938.5 454.0,938.5 465.0,938.5 454.0,938.5 454.0,949.5 454.0,938.5 465.0,938.5 454.0,938.5 454.0,949.5 454.0,938.5 454.0,949.5 454.0,938.5 465.0,938.5 476.0,938.5 487.0,938.5 498.0,938.5 498.0,949.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="498.0" cy="949.5" r="4" fill="#f4cc60"/>
+<text x="330" y="1003" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=24 legal=PASS</text>
+<rect x="630" y="860" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="637" y="875" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 100% / C59-STRICT</text>
+<polyline points="806.0,938.5 795.0,938.5 784.0,938.5 773.0,938.5 762.0,938.5 762.0,949.5 762.0,938.5 762.0,949.5 762.0,938.5 773.0,938.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="784.0,938.5 784.0,949.5 784.0,938.5 773.0,938.5 784.0,938.5 773.0,938.5 762.0,938.5 762.0,949.5 762.0,938.5 773.0,938.5 762.0,938.5 762.0,949.5 762.0,938.5 773.0,938.5 762.0,938.5 773.0,938.5 784.0,938.5 795.0,938.5 806.0,938.5 806.0,949.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="806.0" cy="949.5" r="4" fill="#f4cc60"/>
+<text x="638" y="1003" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+<rect x="938" y="860" width="299" height="151" rx="7" fill="#18263a" stroke="#44596a"/>
+<text x="945" y="875" font-family="monospace" font-size="9" fill="#ecf2fa">kruskal / observed / 100% / C59-LEARNED</text>
+<polyline points="1114.0,938.5 1103.0,938.5 1092.0,938.5 1081.0,938.5 1070.0,938.5 1070.0,949.5 1070.0,938.5 1070.0,949.5 1070.0,938.5 1081.0,938.5" fill="none" stroke="#8090ac" stroke-width="1.2" opacity=".8"/>
+<polyline points="1092.0,938.5 1092.0,949.5 1092.0,938.5 1081.0,938.5 1092.0,938.5 1081.0,938.5 1070.0,938.5 1070.0,949.5 1070.0,938.5 1081.0,938.5 1070.0,938.5 1070.0,949.5 1070.0,938.5 1081.0,938.5 1070.0,938.5 1081.0,938.5 1092.0,938.5 1103.0,938.5 1114.0,938.5 1114.0,949.5" fill="none" stroke="#5bd5a9" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1114.0" cy="949.5" r="4" fill="#f4cc60"/>
+<text x="946" y="1003" font-family="monospace" font-size="9" fill="#bdc8d8">goal=1 steps=20 legal=PASS</text>
+</svg>
