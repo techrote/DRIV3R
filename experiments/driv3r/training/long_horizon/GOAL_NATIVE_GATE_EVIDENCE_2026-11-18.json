@@ -1,0 +1,620 @@
+{
+  "archive_evidence_sha256": "44dd3538739816cb13a7211557730d6a6897d7cfbbba313533af412a188a682a",
+  "archive_manifest_sha256": "6e15e2a62908026d4afb0681c50c5aec8d2c3fe9ba46de340bf87321c613029d",
+  "checkpoint_publication": "local immutable-hash ZIP; GitHub Actions artifact not yet published",
+  "checkpoints": {
+    "711-blind": {
+      "optimizer_updates": 120,
+      "parameters": 769,
+      "sha256": "012232dd6f2d615d8fa6a609d055416bc552813d80cf29a167e8ed504d0bbc27"
+    },
+    "711-conditioned": {
+      "optimizer_updates": 120,
+      "parameters": 769,
+      "sha256": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df"
+    },
+    "712-blind": {
+      "optimizer_updates": 120,
+      "parameters": 769,
+      "sha256": "f5d94baaa63741ed8eaef78ae48d24bbb39dcf7adcbf447201b03831f36b87b4"
+    },
+    "712-conditioned": {
+      "optimizer_updates": 120,
+      "parameters": 769,
+      "sha256": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+    }
+  },
+  "cluster_bootstrap": {
+    "blind": {
+      "cluster": "12 development world source IDs",
+      "cluster_bootstrap_95_descriptive_pp": [
+        81.633,
+        97.538
+      ],
+      "difference_percentage_points": 90.369,
+      "resamples": 10000,
+      "seed": 1047
+    },
+    "goal_oracle": {
+      "cluster": "12 development world source IDs",
+      "cluster_bootstrap_95_descriptive_pp": [
+        -1.786,
+        30.738
+      ],
+      "difference_percentage_points": 15.779,
+      "resamples": 10000,
+      "seed": 1047
+    },
+    "random_persistent": {
+      "cluster": "12 development world source IDs",
+      "cluster_bootstrap_95_descriptive_pp": [
+        78.795,
+        93.939
+      ],
+      "difference_percentage_points": 87.09,
+      "resamples": 10000,
+      "seed": 1047
+    }
+  },
+  "condition_sums": {
+    "ordinary": {
+      "blind": 2,
+      "conditioned": 243,
+      "goal_oracle": 194,
+      "random_persistent": 14
+    },
+    "perturbed": {
+      "blind": 0,
+      "conditioned": 200,
+      "goal_oracle": 172,
+      "random_persistent": 4
+    }
+  },
+  "date": "2026-11-18",
+  "episodes": 192,
+  "experiment": "GOAL-NATIVE-GATE-001",
+  "family_counts": {
+    "islands": {
+      "blind": {
+        "offered": 132,
+        "reached": 0
+      },
+      "conditioned": {
+        "offered": 132,
+        "reached": 126
+      },
+      "goal_oracle": {
+        "offered": 132,
+        "reached": 92
+      },
+      "random_persistent": {
+        "offered": 132,
+        "reached": 6
+      }
+    },
+    "pickets": {
+      "blind": {
+        "offered": 116,
+        "reached": 0
+      },
+      "conditioned": {
+        "offered": 116,
+        "reached": 97
+      },
+      "goal_oracle": {
+        "offered": 116,
+        "reached": 116
+      },
+      "random_persistent": {
+        "offered": 116,
+        "reached": 8
+      }
+    },
+    "ridges": {
+      "blind": {
+        "offered": 108,
+        "reached": 0
+      },
+      "conditioned": {
+        "offered": 108,
+        "reached": 100
+      },
+      "goal_oracle": {
+        "offered": 108,
+        "reached": 86
+      },
+      "random_persistent": {
+        "offered": 108,
+        "reached": 0
+      }
+    },
+    "zigzag": {
+      "blind": {
+        "offered": 132,
+        "reached": 2
+      },
+      "conditioned": {
+        "offered": 132,
+        "reached": 120
+      },
+      "goal_oracle": {
+        "offered": 132,
+        "reached": 72
+      },
+      "random_persistent": {
+        "offered": 132,
+        "reached": 4
+      }
+    }
+  },
+  "native_action_receipts": 0,
+  "native_host_executed": false,
+  "observations": [
+    "Goal-conditioned model outperforms matched goal-blind under 64-move synthetic gate.",
+    "Goal-conditioned model has engineered Manhattan goal-progress channels.",
+    "Goal oracle is an imperfect BFS/stack heuristic, not a provably optimal benchmark.",
+    "Perturbation alternatives depend on policy-specific legal menus and diverged states.",
+    "Goal lists from source legal route may become obstructed after policy errors.",
+    "No comparison with d1/LFM/Sprocket; no native runtime or sealed structural heldout."
+  ],
+  "optimizer_updates_per_stage": 40,
+  "peak_rss_kib": 111844,
+  "recomputed_neural_probability_vectors": 5342,
+  "replay_audit": "all 192 episodes rerun under restored checkpoints and independently recomputed probabilities",
+  "replayed_legal_receipts": 9858,
+  "run_wall_s": 19.97,
+  "same_state_cardinal_goal_probes": [
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "pickets",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 711,
+      "world_state_sha256": "17871af46642db379e0fb5753c790542a4e357ae7123f674fa1b116c9a87bf53"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "ridges",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 711,
+      "world_state_sha256": "6c2dae3c253145131b4b9432dce74b4f6bffe2290c5906c3bbb3f7348cbbe950"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "islands",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 711,
+      "world_state_sha256": "ea4e926c1168581522470131b1f7cda50e6923a00d85ee8cc3bef81e431c7ae5"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "zigzag",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 711,
+      "world_state_sha256": "3d4a4f2319b759a3e30e51a3e342ef8481f9867a76491c8c5c3af68f87034c1b"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "pickets",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 712,
+      "world_state_sha256": "17871af46642db379e0fb5753c790542a4e357ae7123f674fa1b116c9a87bf53"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "ridges",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 712,
+      "world_state_sha256": "6c2dae3c253145131b4b9432dce74b4f6bffe2290c5906c3bbb3f7348cbbe950"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "islands",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 712,
+      "world_state_sha256": "ea4e926c1168581522470131b1f7cda50e6923a00d85ee8cc3bef81e431c7ae5"
+    },
+    {
+      "cardinal_goals": [
+        [
+          48,
+          44
+        ],
+        [
+          52,
+          48
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          44,
+          48
+        ]
+      ],
+      "conditioned": [
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_W"
+      ],
+      "family": "zigzag",
+      "goal_blind": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ],
+      "host_legal_menu": [
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_S",
+        "MOVE_W",
+        "STOP"
+      ],
+      "seed": 712,
+      "world_state_sha256": "3d4a4f2319b759a3e30e51a3e342ef8481f9867a76491c8c5c3af68f87034c1b"
+    }
+  ],
+  "seed_sums": {
+    "711": {
+      "blind": 0,
+      "conditioned": 222,
+      "goal_oracle": 183,
+      "random_persistent": 9
+    },
+    "712": {
+      "blind": 2,
+      "conditioned": 221,
+      "goal_oracle": 183,
+      "random_persistent": 9
+    }
+  },
+  "seeds": [
+    711,
+    712
+  ],
+  "source_head_before_edit": "9420cc6cae9c316c6efe76fe1532817d324f2f41",
+  "source_historical_recovery_cap_only": true,
+  "source_sha256": {
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_native_gate_lab.py": "d1b120709bd612cf0a633a6d5b04f5f471b238a4fdd2089181c1b75ec40b6cfe",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "stages": [
+    36,
+    72,
+    128
+  ],
+  "structural_heldout_opened": false,
+  "summary": {
+    "blind": {
+      "64_gate": 48,
+      "actions": {
+        "BACKTRACK": 1,
+        "MOVE_E": 1144,
+        "MOVE_N": 581,
+        "MOVE_S": 789,
+        "MOVE_W": 557
+      },
+      "all_goals": 0,
+      "early_stops": 0,
+      "episodes": 48,
+      "goals_offered": 488,
+      "goals_reached": 2,
+      "mean_decisions": 64,
+      "mean_painted": 63.979,
+      "median_episode_choice_ms": 0.09247,
+      "synthetic_relocations": 0
+    },
+    "conditioned": {
+      "64_gate": 11,
+      "actions": {
+        "BACKTRACK": 8,
+        "MOVE_E": 647,
+        "MOVE_N": 645,
+        "MOVE_S": 522,
+        "MOVE_W": 448
+      },
+      "all_goals": 37,
+      "early_stops": 0,
+      "episodes": 48,
+      "goals_offered": 488,
+      "goals_reached": 443,
+      "mean_decisions": 47.292,
+      "mean_painted": 47.125,
+      "median_episode_choice_ms": 0.10432,
+      "synthetic_relocations": 0
+    },
+    "goal_oracle": {
+      "64_gate": 2,
+      "actions": {
+        "BACKTRACK": 272,
+        "MOVE_E": 412,
+        "MOVE_N": 530,
+        "MOVE_S": 398,
+        "MOVE_W": 276,
+        "STOP": 22
+      },
+      "all_goals": 24,
+      "early_stops": 22,
+      "episodes": 48,
+      "goals_offered": 488,
+      "goals_reached": 366,
+      "mean_decisions": 39.792,
+      "mean_painted": 33.667,
+      "median_episode_choice_ms": 0.01197,
+      "synthetic_relocations": 0
+    },
+    "random_persistent": {
+      "64_gate": 46,
+      "actions": {
+        "BACKTRACK": 36,
+        "MOVE_E": 584,
+        "MOVE_N": 634,
+        "MOVE_S": 720,
+        "MOVE_W": 622,
+        "RELOCATE_START": 8,
+        "STOP": 2
+      },
+      "all_goals": 0,
+      "early_stops": 2,
+      "episodes": 48,
+      "goals_offered": 488,
+      "goals_reached": 18,
+      "mean_decisions": 54.292,
+      "mean_painted": 53.333,
+      "median_episode_choice_ms": 0.00333,
+      "synthetic_relocations": 8
+    }
+  },
+  "trajectory_gallery_sha256": "542626be6490feb9b9726d11c209403200214e494cca8ae121e540fbd67c1289"
+}
