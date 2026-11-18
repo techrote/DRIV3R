@@ -7,16 +7,16 @@
   "only_mutable_pr": 1,
   "status": "DRAFT_HOLD_NO_MERGE",
   "best_sequential_corpus": "v38_host_accepted_live_tool_law_two_transition_recovery",
-  "supplemental_dynamic_obstruction": "v41_order_sensitive_multi_transition_delayed_obstruction",
-  "predecessor": "v40_one_delayed_obstruction_receipt",
+  "supplemental_dynamic_obstruction": "v42_two_interlock_remote_causal_memory",
+  "predecessor": "v41_last_relevant_obstruction_transition_sequence",
   "best_checkpoint": null,
-  "generator": "delayed_obstruction_v41.js",
-  "generator_sha256": "25e72a3cbde6fd88893fe9881f5c5277527abed7c028a3f112f82d59058860df",
-  "test": "test_delayed_obstruction_v41.js",
-  "test_sha256": "921385804791bc1e964d17ac44bf27ba6adbb35043d4b4c4c2431d47d48f097f",
-  "pinned_manifest": "V41_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "e6b719b2187b74565fa923602e796195d838324d1a0615d2fdbf313ce0ecc9aa",
-  "report": "DELAYED_OBSTRUCTION_SEQUENCE_V41_2026-11-18.md",
+  "generator": "dual_interlock_v42.js",
+  "generator_sha256": "e08d8c186b54b4680a59c33169ec150f0873b4f309303a57ef909ad01449d993",
+  "test": "test_dual_interlock_v42.js",
+  "test_sha256": "12e622126cbb1509df5f3183ff48d021117c7476226911c3891825a4d3309933",
+  "pinned_manifest": "V42_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "fce49195cdfae48ec02a71928a85fecfe398f4e3c93e8b2aefa0fa0ff5af2834",
+  "report": "DUAL_INTERLOCK_V42_2026-11-18.md",
   "stats": {
     "train_decisions": 8912,
     "dev_decisions": 8736,
@@ -24,38 +24,36 @@
     "episodes": 640,
     "oracle_terminal_successes": 640,
     "positive_counterfactual_pairs": 256,
-    "negative_controls": 64,
-    "min_relevant_event_age_accepted_moves": 72,
-    "minimum_strict_first_action_regret": 2,
+    "A_disabled_negative_control_pairs": 64,
     "positive_heldout_pairs": 64,
-    "event_ablated_accuracy_ceiling": 0.5,
+    "min_B_event_age_accepted_moves": 112,
+    "min_last_A_event_age_accepted_moves": 80,
+    "minimum_strict_first_action_regret": 2,
+    "B_ablated_positive_pair_first_action_ceiling": 0.5,
     "unique_geometries": 16,
     "duplicate_or_label_conflicts": 0,
-    "sensor_preserved_during_obstruction_only_ablation": true
+    "actual_host_graph_changes": true,
+    "last_A_event_identical_in_matched_pairs": true
   },
-  "qualification": "Two full generation runs byte-identical; independent audit 29744 records and evaluator-only challenges; strict legal first-action contrast, host-accepted graph switches, final oracle terminal replay, cross-split topology isolation.",
+  "qualification": "Two complete generation runs byte-identical and independent 29744-row audit; 160 DEV/HELDOUT challenge pairs audited, 3 split x 4 schedule positive and A-off control re-instantiation; oracle terminal success and regret in every episode.",
   "performance": {
-    "full_generation_seconds": [
-      18.28,
-      18.01
-    ],
-    "peak_rss_kib": [
-      368280,
-      371640
-    ],
+    "generation_seconds": [13.89, 13.78],
+    "generation_peak_rss_kib": [490228, 439532],
+    "auditor_seconds": 1.70,
+    "auditor_peak_rss_kib": 487024,
     "model_inference_latency_rss": "NOT_MEASURED"
   },
   "negative_results": [
-    "No SLM forwards, adapter training or trained checkpoint in Corpus Factory lane",
-    "One fixed symbolic junction, deterministic ageing loops; most-recent-relevant-event rule solves task",
+    "No named SLM forwards, adapter updates, checkpoint or model-performance measure in data lane",
+    "Single fixed symbolic junction with two Boolean interlocks and deterministic ageing loops; receipt parser can solve it",
     "No native CyberSand evaluation",
-    "No immutable Actions artifacts; generated shards remain outside Git"
+    "JSONL shards are reproducible but not published in immutable Actions artifacts"
   ],
   "cross_lane_blockers": {
-    "lfm_game_policy": "Historical genuine rank-8 LoRA reported, no new full-root forwards/updates in current runner",
-    "sprocket_game_policy": "No pinned root model binaries/tokenizer or compatible runtime in current executor"
+    "lfm_game_policy": "Historical rank-8 GP350-006 LoRA exists; current lane cannot run new full-model forwards in current executor",
+    "sprocket_game_policy": "Root checkpoint/tokenizer and compatible runtime are unavailable in current executor"
   },
-  "next_useful_consumer_experiment": "Train actual pinned SLM on TRAIN only; compare HELDOUT full durable history versus junction-only ablation preserving sensor events versus last-64 history; report first-action, closed-loop terminal success, regret, contamination, illegality, p50/p95 model latency and peak model RSS; validate native CyberSand separately.",
+  "next_useful_consumer_experiment": "Actual pinned SLM trained on TRAIN only, DEV-selected then closed-loop HELDOUT: full durable history vs B-only ablation retaining A and sensors vs last-64 history; stratify A-on positive and A-off negative families; measure terminal success, contamination, regret, raw illegal preferences, p50/p95 inference latency and RSS; native CyberSand separately.",
   "no_paid_api_or_gpu": true,
   "no_out_of_lane_writes": true
 }
