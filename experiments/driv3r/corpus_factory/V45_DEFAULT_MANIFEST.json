@@ -1,0 +1,92 @@
+{
+  "schema": "driv3r/corpus_factory/partial-survey-memory-v45/manifest",
+  "date": "2026-11-18",
+  "synthetic_not_native_CyberSand": true,
+  "quick": false,
+  "generator": "frontier_memory_v45.js",
+  "generator_sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+  "parent": "unseen_topology_v44.js",
+  "parent_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "note": "Deterministic visible-survey frontier teacher; labels are NOT clairvoyant shortest-path optimals in unseen areas. Gate event is old; observed static edges require physical survey. Per-world paired remote-gate causality plus irrelevant-gate controls.",
+  "input_contract": "Feed ONLY policy.input to model. policy.action is supervised label; policy.weight is training loss weight. evaluator-only challenge metadata MUST remain sealed.",
+  "train_test_separation": "Different v45 seeds and grid sizes per split. v45 scenarios use fresh v44 scenario indices >=5000; do not mix v44 HELDOUT topology into training.",
+  "stats": {
+    "total_policy_decisions": 11732,
+    "unique_topologies": 112
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 64,
+      "terminal_episodes": 256,
+      "positive_pairs": 64,
+      "negative_control_pairs": 64,
+      "decisions": 5644,
+      "zero_weight": 0,
+      "move_labels_before_target_visit": 2260,
+      "move_labels_with_goal_unseen": 1756,
+      "initial_coverage_mean": 0.25545
+    },
+    "DEV": {
+      "worlds": 24,
+      "terminal_episodes": 96,
+      "positive_pairs": 24,
+      "negative_control_pairs": 24,
+      "decisions": 2652,
+      "zero_weight": 0,
+      "move_labels_before_target_visit": 1128,
+      "move_labels_with_goal_unseen": 982,
+      "initial_coverage_mean": 0.21171
+    },
+    "HELDOUT": {
+      "worlds": 24,
+      "terminal_episodes": 96,
+      "positive_pairs": 24,
+      "negative_control_pairs": 24,
+      "decisions": 3436,
+      "zero_weight": 0,
+      "move_labels_before_target_visit": 1650,
+      "move_labels_with_goal_unseen": 1394,
+      "initial_coverage_mean": 0.17412
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 5644,
+      "bytes": 10385787,
+      "sha256": "13f86e290e6f01ad1f2bb92d9d56a70098097e15be60f1501634668b83b22134"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 128,
+      "bytes": 78511,
+      "sha256": "1fa2e4aaf1d988347c31a46374c10fc6b07b55e8972f0b82e638380755d27b2a"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 2652,
+      "bytes": 5151237,
+      "sha256": "2fe12f126bd752b2c27334bf6d0581f5b795678d957d2e18aff73c36eaa2db5e"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 29320,
+      "sha256": "5d04a804e00f970a2768d33d1a3fa9d34ef91938d31ee1a0291b39f0c5c11ce0"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 3436,
+      "bytes": 7699317,
+      "sha256": "8fa7e84bb7f7c322b8ca291f098bdcc830a09a4efc94dfff917fe73ec581b95f"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 29580,
+      "sha256": "b88ca79c3e1da2a98779682b3493df0e3cac76ae10b4508fc514fc8c6c2c38ed"
+    }
+  },
+  "caveats": [
+    "Synthetic host, not native CyberSand",
+    "Full route survey is a scripted accepted-action prelude; exploration after fork uses only observed edges",
+    "Frontier planner is an oracle labeler/control, not learned policy",
+    "Remote global bulletin conveys gate state; no real sensor latency or physics",
+    "No target SLM trained; model inference latency/RSS not measured",
+    "Small random-graph family, not multi-genre native maps"
+  ]
+}
