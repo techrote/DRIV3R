@@ -45,6 +45,8 @@ def generate(run_dir: Path, checkpoints: Path, target: Path) -> None:
             tr = selected[(layout, gi, 'stale_cache')]
             sp = Spec(**tr['spec']); w = overlay_world(sp, layout)
             base_x, base_y = x0 + 58, y0 + 44
+            clip_id = f'panel-clip-{ri}-{ci}'
+            out.append(f'<defs><clipPath id="{clip_id}"><rect x="{base_x}" y="{base_y}" width="{33*unit}" height="{33*unit}"/></clipPath></defs>')
             def xy(point):
                 return base_x + (point[0]-39)*unit, base_y + (point[1]-38)*unit
             out.append(f'<rect x="{base_x}" y="{base_y}" width="{33*unit}" height="{33*unit}" fill="#0b1620" stroke="#3b4d5e"/>')
@@ -60,7 +62,7 @@ def generate(run_dir: Path, checkpoints: Path, target: Path) -> None:
                 t = selected[(layout, gi, arm)]
                 points = [(48,48)] + [tuple(e['receipt']['cursor_after']) for e in t['entries']]
                 coords = ' '.join(f'{xy(p)[0]+unit/2:.1f},{xy(p)[1]+unit/2:.1f}' for p in points)
-                out.append(f'<polyline points="{coords}" fill="none" stroke="{COLORS[arm]}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" opacity=".88"/>')
+                out.append(f'<polyline clip-path="url(#{clip_id})" points="{coords}" fill="none" stroke="{COLORS[arm]}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" opacity=".88"/>')
                 out.append(f'<text x="{x0+358}" y="{y0+64+ORDER.index(arm)*19}" font-size="12" font-family="sans-serif" fill="{COLORS[arm]}">{escape(arm.split("_")[0])}: {"GOAL" if t["row"]["arrived"] else "FAIL"}</text>')
             bx,by=xy(tr['material_event']['cell'])
             out.append(f'<rect x="{bx-2}" y="{by-2}" width="{unit+4}" height="{unit+4}" fill="#f25257" stroke="#fff" stroke-width="1.4"/>')

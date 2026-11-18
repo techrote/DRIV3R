@@ -15,7 +15,7 @@
   "episodes": 96,
   "event_tick": 2,
   "execution_wall_s": 3.924,
-  "gallery_sha256": "cc07b4f604d4d09a228f2e6ea56fd91e0ae18085ddde69b311df4e57e39deb29",
+  "gallery_sha256": "3d03a99bd0fda005c41078506328bd86063ffe05e1bdb2d2afc3e489146b1fc2",
   "gate_index": 5,
   "hazards": [
     "on_route",
