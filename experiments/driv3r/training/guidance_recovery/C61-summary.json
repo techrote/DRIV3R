@@ -1,0 +1,1865 @@
+{
+  "aggregate": {
+    "braid|0.0": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 60,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 0,
+          "new_sites": 42,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 1,
+          "new_sites": 86,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C60-FROZEN": {
+          "goals": 0,
+          "new_sites": 64,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 0,
+          "new_sites": 36,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 1,
+          "new_sites": 85,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        }
+      }
+    },
+    "braid|0.5": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 60,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 0,
+          "new_sites": 42,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 1,
+          "new_sites": 86,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C60-FROZEN": {
+          "goals": 0,
+          "new_sites": 64,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 0,
+          "new_sites": 36,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 1,
+          "new_sites": 85,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        }
+      }
+    },
+    "kruskal|0.0": {
+      "episodes": 26,
+      "policies": {
+        "C18-A0": {
+          "goals": 6,
+          "new_sites": 104,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 4
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 236,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 6,
+          "new_sites": 426,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 4
+        },
+        "C60-FROZEN": {
+          "goals": 4,
+          "new_sites": 453,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        },
+        "C61-SHUFFLED": {
+          "goals": 2,
+          "new_sites": 136,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 4,
+          "new_sites": 453,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        }
+      }
+    },
+    "kruskal|0.5": {
+      "episodes": 26,
+      "policies": {
+        "C18-A0": {
+          "goals": 6,
+          "new_sites": 104,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 4
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 236,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 6,
+          "new_sites": 426,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 4
+        },
+        "C60-FROZEN": {
+          "goals": 4,
+          "new_sites": 453,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        },
+        "C61-SHUFFLED": {
+          "goals": 2,
+          "new_sites": 144,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 4,
+          "new_sites": 453,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        }
+      }
+    },
+    "prim_braid|0.0": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 2,
+          "new_sites": 66,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 62,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 5,
+          "new_sites": 81,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 3
+        },
+        "C60-FROZEN": {
+          "goals": 4,
+          "new_sites": 80,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        },
+        "C61-SHUFFLED": {
+          "goals": 3,
+          "new_sites": 61,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-WILSON": {
+          "goals": 2,
+          "new_sites": 86,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "prim_braid|0.5": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 2,
+          "new_sites": 66,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 62,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 4,
+          "new_sites": 56,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        },
+        "C60-FROZEN": {
+          "goals": 4,
+          "new_sites": 80,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 2
+        },
+        "C61-SHUFFLED": {
+          "goals": 3,
+          "new_sites": 61,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-WILSON": {
+          "goals": 2,
+          "new_sites": 86,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "prim|0.0": {
+      "episodes": 2,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 2,
+          "paired_losses_vs_RESET": 2,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FROZEN": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "prim|0.5": {
+      "episodes": 2,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 2,
+          "paired_losses_vs_RESET": 2,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FROZEN": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 2,
+          "new_sites": 4,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "tree|0.0": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 24,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 0,
+          "new_sites": 27,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 1,
+          "new_sites": 120,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C60-FROZEN": {
+          "goals": 0,
+          "new_sites": 61,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 0,
+          "new_sites": 27,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 0,
+          "new_sites": 82,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "tree|0.5": {
+      "episodes": 6,
+      "policies": {
+        "C18-A0": {
+          "goals": 0,
+          "new_sites": 24,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 0,
+          "new_sites": 27,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 1,
+          "new_sites": 113,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C60-FROZEN": {
+          "goals": 0,
+          "new_sites": 61,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-SHUFFLED": {
+          "goals": 0,
+          "new_sites": 27,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C61-WILSON": {
+          "goals": 0,
+          "new_sites": 82,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        }
+      }
+    },
+    "wilson|0.0": {
+      "episodes": 34,
+      "policies": {
+        "C18-A0": {
+          "goals": 2,
+          "new_sites": 190,
+          "paired_losses_vs_RESET": 3,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 5,
+          "new_sites": 262,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 5,
+          "new_sites": 447,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FROZEN": {
+          "goals": 6,
+          "new_sites": 489,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-SHUFFLED": {
+          "goals": 5,
+          "new_sites": 248,
+          "paired_losses_vs_RESET": 1,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-WILSON": {
+          "goals": 6,
+          "new_sites": 529,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        }
+      }
+    },
+    "wilson|0.5": {
+      "episodes": 34,
+      "policies": {
+        "C18-A0": {
+          "goals": 2,
+          "new_sites": 190,
+          "paired_losses_vs_RESET": 3,
+          "paired_wins_vs_RESET": 0
+        },
+        "C34-RESET": {
+          "goals": 5,
+          "new_sites": 262,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FRONTIER": {
+          "goals": 5,
+          "new_sites": 429,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 0
+        },
+        "C60-FROZEN": {
+          "goals": 6,
+          "new_sites": 489,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-SHUFFLED": {
+          "goals": 5,
+          "new_sites": 248,
+          "paired_losses_vs_RESET": 1,
+          "paired_wins_vs_RESET": 1
+        },
+        "C61-WILSON": {
+          "goals": 6,
+          "new_sites": 529,
+          "paired_losses_vs_RESET": 0,
+          "paired_wins_vs_RESET": 1
+        }
+      }
+    }
+  },
+  "checkpoint_sha256": {
+    "C61-SHUFFLED": "1e0ea41af8c36b334229d776f175e7a02c662e28000b8a7a56f4868e9ef7eaf2",
+    "C61-WILSON": "21025fc8978692103b1671560e7326a65bfb2b41653f3b77102bce6db4bf344e"
+  },
+  "clustered": {
+    "familiar|0.0": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          1,
+          9
+        ],
+        "negative_graphs": 0,
+        "net_delta": 5,
+        "positive_graphs": 4
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          6
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 1
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      }
+    },
+    "familiar|0.5": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          8
+        ],
+        "negative_graphs": 0,
+        "net_delta": 4,
+        "positive_graphs": 3
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          6
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 1
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 10,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      }
+    },
+    "kruskal|0.0": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          1,
+          7
+        ],
+        "negative_graphs": 0,
+        "net_delta": 4,
+        "positive_graphs": 4
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          5
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 2
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          0
+        ],
+        "negative_graphs": 0,
+        "net_delta": 0,
+        "positive_graphs": 0
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          5
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 2
+      }
+    },
+    "kruskal|0.5": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          1,
+          7
+        ],
+        "negative_graphs": 0,
+        "net_delta": 4,
+        "positive_graphs": 4
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          5
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 2
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          0
+        ],
+        "negative_graphs": 0,
+        "net_delta": 0,
+        "positive_graphs": 0
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 13,
+        "exploratory_cluster95": [
+          0,
+          5
+        ],
+        "negative_graphs": 0,
+        "net_delta": 2,
+        "positive_graphs": 2
+      }
+    },
+    "wilson|0.0": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          0
+        ],
+        "negative_graphs": 0,
+        "net_delta": 0,
+        "positive_graphs": 0
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          -3,
+          3
+        ],
+        "negative_graphs": 1,
+        "net_delta": 0,
+        "positive_graphs": 1
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      }
+    },
+    "wilson|0.5": {
+      "C60-FRONTIER": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          0
+        ],
+        "negative_graphs": 0,
+        "net_delta": 0,
+        "positive_graphs": 0
+      },
+      "C60-FROZEN": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      },
+      "C61-SHUFFLED": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          -3,
+          3
+        ],
+        "negative_graphs": 1,
+        "net_delta": 0,
+        "positive_graphs": 1
+      },
+      "C61-WILSON": {
+        "contributing_graphs": 17,
+        "exploratory_cluster95": [
+          0,
+          3
+        ],
+        "negative_graphs": 0,
+        "net_delta": 1,
+        "positive_graphs": 1
+      }
+    }
+  },
+  "eligible_test_prefixes": 40,
+  "eligible_train_prefixes": 15,
+  "frozen_C60_checkpoint_sha256": "e305c1ee36d8f9b336a15ac8cd6a873afb95988869d4ceeefde87940c45ad4bd",
+  "historical_excluded_graph_count": 144,
+  "horizon": 110,
+  "limitations": [
+    "Synthetic host only, no native CyberSand acceptance",
+    "Wilson is a seen TRAIN family; Kruskal is completely absent from training",
+    "Local action head cannot plan through genuinely unknown graph connections",
+    "Descriptive exploratory intervals, not preregistered statistical confirmation",
+    "20-step movement proxies do not qualify holistic artistic personality",
+    "Checkpoints locally archived, not immutable GitHub Actions artifact custody"
+  ],
+  "matched_conditions": 240,
+  "personality20": {
+    "braid|C60-FRONTIER": {
+      "deltas": {
+        "direction_entropy": 0.04286927603072124,
+        "paint_fraction": -0.025000000000000022,
+        "reverse_rate": -0.01315789473684209,
+        "turn_rate": 0.07894736842105263,
+        "unique_ratio": 0.023809523809523808
+      },
+      "n": 4
+    },
+    "braid|C60-FROZEN": {
+      "deltas": {
+        "direction_entropy": 0.050811644578383164,
+        "paint_fraction": 0.012499999999999997,
+        "reverse_rate": -0.07894736842105263,
+        "turn_rate": 0.02631578947368421,
+        "unique_ratio": 0.047619047619047616
+      },
+      "n": 4
+    },
+    "braid|C61-SHUFFLED": {
+      "deltas": {
+        "direction_entropy": 0.025768456602588197,
+        "paint_fraction": -0.07500000000000004,
+        "reverse_rate": 0.05263157894736842,
+        "turn_rate": 0.07894736842105263,
+        "unique_ratio": 0.0
+      },
+      "n": 4
+    },
+    "braid|C61-WILSON": {
+      "deltas": {
+        "direction_entropy": 0.025768456602588197,
+        "paint_fraction": -2.0816681711721685e-17,
+        "reverse_rate": -0.09210526315789473,
+        "turn_rate": -0.013157894736842118,
+        "unique_ratio": 0.03571428571428571
+      },
+      "n": 4
+    },
+    "kruskal|C60-FRONTIER": {
+      "deltas": {
+        "direction_entropy": 0.0333759575842137,
+        "paint_fraction": 0.03333333333333333,
+        "reverse_rate": -0.09523809523809526,
+        "turn_rate": -0.05764411027568924,
+        "unique_ratio": 0.12244897959183672
+      },
+      "n": 21
+    },
+    "kruskal|C60-FROZEN": {
+      "deltas": {
+        "direction_entropy": 0.011159831984874686,
+        "paint_fraction": 0.009523809523809521,
+        "reverse_rate": -0.07268170426065163,
+        "turn_rate": -0.032581453634085225,
+        "unique_ratio": 0.07482993197278913
+      },
+      "n": 21
+    },
+    "kruskal|C61-SHUFFLED": {
+      "deltas": {
+        "direction_entropy": -0.05293140520713731,
+        "paint_fraction": 0.02,
+        "reverse_rate": 0.0017543859649122805,
+        "turn_rate": -0.006140350877192988,
+        "unique_ratio": -0.011904761904761899
+      },
+      "n": 20
+    },
+    "kruskal|C61-WILSON": {
+      "deltas": {
+        "direction_entropy": 0.02301784972715888,
+        "paint_fraction": -0.016666666666666673,
+        "reverse_rate": -0.06766917293233082,
+        "turn_rate": -0.035087719298245626,
+        "unique_ratio": 0.06122448979591837
+      },
+      "n": 21
+    },
+    "wilson|C60-FRONTIER": {
+      "deltas": {
+        "direction_entropy": 0.01080994723520325,
+        "paint_fraction": 0.05192307692307692,
+        "reverse_rate": -0.026990553306342792,
+        "turn_rate": -0.022829509671614935,
+        "unique_ratio": 0.027472527472527472
+      },
+      "n": 26
+    },
+    "wilson|C60-FROZEN": {
+      "deltas": {
+        "direction_entropy": 0.016864332212075436,
+        "paint_fraction": 0.028846153846153848,
+        "reverse_rate": -0.016194331983805675,
+        "turn_rate": -0.006072874493927127,
+        "unique_ratio": 0.018315018315018312
+      },
+      "n": 26
+    },
+    "wilson|C61-SHUFFLED": {
+      "deltas": {
+        "direction_entropy": 0.0015489452333340829,
+        "paint_fraction": 0.03863636363636364,
+        "reverse_rate": -0.019138755980861243,
+        "turn_rate": -0.016746411483253593,
+        "unique_ratio": 0.023809523809523805
+      },
+      "n": 22
+    },
+    "wilson|C61-WILSON": {
+      "deltas": {
+        "direction_entropy": 0.00383524149958277,
+        "paint_fraction": -0.003846153846153841,
+        "reverse_rate": -0.026315789473684216,
+        "turn_rate": -0.016194331983805675,
+        "unique_ratio": 0.023809523809523805
+      },
+      "n": 26
+    }
+  },
+  "policy_source_hashes": {
+    "c34_independent_maze.py": "8fbe9c748b5ed838a226041097574d6381481cde45e769bc3e4ec736206d8d26",
+    "c52_shortest_step_cue.py": "20b367bea58e2148da8903275e2614f1fa8eaf53bb7189a365d76546f9921129",
+    "c56_memory_recovery.py": "3aa71cd04f1921a6a91c080b7837500f74e784bc74e9cd5fc950338cfffb7e91",
+    "c60_remote_frontier_rl.py": "988dcc5b168c52b91103791c65e2fc578b1c2dfca9b2e69230dee931308f95ad",
+    "experiment.py": "7e6157bd5e10187ce181136b3badd18ce6f4e755eb28b0a140ce0ca26362274d"
+  },
+  "protocol_seed": 610118,
+  "replayed_traces": 24,
+  "schema": "driv3r-c61-wilson-to-kruskal/1",
+  "shuffled_training": {
+    "episodes": 120,
+    "epochs": [
+      {
+        "actions": 1065,
+        "epoch": 0,
+        "goal_completions_cumulative": 12,
+        "mean_return": 1.7657717103444635,
+        "trajectories": 30,
+        "weight_l2": 0.21690146625041962
+      },
+      {
+        "actions": 932,
+        "epoch": 1,
+        "goal_completions_cumulative": 20,
+        "mean_return": 1.3359280748676525,
+        "trajectories": 30,
+        "weight_l2": 0.26727500557899475
+      },
+      {
+        "actions": 957,
+        "epoch": 2,
+        "goal_completions_cumulative": 27,
+        "mean_return": 1.1521675888616338,
+        "trajectories": 30,
+        "weight_l2": 0.3169119358062744
+      },
+      {
+        "actions": 976,
+        "epoch": 3,
+        "goal_completions_cumulative": 35,
+        "mean_return": 1.2687771290685737,
+        "trajectories": 30,
+        "weight_l2": 0.39442285895347595
+      }
+    ],
+    "goals_on_training_rollouts": 35,
+    "mode": "shuffled",
+    "updates": 9
+  },
+  "suffixes": 1440,
+  "test_graphs": [
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "8331c8276ee503e96ba434ba55cab65ba0c48564b70ce1bc4560570c6d2bc307",
+      "initial_seed": 613121,
+      "personality": -1,
+      "retry": 0,
+      "seed": 613121
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "dfc1219195588f4652581010ee5f67612fc49722cc1114049e841b3929e8bf90",
+      "initial_seed": 634162,
+      "personality": -1,
+      "retry": 0,
+      "seed": 634162
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "eb4f4d01a98a048d5ace56228a4892d3ed04b534c411a2bec6cc02f98452dc42",
+      "initial_seed": 655203,
+      "personality": -1,
+      "retry": 0,
+      "seed": 655203
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "7c4ee4827347d64453c6d57f6562ec3c5136fb9bd57e89a36ef438345cf619b8",
+      "initial_seed": 676244,
+      "personality": -1,
+      "retry": 0,
+      "seed": 676244
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "4c26be6128fe1db233b5fe6ee6ad1ccfd1c13375da2edcd0d70e4189ce180a8d",
+      "initial_seed": 697285,
+      "personality": -1,
+      "retry": 0,
+      "seed": 697285
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "c464fa82bd06a7b8f5e2ecb6226a6deac73e30ae7c9e035f839fb15a91286124",
+      "initial_seed": 718326,
+      "personality": -1,
+      "retry": 0,
+      "seed": 718326
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "26d1df4ca7065ac800283f9d984ece2ddbf3cb11b106127e24d70a0c1ec43ccd",
+      "initial_seed": 620595,
+      "personality": 1,
+      "retry": 0,
+      "seed": 620595
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "4ce870cf7480fc9fd58f157c4aab33b28babc688118d7367a519d4c379e5180e",
+      "initial_seed": 641636,
+      "personality": 1,
+      "retry": 0,
+      "seed": 641636
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "755d6e41a6dff3e79c7e5657df12caab693e6426499492b9b40f5caef0b996e6",
+      "initial_seed": 662677,
+      "personality": 1,
+      "retry": 0,
+      "seed": 662677
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "793cbb916b6ae8bf274a680c500c3edfca5a07704d43698b8c43505e400a77b6",
+      "initial_seed": 683718,
+      "personality": 1,
+      "retry": 0,
+      "seed": 683718
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "9564e9960672b5c8847103ab18144879dee31cda3a328bd07507a811de5360c5",
+      "initial_seed": 704759,
+      "personality": 1,
+      "retry": 0,
+      "seed": 704759
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "c511d125c3eeae82f45d8704f294fc0dfc432831f83002fc078f94f94b3b81e9",
+      "initial_seed": 725800,
+      "personality": 1,
+      "retry": 0,
+      "seed": 725800
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "c2d4407d8a71860704905b52c789ec6531ce0adf7c2eadfee4096a71c24e1f1d",
+      "initial_seed": 632134,
+      "personality": -1,
+      "retry": 0,
+      "seed": 632134
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "7318904ff316084f9adceec3f4bf9518410fd47a89d9d45c71af1f7ee747dda1",
+      "initial_seed": 653175,
+      "personality": -1,
+      "retry": 0,
+      "seed": 653175
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "cd837fa86d7806e88b14591a693d7fe5e5613fa7cd4c18518c65c09cbd55a5bf",
+      "initial_seed": 674216,
+      "personality": -1,
+      "retry": 0,
+      "seed": 674216
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "2002f621ccc63ce7f996d01abafcdd51f42de3ad6c3a0f8dcb8e8916c9267dd7",
+      "initial_seed": 695257,
+      "personality": -1,
+      "retry": 0,
+      "seed": 695257
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "ea3ad7058c030f33dcda6c5bb00ad2b43a9f6bb5d9a4c584cd6b7cad1b95f67d",
+      "initial_seed": 716298,
+      "personality": -1,
+      "retry": 0,
+      "seed": 716298
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "cca990ca51eede89efe7bbfb521dfd15d9d82ccad147e8947d061d85c45623c2",
+      "initial_seed": 737339,
+      "personality": -1,
+      "retry": 0,
+      "seed": 737339
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "ca4095ca7689376bed6adb4f17874ed2b624c2a03484f207aa0cc9043f135e1e",
+      "initial_seed": 639608,
+      "personality": 1,
+      "retry": 0,
+      "seed": 639608
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "a883ecd63bcfd9c5728c25dd9d3b951658d5fc3c0eaf74b5e93e5e1756aea7bc",
+      "initial_seed": 660649,
+      "personality": 1,
+      "retry": 0,
+      "seed": 660649
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "a2b1c56325bbf814ba5c040ca7c921c693ee30a9e556019ce05cedc392e2379e",
+      "initial_seed": 681690,
+      "personality": 1,
+      "retry": 0,
+      "seed": 681690
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "e0e9f0324df77945a3f6533030d31adff71830298a0ef06cedd07223c4242fe5",
+      "initial_seed": 702731,
+      "personality": 1,
+      "retry": 0,
+      "seed": 702731
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "f3527f62177ef0506aacb2001a2e9433d93a253496318a5c3221c9d5d36d1b27",
+      "initial_seed": 723772,
+      "personality": 1,
+      "retry": 0,
+      "seed": 723772
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "9136158140cdffc8b31437e891558c36915970e31daab02d713f157ae66c04e0",
+      "initial_seed": 744813,
+      "personality": 1,
+      "retry": 0,
+      "seed": 744813
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "8f901d38753204839a6a1d180272e989929ac6a523840cb030e788c9581388e2",
+      "initial_seed": 783124,
+      "personality": -1,
+      "retry": 0,
+      "seed": 783124
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "9df6e13ac30df434dafdf427fff541e855c9cf38f5507d8d360b436a66756df3",
+      "initial_seed": 804165,
+      "personality": -1,
+      "retry": 0,
+      "seed": 804165
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "3fb66bc11a4e03015c24b3f94dcaa8d13085cdef098d456c31b8db562fead865",
+      "initial_seed": 825206,
+      "personality": -1,
+      "retry": 0,
+      "seed": 825206
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "64afd4d4eb9dbd1bb0c97968e78463189201681d872c938e13123ae9338655f4",
+      "initial_seed": 846247,
+      "personality": -1,
+      "retry": 0,
+      "seed": 846247
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "553c64b969e09277b9ecbf966c551c5e88a7892e076314bc3fb589db1ca996af",
+      "initial_seed": 867288,
+      "personality": -1,
+      "retry": 0,
+      "seed": 867288
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "016b749dc7ebec22d2433c36693131d8154e40f250f5cfb0850f31e9a87bde82",
+      "initial_seed": 888329,
+      "personality": -1,
+      "retry": 0,
+      "seed": 888329
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "5331b0af6531809a45cfe04769b42dc9fb4f46dca4ce7128d8442f521c0d1e25",
+      "initial_seed": 790598,
+      "personality": 1,
+      "retry": 0,
+      "seed": 790598
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "239c5afb4577fea78df9bea81404ae052316f8ceada6fc5d8931718990a2e37b",
+      "initial_seed": 811639,
+      "personality": 1,
+      "retry": 0,
+      "seed": 811639
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "96098498fb02d68b5f72201fe43ada1258cd675d1709ff44cfc2b7e36c24b4a6",
+      "initial_seed": 832680,
+      "personality": 1,
+      "retry": 0,
+      "seed": 832680
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "59ff5d234f9dbbf3d38a552bcb99c4ba7cf81d172157bf5ef7856442a5dc9b8a",
+      "initial_seed": 853721,
+      "personality": 1,
+      "retry": 0,
+      "seed": 853721
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "2ab4f4042847f84f3574cc7336f7028673c0eee2bd70c3083dbe6d7b09ee075e",
+      "initial_seed": 874762,
+      "personality": 1,
+      "retry": 0,
+      "seed": 874762
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "9ad4c5c7e5ed3eb916d6a3332dceb4649c5a871f4b5a5f7406b2221b9c789b9f",
+      "initial_seed": 895803,
+      "personality": 1,
+      "retry": 0,
+      "seed": 895803
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "467e159909be7685456356f32dbb54c4685d057a97200cbdfca0e696613beb48",
+      "initial_seed": 802137,
+      "personality": -1,
+      "retry": 0,
+      "seed": 802137
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "b878be093801775ea3aa3828427382f09756adb8ac1de6abe546803b3a7f466c",
+      "initial_seed": 823178,
+      "personality": -1,
+      "retry": 0,
+      "seed": 823178
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "957f82ef071d5be69413b40f97ae1acc87424015492a758f3bf2912fd3c6b52a",
+      "initial_seed": 844219,
+      "personality": -1,
+      "retry": 0,
+      "seed": 844219
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "6cda5045f95b186938d83d62e9841aed43332cf88e0c364bb1d8580a0b66c5e9",
+      "initial_seed": 865260,
+      "personality": -1,
+      "retry": 0,
+      "seed": 865260
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "8cb4e0f468bea78063d518ffc04e42d8051921680136c7828e4906de865b3e51",
+      "initial_seed": 886301,
+      "personality": -1,
+      "retry": 0,
+      "seed": 886301
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "be8c33686255123c46e9bcd18d9d4c7f9e4fd887337e5cf681eb210122b9011e",
+      "initial_seed": 907342,
+      "personality": -1,
+      "retry": 0,
+      "seed": 907342
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "3c7eefbf59bedf4b9328526247246cbfd952326fee50bae61a7b8ac278639b70",
+      "initial_seed": 809611,
+      "personality": 1,
+      "retry": 0,
+      "seed": 809611
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "1f1e5729f0541c9927fd436d11e2b2b8200274de63ca00198232663357b81906",
+      "initial_seed": 830652,
+      "personality": 1,
+      "retry": 0,
+      "seed": 830652
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "9b65f73762fa24777fa5453eab8abb24b29d1eda0227a2f022833736dc847a5c",
+      "initial_seed": 851693,
+      "personality": 1,
+      "retry": 0,
+      "seed": 851693
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "0993c16db79b0820036b016a0379111f9bc3f3a3e61f940b1482c256b63da8c5",
+      "initial_seed": 872734,
+      "personality": 1,
+      "retry": 0,
+      "seed": 872734
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "a68942963e3236726aa8c5f847543ba105eff37cb16225e01ee03f6fedaaa4db",
+      "initial_seed": 893775,
+      "personality": 1,
+      "retry": 0,
+      "seed": 893775
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "8a07e28c136b51a2c0970cef2e136857fad4dfa9fa669cad94386ee441c58495",
+      "initial_seed": 914816,
+      "personality": 1,
+      "retry": 0,
+      "seed": 914816
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "668113185590c4353366ef8dfedfbef8cdf9ee04fd37c70ba0415c023173f9cc",
+      "initial_seed": 614122,
+      "personality": -1,
+      "retry": 0,
+      "seed": 614122
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "113163780fe4bfe6630fb30e4a3bd68f6a11e3acb1cf2f89b0228175b0ceae1f",
+      "initial_seed": 621596,
+      "personality": 1,
+      "retry": 0,
+      "seed": 621596
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "d3c6c55eac799f25a76bbb829803716719586fd8b90c4bc727edab332bf36529",
+      "initial_seed": 633135,
+      "personality": -1,
+      "retry": 0,
+      "seed": 633135
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "2f0c6886aace4310269f34cf8bdca17295595d9ecc59dc84ce23ebd92966ed09",
+      "initial_seed": 640609,
+      "personality": 1,
+      "retry": 0,
+      "seed": 640609
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "b6621af8b2d2e70c64a14f711308198bd5eff02156e1a93064952913400bb065",
+      "initial_seed": 784125,
+      "personality": -1,
+      "retry": 0,
+      "seed": 784125
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "952d722fc1130a7e9098b7ea1e49565c4d2b9f33a24ad335948a8ae0b4b7026c",
+      "initial_seed": 791599,
+      "personality": 1,
+      "retry": 0,
+      "seed": 791599
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "fc1aa5f26370a303ce41aa35f9367f24f45092bfe987a0e56588b952a2c8567b",
+      "initial_seed": 803138,
+      "personality": -1,
+      "retry": 0,
+      "seed": 803138
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "42b596a796b624966e86c0f3bd8ebae0523581263516302aad069be93a18850f",
+      "initial_seed": 810612,
+      "personality": 1,
+      "retry": 0,
+      "seed": 810612
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "df635d30d6e88fca2e2582b21e799aa70333a09cbc3fdd9567b1f5a7b32524ab",
+      "initial_seed": 954128,
+      "personality": -1,
+      "retry": 0,
+      "seed": 954128
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "8a62c1e7d60bf09b70a219c109a8d815d1ef19d1b83f820c3be3d9ecdf227c5d",
+      "initial_seed": 961602,
+      "personality": 1,
+      "retry": 0,
+      "seed": 961602
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "7b53d3e5f1dc693f93c385386698db7d336c954caa837b0632a453c336177e09",
+      "initial_seed": 973141,
+      "personality": -1,
+      "retry": 0,
+      "seed": 973141
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "18f2cd881d8d6119ebd2ef54809b0cc432580f9ee4720d4dab78d2d0c2b15781",
+      "initial_seed": 980615,
+      "personality": 1,
+      "retry": 0,
+      "seed": 980615
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "6269a1f13f82fd085a6c2eb9f858da001cfb3481633edeb1e2045f4b4f2724ec",
+      "initial_seed": 1124131,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1124131
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "e8b2fa236dd9d938f6ee5a84775b15a7feaeb180b4ad689b33bb960905831ac4",
+      "initial_seed": 1131605,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1131605
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "f7e09b496278f87136d1626b384c0443fd731f04f66c858dace45f3fa46269fb",
+      "initial_seed": 1143144,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1143144
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "30decdb150874332bee7ddf88fed97855cd3c88e6e87443eb66cc5176a64403a",
+      "initial_seed": 1150618,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1150618
+    }
+  ],
+  "test_skips": {
+    "early_terminal": 23,
+    "target_already_observed": 1
+  },
+  "train_graphs": [
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "f6fc84998071b621ad9bcb9cab097474b204f6ae23fd653c8e81882d53cb2ec5",
+      "initial_seed": 611119,
+      "personality": -1,
+      "retry": 0,
+      "seed": 611119
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "3fb7438491748cd78d631cf45483347a354138481316135571bce2a39cec7c98",
+      "initial_seed": 618593,
+      "personality": 1,
+      "retry": 0,
+      "seed": 618593
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "c39bc4d25f3bce948914b8a4106403056755e945de13b9434f826a245cf7bf17",
+      "initial_seed": 630132,
+      "personality": -1,
+      "retry": 0,
+      "seed": 630132
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "30c0b6ab77e24d0210e1183e68621644e2b803032964fc95d73f1bc4ddf19fe4",
+      "initial_seed": 637606,
+      "personality": 1,
+      "retry": 0,
+      "seed": 637606
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "4e3972efffe377ccc02230ee6dbd6e4f5b219e23f906ea1888776e056fbfc996",
+      "initial_seed": 781122,
+      "personality": -1,
+      "retry": 0,
+      "seed": 781122
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "5312f004d1e5d5a255cd34043254f7ea50941b685fae4f42db437ef6e19e41c4",
+      "initial_seed": 788596,
+      "personality": 1,
+      "retry": 0,
+      "seed": 788596
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "1673361879e9eb062bf49c4bde3206a0899e9cb8afe3d31ffd86f54738e3f152",
+      "initial_seed": 800135,
+      "personality": -1,
+      "retry": 0,
+      "seed": 800135
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "1183ab014706b8bf70eb6fdd4cf84816ea7626ccac6cc615f2126896824cf24e",
+      "initial_seed": 807609,
+      "personality": 1,
+      "retry": 0,
+      "seed": 807609
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "ef188f3a9e0c0d7d4a80ae4e88ec8a40e1b296a942c73416e64d7da1da970ff9",
+      "initial_seed": 951125,
+      "personality": -1,
+      "retry": 0,
+      "seed": 951125
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "d14ffacdf2552b1c808997ab49f1f187cf94d7e4a8c559b1995580d260986fe4",
+      "initial_seed": 958599,
+      "personality": 1,
+      "retry": 0,
+      "seed": 958599
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "2c1d8bae52151047e3a9be531cccf4547f80a2b6b58fc8a32171731ea26665fb",
+      "initial_seed": 970138,
+      "personality": -1,
+      "retry": 0,
+      "seed": 970138
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "4c7a6f73369513045dcf5fb2bc7bedd740bfd5dd7f6fc92f1f590f2acce3edf3",
+      "initial_seed": 977612,
+      "personality": 1,
+      "retry": 0,
+      "seed": 977612
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "2c040537f1d8ad1f3b1bd86a58d334cf8597b461c04b865b9f4f85009b401197",
+      "initial_seed": 1121128,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1121128
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "6da0975b73527e61b151fd08c5c6dd94d8c71eded822449b2e2ce099721b9b3a",
+      "initial_seed": 1128602,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1128602
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "9586eb40a23ad9f2e4e79773d5ee38d961a5598730f9a0e7872eab548ce4bfdd",
+      "initial_seed": 1140141,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1140141
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "71f24595236e1884c09433f99c48fba1c07705427d2651e51afed4dafe74f809",
+      "initial_seed": 1147615,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1147615
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "8fd67d883655c8296bdb42d3302d48a69a3fd656a689d9ed7940e048b7f0c3f0",
+      "initial_seed": 612120,
+      "personality": -1,
+      "retry": 0,
+      "seed": 612120
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "740919b92b5cd56ad73afe107ed9311636ab777b3670e809f36955b2b2f8ac52",
+      "initial_seed": 633161,
+      "personality": -1,
+      "retry": 0,
+      "seed": 633161
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "17739e400574291ab215c36a02b07444f25d8274b888f305303b3f7b7565c456",
+      "initial_seed": 654202,
+      "personality": -1,
+      "retry": 0,
+      "seed": 654202
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "4d0cfbd52f5c8fed4162de88fc8c30d5e92026a13f33e6799668d7dc0f0e54f2",
+      "initial_seed": 619594,
+      "personality": 1,
+      "retry": 0,
+      "seed": 619594
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "a85aef2ca2ec88884261cb8fc3be2da27c0820f1c04111df1a52edaf31f9d7dd",
+      "initial_seed": 640635,
+      "personality": 1,
+      "retry": 0,
+      "seed": 640635
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "4616b4d5cbbeceeb6658bc6ac6b742f162c256c5db80ff010d22eedb00bbb48c",
+      "initial_seed": 661676,
+      "personality": 1,
+      "retry": 0,
+      "seed": 661676
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "ab73b2252da7b5c6749c5395065d44e056722af01745f66081bc3d9114f23048",
+      "initial_seed": 631133,
+      "personality": -1,
+      "retry": 0,
+      "seed": 631133
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "8250b1626b792f2617335065a7feb77ede1ab8f52f49f912a96aeb34ed7477bd",
+      "initial_seed": 652174,
+      "personality": -1,
+      "retry": 0,
+      "seed": 652174
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "60909ddcab1f6b9283ae735ce2e92f8da04474708388bd809f8ced2fd80f1a2f",
+      "initial_seed": 673215,
+      "personality": -1,
+      "retry": 0,
+      "seed": 673215
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "edcf66162122974d4d1891171659026edcca79a7d7f21914b6330deeb1f05b9b",
+      "initial_seed": 638607,
+      "personality": 1,
+      "retry": 0,
+      "seed": 638607
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "daa06eccc57e0b5d5df54e9a242307c74b27f324e74013a47e8cabd13a598f7f",
+      "initial_seed": 659648,
+      "personality": 1,
+      "retry": 0,
+      "seed": 659648
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "3543be1186a5a8059b1e0e57e147b9a039432876423a512ce2b5410579dbeb97",
+      "initial_seed": 680689,
+      "personality": 1,
+      "retry": 0,
+      "seed": 680689
+    }
+  ],
+  "train_skips": {
+    "early_terminal": 13
+  },
+  "training": {
+    "episodes": 120,
+    "epochs": [
+      {
+        "actions": 1065,
+        "epoch": 0,
+        "goal_completions_cumulative": 12,
+        "mean_return": 1.7657717103444635,
+        "trajectories": 30,
+        "weight_l2": 0.2497105896472931
+      },
+      {
+        "actions": 1151,
+        "epoch": 1,
+        "goal_completions_cumulative": 24,
+        "mean_return": 1.9081251545348807,
+        "trajectories": 30,
+        "weight_l2": 0.4612833559513092
+      },
+      {
+        "actions": 1315,
+        "epoch": 2,
+        "goal_completions_cumulative": 36,
+        "mean_return": 1.6270073081802279,
+        "trajectories": 30,
+        "weight_l2": 0.668609619140625
+      },
+      {
+        "actions": 1497,
+        "epoch": 3,
+        "goal_completions_cumulative": 49,
+        "mean_return": 1.8641351384615292,
+        "trajectories": 30,
+        "weight_l2": 0.8687644004821777
+      }
+    ],
+    "goals_on_training_rollouts": 49,
+    "mode": "aligned",
+    "updates": 12
+  },
+  "unguided_parity_conditions": 80,
+  "weights": {
+    "C60-FROZEN": [
+      0.24362574517726898,
+      0.2598227858543396,
+      -0.25211846828460693,
+      -0.25890418887138367,
+      -0.23615556955337524,
+      0.2692548334598541,
+      -0.243625670671463,
+      0.20339129865169525,
+      0.03203533589839935,
+      0.20778611302375793,
+      -0.0032999387476593256,
+      -0.0014915878418833017
+    ],
+    "C61-SHUFFLED": [
+      -0.16134001314640045,
+      0.13799063861370087,
+      -0.13577747344970703,
+      0.05750759690999985,
+      0.08642469346523285,
+      -0.16855137050151825,
+      0.1613398641347885,
+      0.07266242057085037,
+      -0.1421804279088974,
+      0.014821546152234077,
+      -0.033192701637744904,
+      0.005371128208935261
+    ],
+    "C61-WILSON": [
+      0.3621123433113098,
+      0.27969303727149963,
+      -0.2888365089893341,
+      -0.30976417660713196,
+      -0.22059716284275055,
+      0.21445822715759277,
+      -0.36207225918769836,
+      -0.16414445638656616,
+      0.24498732388019562,
+      0.2232765406370163,
+      0.036496810615062714,
+      0.04603508114814758
+    ]
+  }
+}
