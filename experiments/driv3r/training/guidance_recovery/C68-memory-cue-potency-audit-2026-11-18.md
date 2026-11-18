@@ -4,7 +4,7 @@
 
 ## Question and method
 
-Do the previously reported 0% versus 50% historical-memory-loss arms actually produce different *host-executed actions and painting* for the frozen recovery policy, and is stronger backtrack guidance consistently advantageous? Recompute from the original committed compressed ledgers using \`c68_memory_cue_audit.py\`. Those ledgers match the owner archives' Git blob SHA identities; no source ledgers were edited.
+Do the previously reported 0% versus 50% historical-memory-loss arms actually produce different *host-executed actions and painting* for the frozen recovery policy, and is stronger backtrack guidance consistently advantageous? Recompute from the original committed compressed ledgers using `c68_memory_cue_audit.py`. Those ledgers match the owner archives' Git blob SHA identities; no source ledgers were edited.
 
 Graph identities are disjoint: C65 12, C66 24, C67 36 (72 total). Match within graph, policy, cue strength and memory arm. Compare action SHA-256 *and* ink SHA-256, not merely completion counts. Calculate graph-clustered exploratory intervals on paired strong-minus-weak completed goals; do not count two memory arms as independent graph replicates.
 
@@ -41,17 +41,17 @@ Do not train another selector on a largely vacuous erasure contrast. **Before mo
 
 ## Reproduction, custody and limitations
 
-From \`experiments/driv3r/training/guidance_recovery/\`, run:
+From `experiments/driv3r/training/guidance_recovery/`, run:
 
-\`\`\`bash
+```bash
 python -W error -m unittest -v test_c68_memory_cue_audit.py
 python c68_memory_cue_audit.py . /tmp/C68-summary.json
-\`\`\`
+```
 
 Three immutable input Git blob SHAs:
 
-- C65 ledger \`8152f4b32237a4cb68d377f800401145b884ac73\`
-- C66 ledger \`4c9e5ea53e429f5389452fc348bade3bdc7e0719\`
-- C67 ledger \`504a18ac6366b535162c29c0d923d6fa5a11cde4\`
+- C65 ledger `8152f4b32237a4cb68d377f800401145b884ac73`
+- C66 ledger `4c9e5ea53e429f5389452fc348bade3bdc7e0719`
+- C67 ledger `504a18ac6366b535162c29c0d923d6fa5a11cde4`
 
 Local audit: 6/6 tests passing; all 72 graph identities unique across cohorts. The analysis is post hoc, graph-cluster intervals are descriptive, and C67 selector outcomes use precomputed executed counterfactual suffixes rather than independently executing each selection. The audited host is synthetic, not the authoritative CyberSand runtime. No new optimizer, model checkpoint, native acceptance or immutable Actions checkpoint custody is claimed.
