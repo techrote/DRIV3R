@@ -1,0 +1,29 @@
+{
+  "checkpoint_location": "local owner-evaluation ZIP ONLY; immutable GitHub Actions artifact custody outstanding",
+  "dependencies_sha256": {
+    "c47/previous/predecessor_C42/out_c40/C40-PAIR.safetensors": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+    "c47/source/c47_pairwise_episode_switch.py": "2a466339a2396f5025458f3e9e8aea13f1f120525f62af5b4b99af981fabfebd",
+    "c50/source/c50_continuous_recovery.py": "97fd4077a6771714515f612fabd2fda365ddb6f4f08cb96079d008331e0d7e2f",
+    "c53_episodic_memory.py": "c2388a019003e500e7d46d1fbd4eae5db95a88fe75d973a3b887b51ff170e0b0",
+    "source_and_evidence/c52_shortest_step_cue.py": "20b367bea58e2148da8903275e2614f1fa8eaf53bb7189a365d76546f9921129"
+  },
+  "execution_completed": true,
+  "experiment": "C54-delayed-branch-option",
+  "interrupted_large_cohort": "An additional 96-graph training refit completed but its evaluation was interrupted; not analyzed or counted.",
+  "research_date": "2026-11-18",
+  "schema": "driv3r-c54-custody/1",
+  "source_and_compact_evidence_sha256": {
+    "C54-delayed-branch-options-2026-11-18.md": "b48db8fbbb66a68959f6ff71e6f2caccd4a7bea9c9d1c27390f70ce54608afb5",
+    "C54-executed-ledger.zlib.b64": "3d0cda0a00e7ef05509427d52c01cfdd91c75fe1b21145e2e272c54697f5f6d0",
+    "C54-extract-ledger.py": "88f191e213fc11391ba61af2aa8d3e19ea95c3156768bc6ff66a453b498d185b",
+    "C54-gallery.svg": "72f5bfdb4dba83d25dba8c0283f236c7fac4bedc283813ebb00f5eff53e42a80",
+    "c54_delayed_branch_option.py": "102d637a4cb35f4a79f2ef1768b90f26da063517da4dce148decd3f891d5bde8",
+    "c54_gallery.py": "0320d2989f216608eca7946c1dcccb1cf1ee084fcb86262840e8a4cf4eba9790",
+    "test_c54_delayed_branch_option.py": "e855dbadc5188b4ddcbdf2a2d1f415d0351ddae2450f112ace6d1a93d3fa9c01"
+  },
+  "source_match_sha256": "102d637a4cb35f4a79f2ef1768b90f26da063517da4dce148decd3f891d5bde8",
+  "training_evaluation_checkpoints_sha256": {
+    "C54-ALIGNED": "7ac2fd35a1e4cb8d5d63f5e7ad28caa04e4fdd28b8e8ebd9fe0ca3348b461519",
+    "C54-SHUFFLED": "765aa7b7087c3347551eb8f26a5f723ff44b0d20a95cdebe49f626caa893a5fe"
+  }
+}
