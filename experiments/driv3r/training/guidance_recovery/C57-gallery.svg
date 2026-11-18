@@ -1,0 +1,509 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846 1184" width="846" height="1184">
+<rect width="100%" height="100%" fill="#0c1421"/>
+<text x="16" y="27" fill="#f1f5ff" font-size="17" font-family="sans-serif">C57 · Executed host-legal recovery paths</text>
+<text x="16" y="42" fill="#a9b9ce" font-size="10" font-family="sans-serif">Gray: executed prefix · teal: executed suffix · gold: assigned goal · no hidden geometry rendered</text>
+<rect x="5" y="49" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 74 V214 M28 74 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 74 V214 M28 84 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 74 V214 M28 94 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 74 V214 M28 104 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 74 V214 M28 114 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 74 V214 M28 124 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 74 V214 M28 134 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 74 V214 M28 144 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 74 V214 M28 154 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 74 V214 M28 164 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 74 V214 M28 174 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 74 V214 M28 184 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 74 V214 M28 194 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 74 V214 M28 204 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 74 V214 M28 214 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 74 V214 M28 224 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="118.0,124.0 128.0,124.0 118.0,124.0 128.0,124.0 118.0,124.0 118.0,134.0 118.0,124.0 118.0,134.0 118.0,124.0 118.0,134.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="118.0,134.0 118.0,124.0 118.0,134.0 118.0,124.0 118.0,134.0 118.0,124.0 128.0,124.0 138.0,124.0"/>
+<circle cx="138" cy="124" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="138" cy="124" r="2.8" fill="#fff"/>
+<text x="176" y="90" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="106" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="176" y="122" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="176" y="138" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="154" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 7</text>
+<text x="176" y="170" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="220" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="287" y="49" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 74 V214 M310 74 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 74 V214 M310 84 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 74 V214 M310 94 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 74 V214 M310 104 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 74 V214 M310 114 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 74 V214 M310 124 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 74 V214 M310 134 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 74 V214 M310 144 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 74 V214 M310 154 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 74 V214 M310 164 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 74 V214 M310 174 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 74 V214 M310 184 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 74 V214 M310 194 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 74 V214 M310 204 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 74 V214 M310 214 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 74 V214 M310 224 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="400.0,124.0 410.0,124.0 400.0,124.0 410.0,124.0 400.0,124.0 400.0,134.0 400.0,124.0 400.0,134.0 400.0,124.0 400.0,134.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="400.0,134.0 400.0,124.0 410.0,124.0 420.0,124.0"/>
+<circle cx="420" cy="124" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="420" cy="124" r="2.8" fill="#fff"/>
+<text x="458" y="90" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="106" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="458" y="122" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="458" y="138" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="154" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="458" y="170" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="220" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="569" y="49" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 74 V214 M592 74 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 74 V214 M592 84 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 74 V214 M592 94 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 74 V214 M592 104 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 74 V214 M592 114 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 74 V214 M592 124 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 74 V214 M592 134 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 74 V214 M592 144 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 74 V214 M592 154 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 74 V214 M592 164 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 74 V214 M592 174 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 74 V214 M592 184 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 74 V214 M592 194 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 74 V214 M592 204 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 74 V214 M592 214 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 74 V214 M592 224 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="682.0,124.0 692.0,124.0 682.0,124.0 692.0,124.0 682.0,124.0 682.0,134.0 682.0,124.0 682.0,134.0 682.0,124.0 682.0,134.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="682.0,134.0 682.0,124.0 692.0,124.0 702.0,124.0"/>
+<circle cx="702" cy="124" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="702" cy="124" r="2.8" fill="#fff"/>
+<text x="740" y="90" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="106" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="740" y="122" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="740" y="138" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="154" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="740" y="170" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="220" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="5" y="239" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 264 V404 M28 264 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 264 V404 M28 274 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 264 V404 M28 284 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 264 V404 M28 294 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 264 V404 M28 304 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 264 V404 M28 314 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 264 V404 M28 324 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 264 V404 M28 334 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 264 V404 M28 344 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 264 V404 M28 354 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 264 V404 M28 364 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 264 V404 M28 374 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 264 V404 M28 384 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 264 V404 M28 394 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 264 V404 M28 404 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 264 V404 M28 414 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="118.0,314.0 128.0,314.0 118.0,314.0 128.0,314.0 118.0,314.0 118.0,324.0 118.0,314.0 118.0,324.0 118.0,314.0 118.0,324.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="118.0,324.0 118.0,314.0 118.0,324.0 118.0,314.0 118.0,324.0 118.0,314.0 128.0,314.0 138.0,314.0"/>
+<circle cx="138" cy="314" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="138" cy="314" r="2.8" fill="#fff"/>
+<text x="176" y="280" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="296" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="176" y="312" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="176" y="328" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="344" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 7</text>
+<text x="176" y="360" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="410" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="287" y="239" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 264 V404 M310 264 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 264 V404 M310 274 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 264 V404 M310 284 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 264 V404 M310 294 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 264 V404 M310 304 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 264 V404 M310 314 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 264 V404 M310 324 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 264 V404 M310 334 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 264 V404 M310 344 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 264 V404 M310 354 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 264 V404 M310 364 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 264 V404 M310 374 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 264 V404 M310 384 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 264 V404 M310 394 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 264 V404 M310 404 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 264 V404 M310 414 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="400.0,314.0 410.0,314.0 400.0,314.0 410.0,314.0 400.0,314.0 400.0,324.0 400.0,314.0 400.0,324.0 400.0,314.0 400.0,324.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="400.0,324.0 400.0,314.0 410.0,314.0 420.0,314.0"/>
+<circle cx="420" cy="314" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="420" cy="314" r="2.8" fill="#fff"/>
+<text x="458" y="280" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="296" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="458" y="312" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="458" y="328" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="344" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="458" y="360" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="410" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="569" y="239" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 264 V404 M592 264 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 264 V404 M592 274 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 264 V404 M592 284 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 264 V404 M592 294 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 264 V404 M592 304 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 264 V404 M592 314 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 264 V404 M592 324 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 264 V404 M592 334 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 264 V404 M592 344 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 264 V404 M592 354 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 264 V404 M592 364 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 264 V404 M592 374 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 264 V404 M592 384 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 264 V404 M592 394 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 264 V404 M592 404 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 264 V404 M592 414 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="682.0,314.0 692.0,314.0 682.0,314.0 692.0,314.0 682.0,314.0 682.0,324.0 682.0,314.0 682.0,324.0 682.0,314.0 682.0,324.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="682.0,324.0 682.0,314.0 692.0,314.0 702.0,314.0"/>
+<circle cx="702" cy="314" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="702" cy="314" r="2.8" fill="#fff"/>
+<text x="740" y="280" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="296" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="740" y="312" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="740" y="328" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="344" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="740" y="360" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="410" fill="#8ca0bb" font-size="8" font-family="monospace">a89a2f282805 · receipt verified</text>
+<rect x="5" y="429" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 454 V594 M28 454 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 454 V594 M28 464 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 454 V594 M28 474 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 454 V594 M28 484 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 454 V594 M28 494 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 454 V594 M28 504 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 454 V594 M28 514 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 454 V594 M28 524 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 454 V594 M28 534 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 454 V594 M28 544 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 454 V594 M28 554 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 454 V594 M28 564 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 454 V594 M28 574 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 454 V594 M28 584 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 454 V594 M28 594 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 454 V594 M28 604 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="138.0,524.0 138.0,514.0 138.0,524.0 138.0,514.0 138.0,504.0 138.0,514.0 138.0,524.0 138.0,534.0 138.0,524.0 138.0,534.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="138.0,534.0 138.0,524.0 138.0,534.0 138.0,524.0 138.0,514.0 138.0,504.0 138.0,494.0"/>
+<circle cx="138" cy="494" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="138" cy="494" r="2.8" fill="#fff"/>
+<text x="176" y="470" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="486" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="176" y="502" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="176" y="518" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="534" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="176" y="550" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="600" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="287" y="429" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 454 V594 M310 454 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 454 V594 M310 464 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 454 V594 M310 474 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 454 V594 M310 484 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 454 V594 M310 494 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 454 V594 M310 504 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 454 V594 M310 514 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 454 V594 M310 524 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 454 V594 M310 534 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 454 V594 M310 544 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 454 V594 M310 554 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 454 V594 M310 564 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 454 V594 M310 574 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 454 V594 M310 584 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 454 V594 M310 594 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 454 V594 M310 604 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="420.0,524.0 420.0,514.0 420.0,524.0 420.0,514.0 420.0,504.0 420.0,514.0 420.0,524.0 420.0,534.0 420.0,524.0 420.0,534.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="420.0,534.0 420.0,524.0 420.0,534.0 420.0,524.0 420.0,514.0 420.0,504.0 420.0,494.0"/>
+<circle cx="420" cy="494" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="420" cy="494" r="2.8" fill="#fff"/>
+<text x="458" y="470" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="486" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="458" y="502" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="458" y="518" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="534" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="458" y="550" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="600" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="569" y="429" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 454 V594 M592 454 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 454 V594 M592 464 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 454 V594 M592 474 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 454 V594 M592 484 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 454 V594 M592 494 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 454 V594 M592 504 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 454 V594 M592 514 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 454 V594 M592 524 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 454 V594 M592 534 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 454 V594 M592 544 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 454 V594 M592 554 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 454 V594 M592 564 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 454 V594 M592 574 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 454 V594 M592 584 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 454 V594 M592 594 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 454 V594 M592 604 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="702.0,524.0 702.0,514.0 702.0,524.0 702.0,514.0 702.0,504.0 702.0,514.0 702.0,524.0 702.0,534.0 702.0,524.0 702.0,534.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="702.0,534.0 702.0,524.0 702.0,534.0 702.0,524.0 702.0,514.0 702.0,504.0 702.0,494.0"/>
+<circle cx="702" cy="494" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="702" cy="494" r="2.8" fill="#fff"/>
+<text x="740" y="470" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="486" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="740" y="502" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="740" y="518" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="534" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="740" y="550" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="600" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="5" y="619" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 644 V784 M28 644 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 644 V784 M28 654 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 644 V784 M28 664 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 644 V784 M28 674 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 644 V784 M28 684 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 644 V784 M28 694 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 644 V784 M28 704 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 644 V784 M28 714 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 644 V784 M28 724 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 644 V784 M28 734 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 644 V784 M28 744 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 644 V784 M28 754 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 644 V784 M28 764 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 644 V784 M28 774 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 644 V784 M28 784 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 644 V784 M28 794 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="138.0,714.0 138.0,704.0 138.0,714.0 138.0,704.0 138.0,694.0 138.0,704.0 138.0,714.0 138.0,724.0 138.0,714.0 138.0,724.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="138.0,724.0 138.0,714.0 138.0,724.0 138.0,714.0 138.0,704.0 138.0,694.0 138.0,684.0"/>
+<circle cx="138" cy="684" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="138" cy="684" r="2.8" fill="#fff"/>
+<text x="176" y="660" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="676" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="176" y="692" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="176" y="708" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="724" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="176" y="740" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="790" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="287" y="619" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 644 V784 M310 644 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 644 V784 M310 654 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 644 V784 M310 664 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 644 V784 M310 674 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 644 V784 M310 684 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 644 V784 M310 694 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 644 V784 M310 704 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 644 V784 M310 714 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 644 V784 M310 724 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 644 V784 M310 734 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 644 V784 M310 744 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 644 V784 M310 754 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 644 V784 M310 764 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 644 V784 M310 774 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 644 V784 M310 784 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 644 V784 M310 794 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="420.0,714.0 420.0,704.0 420.0,714.0 420.0,704.0 420.0,694.0 420.0,704.0 420.0,714.0 420.0,724.0 420.0,714.0 420.0,724.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="420.0,724.0 420.0,714.0 420.0,724.0 420.0,714.0 420.0,704.0 420.0,694.0 420.0,684.0"/>
+<circle cx="420" cy="684" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="420" cy="684" r="2.8" fill="#fff"/>
+<text x="458" y="660" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="676" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="458" y="692" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="458" y="708" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="724" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="458" y="740" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="790" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="569" y="619" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 644 V784 M592 644 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 644 V784 M592 654 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 644 V784 M592 664 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 644 V784 M592 674 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 644 V784 M592 684 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 644 V784 M592 694 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 644 V784 M592 704 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 644 V784 M592 714 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 644 V784 M592 724 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 644 V784 M592 734 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 644 V784 M592 744 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 644 V784 M592 754 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 644 V784 M592 764 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 644 V784 M592 774 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 644 V784 M592 784 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 644 V784 M592 794 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="702.0,714.0 702.0,704.0 702.0,714.0 702.0,704.0 702.0,694.0 702.0,704.0 702.0,714.0 702.0,724.0 702.0,714.0 702.0,724.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="702.0,724.0 702.0,714.0 702.0,724.0 702.0,714.0 702.0,704.0 702.0,694.0 702.0,684.0"/>
+<circle cx="702" cy="684" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="702" cy="684" r="2.8" fill="#fff"/>
+<text x="740" y="660" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="676" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / detour</text>
+<text x="740" y="692" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="740" y="708" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="724" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 6</text>
+<text x="740" y="740" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="790" fill="#8ca0bb" font-size="8" font-family="monospace">3e01ec9cbdd6 · receipt verified</text>
+<rect x="5" y="809" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 834 V974 M28 834 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 834 V974 M28 844 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 834 V974 M28 854 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 834 V974 M28 864 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 834 V974 M28 874 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 834 V974 M28 884 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 834 V974 M28 894 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 834 V974 M28 904 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 834 V974 M28 914 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 834 V974 M28 924 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 834 V974 M28 934 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 834 V974 M28 944 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 834 V974 M28 954 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 834 V974 M28 964 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 834 V974 M28 974 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 834 V974 M28 984 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="118.0,924.0 128.0,924.0 118.0,924.0 108.0,924.0 118.0,924.0 118.0,934.0 118.0,924.0 118.0,934.0 118.0,924.0 108.0,924.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="108.0,924.0 118.0,924.0 118.0,934.0 118.0,944.0"/>
+<circle cx="118" cy="944" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="118" cy="944" r="2.8" fill="#fff"/>
+<text x="176" y="850" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="866" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="176" y="882" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="176" y="898" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="914" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="176" y="930" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="980" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+<rect x="287" y="809" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 834 V974 M310 834 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 834 V974 M310 844 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 834 V974 M310 854 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 834 V974 M310 864 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 834 V974 M310 874 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 834 V974 M310 884 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 834 V974 M310 894 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 834 V974 M310 904 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 834 V974 M310 914 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 834 V974 M310 924 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 834 V974 M310 934 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 834 V974 M310 944 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 834 V974 M310 954 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 834 V974 M310 964 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 834 V974 M310 974 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 834 V974 M310 984 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="400.0,924.0 410.0,924.0 400.0,924.0 390.0,924.0 400.0,924.0 400.0,934.0 400.0,924.0 400.0,934.0 400.0,924.0 390.0,924.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="390.0,924.0 400.0,924.0 400.0,934.0 400.0,944.0"/>
+<circle cx="400" cy="944" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="400" cy="944" r="2.8" fill="#fff"/>
+<text x="458" y="850" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="866" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="458" y="882" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="458" y="898" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="914" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="458" y="930" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="980" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+<rect x="569" y="809" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 834 V974 M592 834 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 834 V974 M592 844 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 834 V974 M592 854 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 834 V974 M592 864 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 834 V974 M592 874 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 834 V974 M592 884 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 834 V974 M592 894 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 834 V974 M592 904 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 834 V974 M592 914 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 834 V974 M592 924 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 834 V974 M592 934 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 834 V974 M592 944 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 834 V974 M592 954 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 834 V974 M592 964 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 834 V974 M592 974 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 834 V974 M592 984 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="682.0,924.0 692.0,924.0 682.0,924.0 672.0,924.0 682.0,924.0 682.0,934.0 682.0,924.0 682.0,934.0 682.0,924.0 672.0,924.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="672.0,924.0 682.0,924.0 682.0,934.0 682.0,944.0"/>
+<circle cx="682" cy="944" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="682" cy="944" r="2.8" fill="#fff"/>
+<text x="740" y="850" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="866" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="740" y="882" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 0%</text>
+<text x="740" y="898" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="914" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="740" y="930" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="980" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+<rect x="5" y="999" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M28 1024 V1164 M28 1024 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M38 1024 V1164 M28 1034 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M48 1024 V1164 M28 1044 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M58 1024 V1164 M28 1054 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M68 1024 V1164 M28 1064 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M78 1024 V1164 M28 1074 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M88 1024 V1164 M28 1084 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M98 1024 V1164 M28 1094 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M108 1024 V1164 M28 1104 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M118 1024 V1164 M28 1114 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M128 1024 V1164 M28 1124 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M138 1024 V1164 M28 1134 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M148 1024 V1164 M28 1144 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M158 1024 V1164 M28 1154 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M168 1024 V1164 M28 1164 H168" stroke="#26354a" stroke-width="0.5"/>
+<path d="M178 1024 V1164 M28 1174 H168" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="118.0,1114.0 128.0,1114.0 118.0,1114.0 108.0,1114.0 118.0,1114.0 118.0,1124.0 118.0,1114.0 118.0,1124.0 118.0,1114.0 108.0,1114.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="108.0,1114.0 118.0,1114.0 118.0,1124.0 118.0,1134.0"/>
+<circle cx="118" cy="1134" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="118" cy="1134" r="2.8" fill="#fff"/>
+<text x="176" y="1040" fill="#f0f6ff" font-size="11" font-family="sans-serif">C34-RESET</text>
+<text x="176" y="1056" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="176" y="1072" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="176" y="1088" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="176" y="1104" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="176" y="1120" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="16" y="1170" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+<rect x="287" y="999" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M310 1024 V1164 M310 1024 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M320 1024 V1164 M310 1034 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M330 1024 V1164 M310 1044 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M340 1024 V1164 M310 1054 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M350 1024 V1164 M310 1064 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M360 1024 V1164 M310 1074 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M370 1024 V1164 M310 1084 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M380 1024 V1164 M310 1094 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M390 1024 V1164 M310 1104 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M400 1024 V1164 M310 1114 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M410 1024 V1164 M310 1124 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M420 1024 V1164 M310 1134 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M430 1024 V1164 M310 1144 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M440 1024 V1164 M310 1154 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M450 1024 V1164 M310 1164 H450" stroke="#26354a" stroke-width="0.5"/>
+<path d="M460 1024 V1164 M310 1174 H450" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="400.0,1114.0 410.0,1114.0 400.0,1114.0 390.0,1114.0 400.0,1114.0 400.0,1124.0 400.0,1114.0 400.0,1124.0 400.0,1114.0 390.0,1114.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="390.0,1114.0 400.0,1114.0 400.0,1124.0 400.0,1134.0"/>
+<circle cx="400" cy="1134" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="400" cy="1134" r="2.8" fill="#fff"/>
+<text x="458" y="1040" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-TRACE</text>
+<text x="458" y="1056" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="458" y="1072" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="458" y="1088" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="458" y="1104" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="458" y="1120" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="298" y="1170" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+<rect x="569" y="999" width="272" height="180" rx="7" fill="#172335" stroke="#35475c"/>
+<path d="M592 1024 V1164 M592 1024 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M602 1024 V1164 M592 1034 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M612 1024 V1164 M592 1044 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M622 1024 V1164 M592 1054 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M632 1024 V1164 M592 1064 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M642 1024 V1164 M592 1074 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M652 1024 V1164 M592 1084 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M662 1024 V1164 M592 1094 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M672 1024 V1164 M592 1104 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M682 1024 V1164 M592 1114 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M692 1024 V1164 M592 1124 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M702 1024 V1164 M592 1134 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M712 1024 V1164 M592 1144 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M722 1024 V1164 M592 1154 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M732 1024 V1164 M592 1164 H732" stroke="#26354a" stroke-width="0.5"/>
+<path d="M742 1024 V1164 M592 1174 H732" stroke="#26354a" stroke-width="0.5"/>
+<polyline fill="none" stroke="#aebace" stroke-width="2.0" opacity=".65" points="682.0,1114.0 692.0,1114.0 682.0,1114.0 672.0,1114.0 682.0,1114.0 682.0,1124.0 682.0,1114.0 682.0,1124.0 682.0,1114.0 672.0,1114.0"/>
+<polyline fill="none" stroke="#55ddc5" stroke-width="2.7" points="672.0,1114.0 682.0,1114.0 682.0,1124.0 682.0,1134.0"/>
+<circle cx="682" cy="1134" r="5" fill="none" stroke="#ffc35f" stroke-width="2.2"/>
+<circle cx="682" cy="1134" r="2.8" fill="#fff"/>
+<text x="740" y="1040" fill="#f0f6ff" font-size="11" font-family="sans-serif">C57-HEURISTIC</text>
+<text x="740" y="1056" fill="#b7c9dd" font-size="10" font-family="sans-serif">wilson / forward</text>
+<text x="740" y="1072" fill="#b7c9dd" font-size="10" font-family="sans-serif">erasure 50%</text>
+<text x="740" y="1088" fill="#89f0a9" font-size="10" font-family="sans-serif">GOAL</text>
+<text x="740" y="1104" fill="#b7c9dd" font-size="10" font-family="sans-serif">steps 3</text>
+<text x="740" y="1120" fill="#b7c9dd" font-size="10" font-family="sans-serif">remaining 0</text>
+<text x="580" y="1170" fill="#8ca0bb" font-size="8" font-family="monospace">7a4b56d62ba6 · receipt verified</text>
+</svg>
