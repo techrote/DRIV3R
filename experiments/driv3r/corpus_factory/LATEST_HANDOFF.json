@@ -1,91 +1,72 @@
 {
   "schema": "driv3r.corpus_factory.latest_handoff/1",
-  "updated_utc": "2026-11-17",
+  "updated_utc": "2026-11-18",
   "lane": "experiments/driv3r/corpus_factory",
-  "repository": "techrote/DRIV3R",
-  "branch": "research/import-consolidated-worm-labs",
-  "pull_request": 1,
-  "draft_hold": true,
-  "current_version": 33,
-  "status": "QUALIFIED_SYNTHETIC_OFFPOLICY_RECOVERY; NO_NATIVE_OR_REAL_SLM_EVAL",
-  "generator": "offpolicy_recovery_v33.js",
-  "generator_sha256": "4deb78bb348c8d7c395e4cf23994085f0d08cbbb51ec675dd4aa5e0783b7aaad",
-  "regression_test": "test_offpolicy_recovery_v33.js",
-  "regression_test_sha256": "5259c1badbe1a7f65082edc06bc307a902df55ec35e0eae86a393adbe31e8704",
-  "manifest": "V33_DEFAULT_MANIFEST.json",
-  "manifest_sha256": "f006848f5b7bfc78148a469e37e5de70a152650f3f80928efd802d48da436351",
-  "scientific_report": "OFFPOLICY_RECOVERY_V33_2026-11-17.md",
-  "scientific_report_sha256": "409a140e414d463a8206c806c7cd5d72aadea44bd5d9015c76f05a205be42b27",
+  "repo": "techrote/DRIV3R",
+  "pr": 1,
+  "state": "DRAFT_HOLD_NO_MERGE",
+  "best_corpus": "v34_compound_intervention",
   "best_checkpoint": null,
-  "checkpoint_artifact": null,
-  "corpus": {
-    "synthetic_host_not_native": true,
-    "four_way_families": 128,
-    "episodes": 1024,
-    "clean_episodes": 512,
-    "offpolicy_recovery_episodes": 512,
-    "labelled_decisions": 44480,
-    "corrective_erasures": 2048,
-    "accepted_bad_first_navigation_actions": 512,
-    "total_proven_regret": 1024,
-    "min_regret_per_bad_first": 2,
-    "restricted_clean_first_action_theoretical_ceiling": 0.25,
-    "strict_gate_causal_clean": 128,
-    "gate_negative_control_clean": 384,
-    "cross_split_exact_input_or_geometry_overlap": 0,
-    "conflicting_full_input_labels": 0,
-    "full_generations_byte_identical": true,
-    "splits": {
-      "TRAIN": {
-        "qualified_four_way_families": 64,
-        "episodes": 512,
-        "decisions": 14912,
-        "corrective_erasures": 1024,
-        "accepted_detrimental_first_actions": 256,
-        "total_proven_first_action_regret": 512,
-        "train_zero_weight": 0,
-        "strict_gate_causal_clean": 64
-      },
-      "DEV": {
-        "qualified_four_way_families": 32,
-        "episodes": 256,
-        "decisions": 12544,
-        "corrective_erasures": 512,
-        "accepted_detrimental_first_actions": 128,
-        "total_proven_first_action_regret": 256,
-        "train_zero_weight": 0,
-        "strict_gate_causal_clean": 32
-      },
-      "HELDOUT": {
-        "qualified_four_way_families": 32,
-        "episodes": 256,
-        "decisions": 17024,
-        "corrective_erasures": 512,
-        "accepted_detrimental_first_actions": 128,
-        "total_proven_first_action_regret": 256,
-        "train_zero_weight": 0,
-        "strict_gate_causal_clean": 32
-      }
+  "manifest_path": "experiments/driv3r/corpus_factory/V34_DEFAULT_MANIFEST.json",
+  "generator_path": "experiments/driv3r/corpus_factory/compound_intervention_v34.js",
+  "generator_sha256": "8bc27d89d6950858b5b3205b42acf9f010443176ef7498afb0563a71c516fe51",
+  "splits": {
+    "TRAIN": {
+      "episodes": 768,
+      "decisions": 23008,
+      "accepted_bad_navigation": 512,
+      "accepted_bad_paint": 256,
+      "corrective_erasures": 1792
     },
-    "shard_publication": "local deterministic JSONL only; SHA-256 pinned in manifest; no immutable Actions artifact",
-    "generator_A_wall_s": 18.91,
-    "generator_A_peak_rss_kib": 796356,
-    "generator_B_wall_s": 19.33,
-    "generator_B_peak_rss_kib": 1002600
+    "DEV": {
+      "episodes": 384,
+      "decisions": 19136,
+      "accepted_bad_navigation": 256,
+      "accepted_bad_paint": 128,
+      "corrective_erasures": 896
+    },
+    "HELDOUT": {
+      "episodes": 384,
+      "decisions": 25856,
+      "accepted_bad_navigation": 256,
+      "accepted_bad_paint": 128,
+      "corrective_erasures": 896
+    }
   },
-  "best_result": "Validated legal negative first navigation action per episode; then oracle-optimal actual complete host recovery with all action regret certificates for offline preference training.",
-  "known_failure": "A symbolic full-history interpreter can solve; wrong older paints and gate-opening paint still scripted; two-workshop/branched synthetic topology; no actual SLM root evaluation or native game receipts.",
-  "cross_lane": {
-    "lfm350": "Read latest GP350-018 handoff: frozen original LFM350 baseline retained, historical premature RETRACE/coverage decline; root update currently blocked.",
-    "sprocket": "Read latest Sprocket handoff: root model/tokenizer and PEFT dependencies absent in local offline executor; no new pinned root forward or adapter updates.",
-    "action_language": "Read latest GAL-017b handoff: static/pulse memory degradation in 81-cell settings; actual Pythia-70M LoRA blocked without pinned root."
+  "metrics": {
+    "episodes": 1536,
+    "decisions": 68000,
+    "accepted_bad_navigation": 1024,
+    "accepted_wrong_paint": 512,
+    "corrective_erasures": 3584,
+    "synthetic_host_terminal_successes": 1536,
+    "nav_regret_each": 2,
+    "paint_regret_each": 2,
+    "recent_64_four_way_ceiling": 0.25,
+    "duplicate_train_rows_zero_weight": 5568,
+    "cross_split_observation_collision": 0,
+    "cross_split_topology_collision": 0
   },
-  "next_consumer_experiment": "Actual pinned SLM model on TRAIN with DEV selection, then autonomous HELDOUT replay, stratified by clean vs accepted-wrong-first, full durable memory vs truncated recent64/lastPAINT/memoryless. Quantify success, suffix regret, wrong paint, premature retrace, legal actions, model latency p50/p95 and RSS. Hold weights out of Git.",
-  "permissions": {
-    "no_other_lab_edits": true,
-    "no_main_edits": true,
-    "no_CyberSand_writes": true,
-    "no_Neurounner_writes": true,
-    "no_paid_API_GPU": true
-  }
+  "qualification": {
+    "two_full_generations_binary_identical": true,
+    "independent_quick_replay": {
+      "episodes": 288,
+      "decisions": 12336,
+      "passed": true
+    },
+    "full_dataset_independent_sample_replay_passed": true,
+    "all_six_default_shard_hashes_checked": true,
+    "exhaustive_full_independent_replay": "TIMEOUT_NOT_CLAIMED"
+  },
+  "current_limitations": [
+    "synthetic host is not native CyberSand",
+    "remote prelude remains scripted, only later wrong PAINT is accepted after start",
+    "four-arm topology and two-of-five-target quota are still synthetic/simple",
+    "no SLM training, pretrained root model inference, native evaluation, model RSS or model latency",
+    "not published to immutable Actions artifacts"
+  ],
+  "next_consumer_experiment": "Real pinned LFM/Sprocket TRAIN-only LoRA or other actual SLM weights then HELDOUT autonomous closed-loop clean vs bad-navigation vs bad-paint, full vs truncated history. Report successful completion, contamination/erasures, realized regret, action legality, premature STOP, model inference p50/p95 and peak RSS. Avoid teacher-action costs leakage.",
+  "source_predecessor": "experiments/driv3r/corpus_factory/offpolicy_recovery_v33.js",
+  "no_paid_compute": true,
+  "no_out_of_lane_writes": true
 }
