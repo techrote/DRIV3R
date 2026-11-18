@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-18",
+  "files": {
+    "C51-source-bundle.zlib.b64": "9cadf4b61696d05b8a0a3678fc46fcddf1fac3a7df39ed3d9d371e15df9eddb3",
+    "C51-unseen-transfer-2026-11-18.md": "8fb6aea20de38a2d20265f87f265d5af2618ab3a8df8829a603a3158be2eca55",
+    "c51_gallery.py": "ee57f1acbae4c0070d95e1354c7b8f5a833397e2fec1522a5061cab2862da6fa",
+    "c51_test.log": "8f0b20c19a28b8d2d7b2489f768f4fca3ed6e5bae7428daf3ec67686a431e35b",
+    "c51_unseen_replication.py": "4bab403e791f3ef563cfbc29f7b02dd074b256e63a99b9f86b527a4bb232f113",
+    "output_c51/C51-gallery-replay-receipts.json": "42a2d135f973b218dda3794bcf86aba020af5b784af172cf6d1a05e611c07ebd",
+    "output_c51/C51-gallery.svg": "672e14a78b97b8792472cd57eecfa6439719baf4cee5a2627d078d1ddbb90583",
+    "output_c51/C51-online.json": "903da299017865b3765e9bbbf8061f3e02b5f5303055b3e296e06672ae910e41",
+    "output_c51/C51-selected-traces.json": "8e506fead6da720435b722ebc3a5ab004cc4637d2ceee6e88a6782635d72cade",
+    "output_c51/C51-summary.json": "c314fd87b925e16acdac0a2ecd198babf73ab7e93a33dfcaf64e9b1db47b1cf4",
+    "test_c51_unseen_replication.py": "592db308721c8e2608d106892113f47a2ab3c4b064efb70ffed7805588412400"
+  },
+  "frozen_C40_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+  "schema": "driv3r-c51-source-and-evidence-receipt/1",
+  "source_names": [
+    "c51_unseen_replication.py",
+    "test_c51_unseen_replication.py",
+    "c51_gallery.py"
+  ]
+}
