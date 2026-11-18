@@ -48,7 +48,9 @@ The source includes a bounded reproducible CPU-run command and an independent re
 ### Run recipe (from the complete local archive)
 
 ```bash
-# Requires numpy, CPU torch and safetensors, with the frozen C47 prerequisites.
+# Requires numpy, CPU torch and safetensors. Unpack frozen C47 prerequisites:
+mkdir -p prior
+(cd prior && unzip -oq ../frozen/C47-archive.zip)
 export PYTHONPATH="$PWD/source:$PWD/prior/source:$PWD/prior/previous/C45-source"
 export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
 python source/c49_midtrajectory_correction.py prior output --train-worlds 4 --online-worlds 1
