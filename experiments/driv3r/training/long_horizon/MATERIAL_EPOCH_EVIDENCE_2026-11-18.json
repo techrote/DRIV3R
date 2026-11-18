@@ -1,0 +1,1131 @@
+{
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "complete_receipts_filename": "MATERIAL_EPOCH_RECEIPTS_2026-11-18.jsonl.gz",
+  "compressed_bytes": 1498225,
+  "compressed_sha256": "3d24743fd61f96dd272bb6230e404eafae755548e277ad65b25a1e5f6d4f37c4",
+  "date_utc": "2026-11-18",
+  "episodes": 320,
+  "evaluation_split": "development",
+  "event_ticks": [
+    20,
+    36
+  ],
+  "gallery_sha256": "e73142bf13900dcfa111e35c946857c767132008175a7de4bcfa2241304201be",
+  "goal_switch_ticks": [
+    12,
+    30
+  ],
+  "initial_source_blob_identity": {
+    "detour_recovery_lab.py": "76f34f512e4c66ba529c9361b2bf2be1219f04d2",
+    "topology_adaptive_handoff_lab.py": "55738ab9b9db566db6120d483864437326a38561",
+    "world.py": "c7e33b7801c3a9d6c1f00f11f466732b312ddc92"
+  },
+  "limitations": [
+    "Prespecified DEVELOPMENT overlays with externally scripted material changes, NOT reactive native physics.",
+    "Immutable historical d_common is a fixture; no proof of native ABI compatibility.",
+    "Material closure suppressed if ink/cursor occupies cell; source hashes record actual result.",
+    "Prefix planner restricted to BACKTRACK-prefix then empty-cell paths; no global completeness.",
+    "Goal-switch ticks and exact material events are externally scheduled, not learned.",
+    "Frozen goal-conditioned tiny neural checkpoints with engineered Manhattan features.",
+    "No new checkpoint, structural HELDOUT, or native game execution; no immutable Actions artifacts.",
+    "Execution_wall_s in original exploratory ledger was only the final resume pass; not a complete uninterrupted campaign runtime.",
+    "Full independent 4-process replay completed in 12.64 s wall, peak parent RSS 101392 KiB; workers have separate RSS."
+  ],
+  "native_receipts": 0,
+  "optimizer_updates": 0,
+  "paid_gpu_api_calls": 0,
+  "replay": "python -m experiments.driv3r.training.long_horizon.material_epoch_lab verify --out <extracted-run-folder> --checkpoints <external-711-712-checkpoint-folder>",
+  "root_at_start": "431e5bbde82abb07a27562a67473fed7e3766127",
+  "scenario_pairs": [
+    {
+      "family": "pickets",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "ridges",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "islands",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": true,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "zigzag",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 711,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "pickets",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "pickets",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3000
+    },
+    {
+      "family": "ridges",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "ridges",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3100
+    },
+    {
+      "family": "islands",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": true,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": false,
+        "fixed24_epoch": false,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "islands",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3200
+    },
+    {
+      "family": "zigzag",
+      "layout": "opposing_gates",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "opposing_gates",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "enclosed_courtyard",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "enclosed_courtyard",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "horizontal_switchback",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": false,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "horizontal_switchback",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "protected_slalom",
+      "order": 0,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": false,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": false
+      },
+      "world_seed": 3300
+    },
+    {
+      "family": "zigzag",
+      "layout": "protected_slalom",
+      "order": 1,
+      "seed": 712,
+      "success": {
+        "each_stage_epoch": true,
+        "event_only": true,
+        "fixed24": true,
+        "fixed24_epoch": true,
+        "neural": true
+      },
+      "world_seed": 3300
+    }
+  ],
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "material_epoch_lab.py": "213e8bdf9ab7331697534d93caee6aea131756e99d2e2034e8f4eb84c4ec633b",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "topology_adaptive_handoff_lab.py": "23858d9911df19f6d5121174e768371fd726862aaa86c8a5e939084aac5aaa3e",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "summary": {
+    "each_stage_epoch": {
+      "actions": {
+        "BACKTRACK": 184,
+        "MOVE_E": 744,
+        "MOVE_N": 536,
+        "MOVE_S": 1136,
+        "MOVE_W": 360,
+        "STOP": 16
+      },
+      "applied_patches": 224,
+      "by_layout": {
+        "enclosed_courtyard": 16,
+        "horizontal_switchback": 16,
+        "opposing_gates": 8,
+        "protected_slalom": 8
+      },
+      "episodes": 64,
+      "final_goals": 48,
+      "material_events": 112,
+      "mean_decisions": 46.5,
+      "median_episode_choose_ms": 0.002884,
+      "neural_actions": 0,
+      "planner_calls": 304,
+      "reasons": {
+        "final_goal": 48,
+        "policy_stop": 16
+      },
+      "sources": {
+        "cached": 2672,
+        "new_plan": 288,
+        "planner_no_route": 16
+      },
+      "suppressed_patches": 0
+    },
+    "event_only": {
+      "actions": {
+        "BACKTRACK": 42,
+        "MOVE_E": 733,
+        "MOVE_N": 576,
+        "MOVE_S": 1267,
+        "MOVE_W": 543,
+        "STOP": 25
+      },
+      "applied_patches": 256,
+      "by_layout": {
+        "enclosed_courtyard": 10,
+        "horizontal_switchback": 8,
+        "opposing_gates": 10,
+        "protected_slalom": 11
+      },
+      "episodes": 64,
+      "final_goals": 39,
+      "material_events": 128,
+      "mean_decisions": 49.781,
+      "median_episode_choose_ms": 0.084931,
+      "neural_actions": 1664,
+      "planner_calls": 128,
+      "reasons": {
+        "decision_gate": 3,
+        "final_goal": 36,
+        "policy_stop": 25
+      },
+      "sources": {
+        "cached": 1394,
+        "neural": 1664,
+        "new_plan": 103,
+        "planner_no_route": 25
+      },
+      "suppressed_patches": 0
+    },
+    "fixed24": {
+      "actions": {
+        "BACKTRACK": 126,
+        "MOVE_E": 845,
+        "MOVE_N": 494,
+        "MOVE_S": 1093,
+        "MOVE_W": 522,
+        "STOP": 17
+      },
+      "applied_patches": 222,
+      "by_layout": {
+        "enclosed_courtyard": 12,
+        "horizontal_switchback": 13,
+        "opposing_gates": 11,
+        "protected_slalom": 11
+      },
+      "episodes": 64,
+      "final_goals": 47,
+      "material_events": 111,
+      "mean_decisions": 48.391,
+      "median_episode_choose_ms": 0.004357,
+      "neural_actions": 1536,
+      "planner_calls": 128,
+      "reasons": {
+        "decision_gate": 1,
+        "final_goal": 46,
+        "policy_stop": 17
+      },
+      "sources": {
+        "cached": 1433,
+        "neural": 1536,
+        "new_plan": 111,
+        "planner_no_route": 17
+      },
+      "suppressed_patches": 0
+    },
+    "fixed24_epoch": {
+      "actions": {
+        "BACKTRACK": 126,
+        "MOVE_E": 840,
+        "MOVE_N": 488,
+        "MOVE_S": 1087,
+        "MOVE_W": 517,
+        "STOP": 17
+      },
+      "applied_patches": 222,
+      "by_layout": {
+        "enclosed_courtyard": 12,
+        "horizontal_switchback": 13,
+        "opposing_gates": 11,
+        "protected_slalom": 11
+      },
+      "episodes": 64,
+      "final_goals": 47,
+      "material_events": 111,
+      "mean_decisions": 48.047,
+      "median_episode_choose_ms": 0.04642,
+      "neural_actions": 1536,
+      "planner_calls": 175,
+      "reasons": {
+        "final_goal": 47,
+        "policy_stop": 17
+      },
+      "sources": {
+        "cached": 1364,
+        "neural": 1536,
+        "new_plan": 158,
+        "planner_no_route": 17
+      },
+      "suppressed_patches": 0
+    },
+    "neural": {
+      "actions": {
+        "BACKTRACK": 11,
+        "MOVE_E": 1082,
+        "MOVE_N": 754,
+        "MOVE_S": 1229,
+        "MOVE_W": 730
+      },
+      "applied_patches": 256,
+      "by_layout": {
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 11,
+        "opposing_gates": 5,
+        "protected_slalom": 8
+      },
+      "episodes": 64,
+      "final_goals": 32,
+      "material_events": 128,
+      "mean_decisions": 59.469,
+      "median_episode_choose_ms": 0.108262,
+      "neural_actions": 3806,
+      "planner_calls": 0,
+      "reasons": {
+        "decision_gate": 32,
+        "final_goal": 32
+      },
+      "sources": {
+        "neural": 3806
+      },
+      "suppressed_patches": 0
+    }
+  },
+  "synthetic_64_move_gate": true,
+  "trace_format": "sorted JSON objects, one JSON line per synthetic episode, gzip mtime=0",
+  "uncompressed_bytes": 12430314,
+  "uncompressed_sha256": "73be11761aaedcce381b829097af890a38a62e06b0218034e928f7b0d9db3d4e",
+  "verified_action_receipts": 16140,
+  "verified_neural_distributions": 8542,
+  "version": "material-epoch/1"
+}
