@@ -1,0 +1,41 @@
+{
+  "schema": "driv3r-guidance-c22-evidence-receipt/1",
+  "date": "2026-11-16",
+  "disposition": "REJECT C22-BOUNDED and C22-STRONG; retain C12 trained and C18-A0 untrained control",
+  "scope": "experiments/driv3r/training/guidance_recovery/**",
+  "remote": "techrote/DRIV3R",
+  "research_branch": "research/import-consolidated-worm-labs",
+  "source_sha256": "8bb680b89e584bfabe9617a0dd2f07dd4cfe0729fb58b0ab4e96a6af7539309d",
+  "input_sha256": "86a4e1734185f5135362bcc1af819e8397d8bdb6d4b76a9fcbdedd4cf49c5137",
+  "metric_sha256": "37a721a5b0b2e6247ec8a1fd2bd3278110f7e548c808a48338c8cce2f8cf9994",
+  "trajectories_sha256": "ad74e3fb4d04a46412ba263746b373994dbd5b5fd5b8b8e2bd9d7f0f3fa21b60",
+  "training_receipts_sha256": "2b008a02d1cb432b9505308c7603c619286ade9e19b344a4289dfd77667a7b06",
+  "heldout_receipts_sha256": "717bf7f14e40d7d02b48810f3f45863c2eb471ff6b9e41fcb1547b0310675461",
+  "gallery_html_sha256": "19c71ac3b0ec876b5c49417158e80fa15346de3adbbc92b414b16e8ade89fa12",
+  "checkpoints": {
+    "C22-BOUNDED": "f16e486f15c84caf8264918aea8bbe5f2dd9fd657aa4ea523ad51c608ece4005",
+    "C22-STRONG": "5e2afbd699104452043ade457ac59dc270e95a84c7299cc5f4e96d0b1a24c649"
+  },
+  "provenance": {
+    "optimizer_updates_per_variant": 912,
+    "training_two_sided_menus": 2395,
+    "heldout_episodes": 2880,
+    "heldout_same_state_menus": 1459,
+    "cue_off_pairs_each": 144,
+    "cue_off_exact_each": 144,
+    "host_rejected": 0,
+    "raw_illegal_top_choices": 0,
+    "optimizer_reproduction": "both safetensors byte-identical in second CPU training-only execution; held-out 2880 evaluated once",
+    "holder": "interim local archive, not GitHub Actions immutable artifact",
+    "archive_name": "driv3r_guidance_recovery_C22_branch_personality_2026-11-16.zip",
+    "archive_sha256": "1105b292e88134693c4f6a09e33dfe239ffc77ca24edda230e83a1a74d70e4d0",
+    "archive_size_bytes": 583626
+  },
+  "caveats": [
+    "Synthetic host fixture, not native CyberSand actor or canonical game ABI",
+    "No unapproved paid computation",
+    "No Actions custody for model weights",
+    "No exact-head full-suite qualification",
+    "Probability-mass objective, not episode-return optimizer"
+  ]
+}

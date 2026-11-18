@@ -1,0 +1,23 @@
+{
+  "W16_assistant_preferred_longer": 53,
+  "W16_early_STOP_only_differences": 18,
+  "W16_fraction_longer": 0.929825,
+  "W16_non_tie_assistant_labels": 57,
+  "W16_pairs_all_tied": 1,
+  "W16_pairs_majority_longer": 15,
+  "W16_pairs_majority_shorter": 2,
+  "W16_shared_movement_until_STOP": 18,
+  "historical_independent_world_blocks": 3,
+  "historical_nonidentical_pairs": 10,
+  "human_owner_labels": 0,
+  "labels": "GPT6 assistant visual pilot, not fully source-cohort blind",
+  "native_game_accepted": false,
+  "new_optimizer_updates": 0,
+  "new_root_SLM_forwards": 0,
+  "original_LFM350_changed_logit_ticks": 216,
+  "original_pairs": 28,
+  "original_pretrained_LFM350_trained_vs_stock_identical_paths": 9,
+  "recommendation": "Retain 18 STOP-prefix contrasts only as termination/length controls; do not train aesthetic ranker on these as independent style preferences. Require blind human votes and source-world-disjoint real pretrained model trajectories.",
+  "schema": "driv3r.preference_eval.p20.strict_pair_gate/1",
+  "verified_p19_zip_sha256": "6c3df53ac82692fb057556fa874c9f7e7727cf3bac0afed5a2bfe0d604dc484d"
+}

@@ -1,0 +1,254 @@
+{
+  "blind": {
+    "C45-GATE": {
+      "accuracy": 0.7083333333333334,
+      "brier": 0.20852492722038476,
+      "gate_rate": 0.14583333333333334,
+      "positive_fraction": 0.3125,
+      "states": 48
+    },
+    "C45-SHUFFLE": {
+      "accuracy": 0.6458333333333334,
+      "brier": 0.2216458144133303,
+      "gate_rate": 0.041666666666666664,
+      "positive_fraction": 0.3125,
+      "states": 48
+    }
+  },
+  "checkpoint_sha256": {
+    "C45-GATE": "47c1830f649a49475e613522cc1329d1b24b4a80c63472da67653418cbdaf96b",
+    "C45-SHUFFLE": "ceec7d7dd643aad4e883b2a079f33ce17f73b81710b2ce78d56c22febfe28d7f"
+  },
+  "episodes": 1152,
+  "graphs": {
+    "blind": 24,
+    "online": 48,
+    "train": 64
+  },
+  "guided_episodes_per_policy": 144,
+  "limitations": [
+    "synthetic fixture, not CyberSand native ABI",
+    "approximate RESET phase at sampled states, not complete recurrent state",
+    "20-action executed suffix proxies are not long-horizon goal success",
+    "fixed .5 gate threshold; no online tuning",
+    "per-graph bootstrap intervals descriptive, not scientific proof",
+    "whole-trajectory preference proxy confounded by state distribution",
+    "checkpoints local; immutable Actions artifact custody absent"
+  ],
+  "models": {
+    "C18-A0": {
+      "by_family": {
+        "kruskal": 19,
+        "wilson": 9
+      },
+      "condition_regressions_vs_RESET": 3,
+      "goal_events": 28,
+      "preference_fraction": 0.5595463137996219,
+      "raw_illegal_top_choice": 0,
+      "unguided_exact": 48
+    },
+    "C34-RESET": {
+      "by_family": {
+        "kruskal": 15,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 0,
+      "goal_events": 21,
+      "preference_fraction": 0.5470219435736677,
+      "raw_illegal_top_choice": 1,
+      "unguided_exact": 48
+    },
+    "C40-PAIR": {
+      "by_family": {
+        "kruskal": 15,
+        "wilson": 7
+      },
+      "condition_regressions_vs_RESET": 2,
+      "goal_events": 22,
+      "preference_fraction": 0.5417789757412399,
+      "raw_illegal_top_choice": 1,
+      "unguided_exact": 48
+    },
+    "C45-GATE": {
+      "by_family": {
+        "kruskal": 15,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 0,
+      "goal_events": 21,
+      "preference_fraction": 0.557427258805513,
+      "raw_illegal_top_choice": 0,
+      "unguided_exact": 48
+    },
+    "C45-MARGIN": {
+      "by_family": {
+        "kruskal": 15,
+        "wilson": 7
+      },
+      "condition_regressions_vs_RESET": 2,
+      "goal_events": 22,
+      "preference_fraction": 0.5417789757412399,
+      "raw_illegal_top_choice": 1,
+      "unguided_exact": 48
+    },
+    "C45-SHUFFLE": {
+      "by_family": {
+        "kruskal": 15,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 0,
+      "goal_events": 21,
+      "preference_fraction": 0.5488958990536278,
+      "raw_illegal_top_choice": 1,
+      "unguided_exact": 48
+    }
+  },
+  "paired": {
+    "C40-PAIR__C34-RESET": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -3.0,
+        5.0
+      ],
+      "delta": 1,
+      "negative_graphs": 2,
+      "positive_graphs": 3
+    },
+    "C40-PAIR__C45-SHUFFLE": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -3.0,
+        6.0
+      ],
+      "delta": 1,
+      "negative_graphs": 2,
+      "positive_graphs": 3
+    },
+    "C45-GATE__C34-RESET": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C45-GATE__C40-PAIR": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -6.0,
+        3.0
+      ],
+      "delta": -1,
+      "negative_graphs": 3,
+      "positive_graphs": 2
+    },
+    "C45-GATE__C45-SHUFFLE": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C45-MARGIN__C34-RESET": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -3.0,
+        6.0
+      ],
+      "delta": 1,
+      "negative_graphs": 2,
+      "positive_graphs": 3
+    },
+    "C45-MARGIN__C40-PAIR": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C45-MARGIN__C45-SHUFFLE": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -3.0,
+        5.0
+      ],
+      "delta": 1,
+      "negative_graphs": 2,
+      "positive_graphs": 3
+    },
+    "C45-SHUFFLE__C34-RESET": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C45-SHUFFLE__C40-PAIR": {
+      "95pct_descriptive_graph_cluster_bootstrap": [
+        -5.0,
+        3.0
+      ],
+      "delta": -1,
+      "negative_graphs": 3,
+      "positive_graphs": 2
+    }
+  },
+  "schema": "driv3r-c45-counterfactual-selective-gate/1",
+  "selection": {
+    "C45-GATE": {
+      "eligible": 5847,
+      "enabled": 1816
+    },
+    "C45-MARGIN": {
+      "eligible": 6084,
+      "enabled": 5756
+    },
+    "C45-SHUFFLE": {
+      "eligible": 5777,
+      "enabled": 122
+    }
+  },
+  "source_sha256": "049d47de50525c0f5b5e49f509006271de7be747d3ec84a56a95b3d00a8b9797",
+  "training": {
+    "ALIGNED": {
+      "epoch_mean_loss": [
+        0.901798,
+        0.924006,
+        0.93386,
+        0.922659,
+        0.932331,
+        0.900474,
+        0.895338,
+        0.889367,
+        0.835213,
+        0.966711,
+        0.812045,
+        0.898692
+      ],
+      "optimizer_updates": 2232
+    },
+    "SHUFFLED": {
+      "epoch_mean_loss": [
+        0.961259,
+        0.873316,
+        0.898244,
+        0.952388,
+        0.856254,
+        0.9173,
+        0.836018,
+        0.941425,
+        0.87808,
+        0.85697,
+        0.955736,
+        0.862857
+      ],
+      "optimizer_updates": 2232
+    },
+    "negative": 105,
+    "positive": 81,
+    "training_states": 186
+  },
+  "training_receipts_sha256": "d067d22b5a2a3dac9e5bc269e00afc0878319b914aff96ad50d98a35868df7c9"
+}

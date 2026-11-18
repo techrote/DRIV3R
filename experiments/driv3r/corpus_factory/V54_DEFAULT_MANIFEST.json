@@ -1,0 +1,140 @@
+{
+  "schema": "driv3r/corpus_factory/stream-memory-v54/1",
+  "date": "2026-11-18",
+  "synthetic_not_native_CyberSand": true,
+  "derived_from_v53_manifest_sha256": "4a1cfbd27781bd960805de4fbb0316be67e9a14d21848015c79fafd570ca001f",
+  "derived_from_v53_generator_sha256": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+  "source_shard_sha256": {
+    "TRAIN_policy.jsonl": "4a2418d5c5699d51897430fa523dfab3dcc91612a6c8ec5ebf27c78135aa34c1",
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": "bd8c70f98a749203edc565ce61660a0812ebe771cda8e8a0535abe9aa9b56c62",
+    "DEV_policy.jsonl": "0894d32d3856db4170b12d2fc324c3309ee110e3a12cfbbd4c62bbd9cd703230",
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": "d5d903014ff76beb48989192602265ccf470e7179b061f2297593e2495e27c96",
+    "HELDOUT_policy.jsonl": "cfd840704a7463d14f8ef42c4d7758443968a2b217286b04a6b372d591d08309",
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": "1b4eae3a3928a96f61fe049fb443354bd05beb92938c9578d8475d103cfec978"
+  },
+  "contract": {
+    "train": "TRAIN_stream.jsonl only; feed each complete ordered episode with fresh model state",
+    "dev": "DEV_EVALUATOR_ONLY_stream.jsonl; evaluation-only",
+    "heldout": "HELDOUT_EVALUATOR_ONLY_stream.jsonl; no optimization/tuning",
+    "sidecars": "All *_provenance_EVALUATOR_ONLY.jsonl kept entirely outside model input",
+    "context": "All existing legal actions unchanged. Replace replayed durable history by events_delta, only eight most recent action/position receipts.",
+    "bootstrap": "First events_delta carries full synthetic prelude; later events_delta contains strictly newly observed receipts.",
+    "weight": "Zero-weight TRAIN repeats preserved for sequential state progression; optimizer must ignore their supervised loss.",
+    "grouping": "World topologies/arms remain in original v53 split. Do not mix related worlds across corpus versions."
+  },
+  "stats": {
+    "TRAIN": {
+      "worlds": 32,
+      "decisions": 22842,
+      "new_event_receipts": 10432,
+      "no_new_event_steps": 19194,
+      "zero_weight_repeats": 11414,
+      "episodes": 576,
+      "actions": {
+        "ERASE": 1760,
+        "MOVE_E": 4066,
+        "MOVE_N": 5154,
+        "MOVE_S": 4578,
+        "MOVE_W": 4372,
+        "PAINT_A": 1824,
+        "PAINT_B": 512,
+        "STOP": 576
+      }
+    },
+    "DEV": {
+      "worlds": 12,
+      "decisions": 9310,
+      "new_event_receipts": 3912,
+      "no_new_event_steps": 7942,
+      "zero_weight_repeats": 0,
+      "episodes": 216,
+      "actions": {
+        "ERASE": 660,
+        "MOVE_E": 1720,
+        "MOVE_N": 2059,
+        "MOVE_S": 2041,
+        "MOVE_W": 1738,
+        "PAINT_A": 684,
+        "PAINT_B": 192,
+        "STOP": 216
+      }
+    },
+    "HELDOUT": {
+      "worlds": 12,
+      "decisions": 12636,
+      "new_event_receipts": 3912,
+      "no_new_event_steps": 11268,
+      "zero_weight_repeats": 0,
+      "episodes": 216,
+      "actions": {
+        "ERASE": 660,
+        "MOVE_E": 2685,
+        "MOVE_N": 2694,
+        "MOVE_S": 2604,
+        "MOVE_W": 2901,
+        "PAINT_A": 684,
+        "PAINT_B": 192,
+        "STOP": 216
+      }
+    }
+  },
+  "ambiguous_instantaneous_observations": {
+    "TRAIN": {
+      "identical_instant_input_opposite_label_keys": 168,
+      "decision_rows_in_conflicting_keys": 1440,
+      "stateless_majority_ceiling_in_conflicting_rows": 0.644444,
+      "stateless_majority_ceiling_all_rows": 0.977585,
+      "observable_prefix_conflicts": 0,
+      "full_history_label_conflicts": 0
+    },
+    "DEV": {
+      "identical_instant_input_opposite_label_keys": 59,
+      "decision_rows_in_conflicting_keys": 540,
+      "stateless_majority_ceiling_in_conflicting_rows": 0.644444,
+      "stateless_majority_ceiling_all_rows": 0.979377,
+      "observable_prefix_conflicts": 0,
+      "full_history_label_conflicts": 0
+    },
+    "HELDOUT": {
+      "identical_instant_input_opposite_label_keys": 55,
+      "decision_rows_in_conflicting_keys": 560,
+      "stateless_majority_ceiling_in_conflicting_rows": 0.657143,
+      "stateless_majority_ceiling_all_rows": 0.984805,
+      "observable_prefix_conflicts": 0,
+      "full_history_label_conflicts": 0
+    }
+  },
+  "files": {
+    "TRAIN_stream.jsonl": {
+      "sha256": "aafdde3983d924ce69a4d8dd185e6fdb067367ac189b2a822a69cd412386646d",
+      "bytes": 25278084
+    },
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "fc094e0190b0e1daad5d408dde8969d2b9ea17ff55f3d7f62674f89b9eac7f55",
+      "bytes": 112540
+    },
+    "DEV_EVALUATOR_ONLY_stream.jsonl": {
+      "sha256": "bd8ad86f3a6816b9037b24303f0d49fcecbc9fe7c1597fbc645c70ef42ed137d",
+      "bytes": 11647670
+    },
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "c37d05d1010b847816a7740e71dd6650bd3aaf4d2f93cb005759c5ee9d4c5a33",
+      "bytes": 41694
+    },
+    "HELDOUT_EVALUATOR_ONLY_stream.jsonl": {
+      "sha256": "1ab9cdafdf228779b9e804b03a8fdf674807e8f4dc2509a7983afe2f6cf63820",
+      "bytes": 15951093
+    },
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "478429e6e431f0a7a561cc51dd3a056e6a53fc7e4c0dcde845ed182065c46639",
+      "bytes": 42486
+    }
+  },
+  "limitations": [
+    "Synthetic event-stream transformation, no native CyberSand execution",
+    "Preludes scripted by v53 and delivered all at first model step",
+    "Recurrent memory requirement proven by conflicting instantaneous labels, not learned policy competence",
+    "No LFM/Sprocket training or neural latency/RSS measurements",
+    "No immutable GitHub Actions publication; export remains a local reproducible archive."
+  ]
+}

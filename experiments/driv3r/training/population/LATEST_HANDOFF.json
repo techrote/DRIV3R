@@ -1,0 +1,152 @@
+{
+  "schema": "driv3r.population.latest_handoff/v1",
+  "updated_utc": "2026-11-17",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "draft_hold": true,
+  "owned_dir": "experiments/driv3r/training/population/",
+  "latest_experiment": "P20",
+  "status": "REAL_PRETRAINED_SLM_EXECUTION_BLOCKED_SOURCE_READY",
+  "scientific_interpretation": "P20 introduces a bounded REAL pretrained-root LoRA training and heldout closed-loop execution path; no target SLM checkpoint or new gameplay score exists yet.",
+  "previous_valid_control": {
+    "experiment": "P19",
+    "kind": "24-hidden-unit scratch NumPy MLP, NOT SLM",
+    "cohorts": [
+      680,
+      681,
+      682
+    ],
+    "heldout_reward": {
+      "reward_pbt": 33.1859,
+      "random_parent": 33.9868,
+      "competence_gated_novelty": 30.5359,
+      "ungated_novelty": 14.1437
+    },
+    "early_stop_rate": {
+      "ungated_novelty": 0.7222,
+      "gated_novelty": 0.3611
+    },
+    "conclusion": "Competence gating mitigated STOP collapse but failed to beat reward PBT or random-parent baselines; no further nearby selector variant is justified."
+  },
+  "p20": {
+    "runner": "population_p20_real_slm.py",
+    "runner_git_blob": "2c4fece62f3536ed75fa1f8b7d7971023c84fb1b",
+    "guardrails": "test_population_p20_real_slm.py",
+    "guardrails_git_blob": "c2ef4c376deeef16b920e6a7d11008e9b02841b3",
+    "model_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "architecture": "pretrained SmolLM2 plus rank-4 alpha-8 q_proj/v_proj LoRA in last 2 layers, separate trained six-action head",
+    "controls": [
+      "frozen-pretrained trained head",
+      "same-seed actual LoRA+trained head"
+    ],
+    "niches": [
+      "navigator",
+      "branch_artist",
+      "recoverer",
+      "texture_worm",
+      "material_cautious",
+      "chaotic_brush"
+    ],
+    "default_experiment": {
+      "niches": [
+        "navigator",
+        "recoverer"
+      ],
+      "seeds": [
+        690
+      ],
+      "updates_per_candidate": 4,
+      "horizon": 32,
+      "training_geometry_cards": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "heldout_geometry_cards": [
+        4,
+        5
+      ]
+    },
+    "artifact_outputs": [
+      "adapter checkpoint safetensors per candidate",
+      "closed-loop original SVG galleries",
+      "model/checkpoint hashes",
+      "heldout and selection JSON trajectories",
+      "latency p50/p95",
+      "peak RSS",
+      "source-pinned manifest"
+    ],
+    "real_pretrained_root_loaded": false,
+    "real_root_forwards": 0,
+    "real_lora_updates": 0,
+    "real_checkpoints": 0,
+    "heldout_slm_episodes": 0,
+    "experiment_outcome": "NOT_RUN",
+    "limitations": [
+      "synthetic legal host approximates CyberSand game; not native ABI validation",
+      "hand-designed niche reward and structured text cues",
+      "small update budget does not guarantee meaningful generalization",
+      "selection-only competence flags do not establish aesthetic diversity",
+      "source publication and mechanical guardrails are not empirical SLM reproduction"
+    ]
+  },
+  "runtime_probe": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "packages": {
+      "torch": true,
+      "transformers": false,
+      "tokenizers": false,
+      "peft": false,
+      "safetensors": true,
+      "huggingface_hub": true,
+      "numpy": true
+    },
+    "pinned_model_weights_local": false,
+    "HF_download_network_available": false,
+    "permitted_GitHub_Actions_dispatch": false,
+    "paid_compute_used": false
+  },
+  "blocker": "No local source-pinned pretrained SmolLM2 model/tokenizer; transformers and tokenizers missing; network access cannot retrieve required files; GitHub integration cannot dispatch an opt-in CPU model workflow.",
+  "unblock_steps": [
+    "Provision exact SmolLM2 revision offline with model.safetensors, tokenizer.json, config.json and independently verified weight SHA-256.",
+    "Install compatible free CPU model inference dependencies.",
+    "Run the lane's opt-in bounded real LoRA trainer on TRAIN and selection, then evaluate HELDOUT once.",
+    "Store model safetensors, original trajectory receipts and SHA manifests in immutable Actions artifacts (not Git).",
+    "Audit source/weights/legality/latency/RSS; compare frozen-head and LoRA arms and only then expand niches or generations."
+  ],
+  "cross_lane_evidence": [
+    {
+      "lane": "tiny_policy",
+      "program": "M19",
+      "model": "SmolLM2-135M-Instruct",
+      "status": "blocked, 0 root forwards, 0 adapter updates"
+    },
+    {
+      "lane": "action_language",
+      "program": "GAL-017",
+      "model": "Pythia-70M",
+      "status": "blocked, no pretrained model loaded"
+    },
+    {
+      "lane": "sprocket_game_policy",
+      "model": "Sprocket-500M",
+      "status": "blocked, pretrained 1GB root absent"
+    }
+  ],
+  "owner_boundaries": {
+    "only_writable_repository": "techrote/DRIV3R",
+    "only_pr": 1,
+    "cybersand_read_only": true,
+    "neurounner_read_only": true,
+    "main_untouched": true,
+    "merge": false,
+    "promote_ready": false,
+    "auto_merge": false,
+    "new_workflows": false,
+    "new_branches": false
+  }
+}

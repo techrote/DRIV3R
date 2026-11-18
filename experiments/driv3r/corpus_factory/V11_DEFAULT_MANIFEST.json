@@ -1,0 +1,91 @@
+{
+  "schema": "driv3r/corpus-factory-v11",
+  "source": "synthetic host; NOT native CyberSand",
+  "native_receipt": false,
+  "style_seeds_per_topology": 16,
+  "split_design": "TRAIN plain; DEV single-spur; HELDOUT double-spur topology grammars, plus disjoint dimensions/seed families",
+  "pairing": "both siblings share current observation and last 32 positions/paint receipts; full older history changes opposite oracle target",
+  "checks": "all synthetic movements cardinal/open/nonprotected; protected cell entries 0; oracle graph routing and paired inversion validated",
+  "controls": "last32_only and zero_history are evaluation ablations, not trainer inputs",
+  "dedupe": "reject non-sibling world groups with hub-local material views at Hamming distance <=4 across all splits",
+  "near_duplicate_world_groups_rejected": 0,
+  "counts": {
+    "TRAIN": {
+      "topologies": 16,
+      "grammars": [
+        "plain"
+      ],
+      "world_groups": 256,
+      "pairs": 768,
+      "rows": 1536,
+      "tasks": {
+        "delayed_shutter": 512,
+        "delayed_material_law": 512,
+        "periodic_motif": 512
+      }
+    },
+    "DEV": {
+      "topologies": 6,
+      "grammars": [
+        "single-spur"
+      ],
+      "world_groups": 96,
+      "pairs": 288,
+      "rows": 576,
+      "tasks": {
+        "delayed_shutter": 192,
+        "delayed_material_law": 192,
+        "periodic_motif": 192
+      }
+    },
+    "HELDOUT": {
+      "topologies": 6,
+      "grammars": [
+        "double-spur"
+      ],
+      "world_groups": 96,
+      "pairs": 288,
+      "rows": 576,
+      "tasks": {
+        "delayed_shutter": 192,
+        "delayed_material_law": 192,
+        "periodic_motif": 192
+      }
+    }
+  },
+  "host_applied_movement_steps": 222976,
+  "synthetic_paint_receipts": 65408,
+  "limits": [
+    "Host-scripted legal synthetic preludes, oracle-labeled decision only; no model closed-loop competence inferred",
+    "Synthetic host action names/material law/paint receipts not checked against CyberSand canonical native ABI",
+    "HELDOUT must not be used for training or model selection; no actual primary SLM trained",
+    "DEV/HELDOUT introduce grammar shifts but primary twin-loop geometry remains shared"
+  ],
+  "version": "stateful-v11",
+  "generator": "stateful_challenge_v11.js",
+  "shards": {
+    "TRAIN": {
+      "file": "TRAIN.jsonl",
+      "rows": 1536,
+      "bytes": 11707002,
+      "sha256": "98e39823bdee55a3576704f7394183e51bf79a61c93fa39f0e83c6020988b50c",
+      "usage": "optimizer-permitted"
+    },
+    "DEV": {
+      "file": "DEV.jsonl",
+      "rows": 576,
+      "bytes": 4514202,
+      "sha256": "ccec8834b0d7962801c34bbd3ae3fd65a45bea88cc893fb536cb60073a8900d7",
+      "usage": "evaluation-only; do not train"
+    },
+    "HELDOUT": {
+      "file": "HELDOUT.jsonl",
+      "rows": 576,
+      "bytes": 4619808,
+      "sha256": "af7395afebcb60fc82bb2cab4b9079f62ffc7cd13a1f60521188c94a034b3132",
+      "usage": "evaluation-only; do not train"
+    }
+  },
+  "model_input_contract": "ONLY model_input; do not expose target/evidence/controls/metadata to model",
+  "provenance_note": "FNV32 deterministic generator, SHA256 digest of JSONL bytes, no native receipts"
+}

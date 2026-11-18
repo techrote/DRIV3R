@@ -1,0 +1,202 @@
+{
+  "schema": "driv3r/corpus_factory/compound-remote-v29/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "compound_remote_v29.js",
+  "generator_sha256": "8f4aac216b5e2da7dcd2d9600b0b9533190fc31cc8f8c5eb5fa70b1b5616c386",
+  "dependencies": [
+    {
+      "file": "remote_error_alias_v28.js",
+      "sha256": "c94a1f563193ca1edc78555a2a2b20eab06732cf28e196b1effe450214b811fb"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "oracle": "v26 terminal reverse-BFS shortest-successful suffix",
+  "quick": false,
+  "split_worlds_disjoint": true,
+  "challenge": "Two remote wrong-material cells, 160 accepted moves after both, paired invisible-to-last-64 counterfactuals with distinct optimal first recovery actions, >=2 suffix regret.",
+  "restricted_first_action_theoretical_ceiling": 0.5,
+  "warning": "Only observation reconstructed from state + initial_history + events_added + positions_added is model input. Episode metadata, hidden_interventions, oracle costs, pair IDs, split and targets are held out from policy.",
+  "limitations": [
+    "Synthetic graph, only 3 paint targets and two-hit episodes, script-built prelude.",
+    "Symbols, complete remote survey and full history permit deterministic solver.",
+    "No real SLM training or native CyberSand replay."
+  ],
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "worlds_considered": 64,
+      "pairs": 59,
+      "missing_strict_worlds": [
+        {
+          "group": 1,
+          "variant": 6
+        },
+        {
+          "group": 3,
+          "variant": 6
+        },
+        {
+          "group": 4,
+          "variant": 7
+        },
+        {
+          "group": 5,
+          "variant": 6
+        },
+        {
+          "group": 7,
+          "variant": 6
+        }
+      ],
+      "episodes": 118,
+      "decisions": 2296,
+      "erases": 236,
+      "first_action": {
+        "BACKTRACK": 59,
+        "MOVE_E": 27,
+        "MOVE_S": 31,
+        "MOVE_W": 1
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 3,
+      "exact_duplicates": 304,
+      "zero_weight": 304,
+      "unique_input_count": 1992
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "worlds_considered": 32,
+      "pairs": 28,
+      "missing_strict_worlds": [
+        {
+          "group": 1,
+          "variant": 6
+        },
+        {
+          "group": 2,
+          "variant": 7
+        },
+        {
+          "group": 3,
+          "variant": 6
+        },
+        {
+          "group": 4,
+          "variant": 7
+        }
+      ],
+      "episodes": 56,
+      "decisions": 1270,
+      "erases": 112,
+      "first_action": {
+        "BACKTRACK": 28,
+        "MOVE_E": 17,
+        "MOVE_S": 9,
+        "MOVE_W": 2
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 3,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_input_count": 1270
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "worlds_considered": 32,
+      "pairs": 28,
+      "missing_strict_worlds": [
+        {
+          "group": 1,
+          "variant": 7
+        },
+        {
+          "group": 2,
+          "variant": 7
+        },
+        {
+          "group": 3,
+          "variant": 7
+        },
+        {
+          "group": 4,
+          "variant": 7
+        }
+      ],
+      "episodes": 56,
+      "decisions": 1520,
+      "erases": 112,
+      "first_action": {
+        "BACKTRACK": 28,
+        "MOVE_E": 16,
+        "MOVE_W": 4,
+        "MOVE_S": 8
+      },
+      "min_wrong_choice_regret": 2,
+      "min_remote_distance": 3,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "unique_input_count": 1520
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 118,
+      "bytes": 2941806,
+      "sha256": "2eea21eef37aa6a63d0c531771458c6d743cfbc390deba12bcdd93908f6012ab"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 2296,
+      "bytes": 2318486,
+      "sha256": "8bc4e34a15f41a849ec26de73f42e1a534fdbc9733ca5d378fecf738dc4b1d70"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 56,
+      "bytes": 1422475,
+      "sha256": "9d4bac39a411950b511498f8f06d5264f72dd95db67c48650b4ac326592d52c9"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 1270,
+      "bytes": 1279561,
+      "sha256": "91968d6a5c4c5868660bad68a5f80a1a3360c809bd9295488cd528a042b2c29a"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 56,
+      "bytes": 1466228,
+      "sha256": "a998bd0f73e5aa167dd9e048c5f6d7e6cf1888fe4f50be88442813bc200775c6"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 1520,
+      "bytes": 1537740,
+      "sha256": "438301340b20e9530e0b88da871873acc43210ec060864c9b987e63311490136"
+    }
+  }
+}

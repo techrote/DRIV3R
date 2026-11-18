@@ -1,0 +1,45 @@
+{
+  "checkpoint_binary_in_git": false,
+  "checkpoint_optimizer_replicas_identical": true,
+  "checkpoints_sha256": {
+    "C37-LEARNED": "320d0413c2ef5a7fc3bd44f9cde92c5ae6e3b87cda1c0d12d79aa77f1b29c065",
+    "C37-RANDOM": "6cc9b5c3ce369605bf4bf94b99b7b8fc80833d49ab1500270211359d7e3b5377",
+    "C37-SHUFFLED": "3e3355b7f80b84dafb854922ae6a1ecb8bbd9dab4fa36d446a84bd4c12a340bc"
+  },
+  "date": "2026-11-17",
+  "decision": "REJECT",
+  "full_cohort_sha256": {
+    "A": "28ff00d27487b8fe440a87a727fb12077d18574fd73a0c96c2429fa4860224e1",
+    "B": "60986a5dffb4e359194a43ea7a1b2d10b24af6459dca0686add0def1f42bd903",
+    "C": "50a23bbdb44cd82311bb052981e0e37537a91b0a803130ab75af155acdbd58b6"
+  },
+  "gallery_html_sha256": "5a64bc679ec79fc8d9930a1eac442e07cd473951ab09c005885c5318142d0f62",
+  "graph_overlap_across_cohorts": 0,
+  "graphs": 96,
+  "immutable_actions_checkpoint_artifact": false,
+  "independent_executed_gallery_panels": 16,
+  "local_targeted_tests_passed": "4/4",
+  "matched_synthetic_episodes": 2880,
+  "native_game_validation": false,
+  "owned_path": "experiments/driv3r/training/guidance_recovery/**",
+  "remote_head_before_work": "2c49ddcfbc62d262c6998ed39d032db3c36cefac",
+  "schema": "driv3r-c37-source-custody/1",
+  "source_match_sha1": {
+    "c34_independent_maze.py": "569d4b5d0d6074d48989b353f71729cdf4f2afb0",
+    "c36_gallery.py": "43f17d2069a64a0101096356a707f6103fb4794c",
+    "c36_personality_budget.py": "144e2b0851d6a781cd1fe66840e32ac0588ab6e0",
+    "experiment.py": "cf67d48228f6512e8a6262b357c2fcc3bd04d9dd",
+    "personality_retention_core.py": "cbdaf9fcfb6cbf34a66955b53e00be3f628493f7",
+    "signed_feedback.py": "260f92337b9f970457e1e6c0c0ffa40861db2bf6"
+  },
+  "source_sha256": "412bc19315177ae4596fd4db45dbc3d29e864112877a92fbd0576609fa4afca0",
+  "tracked_file_sha256": {
+    "C37-compact-results.json": "74fd3eec909413e4ce0147d64f54d630195cc327aade8127d86406a50367c04f",
+    "C37-selected-trajectories.json": "65c2f0fcd25d1ddf559fb196ecaff136dfb0e3c98502641d2bb0f19a65b4155e",
+    "C37-shuffled-return-replication-2026-11-17.md": "05993ffadc89e720ceaac32e4c3c815cb00b9f8d13894e4bef4118a88d5422b3",
+    "c37_gallery.py": "6fa20b17c03000cc64cfb48c968a769513ff0c884253c82d1d7c527fd2702a4c",
+    "c37_shuffle_replication.py": "412bc19315177ae4596fd4db45dbc3d29e864112877a92fbd0576609fa4afca0",
+    "test_c37_shuffle_replication.py": "f582fbd99a75287dedbc04d1fa96b6f870e57709931215c588b834a9f9a9d88c"
+  },
+  "training_receipts_sha256": "8df4dc854b3b32ae931ed5235e9a36d795b1095f928d121d41ad33ec1c7536dd"
+}

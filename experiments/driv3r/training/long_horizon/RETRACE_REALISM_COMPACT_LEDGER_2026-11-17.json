@@ -1,0 +1,733 @@
+{
+  "archive_name": "DRIV3R_RETRACE_REALISM_20261117_EVIDENCE.zip",
+  "checkpoint_sha256": {
+    "619": {
+      "frozen": "f8c7afb2dcaea3bfbddfd8a00de2a96995238dfc90bf926bbf5e60dfae2086ab",
+      "sham": "a63aa2ad251ed1ffdccf5cb0d1c9712393826dd1690f950d9c3dae702d3b53e6",
+      "switch": "229de9acf1af92d0f454898ef3e1149f92ccf713ee30123bed0367552e18ba69"
+    },
+    "620": {
+      "frozen": "74e02d3dc1d04b57ee59444a26329348e06c46f9688beee9d7d5c2f461f473e3",
+      "sham": "470d5cf399a74bfcee4817faa9f13b86b15889bbc43cccb275921af51feb51b6",
+      "switch": "b14cfee1860ebf4e32b8cb8f429cd3b36da849d222f18de1ca00f33283ad240f"
+    }
+  },
+  "cohorts": [
+    "previous_development",
+    "fresh_development"
+  ],
+  "evidence_archive_sha256": "8911bb7c14533ccd01fb38af102db5207f1da0642fd7ac7f1620aba2602d7ef2",
+  "excluded_prehistories": 9,
+  "first_switch": 32,
+  "full_case_count": 87,
+  "full_case_records": "Full source-replayed per-decision neural probabilities and receipts in local evidence ZIP, not committed as files",
+  "horizon": 32,
+  "model_only_latency": {
+    "frozen": {
+      "calls": 512,
+      "median_ms": 0.007792,
+      "p95_ms": 0.008032,
+      "scope": "model probability vector only"
+    },
+    "sham": {
+      "calls": 512,
+      "median_ms": 0.007822,
+      "p95_ms": 0.008316,
+      "scope": "model probability vector only"
+    },
+    "switch": {
+      "calls": 512,
+      "median_ms": 0.007751,
+      "p95_ms": 0.008763,
+      "scope": "model probability vector only"
+    }
+  },
+  "native_receipts": 0,
+  "original_manifest_sha256": "b688b5af02f39b574828ed769c142fae3542841c2537f265d0b2c75c19d1830a",
+  "original_report_sha256": "9e82234391cecb4bf933b64ff9f234111fcb154251eb9111ff475658ffbc4017",
+  "paid_compute": false,
+  "source_sha256": {
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+    "goal_switch_curriculum_lab.py": "a627adcb20a74b13701c5ee3ca20051ce447360c17dd9cb346f9d739e9ce903f",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "post_switch_regret_lab.py": "ee6ddd97b14b3c9384865d6da801b4535f68582ceda70af98779bbd5cb502b1f",
+    "retrace_realism_lab.py": "7ffffd93263a48e4dc1253080b67fc29dfb6ca403a20b6fb309ae53a9d6da755",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "structural_heldout_opened": false,
+  "summary": {
+    "arms": {
+      "frozen": {
+        "budget_censored": 298,
+        "decisions": 9536,
+        "executed_action_distribution": {
+          "BACKTRACK": 226,
+          "MOVE_E": 2181,
+          "MOVE_N": 3363,
+          "MOVE_S": 1917,
+          "MOVE_W": 1849
+        },
+        "first_choice_counts": {
+          "MOVE_E": 23,
+          "MOVE_N": 20,
+          "MOVE_S": 22,
+          "MOVE_W": 22
+        },
+        "forks": 298,
+        "goal_hits": 93,
+        "model_first_relocation": 0,
+        "relocation_prevented": 83,
+        "retreat_material_preference": 5,
+        "retreat_strict_preference": 9,
+        "stops": 0
+      },
+      "sham": {
+        "budget_censored": 298,
+        "decisions": 9536,
+        "executed_action_distribution": {
+          "BACKTRACK": 182,
+          "MOVE_E": 2524,
+          "MOVE_N": 3200,
+          "MOVE_S": 1826,
+          "MOVE_W": 1804
+        },
+        "first_choice_counts": {
+          "MOVE_E": 21,
+          "MOVE_N": 22,
+          "MOVE_S": 19,
+          "MOVE_W": 25
+        },
+        "forks": 298,
+        "goal_hits": 93,
+        "model_first_relocation": 0,
+        "relocation_prevented": 97,
+        "retreat_material_preference": 5,
+        "retreat_strict_preference": 12,
+        "stops": 0
+      },
+      "switch": {
+        "budget_censored": 298,
+        "decisions": 9536,
+        "executed_action_distribution": {
+          "BACKTRACK": 181,
+          "MOVE_E": 2511,
+          "MOVE_N": 3133,
+          "MOVE_S": 1889,
+          "MOVE_W": 1822
+        },
+        "first_choice_counts": {
+          "MOVE_E": 21,
+          "MOVE_N": 26,
+          "MOVE_S": 19,
+          "MOVE_W": 21
+        },
+        "forks": 298,
+        "goal_hits": 92,
+        "model_first_relocation": 0,
+        "relocation_prevented": 94,
+        "retreat_material_preference": 5,
+        "retreat_strict_preference": 11,
+        "stops": 0
+      }
+    },
+    "candidate_distribution": {
+      "BACKTRACK": 87,
+      "MOVE_E": 59,
+      "MOVE_N": 39,
+      "MOVE_S": 64,
+      "MOVE_W": 49
+    },
+    "conditions": {
+      "fresh_development": {
+        "all_material": 3,
+        "all_strict": 5,
+        "eligible": 56,
+        "per_seed_material": {
+          "619": 0,
+          "620": 3
+        }
+      },
+      "previous_development": {
+        "all_material": 2,
+        "all_strict": 3,
+        "eligible": 31,
+        "per_seed_material": {
+          "619": 0,
+          "620": 2
+        }
+      }
+    },
+    "eligible": 87,
+    "material_robust": [
+      {
+        "challenge": "normal",
+        "cohort": "previous_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 30,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "5538794ec6fa8e51758ef9f5575ccfba412bb9ec3072f4977885690ef3bb9813",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3002
+      },
+      {
+        "challenge": "trap_corridor",
+        "cohort": "previous_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 28,
+            "best_forward_hit": null,
+            "retreat_final_distance": 6,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 10,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 10,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "91d19c8eb462c505bde3d7a13fcc5de2d36d769511cb388530d4bc5b7c4ac9ee",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3002
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 44,
+            "best_forward_hit": null,
+            "retreat_final_distance": 14,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "0df8f8d94ddab9192b73d90304a83eb154ea0bf9c3e7256edcddeac8e1f6f42e",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 0,
+        "world_seed": 3008
+      },
+      {
+        "challenge": "trap_corridor",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 42,
+            "best_forward_hit": null,
+            "retreat_final_distance": 2,
+            "retreat_hit": 22,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 4,
+            "retreat_hit": 24,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 4,
+            "retreat_hit": 24,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "e87a26aafc910dd7b05c59fc67b52c3243941b7d4adde897f51d5a11ad78e7c0",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 0,
+        "world_seed": 3008
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "ridges",
+        "prefix_hash": "bf23ef36f795a1910bd92a0d6a7ec6cf2365711ebe22ea20f308e03d6285cc91",
+        "raw_votes": {
+          "frozen": "MOVE_E",
+          "sham": "MOVE_E",
+          "switch": "MOVE_E"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3108
+      }
+    ],
+    "prepainted": 0,
+    "source": "first-switch prehistory; synthetic non-relocation action constraint",
+    "states": 87,
+    "strict_robust": [
+      {
+        "challenge": "normal",
+        "cohort": "previous_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 30,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "5538794ec6fa8e51758ef9f5575ccfba412bb9ec3072f4977885690ef3bb9813",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3002
+      },
+      {
+        "challenge": "trap_corridor",
+        "cohort": "previous_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 28,
+            "best_forward_hit": null,
+            "retreat_final_distance": 6,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 10,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 22,
+            "best_forward_hit": null,
+            "retreat_final_distance": 10,
+            "retreat_hit": 12,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "91d19c8eb462c505bde3d7a13fcc5de2d36d769511cb388530d4bc5b7c4ac9ee",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3002
+      },
+      {
+        "challenge": "trap_corridor",
+        "cohort": "previous_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 2,
+            "best_forward_hit": 30,
+            "retreat_final_distance": 4,
+            "retreat_hit": 28,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 2,
+            "best_forward_hit": 30,
+            "retreat_final_distance": 4,
+            "retreat_hit": 28,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 2,
+            "best_forward_hit": 30,
+            "retreat_final_distance": 4,
+            "retreat_hit": 28,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "ridges",
+        "prefix_hash": "76e87a73b3fb5986b4cd95dbe1a78d7371206c60b8fcb5268c1f7d8e33dc69f6",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3102
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_N",
+            "best_forward_final_distance": 8,
+            "best_forward_hit": 12,
+            "retreat_final_distance": 8,
+            "retreat_hit": 10,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_N",
+            "best_forward_final_distance": 10,
+            "best_forward_hit": 12,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_N",
+            "best_forward_final_distance": 10,
+            "best_forward_hit": 12,
+            "retreat_final_distance": 12,
+            "retreat_hit": 10,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "4a7150523b8b16805be4a1c196ad5711f37ab5e8bee0c3d9ea457f3a83e49a12",
+        "raw_votes": {
+          "frozen": "MOVE_E",
+          "sham": "MOVE_N",
+          "switch": "MOVE_N"
+        },
+        "seed": 619,
+        "variant": 0,
+        "world_seed": 3008
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 20,
+            "best_forward_hit": null,
+            "retreat_final_distance": 18,
+            "retreat_hit": null,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 20,
+            "best_forward_hit": null,
+            "retreat_final_distance": 18,
+            "retreat_hit": null,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 20,
+            "best_forward_hit": null,
+            "retreat_final_distance": 18,
+            "retreat_hit": null,
+            "retreat_material_win": false,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "ridges",
+        "prefix_hash": "0f4ade20f1aa25f5758a331a267dc19ac5ab284c4aae9fd63f82e8853fd7665a",
+        "raw_votes": {
+          "frozen": "MOVE_N",
+          "sham": "MOVE_N",
+          "switch": "MOVE_N"
+        },
+        "seed": 619,
+        "variant": 1,
+        "world_seed": 3108
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 44,
+            "best_forward_hit": null,
+            "retreat_final_distance": 14,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 8,
+            "retreat_hit": 18,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "0df8f8d94ddab9192b73d90304a83eb154ea0bf9c3e7256edcddeac8e1f6f42e",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 0,
+        "world_seed": 3008
+      },
+      {
+        "challenge": "trap_corridor",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 42,
+            "best_forward_hit": null,
+            "retreat_final_distance": 2,
+            "retreat_hit": 22,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 4,
+            "retreat_hit": 24,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_S",
+            "best_forward_final_distance": 36,
+            "best_forward_hit": null,
+            "retreat_final_distance": 4,
+            "retreat_hit": 24,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "pickets",
+        "prefix_hash": "e87a26aafc910dd7b05c59fc67b52c3243941b7d4adde897f51d5a11ad78e7c0",
+        "raw_votes": {
+          "frozen": "MOVE_S",
+          "sham": "MOVE_S",
+          "switch": "MOVE_S"
+        },
+        "seed": 620,
+        "variant": 0,
+        "world_seed": 3008
+      },
+      {
+        "challenge": "normal",
+        "cohort": "fresh_development",
+        "comparisons": {
+          "frozen": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "sham": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          },
+          "switch": {
+            "best_forward": "MOVE_E",
+            "best_forward_final_distance": 11,
+            "best_forward_hit": null,
+            "retreat_final_distance": 9,
+            "retreat_hit": 23,
+            "retreat_material_win": true,
+            "retreat_strict_win": true
+          }
+        },
+        "family": "ridges",
+        "prefix_hash": "bf23ef36f795a1910bd92a0d6a7ec6cf2365711ebe22ea20f308e03d6285cc91",
+        "raw_votes": {
+          "frozen": "MOVE_E",
+          "sham": "MOVE_E",
+          "switch": "MOVE_E"
+        },
+        "seed": 620,
+        "variant": 1,
+        "world_seed": 3108
+      }
+    ]
+  },
+  "synthetic_logical_move_proxy": 64,
+  "version": "retrace-realism/1"
+}

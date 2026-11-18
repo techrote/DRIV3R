@@ -1,0 +1,194 @@
+{
+  "schema": "driv3r-c41-compact-evidence/1",
+  "date": "2026-11-17",
+  "status": "HOLD: C40 transfer negative; C41 learned advantage inconclusive, condition regressions",
+  "scope": "experiments/driv3r/training/guidance_recovery/**",
+  "source_sha256": "ad5647145931febb430f6395e5a31b30a6e153f59094862fa42415bef349b0bf",
+  "train": {
+    "graph_counts": {
+      "tree": 40,
+      "braid": 40
+    },
+    "graphs": 80,
+    "states": 240,
+    "candidate_examples": 1258,
+    "optimizer_updates_per_trained_head": 1680,
+    "epochs": 7,
+    "two_optimizer_executions_byte_identical": true,
+    "receipts_sha256": "e8d581cd0abc34180791883f28991f36331e224fd4b84fbdecbe533d167f67e0",
+    "checkpoint_sha256": {
+      "C41-MIX": "610baefa6517c925b0339a6568c2bffd3f43c42710d2d270a10eea9e0cb9334b",
+      "C41-SHUFFLED": "6640819e5bd5a6d5ebf467ded52589f0b20a19e837b49deed164ff94b21129e6",
+      "C41-RANDOM": "7b93b72adc64c6ae71edd0bfae68a82ca1bbd67da7d908a6cea0be85a730fa92"
+    },
+    "frozen_C40_PAIR_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184"
+  },
+  "split": {
+    "online_graphs": 96,
+    "offline_graphs": 144,
+    "offline_ranking_states": 432,
+    "train_online_intersection": 0,
+    "train_offline_intersection": 0,
+    "online_offline_intersection": 0,
+    "cohort_seeds": {
+      "A": 410701,
+      "B": 571909,
+      "C": 773111
+    },
+    "rejected_fixture_seed": {
+      "C": 743111,
+      "reason": "Prim forward switch challenge-generation rejection; selected replacement before outcome inspection"
+    }
+  },
+  "online": {
+    "episodes": 2304,
+    "guided_episodes_per_model": 288,
+    "arms": [
+      "none",
+      "backtrack/0.35",
+      "backtrack/1.0",
+      "continue/1.0"
+    ],
+    "results": {
+      "C18-A0": {
+        "goals": 107,
+        "families": {
+          "tree": 19,
+          "braid": 33,
+          "prim": 32,
+          "prim_braid": 23
+        },
+        "regressed_conditions_vs_RESET": 20,
+        "unguided_exact": "96/96",
+        "preferred_ink": 656,
+        "opposed_ink": 520
+      },
+      "C34-RESET": {
+        "goals": 119,
+        "families": {
+          "tree": 26,
+          "braid": 36,
+          "prim": 29,
+          "prim_braid": 28
+        },
+        "regressed_conditions_vs_RESET": 0,
+        "unguided_exact": "96/96",
+        "preferred_ink": 747,
+        "opposed_ink": 554
+      },
+      "C40-PAIR": {
+        "goals": 117,
+        "families": {
+          "tree": 22,
+          "braid": 40,
+          "prim": 28,
+          "prim_braid": 27
+        },
+        "regressed_conditions_vs_RESET": 11,
+        "unguided_exact": "96/96",
+        "preferred_ink": 771,
+        "opposed_ink": 614
+      },
+      "C41-MIX": {
+        "goals": 124,
+        "families": {
+          "tree": 25,
+          "braid": 40,
+          "prim": 29,
+          "prim_braid": 30
+        },
+        "regressed_conditions_vs_RESET": 7,
+        "unguided_exact": "96/96",
+        "preferred_ink": 710,
+        "opposed_ink": 570
+      },
+      "C41-SHUFFLED": {
+        "goals": 122,
+        "families": {
+          "tree": 26,
+          "braid": 37,
+          "prim": 29,
+          "prim_braid": 30
+        },
+        "regressed_conditions_vs_RESET": 0,
+        "unguided_exact": "96/96",
+        "preferred_ink": 735,
+        "opposed_ink": 557
+      },
+      "C41-RANDOM": {
+        "goals": 119,
+        "families": {
+          "tree": 26,
+          "braid": 37,
+          "prim": 29,
+          "prim_braid": 27
+        },
+        "regressed_conditions_vs_RESET": 2,
+        "unguided_exact": "96/96",
+        "preferred_ink": 740,
+        "opposed_ink": 560
+      }
+    },
+    "C41_MIX_graph_cluster_bootstrap_95_descriptive": {
+      "versus_RESET": {
+        "delta": 5,
+        "interval": [
+          -3,
+          14
+        ],
+        "positive_graphs": 9,
+        "negative_graphs": 6
+      },
+      "versus_C40_PAIR": {
+        "delta": 7,
+        "interval": [
+          0,
+          15
+        ],
+        "positive_graphs": 9,
+        "negative_graphs": 3
+      },
+      "versus_SHUFFLED": {
+        "delta": 2,
+        "interval": [
+          -8,
+          12
+        ],
+        "positive_graphs": 9,
+        "negative_graphs": 8
+      },
+      "versus_RANDOM": {
+        "delta": 5,
+        "interval": [
+          -5,
+          15.025
+        ],
+        "positive_graphs": 10,
+        "negative_graphs": 8
+      }
+    },
+    "host_rejections": 0,
+    "raw_illegal_top1": 13,
+    "unqualified": [
+      "native host behavior",
+      "complete trajectory personality preservation",
+      "physical obstacles/material-law fidelity"
+    ]
+  },
+  "offline_mean_oracle_regret": {
+    "C40-PAIR": 0.291204,
+    "C41-MIX": 0.259722,
+    "C41-SHUFFLED": 0.270602,
+    "C41-RANDOM": 0.266204
+  },
+  "local_evidence_sha256": {
+    "C41-cohort-A.json": "9ad1b519731a762d406289ed1d430e48a180a4b82f57e2629b519fceb28470ef",
+    "C41-cohort-B.json": "c7dc76a4bf2fb1590fa89355f182b8d5d12da932749af6d465c2a63b75b6a7f9",
+    "C41-cohort-C.json": "5800117952f19fedfdda16602ac1fa59c1b6ac0f2160f564f3bd663fe01b5310",
+    "C41-offline.json": "cb7c212b02b88cd5ad499d3aceb015c296a0201212d5bb1ac57b0e385574e64c",
+    "C41-training-receipts.json": "19e3e7ea277fe6527f69200747ee64d2485a5cc216b7d1aae1e3c9f6980b7ab9",
+    "C41-selected-traces.json": "dd8d77c4a910bce4186cc36d4355056b786b977fc1f773552d6799f0b3700b0b"
+  },
+  "archival_limitations": "Full logs and binaries are local research archive only; immutable GitHub Actions artifact custody and repository-only reproduction not completed.",
+  "conclusion": "C41-MIX no promotion; historical C40-PAIR no transfer confirmation"
+}

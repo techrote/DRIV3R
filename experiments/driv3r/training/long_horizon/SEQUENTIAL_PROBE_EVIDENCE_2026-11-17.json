@@ -1,0 +1,341 @@
+{
+  "aggregates": {
+    "open/blind": {
+      "action_distribution": {
+        "BACKTRACK": 21,
+        "MOVE_E": 769,
+        "MOVE_N": 289,
+        "MOVE_S": 429,
+        "MOVE_W": 540
+      },
+      "early_stop": 0,
+      "episodes": 16,
+      "initial_forward": 16,
+      "masked_action_flips": 0,
+      "masked_controls": 0,
+      "mean_decisions": 128,
+      "mean_first_resolution_decisions": 7,
+      "mean_latency_ms": 0.185721,
+      "mean_new_paint": 126.688,
+      "resolved": 16,
+      "sensor_reads": {
+        "0": 16
+      }
+    },
+    "open/sequential7": {
+      "action_distribution": {
+        "BACKTRACK": 26,
+        "MOVE_E": 697,
+        "MOVE_N": 362,
+        "MOVE_S": 490,
+        "MOVE_W": 473
+      },
+      "early_stop": 0,
+      "episodes": 16,
+      "initial_forward": 16,
+      "masked_action_flips": 0,
+      "masked_controls": 16,
+      "mean_decisions": 128,
+      "mean_first_resolution_decisions": 7,
+      "mean_latency_ms": 0.19076,
+      "mean_new_paint": 126.375,
+      "resolved": 16,
+      "sensor_reads": {
+        "7": 16
+      }
+    },
+    "open/static7": {
+      "action_distribution": {
+        "BACKTRACK": 36,
+        "MOVE_E": 615,
+        "MOVE_N": 401,
+        "MOVE_S": 603,
+        "MOVE_W": 392,
+        "RELOCATE_START": 1
+      },
+      "early_stop": 0,
+      "episodes": 16,
+      "initial_forward": 16,
+      "masked_action_flips": 0,
+      "masked_controls": 0,
+      "mean_decisions": 128,
+      "mean_first_resolution_decisions": 7,
+      "mean_latency_ms": 0.193931,
+      "mean_new_paint": 125.688,
+      "resolved": 16,
+      "sensor_reads": {
+        "7": 16
+      }
+    },
+    "trap/blind": {
+      "action_distribution": {
+        "BACKTRACK": 119,
+        "MOVE_E": 544,
+        "MOVE_N": 442,
+        "MOVE_S": 570,
+        "MOVE_W": 314,
+        "STOP": 1
+      },
+      "early_stop": 1,
+      "episodes": 16,
+      "initial_forward": 16,
+      "masked_action_flips": 0,
+      "masked_controls": 0,
+      "mean_decisions": 124.375,
+      "mean_first_resolution_decisions": 11,
+      "mean_latency_ms": 0.182481,
+      "mean_new_paint": 116.875,
+      "resolved": 16,
+      "sensor_reads": {
+        "0": 16
+      }
+    },
+    "trap/sequential7": {
+      "action_distribution": {
+        "BACKTRACK": 144,
+        "MOVE_E": 312,
+        "MOVE_N": 325,
+        "MOVE_S": 367,
+        "MOVE_W": 222,
+        "STOP": 6
+      },
+      "early_stop": 6,
+      "episodes": 16,
+      "initial_forward": 16,
+      "masked_action_flips": 16,
+      "masked_controls": 16,
+      "mean_decisions": 86,
+      "mean_first_resolution_decisions": 7,
+      "mean_latency_ms": 0.170813,
+      "mean_new_paint": 76.625,
+      "resolved": 16,
+      "sensor_reads": {
+        "7": 16
+      }
+    },
+    "trap/static7": {
+      "action_distribution": {
+        "BACKTRACK": 31,
+        "MOVE_E": 541,
+        "MOVE_N": 421,
+        "MOVE_S": 486,
+        "MOVE_W": 365,
+        "STOP": 2
+      },
+      "early_stop": 2,
+      "episodes": 16,
+      "initial_forward": 0,
+      "masked_action_flips": 0,
+      "masked_controls": 0,
+      "mean_decisions": 115.375,
+      "mean_first_resolution_decisions": 1,
+      "mean_latency_ms": 0.194585,
+      "mean_new_paint": 113.312,
+      "resolved": 16,
+      "sensor_reads": {
+        "7": 16
+      }
+    }
+  },
+  "branch": "research/import-consolidated-worm-labs",
+  "checkpoints_per_seed": 3,
+  "controls": "suppress sequential report and recovery memory at third probe, same world/model",
+  "date": "2026-11-17",
+  "evaluation_horizon": 128,
+  "evaluation_split": "development",
+  "horizons": [
+    36,
+    72,
+    128
+  ],
+  "information_budget": "7 exact occupancy-cell reads per first encounter (static7:7 at fork; sequential7:1+3+3 after legal moves; blind:0)",
+  "limitations": [
+    "synthetic, noncanonical occupancy oracle; no native CyberSand sensor approved",
+    "static sensing can avoid probe travel and recovery costs",
+    "four known DEVELOPMENT families plus transformed orientations, not unseen structural HELDOUT",
+    "teacher-supervised paired paths and zero-padded natural sensor features can bias results",
+    "checkpoints retained locally; immutable GitHub Actions artifact publication outstanding"
+  ],
+  "native_qualification": false,
+  "observation_is_proposed_not_native": true,
+  "optimizer_updates_per_arm": 135,
+  "paid_compute": false,
+  "pretrain_updates_per_stage": 12,
+  "repository": "techrote/DRIV3R",
+  "sealed_heldout_opened": false,
+  "seeds": {
+    "811": {
+      "checkpoint_sha256": {
+        "blind": "e12caef33a84bc4ba4f5ccac2244a50cbcf549da1de53984d40bbe671f7e190b",
+        "sequential7": "69b86b0c49798d6b9124de7409a46ac77375da2e9b8e0fd2498529a27565deaa",
+        "static7": "ff2ab60910fe0122a6cf094465532192cf8352debf62285a07fc206be69bffec"
+      },
+      "decisions": 5472,
+      "elapsed_s": 21.022,
+      "episodes": 48,
+      "manifest_sha256": "567c79b643dd6e144b0787658cb3fd79fca8544fe2f60b9e972b347e2a624f0d",
+      "original_trace_sha256": {
+        "islands-3200-0-open-blind": "637113570fe286ab45508e79b018701967e3120f5ebaa68fb6a8feb72a8a111b",
+        "islands-3200-0-open-sequential7": "6b4208fdc50bb318eaca1181d11f86a98b476caf9c18dab334d546e661524e78",
+        "islands-3200-0-open-static7": "68896ec060294cad4b177380e49ee780bcfa795cf07cdb41e84a7cf108d0b9a0",
+        "islands-3200-0-trap-blind": "09ec2153804fc5871165fd3bf6e9a96da5c2d30f9de8477dbfb77a039834731d",
+        "islands-3200-0-trap-sequential7": "d4e9de9feb1667b980675505c0888882aad84b34c98148cd0ca297d581dcd6c5",
+        "islands-3200-0-trap-static7": "b96a91943057dab3897a6005212e4f3cf74d1e909e8d39455917ac34d4498494",
+        "islands-3200-1-open-blind": "250a89644078e6064d3b7794b4f4267e57f550c9325511403b59dfdfbddf89ef",
+        "islands-3200-1-open-sequential7": "5249b447959c32f5fe0c8b970a5c01d397bdb7afda4012d70d5144777612281f",
+        "islands-3200-1-open-static7": "35ad2a9d18093ab4d7ce1f8dc1a4e4145c04534ddbcd624b305a908e87b265bb",
+        "islands-3200-1-trap-blind": "f8f8f79cce98fd919db6d88fc7c96677ffe48e63f4454ad25b13aa09cb3e8814",
+        "islands-3200-1-trap-sequential7": "ffb6833553202927c491b4054966df4f5e0e477947dcbafb6d1bbea7b3fc1c76",
+        "islands-3200-1-trap-static7": "691a2978734f0394dbe7d2847f9df6147dd2ae705f3dba7b3d569c31f47a77a7",
+        "pickets-3000-0-open-blind": "6571c6b9e36d1ae0ac4709177f1dfbcaa020e9d8d8b380661eb0baadea096417",
+        "pickets-3000-0-open-sequential7": "a2c85df558fc9caff400e7b707481db96bd13c7df17a4928a05e0c3cf166f30b",
+        "pickets-3000-0-open-static7": "61026d72b489cf3bbd51ea572feeb309566ef1e7374aac3f6f211394dd30efdb",
+        "pickets-3000-0-trap-blind": "d5952dc65059460c97b3fe3232b68d5a37bef817e07837805f7c939fb3bb7f8e",
+        "pickets-3000-0-trap-sequential7": "90fbf992e688004dd8208042e620c825dd68f46e9ec6a10d38b04374bb03881a",
+        "pickets-3000-0-trap-static7": "00e1ddb8e1991489c2c964ae19b3490fba35fa05a30c85518f8c21c1fc7cc7c3",
+        "pickets-3000-1-open-blind": "3594179f774e55d83e2bdfd90f365e10855b89772daa6edc8dcf07573cff4c09",
+        "pickets-3000-1-open-sequential7": "64cb2a5656a71415daf0c519e310f20775a0ddec813dd09f18a76855ee0bafb8",
+        "pickets-3000-1-open-static7": "3b0d9bfc1313ef1d277f355700fdd9642129c3c234a2b300492ea902dd4144af",
+        "pickets-3000-1-trap-blind": "c96d3c38df0e4954411ec0cad40953eaa8b6d7f8c827b2dd0f062e4f33ef8449",
+        "pickets-3000-1-trap-sequential7": "81db920d9fda18e55feb94febaa328899b8fd84de06e516248513348ae001eb4",
+        "pickets-3000-1-trap-static7": "d913daadfe54df6115a85df4746e27766b3cbf8a079c68be030da5fbf9d6efe8",
+        "ridges-3100-0-open-blind": "2383520660184ef81d248a6ced11172dce570c48e85ebc357601eaf9306148df",
+        "ridges-3100-0-open-sequential7": "e05981fecd10991e146e0c958c2d9a850a9a7915552b3f2311858d6085da5675",
+        "ridges-3100-0-open-static7": "18efcb4f32eafeef808ec4584692a7a8a0747a7b67defaa6dc5bf1664b25ff09",
+        "ridges-3100-0-trap-blind": "2443cfa62ad30f5b66200fb408f25352adc612a002ed59c8788633a93e0b49f3",
+        "ridges-3100-0-trap-sequential7": "4817bd98c6753fd1bbd037e07d856c2e5f4b92e6aaab106301ba24808ec7dc88",
+        "ridges-3100-0-trap-static7": "ef0eefc3a1ce37f1810f5e06bcf7e05862655cf89068a8c1b167d9f61fafd7d9",
+        "ridges-3100-1-open-blind": "ef8d8a15073c64fe0f4b971468983ef4fa80f3d30940905b23283a5abf8976bd",
+        "ridges-3100-1-open-sequential7": "4adee851f4c5d2ef497bcf9c0af27f592fee18b0ca3b49a3076982d81864e9e2",
+        "ridges-3100-1-open-static7": "dea58f3c9390133dc4a37506cccc161c023a1537d7c8862ce4e73fa57e2f8d61",
+        "ridges-3100-1-trap-blind": "418d0c36da9725f2c5a9daebdceeca8cf925eb05f1fc2a5e0acca8609cb13698",
+        "ridges-3100-1-trap-sequential7": "74d1ffcee061006399a6c906231d0aa44dea91346cd41c48f185a81cdcdd658c",
+        "ridges-3100-1-trap-static7": "f440fe354032fed3f9482496c00756c2e53de59649d63b32a5f1a1d73a8a8a62",
+        "zigzag-3300-0-open-blind": "f3eb8dc30b7404e0e239032a0b9df4df38a3bfc67636b1cbb9316deb252c8552",
+        "zigzag-3300-0-open-sequential7": "e07ad3b22accbcdba8e73b4821708d84fcc600c82212e388d2fe858ad5d0e508",
+        "zigzag-3300-0-open-static7": "b754c77a4871c75847a180222bb3790cdbd8a75918e84b2b2486ab6db8fa96f4",
+        "zigzag-3300-0-trap-blind": "d2e60463196dfb5002e6d96d93b623182d2f238b4a046f2b5639ed5345f4524d",
+        "zigzag-3300-0-trap-sequential7": "c1b33ce617c93fd3d1d41c16ddc0f82329f0bbcf206b736188eefe2df92a9411",
+        "zigzag-3300-0-trap-static7": "fb8fb97d2693673a7155a3507297b5116ad8cd7921457718f4008512bf8552de",
+        "zigzag-3300-1-open-blind": "014b0bf709b022d15b8b1cf55fcda1232b4cf3d4edcc2553543771981b2ec69f",
+        "zigzag-3300-1-open-sequential7": "ffb54433c9200b12079068202c2ee11f81b5f32fdd0121bc2ece1d71ebc28774",
+        "zigzag-3300-1-open-static7": "75011380784e88af637d84f317dd0964b7ef85791b5c367c5c039e23ff12cc24",
+        "zigzag-3300-1-trap-blind": "beb7e95e14836a076092e18b8b28cfe5e9aaaa520c581307c137c027d78a67a3",
+        "zigzag-3300-1-trap-sequential7": "8ca89b9338a5bf52a17b8d84df17ba9bfffecbae23b568921732a2f6582f6015",
+        "zigzag-3300-1-trap-static7": "039825b3ac0a4e4a5dc976b07499aa2cc22fb290394c61051ffae07df5efdec3"
+      },
+      "parameters_per_checkpoint": {
+        "blind": 1033,
+        "sequential7": 1033,
+        "static7": 1033
+      },
+      "peak_rss_kib": 132428,
+      "run_report_sha256": "0dbe6fd88964b89f94dd842bb35fbdb1d75dd631b42c20d3a91cff521ff7e2f9",
+      "source_sha256": {
+        "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+        "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+        "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+        "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+        "menu_alias_lab.py": "ab812b1f21d3de6aa3a51562b82cb2f76f8a67dc15c70d74401dc4a90edbf739",
+        "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+        "recovery_fork_lab.py": "97a569eec43b2a73bd390cc31012c719e33a73af9de7316a6d75356860abfb70",
+        "sensing_probe_lab.py": "848bb5772cc251baa03a41fa83a070d1b5bed53cce87d0ffb90028438df3b800",
+        "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+        "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+        "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+      },
+      "training_rows": 2880
+    },
+    "814": {
+      "checkpoint_sha256": {
+        "blind": "b6c6316b4baf76f928d92ca14a2a5cda0dd787e4fd34a7d52345aaf28f9dec56",
+        "sequential7": "42b92fc39c9d9a4628377a406db42850411778110d5cef3f55cde9015ea39f38",
+        "static7": "c176ca2b2e969b0019b2b44693d6bcbccd407876884d161491abc2575ec1bd98"
+      },
+      "decisions": 5884,
+      "elapsed_s": 21.553,
+      "episodes": 48,
+      "manifest_sha256": "a1e0f66320422dd00468abf627965a4ce94664bbe2151410c9778e9cd4356dbc",
+      "original_trace_sha256": {
+        "islands-3200-0-open-blind": "b94d68ac8cc1c8270c7d01dcb9a06989fe08c9d2f7f50e7ce78c8b6cccd27902",
+        "islands-3200-0-open-sequential7": "87cba43e76b68beac5fb097cd87c05efa6f72a684a1849c806882069166faf2c",
+        "islands-3200-0-open-static7": "a59ce25f11f60ec306101318930f44ff1b5579566ae815daadedf9e0e4c27af2",
+        "islands-3200-0-trap-blind": "9e0e0525668647c06fc8f32051e05af7e0e97e22ccc5a0f5a4a9d1d9b714c87b",
+        "islands-3200-0-trap-sequential7": "83f1f374284a5e8251386b4e333ca5df64f93ddeeb798a44fd1dcc667423fa57",
+        "islands-3200-0-trap-static7": "daa4d88bd6895853f320a1dc235564849aa77961f6135e5dab96e1f322f7fc0f",
+        "islands-3200-1-open-blind": "08e598a311fb8de79a613fc7cb87b645179ebad1169ac7ceb4f6c27aed3fcb3c",
+        "islands-3200-1-open-sequential7": "46540f866ca950a7d8c3b8b1f0c28a9dcc9584d7928828b110dac244793832e4",
+        "islands-3200-1-open-static7": "e9407545763a7e475d7d7281c25a24ea3e3cd614dbfaf9b03bbae92a95781562",
+        "islands-3200-1-trap-blind": "6ae02bd77e51582ac786a0e42bd312bfd2fd34a1a868fb63447af080e0586cb6",
+        "islands-3200-1-trap-sequential7": "63966703a1bf47f58c5f0526d4e6258f7461d213d8074976e1a76bf17dea45dd",
+        "islands-3200-1-trap-static7": "0ab95916d128324666baa883f48f4a65248ebc46a40496818a2976c0e70374da",
+        "pickets-3000-0-open-blind": "c48453ee13ac6b53186193051d21ff80d51bfee0c28a8ad939f54271ce47bb40",
+        "pickets-3000-0-open-sequential7": "41e667a2f51c876a3a5b7c9816fdaaa6851de0692f013cdfff1ef7c7107f1ee4",
+        "pickets-3000-0-open-static7": "42ea1c1d007fc2884a4877c275d0482ed68ce11dd452a8967618b97fd764c02f",
+        "pickets-3000-0-trap-blind": "5743808dca34e3ab6fb95a368e82f0b299b1567aa00141b4e8845df2ab31801c",
+        "pickets-3000-0-trap-sequential7": "ac388547fe00a2517d36e6ffcc0d18adce1f4b1e01686dea844b4ad5a4eb44fe",
+        "pickets-3000-0-trap-static7": "2df9d75cac94bf8723d7954f94bf68012798d094f69df36fb6edb48face65b53",
+        "pickets-3000-1-open-blind": "c96815c3e607493f0f1fb3d23ca46be13bc4b74e44c3a76f0d4771d8884eb5c5",
+        "pickets-3000-1-open-sequential7": "2120eecb5a13f74b1873cdebbe4f4d7835d8287456011aee94573fcf993c62f7",
+        "pickets-3000-1-open-static7": "c83c3c7d31cc6d3337d9dd1c7b1500ae3ebe0ce055f23572e5fc84cb36ee5495",
+        "pickets-3000-1-trap-blind": "456a58f43a0c58bef1a062ff4729f495792febe0a73e85955ae7a063ee4b3d59",
+        "pickets-3000-1-trap-sequential7": "430c627672c2bfa39f53e466bb2c4c075a13860d303a99693aa6a0aa5afc4720",
+        "pickets-3000-1-trap-static7": "ee1f8737232004cb5fdadb0cf4379fc701a06b8a616f40588315f64410895008",
+        "ridges-3100-0-open-blind": "0eeacd7565f97c2a8c9716caf12e6c43135bb4619cddcb7984875ca1e83df657",
+        "ridges-3100-0-open-sequential7": "ef7b57f768f9451869937887a64df36acc11fd24e4184f7d09281d9265a7f86c",
+        "ridges-3100-0-open-static7": "ecd8ba180705de7b8d5cd5130eef36ba60290c14fa7fcc5a695b3236014825bb",
+        "ridges-3100-0-trap-blind": "c734be2d8acb8e48eb06130eea4ec0038b17103769c0a6c1754e13c05b08bd4e",
+        "ridges-3100-0-trap-sequential7": "7a92b52c87f7630feb74e714b02e29c091551f13d44339edcfac55c479720d8e",
+        "ridges-3100-0-trap-static7": "db457c12c4f7c9c3c3f377793a76899936a8348dce98b39e8662b628051ab702",
+        "ridges-3100-1-open-blind": "b1de4f91fad61d45126ea424fdf2aab0deebad77881e9acdd7e82e6f586baf3f",
+        "ridges-3100-1-open-sequential7": "18fa8cb78b088a3f76f9fa7b906d6dec8f4736e76ae9cabb9fe10daef478c2a4",
+        "ridges-3100-1-open-static7": "1812dc6ac362ca8c190c39f3c67b4a1c0283b9a05d141a1f3be51598f411ab6e",
+        "ridges-3100-1-trap-blind": "d6034ca219e865d6e93b85aa3f926999ac332d52b5287ea10b3fe8b4072b02ac",
+        "ridges-3100-1-trap-sequential7": "fff753cb324d6efb021d40cd2b138b5106c0a61cf38a574f5663d1dea090d10e",
+        "ridges-3100-1-trap-static7": "f02cdaf4fd40df3ed5e87d02a930072cd50f9b0803bcdabd0d6e880f79a27b81",
+        "zigzag-3300-0-open-blind": "64afa746d9abdc0389a90ad2d8eb85e6b608d07e2ca35bdb6cd59f79fbe1cbc1",
+        "zigzag-3300-0-open-sequential7": "724fa4002399a3bc8f0252195e992bed46134020a0ccbad2b7eb03f9bbb91568",
+        "zigzag-3300-0-open-static7": "d98b09e87c364c9a34131e4c75435fc0b9133e744f0ff6974fc42c582d1147e8",
+        "zigzag-3300-0-trap-blind": "9082bbc8e9ed2639e27ba5f713e796c643d714b3f1d99fe69efeeb79f9bb8bd7",
+        "zigzag-3300-0-trap-sequential7": "9d4aea7bc285bf7e5d2a6ab9442be92d018554ad933459543965f52de231e345",
+        "zigzag-3300-0-trap-static7": "55afb0e1224da5e0d1b8378d0cf392239a48d2ed7cdadc4f83fbaa3c34b01472",
+        "zigzag-3300-1-open-blind": "bd6ac0b9bd52fbc9a918b6d19154e4faf5d687f57cf4e946b8d999165a484140",
+        "zigzag-3300-1-open-sequential7": "a487463cb988f9eb41fd2e869dd8a22403844d564cddbb85f0048d3501960b8e",
+        "zigzag-3300-1-open-static7": "06ba31a7c90769e5398194c7db842d57289ff13a82d78665bb028483df86359d",
+        "zigzag-3300-1-trap-blind": "a5543f209c3e538e6406f399363ec1f9a01f2ac438314330cb8afdc639c1af11",
+        "zigzag-3300-1-trap-sequential7": "f0e65f2b010799829fbf56e518d745b3006c0d5c04a63060a9d77ceb4f91c5b9",
+        "zigzag-3300-1-trap-static7": "8590262ef3fc653dfb5b89da735f4ad5c19c20fa30870555f17797534e8e2317"
+      },
+      "parameters_per_checkpoint": {
+        "blind": 1033,
+        "sequential7": 1033,
+        "static7": 1033
+      },
+      "peak_rss_kib": 131392,
+      "run_report_sha256": "73eff37ad7e93e51d882afab6609183e741db1f3dcadee5bf43afc298076130d",
+      "source_sha256": {
+        "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+        "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+        "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+        "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+        "menu_alias_lab.py": "ab812b1f21d3de6aa3a51562b82cb2f76f8a67dc15c70d74401dc4a90edbf739",
+        "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+        "recovery_fork_lab.py": "97a569eec43b2a73bd390cc31012c719e33a73af9de7316a6d75356860abfb70",
+        "sensing_probe_lab.py": "848bb5772cc251baa03a41fa83a070d1b5bed53cce87d0ffb90028438df3b800",
+        "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+        "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+        "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+      },
+      "training_rows": 2880
+    }
+  },
+  "source_baseline_head": "96ab90145b85b031a9d156293fe73d3520b632f7",
+  "study": "SEQUENTIAL-PROBE-001",
+  "total_decisions": 11356,
+  "total_episodes": 96,
+  "total_train_ledger_rows": 5760,
+  "train_splits": [
+    "train"
+  ],
+  "version": "sequential-probe-evidence/1"
+}

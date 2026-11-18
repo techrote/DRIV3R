@@ -1,0 +1,48 @@
+{
+  "all_episode_rows_and_receipt_hashes_match": true,
+  "checkpoint_sha256": "5a158ec70292813b3b3d881f544c5bf7135f89825f7d695e17eeacabe699b94d",
+  "kinds": [
+    "path",
+    "tree",
+    "comb",
+    "deep_tree"
+  ],
+  "modes": [
+    "frozen_sample",
+    "frozen_greedy",
+    "route_untrained",
+    "route_trained",
+    "route_unguarded",
+    "observation_teacher"
+  ],
+  "replayed_matched_cases": 24,
+  "sampled_seed": 2040000,
+  "schema": "gal-015-replay-audit/1",
+  "selected_receipt_sha256s": [
+    "0577546134875f2141a9c6d4562732247e2b68253badbd2680947222a764c6dd",
+    "94abdd363c83c5ab2d3060c14b6a92cd4dfc0b34ad4ec1306d1d3f22fe6914df",
+    "91ed842974b74ef56deb942adaa68349a1d96d94eac4aac1c3b6d3de5f718745",
+    "78128341565ded916918e2a3effa377d8e9fa8feadb3f37cfb868a7bfe0012c5",
+    "2aaef18d2b32f5e74a35ba621d1ab61e737f8e651d68819f6dd029c10ab2813c",
+    "e08fa1e97083b0c175c650fc75932280cc5b28a014fbfb1ad140477b95068e0a",
+    "0138b44e9100fba105ef6d1986fa3409160a9cdece3e7299a765a8670a08d9f8",
+    "7db588c68d4abacf6bfa2e57a747a0ecda08d362d26dc410ff51b1a18914bb83",
+    "b3cfccea33428ba906187332ab6ccaa0376fdfbe8d9ce08e7a73259a789d25f7",
+    "46cc5bd4e86e91f9d0e0d38e3abfa7f14a836256a8536b40a8bd15bba27a6311",
+    "302ba0c30573931a4c6b5ad379b59ca10e62b538549a09641951e23c69883e39",
+    "f8467154c4d575e888886cae7f1d91ebd5680165cb0915e26d541a19bf133aee",
+    "a8ab910e1c3c02ddf72422132d13d80de87fd0d6390af5a1450c47e32b0c56df",
+    "093daa866351349f26d3c853e72606ed75e629925064cd18416a704400958155",
+    "4b8f07e939407b4ceb6f0fb3d6c627b6b9a0c39ea3cfc0867ad5e2df0dc083d2",
+    "391e82a858138e2df20df8d9d5ad72ce43ce00971bdd60a63cd76b31d697b44e",
+    "845502b4cfe05e0d179cc66e2858a83e041e2e48a05c4a8bbe0f2ae8d3f63950",
+    "b6ac410a7dac6a3f1d84fc2e35381f1e6d2b09f5cba2c80ecc54731812625405",
+    "e19cca882e33c9d437968d520692e6336cebd311555ffb53bb4d1afc9a8794fa",
+    "c46ac078d3e64660ba854690012c7f5d99c978426f80be6b110f32a0047a26b5",
+    "dc6c936825d162dd588ecbfc6af09cdcc98bd5145896f621a401c31588b57705",
+    "5ae941313ec643ca726d7edb7721374bd05a697a8d1de059e5e14185f9568bab",
+    "0681e6b49dca953b393fae830bba16fa986406e239445acde82f2393baf00a7e",
+    "8994f4c4adc0b1c4a3966a3e83ca74f3cc781029032590dd578c22ef3f93b286"
+  ],
+  "target": 64
+}

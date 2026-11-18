@@ -1,0 +1,359 @@
+{
+  "study": "OUTCOME-MARGIN-001",
+  "version": "compact-ledger/1",
+  "world": "synthetic 96x96, historical host-legal fixture only",
+  "seeds": [
+    811,
+    814
+  ],
+  "families": [
+    "pickets/blocked_spur",
+    "pickets/open_spur",
+    "ridges/blocked_spur",
+    "ridges/open_spur",
+    "islands/blocked_spur",
+    "islands/open_spur",
+    "zigzag/blocked_spur",
+    "zigzag/open_spur"
+  ],
+  "orientations": [
+    0
+  ],
+  "horizon": 128,
+  "checkpoint_archive_sha256": "bb0be90bb1cceab1b42496a5cac66f39d7b2a881de25228fba1a87a7a642ace1",
+  "source_sha256": "0546b6274e80aad0ba274c44487fc48218955fa2f9731cdcd2a52404d0224e37",
+  "checkpoint_sha256": {
+    "811": {
+      "frozen": "69b86b0c49798d6b9124de7409a46ac77375da2e9b8e0fd2498529a27565deaa",
+      "always_move": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36",
+      "contrastive": "d5bb12e68b876c02a64342e7ca504db17ce63f5880b788adf41f84422dc575b3",
+      "outcome": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36"
+    },
+    "814": {
+      "frozen": "42b92fc39c9d9a4628377a406db42850411778110d5cef3f55cde9015ea39f38",
+      "always_move": "8f2679834211e6bc45b49ad72bda425784b106d6eb90a8eeff0fd62ba1a6bc50",
+      "contrastive": "2dafe85a1c334258fa67b8b8b84f04d8f7a02feb7649b9a14649697926006c35",
+      "outcome": "eccd186db01abaa1ab820a8f361226a5cc4b1c32e40e2c51a905aed9d886414b"
+    }
+  },
+  "matrix": {
+    "train": {
+      "pickets/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": 2,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": -1,
+        "814/contrastive": -1,
+        "814/outcome": 5
+      },
+      "pickets/open_spur": {
+        "811/frozen": 9,
+        "811/always_move": 3,
+        "811/contrastive": 29,
+        "811/outcome": 3,
+        "814/frozen": 11,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 10
+      },
+      "ridges/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": -4,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": -1,
+        "814/contrastive": -1,
+        "814/outcome": -1
+      },
+      "ridges/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 20,
+        "811/contrastive": 4,
+        "811/outcome": 20,
+        "814/frozen": 1,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 6
+      },
+      "islands/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": 2,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": -1,
+        "814/contrastive": -1,
+        "814/outcome": -4
+      },
+      "islands/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 2,
+        "811/contrastive": 74,
+        "811/outcome": 2,
+        "814/frozen": 6,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 3
+      },
+      "zigzag/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": -34,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": 0,
+        "814/contrastive": -1,
+        "814/outcome": -38
+      },
+      "zigzag/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 2,
+        "811/contrastive": 6,
+        "811/outcome": 2,
+        "814/frozen": 6,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 6
+      }
+    },
+    "development": {
+      "pickets/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": -37,
+        "811/outcome": 1,
+        "814/frozen": 0,
+        "814/always_move": -1,
+        "814/contrastive": -34,
+        "814/outcome": 20
+      },
+      "pickets/open_spur": {
+        "811/frozen": 9,
+        "811/always_move": 2,
+        "811/contrastive": 8,
+        "811/outcome": 2,
+        "814/frozen": 12,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 12
+      },
+      "ridges/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": -4,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": -1,
+        "814/contrastive": -1,
+        "814/outcome": -1
+      },
+      "ridges/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 1,
+        "811/contrastive": 7,
+        "811/outcome": 1,
+        "814/frozen": 5,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 6
+      },
+      "islands/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": 2,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": -1,
+        "814/contrastive": -1,
+        "814/outcome": 0
+      },
+      "islands/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 1,
+        "811/contrastive": 74,
+        "811/outcome": 1,
+        "814/frozen": 6,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 6
+      },
+      "zigzag/blocked_spur": {
+        "811/frozen": 1,
+        "811/always_move": 1,
+        "811/contrastive": -34,
+        "811/outcome": 1,
+        "814/frozen": -1,
+        "814/always_move": 0,
+        "814/contrastive": -1,
+        "814/outcome": 0
+      },
+      "zigzag/open_spur": {
+        "811/frozen": 2,
+        "811/always_move": 2,
+        "811/contrastive": 6,
+        "811/outcome": 2,
+        "814/frozen": 6,
+        "814/always_move": 5,
+        "814/contrastive": 6,
+        "814/outcome": 6
+      }
+    }
+  },
+  "summary": {
+    "train": {
+      "scenarios": 8,
+      "comparisons": 64,
+      "robust_backtrack_margin_8": 0,
+      "sign_conflict_cases": 4,
+      "any_backtrack_win_cases": 4,
+      "by_arm": {
+        "frozen": {
+          "comparisons": 16,
+          "backtrack_wins": 4,
+          "margin_8_backtrack_wins": 0,
+          "mean_delta_move_minus_backtrack": 2.438,
+          "move_stops": 0,
+          "backtrack_stops": 0,
+          "mean_neural_latency_ms": 0.146635,
+          "actions": {
+            "MOVE": 3973,
+            "BACKTRACK": 111,
+            "RELOCATE_START": 12,
+            "STOP": 0
+          }
+        },
+        "always_move": {
+          "comparisons": 16,
+          "backtrack_wins": 3,
+          "margin_8_backtrack_wins": 0,
+          "mean_delta_move_minus_backtrack": 3,
+          "move_stops": 1,
+          "backtrack_stops": 2,
+          "mean_neural_latency_ms": 0.14622,
+          "actions": {
+            "MOVE": 3948,
+            "BACKTRACK": 73,
+            "RELOCATE_START": 18,
+            "STOP": 3
+          }
+        },
+        "contrastive": {
+          "comparisons": 16,
+          "backtrack_wins": 6,
+          "margin_8_backtrack_wins": 1,
+          "mean_delta_move_minus_backtrack": 6.188,
+          "move_stops": 5,
+          "backtrack_stops": 6,
+          "mean_neural_latency_ms": 0.142232,
+          "actions": {
+            "MOVE": 3383,
+            "BACKTRACK": 258,
+            "RELOCATE_START": 0,
+            "STOP": 11
+          }
+        },
+        "outcome": {
+          "comparisons": 16,
+          "backtrack_wins": 3,
+          "margin_8_backtrack_wins": 1,
+          "mean_delta_move_minus_backtrack": 1.125,
+          "move_stops": 2,
+          "backtrack_stops": 2,
+          "mean_neural_latency_ms": 0.152063,
+          "actions": {
+            "MOVE": 3886,
+            "BACKTRACK": 103,
+            "RELOCATE_START": 18,
+            "STOP": 4
+          }
+        }
+      }
+    },
+    "development": {
+      "scenarios": 8,
+      "comparisons": 64,
+      "robust_backtrack_margin_8": 0,
+      "sign_conflict_cases": 4,
+      "any_backtrack_win_cases": 4,
+      "by_arm": {
+        "frozen": {
+          "comparisons": 16,
+          "backtrack_wins": 3,
+          "margin_8_backtrack_wins": 0,
+          "mean_delta_move_minus_backtrack": 2.812,
+          "move_stops": 0,
+          "backtrack_stops": 0,
+          "mean_neural_latency_ms": 0.160045,
+          "actions": {
+            "MOVE": 3975,
+            "BACKTRACK": 109,
+            "RELOCATE_START": 12,
+            "STOP": 0
+          }
+        },
+        "always_move": {
+          "comparisons": 16,
+          "backtrack_wins": 3,
+          "margin_8_backtrack_wins": 0,
+          "mean_delta_move_minus_backtrack": 1.688,
+          "move_stops": 0,
+          "backtrack_stops": 0,
+          "mean_neural_latency_ms": 0.158996,
+          "actions": {
+            "MOVE": 4009,
+            "BACKTRACK": 73,
+            "RELOCATE_START": 14,
+            "STOP": 0
+          }
+        },
+        "contrastive": {
+          "comparisons": 16,
+          "backtrack_wins": 7,
+          "margin_8_backtrack_wins": 3,
+          "mean_delta_move_minus_backtrack": 0.562,
+          "move_stops": 6,
+          "backtrack_stops": 5,
+          "mean_neural_latency_ms": 0.151618,
+          "actions": {
+            "MOVE": 3303,
+            "BACKTRACK": 252,
+            "RELOCATE_START": 0,
+            "STOP": 11
+          }
+        },
+        "outcome": {
+          "comparisons": 16,
+          "backtrack_wins": 1,
+          "margin_8_backtrack_wins": 0,
+          "mean_delta_move_minus_backtrack": 3.688,
+          "move_stops": 0,
+          "backtrack_stops": 1,
+          "mean_neural_latency_ms": 0.159479,
+          "actions": {
+            "MOVE": 3975,
+            "BACKTRACK": 93,
+            "RELOCATE_START": 14,
+            "STOP": 1
+          }
+        }
+      }
+    }
+  },
+  "local_full_evidence_sha256": "6aaf0e72705d56a68562c139cf6c7795769cd5715e7dcf5a2631ea35dfac5b45",
+  "local_full_evidence_bytes": 11979,
+  "replay_verified_comparisons": 128,
+  "replay_verified_checkpoints": 8,
+  "optimizer_updates": 0,
+  "heldout_opened": false,
+  "native_receipts": 0,
+  "paid_compute": false,
+  "limitations": [
+    "One orientation only",
+    "Four suffix controllers share model ancestry",
+    "Original checkpoint ZIP not in an immutable DRIV3R Actions artifact",
+    "Compact ledger contains aggregate actions and per-case outcomes rather than complete per-decision trajectories"
+  ]
+}

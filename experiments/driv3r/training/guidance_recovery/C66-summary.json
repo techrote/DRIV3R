@@ -1,0 +1,1958 @@
+{
+  "aggregate": {
+    "0.0": {
+      "n": 48,
+      "policies": {
+        "C18-A0": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 4,
+            "prim": 2,
+            "prim_braid": 4,
+            "tree": 0,
+            "wilson": 2
+          },
+          "goals": 18,
+          "losses_vs_reset": 9,
+          "new_sites": 348,
+          "wins_vs_reset": 4
+        },
+        "C34-RESET": {
+          "family_goals": {
+            "braid": 4,
+            "kruskal": 8,
+            "prim": 4,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 23,
+          "losses_vs_reset": 0,
+          "new_sites": 366,
+          "wins_vs_reset": 0
+        },
+        "C60-FRONTIER": {
+          "family_goals": {
+            "braid": 7,
+            "kruskal": 8,
+            "prim": 4,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 26,
+          "losses_vs_reset": 0,
+          "new_sites": 537,
+          "wins_vs_reset": 3
+        },
+        "C60-FROZEN": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 27,
+          "losses_vs_reset": 0,
+          "new_sites": 584,
+          "wins_vs_reset": 4
+        },
+        "C65-ALIGNED": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 27,
+          "losses_vs_reset": 0,
+          "new_sites": 609,
+          "wins_vs_reset": 4
+        },
+        "C65-SHIFT": {
+          "family_goals": {
+            "braid": 7,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 2
+          },
+          "goals": 29,
+          "losses_vs_reset": 0,
+          "new_sites": 620,
+          "wins_vs_reset": 6
+        }
+      }
+    },
+    "0.5": {
+      "n": 48,
+      "policies": {
+        "C18-A0": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 4,
+            "prim": 2,
+            "prim_braid": 4,
+            "tree": 0,
+            "wilson": 2
+          },
+          "goals": 18,
+          "losses_vs_reset": 9,
+          "new_sites": 348,
+          "wins_vs_reset": 4
+        },
+        "C34-RESET": {
+          "family_goals": {
+            "braid": 4,
+            "kruskal": 8,
+            "prim": 4,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 23,
+          "losses_vs_reset": 0,
+          "new_sites": 366,
+          "wins_vs_reset": 0
+        },
+        "C60-FRONTIER": {
+          "family_goals": {
+            "braid": 7,
+            "kruskal": 8,
+            "prim": 5,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 0
+          },
+          "goals": 26,
+          "losses_vs_reset": 1,
+          "new_sites": 504,
+          "wins_vs_reset": 4
+        },
+        "C60-FROZEN": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 27,
+          "losses_vs_reset": 0,
+          "new_sites": 597,
+          "wins_vs_reset": 4
+        },
+        "C65-ALIGNED": {
+          "family_goals": {
+            "braid": 6,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 1
+          },
+          "goals": 27,
+          "losses_vs_reset": 0,
+          "new_sites": 607,
+          "wins_vs_reset": 4
+        },
+        "C65-SHIFT": {
+          "family_goals": {
+            "braid": 7,
+            "kruskal": 8,
+            "prim": 6,
+            "prim_braid": 6,
+            "tree": 0,
+            "wilson": 2
+          },
+          "goals": 29,
+          "losses_vs_reset": 0,
+          "new_sites": 620,
+          "wins_vs_reset": 6
+        }
+      }
+    }
+  },
+  "checkpoints": {
+    "C65-ALIGNED": "4d603774064e858fe7635e9286f4efd60513e7c425b74cc64ebbc613699fc469",
+    "C65-SHIFT": "2290edabeafdffe25fb0e60c206b22d675dd4f6c9c6a3a271a21b64153a145af"
+  },
+  "excluded_historical_graph_count": 100,
+  "gallery_traces": 36,
+  "graph_count": 24,
+  "graph_ids": [
+    "65fae008a0b1a9f1d93f4f124977e18152eec2731cd73179246b56c37daeea52",
+    "2559e592b65cd88e7037b69598fffc7046c69909fd771800051b031c35baf710",
+    "79a0cc7162ee7c29db5338b58acf4a2b27a7eead3f9548370398a334cfd59b99",
+    "9bca71e47d99c192c4241501f81aaec3a6052266dbc160166d06d5cc3ee33e30",
+    "2905d075f54b274375a7fd2a008de83a6794f80e7607b838216c0c2737852331",
+    "23296415decf23f8dace68710b0d28e9096696bd87cd22e3c7ffd464462f2889",
+    "3e27e0bf664a51870a0d9ba75fda068ca7f4ecb3a631332a378c1afbe24f4370",
+    "162b22f801946ca85a7b0026d4a3b8f95364ed1de0d27df8ec48424d240e5f69",
+    "c9bf9d5d1b8dc5f6f3e6f03cde2f12374b3fdee5f7dacb9666b7d9befb7d3425",
+    "d55f69969aebe8fd044ff16d2876c02fe13d7d48d0771d2a681a6af8ebf37e7c",
+    "387b3679a79d521cee4912664bc42c7754728189e4373d4e92639dc3d25490f0",
+    "491998eb18e2c12ffeca76693f7105e35e8d40e20cb21d5dea2f15d9de974587",
+    "65c3a973578187a44611610ce2cfbc95b53baabb7783b478065d6b807fa2c4f2",
+    "ed79510387b54f7258705d185d52c46fbc3a50002f73a266bb337913423de253",
+    "3459fe07e590babbcd9db821cc0ade556e9500901f86863c97c3ff3ae1b79e5a",
+    "c88c2a20793f4d48479bc88ccb9423ed33740e2849b80536272b3df5b1666723",
+    "da6fde955d7689ccc3f940aaff188f349d5171f1566183297ab4e7b4e792c4e2",
+    "a29a20ddde5d6261236c5af6bbae1aa0a6c2844b3b0d074b32f7cfdda9d58b8b",
+    "bab44769519341d8a5482ddd6ee270fdc48b79176844db940f835199d27f6f8b",
+    "f20c290cc7f8ab78ce3c7850efa382ecc1938d6310994bd830dd7f472a3347e6",
+    "1ce84f48f38b5d1293afae1bfa48655889cfdf5e37cf52b5a4497d36505e2820",
+    "2658642dda5fc66db7caf4da39d2485ef429a45e5008c04a0ca0534418442add",
+    "2535cf3395c7007cf6da20b1980e5d208c3714b2c20febd98f53493cf3b814bd",
+    "b2bc93bb74331526fa26df3dc8c87fb5d3a11a568506e2ce06d139fc788201f3"
+  ],
+  "graph_receipts": [
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "0713c913d60d6a85fea8df611aed6eb231f6e24d7cb9c2c9717858a7c71a048b",
+      "initial_seed": 660621,
+      "personality": -1,
+      "retry": 0,
+      "seed": 660621
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "1ce84f48f38b5d1293afae1bfa48655889cfdf5e37cf52b5a4497d36505e2820",
+      "initial_seed": 681662,
+      "personality": -1,
+      "retry": 0,
+      "seed": 681662
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "037aa6651f4bc44291dcc1561f9db077dbe33743634515668fdd658d4822191a",
+      "initial_seed": 702703,
+      "personality": -1,
+      "retry": 0,
+      "seed": 702703
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "2658642dda5fc66db7caf4da39d2485ef429a45e5008c04a0ca0534418442add",
+      "initial_seed": 723744,
+      "personality": -1,
+      "retry": 0,
+      "seed": 723744
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "47565c331bb0ceb2d977a236c8ec76d0fa784e2d99a03f498e507c32a140de37",
+      "initial_seed": 744785,
+      "personality": -1,
+      "retry": 0,
+      "seed": 744785
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "2535cf3395c7007cf6da20b1980e5d208c3714b2c20febd98f53493cf3b814bd",
+      "initial_seed": 765826,
+      "personality": -1,
+      "retry": 0,
+      "seed": 765826
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "b2bc93bb74331526fa26df3dc8c87fb5d3a11a568506e2ce06d139fc788201f3",
+      "initial_seed": 786867,
+      "personality": -1,
+      "retry": 0,
+      "seed": 786867
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "f9d8d6685966512299c506c9820859eadd4e5062a60f25b3685a53d7b64301a0",
+      "initial_seed": 807908,
+      "personality": -1,
+      "retry": 0,
+      "seed": 807908
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "22519b8b30c17835d43a62e8de9437a885325dc88fbff60c1923af30c8c7231c",
+      "initial_seed": 668095,
+      "personality": 1,
+      "retry": 0,
+      "seed": 668095
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "78b03ce8986d12d22fe28899a4b81f6f45d1053303c08ea7d8f9aabedcab02eb",
+      "initial_seed": 689136,
+      "personality": 1,
+      "retry": 0,
+      "seed": 689136
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "b9d8a42942eac710373b7b99d349cc4e58cc14fe72f62d44cabbab29429add18",
+      "initial_seed": 710177,
+      "personality": 1,
+      "retry": 0,
+      "seed": 710177
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "b26994549e5539e18c4c6e5b7bf59a625a1bef4f9e305473cc3441bb06f5943b",
+      "initial_seed": 731218,
+      "personality": 1,
+      "retry": 0,
+      "seed": 731218
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "03b0545c1454895b44f133d3528be4ae1b78177a86747f53f296785894677ad7",
+      "initial_seed": 752259,
+      "personality": 1,
+      "retry": 0,
+      "seed": 752259
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "c0e4ac822d5cc3c06c089c8034efece606dec28b17a9b258cc299e8a79f60684",
+      "initial_seed": 773300,
+      "personality": 1,
+      "retry": 0,
+      "seed": 773300
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "8239f0d7b78793f16592fa2d619f6fe9b9b53673aa74dce70fde978e74db42c7",
+      "initial_seed": 794341,
+      "personality": 1,
+      "retry": 0,
+      "seed": 794341
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "d4e68a5d5496a926d96a2226122b1c5fd4a8e22cc0f54cfc7d5f93f47929ff01",
+      "initial_seed": 815382,
+      "personality": 1,
+      "retry": 0,
+      "seed": 815382
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "76a1be95ea0ce48de544a304e05d05d37e08a16642f617bec7e181bb6a313247",
+      "initial_seed": 679634,
+      "personality": -1,
+      "retry": 0,
+      "seed": 679634
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "03b1c8e2569af4b9cfb4a4b77135f04a178d545b4ae10d2c0abb1c09c937d09a",
+      "initial_seed": 700675,
+      "personality": -1,
+      "retry": 0,
+      "seed": 700675
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "49b7e9c0d4e57a4c22b4ea885d387edf71e95960f99a00fb4581502e3fe89f27",
+      "initial_seed": 721716,
+      "personality": -1,
+      "retry": 0,
+      "seed": 721716
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "a6c513aa3b0fd649e5aafc092721ba3eeaabb6be7523f0fa8b1d12576b829b3a",
+      "initial_seed": 742757,
+      "personality": -1,
+      "retry": 0,
+      "seed": 742757
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "1d6ca964b9e2156700833f3b9ad0b9a7002fd6a8ce36c17fdf8c7093990076b1",
+      "initial_seed": 763798,
+      "personality": -1,
+      "retry": 0,
+      "seed": 763798
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "661cb9ee2599f12fccfb1af516413b0874034754e1e4318e2fd0d0bcdb6e29b5",
+      "initial_seed": 784839,
+      "personality": -1,
+      "retry": 0,
+      "seed": 784839
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "d2a9b17d3a7f902d48326fc25889cfee41524dcd24a8c91f15506a411a4e5c80",
+      "initial_seed": 805880,
+      "personality": -1,
+      "retry": 0,
+      "seed": 805880
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "679b4e117fbefe549fbfddcead7c2d9a24afed4af854909c329f64d81d22ff11",
+      "initial_seed": 826921,
+      "personality": -1,
+      "retry": 0,
+      "seed": 826921
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "9a3cb7cb28aed6ae80e069af222e1886de1d84710eb691262022742f07b911fc",
+      "initial_seed": 687108,
+      "personality": 1,
+      "retry": 0,
+      "seed": 687108
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "4a7486819e306526489c13f1c6a276a9ab2337739beaf7836224a985265e8541",
+      "initial_seed": 708149,
+      "personality": 1,
+      "retry": 0,
+      "seed": 708149
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "6d4d3b5dbae0f76da7422b33fe575dadf1ee54cec3b84eb06af7530dad357965",
+      "initial_seed": 729190,
+      "personality": 1,
+      "retry": 0,
+      "seed": 729190
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "957136bbd0a8c7add1978c0eb1ec39adeac16be75c7a2f9e1f1632e6aa9dedf1",
+      "initial_seed": 750231,
+      "personality": 1,
+      "retry": 0,
+      "seed": 750231
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "ab220129fc27a3af521c0f8bdf87cb58a9cc26d5746ff851925992f4d5b5ad37",
+      "initial_seed": 771272,
+      "personality": 1,
+      "retry": 0,
+      "seed": 771272
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "f3c6a4f6c2d47819b60e9a71c03a4500656ac29bb86cafbc0dc790336c311187",
+      "initial_seed": 792313,
+      "personality": 1,
+      "retry": 0,
+      "seed": 792313
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "09556aca0363c180c010e04ca2985e4b5aa68b4b91e0e173ee43c506647fab8c",
+      "initial_seed": 813354,
+      "personality": 1,
+      "retry": 0,
+      "seed": 813354
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "c4300c84e4c8d75874e19af12b0bd6fbf86fc283347d066f6e943b1b70b0fec9",
+      "initial_seed": 834395,
+      "personality": 1,
+      "retry": 0,
+      "seed": 834395
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "2905d075f54b274375a7fd2a008de83a6794f80e7607b838216c0c2737852331",
+      "initial_seed": 830624,
+      "personality": -1,
+      "retry": 0,
+      "seed": 830624
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "cf0679823d341e51897018daf053f3d03b842edf224c54d7f95649b5e8bccd4a",
+      "initial_seed": 851665,
+      "personality": -1,
+      "retry": 0,
+      "seed": 851665
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "23296415decf23f8dace68710b0d28e9096696bd87cd22e3c7ffd464462f2889",
+      "initial_seed": 872706,
+      "personality": -1,
+      "retry": 0,
+      "seed": 872706
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "74ac7cc1fbc9dbc0fea9e886747769125d60567e81bc1420ba0fea9e8bb8b289",
+      "initial_seed": 893747,
+      "personality": -1,
+      "retry": 0,
+      "seed": 893747
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "3e27e0bf664a51870a0d9ba75fda068ca7f4ecb3a631332a378c1afbe24f4370",
+      "initial_seed": 914788,
+      "personality": -1,
+      "retry": 0,
+      "seed": 914788
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "162b22f801946ca85a7b0026d4a3b8f95364ed1de0d27df8ec48424d240e5f69",
+      "initial_seed": 935829,
+      "personality": -1,
+      "retry": 0,
+      "seed": 935829
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "3f45168f2153297ddd474a68526718f54c7e64c714bd2239b4228af591ee71cc",
+      "initial_seed": 956870,
+      "personality": -1,
+      "retry": 0,
+      "seed": 956870
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "d75cea0d2d15e2777b3f9717b1cff3de632b59c28fdf07db557b4aa0e5610561",
+      "initial_seed": 977911,
+      "personality": -1,
+      "retry": 0,
+      "seed": 977911
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "e0fafe05eade0d60ba6558330080fa306014515dcbf3deba6b2565541bffa5f4",
+      "initial_seed": 838098,
+      "personality": 1,
+      "retry": 0,
+      "seed": 838098
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "17d41bca5063d7aec9d8017c80151659cc34e6962cefeb92c52e21a493a9511c",
+      "initial_seed": 859139,
+      "personality": 1,
+      "retry": 0,
+      "seed": 859139
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "f9a83bb518324aeb3c329b49869eebbe7aced2bbd4bc7adbf81b64e2aee82faf",
+      "initial_seed": 880180,
+      "personality": 1,
+      "retry": 0,
+      "seed": 880180
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "e13c17611cdaaa55d67f8455d28516468a10aa15f549ba5226f338a3dfbaa3c4",
+      "initial_seed": 901221,
+      "personality": 1,
+      "retry": 0,
+      "seed": 901221
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "9fab5b8d652fe104eaa8602607bf6b0b4fd2a3ede4d8a5e73000d7fb752c7016",
+      "initial_seed": 922262,
+      "personality": 1,
+      "retry": 0,
+      "seed": 922262
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "1c580c2e8684a581cc22750d1a5cdcb53729b6e08d9d0022516c334222b9e7b5",
+      "initial_seed": 943303,
+      "personality": 1,
+      "retry": 0,
+      "seed": 943303
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "539d282a0ec08b27186a025b2c8ab22fb56e8b5a19441053d93d57616e272eab",
+      "initial_seed": 964344,
+      "personality": 1,
+      "retry": 0,
+      "seed": 964344
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "53e804fc831a831dcd0f056dcdff028bcd2169ec05affb6e6aa4b8a23c545870",
+      "initial_seed": 985385,
+      "personality": 1,
+      "retry": 0,
+      "seed": 985385
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "bf2ad2535510c3545b22e9b502ac0dff23c0ba39a869d0cdabfa7f9c223b2987",
+      "initial_seed": 849637,
+      "personality": -1,
+      "retry": 0,
+      "seed": 849637
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "700bf1d94908eaad150319a38d070baa9b7b70bcec715f2579ad7bc1fdb69fb9",
+      "initial_seed": 870678,
+      "personality": -1,
+      "retry": 0,
+      "seed": 870678
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "9cce3dbc79deaca40ff661a311748d6acbee211d24c259db2c00522fb3da4612",
+      "initial_seed": 891719,
+      "personality": -1,
+      "retry": 0,
+      "seed": 891719
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "db2564b1789a377912bbeee7c50e1f75417c6a066c030d9bf2f716409bdbc411",
+      "initial_seed": 912760,
+      "personality": -1,
+      "retry": 0,
+      "seed": 912760
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "c6acf0e9dc53af583735fc0e0ca7fd78eda0d5bf17ef07b574ceb5056a25c8cd",
+      "initial_seed": 933801,
+      "personality": -1,
+      "retry": 0,
+      "seed": 933801
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "ff7844b9ca030017d4927533aeb2f29d056043c71c853e4074612ebacd33c7f0",
+      "initial_seed": 954842,
+      "personality": -1,
+      "retry": 0,
+      "seed": 954842
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "c77de74de9085cab34cf356f354cee4578486ee3b49dc10ec739f8b1cb6c0199",
+      "initial_seed": 975883,
+      "personality": -1,
+      "retry": 0,
+      "seed": 975883
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "3e5b49f5da188c6b36d1b7ee108033ec5f1f12ac7266c51edcfcf64275b738c2",
+      "initial_seed": 996924,
+      "personality": -1,
+      "retry": 0,
+      "seed": 996924
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "a38cbbaa2675de7a3bda730be16f686f06f559487b48d0db7fcaa859d635f972",
+      "initial_seed": 857111,
+      "personality": 1,
+      "retry": 0,
+      "seed": 857111
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "9f31818e725ecd3dde9e8f6a4c8f35e554862894c3cca1db2bed2c1036e36703",
+      "initial_seed": 878152,
+      "personality": 1,
+      "retry": 0,
+      "seed": 878152
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "ba2659929ff84b081cee93444ab5d1186fc8d4d07374c22a894c8fef72201ab7",
+      "initial_seed": 899193,
+      "personality": 1,
+      "retry": 0,
+      "seed": 899193
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "0b2cdd1c649ecc9e13c0a4aff506ae9c706898eb91717654b1015ccc7fb629f5",
+      "initial_seed": 920234,
+      "personality": 1,
+      "retry": 0,
+      "seed": 920234
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "996a2c06e89677e8538b8b10d18206d95b52b45f102368bddd787789a3b3784a",
+      "initial_seed": 941275,
+      "personality": 1,
+      "retry": 0,
+      "seed": 941275
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "584633a36fd71fb344f59353c765c537db6c964f817f2b5bd386095d734e810a",
+      "initial_seed": 962316,
+      "personality": 1,
+      "retry": 0,
+      "seed": 962316
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "c15d00ca1426e5f5c995f52c4c2a96aeae2c6111160e5aa094dd4aacf4eaa595",
+      "initial_seed": 983357,
+      "personality": 1,
+      "retry": 0,
+      "seed": 983357
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "9f14cf861aa3f3eb6639c1b86573f220432dbb461f22d36f1a5ff1762a7697ca",
+      "initial_seed": 1004398,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1004398
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "455649321abedbf884a87c27fec23318131380852928ade92dd5bc8006667f8f",
+      "initial_seed": 661025,
+      "personality": -1,
+      "retry": 0,
+      "seed": 661025
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "da6fde955d7689ccc3f940aaff188f349d5171f1566183297ab4e7b4e792c4e2",
+      "initial_seed": 682066,
+      "personality": -1,
+      "retry": 0,
+      "seed": 682066
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "eea5129833780d36f6b05720c3b5ab2232cdab9f28c1d355b232aa77f9e31b6c",
+      "initial_seed": 703107,
+      "personality": -1,
+      "retry": 0,
+      "seed": 703107
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "276f06b8b365a6a78d1a1d719fa06dc34f3f2f547a3ed0e6df3b01546b8a7244",
+      "initial_seed": 724148,
+      "personality": -1,
+      "retry": 0,
+      "seed": 724148
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "417931967bf430faff3c85aabaac8fb1bf9779e608577717850b78d5d71af83a",
+      "initial_seed": 745189,
+      "personality": -1,
+      "retry": 0,
+      "seed": 745189
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "a29a20ddde5d6261236c5af6bbae1aa0a6c2844b3b0d074b32f7cfdda9d58b8b",
+      "initial_seed": 766230,
+      "personality": -1,
+      "retry": 0,
+      "seed": 766230
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "2ec151ce1b2c28ab3a933f0ee100cf1da119bd8d1ce79c13a9a4f5d4434c7461",
+      "initial_seed": 787271,
+      "personality": -1,
+      "retry": 0,
+      "seed": 787271
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "bab44769519341d8a5482ddd6ee270fdc48b79176844db940f835199d27f6f8b",
+      "initial_seed": 808312,
+      "personality": -1,
+      "retry": 0,
+      "seed": 808312
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "f20c290cc7f8ab78ce3c7850efa382ecc1938d6310994bd830dd7f472a3347e6",
+      "initial_seed": 668499,
+      "personality": 1,
+      "retry": 0,
+      "seed": 668499
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "89a0ed824c1c86805e81bf962f6078d58fd6afd336f0ec2a3349001e3553183c",
+      "initial_seed": 689540,
+      "personality": 1,
+      "retry": 0,
+      "seed": 689540
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "170890146ad30ef9a2c14ce3e712112687d9c1a82da626e126d6394dcb321efc",
+      "initial_seed": 710581,
+      "personality": 1,
+      "retry": 0,
+      "seed": 710581
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "b18d534ade9eb3c35a60dae264ac149a6dbc45e884e7edd4501d561dfef3e2b8",
+      "initial_seed": 731622,
+      "personality": 1,
+      "retry": 0,
+      "seed": 731622
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "878544700d2b2af9a17ee05b1427344787305709e98475d3f571d47b5d3da2bc",
+      "initial_seed": 752663,
+      "personality": 1,
+      "retry": 0,
+      "seed": 752663
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "7deee9bef349edae20d114346cc82b5f85ddeda15afa68991c148a17618fb2ef",
+      "initial_seed": 773704,
+      "personality": 1,
+      "retry": 0,
+      "seed": 773704
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "15f393fa240cf3bd0cb859cac304cf784b3e1ed5cb1b21d3fba21c49f58073f7",
+      "initial_seed": 794745,
+      "personality": 1,
+      "retry": 0,
+      "seed": 794745
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "386497dffbad5cfc74b4e38735a7aad739a680642332f65c639113cb90407dfb",
+      "initial_seed": 815786,
+      "personality": 1,
+      "retry": 0,
+      "seed": 815786
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "b674b915aa461770440d6b6a5778269ad1cf3c145e5f4b4f30f4ce64cae474bf",
+      "initial_seed": 680038,
+      "personality": -1,
+      "retry": 0,
+      "seed": 680038
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "3d80b4997c13a9ede6078cf5f15e87c64e3ab8d915d36086bc3177b5f32d7e22",
+      "initial_seed": 701079,
+      "personality": -1,
+      "retry": 0,
+      "seed": 701079
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "7830a49acb61ab5ad6fdbcbbc66bd47e822d9420abb3903d6a86e401e7d13a7d",
+      "initial_seed": 722120,
+      "personality": -1,
+      "retry": 0,
+      "seed": 722120
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "984515622691254356382a6b5e5de9876fcc3ae9fc64287439604959640082e6",
+      "initial_seed": 743161,
+      "personality": -1,
+      "retry": 0,
+      "seed": 743161
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "21e8ac089f7e1d55af146b6e2e20196265e6a2673557d578271817f5316d143c",
+      "initial_seed": 764202,
+      "personality": -1,
+      "retry": 0,
+      "seed": 764202
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "421185016ff83b54c7b80c9d2c5e284f32ed9a871496cc55e56ea580f3f821df",
+      "initial_seed": 785243,
+      "personality": -1,
+      "retry": 0,
+      "seed": 785243
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "e4fff7a5b069064aac02a73eefc8e2bdf82eb1cc1dd11123d517f37417f95314",
+      "initial_seed": 806284,
+      "personality": -1,
+      "retry": 0,
+      "seed": 806284
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "e63403eb8853975b15b6ef20014b933f57f461720fddf4bc05e50fe413e22b5f",
+      "initial_seed": 827325,
+      "personality": -1,
+      "retry": 0,
+      "seed": 827325
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "56e27f1a6bb529779266bc206153f8db6d6692d7ad096022b646c429c1204510",
+      "initial_seed": 687512,
+      "personality": 1,
+      "retry": 0,
+      "seed": 687512
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "70cd0a9425a56698ff0a2a6fbd89c6737dd9a08f8c0ff01cbaab25750a911a2d",
+      "initial_seed": 708553,
+      "personality": 1,
+      "retry": 0,
+      "seed": 708553
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "349547c3ad43777ee8bfa94005341d5ae710ec8a4e33b3004e9899b79fbc8169",
+      "initial_seed": 729594,
+      "personality": 1,
+      "retry": 0,
+      "seed": 729594
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "05dff9777e0bb3f70be74974b450bbaf13df2478674b1eb472d0158bf21c9e4f",
+      "initial_seed": 750635,
+      "personality": 1,
+      "retry": 0,
+      "seed": 750635
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "bb838d9c36fe25cead0ef2baae7ac428745e60a96ab8559b56dd51a0d8eec2b7",
+      "initial_seed": 771676,
+      "personality": 1,
+      "retry": 0,
+      "seed": 771676
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "d77ac7a3448a759299cc39f076183cf7928af304ef79bc4c120b16573e66a4ed",
+      "initial_seed": 792717,
+      "personality": 1,
+      "retry": 0,
+      "seed": 792717
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "6ddea6dc344e4fe3d5a2c4f924c1f944b991d74800dab3b69f610a2e911033a3",
+      "initial_seed": 813758,
+      "personality": 1,
+      "retry": 0,
+      "seed": 813758
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "070c3614ff2e10520463962c00a7e184dc05d889a7e84e94542f7767167c0818",
+      "initial_seed": 834799,
+      "personality": 1,
+      "retry": 0,
+      "seed": 834799
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "65fae008a0b1a9f1d93f4f124977e18152eec2731cd73179246b56c37daeea52",
+      "initial_seed": 831028,
+      "personality": -1,
+      "retry": 0,
+      "seed": 831028
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "2559e592b65cd88e7037b69598fffc7046c69909fd771800051b031c35baf710",
+      "initial_seed": 852069,
+      "personality": -1,
+      "retry": 0,
+      "seed": 852069
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "79a0cc7162ee7c29db5338b58acf4a2b27a7eead3f9548370398a334cfd59b99",
+      "initial_seed": 873110,
+      "personality": -1,
+      "retry": 0,
+      "seed": 873110
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "9bca71e47d99c192c4241501f81aaec3a6052266dbc160166d06d5cc3ee33e30",
+      "initial_seed": 894151,
+      "personality": -1,
+      "retry": 0,
+      "seed": 894151
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "8f8dadac79c1d0220875ae947958a89ebf080a5ab06d075ed1f549452a3966a5",
+      "initial_seed": 915192,
+      "personality": -1,
+      "retry": 0,
+      "seed": 915192
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "2a11ab5bfeeab62c442ceb713650b1903fe389fd9ecc0c70e62779a9fd264efc",
+      "initial_seed": 936233,
+      "personality": -1,
+      "retry": 0,
+      "seed": 936233
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "9c560cab6c31be631175d6f638602d799b848e34342945261a6a3c0f83e2ddb9",
+      "initial_seed": 957274,
+      "personality": -1,
+      "retry": 0,
+      "seed": 957274
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "58a90b416054a0488060577f1bce584a6a404bba5e0d6edaa387fc4d3a380be1",
+      "initial_seed": 978315,
+      "personality": -1,
+      "retry": 0,
+      "seed": 978315
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "73113699fc0a990a1510af333025ffc6a373cfcfbb3c83f97df286c1188c362c",
+      "initial_seed": 838502,
+      "personality": 1,
+      "retry": 0,
+      "seed": 838502
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "8aeca565f8ff0ec79b67c2e18bc1817bb44874f0be934009f17d63c1708240b6",
+      "initial_seed": 859543,
+      "personality": 1,
+      "retry": 0,
+      "seed": 859543
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "1fde63d7e77b2d52aa4316970d5b1ea886a8ddbce8d2d71daae80ee24c99413f",
+      "initial_seed": 880584,
+      "personality": 1,
+      "retry": 0,
+      "seed": 880584
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "ce125cb546cf73898ab7bea2b1caf690b8c3086da9a9cbcb4960c56ec804b3f7",
+      "initial_seed": 901625,
+      "personality": 1,
+      "retry": 0,
+      "seed": 901625
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "b111553c128ccebf1075be3a0a52f84c41e06c2a32e8d12140ae184850c07fcc",
+      "initial_seed": 922666,
+      "personality": 1,
+      "retry": 0,
+      "seed": 922666
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "45c3c29c9a1321b45598bea2927021667c9474fb25d40b131f1024b2e35b1637",
+      "initial_seed": 943707,
+      "personality": 1,
+      "retry": 0,
+      "seed": 943707
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "ea7999d4cf14f88d04f52e9165445db50fd6fcababf3bd834f16f13eb98437fc",
+      "initial_seed": 964748,
+      "personality": 1,
+      "retry": 0,
+      "seed": 964748
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "dda641a836d258184f46f759f2a169a9ed2529d2ae99b55e68ebeabd8fa9b1c1",
+      "initial_seed": 985789,
+      "personality": 1,
+      "retry": 0,
+      "seed": 985789
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "050f896fa83b320c6bdb3462cfd279b6b631c3fd7f41f5741ee55c98d8762976",
+      "initial_seed": 850041,
+      "personality": -1,
+      "retry": 0,
+      "seed": 850041
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "c894c585065781456368aa3a7af8233bcdb9b007bf3095503bc6e815b4060a27",
+      "initial_seed": 871082,
+      "personality": -1,
+      "retry": 0,
+      "seed": 871082
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "5be56e1b00cafafa23e706cc0a281ec90fd065d68f5e5b392db256d5227a79b3",
+      "initial_seed": 892123,
+      "personality": -1,
+      "retry": 0,
+      "seed": 892123
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "b1804c50c118df8ef6fa49dffa58c73dbe80f422c5fe641d37f5f2c575e0954e",
+      "initial_seed": 913164,
+      "personality": -1,
+      "retry": 0,
+      "seed": 913164
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "d4179b352814046c81ba4f4632f2227581dbf84547907d61c948992b0568748f",
+      "initial_seed": 934205,
+      "personality": -1,
+      "retry": 0,
+      "seed": 934205
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "762fe24791172d28d53584a861bd3d41f6f61ca9b40304bc9f4b749756f608da",
+      "initial_seed": 955246,
+      "personality": -1,
+      "retry": 0,
+      "seed": 955246
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "b565eed56640eb52f3c1b2ba0776802a947e3fc85bc19e30f9d12860a4e98f2e",
+      "initial_seed": 976287,
+      "personality": -1,
+      "retry": 0,
+      "seed": 976287
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "365309c3c58f776c0d5309d5f1d159fb7932b84ed72a3e400d926d871282497d",
+      "initial_seed": 997328,
+      "personality": -1,
+      "retry": 0,
+      "seed": 997328
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "58dab0f5208de0bcdde8807559746b5a0afe78c960cdd9c17ce0eb0b298168c0",
+      "initial_seed": 857515,
+      "personality": 1,
+      "retry": 0,
+      "seed": 857515
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "f46a57dc1242fbda7fd2a28e536b9994bbf5f5f4f9498a4ffa306ed48146c951",
+      "initial_seed": 878556,
+      "personality": 1,
+      "retry": 0,
+      "seed": 878556
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "6efd25f47ad5f03ffc29fe735ff24cb10d62eb83bca0e8f83c7b7a9759407a0f",
+      "initial_seed": 899597,
+      "personality": 1,
+      "retry": 0,
+      "seed": 899597
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "40f12baa6ceb7ce63b09f8de44f6a3103a6d29165ad06deb9585c7cc0bce7210",
+      "initial_seed": 920638,
+      "personality": 1,
+      "retry": 0,
+      "seed": 920638
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "fd6916075879add0c10927f31ffad9afae15e4a06903e04939de21b82707ebfc",
+      "initial_seed": 941679,
+      "personality": 1,
+      "retry": 0,
+      "seed": 941679
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "2b1c22f1ead3a22e1be674736fa593d2c51d153a05126a0fd1c4b0d1f81e76e5",
+      "initial_seed": 962720,
+      "personality": 1,
+      "retry": 0,
+      "seed": 962720
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "b8f3cc023d41cad586ce10603eb39b0504ef330fc94a3320fee38ac90e11bb42",
+      "initial_seed": 983761,
+      "personality": 1,
+      "retry": 0,
+      "seed": 983761
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "dce68c18ee207f3a35ae305d779798ac90bab90777da0b33c912e4b0503b08f7",
+      "initial_seed": 1004802,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1004802
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "c9bf9d5d1b8dc5f6f3e6f03cde2f12374b3fdee5f7dacb9666b7d9befb7d3425",
+      "initial_seed": 1001031,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1001031
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "d55f69969aebe8fd044ff16d2876c02fe13d7d48d0771d2a681a6af8ebf37e7c",
+      "initial_seed": 1022072,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1022072
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "a0c8f7b3ba8bc0cd5aefd10103fa8242b52f760b80748824be7fc15ac33f3636",
+      "initial_seed": 1043113,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1043113
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "e3be71c4253f610487e1eca8375b5a1678eb19c53f8ed40ad3be0c8604ce8ac8",
+      "initial_seed": 1064154,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1064154
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "387b3679a79d521cee4912664bc42c7754728189e4373d4e92639dc3d25490f0",
+      "initial_seed": 1085195,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1085195
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "491998eb18e2c12ffeca76693f7105e35e8d40e20cb21d5dea2f15d9de974587",
+      "initial_seed": 1106236,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1106236
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "cce1f57442a231d7e769dd30ffd2298b157c784d800c04ad10330787038c368b",
+      "initial_seed": 1127277,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1127277
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "040438168f120076527370c543cde8d402038111cc8805c9c099767d0e8bfa17",
+      "initial_seed": 1148318,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1148318
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "2f864de2f3ed289dc59dfb583ded303d8b2ccb10b1093d8f7217b4f9b8de9982",
+      "initial_seed": 1008505,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1008505
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "7b8fde62a72ca8b5ee587e0d9f217f73fe0238e0a9b6a0901326ce6fb62d9075",
+      "initial_seed": 1029546,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1029546
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "32017207b23bef499e78ec81596ef7e39ff3b2f9aed6d8a8f4e49755d30f6913",
+      "initial_seed": 1050587,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1050587
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "a8021e0610424cfc0366aa21c777ec3214ae70ebcf1c89e1b30153f9e28a90f1",
+      "initial_seed": 1071628,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1071628
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "2b404256ed856594a2097015107f665fa0148686bf16c278fc08a5fe2c390038",
+      "initial_seed": 1092669,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1092669
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "59134470dc3179fd685d3a19130292a9b4a2d02b0e5bd21c901f02708509e01f",
+      "initial_seed": 1113710,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1113710
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "20ebf357b6b2ef9d2df6a55c5b3f9531ded14d93d78b743e69a63cecb9c9a56b",
+      "initial_seed": 1134751,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1134751
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "55fd965c49e5ffe155044068736cd998ddc4e34ba65b22b1c9c5eeec9c8ccfb8",
+      "initial_seed": 1155792,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1155792
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "6fad8c7cfd9c5765490a3feb6ed2ad7a74dce24dfa4832f8acb3e17dd23d1e11",
+      "initial_seed": 1020044,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1020044
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "1268e109ada2e1045892762e1ec481ab0743d1efcda657c2d0449a08b93100a3",
+      "initial_seed": 1041085,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1041085
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "108fb961682f36c0be500aca7c676c96c8abdc68bebb0e6d51b70223926ca9b7",
+      "initial_seed": 1062126,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1062126
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "6304122b3f9e1755816bb9e87b79bec3e53db786b2000e05e728305cce372ae3",
+      "initial_seed": 1083167,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1083167
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "366bef30ed4fee078ba318db6d898f22ac17b37ceb0f89a5c76a68212ae53552",
+      "initial_seed": 1104208,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1104208
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "fa8e92743ab34e1de3cb8bc8c906645cd995cc2a4b4cf4114692423006b8c5be",
+      "initial_seed": 1125249,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1125249
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "6540d7db62db96cf55781b2db5c7d2d58f2f4901e2b04debad67c54c3c63c4dc",
+      "initial_seed": 1146290,
+      "personality": -1,
+      "retry": 1,
+      "seed": 1251019
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "f733e7f89061cf3e6365aac35d0b42fdb44ffd90fd140428926296e18bdc29ed",
+      "initial_seed": 1167331,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1167331
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "ab8c5c6b5797bc3380023f6664668f1da5b552b1782135aa426999f92407e0f7",
+      "initial_seed": 1027518,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1027518
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "315d593efa738fcf80cd6331ac0a0d3bda9ffe2c73d0f2201d4ba249db127467",
+      "initial_seed": 1048559,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1048559
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "253b11c78498ea20aeeb2f72a9638cc965e40a09af28e85a8033e9ed722824b9",
+      "initial_seed": 1069600,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1069600
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "1a2a4a2809faaaaedd824de3a578321451cc02cf76d3819c09e636e3f502d318",
+      "initial_seed": 1090641,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1090641
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "19308f8d0adea011429e9ad6918b24044ba84505debd69e1111828ea5965fbee",
+      "initial_seed": 1111682,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1111682
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "283bba8cae91daff1e6e8c266974f12f5a4f5ed050825e6567a43aee3a245a9b",
+      "initial_seed": 1132723,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1132723
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "5aef6d31a337c0fbeef9d1fc428a451402a5b2b08b9aab2081c7089e25d687fb",
+      "initial_seed": 1153764,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1153764
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "7c3298a94a1f48b266499323794276bed6dda857c22f13267dbfb985b499ffe1",
+      "initial_seed": 1174805,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1174805
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "65c3a973578187a44611610ce2cfbc95b53baabb7783b478065d6b807fa2c4f2",
+      "initial_seed": 1171034,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1171034
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "ed79510387b54f7258705d185d52c46fbc3a50002f73a266bb337913423de253",
+      "initial_seed": 1192075,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1192075
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "98c86c3c78b2ea56e4576598200deda59a2aa7d518c812754c8cb282979d29a7",
+      "initial_seed": 1213116,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1213116
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "3459fe07e590babbcd9db821cc0ade556e9500901f86863c97c3ff3ae1b79e5a",
+      "initial_seed": 1234157,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1234157
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "5d5c68504454f430248bcf6694b1d909b957eeb9c2eb7dd07537001c31e1d60c",
+      "initial_seed": 1255198,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1255198
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "c88c2a20793f4d48479bc88ccb9423ed33740e2849b80536272b3df5b1666723",
+      "initial_seed": 1276239,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1276239
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "0d8d03b97be093ffbcc526d66b0d0852fb10f454c065038cd9d8d05347522621",
+      "initial_seed": 1297280,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1297280
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "a6cc26e50422d7fc1dc68e31ffcbcdee47ef9b21ca1f3eca6a1e064ba19d1688",
+      "initial_seed": 1318321,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1318321
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "67bc655ce0081d0dfbdbcd50484876de0e4bf88a051b8a69359ee382846046ad",
+      "initial_seed": 1178508,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1178508
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "89239ce6c00b02e2d371d07f962e924dee7f8c60359879834f29253c623a749d",
+      "initial_seed": 1199549,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1199549
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "20714aff7426ee5112b05b3401d4b1a28e1746c23e45f119973058b5a53c427c",
+      "initial_seed": 1220590,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1220590
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "22a5238774af0f522edb35594994b4dc1fe6c3095eece666d8498da4a5a02248",
+      "initial_seed": 1241631,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1241631
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "8856fe08395ea88a910da46e7d3f5eafb1b51b323e7c741d92bcf65e4c9ff580",
+      "initial_seed": 1262672,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1262672
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "96c5c9f6bff14b22a75f4087769c0b36911b1853e5f3a5af920e7af19bde93ee",
+      "initial_seed": 1283713,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1283713
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "ee059c268d9895bf2fef0ec23a3d16471966bd451fbecf3603b68977973c181d",
+      "initial_seed": 1304754,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1304754
+    },
+    {
+      "case": "detour",
+      "family": "prim_braid",
+      "graph": "88f7707f1e61f2777d202088a4f3796be2479181419b8d770daadef19176b528",
+      "initial_seed": 1325795,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1325795
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "28026215e4b87057aa712df28ceac7d93d1d8ac7c67977928b62d8f6b9517620",
+      "initial_seed": 1190047,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1190047
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "8eeceb46b226f3997e45fa6accc52295e7b65289ce0b5feef46aaa6e2cfc257e",
+      "initial_seed": 1211088,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1211088
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "8b3f1f6b02149912a1ff8cb1af313786f884671567ecd869897a8efbdc9cf164",
+      "initial_seed": 1232129,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1232129
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "40affd081561af0242f7c7fdd91b6277f8c369527f3e0a4486484522cea0fd90",
+      "initial_seed": 1253170,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1253170
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "52ab2156922df709f196fb61f1040d3ff41f9fa8574a665f34e74d235577fca3",
+      "initial_seed": 1274211,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1274211
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "ef732c5437be289d42cb25fa75572467d72a4f1b13bb513736da0af4d717a03c",
+      "initial_seed": 1295252,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1295252
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "43dab3ad954632e1040d1d0f9b1457aabfc4a48c3fac676c8a861f1393d7ae05",
+      "initial_seed": 1316293,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1316293
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "e0319984e399c114c42d1d21687370847fdbe286838ca6d0c709202329217fc9",
+      "initial_seed": 1337334,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1337334
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "e25007425faae5114f313fd4872fb325bca35fe7478ec1532aacd781c9853bf2",
+      "initial_seed": 1197521,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1197521
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "49ecfc2713ee08e220c2664d78ed7405e688bd496016f520a8aa0ce6cd461a35",
+      "initial_seed": 1218562,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1218562
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "628dedf497409038512b50393d9f93e0704e4ed041723bd043f663876676e1f4",
+      "initial_seed": 1239603,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1239603
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "dee50644253b64354fb9e10cc9f8b8de6d868937842fc82a6f5ae74e113dadb0",
+      "initial_seed": 1260644,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1260644
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "407de0bde03f5423f62e82649264d73d09fc24f207f3af206c78a5ad1f7f0783",
+      "initial_seed": 1281685,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1281685
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "6e3623db2351710627a6036bfdfe09c533914df25a932936c01a44d8b915a481",
+      "initial_seed": 1302726,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1302726
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "fa47f6d0175038ec887403068113f9b30e854262a3164643e93d59651369d13f",
+      "initial_seed": 1323767,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1323767
+    },
+    {
+      "case": "forward",
+      "family": "prim_braid",
+      "graph": "d10ffb6edcd43fee1e09e741c4345b95755aed45b6de134c3359ce86553ead30",
+      "initial_seed": 1344808,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1344808
+    }
+  ],
+  "limitations": [
+    "frozen previously trained C65 checkpoints; no optimizer this study",
+    "synthetic host only; no native CyberSand acceptance",
+    "independent fresh graph identities but not preregistered externally",
+    "personality metrics are partial proxies only"
+  ],
+  "matched_rows": 120,
+  "schema": "driv3r-c66-fresh-c65-transfer/1",
+  "seed": 660118,
+  "skipped": {
+    "early_terminal": 65
+  },
+  "synthetic_host_suffixes": 720
+}

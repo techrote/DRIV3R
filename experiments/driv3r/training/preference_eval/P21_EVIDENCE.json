@@ -1,0 +1,76 @@
+{
+  "schema": "driv3r.preference_eval.p21_source_verified_lfm350/v1",
+  "date_utc": "2026-11-17",
+  "underlying_model": "LiquidAI/LFM2.5-350M",
+  "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+  "source_archive_artifacts": {
+    "stock": {
+      "run": 43910803355,
+      "artifact": 14248333879,
+      "zip_sha256": "0eed5828082862d74c9dd796b7a45a6110f2eb02326a6a7d5f508e91501072cd",
+      "adapter_sha256": null
+    },
+    "gp350006": {
+      "run": 43902984081,
+      "artifact": 14244806761,
+      "zip_sha256": "88dfeee5360ae16d03de99d6bdfb2dbe79a819613af215373f6dcfb9fdcf0ae6",
+      "adapter_sha256": "436159bd6508063221d31d46f057b5fba7ee5b6f05b27edf003c54e76863898c"
+    },
+    "gp350010_step24": {
+      "run": 43902984081,
+      "artifact": 14245172930,
+      "zip_sha256": "fa6296ad600176b366b367965b86118fc432a92a63f55c8e0b5a44c488258920",
+      "adapter_sha256": "047b2bacb61f6f04fb359e4d9839f6c198a17ba7db6dfb451d88e48846c66430"
+    }
+  },
+  "generator": "p21_real_lfm_bestiary.py",
+  "generator_sha256": "eb7b796bcef1fcc11099807b4bc7751db2497c90a7c12804af5b18f065e4e317",
+  "tests": "test_p21_real_lfm_bestiary.py",
+  "tests_sha256": "b5a6ec396680ddffd46c5e04f89e8bc28689be6b5de2525a186b8aa23ecb500a",
+  "local_tests": "4/4 PASS",
+  "original_model_applied_episodes": 36,
+  "actions_checked": 4608,
+  "host_illegal_actions": 0,
+  "worlds": 12,
+  "distinct_seeds": 2,
+  "matched_arms": 3,
+  "matched_pairs": 36,
+  "nonidentical_pairs": 28,
+  "identical_pairs": 8,
+  "full_horizon_ticks": 128,
+  "early_stop_count": 0,
+  "mean_by_stage": {
+    "stock": {
+      "unique_cells": 124.66667,
+      "turn90_rate": 0.04134,
+      "longest_straight": 36.16667,
+      "graph_cycles": 0.33333,
+      "branch_actions": 0
+    },
+    "gp350006": {
+      "unique_cells": 128.5,
+      "turn90_rate": 0.04921,
+      "longest_straight": 36.08333,
+      "graph_cycles": 0.5,
+      "branch_actions": 0
+    },
+    "gp350010_step24": {
+      "unique_cells": 124.33333,
+      "turn90_rate": 0.08858,
+      "longest_straight": 34.91667,
+      "graph_cycles": 1.16667,
+      "branch_actions": 9
+    }
+  },
+  "new_pretrained_model_forwards": 0,
+  "optimizer_updates": 0,
+  "owner_human_ratings": 0,
+  "outputs_not_committed": "local full original ZIP bundle, source-derived 6 blind A4 SVG galleries, 36-episode full descriptor catalogue, pair and blank-ballot CSV, SHA256SUMS",
+  "qualification": "historical actual pretrained root LFM original model-applied synthetic W0 receipts, original PNG/JSON hashed; NOT new pretrained inference/held-out preference model/native CyberSand",
+  "scientific_negatives": [
+    "GP010 path differs from GP006 in only 4/12 matched worlds",
+    "All greedy trajectories mostly straight; no demonstrated four artist niche success",
+    "Only two independent source seeds; no owner ratings; no model-style preference training justified",
+    "No pretrained rooted CPU execution/latency/RSS measurements in this lab run"
+  ]
+}

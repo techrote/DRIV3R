@@ -1,0 +1,148 @@
+{
+  "schema": "driv3r/corpus_factory/paint-recovery-v27/manifest",
+  "host": "synthetic-not-native-CyberSand",
+  "generator": "paint_recovery_v27.js",
+  "generator_sha256": "6fe483084103f3d2fcaabf539bd6cf6eea22abf03f16a69dfad4ea2f83343538",
+  "dependencies": [
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "oracle": "v26 reverse BFS minimum terminal-cost suffix",
+  "split_worlds_disjoint": true,
+  "initial_96_move_history_scripted": true,
+  "pre_first_paint_actions_scripted": true,
+  "accepted_bad_material_in_prefix": true,
+  "post_paint_remote_drift_scripted": true,
+  "accepted_paint_receipt_outside_latest64": true,
+  "post_intervention_suffix_oracle_labelled": true,
+  "consumer_warning": "Do not pass episode mode, intervention, difficulty or frozen-gate diagnostics to model. Reconstruct observation from initial_history and deltas; verify SHA-256. Post-intervention trajectories are oracle, NOT model rollouts.",
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "episodes": 192,
+      "decisions": 3391,
+      "unique_inputs": 2975,
+      "exact_duplicates": 416,
+      "near_downweighted": 1133,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 64,
+        "wrong-material-recovery": 64,
+        "wrong-branch-and-material-recovery": 64
+      },
+      "corrective_erases": 128,
+      "accepted_bad_paints": 128,
+      "accepted_wrong_branches": 64,
+      "strict_causal_episodes": 143,
+      "frozen_gate_harmful_recommendations": 483,
+      "frozen_gate_illegal_recommendations": 72,
+      "min_train_weight": 0,
+      "zero_weight": 1549
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 96,
+      "decisions": 2040,
+      "unique_inputs": 2040,
+      "exact_duplicates": 0,
+      "near_downweighted": 0,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 32,
+        "wrong-material-recovery": 32,
+        "wrong-branch-and-material-recovery": 32
+      },
+      "corrective_erases": 64,
+      "accepted_bad_paints": 64,
+      "accepted_wrong_branches": 32,
+      "strict_causal_episodes": 58,
+      "frozen_gate_harmful_recommendations": 230,
+      "frozen_gate_illegal_recommendations": 36,
+      "min_train_weight": 1,
+      "zero_weight": 0
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 96,
+      "decisions": 2260,
+      "unique_inputs": 2260,
+      "exact_duplicates": 0,
+      "near_downweighted": 0,
+      "near_ambiguous": 0,
+      "modes": {
+        "correct-paint-control": 32,
+        "wrong-material-recovery": 32,
+        "wrong-branch-and-material-recovery": 32
+      },
+      "corrective_erases": 64,
+      "accepted_bad_paints": 64,
+      "accepted_wrong_branches": 32,
+      "strict_causal_episodes": 45,
+      "frozen_gate_harmful_recommendations": 226,
+      "frozen_gate_illegal_recommendations": 30,
+      "min_train_weight": 1,
+      "zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "18681bcdd5f09673b60a08ceebfa6849b6d33a5abc021cfbd6568ed3eed0a629",
+      "bytes": 2950395,
+      "rows": 192
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "6e1b6c55eb04da2556e41298a5df89c04752945361a595e1b2a1c84b6834ea76",
+      "bytes": 3464025,
+      "rows": 3391
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "1a6ca24c42b741f450e32bf247cef3f2a8feed4efb5802c7a9f5687d3667e517",
+      "bytes": 1494788,
+      "rows": 96
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "d66ae30055cad0b4754bbc15b3822f6804e499b1289f13eb94862952d6ef176a",
+      "bytes": 2080000,
+      "rows": 2040
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "51b139d24dfc6560ace58e4a8cae4f4c4ac9d88cfe7a8323527777e5975f8506",
+      "bytes": 1525850,
+      "rows": 96
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "609923ecf6ffd7cb1d315b73c5ddb40a7caf911ca93df5b02d1e3d78cf98d7b6",
+      "bytes": 2313545,
+      "rows": 2260
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "driv3r/corpus_factory/obstruction-replan-v39/manifest",
+  "synthetic_not_native_CyberSand": true,
+  "generator": "obstruction_replan_v39.js",
+  "generator_sha256": "bf93ff3deb59a255e9cacc28d1203bb51098355082f5e60fd9ee4e31c53a9f36",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "model_contract": "Only input goes to learner. action is teacher label; weight=0 excludes duplicate TRAIN records. challenge is evaluator-only.",
+  "environmental_intervention": "same history/prelude and local root legal view; host changes remote east junction edges (1,0)-(2,0) and (1,0)-(1,1) before decision, public obstruction bulletin; real remote detour remains available",
+  "caveats": [
+    "Synthetic symbolic host, not native CyberSand",
+    "Host-dispatched remote actuator, not learned agent action",
+    "Graph motif still short deterministic loops",
+    "No named SLM run or latency/RSS"
+  ],
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "candidate_pairs": 128,
+      "positive_pairs": 32,
+      "negative_controls": 32,
+      "paired_legal_first_action_contrasts": 32,
+      "episodes": 128,
+      "decisions": 3488,
+      "zero_weight": 0,
+      "unique_geometries": 8,
+      "rejected_worlds": []
+    },
+    "DEV": {
+      "candidate_pairs": 64,
+      "positive_pairs": 16,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 16,
+      "episodes": 64,
+      "decisions": 3456,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    },
+    "HELDOUT": {
+      "candidate_pairs": 64,
+      "positive_pairs": 16,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 16,
+      "episodes": 64,
+      "decisions": 4800,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 3488,
+      "bytes": 4022016,
+      "sha256": "f21543670647f71d616e549296c6d7b16717a93b2f8931ea04041a7a8b67e4f3"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 3456,
+      "bytes": 5827776,
+      "sha256": "daf7b2c8f26c85ce34b6e6bb8cda2e65e5066beb0955620837f9dac13e7b89cd"
+    },
+    "DEV_challenge.jsonl": {
+      "rows": 32,
+      "bytes": 15120,
+      "sha256": "8b9640019f98f6f193889830ad99bdb1a78c4c9dc35ab942ad0fffcf46b97e7f"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 4800,
+      "bytes": 10174032,
+      "sha256": "b9f204fd5fa4223d12756229dc565e1374d6c74106505bcd21dbbe57abab62bd"
+    },
+    "HELDOUT_challenge.jsonl": {
+      "rows": 32,
+      "bytes": 15248,
+      "sha256": "a94835a7fedfdfb83ae4dd1ced0d2af126691713e222bf3b95b942200fea96e9"
+    }
+  }
+}

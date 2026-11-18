@@ -1,0 +1,105 @@
+{
+  "schema": "driv3r/corpus-factory-recovery-edits-v19",
+  "version": "recovery-edits-v19",
+  "synthetic_only": true,
+  "native_cybersand_abi_verified": false,
+  "dependencies": {
+    "v18": "motif_branch_v18.js",
+    "v17": "aliased_order_v17.js",
+    "v13": "relay_memory_v13.js"
+  },
+  "generation_world_seeds": 4,
+  "split_summary": {
+    "TRAIN": {
+      "world_groups": 6,
+      "families": 18,
+      "episodes": 216,
+      "decisions": 10692,
+      "expert_paint": 1080,
+      "expert_erase": 432,
+      "scripted_paint": 864,
+      "scripted_refusals": 144,
+      "modes": [
+        "spot",
+        "all",
+        "blocked"
+      ]
+    },
+    "DEV": {
+      "world_groups": 4,
+      "families": 8,
+      "episodes": 96,
+      "decisions": 4992,
+      "expert_paint": 480,
+      "expert_erase": 144,
+      "scripted_paint": 288,
+      "scripted_refusals": 96,
+      "modes": [
+        "alternating",
+        "blocked"
+      ]
+    },
+    "HELDOUT": {
+      "world_groups": 4,
+      "families": 12,
+      "episodes": 144,
+      "decisions": 7032,
+      "expert_paint": 720,
+      "expert_erase": 96,
+      "scripted_paint": 192,
+      "scripted_refusals": 96,
+      "modes": [
+        "cross",
+        "exit",
+        "blocked"
+      ]
+    }
+  },
+  "families": 38,
+  "split_grouping": "world seed + split; twelve sibling orders always grouped",
+  "projection": "each within-world/mode 12-way family has identical last64 and unordered-event bag, balanced 6/6 legal first moves",
+  "leakage_warnings": [
+    "Related v17/v18 source order families: do not pool as independent heldout tests",
+    "Environment intervention scripts are shared within each counterfactual family and MUST NOT be model inputs",
+    "Event grammar still finite-state and solvable by a symbolic ordered-relay interpreter"
+  ],
+  "usage": "TRAIN fit; DEV tune; HELDOUT once after fixed selection. For rollout pass only checkpoint_model_input/observe and host-legal actions.",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 216,
+      "bytes": 2918628,
+      "usage": "TRAIN",
+      "sha256": "e28446971cb0657feb8e09c7ce7b5f32d6a3ebc0ea49daa6b5fe7c1fcb110225"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 10692,
+      "bytes": 82002240,
+      "usage": "TRAIN",
+      "sha256": "1b57f1c4ad1bb1486f990e55869c10d6065a5a31706e6981ce76fd39ac58a607"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 1506464,
+      "usage": "DEV",
+      "sha256": "736718c152ccf456082a859503782e16ded016c3de49f93a64edd9e72a358596"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 4992,
+      "bytes": 43462816,
+      "usage": "DEV",
+      "sha256": "ca29040858fea38a8ea43ecdb848dfba28ce7d57bf56830bc0f36cacba99d3fc"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 144,
+      "bytes": 2547768,
+      "usage": "HELDOUT",
+      "sha256": "282a7b533ac6b796a6cdc2041d023af85aa36e706a5d299a617cb5d3f91ac2df"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 7032,
+      "bytes": 66713888,
+      "usage": "HELDOUT",
+      "sha256": "b126ea3a39d08d53945d02137c86f44449e98107aba5f0a32c38759a18ec1398"
+    }
+  }
+}

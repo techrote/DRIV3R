@@ -1,0 +1,161 @@
+{
+  "authorized_path": "experiments/driv3r/training/guidance_recovery/**",
+  "caveat": "Synthetic research only, no immutable Actions artifacts and no native CyberSand acceptance",
+  "checkpoints": {
+    "C26-FULL": {
+      "full_a": "656fd9e6948487687d792b4ca8607a7082d4af863f4e8134d5a0b3a01a78ec65",
+      "full_b": "656fd9e6948487687d792b4ca8607a7082d4af863f4e8134d5a0b3a01a78ec65"
+    },
+    "C26-TRIGGER": {
+      "full_a": "8c91c68b4190901cb06d9cd095caca4681f00f68a8d1e56adf36aedb154f1290",
+      "full_b": "8c91c68b4190901cb06d9cd095caca4681f00f68a8d1e56adf36aedb154f1290"
+    }
+  },
+  "date_utc": "2026-11-17",
+  "heldout": {
+    "A": {
+      "episodes": 3840,
+      "horizon": 36,
+      "seed": 260999,
+      "source_file": "full_a/metrics.json"
+    },
+    "B": {
+      "episodes": 4800,
+      "horizon": 40,
+      "seed": 261999,
+      "source_file": "full_b/metrics.json"
+    }
+  },
+  "pr_number": 1,
+  "qualifications": {
+    "C26-FULL": [
+      {
+        "cohort": "full_a",
+        "gate": {
+          "cue_off_exact_C12": true,
+          "improvements": [
+            [
+              "badturn/shortcut/continue/1.00",
+              18,
+              19
+            ]
+          ],
+          "regressions": [
+            [
+              "badturn/reverse/continue/1.00",
+              19,
+              16
+            ],
+            [
+              "neutral/reverse/continue/1.00",
+              19,
+              18
+            ]
+          ],
+          "strict_nonregression": false
+        }
+      },
+      {
+        "cohort": "full_b",
+        "gate": {
+          "cue_off_exact_C12": true,
+          "improvements": [],
+          "regressions": [
+            [
+              "badturn/reverse/continue/0.35",
+              21,
+              19
+            ],
+            [
+              "badturn/shortcut/continue/1.00",
+              23,
+              22
+            ],
+            [
+              "neutral/reverse/continue/1.00",
+              23,
+              22
+            ]
+          ],
+          "strict_nonregression": false
+        }
+      }
+    ],
+    "C26-TRIGGER": [
+      {
+        "cohort": "full_a",
+        "gate": {
+          "cue_off_exact_C12": true,
+          "improvements": [
+            [
+              "neutral/reverse/continue/1.00",
+              19,
+              20
+            ]
+          ],
+          "regressions": [
+            [
+              "badturn/shortcut/continue/1.00",
+              18,
+              17
+            ],
+            [
+              "badturn/bridge/continue/0.35",
+              18,
+              17
+            ],
+            [
+              "badturn/bridge/continue/1.00",
+              21,
+              20
+            ],
+            [
+              "neutral/reverse/continue/0.35",
+              18,
+              17
+            ]
+          ],
+          "strict_nonregression": false
+        }
+      },
+      {
+        "cohort": "full_b",
+        "gate": {
+          "cue_off_exact_C12": true,
+          "improvements": [
+            [
+              "neutral/reverse/continue/1.00",
+              23,
+              25
+            ]
+          ],
+          "regressions": [
+            [
+              "badturn/reverse/continue/1.00",
+              21,
+              20
+            ],
+            [
+              "badturn/bridge/continue/0.35",
+              24,
+              23
+            ]
+          ],
+          "strict_nonregression": false
+        }
+      }
+    ]
+  },
+  "remote_c25_blob_sha1": "a4336183ebeb73ca2c821a8c1fcddaad18048b60",
+  "repository": "techrote/DRIV3R",
+  "schema": "driv3r-guidance-c26-evidence-receipt/1",
+  "source_sha256": {
+    "source/C26-stuck-intervention-recovery-2026-11-17.md": "96cec74aa66b696836b1bbb3f80bf7d6ed9bb8c3aeb42594e78d40a2fc4d554c",
+    "source/c25_online_recovery.py": "66195d799ba182ba8d8b2ba0432a12e096bd53312bf8df1429c1683a2af640e2",
+    "source/c26_gallery.py": "94effed23d5486de9bf493e7a71d764c44e00b1ddc6f20ec624cb25e04d62388",
+    "source/c26_policy_audit.py": "984d392db68f6edacbbd3637e3aafd2c8c74cbeaf27052cadf5e3338d4ff6e36",
+    "source/c26_stuck_interventions.py": "0657327315644407bf9fc086aa00d886849a54056969c0cea2e520cdd070dae6",
+    "source/test_c26_stuck_interventions.py": "3c740339b62b61cb719d5b3a06225ae8028188915b0fdf6a961ab0e75824fcb0"
+  },
+  "test_suite": "174/174 local tests passed"
+}

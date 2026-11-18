@@ -1,0 +1,39 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "date": "2026-11-18",
+  "files": {
+    "C58-dual-memory-recovery-2026-11-18.md": {
+      "sha256": "af99f03350cc7853d0f284c78c0fb990e593d0fb3eb2429b01d3b415f8627e1d",
+      "size": 6462
+    },
+    "C58-executed-ledger.zlib.b64": {
+      "sha256": "a91f7328991b45e2ac1af4d5e48c6a5b21b89f5d63416c913127893bf11bf5e9",
+      "size": 519216
+    },
+    "C58-extract-ledger.py": {
+      "sha256": "7646154763d0e10b3281926a023b340febd5ec91878eb75286761b578f192325",
+      "size": 962
+    },
+    "C58-gallery.svg": {
+      "sha256": "bc1c783581f0febd855dee49a26dc3ed15b58b9aa10ac6542535b83fd73b62f7",
+      "size": 15051
+    },
+    "c58_dual_memory_recovery.py": {
+      "sha256": "48919fd0da7877f40aed5507f9d76676d094c8e832db792fcedaf620aea156a1",
+      "size": 12234
+    },
+    "c58_gallery.py": {
+      "sha256": "7ac8602f921b0a63af38489d25e2ca1c6ca6739b2421623af0a66b08ab684e1e",
+      "size": 2500
+    },
+    "test_c58_dual_memory_recovery.py": {
+      "sha256": "1905537e39b149821c4e27abef35eb2be2b7cc17ad1d07c12c0c2e68726fab5c",
+      "size": 5073
+    }
+  },
+  "immutable_actions_checkpoint_custody": false,
+  "native_acceptance": false,
+  "schema": "DRIV3R-C58-EVIDENCE-RECEIPT/1",
+  "status": "Draft/HOLD",
+  "tests": "5/5 PASS"
+}

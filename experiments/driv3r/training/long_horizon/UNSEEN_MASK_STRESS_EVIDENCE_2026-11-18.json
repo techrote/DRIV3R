@@ -1,0 +1,1481 @@
+{
+  "arms": [
+    "neural",
+    "absolute24",
+    "planner_each_stage",
+    "second_switch",
+    "second_switch_stall3"
+  ],
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "episodes": 320,
+  "external_64_logical_move_gate": true,
+  "initial_feasibility": [
+    {
+      "family": "pickets",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "92dd7e014de93ab8da40dba10637943758d9ef7744f7322ea556c95fb866f6ee",
+      "mask": "broken_diamond",
+      "spec": "0b870b1f5096862839869d36",
+      "topology_sha": "597a06247b8d654fb9f0b769a852cff55d09bf2b8922eba34e129c286366c656"
+    },
+    {
+      "family": "pickets",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "5d0ec8712c0f9cf1be301f50fc0b9752079acf644187c8f6cfd08473c53deeb3",
+      "mask": "offset_comb",
+      "spec": "0b870b1f5096862839869d36",
+      "topology_sha": "579bb871b0c8f05f89289c1efeaaa73318434d99c0c0101539f7501b10ea752d"
+    },
+    {
+      "family": "pickets",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "068fdc004b084a1a749b3b633ff33951fac5a5eaa4265c391ac9fb3df849326f",
+      "mask": "slanted_fences",
+      "spec": "0b870b1f5096862839869d36",
+      "topology_sha": "80bef313a038e47284d5b0bfadb3061a56e755dcae75acc2d98e9a90bf775bc1"
+    },
+    {
+      "family": "pickets",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "ad5577cba22c1ca729eaedb3a8298efae7bbfcb50d9a2deeac0a503afd564cf6",
+      "mask": "nested_bays",
+      "spec": "0b870b1f5096862839869d36",
+      "topology_sha": "a55563bc3f083a5534893e0f1fd54d94d3c71704716410a934db19772c9448e4"
+    },
+    {
+      "family": "ridges",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "228599e994fedc1ed06a1e8fb583d4a7b39fa61969c7189fc957612273754dba",
+      "mask": "broken_diamond",
+      "spec": "40cb9da148c2737085d61d3f",
+      "topology_sha": "7682b0be0683baba4a0932bcdfc91e08cd5bed9403460a3058846ee0cfdcef33"
+    },
+    {
+      "family": "ridges",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "5f923fb6681203f3898c535004f954e6398eb54e59635c4838deb82ca8ef3cb3",
+      "mask": "offset_comb",
+      "spec": "40cb9da148c2737085d61d3f",
+      "topology_sha": "0be137a48d498b8e1ee4395bcc25146b6baeaa64ff57e7521aea16a8a10135d6"
+    },
+    {
+      "family": "ridges",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "b4010c07a0a6ece456b03a0abb08bad946ae87d6effaaa9b038e9f86754980ce",
+      "mask": "slanted_fences",
+      "spec": "40cb9da148c2737085d61d3f",
+      "topology_sha": "4f8c81961d0d6a629df2e99b8da344bace8771a62d6fd81c43922e5955bd37c6"
+    },
+    {
+      "family": "ridges",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "d2946a1b2853002533891bf985ee472a45df382f9fd1082203b7259d77edd5a0",
+      "mask": "nested_bays",
+      "spec": "40cb9da148c2737085d61d3f",
+      "topology_sha": "ed31fd4834ed6b803b54d4dcade0d230c42812260e2fd2fd78ee1a60c6cf38d4"
+    },
+    {
+      "family": "islands",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "11b5419d9c484334d0bb709986cfa5ae7319a876bd066dbd13f50c9a5d175df1",
+      "mask": "broken_diamond",
+      "spec": "fac1f4989bd3510a5b9c1c22",
+      "topology_sha": "ed60e7064efc987dbc7f9e16b9d1fb7af4492041628f4de77f8a420e5b2c4712"
+    },
+    {
+      "family": "islands",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "b4016dd3cdbc37fe3ad979d9dd0feaee0333f1a8e3ba010c7832da0da8ac262a",
+      "mask": "offset_comb",
+      "spec": "fac1f4989bd3510a5b9c1c22",
+      "topology_sha": "db9ba7c8d4ccbd101fe207b0a04259dd872b8d9c4b41d85a048b41f54f66909a"
+    },
+    {
+      "family": "islands",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "d1f6a68cd1f023e44ac74bfb389ac9b5ea98bf395828f93bf6d3468eb4ad50f2",
+      "mask": "slanted_fences",
+      "spec": "fac1f4989bd3510a5b9c1c22",
+      "topology_sha": "9a59279c5c99259935f1d13b5437111d2cc989f27eb5b538af81537f669fea84"
+    },
+    {
+      "family": "islands",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "1ea658f1cd4ce19b5050a4837f69a317c7fc79467489a86716ac5e9d4bfb66d5",
+      "mask": "nested_bays",
+      "spec": "fac1f4989bd3510a5b9c1c22",
+      "topology_sha": "91dc52165f5a08a75945526cdad3ca4541bec7d1748065dc1c7a72966039c7f5"
+    },
+    {
+      "family": "zigzag",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "301183ec908f97d0ffe17102c0398776c25548845012e39783c6312688ea9f7a",
+      "mask": "broken_diamond",
+      "spec": "d0f7e129effcfd1f1133741f",
+      "topology_sha": "5fcdeb27f24d1e05fa864c0eb2b14aaf4b2c9e171e5b8a2ed5b6b9bd0e19e372"
+    },
+    {
+      "family": "zigzag",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "1672f9b510c5d03d16b5df35ac930cc4439b5acc4f994f1b0b2271740bf6f13e",
+      "mask": "offset_comb",
+      "spec": "d0f7e129effcfd1f1133741f",
+      "topology_sha": "05d1a1caa8f870bc5533788047ee57c717982f64676d47325366b380d5f5a2ab"
+    },
+    {
+      "family": "zigzag",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "4effc2cfd60d0396103731310985f4a0dfedf5023e24b0b2b95c6ac180a2fe24",
+      "mask": "slanted_fences",
+      "spec": "d0f7e129effcfd1f1133741f",
+      "topology_sha": "6a9d7036d9935f02089bbbe36925c9a1764718c955e5ff904c8adc89c9093f27"
+    },
+    {
+      "family": "zigzag",
+      "initial_reachable": {
+        "(46, 64)": true,
+        "(67, 48)": true
+      },
+      "initial_state": "4186f85efdfe678cd02065580a7cb4ffe1e277d24aa252b7ea7fe057b16888cf",
+      "mask": "nested_bays",
+      "spec": "d0f7e129effcfd1f1133741f",
+      "topology_sha": "7319f7f9bd51afb26b2e1e334ba95a62b2aa6d22dc8609c4173828c3418a636c"
+    }
+  ],
+  "limitations": [
+    "Novel masks built inside the same DEVELOPMENT arena and share seed-family backgrounds; not structural HELDOUT.",
+    "No reactive material changes; every mask static throughout an episode.",
+    "Frozen tiny neural checkpoints with engineered goal-distance features.",
+    "Prefix planner restricted to backtrack-prefix then unpainted traversal.",
+    "64 logical moves enforced synthetically, not native CyberSand acceptance.",
+    "All scenarios retained regardless of initial reachability; per-scenario feasibility logged.",
+    "Goal switches are externally scheduled, not autonomous decisions.",
+    "External checkpoints retained locally; not immutable GitHub Actions artifacts."
+  ],
+  "native_receipts": 0,
+  "pairs": [
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "pickets",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "pickets",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "ridges",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "ridges",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "zigzag",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "zigzag",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 711,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "pickets",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "pickets",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "pickets",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3000
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "ridges",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "ridges",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "ridges",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "ridges",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3100
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "islands",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "islands",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3200
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "broken_diamond",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "broken_diamond",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "offset_comb",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": false,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "zigzag",
+      "mask": "offset_comb",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": true,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": true
+      },
+      "family": "zigzag",
+      "mask": "slanted_fences",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": true,
+        "neural": false,
+        "planner_each_stage": true,
+        "second_switch": true,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "slanted_fences",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "nested_bays",
+      "order": 0,
+      "seed": 712,
+      "world_seed": 3300
+    },
+    {
+      "arrived": {
+        "absolute24": false,
+        "neural": false,
+        "planner_each_stage": false,
+        "second_switch": false,
+        "second_switch_stall3": false
+      },
+      "family": "zigzag",
+      "mask": "nested_bays",
+      "order": 1,
+      "seed": 712,
+      "world_seed": 3300
+    }
+  ],
+  "peak_rss_kib": 99092,
+  "sealed_heldout_opened": false,
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "topology_adaptive_handoff_lab.py": "23858d9911df19f6d5121174e768371fd726862aaa86c8a5e939084aac5aaa3e",
+    "topology_goal_churn_lab.py": "878e1acbb177e0c8280f020556f265f17b3d8cd5f1b63c677189bca0b9a4c5f0",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "unseen_mask_stress_lab.py": "e70c11acdde7a0541cf65517c57ef0e02cb286084e236b1b0ff6dbb508ba7d85",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "development",
+  "summary": {
+    "absolute24": {
+      "action_counts": {
+        "BACKTRACK": 121,
+        "MOVE_E": 970,
+        "MOVE_N": 401,
+        "MOVE_S": 766,
+        "MOVE_W": 676,
+        "STOP": 23
+      },
+      "arrived": 41,
+      "by_family": {
+        "islands": 12,
+        "pickets": 10,
+        "ridges": 9,
+        "zigzag": 10
+      },
+      "by_mask": {
+        "broken_diamond": 16,
+        "nested_bays": 0,
+        "offset_comb": 9,
+        "slanted_fences": 16
+      },
+      "episodes": 64,
+      "median_episode_latency_ms": 0.043027,
+      "neural_actions": 1536,
+      "planner_calls": 115
+    },
+    "neural": {
+      "action_counts": {
+        "BACKTRACK": 123,
+        "MOVE_E": 1360,
+        "MOVE_N": 616,
+        "MOVE_S": 924,
+        "MOVE_W": 881,
+        "STOP": 1
+      },
+      "arrived": 16,
+      "by_family": {
+        "islands": 3,
+        "pickets": 4,
+        "ridges": 5,
+        "zigzag": 4
+      },
+      "by_mask": {
+        "broken_diamond": 3,
+        "nested_bays": 0,
+        "offset_comb": 5,
+        "slanted_fences": 8
+      },
+      "episodes": 64,
+      "median_episode_latency_ms": 0.10422,
+      "neural_actions": 3905,
+      "planner_calls": 0
+    },
+    "planner_each_stage": {
+      "action_counts": {
+        "BACKTRACK": 240,
+        "MOVE_E": 792,
+        "MOVE_N": 432,
+        "MOVE_S": 784,
+        "MOVE_W": 432,
+        "STOP": 24
+      },
+      "arrived": 40,
+      "by_family": {
+        "islands": 10,
+        "pickets": 10,
+        "ridges": 10,
+        "zigzag": 10
+      },
+      "by_mask": {
+        "broken_diamond": 16,
+        "nested_bays": 0,
+        "offset_comb": 8,
+        "slanted_fences": 16
+      },
+      "episodes": 64,
+      "median_episode_latency_ms": 0.002489,
+      "neural_actions": 0,
+      "planner_calls": 176
+    },
+    "second_switch": {
+      "action_counts": {
+        "BACKTRACK": 91,
+        "MOVE_E": 947,
+        "MOVE_N": 366,
+        "MOVE_S": 766,
+        "MOVE_W": 710,
+        "STOP": 27
+      },
+      "arrived": 37,
+      "by_family": {
+        "islands": 12,
+        "pickets": 8,
+        "ridges": 9,
+        "zigzag": 8
+      },
+      "by_mask": {
+        "broken_diamond": 12,
+        "nested_bays": 0,
+        "offset_comb": 9,
+        "slanted_fences": 16
+      },
+      "episodes": 64,
+      "median_episode_latency_ms": 0.092665,
+      "neural_actions": 1920,
+      "planner_calls": 64
+    },
+    "second_switch_stall3": {
+      "action_counts": {
+        "BACKTRACK": 31,
+        "MOVE_E": 966,
+        "MOVE_N": 402,
+        "MOVE_S": 680,
+        "MOVE_W": 535,
+        "STOP": 45
+      },
+      "arrived": 19,
+      "by_family": {
+        "islands": 6,
+        "pickets": 4,
+        "ridges": 5,
+        "zigzag": 4
+      },
+      "by_mask": {
+        "broken_diamond": 4,
+        "nested_bays": 0,
+        "offset_comb": 5,
+        "slanted_fences": 10
+      },
+      "episodes": 64,
+      "median_episode_latency_ms": 0.101233,
+      "neural_actions": 2292,
+      "planner_calls": 64
+    }
+  },
+  "switch_schedule": [
+    12,
+    30
+  ],
+  "switch_stage_prefix_feasibility": {
+    "absolute24": {
+      "broken_diamond": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      },
+      "nested_bays": {
+        "1": {
+          "feasible": 4,
+          "infeasible": 12
+        },
+        "2": {
+          "feasible": 0,
+          "infeasible": 3
+        }
+      },
+      "offset_comb": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 9,
+          "infeasible": 7
+        }
+      },
+      "slanted_fences": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      }
+    },
+    "neural": {
+      "broken_diamond": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 12,
+          "infeasible": 4
+        }
+      },
+      "nested_bays": {
+        "1": {
+          "feasible": 4,
+          "infeasible": 12
+        },
+        "2": {
+          "feasible": 0,
+          "infeasible": 16
+        }
+      },
+      "offset_comb": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 9,
+          "infeasible": 7
+        }
+      },
+      "slanted_fences": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      }
+    },
+    "planner_each_stage": {
+      "broken_diamond": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      },
+      "nested_bays": {
+        "1": {
+          "feasible": 0,
+          "infeasible": 16
+        },
+        "2": {
+          "feasible": 0,
+          "infeasible": 0
+        }
+      },
+      "offset_comb": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 8,
+          "infeasible": 8
+        }
+      },
+      "slanted_fences": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      }
+    },
+    "second_switch": {
+      "broken_diamond": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 12,
+          "infeasible": 4
+        }
+      },
+      "nested_bays": {
+        "1": {
+          "feasible": 4,
+          "infeasible": 12
+        },
+        "2": {
+          "feasible": 0,
+          "infeasible": 16
+        }
+      },
+      "offset_comb": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 9,
+          "infeasible": 7
+        }
+      },
+      "slanted_fences": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      }
+    },
+    "second_switch_stall3": {
+      "broken_diamond": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 12,
+          "infeasible": 4
+        }
+      },
+      "nested_bays": {
+        "1": {
+          "feasible": 4,
+          "infeasible": 12
+        },
+        "2": {
+          "feasible": 0,
+          "infeasible": 16
+        }
+      },
+      "offset_comb": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 9,
+          "infeasible": 7
+        }
+      },
+      "slanted_fences": {
+        "1": {
+          "feasible": 16,
+          "infeasible": 0
+        },
+        "2": {
+          "feasible": 16,
+          "infeasible": 0
+        }
+      }
+    }
+  },
+  "synthetic_new_masks": [
+    "broken_diamond",
+    "offset_comb",
+    "slanted_fences",
+    "nested_bays"
+  ],
+  "training_updates": 0,
+  "verified_probability_vectors": 9653,
+  "verified_receipts": 15132,
+  "verified_second_pass": "full independent archive verification completed",
+  "version": "unseen-mask-stress/1",
+  "wall_s": 32.24
+}

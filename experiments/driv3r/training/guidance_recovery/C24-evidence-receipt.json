@@ -1,0 +1,47 @@
+{
+  "checkpoints": {
+    "C24-NOMEM": "7d0f48f4cbceaff0b4a18834b7a775a6b1d7ec52b0a664741bf6b42d7a851c22",
+    "C24-TRUST": "5ae727d92508a7975e7b83eded444b5964602dfb42329cd5948b3f05e663c412"
+  },
+  "cohorts": {
+    "a": {
+      "eval_seed": 241999,
+      "heldout_episodes": 5040,
+      "metrics_sha256": "bd17e024aa05bc3f23a5e8873b58cec90f2ad9e2bd031492392f51cf58b7c2a3",
+      "regression_groups": {
+        "C24-NOMEM": 11,
+        "C24-SHUFFLE": 13,
+        "C24-TRUST": 9
+      }
+    },
+    "b": {
+      "eval_seed": 242999,
+      "heldout_episodes": 5040,
+      "metrics_sha256": "7275ae646018ac0543633476dae868b2737e1d7bad798ee51880d60b7c63cc52",
+      "regression_groups": {
+        "C24-NOMEM": 7,
+        "C24-SHUFFLE": 7,
+        "C24-TRUST": 6
+      }
+    }
+  },
+  "disposition": "Draft/HOLD, no promotion; synthetic only",
+  "gallery_generator_sha256": "eb7f062e1bcadf5ad88c80e7012ac135ed9c56e2f5dff4e68c4e332385100cf9",
+  "limitations": [
+    "No cloud immutable checkpoint custody",
+    "No native CyberSand qualification"
+  ],
+  "predecessor_sha256": {
+    "base": "8c8625a1bd8daed03e00188687dbba9732634c7bf7b8e7be5a4fa21cb310ac09",
+    "c11": "a402c30bf628ae1cfffc3bba788654ce460ac9c3029ef4ced7dd7d5223a11bc7",
+    "c12": "180075041fdc61b8ec0e22216780b4a7c76169829dffd43734a9d46c19be80cf",
+    "c4": "f1d538200c0d5e183d46463a9058f73db162a5dcccf13daeb521073da9bfc0fa",
+    "c7": "9ddadf372465abca9634eca8bf450cb03e5903434da8065de588511b44b5da9a",
+    "c8": "b1d485773fd33d760d7a41f1bb90b3aa23e208f1241c7dfcabb04cef1aa697bd",
+    "c9": "03ac2de36e480b26fd16b86637899ddeaf7221431d13762fbc0b0181f75b2366"
+  },
+  "schema": "driv3r-c24-evidence-receipt/1",
+  "source_sha256": "de8fb151d7fdd80b192b65ea48b121905986fdbf6b5a9068f933ac1b8146bb8a",
+  "tests_sha256": "bd6afc56aed952acbb240a2292006bda23d8b86f996b7b500a925648902ae4b7",
+  "training_data_sha256": "7314bfd00df73a2f58f26277d58e21d46d39a3b235b2f4558f6748992d1df3ab"
+}

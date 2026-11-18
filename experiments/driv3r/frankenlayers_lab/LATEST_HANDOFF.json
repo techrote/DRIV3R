@@ -1,0 +1,405 @@
+{
+  "schema": "driv3r/frankenlayers-latest-handoff/v1",
+  "dated": "2026-11-18",
+  "lab": "frankenlayers_lab",
+  "status": "Q4_UPPER_MIDDLE_EXTREME_ORIGINAL_EVIDENCE_AUDITED_COMPLETE",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "current_best_historical": {
+    "candidate": "aero4_no2",
+    "executed_source_layers": [
+      0,
+      4,
+      10,
+      20
+    ],
+    "quant": "Q4_K_M requantized from Q8",
+    "wave16_heldout_novel_cells_raw": 162,
+    "wave16_p50_seconds_raw": 0.395,
+    "limitations": "Historical synthetic W0 run, not native; wave17 different seed produced 91 new cells; no demonstrated objective completion"
+  },
+  "immutable_q8_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+  "pinned_llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+  "fresh_candidate_catalogue": "run-request-wave20.json",
+  "manual_inference_driver": "wave20_structural.py",
+  "source_test": "test_wave20_structural.py",
+  "actual_new_inference": "Official pinned Q4 real CPU inference across three staged Actions original archives completed, 238/238 SHA256 manifest entries and 304/304 raw HTTP legal host-applied decisions independently reverified. 22/24 cases completed; GREY2_CUT failed to initialize both worlds due missing full/sliding attention ballast.",
+  "precise_blocker": null,
+  "next_consumer": "Freeze owner-approved Q4 trilogy and disable repeated Q4 schedule. Preference Lab: blind review original unsmoothed AERO4_NO2/GREY3 W0 SVG/JSON/PNG trails in original pinned Actions artifacts. Extreme Quant/Distillation: exact source/graph/bytes and lower-bit comparisons on new held-out game objectives, no mutation of their files. No native acceptance, no additional Q4 model request.",
+  "exclusions": [
+    "No native CyberSand acceptance",
+    "No novel model scores",
+    "No false niche labels",
+    "No posthoc guards or surrogate weights",
+    "No changes to external repos",
+    "No fifth or repeat official-Q4 scheduled tier",
+    "2-block failure retained; no false performance result",
+    "Model GGUF weights still all loaded in RSS; only execution blocks omitted"
+  ],
+  "historical_wave20_status": "WAVE20_STRUCTURAL_GRAPH_SOURCE_COMMITTED_NOT_INFERRED",
+  "historical_wave20_blocker": "This session cannot acquire the 1.846 GB Q8 GGUF/build pinned llama.cpp or dispatch an Actions job; imported DRIV3R checkout also lacks the externally mounted legacy backend/process and W0 modules needed for parent run_arm. Source smoke cannot substitute.",
+  "q4_upper_verified": {
+    "run_id": 44202739826,
+    "source_sha": "e704fb8b4f450becf0b7613a26c70ad42b2f1f12",
+    "artifact_id": 14381663329,
+    "artifact_zip_sha256": "7091428bbedb92e486e8b41925277660a894feb6c19387fe3641f201c787ecea",
+    "manifest_entries_verified": "84/84",
+    "original_failure_run_id": 44202385937,
+    "original_failure_artifact_id": 14381134532,
+    "original_failure_zip_sha256": "a134a3dc2a276d97170862239fcbea3113327e533274292ba34bff61aec446d4",
+    "original_failure_manifest_verified": "7/7",
+    "quant": "official original Q4_K_M (not Q8-requantized)",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "model_bytes": 1099629888,
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "host": "synthetic W0, not native CyberSand",
+    "folds": [
+      [
+        7703,
+        "pipework"
+      ],
+      [
+        8807,
+        "greebles"
+      ]
+    ],
+    "decisions_raw_legal": "60/60",
+    "completed_cases": "8/8",
+    "per_mode": {
+      "stock": {
+        "layers": 24,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "stop_ticks": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          2.545,
+          2.533
+        ]
+      },
+      "greyhound": {
+        "layers": 13,
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "stop_ticks": [
+          null,
+          null
+        ],
+        "p50_seconds": [
+          1.508,
+          1.511
+        ],
+        "failure": "24 LEFT decisions in each fold; four-cell loop; 21 revisit contacts per fold"
+      },
+      "grey10_cut": {
+        "layers": 10,
+        "decisions": [
+          5,
+          3
+        ],
+        "new_steps": [
+          2,
+          1
+        ],
+        "stop_ticks": [
+          4,
+          2
+        ],
+        "p50_seconds": [
+          1.125,
+          1.023
+        ],
+        "failure": "BRANCH/RETRACE then STOP"
+      },
+      "grey8_cut": {
+        "layers": 8,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "stop_ticks": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          0.82,
+          0.785
+        ],
+        "failure": "immediate STOP both folds"
+      }
+    },
+    "performance_caveats": "Input prefill tokens/sec measured, generation output tokens 0; post-ready RSS 1.87M KiB, no weights removed; STOP-only stock Q4 limits comparative interpretation; no verified personality niche.",
+    "evidence_ledger": "Q4-UPPER-EVIDENCE-2026-11-18.md"
+  },
+  "next_eligible_request_utc": null,
+  "q4_middle_verified": {
+    "run_id": 44253735083,
+    "source_sha": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
+    "artifact_id": 14405820902,
+    "artifact_zip_sha256": "ceefd282f64e14bf05fc9b7da4188fdd5269009473058b77872222422ab25688",
+    "manifest_entries_verified": "84/84",
+    "raw_and_host_legal_decisions": "146/146",
+    "request_nonce": "middle-20261118T0643Z-six-four-ablation",
+    "started_at": "2026-11-18T06:45:47Z",
+    "model_quant": "official vendor Q4_K_M, not Q8-derived",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "model_bytes": 1099629888,
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "host": "synthetic W0, NOT native CyberSand",
+    "folds": [
+      [
+        7703,
+        "pipework"
+      ],
+      [
+        8807,
+        "greebles"
+      ]
+    ],
+    "cases": {
+      "stock": {
+        "layers": 24,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "first_STOP_tick": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          2.336,
+          2.335
+        ]
+      },
+      "greyhound": {
+        "layers": 13,
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "revisits": [
+          21,
+          21
+        ],
+        "p50_seconds": [
+          1.395,
+          1.396
+        ],
+        "failure": "LEFT loop 24/24 both worlds"
+      },
+      "grey6_cut": {
+        "layers": 6,
+        "executed_source_layers": [
+          0,
+          2,
+          4,
+          8,
+          10,
+          20
+        ],
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "revisits": [
+          21,
+          21
+        ],
+        "p50_seconds": [
+          0.611,
+          0.615
+        ],
+        "failure": "RIGHT loop 23/24 and 24/24"
+      },
+      "aero4_no2": {
+        "layers": 4,
+        "executed_source_layers": [
+          0,
+          4,
+          10,
+          20
+        ],
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          21,
+          16
+        ],
+        "revisits": [
+          0,
+          3
+        ],
+        "branches": [
+          21,
+          14
+        ],
+        "retraces": [
+          3,
+          5
+        ],
+        "p50_seconds": [
+          0.397,
+          0.39
+        ],
+        "caveat": "24-step synthetic branch/retrace candidate only; no native/goal/personality acceptance"
+      }
+    },
+    "evidence_report": "Q4-MIDDLE-EVIDENCE-2026-11-18.md",
+    "independent_audit": "zip SHA, all SHA256SUMS payloads, normalized probability, raw-to-applied host choice legality, HTTP 200 and event/decision count"
+  },
+  "q4_extreme_dispatch": {
+    "run_id": 44307129291,
+    "request_commit": "fa98269f8d2db827eed4df984a23ecea9515bc1d",
+    "request_nonce": "extreme-20261118T1246Z-three-two-layer-ablation",
+    "request_tier": "extreme",
+    "requested_at": "2026-11-18T12:46:29Z",
+    "status_at_check": "completed",
+    "expected_modes": [
+      "stock",
+      "greyhound",
+      "grey3_cut",
+      "grey2_cut"
+    ],
+    "controls": [
+      "stock",
+      "greyhound"
+    ],
+    "exclusions": [
+      "Not yet a result",
+      "Synthetic W0, not native CyberSand",
+      "No further queued requests permitted"
+    ],
+    "conclusion": "success_with_two_architectural_failures",
+    "artifact_id": 14429156993,
+    "artifact_sha256": "ad481236a3d47aface28485771db0b2ab8ef65eff366db40a8b40db045672fd5",
+    "completed_utc": "2026-11-18T12:52:43Z"
+  },
+  "current_best_official_q4": {
+    "candidate": "aero4_no2",
+    "executed_source_layers": [
+      0,
+      4,
+      10,
+      20
+    ],
+    "evidence_run_id": 44253735083,
+    "heldout_folds": [
+      {
+        "seed": 7703,
+        "family": "pipework",
+        "decisions": 24,
+        "new_steps": 21,
+        "p50_seconds": 0.397,
+        "p95_seconds": 0.402
+      },
+      {
+        "seed": 8807,
+        "family": "greebles",
+        "decisions": 24,
+        "new_steps": 16,
+        "p50_seconds": 0.39,
+        "p95_seconds": 0.402
+      }
+    ],
+    "status": "promising synthetic host survival/exploration; no native, held-out goal or niche acceptance"
+  },
+  "alternative_sparse_official_q4": {
+    "candidate": "grey3_cut",
+    "executed_source_layers": [
+      0,
+      4,
+      10
+    ],
+    "evidence_run_id": 44307129291,
+    "folds": [
+      {
+        "seed": 7703,
+        "family": "pipework",
+        "decisions": 24,
+        "new_steps": 10,
+        "p50_seconds": 0.274,
+        "p95_seconds": 0.281,
+        "revisit_contacts": 9
+      },
+      {
+        "seed": 8807,
+        "family": "greebles",
+        "decisions": 24,
+        "new_steps": 18,
+        "p50_seconds": 0.278,
+        "p95_seconds": 0.289,
+        "revisit_contacts": 3,
+        "two_step_oscillations": 5
+      }
+    ],
+    "status": "fast real neural graph survivor; not accepted as an expressive personality"
+  },
+  "q4_extreme_verified": {
+    "run_id": 44307129291,
+    "source_sha": "fa98269f8d2db827eed4df984a23ecea9515bc1d",
+    "artifact_id": 14429156993,
+    "artifact_zip_sha256": "ad481236a3d47aface28485771db0b2ab8ef65eff366db40a8b40db045672fd5",
+    "manifest_entries_verified": "70/70",
+    "original_legal_http_host_applied": "98/98",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "completed_cases": 6,
+    "failed_cases": 2,
+    "grey3": "24/24 continuing decisions per fold; 10/18 new cells; 0.274/0.278s p50; 0.281/0.289s p95",
+    "grey2": "context startup failed in both folds: Experimental flow lacks full/sliding attention ballast",
+    "evidence_report": "Q4-TRILOGY-EVIDENCE-2026-11-18.md",
+    "catalogue": "Q4-TRILOGY-CATALOGUE-2026-11-18.json"
+  },
+  "q4_trilogy_final": {
+    "stage_runs": [
+      44202739826,
+      44253735083,
+      44307129291
+    ],
+    "manifest_verified": "238/238",
+    "real_http_legal_and_host_applied": "304/304",
+    "completed_cases": "22/24",
+    "architectural_failures": "2/24 GREY2_CUT",
+    "catalogue": "Q4-TRILOGY-CATALOGUE-2026-11-18.json",
+    "report": "Q4-TRILOGY-EVIDENCE-2026-11-18.md",
+    "recurring_campaign_complete": true,
+    "no_more_tiers": true,
+    "scientific_niches_accepted": []
+  }
+}

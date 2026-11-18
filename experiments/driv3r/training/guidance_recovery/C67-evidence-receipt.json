@@ -1,0 +1,42 @@
+{
+  "schema": "driv3r-c67-evidence-receipt/1",
+  "date": "2026-11-18",
+  "result": "HOLD/REJECT",
+  "training_origin": "C66 executed ledger; historical test now C67 training",
+  "training_source_ledger_sha256": "fbaee7a28a2dd6f8e51ed41acf665f40f4b4efba1386c2cbd42d5093b80802d6",
+  "files": {
+    "c67_cue_strength_transfer.py": {
+      "git_blob_sha1": "357b65422c794fd2505b424d3cc8187564bd7576",
+      "sha256": "8dc907ecc6f2cf1129196fbee60b220d1b2c3f83837be97c94c15a0ba28eceba"
+    },
+    "test_c67_cue_strength_transfer.py": {
+      "git_blob_sha1": "04a8f4376cf4c644c662553eb872d9a06d9748c2",
+      "sha256": "20edd3f366f149c78a7eef4e4c1da6e6c418fb333bce30aeda386add099c65e2"
+    },
+    "C67-summary.json": {
+      "git_blob_sha1": "cf150fec4289011927b5b487e2dc5e5962baa2d4",
+      "sha256": "31fc470ebb6df226486cd87c9303801a401a357af6cbf714424ca24dd47bb8b3"
+    },
+    "C67-executed-ledger.zlib.b64": {
+      "git_blob_sha1": "504a18ac6366b535162c29c0d923d6fa5a11cde4",
+      "sha256": "b5dd8a6646b9a78fc7fecad2429fa1355916a8da4f7a91a2820fe9e048cab65b"
+    },
+    "C67-gallery.svg": {
+      "git_blob_sha1": "e11461d6a171692cc4ab9d7ff30de46365f66196",
+      "sha256": "93d219480846b07aa7f4e9574168e7eeb65555aa5797e695e987c7889b77f63b"
+    }
+  },
+  "checkpoints_not_git": {
+    "C67-ALIGNED.safetensors": "044fd917b05d0b365e770b7a5160c959b72546757435c634c0b16f3213c5d812",
+    "C67-SHUFFLED.safetensors": "e937c8be434356a98ad8311934460145c1d95618d16f47ae2a661d4bfb04f3d5"
+  },
+  "tests": {
+    "local": 4,
+    "passed": 4,
+    "exact_double_cpu_reexecution": true
+  },
+  "host_suffixes": 720,
+  "heldout_graphs": 36,
+  "no_native_qualification": true,
+  "immutable_actions_artifact_custody": false
+}

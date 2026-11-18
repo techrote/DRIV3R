@@ -1,0 +1,163 @@
+{
+  "format": "P19-gated-novelty-research-metadata",
+  "date": "2026-11-16",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "source_status": "published exact source; local trained weights not Actions artifacts",
+  "source_git_blob_sha1": "21cdfbfd12783ea7f00a3ac826700d5d81dde0c7",
+  "trainer_sha256": "45115165bc7044345d5c5724c6eec552f9c3ac53a69abdfd5d0fbc56cf23b48a",
+  "test_git_blob_sha1": "8d84babacabcf7dc1d85ca29a7af3226cfe42b14",
+  "test_sha256": "1fd7a81fdb5ffe007494f04d1816ebb2ae1cb63f7edb9c84f667bfd5b0552136",
+  "audit_git_blob_sha1": "eaef480a1d5e6dd67bb86ac15f1e902196c22eb5",
+  "audit_sha256": "c09861d8ae1d8f35990abcf05dfb2176ca64964e49a97fbd09abda6505150a49",
+  "frozen_host_git_blob_sha1": "8a974a072dd8a5172f9242d83a373f3de345bb3b",
+  "prior_p18_source_git_blob_sha1": "61d3ec72743355fb3910be4bd1885440ebea6b74",
+  "cohorts": [
+    680,
+    681,
+    682
+  ],
+  "niches": [
+    "navigator",
+    "branch_artist",
+    "recoverer",
+    "texture_worm",
+    "material_cautious",
+    "chaotic_brush"
+  ],
+  "selection_gate": {
+    "max_early_stop": 0.5,
+    "min_goal_switch": 0.75,
+    "selection_only": true,
+    "chosen_from": "P18 training-family selection quantiles before P19 holdout"
+  },
+  "arms": [
+    "reward_pbt",
+    "novelty_pbt",
+    "viable_novelty_pbt",
+    "random_parent"
+  ],
+  "experiment": {
+    "initial": 2,
+    "generations": 2,
+    "offspring": 2,
+    "training_worlds": 3,
+    "selection_worlds": 2,
+    "heldout_worlds": 3,
+    "horizon": 48,
+    "trained_checkpoints": 432,
+    "optimizer_updates": 26069,
+    "cpu_elapsed_seconds": 22.027
+  },
+  "heldout_aggregate": {
+    "reward_pbt": {
+      "reward": 33.18589,
+      "painted": 33.28704,
+      "retrace": 7.32407,
+      "early_stop": 0.26852,
+      "changed_goal": 0.80556,
+      "across_niche_descriptor_diversity": 0.43455,
+      "within_niche_pair_diversity": 0.15589,
+      "selection_viable_champions": 17,
+      "evaluated_champions": 18
+    },
+    "novelty_pbt": {
+      "reward": 14.14374,
+      "painted": 18.61111,
+      "retrace": 4.34259,
+      "early_stop": 0.72222,
+      "changed_goal": 0.44444,
+      "across_niche_descriptor_diversity": 0.59976,
+      "within_niche_pair_diversity": 0.39027,
+      "selection_viable_champions": 6,
+      "evaluated_champions": 18
+    },
+    "viable_novelty_pbt": {
+      "reward": 30.53594,
+      "painted": 31.64815,
+      "retrace": 6.89815,
+      "early_stop": 0.36111,
+      "changed_goal": 0.76852,
+      "across_niche_descriptor_diversity": 0.43968,
+      "within_niche_pair_diversity": 0.21306,
+      "selection_viable_champions": 17,
+      "evaluated_champions": 18
+    },
+    "random_parent": {
+      "reward": 33.98678,
+      "painted": 33.78704,
+      "retrace": 7.90741,
+      "early_stop": 0.25,
+      "changed_goal": 0.83333,
+      "across_niche_descriptor_diversity": 0.44276,
+      "within_niche_pair_diversity": 0.21373,
+      "selection_viable_champions": 17,
+      "evaluated_champions": 18
+    }
+  },
+  "by_cohort_mean_reward": {
+    "680": {
+      "reward_pbt": 33.319,
+      "novelty_pbt": 16.16,
+      "viable_novelty_pbt": 32.629,
+      "random_parent": 35.079
+    },
+    "681": {
+      "reward_pbt": 32.269,
+      "novelty_pbt": 10.545,
+      "viable_novelty_pbt": 30.388,
+      "random_parent": 33.414
+    },
+    "682": {
+      "reward_pbt": 33.971,
+      "novelty_pbt": 15.726,
+      "viable_novelty_pbt": 28.59,
+      "random_parent": 33.467
+    }
+  },
+  "seed_sha256": {
+    "680": {
+      "train": "39288625b4fed303d81ceb0491b35b7b6ecc373b56eec3aa1218d72293457937",
+      "selection": "6dfd99b92ece8dd0072484cdb5a403b2900d30dc559a2515bb89a8e170d3ff4a",
+      "heldout": "b00315a3ec4a9e4db3f56b3b370a466ef459c86bab97efb3465d76d4c9cadc14"
+    },
+    "681": {
+      "train": "c103a6a0dbbb4caf39a6443ba39f3d11d06e7d24b9c33bc02a29d95e94166d50",
+      "selection": "7a1ecee397936cd4e1c44c81ab9157621dc875993301bcb9168b1bdd0057aeb0",
+      "heldout": "e8b679bf51d774a0177f3247c9e969e3c164a72048fc0d54b7a33e2ad0de69cc"
+    },
+    "682": {
+      "train": "f1aeb9c5515b564599a5687941ef53303963c1c75bbf04e3e69a4e03371291e9",
+      "selection": "79294ead30f8569de84c50f0d2f5eebc759c5ce1b00ffe302d309f94c091f239",
+      "heldout": "41cafba1ef44a44d71d8728b41d214fc4179fd7e4fb414157fcfd4ef222e6a4a"
+    }
+  },
+  "original_local_artifact": {
+    "zip_sha256": "f680af67b5e24abe4195d09b9e5f38261c5b5c17335750f97364b7b226b936f0",
+    "results_json_sha256": "8f95b7a605bfe5687a53d5975b6a54eb7abc5b3055112bfc564889cc1efeaf98",
+    "lineage_json_sha256": "7be903112f3b181ef4f1b7a80916c712902b691d7ac78542aaaee5db85499b79",
+    "sha256sums_sha256": "19308974fbae59dc89a25fbbd7a151b8dc59d6e3efea83c75c55be00d43381d5",
+    "gallery_png_sha256": "b17dc97483454155424b8337e5669effca714a058c41426e158138bb92dce63a"
+  },
+  "independent_replay": {
+    "checkpoints_sha_verified": 432,
+    "checkpoint_replays": 144,
+    "heldout_episodes": 864,
+    "host_legal_actions": 31672,
+    "illegal_actions": 0,
+    "original_gallery_pairs": 72,
+    "overall_manifest_entries_verified": 579,
+    "manifest_mismatches": 0,
+    "tests_passed": 8
+  },
+  "negative_result": "Gate mitigates novelty-induced early STOP, but loses reward to reward-PBT and random ancestry across every cohort.",
+  "limitations": [
+    "P0 synthetic host; material hazards approximated by protected cells",
+    "Legal action menu mask is external; no learned safety established",
+    "Small three-cohort study with PBT-divergent train state distributions",
+    "Neither original checkpoint weights nor gallery bytes are immutable GitHub Actions artifacts",
+    "P18 scenario family identities reused on disjoint seed streams",
+    "No native gameplay, human-preference model, pretrained SLM, or actual self-play"
+  ]
+}

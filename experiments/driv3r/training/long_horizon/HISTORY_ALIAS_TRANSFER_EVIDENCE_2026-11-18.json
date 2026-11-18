@@ -1,0 +1,400 @@
+{
+  "cases": 480,
+  "checkpoint_sha256": {
+    "619-blind": "fef3544f3a1b152c14cb0c6219ee60b9dac7fced0d02f089f2a309d5a32a92ab",
+    "619-depth": "4baea74662a6f3c0499d054efee4f8f3bc53e530af558216e6126385a3694b40",
+    "619-raw": "f1af7903391f61d840e1fd59ce8f6b25b35dca95f22fc5fce37c30c037c3ecb0",
+    "620-blind": "c179582d5a8857ba0855a5a107a767f2cc29c085020054a63b4c09e6504ac7d7",
+    "620-depth": "8112143f6eeb8e9348ddef85374b34f3c36018c187c6a2035b95205d3f29eaf0",
+    "620-raw": "20be98b1360c7caca9f6f39ee71056bd997fe2b7dfbc7c4f54b81f6484cb4219"
+  },
+  "date": "2026-11-18",
+  "decisions": 5824,
+  "episodes": 2880,
+  "experiment": "HISTORY-ALIAS-TRANSFER-001",
+  "experiment_shape": {
+    "arms": [
+      "blind",
+      "raw",
+      "depth"
+    ],
+    "followup_ceiling": 12,
+    "motifs": 20,
+    "remaining_recoveries": [
+      2,
+      3,
+      4
+    ],
+    "restored_model_seeds": [
+      619,
+      620
+    ],
+    "rotations_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "two_ordered_histories_per_condition": true
+  },
+  "gallery_sha256": "01d7746f37b95b50f099907b2c7a748a45e4eecd9c408edc2502640bcf137da3",
+  "heldout_opened": false,
+  "median_inference_ms": 0.022293,
+  "native_acceptance": false,
+  "original_artifact_sha256": {
+    "SHA256SUMS.json": "c8996492b103356d3566f9b5cb129ea0ea46de8f2c4e357f3b91386742919406",
+    "episodes.json": "7775d26950a606754bc9fb5d5853b1a964554dd93b47d5a4a4500bb1b283e134",
+    "report.json": "8ab5a2c97b1b8f308edaf964f9931f0e980cf001ad09450f4f5984d9c9597337",
+    "samples.json": "abc471a8e80747d0d5aec6f86c1053fb5d894c415b4a9886f8a7fbb3e800b5e7"
+  },
+  "original_campaign_seconds": 13.275,
+  "p95_inference_ms": 0.038333,
+  "paid_compute": false,
+  "parent_checkpoint_commit": "f01aa781f5f82b3d32716db5237adfea814a0e36",
+  "partitions": {
+    "development": "20 length-13/14 motifs; unseen rotated orientations and world seeds 3507-3807+",
+    "structural_HELDOUT": "sealed",
+    "training": "unchanged original path motifs lengths 10-12"
+  },
+  "peak_rss_kib": 133260,
+  "per_optimizer_seed": {
+    "619": {
+      "blind": {
+        "correct": 192,
+        "n": 480
+      },
+      "depth": {
+        "correct": 416,
+        "n": 480
+      },
+      "raw": {
+        "correct": 416,
+        "n": 480
+      }
+    },
+    "620": {
+      "blind": {
+        "correct": 192,
+        "n": 480
+      },
+      "depth": {
+        "correct": 416,
+        "n": 480
+      },
+      "raw": {
+        "correct": 416,
+        "n": 480
+      }
+    }
+  },
+  "pinned_branch_head_at_start": "eda72c4b35b450be5b6f4c314dd84758a4068012",
+  "source_sha256": {
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "history_alias_lab.py": "98e41672fe4283e35fa5e2ce32263407d35c5a860d9a04231ebfbcddf9c04fdf",
+    "history_alias_transfer_lab.py": "c6c77b67f46c8a80a9988ed95f38567ad852b7c378ba1bf02ff155d71dd76660",
+    "history_destination_lab.py": "ffadeae9944a7f9ba1122a7351eab71b79cfc745724bb3326cb29a2767137546",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "test_history_alias_transfer_lab.py": "c1380243613fe9a1fe7123c520160008be6b7ddce8abcebb3f50fa0cd3455a45",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "summary": {
+    "blind": {
+      "all": {
+        "actions": {
+          "BACKTRACK": 1520,
+          "STOP": 736
+        },
+        "first_correct": 384,
+        "mean_decisions": 2.35,
+        "n": 960,
+        "reachable": 384,
+        "reached": 224,
+        "unreachable_immediate_stop": 160
+      },
+      "budget_2": {
+        "actions": {
+          "BACKTRACK": 632,
+          "STOP": 256
+        },
+        "first_correct": 64,
+        "mean_decisions": 2.775,
+        "n": 320,
+        "reachable": 64,
+        "reached": 64,
+        "unreachable_immediate_stop": 0
+      },
+      "budget_3": {
+        "actions": {
+          "BACKTRACK": 888,
+          "STOP": 160
+        },
+        "first_correct": 160,
+        "mean_decisions": 3.275,
+        "n": 320,
+        "reachable": 160,
+        "reached": 160,
+        "unreachable_immediate_stop": 0
+      },
+      "budget_4": {
+        "actions": {
+          "STOP": 320
+        },
+        "first_correct": 160,
+        "mean_decisions": 1.0,
+        "n": 320,
+        "reachable": 160,
+        "reached": 0,
+        "unreachable_immediate_stop": 160
+      },
+      "rotation_0": {
+        "actions": {
+          "BACKTRACK": 380,
+          "STOP": 184
+        },
+        "first_correct": 96,
+        "mean_decisions": 2.35,
+        "n": 240,
+        "reachable": 96,
+        "reached": 56,
+        "unreachable_immediate_stop": 40
+      },
+      "rotation_180": {
+        "actions": {
+          "BACKTRACK": 380,
+          "STOP": 184
+        },
+        "first_correct": 96,
+        "mean_decisions": 2.35,
+        "n": 240,
+        "reachable": 96,
+        "reached": 56,
+        "unreachable_immediate_stop": 40
+      },
+      "rotation_270": {
+        "actions": {
+          "BACKTRACK": 380,
+          "STOP": 184
+        },
+        "first_correct": 96,
+        "mean_decisions": 2.35,
+        "n": 240,
+        "reachable": 96,
+        "reached": 56,
+        "unreachable_immediate_stop": 40
+      },
+      "rotation_90": {
+        "actions": {
+          "BACKTRACK": 380,
+          "STOP": 184
+        },
+        "first_correct": 96,
+        "mean_decisions": 2.35,
+        "n": 240,
+        "reachable": 96,
+        "reached": 56,
+        "unreachable_immediate_stop": 40
+      }
+    },
+    "depth": {
+      "all": {
+        "actions": {
+          "BACKTRACK": 1208,
+          "STOP": 576
+        },
+        "first_correct": 832,
+        "mean_decisions": 1.8583,
+        "n": 960,
+        "reachable": 384,
+        "reached": 384,
+        "unreachable_immediate_stop": 448
+      },
+      "budget_2": {
+        "actions": {
+          "BACKTRACK": 312,
+          "STOP": 256
+        },
+        "first_correct": 224,
+        "mean_decisions": 1.775,
+        "n": 320,
+        "reachable": 64,
+        "reached": 64,
+        "unreachable_immediate_stop": 160
+      },
+      "budget_3": {
+        "actions": {
+          "BACKTRACK": 424,
+          "STOP": 160
+        },
+        "first_correct": 304,
+        "mean_decisions": 1.825,
+        "n": 320,
+        "reachable": 160,
+        "reached": 160,
+        "unreachable_immediate_stop": 144
+      },
+      "budget_4": {
+        "actions": {
+          "BACKTRACK": 472,
+          "STOP": 160
+        },
+        "first_correct": 304,
+        "mean_decisions": 1.975,
+        "n": 320,
+        "reachable": 160,
+        "reached": 160,
+        "unreachable_immediate_stop": 144
+      },
+      "rotation_0": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_180": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_270": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_90": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      }
+    },
+    "raw": {
+      "all": {
+        "actions": {
+          "BACKTRACK": 1208,
+          "STOP": 576
+        },
+        "first_correct": 832,
+        "mean_decisions": 1.8583,
+        "n": 960,
+        "reachable": 384,
+        "reached": 384,
+        "unreachable_immediate_stop": 448
+      },
+      "budget_2": {
+        "actions": {
+          "BACKTRACK": 344,
+          "STOP": 256
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.875,
+        "n": 320,
+        "reachable": 64,
+        "reached": 64,
+        "unreachable_immediate_stop": 144
+      },
+      "budget_3": {
+        "actions": {
+          "BACKTRACK": 456,
+          "STOP": 160
+        },
+        "first_correct": 304,
+        "mean_decisions": 1.925,
+        "n": 320,
+        "reachable": 160,
+        "reached": 160,
+        "unreachable_immediate_stop": 144
+      },
+      "budget_4": {
+        "actions": {
+          "BACKTRACK": 408,
+          "STOP": 160
+        },
+        "first_correct": 320,
+        "mean_decisions": 1.775,
+        "n": 320,
+        "reachable": 160,
+        "reached": 160,
+        "unreachable_immediate_stop": 160
+      },
+      "rotation_0": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_180": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_270": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      },
+      "rotation_90": {
+        "actions": {
+          "BACKTRACK": 302,
+          "STOP": 144
+        },
+        "first_correct": 208,
+        "mean_decisions": 1.8583,
+        "n": 240,
+        "reachable": 96,
+        "reached": 96,
+        "unreachable_immediate_stop": 112
+      }
+    }
+  },
+  "trained_new_model": false,
+  "verification": "All episodes source-replayed from restored checkpoints; 36 full probability and synthetic host-receipt transcripts independently replayed.",
+  "version": "history-alias-transfer/1"
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "driv3r/corpus-factory-recovery-v14",
+  "version": "off-policy-recovery-v14",
+  "provenance": "Synthetic deterministic host derived from v13; NOT canonical CyberSand ABI or native receipts",
+  "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "style_seeds": 2,
+  "counts": {
+    "TRAIN": {
+      "episodes": 384,
+      "decisions": 4992,
+      "world_groups": 32,
+      "topologies": 16,
+      "interventions": {
+        "closed_gate_probe": 128,
+        "shutter_reversal": 128,
+        "goal_retarget": 128
+      }
+    },
+    "DEV": {
+      "episodes": 96,
+      "decisions": 1248,
+      "world_groups": 8,
+      "topologies": 4,
+      "interventions": {
+        "closed_gate_probe": 32,
+        "shutter_reversal": 32,
+        "goal_retarget": 32
+      }
+    },
+    "HELDOUT": {
+      "episodes": 144,
+      "decisions": 1872,
+      "world_groups": 12,
+      "topologies": 6,
+      "interventions": {
+        "closed_gate_probe": 48,
+        "shutter_reversal": 48,
+        "goal_retarget": 48
+      }
+    }
+  },
+  "accepted_intervention_moves": 22120,
+  "oracle_recovery_moves": 58544,
+  "rejected_prefix_moves": 208,
+  "protected_entries": 0,
+  "illegal_oracle_moves": 0,
+  "strict_hard_negative_actions": 8128,
+  "tie_optimal_alternates": 0,
+  "grouping": "Inherited v13 topology/world split; all three interventions and counterfactual siblings grouped",
+  "memory_limit": "Long prelude retained but v14 does NOT claim last64 alias or history necessity after interventions",
+  "limitations": [
+    "Scripted error/retarget/shutter intervention; model chooses only subsequent recovery actions",
+    "Synthetic grid/material, no native CyberSand ABI or brush semantics",
+    "Oracle BFS labels, not primary SLM results; correlated recovery decisions by world",
+    "Do not pass IDs, intervention labels, expert, or privileged host to model",
+    "HELDOUT is sealed; use TRAIN for fitting and DEV for selection"
+  ],
+  "generator": "recovery_curriculum_v14.js",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 3099272,
+      "sha256": "c04f5e941008a743e012896f3010ad165bfa519c953ee50c918e78b86ed1fec3",
+      "usage": "TRAIN only"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 4992,
+      "bytes": 25895284,
+      "sha256": "04746c9d3ce7f997e3e4e1037a7810450aceeaed4a7425b91859a16bc64ef5b9",
+      "usage": "TRAIN only"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 826152,
+      "sha256": "386aad49c5d5c9bdf6426ecc3ed19cbb3be2716601dd6118c01276a8ce3737e7",
+      "usage": "evaluation only: never optimize"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 1248,
+      "bytes": 6602628,
+      "sha256": "155458d13954b0ee49fdbdfe30cdfd821ab55ce0444120a13cb1d8f47c7f0869",
+      "usage": "evaluation only: never optimize"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 144,
+      "bytes": 1337304,
+      "sha256": "82f961e21df94a4c835f1ebd8b2d30d9535a6f6be88956a72c57125a03fe119c",
+      "usage": "evaluation only: never optimize"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 1872,
+      "bytes": 10201148,
+      "sha256": "a73b159368cb11c5af076f3503793d3176a73ce309bdf6266944c9980ad9017a",
+      "usage": "evaluation only: never optimize"
+    }
+  },
+  "model_input_contract": "Only observe(host) or decision.model_input; exclude other row and episode fields",
+  "source_git_blob": "8eca20207f6819550e9cb92965a469825d85c563",
+  "test_git_blob": "5699b16820cf2589098a707adb9d05fd04462f7c",
+  "generator_sha256": "edb1d9d702b667d678462720bc6108da4be6187f66f0891b11adcdcbb07f4c19",
+  "test_sha256": "1cef010d5d3de3bf0ba85c006a2ba1b4523d98ac3f1644d95e88d579dbe3a289",
+  "cli_manifest_sha256": "2eabb935f7b71c35a08622161700119e9ea6d2cf469860fdcba36792ffe322ae",
+  "validation": {
+    "standalone_node_22_16": "PASS",
+    "two_independent_cli_generations": "identical JSONL shards and manifest",
+    "generation_seconds": 6.45,
+    "peak_rss_mb_range": [
+      302,
+      309
+    ],
+    "test_seconds": 18.99,
+    "test_peak_rss_mb": 423,
+    "ci": "not yet run; local only"
+  }
+}

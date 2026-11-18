@@ -1,0 +1,277 @@
+{
+  "base_world_families": [
+    "pickets",
+    "ridges",
+    "islands",
+    "zigzag"
+  ],
+  "branch": "research/import-consolidated-worm-labs",
+  "controllers": {
+    "frozen": {
+      "action_counts": {
+        "BACKTRACK": 321,
+        "MOVE_E": 442,
+        "MOVE_N": 624,
+        "MOVE_S": 560,
+        "MOVE_W": 407
+      },
+      "arrivals": 63,
+      "by_motif": {
+        "lattice": {
+          "arrivals": 31,
+          "episodes": 32
+        },
+        "stagger": {
+          "arrivals": 32,
+          "episodes": 32
+        }
+      },
+      "episodes": 64,
+      "mean_actions": 36.781,
+      "median_select_ms": 0.10154
+    },
+    "masked_new": {
+      "action_counts": {
+        "BACKTRACK": 200,
+        "MOVE_E": 1360,
+        "MOVE_N": 1836,
+        "MOVE_S": 144,
+        "MOVE_W": 300
+      },
+      "arrivals": 0,
+      "by_motif": {
+        "lattice": {
+          "arrivals": 0,
+          "episodes": 32
+        },
+        "stagger": {
+          "arrivals": 0,
+          "episodes": 32
+        }
+      },
+      "episodes": 64,
+      "mean_actions": 60,
+      "median_select_ms": 0.096459
+    },
+    "new": {
+      "action_counts": {
+        "BACKTRACK": 417,
+        "MOVE_E": 380,
+        "MOVE_N": 669,
+        "MOVE_S": 608,
+        "MOVE_W": 395,
+        "STOP": 1
+      },
+      "arrivals": 58,
+      "by_motif": {
+        "lattice": {
+          "arrivals": 32,
+          "episodes": 32
+        },
+        "stagger": {
+          "arrivals": 26,
+          "episodes": 32
+        }
+      },
+      "episodes": 64,
+      "mean_actions": 38.594,
+      "median_select_ms": 0.103884
+    },
+    "prefix_oracle": {
+      "action_counts": {
+        "BACKTRACK": 192,
+        "MOVE_E": 288,
+        "MOVE_N": 512,
+        "MOVE_S": 512,
+        "MOVE_W": 288
+      },
+      "arrivals": 64,
+      "by_motif": {
+        "lattice": {
+          "arrivals": 32,
+          "episodes": 32
+        },
+        "stagger": {
+          "arrivals": 32,
+          "episodes": 32
+        }
+      },
+      "episodes": 64,
+      "mean_actions": 28,
+      "median_select_ms": 2.52822
+    }
+  },
+  "dated": "2026-11-18",
+  "development_motifs": [
+    "stagger",
+    "lattice"
+  ],
+  "development_rotations": [
+    1,
+    3
+  ],
+  "episodes": 256,
+  "full_local_evidence_sha256": "830917c24db235e936905f5b1e41dad993fbfbc00cf6628fdcce3ccd545e5a97",
+  "full_local_sha256_manifest_sha256": "bc0d0cb8c6bf3a6f3c1b6ef1642d63664481e70f3412fb22a9cae44f2cf3dc40",
+  "gallery_sha256": "1f6d3b061afa66e6d263b1dca1a2b3dd82397f3069ebd0b2e49a87ef42ad5cb6",
+  "legal_action_receipts_including_preludes": 11480,
+  "limitations": [
+    "Locally modified central 39x39 terrain patch; base World families remain but central original terrain is replaced.",
+    "Two new DEVELOPMENT overlay motifs share construction primitives with TRAIN motifs; this is not sealed structural HELDOUT.",
+    "Oracle solves only backtrack-prefix then empty-cell path class, not native/global optimal planning.",
+    "No native CyberSand paint/actor receipts, model ABI, or real GPU model comparison.",
+    "Checkpoint files are local ZIP payloads pending immutable Actions artifacts.",
+    "All selected seeds are even; motif variation = 0 in both TRAIN and DEVELOPMENT, limiting intra-motif diversity.",
+    "Native-facing 64 logical moves enforced in the synthetic wrapper, not by native host.",
+    "Results across base families are not statistically independent because the central source patch is cleared and replaced."
+  ],
+  "new_source_sha256": {
+    "TOPOLOGY_TRANSFER_TRAJECTORIES_2026-11-18.svg": "1f6d3b061afa66e6d263b1dca1a2b3dd82397f3069ebd0b2e49a87ef42ad5cb6",
+    "test_topology_transfer_lab.py": "83ac19ee0f313c85c21a05c334c07d6314a8c53548c55efaf5852b7922deae6a",
+    "topology_transfer_gallery.py": "0898b8a6e3c3eb3282c9afda1ea9330b651ba69e3614f84a8c4922dd3f1ebdc1"
+  },
+  "only_pr": 1,
+  "optimizer_per_checkpoint": {
+    "actual_training_continuation_cap": 26,
+    "stages": [
+      36,
+      72,
+      128
+    ],
+    "total_adam_steps": 192,
+    "updates_each_stage": 64
+  },
+  "paired_recovery_outcome": {
+    "both": 57,
+    "frozen_only": 6,
+    "neither": 0,
+    "new_only": 1
+  },
+  "per_slice_evaluation_cpu_seconds_sum": 24.392,
+  "per_slice_peak_rss_kib_max": 97552,
+  "recomputed_neural_probability_vectors": 8664,
+  "repository": "techrote/DRIV3R",
+  "restored_checkpoint_sha256": {
+    "711-frozen": {
+      "params": 769,
+      "sha256": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+      "updates": 120
+    },
+    "712-frozen": {
+      "params": 769,
+      "sha256": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3",
+      "updates": 120
+    },
+    "821-topology": {
+      "params": 769,
+      "sha256": "f5365c182e77d8fc308754ad8b26452cafe60db26643419ebc87527101dca733",
+      "updates": 192
+    },
+    "822-topology": {
+      "params": 769,
+      "sha256": "4c215329bb4a327df3482e2e7a0eac97406130df58a9116b167dbd45f9cc543a",
+      "updates": 192
+    }
+  },
+  "schema": "driv3r/long-horizon/topology-transfer-ledger/v1",
+  "sealed_structural_heldout_used": false,
+  "seed_arrivals": {
+    "821": {
+      "frozen": {
+        "arrivals": 31,
+        "episodes": 32
+      },
+      "masked_new": {
+        "arrivals": 0,
+        "episodes": 32
+      },
+      "new": {
+        "arrivals": 30,
+        "episodes": 32
+      },
+      "prefix_oracle": {
+        "arrivals": 32,
+        "episodes": 32
+      }
+    },
+    "822": {
+      "frozen": {
+        "arrivals": 32,
+        "episodes": 32
+      },
+      "masked_new": {
+        "arrivals": 0,
+        "episodes": 32
+      },
+      "new": {
+        "arrivals": 28,
+        "episodes": 32
+      },
+      "prefix_oracle": {
+        "arrivals": 32,
+        "episodes": 32
+      }
+    }
+  },
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "topology_transfer_lab.py": "7e336d9d953c267d6b11f7658c2532f61746c7d1015c4bf23a02191749633e0c",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "starting_observed_remote_head": "b458e765ef342797188f80f9597d311b0d78a4bb",
+  "train_motifs": [
+    "ribs",
+    "shelf"
+  ],
+  "train_rotations": [
+    0,
+    2
+  ],
+  "training_per_seed": {
+    "821": [
+      {
+        "forced_bad_moves": 143,
+        "optimizer_final_loss": 0.35576,
+        "samples": 1664,
+        "stage": 36
+      },
+      {
+        "forced_bad_moves": 148,
+        "optimizer_final_loss": 0.22081,
+        "samples": 1664,
+        "stage": 72
+      },
+      {
+        "forced_bad_moves": 155,
+        "optimizer_final_loss": 0.26188,
+        "samples": 1664,
+        "stage": 128
+      }
+    ],
+    "822": [
+      {
+        "forced_bad_moves": 136,
+        "optimizer_final_loss": 0.30066,
+        "samples": 1664,
+        "stage": 36
+      },
+      {
+        "forced_bad_moves": 139,
+        "optimizer_final_loss": 0.2211,
+        "samples": 1664,
+        "stage": 72
+      },
+      {
+        "forced_bad_moves": 136,
+        "optimizer_final_loss": 0.23736,
+        "samples": 1664,
+        "stage": 128
+      }
+    ]
+  },
+  "world_type": "source-faithful host-legal synthetic overlay; not native acceptance"
+}

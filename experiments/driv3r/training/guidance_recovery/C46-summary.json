@@ -1,0 +1,307 @@
+{
+  "blind": {
+    "C46-ALIGNED": {
+      "mean_oracle_goal_regret": 0.09375,
+      "oracle_selection_accuracy": 0.875,
+      "states": 32
+    },
+    "C46-RANDOM": {
+      "mean_oracle_goal_regret": 0.03125,
+      "oracle_selection_accuracy": 0.0625,
+      "states": 32
+    },
+    "C46-SHUFFLED": {
+      "mean_oracle_goal_regret": 0.09375,
+      "oracle_selection_accuracy": 0.875,
+      "states": 32
+    }
+  },
+  "checkpoints_sha256": {
+    "C46-ALIGNED": "c24b33e50337f60b6464d1b63ed8b9c402c0661d6490de45f679772ebb57e282",
+    "C46-SHUFFLED": "d397f12c88df273e96efc7295b9855152c6ca19036c75b6ca9b2f59bf6b17551"
+  },
+  "graph_counts": {
+    "blind": 16,
+    "online": 48,
+    "train": 64
+  },
+  "guided_episodes_per_policy": 144,
+  "limitations": [
+    "synthetic host fixture; native CyberSand ABI unvalidated",
+    "single episode-start controller selection, no mid-episode adaptation",
+    "counterfactual full-goal labels are hindsight supervision; training on both outcomes is not a deployable oracle",
+    "tie labels choose A0; effect can dominate a small dataset",
+    "correlated cue arms; cluster by graph",
+    "whole-trajectory personality accepted only by descriptive counts, not behavioral equivalence",
+    "no immutable GitHub Actions checkpoint artifact custody"
+  ],
+  "models": {
+    "C18-A0": {
+      "by_family": {
+        "kruskal": 19,
+        "wilson": 15
+      },
+      "condition_regressions_vs_RESET": 4,
+      "goals": 34,
+      "host_rejections": 0,
+      "opposed": 253,
+      "preferred": 313,
+      "unguided_hash_equal": 48
+    },
+    "C34-RESET": {
+      "by_family": {
+        "kruskal": 16,
+        "wilson": 14
+      },
+      "condition_regressions_vs_RESET": 0,
+      "goals": 30,
+      "host_rejections": 0,
+      "opposed": 285,
+      "preferred": 384,
+      "unguided_hash_equal": 48
+    },
+    "C40-PAIR": {
+      "by_family": {
+        "kruskal": 17,
+        "wilson": 13
+      },
+      "condition_regressions_vs_RESET": 3,
+      "goals": 30,
+      "host_rejections": 0,
+      "opposed": 328,
+      "preferred": 430,
+      "unguided_hash_equal": 48
+    },
+    "C46-ALIGNED": {
+      "by_family": {
+        "kruskal": 19,
+        "wilson": 15
+      },
+      "condition_regressions_vs_RESET": 4,
+      "goals": 34,
+      "host_rejections": 0,
+      "opposed": 253,
+      "preferred": 313,
+      "unguided_hash_equal": 48
+    },
+    "C46-RANDOM": {
+      "by_family": {
+        "kruskal": 14,
+        "wilson": 15
+      },
+      "condition_regressions_vs_RESET": 3,
+      "goals": 29,
+      "host_rejections": 0,
+      "opposed": 308,
+      "preferred": 407,
+      "unguided_hash_equal": 48
+    },
+    "C46-SHUFFLED": {
+      "by_family": {
+        "kruskal": 19,
+        "wilson": 15
+      },
+      "condition_regressions_vs_RESET": 4,
+      "goals": 34,
+      "host_rejections": 0,
+      "opposed": 253,
+      "preferred": 313,
+      "unguided_hash_equal": 48
+    }
+  },
+  "online_episode_count": 1152,
+  "paired": {
+    "C46-ALIGNED__C18-A0": {
+      "95pct_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C46-ALIGNED__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -6.0,
+        15.0
+      ],
+      "delta": 4,
+      "negative_graphs": 6,
+      "positive_graphs": 7
+    },
+    "C46-ALIGNED__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -8.0,
+        16.0
+      ],
+      "delta": 4,
+      "negative_graphs": 7,
+      "positive_graphs": 8
+    },
+    "C46-ALIGNED__C46-SHUFFLED": {
+      "95pct_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C46-RANDOM__C18-A0": {
+      "95pct_graph_cluster_bootstrap": [
+        -17.0,
+        6.0
+      ],
+      "delta": -5,
+      "negative_graphs": 7,
+      "positive_graphs": 5
+    },
+    "C46-RANDOM__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -4.0,
+        2.0
+      ],
+      "delta": -1,
+      "negative_graphs": 2,
+      "positive_graphs": 1
+    },
+    "C46-RANDOM__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -5.0,
+        3.0
+      ],
+      "delta": -1,
+      "negative_graphs": 3,
+      "positive_graphs": 2
+    },
+    "C46-RANDOM__C46-SHUFFLED": {
+      "95pct_graph_cluster_bootstrap": [
+        -17.0,
+        6.0
+      ],
+      "delta": -5,
+      "negative_graphs": 7,
+      "positive_graphs": 5
+    },
+    "C46-SHUFFLED__C18-A0": {
+      "95pct_graph_cluster_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "delta": 0,
+      "negative_graphs": 0,
+      "positive_graphs": 0
+    },
+    "C46-SHUFFLED__C34-RESET": {
+      "95pct_graph_cluster_bootstrap": [
+        -6.0,
+        14.0
+      ],
+      "delta": 4,
+      "negative_graphs": 6,
+      "positive_graphs": 7
+    },
+    "C46-SHUFFLED__C40-PAIR": {
+      "95pct_graph_cluster_bootstrap": [
+        -9.0,
+        16.024999999999864
+      ],
+      "delta": 4,
+      "negative_graphs": 7,
+      "positive_graphs": 8
+    }
+  },
+  "schema": "driv3r-c46-goal-paired-arbitration/1",
+  "selected_controllers": {
+    "C18-A0": {
+      "C18-A0": 192,
+      "C34-RESET": 0,
+      "C40-PAIR": 0
+    },
+    "C34-RESET": {
+      "C18-A0": 0,
+      "C34-RESET": 192,
+      "C40-PAIR": 0
+    },
+    "C40-PAIR": {
+      "C18-A0": 0,
+      "C34-RESET": 0,
+      "C40-PAIR": 192
+    },
+    "C46-ALIGNED": {
+      "C18-A0": 192,
+      "C34-RESET": 0,
+      "C40-PAIR": 0
+    },
+    "C46-RANDOM": {
+      "C18-A0": 60,
+      "C34-RESET": 71,
+      "C40-PAIR": 61
+    },
+    "C46-SHUFFLED": {
+      "C18-A0": 192,
+      "C34-RESET": 0,
+      "C40-PAIR": 0
+    }
+  },
+  "source_sha256": "d0af491e69ae47cfa5434533c5b93e2a2513b81a841fd829b696b35eee19fb97",
+  "training": {
+    "aligned": {
+      "epoch_losses": [
+        8.12134,
+        6.467499,
+        6.357261,
+        6.30268,
+        6.150726,
+        6.111204,
+        6.064333,
+        6.043376,
+        6.015335,
+        6.036033,
+        5.99392,
+        6.075847,
+        6.014549,
+        6.008899,
+        5.962431,
+        5.94276,
+        5.950311,
+        5.998303
+      ],
+      "optimizer_updates": 144,
+      "training_accuracy": 0.7109375
+    },
+    "class_counts": [
+      91,
+      16,
+      21
+    ],
+    "graph_clusters": 64,
+    "records": 128,
+    "shuffled": {
+      "epoch_losses": [
+        8.076985,
+        6.534292,
+        6.461054,
+        6.410148,
+        6.360306,
+        6.342263,
+        6.309298,
+        6.294327,
+        6.300458,
+        6.257082,
+        6.237377,
+        6.220418,
+        6.26464,
+        6.184123,
+        6.205403,
+        6.184738,
+        6.196343,
+        6.148704
+      ],
+      "optimizer_updates": 144,
+      "training_accuracy": 0.7109375
+    },
+    "shuffled_sha256": "a5646978268d2d77a4754b24d611055b98442b67cfa70dc01c555b78d2c9fd04",
+    "targets_sha256": "03366f55c204179dc2e1f01fa9d330eaceb32fdbd2be15aeb968f9a9a0c920ca"
+  }
+}

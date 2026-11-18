@@ -1,0 +1,30 @@
+{
+  "archive_only_checkpoints": {
+    "C62-ALIGNED.safetensors": "17ce24e6014d1cfb95b1c641e25fe576647085c40f91ad110d4a0ec616fde47d",
+    "C62-SHUFFLED.safetensors": "0940656683babdc9d894842e968c1b34e6fead392b57f011a8214ca6200d23e0"
+  },
+  "committed_file_sha256": {
+    "C62-equal-budget-remote-transfer-2026-11-18.md": "734065617be72c452c35e890a6152f9b6e968bff07f15f0e532fe81f566e5460",
+    "C62-executed-ledger.zlib.b64": "750712937121aaabccc8ebd6d60715856b42e6c32289b6b7e3f4122716a4d11a",
+    "C62-extract-ledger.py": "809c5aa1dabc523647af4ed89fcf32b132397f7dc3deadf0e5dd805621a89b7d",
+    "C62-gallery.svg": "31c5040f0f6d2023a4885a4705c4c95ddac629657b3827cfd6ea987bbf69f0a2",
+    "C62-summary.json": "82eb985717e3a777782c71c4fd58808d43de3233eb683e8cce1d9724aa7009d9",
+    "c62_balanced_remote_transfer.py": "575871b94ebd55eb06e292f87771ca93a7ad68c3b4f99ca773f21ee2319f5ba7",
+    "c62_gallery.py": "e22061bb099bdb529cc5935e1f7f3a25b9a9af62262e476d0ddd674529c530dd",
+    "c62_independent_replay.py": "23f124999b40a17264d9e761311434cdfae673da728dd05f676c4ed890f365a3",
+    "test_c62_balanced_remote_transfer.py": "8eaab842da1aeba59cd434330327b65b3fbe5230cecafa369964c994d091366c"
+  },
+  "custody": "DRIV3R Draft/HOLD PR #1 only",
+  "independent_cpu_refit": "both checkpoint sha256 byte-identical",
+  "independent_gallery_replay": "18/18 PASS",
+  "known_limits": [
+    "Not native CyberSand acceptance",
+    "Only 16 eligible test topologies",
+    "Never write binaries to git",
+    "GitHub Actions immutable checkpoint custody not yet established"
+  ],
+  "regression_tests": "6/6 PASS",
+  "schema": "driv3r-c62-evidence-receipt/1",
+  "source": "C62 equal-budget CPU synthetic host",
+  "utc_date": "2026-11-18"
+}

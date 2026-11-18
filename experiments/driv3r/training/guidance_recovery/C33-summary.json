@@ -1,0 +1,543 @@
+{
+  "c32_dependency_sha256": "11b8f7bde48a52840a7c882a99738b60b628fc9e5a89ce34dff26fb9906de543",
+  "checkpoint_sha256": "f407881b60515aba159f585cb0480052d633c950260a46d879119e44519a63ac",
+  "cohorts": {
+    "A": {
+      "C18-A0": {
+        "by_family": {
+          "braid": 75,
+          "twigs": 49
+        },
+        "by_scenario": {
+          "lure4": 34,
+          "off-early": 14,
+          "off-mid": 14,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 5,
+          "braid:lure4:backtrack:1.0": 5,
+          "braid:lure4:continue:0.35": 5,
+          "braid:lure4:continue:1.0": 5,
+          "braid:off-early:backtrack:0.35": 2,
+          "braid:off-early:backtrack:1.0": 3,
+          "braid:off-early:continue:0.35": 2,
+          "braid:off-early:continue:1.0": 3,
+          "braid:off-mid:backtrack:0.35": 4,
+          "braid:off-mid:backtrack:1.0": 4,
+          "braid:off-mid:continue:0.35": 3,
+          "braid:off-mid:continue:1.0": 3,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 4,
+          "twigs:lure4:continue:0.35": 3,
+          "twigs:lure4:continue:1.0": 4,
+          "twigs:off-early:backtrack:0.35": 1,
+          "twigs:off-early:backtrack:1.0": 1,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 0,
+          "twigs:off-mid:backtrack:1.0": 0,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 8,
+          "twigs:shortcut:continue:0.35": 7,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 124,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {},
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C32-WATCH": {
+        "by_family": {
+          "braid": 79,
+          "twigs": 59
+        },
+        "by_scenario": {
+          "lure4": 32,
+          "off-early": 20,
+          "off-mid": 24,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 4,
+          "braid:lure4:backtrack:1.0": 5,
+          "braid:lure4:continue:0.35": 5,
+          "braid:lure4:continue:1.0": 5,
+          "braid:off-early:backtrack:0.35": 4,
+          "braid:off-early:backtrack:1.0": 4,
+          "braid:off-early:continue:0.35": 2,
+          "braid:off-early:continue:1.0": 3,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 5,
+          "braid:off-mid:continue:0.35": 3,
+          "braid:off-mid:continue:1.0": 3,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 3,
+          "twigs:lure4:continue:1.0": 4,
+          "twigs:off-early:backtrack:0.35": 3,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 5,
+          "twigs:off-mid:backtrack:1.0": 3,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 8,
+          "twigs:shortcut:continue:0.35": 7,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 138,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1,
+          "twigs:lure4:backtrack:1.0": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C33-FIXED": {
+        "by_family": {
+          "braid": 76,
+          "twigs": 60
+        },
+        "by_scenario": {
+          "lure4": 33,
+          "off-early": 17,
+          "off-mid": 24,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 4,
+          "braid:lure4:backtrack:1.0": 5,
+          "braid:lure4:continue:0.35": 5,
+          "braid:lure4:continue:1.0": 5,
+          "braid:off-early:backtrack:0.35": 2,
+          "braid:off-early:backtrack:1.0": 3,
+          "braid:off-early:continue:0.35": 2,
+          "braid:off-early:continue:1.0": 3,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 5,
+          "braid:off-mid:continue:0.35": 3,
+          "braid:off-mid:continue:1.0": 3,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 4,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 3,
+          "twigs:lure4:continue:1.0": 4,
+          "twigs:off-early:backtrack:0.35": 3,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 5,
+          "twigs:off-mid:backtrack:1.0": 3,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 8,
+          "twigs:shortcut:continue:0.35": 7,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 136,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1,
+          "twigs:lure4:backtrack:1.0": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C33-HEAD": {
+        "by_family": {
+          "braid": 76,
+          "twigs": 60
+        },
+        "by_scenario": {
+          "lure4": 33,
+          "off-early": 17,
+          "off-mid": 24,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 4,
+          "braid:lure4:backtrack:1.0": 5,
+          "braid:lure4:continue:0.35": 5,
+          "braid:lure4:continue:1.0": 5,
+          "braid:off-early:backtrack:0.35": 2,
+          "braid:off-early:backtrack:1.0": 3,
+          "braid:off-early:continue:0.35": 2,
+          "braid:off-early:continue:1.0": 3,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 5,
+          "braid:off-mid:continue:0.35": 3,
+          "braid:off-mid:continue:1.0": 3,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 4,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 3,
+          "twigs:lure4:continue:1.0": 4,
+          "twigs:off-early:backtrack:0.35": 3,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 5,
+          "twigs:off-mid:backtrack:1.0": 3,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 8,
+          "twigs:shortcut:continue:0.35": 7,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 136,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1,
+          "twigs:lure4:backtrack:1.0": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      }
+    },
+    "B": {
+      "C18-A0": {
+        "by_family": {
+          "braid": 82,
+          "twigs": 45
+        },
+        "by_scenario": {
+          "lure4": 25,
+          "off-early": 21,
+          "off-mid": 20,
+          "shortcut": 61
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 4,
+          "braid:lure4:backtrack:1.0": 4,
+          "braid:lure4:continue:0.35": 3,
+          "braid:lure4:continue:1.0": 3,
+          "braid:off-early:backtrack:0.35": 6,
+          "braid:off-early:backtrack:1.0": 6,
+          "braid:off-early:continue:0.35": 3,
+          "braid:off-early:continue:1.0": 2,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 5,
+          "braid:off-mid:continue:0.35": 5,
+          "braid:off-mid:continue:1.0": 5,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 2,
+          "twigs:lure4:continue:1.0": 3,
+          "twigs:off-early:backtrack:0.35": 1,
+          "twigs:off-early:backtrack:1.0": 1,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 0,
+          "twigs:off-mid:backtrack:1.0": 0,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 6,
+          "twigs:shortcut:continue:0.35": 8,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 127,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {},
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C32-WATCH": {
+        "by_family": {
+          "braid": 83,
+          "twigs": 52
+        },
+        "by_scenario": {
+          "lure4": 23,
+          "off-early": 25,
+          "off-mid": 25,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 3,
+          "braid:lure4:backtrack:1.0": 3,
+          "braid:lure4:continue:0.35": 3,
+          "braid:lure4:continue:1.0": 3,
+          "braid:off-early:backtrack:0.35": 8,
+          "braid:off-early:backtrack:1.0": 6,
+          "braid:off-early:continue:0.35": 3,
+          "braid:off-early:continue:1.0": 2,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 6,
+          "braid:off-mid:continue:0.35": 5,
+          "braid:off-mid:continue:1.0": 5,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 2,
+          "twigs:lure4:continue:1.0": 3,
+          "twigs:off-early:backtrack:0.35": 2,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 2,
+          "twigs:off-mid:backtrack:1.0": 2,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 7,
+          "twigs:shortcut:continue:0.35": 8,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 135,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1,
+          "braid:lure4:backtrack:1.0": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C33-FIXED": {
+        "by_family": {
+          "braid": 84,
+          "twigs": 52
+        },
+        "by_scenario": {
+          "lure4": 24,
+          "off-early": 25,
+          "off-mid": 25,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 3,
+          "braid:lure4:backtrack:1.0": 4,
+          "braid:lure4:continue:0.35": 3,
+          "braid:lure4:continue:1.0": 3,
+          "braid:off-early:backtrack:0.35": 8,
+          "braid:off-early:backtrack:1.0": 6,
+          "braid:off-early:continue:0.35": 3,
+          "braid:off-early:continue:1.0": 2,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 6,
+          "braid:off-mid:continue:0.35": 5,
+          "braid:off-mid:continue:1.0": 5,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 2,
+          "twigs:lure4:continue:1.0": 3,
+          "twigs:off-early:backtrack:0.35": 2,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 2,
+          "twigs:off-mid:backtrack:1.0": 2,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 7,
+          "twigs:shortcut:continue:0.35": 8,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 136,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      },
+      "C33-HEAD": {
+        "by_family": {
+          "braid": 84,
+          "twigs": 52
+        },
+        "by_scenario": {
+          "lure4": 24,
+          "off-early": 25,
+          "off-mid": 25,
+          "shortcut": 62
+        },
+        "groups": {
+          "braid:lure4:backtrack:0.35": 3,
+          "braid:lure4:backtrack:1.0": 4,
+          "braid:lure4:continue:0.35": 3,
+          "braid:lure4:continue:1.0": 3,
+          "braid:off-early:backtrack:0.35": 8,
+          "braid:off-early:backtrack:1.0": 6,
+          "braid:off-early:continue:0.35": 3,
+          "braid:off-early:continue:1.0": 2,
+          "braid:off-mid:backtrack:0.35": 5,
+          "braid:off-mid:backtrack:1.0": 6,
+          "braid:off-mid:continue:0.35": 5,
+          "braid:off-mid:continue:1.0": 5,
+          "braid:shortcut:backtrack:0.35": 8,
+          "braid:shortcut:backtrack:1.0": 8,
+          "braid:shortcut:continue:0.35": 7,
+          "braid:shortcut:continue:1.0": 8,
+          "twigs:lure4:backtrack:0.35": 3,
+          "twigs:lure4:backtrack:1.0": 3,
+          "twigs:lure4:continue:0.35": 2,
+          "twigs:lure4:continue:1.0": 3,
+          "twigs:off-early:backtrack:0.35": 2,
+          "twigs:off-early:backtrack:1.0": 2,
+          "twigs:off-early:continue:0.35": 1,
+          "twigs:off-early:continue:1.0": 1,
+          "twigs:off-mid:backtrack:0.35": 2,
+          "twigs:off-mid:backtrack:1.0": 2,
+          "twigs:off-mid:continue:0.35": 0,
+          "twigs:off-mid:continue:1.0": 0,
+          "twigs:shortcut:backtrack:0.35": 8,
+          "twigs:shortcut:backtrack:1.0": 7,
+          "twigs:shortcut:continue:0.35": 8,
+          "twigs:shortcut:continue:1.0": 8
+        },
+        "guided_count": 256,
+        "guided_success": 136,
+        "host_rejections": 0,
+        "illegal_top1": 0,
+        "rank_changes": 0,
+        "regression_groups": {
+          "braid:lure4:backtrack:0.35": 1
+        },
+        "unguided_identical": 64,
+        "unguided_total": 64
+      }
+    }
+  },
+  "distinct_topologies": {
+    "A": {
+      "added_max": 35,
+      "added_min": 5,
+      "braid": 32,
+      "count": 64,
+      "junction_max": 45,
+      "junction_min": 2,
+      "twigs": 32
+    },
+    "B": {
+      "added_max": 36,
+      "added_min": 6,
+      "braid": 32,
+      "count": 64,
+      "junction_max": 48,
+      "junction_min": 4,
+      "twigs": 32
+    }
+  },
+  "execution": {
+    "arms": [
+      0.35,
+      1.0
+    ],
+    "cohorts": 2,
+    "directives": [
+      "none",
+      "backtrack",
+      "continue"
+    ],
+    "external_repository_writes": 0,
+    "hint_strengths": [
+      0.35,
+      1.0
+    ],
+    "horizon": 125,
+    "n": 2,
+    "qualification": "RESEARCH_ONLY_REJECT",
+    "scenarios": [
+      "off-early",
+      "off-mid",
+      "shortcut",
+      "lure4"
+    ],
+    "scene_families": [
+      "twigs",
+      "braid"
+    ]
+  },
+  "fit": {
+    "data_sha256": "0e96f92920e1c99ddd7d63e89c74d6f551d4f0d86480c97c255b9ca114722487",
+    "examples": 462,
+    "losses": [
+      3.21583,
+      2.393244,
+      2.386582,
+      2.258128,
+      2.240418,
+      2.221872,
+      2.233049,
+      2.218107,
+      2.233082,
+      2.195328,
+      2.157932,
+      2.218171
+    ],
+    "positive_returns": 246,
+    "train_mae": 0.5448475480079651,
+    "updates": 120
+  },
+  "gallery_source_sha256": "5bb20952c29d7484fdab6969525b404945a63994c94f2ef9dec834ffe7b60f1a",
+  "head_equals_fixed": {
+    "A": {
+      "same_actions": 320,
+      "total": 320
+    },
+    "B": {
+      "same_actions": 320,
+      "total": 320
+    }
+  },
+  "schema": "driv3r-c33-irregular-branches/1",
+  "source_sha256": "9471b5f186f53f2f66fe3f4c0c829d4b5ba0cd1364bdbcc8c0cd6d1d2af76cc1",
+  "test_sha256": "92e152efa2a995ebb14dbbc66aacaaeeb53fda657b9b127717d57a22b6c296e8"
+}

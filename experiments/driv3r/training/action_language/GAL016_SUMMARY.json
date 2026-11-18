@@ -1,0 +1,98 @@
+{
+  "schema": "gal-016-evidence-summary/1",
+  "created_at": "2026-11-16",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "synthetic_only": true,
+  "optimizer_updates": 0,
+  "evaluation": {
+    "episodes": 512,
+    "seed_start": 2640000,
+    "seed_end": 2640007,
+    "topologies": [
+      "path",
+      "tree",
+      "comb",
+      "deep_tree"
+    ],
+    "targets": [
+      48,
+      64
+    ],
+    "memory_cells": [
+      81,
+      161,
+      321,
+      null
+    ],
+    "conditions": [
+      "static",
+      "pulse"
+    ],
+    "completion_by_condition": {
+      "static": {
+        "81": 25,
+        "161": 35,
+        "321": 58,
+        "unlimited": 64
+      },
+      "pulse": {
+        "81": 24,
+        "161": 33,
+        "321": 51,
+        "unlimited": 57
+      }
+    },
+    "denominator_per_cell": 64
+  },
+  "uncertainty": {
+    "seed_cluster_bootstrap_samples": 5000,
+    "seed_clusters": 8,
+    "static_unlimited_minus_81": {
+      "delta": 0.60938,
+      "ci95": [
+        0.5625,
+        0.65625
+      ]
+    },
+    "pulse_unlimited_minus_81": {
+      "delta": 0.51562,
+      "ci95": [
+        0.4375,
+        0.59375
+      ]
+    },
+    "pulse_minus_static_unlimited": {
+      "delta": -0.10938,
+      "ci95": [
+        -0.125,
+        -0.07812
+      ]
+    }
+  },
+  "qualification": {
+    "unit_tests_passed": 5,
+    "unit_tests_total": 5,
+    "episode_rows_reproduced": 512,
+    "independent_host_receipt_replays": 512,
+    "mismatches": 0,
+    "protected_write_violations": 0,
+    "resident_slm_processes": 0,
+    "native_receipts": 0
+  },
+  "hashes": {
+    "frozen_GAL011_sha256": "97f88f0349de134c3c430997f998a8534d1a2b62e372ba81970f85e12baf61d1",
+    "trained_GAL015_sha256": "5a158ec70292813b3b3d881f544c5bf7135f89825f7d695e17eeacabe699b94d",
+    "original_episodes_sha256": "af989e150d6e15dd4fd9e6b902f47d502c75b2466504c85db62deb6be6bc51dd",
+    "original_receipt_gallery_sha256": "75385a6affcbd4eba655544eb34fae93d2d1b6df4981c287c1cc4d7bdd1d5d6e",
+    "original_metrics_sha256": "aec0bb16169cd9aaab6a78b792f055450e93f4c7e24a589c24ef3eb6b35b36ba",
+    "original_svg_sha256": "3c0aa24a984e78861284e983d93e5e4159464ccb0a9abadfb7880860b506d7da"
+  },
+  "limitations": [
+    "Checkpoint binaries external; immutable Actions publication unqualified",
+    "Host pulse timing fixed; not adversarial distribution",
+    "Proxy model-call numbers confounded by early exits",
+    "No native Workbench, W0, real SLM inference or artistic evaluation"
+  ]
+}

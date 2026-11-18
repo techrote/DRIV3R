@@ -1,0 +1,117 @@
+{
+  "schema": "driv3r/corpus_factory/trainer-safe-v35/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "trainer_safe_export_v35.js",
+  "generator_sha256": "0a75be558e33592cf886e9b5855bb04594c194a4b2bb827b6f2eb0d5960299c8",
+  "parent_manifest_sha256": "a67d853311681e0db8004c6a2a7b3769a11d763ca17d5d6b8b9c0f3806ff74f3",
+  "parent_generator": "compound_intervention_v34.js",
+  "parent_generator_sha256": "8bc27d89d6950858b5b3205b42acf9f010443176ef7498afb0563a71c516fe51",
+  "parent_shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 768,
+      "bytes": 18177232,
+      "sha256": "b73c989cc4fc216c6d3c748b678187f0ea8350e72d254959134de273ad9275e5"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 23008,
+      "bytes": 56395912,
+      "sha256": "7321b6fa17d3cbadfe57a69c7c1e462e55c047b7ff52dce5a006555b07305b69"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 10810464,
+      "sha256": "3c3a84c5bce4374058ddcc84606efba74c106c3f92bd9e13ab3312a5d9a28203"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 19136,
+      "bytes": 55559464,
+      "sha256": "33d8652130b21b1f19e00c0bbbb209bededaffb24021c449287a9859fa9dd9a9"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 12343584,
+      "sha256": "d56fd254f70a6d49ba0c33ea3b8b0608fcdb66db9801d0d31e85b2724cfc4f4e"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 25856,
+      "bytes": 86305280,
+      "sha256": "c853a6bb21f570a99fa7859a37715c61740a648072d215e338c1c405d4f5ab30"
+    }
+  },
+  "source_note": "v34 off-policy, host-accepted recovery; v35 preserves scenarios/labels but removes teacher-only source metadata from trainer-facing rows",
+  "model_input_contract": "Only JSON row.input is presented to the model; row.action is the supervised label; row.weight is loss weight (zero means exclude). Never concatenate entire row as a prompt.",
+  "challenge_contract": "DEV and HELDOUT memory_challenge contain 4-way first-action contexts, full bounded input and a historyless ablation with durable receipts removed. Run only as offline labeled first-step tests; not autonomous closed-loop evaluation.",
+  "non_goals": [
+    "Not a new geometry grammar or independent target SLM training",
+    "Not native CyberSand ABI or native gameplay",
+    "Not evidence of SLM memory or autonomous policy competence"
+  ],
+  "splits": {
+    "TRAIN": {
+      "episodes": 768,
+      "geometry_groups": 16,
+      "decisions": 23008,
+      "nonzero_training_decisions": 17440,
+      "zero_weight_decisions": 5568,
+      "repeated_bounded_inputs": 5568,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 256,
+      "qualified_clean_four_way_families": 64
+    },
+    "DEV": {
+      "episodes": 384,
+      "geometry_groups": 8,
+      "decisions": 19136,
+      "nonzero_training_decisions": 19008,
+      "zero_weight_decisions": 128,
+      "repeated_bounded_inputs": 5344,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 128,
+      "qualified_clean_four_way_families": 32,
+      "memory_challenge_rows": 128,
+      "historyless_theoretical_best_accuracy": 0.25,
+      "memory_challenge_distinct_contexts": 32
+    },
+    "HELDOUT": {
+      "episodes": 384,
+      "geometry_groups": 8,
+      "decisions": 25856,
+      "nonzero_training_decisions": 25728,
+      "zero_weight_decisions": 128,
+      "repeated_bounded_inputs": 7584,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 128,
+      "qualified_clean_four_way_families": 32,
+      "memory_challenge_rows": 128,
+      "historyless_theoretical_best_accuracy": 0.25,
+      "memory_challenge_distinct_contexts": 32
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 23008,
+      "bytes": 27064040,
+      "sha256": "a977b870f97fa7f71d73c547a212c48325d77529e3a65b8bfeae85ae71e6889e"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 19136,
+      "bytes": 31347464,
+      "sha256": "93f553f3c68781a769aae83474fc113a8307e76058ca21cd843a53f2ce506e96"
+    },
+    "DEV_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 409952,
+      "sha256": "2ced1192fee17f0ce0754434f815b1e0fa348f1c1f3f05bb16a807de71822dbd"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 25856,
+      "bytes": 53562528,
+      "sha256": "c4237c997042dc8b09b5edbb3c27b9ce843506d7ced7f31265a204f8fb35c475"
+    },
+    "HELDOUT_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 521568,
+      "sha256": "24830292471f93b36be18d81157abf01050809d956b8e7166c6974f62a84c170"
+    }
+  }
+}

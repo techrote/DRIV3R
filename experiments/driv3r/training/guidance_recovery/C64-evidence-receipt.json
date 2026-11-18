@@ -1,0 +1,43 @@
+{
+  "checkpoint_custody": "local owner archive only; not Actions artifact",
+  "checkpoint_sha256": {
+    "C64-ALIGNED": "a2e95c29d2ff2ffb77472f3c961469f4ad7d096f10bac02faa9d540109275735",
+    "C64-SHUFFLED": "bbd756290b273302dc521705f31ced999f910de93d0a0397cfbfbe25b6c60e82"
+  },
+  "files": {
+    "C64-delayed-frontier-credit-2026-11-18.md": {
+      "bytes": 6006,
+      "sha256": "0a226ab873a4518d31ec7969c97a5d5a4fe30dd1119aa2b0dc3dee30f8280b21"
+    },
+    "C64-executed-ledger.zlib.b64": {
+      "bytes": 44109,
+      "sha256": "83ab79dda76e7ce2d77900d2ceb5b1581e700eb7e2445df73667e6b9fc4ca2be"
+    },
+    "C64-extract-ledger.py": {
+      "bytes": 688,
+      "sha256": "6d912aa4ca7dcbd3172bfbbe12ab19a0254a1bb6b51d0131560b94b9d653bf38"
+    },
+    "C64-gallery.svg": {
+      "bytes": 26154,
+      "sha256": "fcf430b9bbedec6264c75c6c67f15518d679e099d2ede2a4eeaabfe3ecc02027"
+    },
+    "C64-summary.json": {
+      "bytes": 32591,
+      "sha256": "67b71413badceee12349742ea549e049324e2bea1e09ee5313d867a31a078949"
+    },
+    "c64_delayed_frontier_credit.py": {
+      "bytes": 14502,
+      "sha256": "7584050f2ee3010e39857f41b36b71ecdebabad8de644a6e3ccdc8e11b597966"
+    },
+    "c64_gallery.py": {
+      "bytes": 2655,
+      "sha256": "afb5823e77b4c4891086f8d28224014980745eb92c0336238a9f0541c47cf3ba"
+    },
+    "test_c64_delayed_frontier_credit.py": {
+      "bytes": 3408,
+      "sha256": "576e13c09457a12bfa85cff35763a4b748215b51079cde52e38b4a78c7ada513"
+    }
+  },
+  "schema": "driv3r-c64-publication-receipt/1",
+  "source_commit_required": "current PR #1 HEAD; no external repository mutation"
+}

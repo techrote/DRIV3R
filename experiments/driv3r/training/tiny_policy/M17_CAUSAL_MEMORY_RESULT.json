@@ -1,0 +1,2782 @@
+{
+  "protocol": "M17-JS-CAUSAL-MAP-2026-11-16",
+  "syntheticOnly": true,
+  "caveat": "Exploratory 20x20 toy world, two-dimensional navigation and host-projected reachable targets; NOT CyberSand ABI, pretrained LLM adaptation, native gameplay or sealed FINAL",
+  "headDetails": {
+    "local-linear": {
+      "adamwSteps": 240,
+      "trainExamples": 7480,
+      "devAccuracy": 0.8483,
+      "loss": 0.5934,
+      "parameters": 460,
+      "noncryptographicWeightFingerprint": "cc59821d"
+    },
+    "local-rff": {
+      "adamwSteps": 240,
+      "trainExamples": 7480,
+      "devAccuracy": 0.7778,
+      "loss": 0.4432,
+      "parameters": 205,
+      "noncryptographicWeightFingerprint": "0fe29106"
+    },
+    "graph-linear": {
+      "adamwSteps": 240,
+      "trainExamples": 7480,
+      "devAccuracy": 0.9995,
+      "loss": 0.1202,
+      "parameters": 490,
+      "noncryptographicWeightFingerprint": "2924ab5a"
+    }
+  },
+  "splits": {
+    "train": [
+      201000,
+      201016
+    ],
+    "dev": [
+      202000,
+      202004
+    ],
+    "eval": [
+      203000,
+      203009
+    ]
+  },
+  "trainSamples": 7480,
+  "devSamples": 1899,
+  "evaluatedTrajectories": 216,
+  "legalActionsReplayed": 16750,
+  "summary": {
+    "oracle": {
+      "cells": 65.296,
+      "waypoints": 5.889,
+      "retraces": 5.778,
+      "branches": 1.444,
+      "turns": 70.778
+    },
+    "greedy": {
+      "cells": 12.037,
+      "waypoints": 1.074,
+      "retraces": 68.963,
+      "branches": 0.481,
+      "turns": 80
+    },
+    "novelty": {
+      "cells": 59.778,
+      "waypoints": 0.444,
+      "retraces": 21.222,
+      "branches": 0.444,
+      "turns": 80
+    },
+    "causal-map": {
+      "cells": 66.519,
+      "waypoints": 5.37,
+      "retraces": 8.63,
+      "branches": 1.815,
+      "turns": 74.704
+    },
+    "local-linear": {
+      "cells": 43.741,
+      "waypoints": 0.519,
+      "retraces": 37.259,
+      "branches": 1.222,
+      "turns": 80
+    },
+    "local-rff": {
+      "cells": 33.407,
+      "waypoints": 0.333,
+      "retraces": 47.593,
+      "branches": 0.481,
+      "turns": 80
+    },
+    "graph-linear": {
+      "cells": 65.963,
+      "waypoints": 5.333,
+      "retraces": 9.37,
+      "branches": 1.593,
+      "turns": 74.889
+    },
+    "graph-linear-ablated": {
+      "cells": 48.037,
+      "waypoints": 0.519,
+      "retraces": 32.963,
+      "branches": 1.963,
+      "turns": 80
+    }
+  },
+  "pairedWaypointDiffs": {
+    "causal-map vs greedy": {
+      "delta": 4.296,
+      "cluster95": [
+        3.63,
+        4.852
+      ]
+    },
+    "graph-linear vs local-linear": {
+      "delta": 4.815,
+      "cluster95": [
+        4.37,
+        5.185
+      ]
+    },
+    "graph-linear-ablated vs graph-linear": {
+      "delta": -4.815,
+      "cluster95": [
+        -5.185,
+        -4.37
+      ]
+    },
+    "graph-linear vs causal-map": {
+      "delta": -0.037,
+      "cluster95": [
+        -0.111,
+        0
+      ]
+    }
+  },
+  "rows": [
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 47,
+      "waypoints": 6,
+      "retraces": 16,
+      "branches": 2,
+      "turns": 63,
+      "receiptFNV32": "7cafad5b"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 17,
+      "waypoints": 2,
+      "retraces": 64,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "0f94db40"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 67,
+      "waypoints": 3,
+      "retraces": 14,
+      "branches": 5,
+      "turns": 80,
+      "receiptFNV32": "9c966ef7"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "88e63023"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "e1f8c7cd"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 41,
+      "waypoints": 2,
+      "retraces": 40,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "b4f0fae4"
+    },
+    {
+      "seed": 203000,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "88e63023"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 70,
+      "waypoints": 6,
+      "retraces": 11,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "f3d66ba0"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 12,
+      "waypoints": 1,
+      "retraces": 69,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "7e5e181e"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 79,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "a274eb74"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 14,
+      "waypoints": 0,
+      "retraces": 67,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a76e29d5"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 69,
+      "waypoints": 0,
+      "retraces": 12,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "4c709701"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 79,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "a274eb74"
+    },
+    {
+      "seed": 203000,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 23,
+      "waypoints": 0,
+      "retraces": 58,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "278c1957"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 80,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "175abedc"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 14,
+      "waypoints": 1,
+      "retraces": 67,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "4c2a116a"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 1,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "f4682155"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 72,
+      "waypoints": 4,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "fd4e7163"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 18,
+      "waypoints": 1,
+      "retraces": 63,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "0f20a7ba"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 19,
+      "waypoints": 1,
+      "retraces": 62,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "59b85bed"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 72,
+      "waypoints": 4,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "fd4e7163"
+    },
+    {
+      "seed": 203000,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 17,
+      "waypoints": 1,
+      "retraces": 64,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "cea8a4c8"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 61,
+      "receiptFNV32": "5ed66dea"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 8,
+      "waypoints": 1,
+      "retraces": 73,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "d938d51b"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 69,
+      "waypoints": 0,
+      "retraces": 12,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "5f43655a"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 61,
+      "receiptFNV32": "b74fe42b"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 40,
+      "waypoints": 1,
+      "retraces": 41,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "bfdf3ba1"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 23,
+      "waypoints": 1,
+      "retraces": 58,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "ca4059ee"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 61,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 63,
+      "receiptFNV32": "b5980d84"
+    },
+    {
+      "seed": 203001,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 57,
+      "waypoints": 1,
+      "retraces": 24,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "48c87f6d"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 67,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 69,
+      "receiptFNV32": "36980b72"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 9,
+      "waypoints": 1,
+      "retraces": 72,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "9e1c5f5a"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 69,
+      "waypoints": 0,
+      "retraces": 12,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "5f43655a"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 68,
+      "waypoints": 6,
+      "retraces": 3,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "a2b6b651"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 22,
+      "waypoints": 1,
+      "retraces": 59,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "7e3878a0"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 22,
+      "waypoints": 1,
+      "retraces": 59,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "440be0a6"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 69,
+      "waypoints": 6,
+      "retraces": 3,
+      "branches": 2,
+      "turns": 72,
+      "receiptFNV32": "149f2c28"
+    },
+    {
+      "seed": 203001,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 25,
+      "waypoints": 1,
+      "retraces": 56,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "4cca2283"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 73,
+      "waypoints": 5,
+      "retraces": 8,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "6f34ae24"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 3,
+      "waypoints": 0,
+      "retraces": 78,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "2bb2491d"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 69,
+      "waypoints": 1,
+      "retraces": 12,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "7f5d542d"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 71,
+      "waypoints": 5,
+      "retraces": 10,
+      "branches": 4,
+      "turns": 80,
+      "receiptFNV32": "1aad8e62"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 38,
+      "waypoints": 0,
+      "retraces": 43,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "0f8555be"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 25,
+      "waypoints": 0,
+      "retraces": 56,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "fd93c550"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 76,
+      "waypoints": 5,
+      "retraces": 5,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "8dad0cdb"
+    },
+    {
+      "seed": 203001,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 32,
+      "waypoints": 0,
+      "retraces": 49,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "2c621e65"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 54,
+      "waypoints": 6,
+      "retraces": 5,
+      "branches": 1,
+      "turns": 59,
+      "receiptFNV32": "624020ee"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 17,
+      "waypoints": 2,
+      "retraces": 64,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "62525874"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "729ec961"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 67,
+      "receiptFNV32": "0b22632d"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "280e3864"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 23,
+      "waypoints": 0,
+      "retraces": 58,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "b2f463f6"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 67,
+      "receiptFNV32": "0b22632d"
+    },
+    {
+      "seed": 203002,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 64,
+      "waypoints": 0,
+      "retraces": 17,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "a8e9fd3c"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 71,
+      "waypoints": 6,
+      "retraces": 4,
+      "branches": 2,
+      "turns": 75,
+      "receiptFNV32": "b8c41781"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 7,
+      "waypoints": 0,
+      "retraces": 74,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "ad12eaeb"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "729ec961"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 71,
+      "waypoints": 5,
+      "retraces": 10,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "2d025395"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 44,
+      "waypoints": 0,
+      "retraces": 37,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "3250a18e"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 53,
+      "waypoints": 0,
+      "retraces": 28,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "f9330943"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 71,
+      "waypoints": 5,
+      "retraces": 10,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "2d025395"
+    },
+    {
+      "seed": 203002,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 49,
+      "waypoints": 0,
+      "retraces": 32,
+      "branches": 9,
+      "turns": 80,
+      "receiptFNV32": "a116f561"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 72,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 73,
+      "receiptFNV32": "4637b3f3"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 11,
+      "waypoints": 1,
+      "retraces": 70,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "395eca4c"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 3,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "1cc56ba8"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "5f31c206"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "bb8b8b5e"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 34,
+      "waypoints": 0,
+      "retraces": 47,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a23cd613"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "5f31c206"
+    },
+    {
+      "seed": 203002,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "6062bd58"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 48,
+      "waypoints": 6,
+      "retraces": 7,
+      "branches": 2,
+      "turns": 55,
+      "receiptFNV32": "7212b3b4"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 22,
+      "waypoints": 2,
+      "retraces": 59,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "bfe46ac1"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 63,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 3,
+      "turns": 71,
+      "receiptFNV32": "cec03ca1"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "618f4c9a"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 23,
+      "waypoints": 0,
+      "retraces": 58,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "e97243ce"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 63,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 3,
+      "turns": 71,
+      "receiptFNV32": "cec03ca1"
+    },
+    {
+      "seed": 203003,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "618f4c9a"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 70,
+      "waypoints": 6,
+      "retraces": 11,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "94c2781e"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 46,
+      "waypoints": 4,
+      "retraces": 35,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "20a7aa9b"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 79,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "6deec270"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "618f4c9a"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 69,
+      "waypoints": 0,
+      "retraces": 12,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "584f75dc"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 79,
+      "waypoints": 6,
+      "retraces": 2,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "6deec270"
+    },
+    {
+      "seed": 203003,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "844553eb"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 80,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "d23443f5"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 14,
+      "waypoints": 1,
+      "retraces": 67,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "4c2a116a"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 1,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "f4682155"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 65,
+      "waypoints": 3,
+      "retraces": 16,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "e567be06"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 81,
+      "waypoints": 3,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a95c5e1a"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 25,
+      "waypoints": 1,
+      "retraces": 56,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "9e388f0e"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 65,
+      "waypoints": 3,
+      "retraces": 16,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "e567be06"
+    },
+    {
+      "seed": 203003,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 81,
+      "waypoints": 3,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a95c5e1a"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 57,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 2,
+      "turns": 63,
+      "receiptFNV32": "67cc6984"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 8,
+      "waypoints": 1,
+      "retraces": 73,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "d938d51b"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 64,
+      "waypoints": 0,
+      "retraces": 17,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "68479e21"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 58,
+      "waypoints": 6,
+      "retraces": 5,
+      "branches": 1,
+      "turns": 63,
+      "receiptFNV32": "62d96790"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 22,
+      "waypoints": 1,
+      "retraces": 59,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "96e7dad7"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "d48960bc"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 58,
+      "waypoints": 6,
+      "retraces": 5,
+      "branches": 1,
+      "turns": 63,
+      "receiptFNV32": "62d96790"
+    },
+    {
+      "seed": 203004,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 69,
+      "waypoints": 1,
+      "retraces": 12,
+      "branches": 7,
+      "turns": 80,
+      "receiptFNV32": "2db4dc6e"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 65,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "4f9d570c"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 9,
+      "waypoints": 1,
+      "retraces": 72,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "9e1c5f5a"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 64,
+      "waypoints": 0,
+      "retraces": 17,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "68479e21"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 65,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "f6807815"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 22,
+      "waypoints": 1,
+      "retraces": 59,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "85d8ee1e"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 31,
+      "waypoints": 1,
+      "retraces": 50,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "f31f8344"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 7,
+      "branches": 3,
+      "turns": 73,
+      "receiptFNV32": "74976688"
+    },
+    {
+      "seed": 203004,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 30,
+      "waypoints": 1,
+      "retraces": 51,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "529fce4c"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 77,
+      "waypoints": 5,
+      "retraces": 4,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "50b69d38"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 3,
+      "waypoints": 0,
+      "retraces": 78,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "2bb2491d"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 64,
+      "waypoints": 1,
+      "retraces": 17,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "c036538c"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 69,
+      "waypoints": 5,
+      "retraces": 12,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "62ce5b21"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 50,
+      "waypoints": 0,
+      "retraces": 31,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "aa89a7c9"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "1c0f4696"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 69,
+      "waypoints": 5,
+      "retraces": 12,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "62ce5b21"
+    },
+    {
+      "seed": 203004,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 40,
+      "waypoints": 0,
+      "retraces": 41,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "eb651522"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 50,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 2,
+      "turns": 59,
+      "receiptFNV32": "33989fbd"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 17,
+      "waypoints": 2,
+      "retraces": 64,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "1216dfd2"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "70fc6f61"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 14,
+      "branches": 2,
+      "turns": 73,
+      "receiptFNV32": "a358b00d"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 70,
+      "waypoints": 0,
+      "retraces": 11,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "6089c73b"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 11,
+      "waypoints": 0,
+      "retraces": 70,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "6c676c0a"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 59,
+      "waypoints": 6,
+      "retraces": 14,
+      "branches": 2,
+      "turns": 73,
+      "receiptFNV32": "a358b00d"
+    },
+    {
+      "seed": 203005,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 65,
+      "waypoints": 0,
+      "retraces": 16,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "4baad728"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 71,
+      "waypoints": 6,
+      "retraces": 4,
+      "branches": 2,
+      "turns": 75,
+      "receiptFNV32": "4467e719"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 7,
+      "waypoints": 0,
+      "retraces": 74,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "ad12eaeb"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "70fc6f61"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 73,
+      "waypoints": 5,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "cca7439d"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 66,
+      "waypoints": 0,
+      "retraces": 15,
+      "branches": 4,
+      "turns": 80,
+      "receiptFNV32": "fbb731fb"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 53,
+      "waypoints": 0,
+      "retraces": 28,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "4145d399"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 73,
+      "waypoints": 5,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "cca7439d"
+    },
+    {
+      "seed": 203005,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 59,
+      "waypoints": 0,
+      "retraces": 22,
+      "branches": 8,
+      "turns": 80,
+      "receiptFNV32": "edf43832"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 72,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 73,
+      "receiptFNV32": "df9ec84b"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 11,
+      "waypoints": 1,
+      "retraces": 70,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "395eca4c"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 2,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "faf07e5e"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "8ce81372"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "bb8b8b5e"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 34,
+      "waypoints": 0,
+      "retraces": 47,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a23cd613"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "8ce81372"
+    },
+    {
+      "seed": 203005,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "6062bd58"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 49,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 2,
+      "turns": 55,
+      "receiptFNV32": "b1432f68"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 17,
+      "waypoints": 2,
+      "retraces": 64,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "6a2cff52"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 63,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "b852ba90"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "972c69c3"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 32,
+      "waypoints": 0,
+      "retraces": 49,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "624144e6"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 63,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "b852ba90"
+    },
+    {
+      "seed": 203006,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 72,
+      "waypoints": 0,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "972c69c3"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 71,
+      "waypoints": 5,
+      "retraces": 10,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "9cd0bbdf"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 12,
+      "waypoints": 1,
+      "retraces": 69,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "e4dc974e"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 0,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "812c0dee"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 80,
+      "waypoints": 5,
+      "retraces": 1,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "ef0a7aa8"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 14,
+      "waypoints": 0,
+      "retraces": 67,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a76e29d5"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 69,
+      "waypoints": 0,
+      "retraces": 12,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "c39bc699"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 80,
+      "waypoints": 5,
+      "retraces": 1,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "ef0a7aa8"
+    },
+    {
+      "seed": 203006,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 22,
+      "waypoints": 0,
+      "retraces": 59,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "015ba58f"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 80,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "51ccf674"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 14,
+      "waypoints": 1,
+      "retraces": 67,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "4c2a116a"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 28,
+      "waypoints": 1,
+      "retraces": 53,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "f4682155"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 65,
+      "waypoints": 3,
+      "retraces": 16,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "41e409e6"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 22,
+      "waypoints": 1,
+      "retraces": 59,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "b6e18454"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 20,
+      "waypoints": 1,
+      "retraces": 61,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "185c8bb3"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 65,
+      "waypoints": 3,
+      "retraces": 16,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "41e409e6"
+    },
+    {
+      "seed": 203006,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 17,
+      "waypoints": 1,
+      "retraces": 64,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "cfdc6ecf"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 52,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 2,
+      "turns": 61,
+      "receiptFNV32": "a4cbbff8"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 8,
+      "waypoints": 1,
+      "retraces": 73,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "9d9d5a19"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 78,
+      "waypoints": 0,
+      "retraces": 3,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "ef245ede"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 55,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 1,
+      "turns": 61,
+      "receiptFNV32": "c9284eff"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 48,
+      "waypoints": 1,
+      "retraces": 33,
+      "branches": 4,
+      "turns": 80,
+      "receiptFNV32": "905f7917"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 46,
+      "waypoints": 1,
+      "retraces": 35,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "1220abc5"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 55,
+      "waypoints": 6,
+      "retraces": 6,
+      "branches": 1,
+      "turns": 61,
+      "receiptFNV32": "c9284eff"
+    },
+    {
+      "seed": 203007,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 55,
+      "waypoints": 1,
+      "retraces": 26,
+      "branches": 5,
+      "turns": 80,
+      "receiptFNV32": "80b03d85"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 63,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 71,
+      "receiptFNV32": "2a544172"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 9,
+      "waypoints": 1,
+      "retraces": 72,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "9e1c5f5a"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 78,
+      "waypoints": 0,
+      "retraces": 3,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "ef245ede"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 65,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 73,
+      "receiptFNV32": "87f8c65f"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 10,
+      "waypoints": 1,
+      "retraces": 71,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "cbd0a405"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 10,
+      "waypoints": 1,
+      "retraces": 71,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "cbd0a405"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 65,
+      "waypoints": 6,
+      "retraces": 8,
+      "branches": 2,
+      "turns": 73,
+      "receiptFNV32": "87f8c65f"
+    },
+    {
+      "seed": 203007,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 67,
+      "waypoints": 1,
+      "retraces": 14,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "0135ff30"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 13,
+      "branches": 3,
+      "turns": 79,
+      "receiptFNV32": "d852c7e0"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 6,
+      "waypoints": 0,
+      "retraces": 75,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "31bfb554"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 78,
+      "waypoints": 0,
+      "retraces": 3,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "ef245ede"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 69,
+      "waypoints": 5,
+      "retraces": 12,
+      "branches": 4,
+      "turns": 80,
+      "receiptFNV32": "1ce072f9"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 15,
+      "waypoints": 0,
+      "retraces": 66,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "0fb3943f"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 13,
+      "waypoints": 0,
+      "retraces": 68,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "cffeae09"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 71,
+      "waypoints": 5,
+      "retraces": 10,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "7097ba7c"
+    },
+    {
+      "seed": 203007,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 9,
+      "waypoints": 0,
+      "retraces": 72,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "52e70689"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "oracle",
+      "cells": 56,
+      "waypoints": 6,
+      "retraces": 5,
+      "branches": 1,
+      "turns": 61,
+      "receiptFNV32": "cda3eb20"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "greedy",
+      "cells": 6,
+      "waypoints": 1,
+      "retraces": 75,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "5aba111d"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "73ed843e"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "cells": 57,
+      "waypoints": 6,
+      "retraces": 16,
+      "branches": 3,
+      "turns": 73,
+      "receiptFNV32": "05e2bcb2"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "cells": 58,
+      "waypoints": 0,
+      "retraces": 23,
+      "branches": 3,
+      "turns": 80,
+      "receiptFNV32": "36477b53"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "cells": 23,
+      "waypoints": 0,
+      "retraces": 58,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "1be05cfa"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "cells": 57,
+      "waypoints": 6,
+      "retraces": 16,
+      "branches": 3,
+      "turns": 73,
+      "receiptFNV32": "05e2bcb2"
+    },
+    {
+      "seed": 203008,
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "cells": 64,
+      "waypoints": 0,
+      "retraces": 17,
+      "branches": 2,
+      "turns": 80,
+      "receiptFNV32": "e8dd3ad3"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "oracle",
+      "cells": 71,
+      "waypoints": 6,
+      "retraces": 4,
+      "branches": 2,
+      "turns": 75,
+      "receiptFNV32": "b8c41781"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "greedy",
+      "cells": 7,
+      "waypoints": 0,
+      "retraces": 74,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "ce6cf7f1"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 0,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "73ed843e"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "cells": 67,
+      "waypoints": 6,
+      "retraces": 10,
+      "branches": 1,
+      "turns": 77,
+      "receiptFNV32": "be93733f"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "cells": 71,
+      "waypoints": 0,
+      "retraces": 10,
+      "branches": 4,
+      "turns": 80,
+      "receiptFNV32": "829a52f5"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "cells": 53,
+      "waypoints": 0,
+      "retraces": 28,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "40df36a0"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "cells": 67,
+      "waypoints": 6,
+      "retraces": 10,
+      "branches": 1,
+      "turns": 77,
+      "receiptFNV32": "be93733f"
+    },
+    {
+      "seed": 203008,
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "cells": 59,
+      "waypoints": 0,
+      "retraces": 22,
+      "branches": 5,
+      "turns": 80,
+      "receiptFNV32": "af9ff86d"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "oracle",
+      "cells": 72,
+      "waypoints": 6,
+      "retraces": 1,
+      "branches": 0,
+      "turns": 73,
+      "receiptFNV32": "f70107e5"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "greedy",
+      "cells": 11,
+      "waypoints": 1,
+      "retraces": 70,
+      "branches": 1,
+      "turns": 80,
+      "receiptFNV32": "395eca4c"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "novelty",
+      "cells": 81,
+      "waypoints": 2,
+      "retraces": 0,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "d57f80a7"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "4aaaa776"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "bb8b8b5e"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "cells": 34,
+      "waypoints": 0,
+      "retraces": 47,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "a23cd613"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "cells": 66,
+      "waypoints": 6,
+      "retraces": 9,
+      "branches": 1,
+      "turns": 75,
+      "receiptFNV32": "4aaaa776"
+    },
+    {
+      "seed": 203008,
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "cells": 32,
+      "waypoints": 1,
+      "retraces": 49,
+      "branches": 0,
+      "turns": 80,
+      "receiptFNV32": "6062bd58"
+    }
+  ],
+  "exampleActionSequences": [
+    {
+      "fam": "Greebles",
+      "policy": "oracle",
+      "actions": "333330000001111111111222222222200002111113333333333300000222224",
+      "metrics": {
+        "cells": 47,
+        "waypoints": 6,
+        "retraces": 16,
+        "branches": 2
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "greedy",
+      "actions": "33333000000111111222222220110011001100110011001100110011001100110011001100110011",
+      "metrics": {
+        "cells": 17,
+        "waypoints": 2,
+        "retraces": 64,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "novelty",
+      "actions": "00000021111111120000021111100000101010101010101010101010101010101010101010101010",
+      "metrics": {
+        "cells": 28,
+        "waypoints": 0,
+        "retraces": 53,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "causal-map",
+      "actions": "33333000000211112222222111300003002222211003333333111111033311112222222220000211",
+      "metrics": {
+        "cells": 67,
+        "waypoints": 3,
+        "retraces": 14,
+        "branches": 5
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "local-linear",
+      "actions": "33330000000022222222222211111111111111133333333333333300000000000000022222222222",
+      "metrics": {
+        "cells": 72,
+        "waypoints": 0,
+        "retraces": 9,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "local-rff",
+      "actions": "33330000000101010101010101010101022132222233323232323232323232322222221111001100",
+      "metrics": {
+        "cells": 28,
+        "waypoints": 0,
+        "retraces": 53,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "graph-linear",
+      "actions": "33333000000211112222222111300003002222211003332233223322332233223322332233223322",
+      "metrics": {
+        "cells": 41,
+        "waypoints": 2,
+        "retraces": 40,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Greebles",
+      "policy": "graph-linear-ablated",
+      "actions": "33330000000022222222222211111111111111133333333333333300000000000000022222222222",
+      "metrics": {
+        "cells": 72,
+        "waypoints": 0,
+        "retraces": 9,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "oracle",
+      "actions": "33333000000200332222222222222211111111111111133333333333333300000000002211122222",
+      "metrics": {
+        "cells": 70,
+        "waypoints": 6,
+        "retraces": 11,
+        "branches": 2
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "greedy",
+      "actions": "33333000000101010101010101010101010101010101010101010101010101010101010101010101",
+      "metrics": {
+        "cells": 12,
+        "waypoints": 1,
+        "retraces": 69,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "novelty",
+      "actions": "00000021111111120000021111100000101010101010101010101010101010101010101010101010",
+      "metrics": {
+        "cells": 28,
+        "waypoints": 0,
+        "retraces": 53,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "causal-map",
+      "actions": "33333000003300022222222222222211111111111111133333333333333300000000002221222211",
+      "metrics": {
+        "cells": 79,
+        "waypoints": 6,
+        "retraces": 2,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "local-linear",
+      "actions": "33330000003132323232323232323232323232323232323232323232323232323232323232323232",
+      "metrics": {
+        "cells": 14,
+        "waypoints": 0,
+        "retraces": 67,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "local-rff",
+      "actions": "33330000000022222222222211111111111111133333333333333300000000000000111111111111",
+      "metrics": {
+        "cells": 69,
+        "waypoints": 0,
+        "retraces": 12,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "graph-linear",
+      "actions": "33333000003300022222222222222211111111111111133333333333333300000000002221222211",
+      "metrics": {
+        "cells": 79,
+        "waypoints": 6,
+        "retraces": 2,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Pipework",
+      "policy": "graph-linear-ablated",
+      "actions": "30000002222221111200003333322332233223322332233223322332233223322332233223322332",
+      "metrics": {
+        "cells": 23,
+        "waypoints": 0,
+        "retraces": 58,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "oracle",
+      "actions": "00000033002222222222111111111111111333333333333333000000000000000222111111112222",
+      "metrics": {
+        "cells": 80,
+        "waypoints": 6,
+        "retraces": 1,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "greedy",
+      "actions": "00000022222210101010101010101010101010101010101010101010101010101010101010101010",
+      "metrics": {
+        "cells": 14,
+        "waypoints": 1,
+        "retraces": 67,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "novelty",
+      "actions": "00000021111111120000021111100000101010101010101010101010101010101010101010101010",
+      "metrics": {
+        "cells": 28,
+        "waypoints": 1,
+        "retraces": 53,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "causal-map",
+      "actions": "00000022222211100033333333002222222222111111111111111333333333333333000000000000",
+      "metrics": {
+        "cells": 72,
+        "waypoints": 4,
+        "retraces": 9,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "local-linear",
+      "actions": "00000022222111100002103210321032103210321032103210321032103210321032103210321032",
+      "metrics": {
+        "cells": 18,
+        "waypoints": 1,
+        "retraces": 63,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "local-rff",
+      "actions": "30000002222222111100001111000011110000111100001111000011110000111100001111000011",
+      "metrics": {
+        "cells": 19,
+        "waypoints": 1,
+        "retraces": 62,
+        "branches": 0
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "graph-linear",
+      "actions": "00000022222211100033333333002222222222111111111111111333333333333333000000000000",
+      "metrics": {
+        "cells": 72,
+        "waypoints": 4,
+        "retraces": 9,
+        "branches": 1
+      }
+    },
+    {
+      "fam": "Architecture",
+      "policy": "graph-linear-ablated",
+      "actions": "00000022222210101010101010101010101010101010101010101010101010101010101011110000",
+      "metrics": {
+        "cells": 17,
+        "waypoints": 1,
+        "retraces": 64,
+        "branches": 0
+      }
+    }
+  ],
+  "scientificBoundary": "Direct action hint is generated by persistent causal graph; graph-linear is a student of a strong deterministic planner, not independent planning. No checkpoints committed."
+}

@@ -1,0 +1,111 @@
+{
+  "experiment": "BUDGET-ORDER-001",
+  "date_utc": "2026-11-18",
+  "original": "BUDGET-CALIBRATION-001",
+  "archive_sha256": "06573cd6d9502f7e132b3b3effd16a9c74dff2654f5668c692c9c9407906c2f9",
+  "episodes_sha256": "e38b26ae35394f051fdc08be547821012f89d62ce9ddc0bebc80d18588a71f33",
+  "checkpoint_sha256": {
+    "731-budget_blind.npz": "43436dbd3dd081037e89bd63e823170fcfdc100eacef2f96e1cf60e8974f5d0d",
+    "731-calibrated.npz": "466ccd8581e3fce3340d665d94fe132c2230ebd15720e2bc7e672100aa48523c",
+    "731-fixed3.npz": "edb8a140a5ba5b2f8da05ef27c49f5bc26892bc39e1503f65f0b3be193c76165",
+    "732-budget_blind.npz": "419088d81e7fb3fc425ea8fa2e678815c00ef8e7fcdddbf2add57bb124666921",
+    "732-calibrated.npz": "97b0d66364ad4e26b3541626d0073273bd05741723ff18b9fde59582f9fb6195",
+    "732-fixed3.npz": "322a0b1c6ef553f0a77301bdaa0a842550d202fadfc7b140cb96c51ba0843c30"
+  },
+  "episodes": 2880,
+  "sampled_probability_receipts": 342,
+  "paired_triads_per_arm": 320,
+  "inversions": {
+    "calibrated": 0,
+    "fixed3": 100,
+    "budget_blind": 0
+  },
+  "fixed3_inversions_1_to_3": 44,
+  "fixed3_inversions_3_to_5": 56,
+  "backtrack_by_budgets_1_3_5": {
+    "calibrated": [
+      40,
+      151,
+      180
+    ],
+    "fixed3": [
+      220,
+      176,
+      120
+    ],
+    "budget_blind": [
+      56,
+      160,
+      187
+    ]
+  },
+  "correct_by_budgets_1_3_5": {
+    "calibrated": [
+      256,
+      295,
+      300
+    ],
+    "fixed3": [
+      204,
+      304,
+      272
+    ],
+    "budget_blind": [
+      272,
+      304,
+      301
+    ]
+  },
+  "futile_retreat_budget1": {
+    "calibrated": 0,
+    "fixed3": 116,
+    "budget_blind": 0
+  },
+  "sampled_wrong_choice_confidence_mean": {
+    "calibrated": 0.673749,
+    "fixed3": 0.850693,
+    "budget_blind": 0.637106
+  },
+  "sampled_wrong_choice_confidence_max": {
+    "calibrated": 0.869954,
+    "fixed3": 0.999979,
+    "budget_blind": 0.791069
+  },
+  "original_cpu_wall_s": 13.959,
+  "original_peak_rss_kib": 168080,
+  "original_model_only_latency_ms": {
+    "median": 0.023014,
+    "p95": 0.03196
+  },
+  "first_witness": {
+    "case": "846f9c61bf458b6b418cf7efbf14a7616141164a4909d92bf4a18f8e4cd7fe68",
+    "rotation": 0,
+    "seed": 731,
+    "kind": "former_negative",
+    "budget_1_3_5_choices": [
+      "BACKTRACK",
+      "STOP",
+      "STOP"
+    ],
+    "oracle": [
+      "STOP",
+      "STOP",
+      "STOP"
+    ],
+    "state_sha256": [
+      "bda481b48ecc6a146043aa3ca5da73532e01f2f154554f56851c49e8a02feb90",
+      "9facdf7c5ed49ef274c9c3d4318b015c14e799c5154086510fb27808971c8a34",
+      "63d88b4ca3d07137e65077a8ce7635a92039eb088d3a8c4e9823cb2814af2624"
+    ]
+  },
+  "caveats": [
+    "Not a pure causal budget intervention: detour and painted prehistory vary",
+    "STOP is a synthetic task label",
+    "Sampled probabilities nonrandom",
+    "Original artifact not in Actions",
+    "No new optimizer or HELDOUT"
+  ],
+  "new_optimizer_updates": 0,
+  "native_execution": false,
+  "heldout_opened": false
+}

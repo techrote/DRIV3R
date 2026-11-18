@@ -1,0 +1,166 @@
+{
+  "schema": "driv3r/corpus_factory/remote-error-alias-v28/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "remote_error_alias_v28.js",
+  "generator_sha256": "c94a1f563193ca1edc78555a2a2b20eab06732cf28e196b1effe450214b811fb",
+  "dependencies": [
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "oracle": "v26 exhaustive reverse BFS; action labels minimal successful terminal suffix",
+  "quick": false,
+  "paired_counterfactual": true,
+  "invariant": "Within each pair current public state, first public map, and last 64 event/position receipts are identical, whereas the remotely damaged target and optimal first action differ with regret >=2.",
+  "caution": "Intervention, mode, pair ID, difficulty, target location, split and oracle cost are metadata ONLY and must never be passed into model observation. All prelabel actions scripted; postlabel actions oracle, NOT model rollouts.",
+  "split_worlds_disjoint": true,
+  "canonical_CyberSand_ABI_verified": false,
+  "slm_training_or_inference_done": false,
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "worlds_considered": 64,
+      "pairs": 59,
+      "missing_strict_worlds": [
+        {
+          "g": 1,
+          "v": 2
+        },
+        {
+          "g": 1,
+          "v": 3
+        },
+        {
+          "g": 4,
+          "v": 2
+        },
+        {
+          "g": 5,
+          "v": 2
+        },
+        {
+          "g": 7,
+          "v": 2
+        }
+      ],
+      "episodes": 118,
+      "decisions": 2226,
+      "exact_duplicates": 296,
+      "zero_weight": 296,
+      "first_action_distribution": {
+        "BACKTRACK": 59,
+        "MOVE_E": 32,
+        "MOVE_S": 24,
+        "MOVE_W": 3
+      },
+      "min_regret": 2,
+      "min_remote_distance": 3,
+      "erases": 118,
+      "total_aged_prelabel_actions": 21304
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "worlds_considered": 32,
+      "pairs": 31,
+      "missing_strict_worlds": [
+        {
+          "g": 3,
+          "v": 2
+        }
+      ],
+      "episodes": 62,
+      "decisions": 1356,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "first_action_distribution": {
+        "BACKTRACK": 31,
+        "MOVE_E": 20,
+        "MOVE_W": 7,
+        "MOVE_S": 4
+      },
+      "min_regret": 2,
+      "min_remote_distance": 3,
+      "erases": 62,
+      "total_aged_prelabel_actions": 11196
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "worlds_considered": 32,
+      "pairs": 32,
+      "missing_strict_worlds": [],
+      "episodes": 64,
+      "decisions": 1630,
+      "exact_duplicates": 0,
+      "zero_weight": 0,
+      "first_action_distribution": {
+        "BACKTRACK": 32,
+        "MOVE_E": 20,
+        "MOVE_W": 8,
+        "MOVE_S": 4
+      },
+      "min_regret": 2,
+      "min_remote_distance": 4,
+      "erases": 64,
+      "total_aged_prelabel_actions": 11554
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 118,
+      "bytes": 2987765,
+      "sha256": "4fe555c08776c36f8dd10564138094c67bbf838b6851e31552364118f2ccdac6"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 2226,
+      "bytes": 2250516,
+      "sha256": "eba93610e78514acf3c3e50b77634c9e2093b2eeb6cc3226284a3573ca147982"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 62,
+      "bytes": 1584941,
+      "sha256": "91d2b3f1c804c7376734b36e179d08efd8886e8abaddfe54e30c5ec064edebfc"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 1356,
+      "bytes": 1367899,
+      "sha256": "5a8b65f43462d22c626c738f70b3b13b0ef1a2ec12d19ecd0228ee10ee65c148"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 64,
+      "bytes": 1656517,
+      "sha256": "0d81ec335b0689a3efd540975f73140ecba51f93e8de726c499b392e09c9e935"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 1630,
+      "bytes": 1651040,
+      "sha256": "9a2ccbbdc7372ce477eb12ab7caa4e975348c81b38b6009b1c7c0195bd64d77c"
+    }
+  }
+}

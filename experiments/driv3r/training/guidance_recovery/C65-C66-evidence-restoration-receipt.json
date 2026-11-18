@@ -1,0 +1,45 @@
+{
+  "schema": "driv3r-guidance-c65-c66-evidence-restoration/1",
+  "date": "2026-11-18",
+  "disposition": "DRAFT/HOLD",
+  "owner": "experiments/driv3r/training/guidance_recovery",
+  "archived_sources_match_existing_git": true,
+  "restored_ledger_summary_equality": true,
+  "source_git_blobs": {
+    "c65_paired_delayed_credit.py": "86c6ad94e16dd2067150e57ff0cd55518542e067",
+    "test_c65_paired_delayed_credit.py": "04e25e28bc8381b7c943c61b05e43ff4b0715c3c",
+    "c66_holdout.py": "e145dd68ede7b94a49b1bad70b865d2fa27e1c26",
+    "test_c66_holdout.py": "0dce6c2930d50367749be5884ddcd9f121ed51bf"
+  },
+  "restored_files": {
+    "C65-summary.json": {
+      "sha256": "fcaaf5581428ad09423184af65d11459af073d65ab456e8a3f8097bbb5d87106",
+      "blob": "b2ac7c3d706428eb2319c2f1358982afe382ce71"
+    },
+    "C65-executed-ledger.zlib.b64": {
+      "sha256": "7f899475cfa1f317468855ee9cbeacd3df664fd7ccbd0a8d9b380285473eee8e",
+      "blob": "8152f4b32237a4cb68d377f800401145b884ac73"
+    },
+    "C65-gallery.svg": {
+      "sha256": "cab9b9b4d0ab709ad6c75a61d37e27959d5deb3dc7daac8477a31bc4f0257a42",
+      "blob": "5c0dcf3bf6294476bd67a1f39f9ecb05b1ef3251"
+    },
+    "C66-summary.json": {
+      "sha256": "9da6e83551c9bd2f8472576a6c391bd13effb862eea6a50bb53c119b029f6df0",
+      "blob": "4f1f810d02863b99cbc64860e9195ed8844b5d6b"
+    },
+    "C66-executed-ledger.zlib.b64": {
+      "sha256": "fbaee7a28a2dd6f8e51ed41acf665f40f4b4efba1386c2cbd42d5093b80802d6",
+      "blob": "4c9e5ea53e429f5389452fc348bade3bdc7e0719"
+    },
+    "C66-gallery.svg": {
+      "sha256": "5b96e66b1f9c946fca1948ae33e87ba76abc6a1e5fa2c34d9099b465de265188",
+      "blob": "c4040c62a588d1caba2891be419b47a99d7c78ce"
+    }
+  },
+  "checkpoint_binaries_committed": false,
+  "immutable_actions_custody": false,
+  "native_acceptance": false,
+  "c65_records": 72,
+  "c66_records": 120
+}

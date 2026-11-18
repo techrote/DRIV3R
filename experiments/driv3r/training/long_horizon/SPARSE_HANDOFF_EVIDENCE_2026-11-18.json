@@ -1,0 +1,212 @@
+{
+  "arms": {
+    "hybrid4": {
+      "action_counts": {
+        "BACKTRACK": 160,
+        "MOVE_E": 336,
+        "MOVE_N": 40,
+        "MOVE_S": 168,
+        "MOVE_W": 32
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "mean_decisions": 23,
+      "median_episode_choose_ms": 0.004089,
+      "neural_actions": 160,
+      "planner_actions": 576,
+      "planner_searches": 32
+    },
+    "late24": {
+      "action_counts": {
+        "BACKTRACK": 182,
+        "MOVE_E": 468,
+        "MOVE_N": 76,
+        "MOVE_S": 226,
+        "MOVE_W": 164
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "mean_decisions": 34.875,
+      "median_episode_choose_ms": 0.106808,
+      "neural_actions": 742,
+      "planner_actions": 374,
+      "planner_searches": 18
+    },
+    "neural": {
+      "action_counts": {
+        "BACKTRACK": 160,
+        "MOVE_E": 416,
+        "MOVE_N": 114,
+        "MOVE_S": 272,
+        "MOVE_W": 244
+      },
+      "arrivals": 22,
+      "episodes": 32,
+      "mean_decisions": 37.688,
+      "median_episode_choose_ms": 0.136055,
+      "neural_actions": 1206,
+      "planner_actions": 0,
+      "planner_searches": 0
+    },
+    "planner_once": {
+      "action_counts": {
+        "BACKTRACK": 128,
+        "MOVE_E": 304,
+        "MOVE_N": 40,
+        "MOVE_S": 168,
+        "MOVE_W": 32
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "mean_decisions": 21,
+      "median_episode_choose_ms": 0.003561,
+      "neural_actions": 0,
+      "planner_actions": 672,
+      "planner_searches": 32
+    },
+    "reserve16": {
+      "action_counts": {
+        "BACKTRACK": 160,
+        "MOVE_E": 316,
+        "MOVE_N": 82,
+        "MOVE_S": 260,
+        "MOVE_W": 228,
+        "STOP": 10
+      },
+      "arrivals": 22,
+      "episodes": 32,
+      "mean_decisions": 33,
+      "median_episode_choose_ms": 0.135619,
+      "neural_actions": 1032,
+      "planner_actions": 24,
+      "planner_searches": 12
+    },
+    "stall4": {
+      "action_counts": {
+        "BACKTRACK": 160,
+        "MOVE_E": 336,
+        "MOVE_N": 40,
+        "MOVE_S": 168,
+        "MOVE_W": 32
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "mean_decisions": 23,
+      "median_episode_choose_ms": 0.003991,
+      "neural_actions": 160,
+      "planner_actions": 576,
+      "planner_searches": 32
+    },
+    "stall8": {
+      "action_counts": {
+        "BACKTRACK": 160,
+        "MOVE_E": 356,
+        "MOVE_N": 44,
+        "MOVE_S": 172,
+        "MOVE_W": 52
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "mean_decisions": 24.5,
+      "median_episode_choose_ms": 0.004452,
+      "neural_actions": 288,
+      "planner_actions": 496,
+      "planner_searches": 32
+    }
+  },
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "cpu_wall_s": 12.302,
+  "date_utc": "2026-11-18",
+  "depths": [
+    5
+  ],
+  "development_family_count": 4,
+  "development_world_seeds": [
+    3000,
+    3100,
+    3200,
+    3300
+  ],
+  "experiment": "SPARSE-HANDOFF-001",
+  "goal_positions": [
+    [
+      60,
+      48
+    ],
+    [
+      55,
+      56
+    ]
+  ],
+  "heldout_opened": false,
+  "independently_recomputed_neural_probability_vectors": 3588,
+  "independently_replayed_receipts": 7426,
+  "infeasible_states": [],
+  "limitations": [
+    "DEVELOPMENT geometries share training structural families.",
+    "All layouts overlay the same forced eastern trap; not five independent world generators.",
+    "Planner uses privileged complete synthetic material map and history.",
+    "Prefix search is restricted to monotone retreat then empty-cell continuation.",
+    "Unsolvable states are explicitly excluded from comparative arrivals and counted separately.",
+    "Wall-clock action latency includes local Python overhead, not native host.",
+    "No structural HELDOUT or native CyberSand evaluation."
+  ],
+  "model_seeds": [
+    711,
+    712
+  ],
+  "native_receipts": 0,
+  "optimizer_updates": 0,
+  "paired_accuracy_vs_neural": {
+    "late24": {
+      "descriptive_4_family_bootstrap_95_percent_points": [
+        12.5,
+        50.0
+      ],
+      "paired_mean_percentage_points": 31.25
+    },
+    "reserve16": {
+      "descriptive_4_family_bootstrap_95_percent_points": [
+        0.0,
+        0.0
+      ],
+      "paired_mean_percentage_points": 0.0
+    },
+    "stall4": {
+      "descriptive_4_family_bootstrap_95_percent_points": [
+        12.5,
+        50.0
+      ],
+      "paired_mean_percentage_points": 31.25
+    },
+    "stall8": {
+      "descriptive_4_family_bootstrap_95_percent_points": [
+        12.5,
+        50.0
+      ],
+      "paired_mean_percentage_points": 31.25
+    }
+  },
+  "peak_rss_kib": 98064,
+  "research_layouts": [
+    "original",
+    "east_sleeve"
+  ],
+  "source_head": "728a1c6131bc8da12165c8b94080a29b28d3da64",
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "sparse_handoff_lab.py": "97751a158631a14870d075b6ca074abc61764150fc9c0ddcdf33704c27009e65",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "states": 32,
+  "strict_64_logical_move_gate": true,
+  "verified_episodes": 224,
+  "version": "sparse-handoff/1"
+}

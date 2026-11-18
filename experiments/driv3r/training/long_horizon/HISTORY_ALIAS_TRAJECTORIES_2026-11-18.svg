@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="950" viewBox="0 0 1260 950">
+<rect width="100%" height="100%" fill="#101720"/>
+<text x="35" y="40" fill="#edf4fb" font-family="sans-serif" font-size="24" font-weight="bold">DRIV3R · HISTORY-ALIAS-001</text>
+<text x="35" y="65" fill="#9bb2ca" font-family="sans-serif" font-size="13">Same ink, terrain, legal menu and cursor · different legal path stack · synthetic DEVELOPMENT</text>
+<rect x="30" y="85" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="48" y="112" fill="#e4edf7" font-family="monospace" font-size="13">PICKETS / 042a6d784a0 · goal (49, 50)</text>
+<rect x="66" y="145" width="26" height="26" fill="#263548"/>
+<rect x="66" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="66" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="66" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="145" width="26" height="26" fill="#263548"/>
+<rect x="94" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="145" width="26" height="26" fill="#263548"/>
+<rect x="122" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="145" width="26" height="26" fill="#263548"/>
+<rect x="150" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="229" width="26" height="26" fill="#365c6c"/>
+<polyline points="79,158 79,186 107,186 135,186 163,186 163,214 163,242 135,242 135,214 107,214 107,242 79,242" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="107" cy="214" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="79" cy="242" r="6" fill="#fff"/>
+<text x="66" y="303" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 2 · budget 3</text>
+<text x="66" y="324" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="356" y="145" width="26" height="26" fill="#263548"/>
+<rect x="356" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="356" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="356" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="145" width="26" height="26" fill="#263548"/>
+<rect x="384" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="145" width="26" height="26" fill="#263548"/>
+<rect x="412" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="145" width="26" height="26" fill="#263548"/>
+<rect x="440" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="229" width="26" height="26" fill="#365c6c"/>
+<polyline points="369,158 369,186 397,186 397,214 425,214 425,186 453,186 453,214 453,242 425,242 397,242 369,242" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="397" cy="214" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="369" cy="242" r="6" fill="#fff"/>
+<text x="356" y="303" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 8 · budget 3</text>
+<text x="356" y="324" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="48" y="335" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+<rect x="650" y="85" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="668" y="112" fill="#e4edf7" font-family="monospace" font-size="13">RIDGES / 0a164a6454b · goal (48, 50)</text>
+<rect x="686" y="145" width="26" height="26" fill="#263548"/>
+<rect x="686" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="686" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="686" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="145" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="145" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="145" width="26" height="26" fill="#263548"/>
+<rect x="770" y="173" width="26" height="26" fill="#263548"/>
+<rect x="770" y="201" width="26" height="26" fill="#263548"/>
+<rect x="770" y="229" width="26" height="26" fill="#365c6c"/>
+<polyline points="699,158 727,158 755,158 755,186 755,214 727,214 727,186 699,186 699,214 699,242 727,242 755,242" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="699" cy="214" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="755" cy="242" r="6" fill="#fff"/>
+<text x="686" y="303" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 3 · budget 3</text>
+<text x="686" y="324" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="976" y="145" width="26" height="26" fill="#263548"/>
+<rect x="976" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="976" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="976" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="145" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="145" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="173" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="201" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="229" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="145" width="26" height="26" fill="#263548"/>
+<rect x="1060" y="173" width="26" height="26" fill="#263548"/>
+<rect x="1060" y="201" width="26" height="26" fill="#263548"/>
+<rect x="1060" y="229" width="26" height="26" fill="#365c6c"/>
+<polyline points="989,158 989,186 989,214 989,242 1017,242 1017,214 1017,186 1017,158 1045,158 1045,186 1045,214 1045,242" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="989" cy="214" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="1045" cy="242" r="6" fill="#fff"/>
+<text x="976" y="303" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 9 · budget 3</text>
+<text x="976" y="324" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="668" y="335" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+<rect x="30" y="370" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="48" y="397" fill="#e4edf7" font-family="monospace" font-size="13">ISLANDS / 126cc2f2bc8 · goal (50, 50)</text>
+<rect x="66" y="430" width="26" height="26" fill="#263548"/>
+<rect x="66" y="458" width="26" height="26" fill="#263548"/>
+<rect x="66" y="486" width="26" height="26" fill="#263548"/>
+<rect x="66" y="514" width="26" height="26" fill="#263548"/>
+<rect x="94" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="514" width="26" height="26" fill="#365c6c"/>
+<polyline points="79,443 107,443 135,443 163,443 163,471 135,471 107,471 107,499 135,499 163,499 163,527 135,527" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="135" cy="499" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="135" cy="527" r="6" fill="#fff"/>
+<text x="66" y="588" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 3 · budget 3</text>
+<text x="66" y="609" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="356" y="430" width="26" height="26" fill="#263548"/>
+<rect x="356" y="458" width="26" height="26" fill="#263548"/>
+<rect x="356" y="486" width="26" height="26" fill="#263548"/>
+<rect x="356" y="514" width="26" height="26" fill="#263548"/>
+<rect x="384" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="514" width="26" height="26" fill="#365c6c"/>
+<polyline points="369,443 397,443 397,471 397,499 425,499 425,471 425,443 453,443 453,471 453,499 453,527 425,527" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="425" cy="499" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="425" cy="527" r="6" fill="#fff"/>
+<text x="356" y="588" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 7 · budget 3</text>
+<text x="356" y="609" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="48" y="620" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+<rect x="650" y="370" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="668" y="397" fill="#e4edf7" font-family="monospace" font-size="13">ZIGZAG / 1572bfedffa · goal (49, 50)</text>
+<rect x="686" y="430" width="26" height="26" fill="#263548"/>
+<rect x="686" y="458" width="26" height="26" fill="#263548"/>
+<rect x="686" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="686" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="430" width="26" height="26" fill="#263548"/>
+<rect x="742" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="430" width="26" height="26" fill="#263548"/>
+<rect x="770" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="514" width="26" height="26" fill="#365c6c"/>
+<polyline points="699,443 727,443 727,471 755,471 783,471 783,499 783,527 755,527 755,499 727,499 727,527 699,527" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="727" cy="499" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="699" cy="527" r="6" fill="#fff"/>
+<text x="686" y="588" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 2 · budget 3</text>
+<text x="686" y="609" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="976" y="430" width="26" height="26" fill="#263548"/>
+<rect x="976" y="458" width="26" height="26" fill="#263548"/>
+<rect x="976" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="976" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="430" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="430" width="26" height="26" fill="#263548"/>
+<rect x="1032" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="514" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="430" width="26" height="26" fill="#263548"/>
+<rect x="1060" y="458" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="486" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="514" width="26" height="26" fill="#365c6c"/>
+<polyline points="989,443 1017,443 1017,471 1017,499 1045,499 1045,471 1073,471 1073,499 1073,527 1045,527 1017,527 989,527" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1017" cy="499" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="989" cy="527" r="6" fill="#fff"/>
+<text x="976" y="588" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 8 · budget 3</text>
+<text x="976" y="609" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="668" y="620" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+<rect x="30" y="655" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="48" y="682" fill="#e4edf7" font-family="monospace" font-size="13">PICKETS / 16d7077d7d9 · goal (50, 48)</text>
+<rect x="66" y="715" width="26" height="26" fill="#263548"/>
+<rect x="66" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="66" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="66" y="799" width="26" height="26" fill="#263548"/>
+<rect x="94" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="94" y="799" width="26" height="26" fill="#263548"/>
+<rect x="122" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="122" y="799" width="26" height="26" fill="#263548"/>
+<rect x="150" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="150" y="799" width="26" height="26" fill="#365c6c"/>
+<polyline points="79,728 107,728 107,756 79,756 79,784 107,784 135,784 135,756 135,728 163,728 163,756 163,784" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="135" cy="728" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="163" cy="784" r="6" fill="#fff"/>
+<text x="66" y="873" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 3 · budget 3</text>
+<text x="66" y="894" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="356" y="715" width="26" height="26" fill="#263548"/>
+<rect x="356" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="356" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="356" y="799" width="26" height="26" fill="#263548"/>
+<rect x="384" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="384" y="799" width="26" height="26" fill="#263548"/>
+<rect x="412" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="412" y="799" width="26" height="26" fill="#263548"/>
+<rect x="440" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="440" y="799" width="26" height="26" fill="#365c6c"/>
+<polyline points="369,728 369,756 369,784 397,784 397,756 397,728 425,728 453,728 453,756 425,756 425,784 453,784" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="425" cy="728" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="453" cy="784" r="6" fill="#fff"/>
+<text x="356" y="873" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 5 · budget 3</text>
+<text x="356" y="894" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="48" y="905" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+<rect x="650" y="655" width="600" height="266" rx="8" fill="#1a2634" stroke="#344960"/>
+<text x="668" y="682" fill="#e4edf7" font-family="monospace" font-size="13">RIDGES / 1a87af802bb · goal (49, 49)</text>
+<rect x="686" y="715" width="26" height="26" fill="#263548"/>
+<rect x="686" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="686" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="686" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="715" width="26" height="26" fill="#263548"/>
+<rect x="714" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="714" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="742" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="770" y="771" width="26" height="26" fill="#263548"/>
+<rect x="770" y="799" width="26" height="26" fill="#263548"/>
+<polyline points="699,728 699,756 699,784 699,812 727,812 755,812 755,784 727,784 727,756 755,756 783,756 783,728" fill="none" stroke="#71e7c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="727" cy="756" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="783" cy="728" r="6" fill="#fff"/>
+<text x="686" y="873" fill="#71e7c2" font-family="monospace" font-size="13">POSITIVE · depth 3 · budget 3</text>
+<text x="686" y="894" fill="#c8d3e1" font-family="monospace" font-size="12">BACKTRACK label</text>
+<rect x="976" y="715" width="26" height="26" fill="#263548"/>
+<rect x="976" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="976" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="976" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="715" width="26" height="26" fill="#263548"/>
+<rect x="1004" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="1004" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="771" width="26" height="26" fill="#365c6c"/>
+<rect x="1032" y="799" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="715" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="743" width="26" height="26" fill="#365c6c"/>
+<rect x="1060" y="771" width="26" height="26" fill="#263548"/>
+<rect x="1060" y="799" width="26" height="26" fill="#263548"/>
+<polyline points="989,728 989,756 1017,756 1017,784 989,784 989,812 1017,812 1045,812 1045,784 1045,756 1073,756 1073,728" fill="none" stroke="#ffa978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1017" cy="756" r="7" fill="#ffdb73" stroke="#101720" stroke-width="2"/>
+<circle cx="1073" cy="728" r="6" fill="#fff"/>
+<text x="976" y="873" fill="#ffa978" font-family="monospace" font-size="13">NEGATIVE · depth 9 · budget 3</text>
+<text x="976" y="894" fill="#c8d3e1" font-family="monospace" font-size="12">STOP label</text>
+<text x="668" y="905" fill="#8ba3bc" font-family="sans-serif" font-size="11">Yellow = target already inked · white = current cursor · lines = active path history</text>
+</svg>

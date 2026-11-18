@@ -1,0 +1,64 @@
+{
+  "schema": "driv3r.preference_eval.p17_evidence/1",
+  "date": "2026-11-17",
+  "repository": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "only_pr": 1,
+  "status": "LOCAL_REPRODUCED_NOT_ACTIONS_QUALIFIED",
+  "input_provenance": {
+    "w16_p10_original_full_zip_sha256": "ab0f24fd2ffe3c9c30e5bc77f8f66bea0e823b9776bab3f5811b7fefab236fa6",
+    "w16_p16_original_full_zip_sha256": "3b893b8df8e35971c95f0a10605ae70ea40a7fd8509c1d768bb06a712e1ce82c",
+    "original_curated_historical_manifest_sha256": "873d208e370bec2d26586af1c86545957deef4b01fc5a9521f3630fd1920a88d",
+    "historical_source_caveat": "Original 14 producer per-episode JSON bytes not re-downloaded. Manifest preserves producer artifact IDs and original JSON SHA-256 references; model/history paths are secondary curated evidence."
+  },
+  "code": {
+    "p17_niche_evidence.py": {
+      "sha256": "327d4a33bb8636cb658a20e2836c8173a232092a983190eeb863604740747348",
+      "git_blob": "633c1bbb623a5d0df339064dbe580fc60026903e"
+    },
+    "p17_cross_model.py": {
+      "sha256": "27d60d00c3e2d730221b010b7b47aa15dd74772dec61f10436ad8fd254583bb5",
+      "git_blob": "444c546507bbfe16d82749a121ff264db781209e"
+    },
+    "test_p17.py": {
+      "sha256": "cb9ffd599a9b69546847bc055c0a9b49898f9d682786087ba17d6ac8c11b9f31",
+      "git_blob": "4c9f6b6e0591b2ff4c50e1872e7e62f878d3ac90"
+    }
+  },
+  "outputs": {
+    "local_evidence_zip_sha256": "d117e6766441c4f22d045ebc5a28442caac13921176c7f458f7305aea66a3ef4",
+    "local_evidence_size_bytes": 22918566,
+    "original_w16_catalogue_sha256": "d7e0dc1500b999e8976d18e8c6831acc5efc407f8ee28170195aa9e9aeffbc1e",
+    "historical_crossmodel_catalogue_sha256": "135eeaf930c9d4a3c2b7c10eb6a2d19c716cf296f9f6e759f1ff5d47aad2cf59",
+    "manifest_entries_hash_verified": "19/19",
+    "a4_blind_galleries": 8,
+    "original_w16_executions": 135,
+    "duplicate_orig_control_receipts": 72,
+    "original_w16_distinct_trajectories": 63,
+    "viable_shape_proxy_count": 47,
+    "historical_curated_specimens": 14,
+    "historical_model_applied": 12,
+    "historical_native_reference": 2,
+    "matched_same_world_horizon_unlabelled_pairs": 10,
+    "heldout_world_disjoint_cross_slm_preference_pairs": 0
+  },
+  "qualification": {
+    "local_unittest": "7/7 PASS",
+    "host_legality": "63 original synthetic W0 full trajectories pass every action/menu and position receipt check; not native",
+    "pretrained_model_forward_this_phase": 0,
+    "optimizer_update_this_phase": 0,
+    "owner_rating_observations": 0,
+    "human_ratings_fabricated": false,
+    "negative_result": "Stock d1 4-cell closed loop shows 100% 90-degree turning; naïve turning reward is degenerate.",
+    "crossmodel_reward_model": "NOT_TRAINED: no matched multi-world original root-SLM source-reverified and blind rated pairs",
+    "blockers": [
+      "Target pretrained full SLM or actual mutant model inference blocked locally; no pinned pretrained weights and connector cannot dispatch approved opt-in run.",
+      "Historic curated original 14 source JSON bytes unavailable in runtime for independent audit.",
+      "Genuine world/source-disjoint matched multi-SLM pairs across seeds and owner preference judgements missing."
+    ]
+  },
+  "game_side_changes": false,
+  "external_repositories_mutated": false,
+  "merge_or_ready": false,
+  "paid_compute": false
+}

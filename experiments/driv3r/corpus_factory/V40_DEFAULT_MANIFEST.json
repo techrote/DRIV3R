@@ -1,0 +1,96 @@
+{
+  "schema": "driv3r/corpus_factory/delayed-obstruction-v40/manifest",
+  "synthetic_not_native_CyberSand": true,
+  "generator": "delayed_obstruction_v40.js",
+  "generator_sha256": "4c40b73987f690c25822f1fba88bf4a6e4c9c8e5b47ad89e7584352e2ece2740",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "model_contract": "Only input goes to learner. action is teacher label; weight=0 excludes duplicate TRAIN records. challenge is evaluator-only.",
+  "environmental_intervention": "host changes remote east junction edges before 160 accepted legal movement actions; past bulletin remains in durable event history but never in last-64 events; the alternative detour stays reachable",
+  "caveats": [
+    "Synthetic symbolic host, not native CyberSand",
+    "Host-dispatched remote actuator, not learned agent action",
+    "Deterministic north-root ageing loops; symbolic event interpretation can solve challenge",
+    "Fixed remote obstruction junction",
+    "No named SLM run or latency/RSS"
+  ],
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "candidate_pairs": 128,
+      "positive_pairs": 32,
+      "negative_controls": 32,
+      "paired_legal_first_action_contrasts": 32,
+      "episodes": 128,
+      "decisions": 3488,
+      "zero_weight": 0,
+      "unique_geometries": 8,
+      "rejected_worlds": []
+    },
+    "DEV": {
+      "candidate_pairs": 64,
+      "positive_pairs": 16,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 16,
+      "episodes": 64,
+      "decisions": 3456,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    },
+    "HELDOUT": {
+      "candidate_pairs": 64,
+      "positive_pairs": 16,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 16,
+      "episodes": 64,
+      "decisions": 4800,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 3488,
+      "bytes": 3946288,
+      "sha256": "bbf8d6f88965e234399395e5969a7f8b7b0a03dd5573a68b0b492db040c22015"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 3456,
+      "bytes": 5754464,
+      "sha256": "7acf88009bb5850f85b527ccd9072a2f39d2dd452ce17d590576ae4ebef9ee39"
+    },
+    "DEV_challenge.jsonl": {
+      "rows": 32,
+      "bytes": 16272,
+      "sha256": "c90a83b5983d27c94c3a9d694de4e403c5e7e4a4028d34de746eca15f04cefd5"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 4800,
+      "bytes": 10075632,
+      "sha256": "7f6d71b016ea5bc61096de31d4239bdbdee08657ad727f505a69883e09729970"
+    },
+    "HELDOUT_challenge.jsonl": {
+      "rows": 32,
+      "bytes": 16400,
+      "sha256": "c8719824ef0fe3d935b2f5b9fff241aee48323e3ae209e978e3ba0e1f8b634e8"
+    }
+  }
+}

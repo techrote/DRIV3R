@@ -1,0 +1,228 @@
+{
+  "schema": "driv3r/corpus-factory-aliased-order-v17",
+  "version": "aliased-order-v17",
+  "source": "external v13 deterministic host; NOT native CyberSand ABI",
+  "parent_source_git_blob": "b49afca90c307d8126c8f4c1becba667b7ced6f1",
+  "counts": {
+    "TRAIN": {
+      "episodes": 384,
+      "decisions": 3456,
+      "world_groups": 32,
+      "families": 32,
+      "topology_groups": 16,
+      "alpha_receipts_per_episode": 12,
+      "beta_decoys_per_alpha": 1
+    },
+    "DEV": {
+      "episodes": 96,
+      "decisions": 864,
+      "world_groups": 8,
+      "families": 8,
+      "topology_groups": 4,
+      "alpha_receipts_per_episode": 12,
+      "beta_decoys_per_alpha": 2
+    },
+    "HELDOUT": {
+      "episodes": 144,
+      "decisions": 1296,
+      "world_groups": 12,
+      "families": 12,
+      "topology_groups": 6,
+      "alpha_receipts_per_episode": 12,
+      "beta_decoys_per_alpha": 3
+    }
+  },
+  "style_seeds": 2,
+  "noncommutative_families": 52,
+  "expert_moves": 41904,
+  "scripted_prefix_moves": 213408,
+  "strict_hard_negatives": 6240,
+  "illegal_oracle_moves": 0,
+  "protected_entries": 0,
+  "first_action_control_ceiling_by_split": {
+    "TRAIN": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first3": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 2
+      },
+      "last2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last3": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 3
+      }
+    },
+    "DEV": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first3": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last3": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 3
+      }
+    },
+    "HELDOUT": {
+      "bag": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "first3": {
+        "correct": 7,
+        "denominator": 12,
+        "classes": 3
+      },
+      "last2": {
+        "correct": 6,
+        "denominator": 12,
+        "classes": 1
+      },
+      "last3": {
+        "correct": 8,
+        "denominator": 12,
+        "classes": 3
+      }
+    }
+  },
+  "source_worlds": {
+    "TRAIN": {
+      "episodes": 128,
+      "pairs": 64,
+      "world_groups": 32,
+      "decisions": 1152
+    },
+    "DEV": {
+      "episodes": 32,
+      "pairs": 16,
+      "world_groups": 8,
+      "decisions": 288
+    },
+    "HELDOUT": {
+      "episodes": 48,
+      "pairs": 24,
+      "world_groups": 12,
+      "decisions": 432
+    }
+  },
+  "split_policy": "world/topology-disjoint; 12 correlated permutations in one split",
+  "challenge": "Every 12-case family shares identical latest64, goal, legal menu, local terrain, full event bag, first-two and last-two ALPHA instructions; six opposed labels; TRAIN adjacent SETs, DEV gap=2, HELDOUT gap>=3; BETA decoys noncausal",
+  "usage": "TRAIN is optimizer-only; DEV tuning-only; HELDOUT sealed until fixed model selection",
+  "model_view": "Only observe(host) or row.model_input, never parent/intervention/expert/controls/metadata",
+  "limitations": [
+    "Scripted sensor-event prelude; only post-prefix rollout model-controllable",
+    "One deterministic U-loop grammar, no native simulation or verified CyberSand ABI",
+    "TRAIN/DEV/HELDOUT SET separation is deliberately distribution-shifted; split labels are not natural event frequencies",
+    "Host environmental gate instructions are synthetic events, NOT model-writable actions",
+    "A controlled last-two/first-two alias is exact; first-three/last-three controls can remain predictive, with split-specific ceilings recorded",
+    "V13-derived world families recur across v16 and v17; never pool different-version splits without group-level re-splitting",
+    "Correlated permutations and path rows; report world-grouped/paired held-out results, not iid row confidence",
+    "No trained SLM results or material-paint acceptance"
+  ],
+  "generator": "aliased_order_v17.js",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 5376832,
+      "sha256": "630b426d27a773a6b4862f148c24b9466d3bb4c6ce72477c8e199703c54dd04d",
+      "usage": "optimizer TRAIN only"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 3456,
+      "bytes": 59802888,
+      "sha256": "c554cc78cf220506b28887f9718164af2c8abf4977d7cd7c1844484298b8a14f",
+      "usage": "optimizer TRAIN only"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 96,
+      "bytes": 1486528,
+      "sha256": "7c64dfc6f238a38f0166d02d9d05a7fda11b2200024e65288e1ba3a45192b263",
+      "usage": "DEV selection only"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 864,
+      "bytes": 16953216,
+      "sha256": "cb7d3c09031e703bdd25c9dbf5c75df24353a430c193a54ba12e94d965f4797f",
+      "usage": "DEV selection only"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 144,
+      "bytes": 2453856,
+      "sha256": "f1db4d57a2d886d33ccff9c529ea3075b759a16fd6f5cdc5abdf4336688174a6",
+      "usage": "HELDOUT evaluation only"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 1296,
+      "bytes": 28450956,
+      "sha256": "8ff6007197d4fb851c74a449f2b5bd54e775636d71dead689fc062d193024aa4",
+      "usage": "HELDOUT evaluation only"
+    }
+  }
+}

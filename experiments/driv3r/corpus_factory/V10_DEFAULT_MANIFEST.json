@@ -1,0 +1,78 @@
+{
+  "schema": "driv3r/corpus-v10",
+  "generator": "dynamic_challenge_v10.js",
+  "source": "external deterministic synthetic host, NOT native CyberSand",
+  "native_receipt": false,
+  "group_policy": "shape disjoint across splits; all counterfactual sibling outcomes kept in same split",
+  "dedupe_policy": "reject world groups whose paired local 7x7 token view is within Hamming distance 4 of any accepted world, across all splits",
+  "counts": {
+    "TRAIN": {
+      "templates": 18,
+      "world_groups": 216,
+      "pairs": 648,
+      "rows": 1296,
+      "by_task": {
+        "shutter_recovery": 432,
+        "goal_retarget": 432,
+        "motif_echo": 432
+      },
+      "near_duplicate_world_groups_rejected": 0
+    },
+    "DEV": {
+      "templates": 6,
+      "world_groups": 72,
+      "pairs": 216,
+      "rows": 432,
+      "by_task": {
+        "shutter_recovery": 144,
+        "goal_retarget": 144,
+        "motif_echo": 144
+      },
+      "near_duplicate_world_groups_rejected": 0
+    },
+    "HELDOUT": {
+      "templates": 6,
+      "world_groups": 72,
+      "pairs": 216,
+      "rows": 432,
+      "by_task": {
+        "shutter_recovery": 144,
+        "goal_retarget": 144,
+        "motif_echo": 144
+      },
+      "near_duplicate_world_groups_rejected": 0
+    }
+  },
+  "host_applied_movement_steps": 95328,
+  "known_limits": [
+    "Host-only synthetic movement, painting and gate events; no canonical native ABI acceptance",
+    "Oracle-labeled first decision after host-executed preludes, not learned-policy full episodes",
+    "Goal retargeting and motif continuation need not require long-term memory; shutter recovery uses aliased final 12 positions",
+    "Protect DEV and HELDOUT from all optimizer/data selection leakage"
+  ],
+  "style_seeds_per_topology": 12,
+  "shards": {
+    "TRAIN": {
+      "path": "TRAIN.jsonl",
+      "sha256": "96893ccb181297e08dc34189d1ee74380d4e420a4e75b15fa793122eca1ad3cd",
+      "bytes": 5616336,
+      "records": 1296,
+      "usage": "optimizer_allowed"
+    },
+    "DEV": {
+      "path": "DEV.jsonl",
+      "sha256": "56df16574cb63a70bafcfab48478bc1e7d40b6faa135b8b8325a1a7532d5c697",
+      "bytes": 1925448,
+      "records": 432,
+      "usage": "evaluation_only_NO_TRAIN"
+    },
+    "HELDOUT": {
+      "path": "HELDOUT.jsonl",
+      "sha256": "c8f3e1c481d6f4e0ab4852c717ed24122e017af9a93ed3cca9fd555b74908fe5",
+      "bytes": 1992912,
+      "records": 432,
+      "usage": "evaluation_only_NO_TRAIN"
+    }
+  },
+  "input_contract": "Only model_input is input; target and all metadata, hard negatives, controls and evidence are not features."
+}

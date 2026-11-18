@@ -1,0 +1,70 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "checkpoint_sha256": "c84ac73d8738783597d4dbd9800730c1e955e902a6b86b829c75c95902760632",
+  "cohort_seeds": {
+    "a": 282900,
+    "b": 382900
+  },
+  "date_utc": "2026-11-17",
+  "deep_reverse_successes": {
+    "C18-A0": 0,
+    "C28-VETO": 45,
+    "n": 64
+  },
+  "evaluated_episodes": 2000,
+  "model_status": "not-promoted; qualified only on controlled external synthetic fixtures",
+  "optimizer_updates_each_replica": 352,
+  "owned_prefix": "experiments/driv3r/training/guidance_recovery/",
+  "pr": 1,
+  "prerequisites_sha256": {
+    "guidance_recovery_adversarial_adapter.safetensors": "f1d538200c0d5e183d46463a9058f73db162a5dcccf13daeb521073da9bfc0fa",
+    "guidance_recovery_cue_calibrated.safetensors": "8c8625a1bd8daed03e00188687dbba9732634c7bf7b8e7be5a4fa21cb310ac09",
+    "guidance_recovery_persistent_feedback.safetensors": "03ac2de36e480b26fd16b86637899ddeaf7221431d13762fbc0b0181f75b2366",
+    "guidance_recovery_personality_gate.safetensors": "9ddadf372465abca9634eca8bf450cb03e5903434da8065de588511b44b5da9a",
+    "guidance_recovery_selective_continue.safetensors": "180075041fdc61b8ec0e22216780b4a7c76169829dffd43734a9d46c19be80cf",
+    "guidance_recovery_signed_feedback.safetensors": "a402c30bf628ae1cfffc3bba788654ce460ac9c3029ef4ced7dd7d5223a11bc7",
+    "guidance_recovery_topology_transfer.safetensors": "b1d485773fd33d760d7a41f1bb90b3aa23e208f1241c7dfcabb04cef1aa697bd"
+  },
+  "remote_baseline_reviewed": "e35eb554940e7b956ea16be8b3b73e6a3cd8c429",
+  "replication_checkpoint_byte_identical": true,
+  "repository": "techrote/DRIV3R",
+  "research_caveats": [
+    "C28 host is synthetic and scripted initial history is applied by host",
+    "Native CyberSand ABI not evaluated",
+    "Heldout geometry is related synthetic family not natural levels",
+    "No active-guidance personality acceptance",
+    "Decoy false progress produces deliberate veto abstention",
+    "Immutable GitHub Actions checkpoint custody not verified"
+  ],
+  "safety": {
+    "host_rejected": 0,
+    "illegal_raw_top1": 0,
+    "protected_modified": 0
+  },
+  "schema": "driv3r-guidance-c28-evidence-receipt/1",
+  "source_and_evidence_hashes_sha256": {
+    "C28-TEMPORAL-REPLICA.safetensors": "c84ac73d8738783597d4dbd9800730c1e955e902a6b86b829c75c95902760632",
+    "C28-TEMPORAL.safetensors": "c84ac73d8738783597d4dbd9800730c1e955e902a6b86b829c75c95902760632",
+    "C28-executed-temporal-option-2026-11-17.md": "3ec5a101e4531b47e7320905a3d0d7c6eba1dd9a169c9deee33e2a2d6597b922",
+    "c28_gallery.py": "37f9c55c68ae5170917e8cf40685cf608e2debd5d0bbf3b69a49c96a66ee99c4",
+    "c28_temporal_option.py": "3759f945cd58eb507555953ed5c082996fcaae8a07f517f11c5f7515afe8a79e",
+    "cohort_a.json": "dd57efddae0f65c8be399949fd90fd69687416c5f1102bf114ff52e90c5463a0",
+    "cohort_b.json": "9195f8c204fc02c27a09fbdb47bed56e805809aabda110a3b19128b46b3ee6b6",
+    "gallery.html": "8c58de884fd7fe2c39ce0877b94ead8048b7107ff300456e715eace45b984ad2",
+    "independent_audit.json": "e12dd49c4fe4d350126ec220851dac22c36aaa99cc8ef49b168e7ca209cb925d",
+    "metrics.json": "b1a36d8c03c3f4e74e0f4806398e2873035171d452676d43d131f3ab126794ee",
+    "test_c28_temporal_option.py": "edbfaac315e7ca0ed0436ce54ca5e8d0b4ca98a3d4855f66a965cb43c0938ac1",
+    "train_receipts.json": "63ddfbe975201c8d03407e8a66834b150d125d3f17639c25c8bbe2e5ade9abff",
+    "zero_hint_receipts.json": "cbc0b3d1497bececb73c07a666449d4d7ab3dabdd104b6b13f0d7521f918e734"
+  },
+  "source_sha256": "3759f945cd58eb507555953ed5c082996fcaae8a07f517f11c5f7515afe8a79e",
+  "strict_nonregression": {
+    "a": true,
+    "b": true
+  },
+  "train_sha256": "708fdb24f54c0c6106ad27b7afdad6987e28a8da916a92dfb9ce7e80bbc3cbb7",
+  "zero_hint_exact_c12": {
+    "matched": 20,
+    "total": 20
+  }
+}

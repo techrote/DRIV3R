@@ -1,0 +1,97 @@
+{
+  "schema": "driv3r-c65-provisional-graph-receipt/1",
+  "status": "provisional; complete executed source and ledger not yet committed",
+  "training_states": 34,
+  "training_episodes_each": 68,
+  "training_actions_each": 4184,
+  "optimizer_updates_each": 48,
+  "heldout_states": 12,
+  "matched_condition_rows": 72,
+  "host_executed_suffixes": 432,
+  "unguided_parity_conditions": 24,
+  "replayed_traces": 36,
+  "source_sha256": {
+    "c65_paired_delayed_credit_py": "0c08683bbe7033ca6ab7920643cd14be2cf0eb634bd2ef10cadc34f6a21d09c6",
+    "c64_delayed_frontier_credit_py": "7584050f2ee3010e39857f41b36b71ecdebabad8de644a6e3ccdc8e11b597966",
+    "c60_remote_frontier_rl_py": "988dcc5b168c52b91103791c65e2fc578b1c2dfca9b2e69230dee931308f95ad"
+  },
+  "artifacts_sha256": {
+    "local_full_summary": "fcaaf5581428ad09423184af65d11459af073d65ab456e8a3f8097bbb5d87106",
+    "local_full_ledger": "7f899475cfa1f317468855ee9cbeacd3df664fd7ccbd0a8d9b380285473eee8e",
+    "local_replay_gallery": "cab9b9b4d0ab709ad6c75a61d37e27959d5deb3dc7daac8477a31bc4f0257a42",
+    "local_regression_tests": "b3244fa8759657bff36cbfd053dce1f80c304e264c749b5e6e568d46e8e28e9a",
+    "local_owner_archive": "2dce8e2ee856b3856c600bdb2dbebb8262fa1e0f30a56aaa5670a18f3c0114c3",
+    "C65_ALIGNED_checkpoint": "4d603774064e858fe7635e9286f4efd60513e7c425b74cc64ebbc613699fc469",
+    "C65_SHIFT_checkpoint": "2290edabeafdffe25fb0e60c206b22d675dd4f6c9c6a3a271a21b64153a145af"
+  },
+  "vector_key": [
+    "C34-RESET",
+    "C60-FRONTIER",
+    "C60-FROZEN",
+    "C65-ALIGNED",
+    "C65-SHIFT"
+  ],
+  "vector_meaning": "Five bits in this order represent goal completion; each graph holds [weak,strong] cue vectors for intact memory",
+  "graphs": {
+    "0066b2013b6196c4e686c2a1777002f207e77642f61e53be8d8f18be2c3cefd5": [
+      "wilson",
+      "00000",
+      "01000"
+    ],
+    "0fcd6a66462f9567ba735a59093376d9e7c022efa891877339eb4e1204c8b842": [
+      "braid",
+      "11111",
+      "11111"
+    ],
+    "13cc72ecfc70ea258c159bb8573d98a99cf4a9362c7003d3cf359a72917e8157": [
+      "braid",
+      "11111",
+      "11111"
+    ],
+    "42bfe0f8fa859e8b1165e99bdaa550241d56ecfe576f5a63964813620ed8edeb": [
+      "prim_braid",
+      "00000",
+      "01000"
+    ],
+    "43859ded917f0b45d51a12228b41ed972a37ac3a292213deac181341e39743ca": [
+      "kruskal",
+      "00000",
+      "00000"
+    ],
+    "9453f1d2032f80fb47978fe4b74bdc186ebeeb5e1a1510b4caa1db027e9304b2": [
+      "prim",
+      "11111",
+      "10111"
+    ],
+    "9bd16baf29b2e286cc85f0cd42d1e738d780542030e608472f4bf636779a3f78": [
+      "kruskal",
+      "00000",
+      "01100"
+    ],
+    "bf53d230f6208b8732cfc8e153693f9cb8239b6e490055e05710910e4e491a75": [
+      "tree",
+      "00000",
+      "00000"
+    ],
+    "c0c2d6ef7f7fa7bd5d75af4c97990e739d54649be47e9588558a5e1b3ab6d71e": [
+      "tree",
+      "00000",
+      "00000"
+    ],
+    "d509a326993cbff98ced2055b9e909cb060267ae22c97b3637425a1a1ed5a8d6": [
+      "prim",
+      "11111",
+      "11111"
+    ],
+    "d6575649898d05ac7013cf9556bab0839269ec1a4152744897df0bcc45d56956": [
+      "prim_braid",
+      "11111",
+      "11111"
+    ],
+    "ff5a497f16fa90b43f6baffca96ad979074a2f6e120fe1258f533514e8da168f": [
+      "wilson",
+      "00000",
+      "00100"
+    ]
+  }
+}

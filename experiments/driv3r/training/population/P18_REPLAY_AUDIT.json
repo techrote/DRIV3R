@@ -1,0 +1,13 @@
+{
+  "format": "population-p18-independent-checkpoint-replay",
+  "native": false,
+  "candidates": 288,
+  "checkpoint_replays": 96,
+  "heldout_episodes": 576,
+  "legal_actions": 20484,
+  "illegal_actions": 0,
+  "original_galleries": 48,
+  "manifest_entries": 387,
+  "manifest_mismatches": 0,
+  "caveat": "Independent checkpoint deserialization and replay; shared synthetic host, not native or cross-environment validation"
+}

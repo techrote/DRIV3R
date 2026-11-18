@@ -1,0 +1,307 @@
+{
+  "adaptation_updates_per_arm": 45,
+  "archive_sha256": "bb0be90bb1cceab1b42496a5cac66f39d7b2a881de25228fba1a87a7a642ace1",
+  "by_goal": {
+    "arrival": {
+      "north": {
+        "episodes": 32,
+        "first_actions": {
+          "BACKTRACK": 32
+        },
+        "mean_capped_first_visit": 5,
+        "mean_new_paint": 41.312,
+        "reached": 32,
+        "stops": 32
+      },
+      "south": {
+        "episodes": 32,
+        "first_actions": {
+          "MOVE_E": 8,
+          "MOVE_N": 8,
+          "MOVE_S": 8,
+          "MOVE_W": 8
+        },
+        "mean_capped_first_visit": 3,
+        "mean_new_paint": 3,
+        "reached": 32,
+        "stops": 32
+      }
+    },
+    "frozen": {
+      "north": {
+        "episodes": 32,
+        "first_actions": {
+          "BACKTRACK": 32
+        },
+        "mean_capped_first_visit": 5,
+        "mean_new_paint": 27.75,
+        "reached": 32,
+        "stops": 32
+      },
+      "south": {
+        "episodes": 32,
+        "first_actions": {
+          "MOVE_E": 8,
+          "MOVE_N": 8,
+          "MOVE_S": 8,
+          "MOVE_W": 8
+        },
+        "mean_capped_first_visit": 3,
+        "mean_new_paint": 3,
+        "reached": 32,
+        "stops": 32
+      }
+    },
+    "paint": {
+      "north": {
+        "episodes": 32,
+        "first_actions": {
+          "BACKTRACK": 32
+        },
+        "mean_capped_first_visit": 5,
+        "mean_new_paint": 77.875,
+        "reached": 32,
+        "stops": 19
+      },
+      "south": {
+        "episodes": 32,
+        "first_actions": {
+          "BACKTRACK": 32
+        },
+        "mean_capped_first_visit": 129,
+        "mean_new_paint": 89.094,
+        "reached": 0,
+        "stops": 17
+      }
+    }
+  },
+  "checkpoint_sha256": {
+    "811": {
+      "arrival": "9b52754d089ea47ec5fa6227a8e4874df714400feb5d551ffba3d15005abaff2",
+      "frozen": "d5bb12e68b876c02a64342e7ca504db17ce63f5880b788adf41f84422dc575b3",
+      "paint": "e432191f21593ded1d1972183db235fb3ebe337a6752325c51a59a190f2eb4f0"
+    }
+  },
+  "decisions": 8101,
+  "episodes": 192,
+  "evaluation": {
+    "arrival": {
+      "actions": {
+        "BACKTRACK": 64,
+        "MOVE_E": 357,
+        "MOVE_N": 352,
+        "MOVE_S": 352,
+        "MOVE_W": 357,
+        "STOP": 64
+      },
+      "episodes": 64,
+      "forced_stop": 64,
+      "mean_capped_arrival": 4,
+      "mean_decisions": 24.156,
+      "mean_neural_latency_ms": 0.028629,
+      "mean_new_paint": 22.156,
+      "targets_reached": 64
+    },
+    "frozen": {
+      "actions": {
+        "BACKTRACK": 64,
+        "MOVE_E": 245,
+        "MOVE_N": 247,
+        "MOVE_S": 247,
+        "MOVE_W": 245,
+        "STOP": 64
+      },
+      "episodes": 64,
+      "forced_stop": 64,
+      "mean_capped_arrival": 4,
+      "mean_decisions": 17.375,
+      "mean_neural_latency_ms": 0.027813,
+      "mean_new_paint": 15.375,
+      "targets_reached": 64
+    },
+    "paint": {
+      "actions": {
+        "BACKTRACK": 64,
+        "MOVE_E": 1399,
+        "MOVE_N": 1662,
+        "MOVE_S": 1394,
+        "MOVE_W": 888,
+        "STOP": 36
+      },
+      "episodes": 64,
+      "forced_stop": 36,
+      "mean_capped_arrival": 67,
+      "mean_decisions": 85.047,
+      "mean_neural_latency_ms": 0.023741,
+      "mean_new_paint": 83.484,
+      "targets_reached": 32
+    }
+  },
+  "evaluation_seeds": [
+    811
+  ],
+  "native_receipts": 0,
+  "original_full_report_sha256": "78fbd888cef317791d8ccc61107543c792bfb6472bf68409b212e79bf42c93e7",
+  "paid_compute": false,
+  "parameters_per_policy": 1033,
+  "provenance_limit": "trainer timed out before second seed; first seed checkpoints and 192 DEVELOPMENT episodes complete",
+  "source_checkpoint_sha256": {
+    "811": {
+      "always_move": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36",
+      "contrastive": "d5bb12e68b876c02a64342e7ca504db17ce63f5880b788adf41f84422dc575b3",
+      "frozen": "69b86b0c49798d6b9124de7409a46ac77375da2e9b8e0fd2498529a27565deaa",
+      "outcome": "c5f001e125aba891f597bce6bbf128aad00579af57465bb053d0216df952de36"
+    }
+  },
+  "source_checkpoint_update_count": 255,
+  "source_sha256": {
+    "contrastive_fork_lab.py": "d40020055820f0084868c0840363b3086f88d1cf990e3d5c7b5445935043241e",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "goal_time_transfer_lab.py": "0bdc0408a315c924bb4e3d2de9503bcc7c067ba90d07a57a7ed777102b6cbdf9",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "recovery_debt_audit.py": "3eb614835bac0d9d3d4161e768e9767f22f1f62c89a71c35e0829f69b79b79d8",
+    "retrace_choice_lab.py": "571b6fd14eb62629ddec1d59c64cfa51c97ed27ae96f99264baa0977519bc693",
+    "sequential_probe_lab.py": "e749e18466747548584f2900698b0e6bfa845d7de353d46673f1d31815ef0966",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "status": "bounded single-seed result; second seed not completed",
+  "training_label_counts": {
+    "arrival": {
+      "BACKTRACK": 64,
+      "SIDE": 64,
+      "robust_labels": 128
+    },
+    "paint": {
+      "BACKTRACK": 120,
+      "SIDE": 0,
+      "robust_labels": 120
+    }
+  },
+  "verified": {
+    "focused_tests_passed": 5,
+    "negative_evidence_is_retained": true,
+    "replayed_decisions": 8101,
+    "replayed_episodes": 192,
+    "sha256_manifest_entries": 196
+  },
+  "version": "goal-time-transfer/1",
+  "world_partition": {
+    "development_geometries": [
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "development_specs": [
+      {
+        "challenge": "normal",
+        "family": "pickets",
+        "mode": "wall",
+        "seed": 3000,
+        "split": "development"
+      },
+      {
+        "challenge": "normal",
+        "family": "ridges",
+        "mode": "route",
+        "seed": 3100,
+        "split": "development"
+      },
+      {
+        "challenge": "normal",
+        "family": "islands",
+        "mode": "motif",
+        "seed": 3200,
+        "split": "development"
+      },
+      {
+        "challenge": "normal",
+        "family": "zigzag",
+        "mode": "wall",
+        "seed": 3300,
+        "split": "development"
+      }
+    ],
+    "heldout_opened": false,
+    "rotation_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "train_geometries": [
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "train_specs": [
+      {
+        "challenge": "normal",
+        "family": "pickets",
+        "mode": "wall",
+        "seed": 1000,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "pickets",
+        "mode": "route",
+        "seed": 1001,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "ridges",
+        "mode": "route",
+        "seed": 1100,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "ridges",
+        "mode": "motif",
+        "seed": 1101,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "islands",
+        "mode": "motif",
+        "seed": 1200,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "islands",
+        "mode": "wall",
+        "seed": 1201,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "zigzag",
+        "mode": "wall",
+        "seed": 1300,
+        "split": "train"
+      },
+      {
+        "challenge": "normal",
+        "family": "zigzag",
+        "mode": "route",
+        "seed": 1301,
+        "split": "train"
+      }
+    ]
+  }
+}

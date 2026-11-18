@@ -1,0 +1,273 @@
+{
+  "version": "topology-adaptive-handoff/1",
+  "date_utc": "2026-11-18",
+  "split": "development",
+  "heldout_opened": false,
+  "native_receipts": 0,
+  "new_optimizer_updates": 0,
+  "synthetic_worlds": 16,
+  "matched_scenarios_per_arm": 64,
+  "controllers": 7,
+  "episodes": 448,
+  "verified_legal_action_receipts": 21304,
+  "verified_neural_probability_vectors": 12309,
+  "initial_goal_orders": 2,
+  "checkpoint_seeds": [
+    711,
+    712
+  ],
+  "goal_switch_ticks": [
+    12,
+    30
+  ],
+  "logical_move_gate": 64,
+  "layout_order": [
+    "opposing_gates",
+    "enclosed_courtyard",
+    "horizontal_switchback",
+    "protected_slalom"
+  ],
+  "summary": {
+    "neural": {
+      "episodes": 64,
+      "final_arrivals": 27,
+      "planner_searches": 0,
+      "neural_actions": 3849,
+      "planner_actions": 0,
+      "mean_decisions": 60.141,
+      "median_episode_choice_ms": 0.104375,
+      "success_by_layout": {
+        "opposing_gates": 5,
+        "enclosed_courtyard": 6,
+        "horizontal_switchback": 11,
+        "protected_slalom": 5
+      },
+      "action_counts": {
+        "MOVE_E": 1082,
+        "MOVE_N": 786,
+        "MOVE_S": 1201,
+        "MOVE_W": 750,
+        "BACKTRACK": 30,
+        "STOP": 0
+      }
+    },
+    "absolute24": {
+      "episodes": 64,
+      "final_arrivals": 36,
+      "planner_searches": 122,
+      "neural_actions": 1536,
+      "planner_actions": 1254,
+      "mean_decisions": 44.031,
+      "median_episode_choice_ms": 0.004687,
+      "success_by_layout": {
+        "opposing_gates": 11,
+        "enclosed_courtyard": 2,
+        "horizontal_switchback": 12,
+        "protected_slalom": 11
+      },
+      "action_counts": {
+        "MOVE_E": 804,
+        "MOVE_N": 446,
+        "MOVE_S": 1032,
+        "MOVE_W": 464,
+        "BACKTRACK": 44,
+        "STOP": 28
+      }
+    },
+    "planner_each_stage": {
+      "episodes": 64,
+      "final_arrivals": 40,
+      "planner_searches": 192,
+      "neural_actions": 0,
+      "planner_actions": 2808,
+      "mean_decisions": 44.25,
+      "median_episode_choice_ms": 0.002586,
+      "success_by_layout": {
+        "opposing_gates": 8,
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 16,
+        "protected_slalom": 8
+      },
+      "action_counts": {
+        "MOVE_E": 680,
+        "MOVE_N": 440,
+        "MOVE_S": 1152,
+        "MOVE_W": 416,
+        "BACKTRACK": 120,
+        "STOP": 24
+      }
+    },
+    "second_switch": {
+      "episodes": 64,
+      "final_arrivals": 42,
+      "planner_searches": 64,
+      "neural_actions": 1896,
+      "planner_actions": 1066,
+      "mean_decisions": 46.625,
+      "median_episode_choice_ms": 0.093758,
+      "success_by_layout": {
+        "opposing_gates": 11,
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 12,
+        "protected_slalom": 11
+      },
+      "action_counts": {
+        "MOVE_E": 841,
+        "MOVE_N": 442,
+        "MOVE_S": 1080,
+        "MOVE_W": 595,
+        "BACKTRACK": 4,
+        "STOP": 22
+      }
+    },
+    "each_switch": {
+      "episodes": 64,
+      "final_arrivals": 36,
+      "planner_searches": 128,
+      "neural_actions": 768,
+      "planner_actions": 1920,
+      "mean_decisions": 42.438,
+      "median_episode_choice_ms": 0.002849,
+      "success_by_layout": {
+        "opposing_gates": 8,
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 12,
+        "protected_slalom": 8
+      },
+      "action_counts": {
+        "MOVE_E": 740,
+        "MOVE_N": 327,
+        "MOVE_S": 988,
+        "MOVE_W": 474,
+        "BACKTRACK": 159,
+        "STOP": 28
+      }
+    },
+    "budget_slack10": {
+      "episodes": 64,
+      "final_arrivals": 37,
+      "planner_searches": 66,
+      "neural_actions": 1980,
+      "planner_actions": 934,
+      "mean_decisions": 45.953,
+      "median_episode_choice_ms": 0.095534,
+      "success_by_layout": {
+        "opposing_gates": 9,
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 11,
+        "protected_slalom": 9
+      },
+      "action_counts": {
+        "MOVE_E": 831,
+        "MOVE_N": 437,
+        "MOVE_S": 1046,
+        "MOVE_W": 590,
+        "BACKTRACK": 10,
+        "STOP": 27
+      }
+    },
+    "second_switch_stall3": {
+      "episodes": 64,
+      "final_arrivals": 41,
+      "planner_searches": 64,
+      "neural_actions": 2280,
+      "planner_actions": 861,
+      "mean_decisions": 49.438,
+      "median_episode_choice_ms": 0.098682,
+      "success_by_layout": {
+        "opposing_gates": 11,
+        "enclosed_courtyard": 8,
+        "horizontal_switchback": 11,
+        "protected_slalom": 11
+      },
+      "action_counts": {
+        "MOVE_E": 884,
+        "MOVE_N": 510,
+        "MOVE_S": 1117,
+        "MOVE_W": 616,
+        "BACKTRACK": 14,
+        "STOP": 23
+      }
+    }
+  },
+  "paired_second_switch": {
+    "vs_neural": {
+      "rescued": 15,
+      "regressed": 0
+    },
+    "vs_absolute24": {
+      "rescued": 6,
+      "regressed": 0
+    },
+    "vs_planner_each_stage": {
+      "rescued": 6,
+      "regressed": 4
+    },
+    "vs_budget_slack10": {
+      "rescued": 5,
+      "regressed": 0
+    },
+    "bootstrap_mask_cluster_95_descriptive": {
+      "vs_neural": [
+        0.0938,
+        0.375
+      ],
+      "vs_absolute24": [
+        0,
+        0.2812
+      ],
+      "vs_planner_each_stage": [
+        -0.1406,
+        0.1875
+      ],
+      "vs_budget_slack10": [
+        0.0312,
+        0.125
+      ]
+    }
+  },
+  "source_sha256": {
+    "topology_adaptive_handoff_lab.py": "23858d9911df19f6d5121174e768371fd726862aaa86c8a5e939084aac5aaa3e",
+    "topology_goal_churn_lab.py": "878e1acbb177e0c8280f020556f265f17b3d8cd5f1b63c677189bca0b9a4c5f0",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb"
+  },
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "local_full_receipt_archive": {
+    "filename": "DRIV3R_TOPOLOGY_ADAPTIVE_HANDOFF_20261118_EVIDENCE.zip",
+    "sha256": "bc10e55eece69cc6b1b54bac3dabb832d3574bf91173db89368ee1b89ab3acb2",
+    "run_evidence_sha256": "cb027e6e2bcf1720339ee74aa2c79c79037065fa89fd3cae6dcf657b06537897",
+    "run_sha256s_sha256": "eab081f395a072ba78dc260ff0c7360d759bc1906725e7a9c47b702d15966662"
+  },
+  "qualification": {
+    "focused_unit_tests_passed": 3,
+    "complete_448_episode_exact_replay": true,
+    "recipe_and_probability_tamper_tests": true,
+    "old_192_matched_baseline_trace_hashes_identical": true,
+    "fresh_monolithic_rerun": "TIMED_OUT_AFTER_260S_WITH_318_OF_448_TRACES",
+    "resumed_last_pass_s": 28.426,
+    "full_wall_time_s": null,
+    "resumed_peak_rss_kib": 99600,
+    "native_abi_acceptance": false,
+    "immutable_actions_binary_checkpoint_publication": false
+  },
+  "limitations": [
+    "Reuses only four DEVELOPMENT structural mask types; NOT an independent or sealed HELDOUT test.",
+    "Arm ranking was made after observing all DEVELOPMENT outcomes; selection bias remains.",
+    "Scenario backgrounds are partly overwritten by central masks; 64 samples are not independent worlds.",
+    "Exact receipt/probability replay succeeds, but a fresh uninterrupted full training or evaluation campaign did not finish within the bounded timeout.",
+    "Runtime latency medians include cached planner actions and are not isolated planner search timings.",
+    "64 logical moves, goal switches and early idle ticks are synthetic; no native receipt or native host ABI acceptance.",
+    "Static material and protected-cell masks; no reactive material changes.",
+    "Prefix planner is complete only for its restricted backtrack-prefix then unpainted-movement action space.",
+    "Models use engineered Manhattan goal features and are frozen tiny checkpoints; no new optimizer updates.",
+    "Full episode receipts/checkpoints are in the locally verified archive, not in Git history or immutable Actions artifacts."
+  ]
+}

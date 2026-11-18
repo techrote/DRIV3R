@@ -1,0 +1,170 @@
+{
+  "absolute24_minus_neural_success_point_delta": 0.2916666666666667,
+  "archive": "run/evidence.json and run/traces in external evidence ZIP",
+  "archive_evidence_sha256": "f16d257676af9b53b5db5498b4945d654f0bc503dba8c47197ac5b638d77e9db",
+  "archive_hashes_sha256": "1d54ea370e421c50e72a8bf1ce45d0fd452a6959c78b39e2a414f8c8add60b79",
+  "branch": "research/import-consolidated-worm-labs",
+  "caveats": [
+    "Synthetic scheduled goal changes are external instructions; native CyberSand does not establish them.",
+    "DEVELOPMENT shares structural families with training; HELDOUT remains sealed.",
+    "All layouts use a trap-corridor base; results are not broad topology transfer.",
+    "When a goal is reached early, controller idles externally without issuing an action.",
+    "A neural STOP prevents future target switches, which reduces exposure denominators.",
+    "Prefix planner is restricted to backtrack-prefix then empty-cell BFS; not a native optimal controller.",
+    "No material-state changes during episodes. No host runtime/ABI acceptance.",
+    "No checkpoint updates; frozen tiny-model weights only."
+  ],
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "clustered_bootstrap_method": "Sample 4 world-family clusters with replacement, 10000 draws, Python Random(20261118); percentile 2.5/97.5",
+  "cpu_wall_s": 18.534,
+  "date": "2026-11-18",
+  "descriptive_world_family_cluster_bootstrap_95_interval": [
+    0.08333333333333333,
+    0.5416666666666666
+  ],
+  "episodes": 288,
+  "heldout_opened": false,
+  "initially_unreachable_scenarios": [],
+  "native_receipts": 0,
+  "optimizer_updates": 0,
+  "paid_gpu_or_api_cost": 0,
+  "peak_rss_kib": 98068,
+  "published_asset_sha256": {
+    "GOAL_CHURN_TRAJECTORIES_2026-11-18.svg": "d4d60b7b21b551504e262ea27faf97c4bd893d530db81a69d0758009e0fb8aa8",
+    "goal_churn_gallery.py": "21b1d31f1b26bbfd4a27030e27baae7028aa3ce8c360693be32c5374386a339c",
+    "goal_churn_lab.py": "557c6e5f2928d8fafda7d5daf6968eb6c2c5ffae9960dc095ca748dda19ca39a",
+    "test_goal_churn_lab.py": "f18b9c6b5ed7b54aa83214218e31a4fc79dd3ecbed9d41ff7b4c41990a7387a1"
+  },
+  "repository": "techrote/DRIV3R",
+  "source_observed_head_before_work": "3cc747281f4187a198c25cd452b84df49192e499",
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_churn_lab.py": "557c6e5f2928d8fafda7d5daf6968eb6c2c5ffae9960dc095ca748dda19ca39a",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "retarget_handoff_lab.py": "3f6eae12623b9f12053cffb4553f417f5cbdc2e9ee8900cfb95484ac19c753c3",
+    "sparse_handoff_lab.py": "97751a158631a14870d075b6ca074abc61764150fc9c0ddcdf33704c27009e65",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "status": "DEVELOPMENT-only; no native acceptance",
+  "study": "GOAL-CHURN-001",
+  "summary": {
+    "absolute24": {
+      "action_counts": {
+        "BACKTRACK": 324,
+        "MOVE_E": 642,
+        "MOVE_N": 272,
+        "MOVE_S": 434,
+        "MOVE_W": 180
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 48,
+      "mean_decisions": 38.583,
+      "median_episode_choose_ms": 0.097534,
+      "neural_actions": 1122,
+      "planner_actions": 730,
+      "planner_calls": 48
+    },
+    "neural": {
+      "action_counts": {
+        "BACKTRACK": 274,
+        "MOVE_E": 714,
+        "MOVE_N": 295,
+        "MOVE_S": 629,
+        "MOVE_W": 290
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 34,
+      "mean_decisions": 45.875,
+      "median_episode_choose_ms": 0.12668,
+      "neural_actions": 2202,
+      "planner_actions": 0,
+      "planner_calls": 0
+    },
+    "plan_every_stage": {
+      "action_counts": {
+        "BACKTRACK": 216,
+        "MOVE_E": 574,
+        "MOVE_N": 304,
+        "MOVE_S": 472,
+        "MOVE_W": 166
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 48,
+      "mean_decisions": 36.083,
+      "median_episode_choose_ms": 0.003269,
+      "neural_actions": 0,
+      "planner_actions": 1732,
+      "planner_calls": 144
+    },
+    "relative8": {
+      "action_counts": {
+        "BACKTRACK": 242,
+        "MOVE_E": 626,
+        "MOVE_N": 272,
+        "MOVE_S": 466,
+        "MOVE_W": 170
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 48,
+      "mean_decisions": 37,
+      "median_episode_choose_ms": 0.112536,
+      "neural_actions": 1152,
+      "planner_actions": 624,
+      "planner_calls": 96
+    },
+    "stall4": {
+      "action_counts": {
+        "BACKTRACK": 276,
+        "MOVE_E": 702,
+        "MOVE_N": 287,
+        "MOVE_S": 491,
+        "MOVE_W": 222
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 48,
+      "mean_decisions": 41.208,
+      "median_episode_choose_ms": 0.115452,
+      "neural_actions": 1432,
+      "planner_actions": 546,
+      "planner_calls": 75
+    },
+    "switch_plan": {
+      "action_counts": {
+        "BACKTRACK": 251,
+        "MOVE_E": 634,
+        "MOVE_N": 251,
+        "MOVE_S": 448,
+        "MOVE_W": 178
+      },
+      "at_least_one_switch": 48,
+      "both_switches_seen": 48,
+      "episodes": 48,
+      "final_arrivals": 48,
+      "mean_decisions": 36.708,
+      "median_episode_choose_ms": 0.003372,
+      "neural_actions": 384,
+      "planner_actions": 1378,
+      "planner_calls": 96
+    }
+  },
+  "target_pr": 1,
+  "verified_action_receipts": 11302,
+  "verified_neural_distributions": 6292,
+  "world_contract": "historical immutable d_common World fixture"
+}

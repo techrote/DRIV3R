@@ -1,0 +1,193 @@
+{
+  "schema": "driv3r/corpus_factory/composite-v43/pinned-manifest",
+  "date": "2026-11-18",
+  "repository": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "pr": 1,
+  "source_suites": [
+    "v38_host_live_law",
+    "v42_dual_interlock"
+  ],
+  "synthetic_not_native_CyberSand": true,
+  "generator": "composite_curriculum_v43.js",
+  "generator_sha256": "779994453ca1d134ee640739d090a1a717b263e22fdfdcd4475cc9538c620487",
+  "auditor": "test_composite_curriculum_v43.js",
+  "auditor_sha256": "cfc0d78664481cf18935198025d11be5587dbdc9a557a78af3e33538fe1b60e6",
+  "generated_manifest_sha256": "0ec96332b8406a77083cea8c626b3d94dac6a7cd3795fef90538e2148bb90b4c",
+  "source_manifest_sha256": {
+    "v38": "0d0c3c8f821dc9900863d45c9aac916014e4d66e644f99799c491a82f6554f5f",
+    "v42": "fce49195cdfae48ec02a71928a85fecfe398f4e3c93e8b2aefa0fa0ff5af2834"
+  },
+  "splits": {
+    "TRAIN": {
+      "source_rows": {
+        "v38": 12800,
+        "v42": 8912
+      },
+      "selected_rows": {
+        "v38": 8912,
+        "v42": 8912
+      },
+      "policy_rows": 17824,
+      "weight_zero": 0,
+      "full_input_duplicates": 0,
+      "geometry_groups": {
+        "v38": 8,
+        "v42": 8
+      },
+      "action_counts": {
+        "MOVE_N": 7122,
+        "MOVE_E": 2577,
+        "ERASE": 1920,
+        "PAINT_A": 832,
+        "PAINT_B": 832,
+        "BACKTRACK": 749,
+        "STOP": 832,
+        "MOVE_W": 2233,
+        "MOVE_S": 727
+      },
+      "training_sampling": {
+        "method": "SHA256 deterministic, all v38 PAINT/ERASE/STOP retained; hashed NAV subset to match v42 weight-one count",
+        "excluded_v38": 3632,
+        "excluded_original_zero_v38": 256,
+        "kept_v38_critical": 2816,
+        "kept_v38_navigation": 6096
+      }
+    },
+    "DEV": {
+      "source_rows": {
+        "v38": 12096,
+        "v42": 8736
+      },
+      "selected_rows": {
+        "v38": 12096,
+        "v42": 8736
+      },
+      "policy_rows": 20832,
+      "weight_zero": 128,
+      "full_input_duplicates": 0,
+      "geometry_groups": {
+        "v38": 4,
+        "v42": 4
+      },
+      "action_counts": {
+        "BACKTRACK": 512,
+        "MOVE_E": 4112,
+        "MOVE_N": 8864,
+        "PAINT_B": 480,
+        "MOVE_W": 3952,
+        "PAINT_A": 480,
+        "ERASE": 960,
+        "MOVE_S": 1056,
+        "STOP": 416
+      },
+      "training_sampling": null
+    },
+    "HELDOUT": {
+      "source_rows": {
+        "v38": 16576,
+        "v42": 12096
+      },
+      "selected_rows": {
+        "v38": 16576,
+        "v42": 12096
+      },
+      "policy_rows": 28672,
+      "weight_zero": 128,
+      "full_input_duplicates": 0,
+      "geometry_groups": {
+        "v38": 4,
+        "v42": 4
+      },
+      "action_counts": {
+        "MOVE_W": 5968,
+        "MOVE_N": 12224,
+        "STOP": 416,
+        "MOVE_E": 6128,
+        "MOVE_S": 1504,
+        "ERASE": 960,
+        "BACKTRACK": 512,
+        "PAINT_B": 480,
+        "PAINT_A": 480
+      },
+      "training_sampling": null
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 17824,
+      "bytes": 21146896,
+      "sha256": "1ecfefe661c3ad3dcf7634f9ec8938ed2350c1a8f37fd7cc8cb32e12eb9ea323"
+    },
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": {
+      "rows": 17824,
+      "bytes": 3585915,
+      "sha256": "eb5acafdfd6516f3f6177c8e6d48f329c62253ca96ebbb295055e5c8126f1f88"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 20832,
+      "bytes": 35640000,
+      "sha256": "80408dbb853cf992738e13d1e99aa60e60843a869bf36377500b4b22dbf3b2fd"
+    },
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": {
+      "rows": 20832,
+      "bytes": 4158932,
+      "sha256": "13165a86cca2d769370e159a76dab1d70785b932563a47a9d81e63686d6997d2"
+    },
+    "DEV_v38_challenge.jsonl": {
+      "rows": 256,
+      "bytes": 90464,
+      "sha256": "af57ca258c3cded053ce12005a1f0b24f4cbbcdce3c238d1c2c763f61a3ae8bd"
+    },
+    "DEV_v38_memory.jsonl": {
+      "rows": 128,
+      "bytes": 419136,
+      "sha256": "e8d8faf307dae016485cc3d9395785fd59ca9b78ba14081b6ac8c1e30da9b450"
+    },
+    "DEV_v42_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 58256,
+      "sha256": "e1ca74940bc9befebc5af03861d5ea5e5c24e33a5b2e84ebb199e7e6b584a75a"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 28672,
+      "bytes": 61451456,
+      "sha256": "bd6d25167816a49da64891d51193ab82982d244568a04d163392c316a692a0fa"
+    },
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": {
+      "rows": 28672,
+      "bytes": 5729924,
+      "sha256": "230ba2b1c70f9a9eb29c07126c37949b456c467836b72ecf52cbb2eacfee35ce"
+    },
+    "HELDOUT_v38_challenge.jsonl": {
+      "rows": 256,
+      "bytes": 91488,
+      "sha256": "1a1ba739bcfecdd7e33ad7f5ae9fcef5ef745e76ca798fee2821f12491f068dd"
+    },
+    "HELDOUT_v38_memory.jsonl": {
+      "rows": 128,
+      "bytes": 530272,
+      "sha256": "917ac02a644baf3f176e62972386139e1401202cff2266c2f16d0a04ec773343"
+    },
+    "HELDOUT_v42_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 58576,
+      "sha256": "e1ad1a3d2781c5a6544dc726a249282310980059af532a173b1045552e067701"
+    }
+  },
+  "qualification": {
+    "full_generations_byte_identical": 2,
+    "source_verifiable_policy_rows": 67328,
+    "evaluator_only_rows": 928,
+    "cross_split_topology_or_exact_input_leak": 0,
+    "conflicting_labels": 0,
+    "output_shard_hashes_verified": 12,
+    "local_not_CI": true
+  },
+  "limitations": [
+    "This is a guarded remix of v38 and v42, NOT a newly executed trajectory family",
+    "TRAIN is sampled per decision; original host-accepted trajectory order cannot be recovered from this export",
+    "Mixed training remains susceptible to symbolic rule parsing and does not demonstrate learned skill transfer",
+    "No native CyberSand evaluation, no SLM training or inference, no immutable Actions artifact publication"
+  ]
+}

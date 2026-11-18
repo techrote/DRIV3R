@@ -1,0 +1,49 @@
+{
+  "schema": "driv3r.preference_eval.P24_reproduction_gate/1",
+  "date_utc": "2026-11-17",
+  "source_archived_commit": "9d05c0e225bed7a855b17f84c8ec695d4f89431b",
+  "audited_shared_branch_head": "f8cb4d9da3bc249c2971027203f1074db350a7e5",
+  "original_evidence_bundle": "DRIV3R_P23_VERIFIED_ORIGINAL_NICHE_GATE_LOCAL.zip",
+  "original_evidence_zip_sha256": "a46c425c43f973b2373dfb6ba8b291b03cacb9dbd63b510519a2d6fb4f0be3b6",
+  "pinned_original_source_sha256": "b198d664af90203038df0456014784d98a29094ba2f1da63bc9a464811277b53",
+  "pinned_original_tests_sha256": "e33ccc1df2b8c371833fb4ac9b3eb1a8d820575a9a9a98467898d73472054dce",
+  "pinned_original_manifest_sha256": "873d208e370bec2d26586af1c86545957deef4b01fc5a9521f3630fd1920a88d",
+  "original_source_test_with_pinned_fixtures": "6 PASS / 0 skips / 0 failures",
+  "fresh_reruns": {
+    "repetitions": 2,
+    "outputs_compared": 13,
+    "byte_identical": 13
+  },
+  "original_published_archive_vs_fresh_generator": {
+    "outputs_compared": 13,
+    "byte_identical": 11,
+    "not_identical": [
+      "P23_RESULTS.json",
+      "SHA256SUMS.json"
+    ],
+    "nature": "Published P23_RESULTS.json contains manually inserted provenance, limitations and qualification fields absent from pinned runnable generator; SHA256SUMS.json reflects that enriched JSON. All 8 original SVG pages and ballot/candidates/reveal files reproduced byte-identically.",
+    "scientific_score_change": false
+  },
+  "source_derived_p23": {
+    "original_trajectories": 50,
+    "nonidentical_matched_pairs": 14,
+    "hidden_identical_controls": 2,
+    "independent_GP350_seeds": 2,
+    "human_owner_ratings": 0
+  },
+  "cross_lane_2026_11_17": {
+    "lfm_GP350018": "source/greedy-smoke only; 0 new full-model forwards or optimizer updates",
+    "franken_W20": "structural source-only; 0 new full-model execution",
+    "tiny_M19": "pretrained SmolLM2 root missing; 0 model forward or updates",
+    "population_P20": "pretrained SmolLM2 root missing; 0 model forward or updates",
+    "distillation_D023": "Pythia-70M root missing; 0 pretrained updates"
+  },
+  "experiment_gate": "BLOCKED: do not train another surrogate/proxy aesthetic ranker on unlabeled or correlated samples",
+  "new_model_forwards": 0,
+  "new_optimizer_updates": 0,
+  "new_model_checkpoint": null,
+  "expensive_actions": "none",
+  "external_repo_writes": false,
+  "native_game_claim": false,
+  "next_unblock": "Provide pinned model+tokenizer weights, free CPU runtime and explicit opt-in DRIV3R-only execution pathway for original source-disjoint LFM/Tiny/Population/Franken trajectories; collect blind owner-rated P23 four-niche ballot before reward-model training."
+}

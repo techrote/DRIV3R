@@ -1,0 +1,867 @@
+{
+  "checkpoints_sha256": {
+    "C37-LEARNED": "320d0413c2ef5a7fc3bd44f9cde92c5ae6e3b87cda1c0d12d79aa77f1b29c065",
+    "C37-RANDOM": "6cc9b5c3ce369605bf4bf94b99b7b8fc80833d49ab1500270211359d7e3b5377",
+    "C37-SHUFFLED": "3e3355b7f80b84dafb854922ae6a1ecb8bbd9dab4fa36d446a84bd4c12a340bc"
+  },
+  "date": "2026-11-17",
+  "evaluation": {
+    "arms": [
+      "C18-A0",
+      "C34-RESET",
+      "C37-STYLE",
+      "C37-LEARNED",
+      "C37-SHUFFLED",
+      "C37-RANDOM"
+    ],
+    "cohorts": 3,
+    "episodes_all_arms": 2880,
+    "graph_count": 96,
+    "guided_episodes_all_arms": 2304,
+    "horizon": 60,
+    "overlap_across_cohorts": 0,
+    "replicates_per_condition": 1
+  },
+  "generator_graphs": {
+    "A": {
+      "braid": 16,
+      "sha256": "94e443432376e22c7a84dfcce58130d78dd63b7d930699ba1e0926d0ee6114d6",
+      "tree": 16,
+      "unique": 32
+    },
+    "B": {
+      "braid": 16,
+      "sha256": "40b49d377ee38c6cb64b364afb010f147e19ed055e17ba822514ed1d839545a9",
+      "tree": 16,
+      "unique": 32
+    },
+    "C": {
+      "braid": 16,
+      "sha256": "fd0107069202416f323f0aa76f17aeda2cc519ad51412a17304c5ee2bdeab004",
+      "tree": 16,
+      "unique": 32
+    }
+  },
+  "identical_optimizer_replicas": true,
+  "models": {
+    "C18-A0": {
+      "A": {
+        "family": {
+          "braid": 32,
+          "tree": 8
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 40,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 262,
+            "ink": 943,
+            "lift": 431,
+            "opposed": 149,
+            "preferred": 164
+          },
+          "1": {
+            "back": 296,
+            "ink": 748,
+            "lift": 402,
+            "opposed": 99,
+            "preferred": 134
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 6,
+        "regressed_condition_count_vs_SHUFFLED": 7,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 1.0)",
+          "('braid', 'detour', True, 'backtrack', 0.35)",
+          "('braid', 'forward', True, 'backtrack', 1.0)",
+          "('tree', 'detour', False, 'backtrack', 1.0)",
+          "('tree', 'detour', True, 'backtrack', 0.35)",
+          "('tree', 'detour', True, 'backtrack', 1.0)"
+        ],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 31,
+          "tree": 15
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 46,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 310,
+            "ink": 856,
+            "lift": 480,
+            "opposed": 116,
+            "preferred": 171
+          },
+          "1": {
+            "back": 326,
+            "ink": 854,
+            "lift": 529,
+            "opposed": 122,
+            "preferred": 157
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 6,
+        "regressed_condition_count_vs_SHUFFLED": 5,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 0.35)",
+          "('braid', 'detour', False, 'backtrack', 1.0)",
+          "('tree', 'detour', False, 'backtrack', 1.0)",
+          "('tree', 'detour', True, 'backtrack', 0.35)",
+          "('tree', 'detour', True, 'backtrack', 1.0)",
+          "('tree', 'forward', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 20,
+          "tree": 14
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 34,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 279,
+            "ink": 748,
+            "lift": 402,
+            "opposed": 138,
+            "preferred": 134
+          },
+          "1": {
+            "back": 339,
+            "ink": 840,
+            "lift": 619,
+            "opposed": 119,
+            "preferred": 179
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 8,
+        "regressed_condition_count_vs_SHUFFLED": 8,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 1.0)",
+          "('braid', 'detour', True, 'backtrack', 0.35)",
+          "('braid', 'detour', True, 'backtrack', 1.0)",
+          "('braid', 'forward', True, 'backtrack', 0.35)",
+          "('tree', 'detour', False, 'backtrack', 0.35)",
+          "('tree', 'detour', False, 'backtrack', 1.0)",
+          "('tree', 'forward', True, 'backtrack', 0.35)",
+          "('tree', 'forward', True, 'backtrack', 1.0)"
+        ],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    },
+    "C34-RESET": {
+      "A": {
+        "family": {
+          "braid": 33,
+          "tree": 13
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 46,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 713,
+            "ink": 863,
+            "lift": 403,
+            "opposed": 128,
+            "preferred": 142
+          },
+          "1": {
+            "back": 691,
+            "ink": 725,
+            "lift": 411,
+            "opposed": 77,
+            "preferred": 117
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 0,
+        "regressed_condition_count_vs_SHUFFLED": 3,
+        "regressed_conditions_vs_C34_RESET": [],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 29,
+          "tree": 20
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 49,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 717,
+            "ink": 761,
+            "lift": 467,
+            "opposed": 113,
+            "preferred": 167
+          },
+          "1": {
+            "back": 824,
+            "ink": 768,
+            "lift": 543,
+            "opposed": 118,
+            "preferred": 150
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 0,
+        "regressed_condition_count_vs_SHUFFLED": 4,
+        "regressed_conditions_vs_C34_RESET": [],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 23,
+          "tree": 18
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 41,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 790,
+            "ink": 729,
+            "lift": 431,
+            "opposed": 124,
+            "preferred": 131
+          },
+          "1": {
+            "back": 841,
+            "ink": 766,
+            "lift": 576,
+            "opposed": 116,
+            "preferred": 161
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 0,
+        "regressed_condition_count_vs_SHUFFLED": 2,
+        "regressed_conditions_vs_C34_RESET": [],
+        "style_shift_after_mean": 0.0,
+        "style_shift_before_mean": 0.0,
+        "style_state_count": 0,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    },
+    "C37-LEARNED": {
+      "A": {
+        "family": {
+          "braid": 33,
+          "tree": 16
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 49,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 870,
+            "ink": 866,
+            "lift": 405,
+            "opposed": 145,
+            "preferred": 159
+          },
+          "1": {
+            "back": 760,
+            "ink": 699,
+            "lift": 386,
+            "opposed": 83,
+            "preferred": 107
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 2,
+        "regressed_condition_count_vs_SHUFFLED": 1,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 1.0)",
+          "('braid', 'forward', False, 'backtrack', 1.0)"
+        ],
+        "style_shift_after_mean": 0.00048768943380943263,
+        "style_shift_before_mean": 0.0015864256963984411,
+        "style_state_count": 4039,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 29,
+          "tree": 21
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 50,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 809,
+            "ink": 736,
+            "lift": 430,
+            "opposed": 103,
+            "preferred": 152
+          },
+          "1": {
+            "back": 853,
+            "ink": 736,
+            "lift": 482,
+            "opposed": 118,
+            "preferred": 145
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 3,
+        "regressed_condition_count_vs_SHUFFLED": 2,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', True, 'backtrack', 0.35)",
+          "('braid', 'detour', True, 'backtrack', 1.0)",
+          "('tree', 'forward', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0009232724048316155,
+        "style_shift_before_mean": 0.003964484669651035,
+        "style_state_count": 4098,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 23,
+          "tree": 17
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 40,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 903,
+            "ink": 718,
+            "lift": 431,
+            "opposed": 132,
+            "preferred": 137
+          },
+          "1": {
+            "back": 907,
+            "ink": 707,
+            "lift": 544,
+            "opposed": 102,
+            "preferred": 144
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 4,
+        "regressed_condition_count_vs_SHUFFLED": 3,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'forward', True, 'backtrack', 0.35)",
+          "('braid', 'forward', True, 'backtrack', 1.0)",
+          "('tree', 'forward', True, 'backtrack', 0.35)",
+          "('tree', 'forward', True, 'backtrack', 1.0)"
+        ],
+        "style_shift_after_mean": 0.0009437115651265506,
+        "style_shift_before_mean": 0.004353195955770985,
+        "style_state_count": 4266,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    },
+    "C37-RANDOM": {
+      "A": {
+        "family": {
+          "braid": 34,
+          "tree": 12
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 46,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 690,
+            "ink": 914,
+            "lift": 410,
+            "opposed": 143,
+            "preferred": 164
+          },
+          "1": {
+            "back": 627,
+            "ink": 749,
+            "lift": 413,
+            "opposed": 89,
+            "preferred": 116
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 1,
+        "regressed_condition_count_vs_SHUFFLED": 4,
+        "regressed_conditions_vs_C34_RESET": [
+          "('tree', 'detour', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0005245982059695103,
+        "style_shift_before_mean": 0.0015973297523855443,
+        "style_state_count": 3863,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 27,
+          "tree": 21
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 48,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 682,
+            "ink": 778,
+            "lift": 473,
+            "opposed": 111,
+            "preferred": 159
+          },
+          "1": {
+            "back": 783,
+            "ink": 789,
+            "lift": 557,
+            "opposed": 118,
+            "preferred": 161
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 3,
+        "regressed_condition_count_vs_SHUFFLED": 7,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 0.35)",
+          "('braid', 'detour', False, 'backtrack', 1.0)",
+          "('braid', 'forward', False, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0005114411130580385,
+        "style_shift_before_mean": 0.002334244787055011,
+        "style_state_count": 4119,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 23,
+          "tree": 17
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 40,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 679,
+            "ink": 750,
+            "lift": 399,
+            "opposed": 135,
+            "preferred": 139
+          },
+          "1": {
+            "back": 773,
+            "ink": 789,
+            "lift": 572,
+            "opposed": 106,
+            "preferred": 164
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 1,
+        "regressed_condition_count_vs_SHUFFLED": 2,
+        "regressed_conditions_vs_C34_RESET": [
+          "('tree', 'forward', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0006110315966417385,
+        "style_shift_before_mean": 0.003003152537131157,
+        "style_state_count": 4026,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    },
+    "C37-SHUFFLED": {
+      "A": {
+        "family": {
+          "braid": 34,
+          "tree": 15
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 49,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 838,
+            "ink": 855,
+            "lift": 443,
+            "opposed": 136,
+            "preferred": 164
+          },
+          "1": {
+            "back": 736,
+            "ink": 684,
+            "lift": 375,
+            "opposed": 77,
+            "preferred": 112
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 1,
+        "regressed_condition_count_vs_SHUFFLED": 0,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', False, 'backtrack', 1.0)"
+        ],
+        "style_shift_after_mean": 0.0004996973840844389,
+        "style_shift_before_mean": 0.0014700187167278821,
+        "style_state_count": 3984,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 31,
+          "tree": 20
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 51,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 771,
+            "ink": 742,
+            "lift": 442,
+            "opposed": 103,
+            "preferred": 143
+          },
+          "1": {
+            "back": 873,
+            "ink": 743,
+            "lift": 499,
+            "opposed": 117,
+            "preferred": 154
+          }
+        },
+        "raw_illegal_top1": 2,
+        "regressed_condition_count_vs_C34_RESET": 3,
+        "regressed_condition_count_vs_SHUFFLED": 0,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'detour', True, 'backtrack', 1.0)",
+          "('tree', 'detour', False, 'backtrack', 1.0)",
+          "('tree', 'forward', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0007668999605466274,
+        "style_shift_before_mean": 0.003016993103744853,
+        "style_state_count": 4122,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 23,
+          "tree": 18
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 41,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 847,
+            "ink": 698,
+            "lift": 437,
+            "opposed": 119,
+            "preferred": 129
+          },
+          "1": {
+            "back": 878,
+            "ink": 726,
+            "lift": 550,
+            "opposed": 104,
+            "preferred": 143
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 2,
+        "regressed_condition_count_vs_SHUFFLED": 0,
+        "regressed_conditions_vs_C34_RESET": [
+          "('braid', 'forward', True, 'backtrack', 0.35)",
+          "('tree', 'forward', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0008335423863837074,
+        "style_shift_before_mean": 0.004527021707371204,
+        "style_state_count": 4195,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    },
+    "C37-STYLE": {
+      "A": {
+        "family": {
+          "braid": 33,
+          "tree": 13
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 46,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 713,
+            "ink": 862,
+            "lift": 404,
+            "opposed": 128,
+            "preferred": 142
+          },
+          "1": {
+            "back": 698,
+            "ink": 728,
+            "lift": 412,
+            "opposed": 76,
+            "preferred": 117
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 0,
+        "regressed_condition_count_vs_SHUFFLED": 3,
+        "regressed_conditions_vs_C34_RESET": [],
+        "style_shift_after_mean": 0.0004327351947252982,
+        "style_shift_before_mean": 0.0012330581327472656,
+        "style_state_count": 3876,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "B": {
+        "family": {
+          "braid": 29,
+          "tree": 20
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 49,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 716,
+            "ink": 759,
+            "lift": 470,
+            "opposed": 114,
+            "preferred": 167
+          },
+          "1": {
+            "back": 827,
+            "ink": 769,
+            "lift": 543,
+            "opposed": 115,
+            "preferred": 151
+          }
+        },
+        "raw_illegal_top1": 0,
+        "regressed_condition_count_vs_C34_RESET": 0,
+        "regressed_condition_count_vs_SHUFFLED": 4,
+        "regressed_conditions_vs_C34_RESET": [],
+        "style_shift_after_mean": 0.0005397833215751222,
+        "style_shift_before_mean": 0.0021458881277180886,
+        "style_state_count": 4138,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      },
+      "C": {
+        "family": {
+          "braid": 23,
+          "tree": 17
+        },
+        "guided_episodes": 128,
+        "guided_goal_events": 40,
+        "host_rejections": 0,
+        "personality_action_totals": {
+          "-1": {
+            "back": 790,
+            "ink": 727,
+            "lift": 433,
+            "opposed": 125,
+            "preferred": 130
+          },
+          "1": {
+            "back": 860,
+            "ink": 755,
+            "lift": 594,
+            "opposed": 114,
+            "preferred": 165
+          }
+        },
+        "raw_illegal_top1": 1,
+        "regressed_condition_count_vs_C34_RESET": 1,
+        "regressed_condition_count_vs_SHUFFLED": 2,
+        "regressed_conditions_vs_C34_RESET": [
+          "('tree', 'detour', True, 'backtrack', 0.35)"
+        ],
+        "style_shift_after_mean": 0.0006513535821458949,
+        "style_shift_before_mean": 0.003324406537692769,
+        "style_state_count": 4219,
+        "unguided_action_ink_equal_baseline": 32,
+        "unguided_episodes": 32
+      }
+    }
+  },
+  "paired_action_changes": {
+    "A": {
+      "C34-RESET": {
+        "changed_action_hash": 50,
+        "learned_losses": 2,
+        "learned_wins": 5,
+        "paired_episodes": 128
+      },
+      "C37-RANDOM": {
+        "changed_action_hash": 54,
+        "learned_losses": 3,
+        "learned_wins": 6,
+        "paired_episodes": 128
+      },
+      "C37-SHUFFLED": {
+        "changed_action_hash": 47,
+        "learned_losses": 1,
+        "learned_wins": 1,
+        "paired_episodes": 128
+      }
+    },
+    "B": {
+      "C34-RESET": {
+        "changed_action_hash": 46,
+        "learned_losses": 4,
+        "learned_wins": 5,
+        "paired_episodes": 128
+      },
+      "C37-RANDOM": {
+        "changed_action_hash": 53,
+        "learned_losses": 6,
+        "learned_wins": 8,
+        "paired_episodes": 128
+      },
+      "C37-SHUFFLED": {
+        "changed_action_hash": 39,
+        "learned_losses": 2,
+        "learned_wins": 1,
+        "paired_episodes": 128
+      }
+    },
+    "C": {
+      "C34-RESET": {
+        "changed_action_hash": 51,
+        "learned_losses": 4,
+        "learned_wins": 3,
+        "paired_episodes": 128
+      },
+      "C37-RANDOM": {
+        "changed_action_hash": 55,
+        "learned_losses": 4,
+        "learned_wins": 4,
+        "paired_episodes": 128
+      },
+      "C37-SHUFFLED": {
+        "changed_action_hash": 41,
+        "learned_losses": 3,
+        "learned_wins": 2,
+        "paired_episodes": 128
+      }
+    }
+  },
+  "paired_graph_cluster_bootstrap": {
+    "C34-RESET": {
+      "cluster_bootstrap_95pct_events": [
+        -7.0,
+        13.0
+      ],
+      "cluster_losses": 9,
+      "cluster_ties": 74,
+      "cluster_wins": 13,
+      "learned_minus_control": 3,
+      "method": "resample 96 held-out graph hashes with replacement; paired event difference; descriptive, not independent episode CI"
+    },
+    "C37-RANDOM": {
+      "cluster_bootstrap_95pct_events": [
+        -8.0,
+        18.0
+      ],
+      "cluster_losses": 10,
+      "cluster_ties": 71,
+      "cluster_wins": 15,
+      "learned_minus_control": 5,
+      "method": "resample 96 held-out graph hashes with replacement; paired event difference; descriptive, not independent episode CI"
+    },
+    "C37-SHUFFLED": {
+      "cluster_bootstrap_95pct_events": [
+        -8.0,
+        4.0
+      ],
+      "cluster_losses": 6,
+      "cluster_ties": 86,
+      "cluster_wins": 4,
+      "learned_minus_control": -2,
+      "method": "resample 96 held-out graph hashes with replacement; paired event difference; descriptive, not independent episode CI"
+    }
+  },
+  "schema": "driv3r-c37-compact-evidence/1",
+  "training": {
+    "actual_target_mae": {
+      "learned": 0.6103681325912476,
+      "random": 0.8497213125228882,
+      "shuffled": 0.663275957107544
+    },
+    "dataset_sha256": "1117a3f75cc9f25db1b7a57b2517e8155fc4027b3860d0762d8fdc5371b44eca",
+    "epochs": 10,
+    "head_difference_mae": 0.29878178238868713,
+    "losses": {
+      "learned": [
+        3.6450665,
+        3.1135096,
+        2.9022496,
+        2.7944226,
+        2.7468615,
+        2.7143043,
+        2.7051103,
+        2.7034181,
+        2.6974065,
+        2.7064012
+      ],
+      "shuffled": [
+        3.6036884,
+        3.337043,
+        3.3030851,
+        3.3092916,
+        3.2624098,
+        3.2671669,
+        3.2277398,
+        3.2593924,
+        3.2209464,
+        3.2258199
+      ]
+    },
+    "permuted_targets_sha256": "1f011e3b16b9f768047884b2ccfc6d4f16699cdef4c5d197579e876ebefc2dd1",
+    "receipts_sha256": "7a8c025802cd013ea6a5898dddb2a648013dc428c0e42da350cf67244ab7acdb",
+    "samples": 320,
+    "target_negative": 86,
+    "target_positive": 185,
+    "unique_train_graphs": 80,
+    "updates_per_trained_arm": 100
+  }
+}

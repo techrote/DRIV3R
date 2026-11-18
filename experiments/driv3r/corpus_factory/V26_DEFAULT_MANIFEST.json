@@ -1,0 +1,153 @@
+{
+  "schema": "driv3r/corpus_factory/causal-gate-v26/manifest",
+  "host": "synthetic-not-native-CyberSand",
+  "generator": "causal_gate_v26.js",
+  "generator_sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c",
+  "dependency": "outcome_forks_v25.js",
+  "dependency_sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d",
+  "quick": false,
+  "oracle": "reverse-BFS over position, immediate predecessor, 3-target paint state, gate-transition latch",
+  "initial_preparatory_history_scripted": true,
+  "host_legal_wrong_first_intervention_prefix_in_recovery": true,
+  "gate_transition": "first accepted paint toggles lower-west loop entrance once",
+  "oracle_actions_entire_post_prelude": true,
+  "split_worlds_disjoint": true,
+  "full_last64_alias_within_family": true,
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "episodes": 128,
+      "clean_episodes": 64,
+      "wrong_first_recovery_episodes": 64,
+      "decisions": 1984,
+      "unique_inputs": 1744,
+      "duplicate_inputs": 240,
+      "first_action": {
+        "BACKTRACK": 32,
+        "MOVE_N": 32
+      },
+      "gate_initial": {
+        "open": 32,
+        "closed": 32
+      },
+      "gate_transitions": 128,
+      "causal_clean_episode_count": 12,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 43,
+      "frozen_gate_illegal_clean_only": 3,
+      "frozen_gate_strict_regret_clean_only": 37,
+      "strict_causal_clean_episodes": 12,
+      "paint_actions": 256,
+      "erase_actions": 0,
+      "retrace_actions": 334,
+      "min_first_regret": 2
+    },
+    "DEV": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 64,
+      "clean_episodes": 32,
+      "wrong_first_recovery_episodes": 32,
+      "decisions": 1148,
+      "unique_inputs": 1148,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "gate_initial": {
+        "open": 16,
+        "closed": 16
+      },
+      "gate_transitions": 64,
+      "causal_clean_episode_count": 10,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 42,
+      "frozen_gate_illegal_clean_only": 2,
+      "frozen_gate_strict_regret_clean_only": 38,
+      "strict_causal_clean_episodes": 10,
+      "paint_actions": 128,
+      "erase_actions": 0,
+      "retrace_actions": 160,
+      "min_first_regret": 2
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "group_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "episodes": 64,
+      "clean_episodes": 32,
+      "wrong_first_recovery_episodes": 32,
+      "decisions": 1320,
+      "unique_inputs": 1320,
+      "duplicate_inputs": 0,
+      "first_action": {
+        "BACKTRACK": 16,
+        "MOVE_N": 16
+      },
+      "gate_initial": {
+        "open": 16,
+        "closed": 16
+      },
+      "gate_transitions": 64,
+      "causal_clean_episode_count": 8,
+      "post_gate_action_disagreements_vs_frozen_gate_clean_only": 38,
+      "frozen_gate_illegal_clean_only": 0,
+      "frozen_gate_strict_regret_clean_only": 38,
+      "strict_causal_clean_episodes": 8,
+      "paint_actions": 128,
+      "erase_actions": 0,
+      "retrace_actions": 160,
+      "min_first_regret": 2
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "cc0d3d4e49630eeccd2be9bcaec318ccb91a8be19b52fe9ed4c364d96bd9a7e3",
+      "bytes": 986940,
+      "rows": 128
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "33691bbd203b905497f45a78f522813bb8368dc7fc21922009e798e284a9f4e3",
+      "bytes": 1993502,
+      "rows": 1984
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "269f7cccc0f636800c22ddd4e4352e5980cb5bc0ddb506cce315be00fa5ceb3c",
+      "bytes": 507112,
+      "rows": 64
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "d267f28f3a6e6345e55f45e1d4cee31e40caea56dfdc4088e6f097dd6829ef82",
+      "bytes": 1149930,
+      "rows": 1148
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "da18b50f567a090213407136f8340397763bb280e5f7baa43bb93b513c942d68",
+      "bytes": 527948,
+      "rows": 64
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "fc40da63006eaaf53e0da5cd14fd674e2cbd716c70fff95c7dd9af6e61385cb1",
+      "bytes": 1326552,
+      "rows": 1320
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "checkpoint_binaries_external_only": {
+    "C53-LOCAL.safetensors": {
+      "bytes": 2612,
+      "sha256": "235199095f3339fa14e17f7041728074d246c0f5840870dcd38128f935e29fb5"
+    },
+    "C53-MEM.safetensors": {
+      "bytes": 2612,
+      "sha256": "6078d2427d5cee719d39e2635b2b03fecb1ed725fc036fff5eca5883bf10c225"
+    },
+    "C53-SHUFFLED.safetensors": {
+      "bytes": 2612,
+      "sha256": "2d66ec0a3be5810d51d88e094e038bbacb63a8efaf332dc3ad4990cda8fde766"
+    }
+  },
+  "date": "2026-11-18",
+  "evidence_zip_sha256": "861751181ff3f79dd0482c150d5a1f99a84f95c092acfb8c2017f85de043c2c3",
+  "executed_evidence_files": {
+    "C53-blind.json": {
+      "bytes": 369151,
+      "sha256": "c2da074fadebfd8e3431aee06f0be925414f9322681de95864e6df839f85fef7"
+    },
+    "C53-normalization.json": {
+      "bytes": 999,
+      "sha256": "f8bb03dab35843ff12b668f861fa631bb177184f8aaf3f33f94ec24edf1f404a"
+    },
+    "C53-online.json": {
+      "bytes": 1209668,
+      "sha256": "0976f0a32363819e41e64f5c842be85cd7871124653300204643c701a7224f11"
+    },
+    "C53-pilot.log": {
+      "bytes": 268,
+      "sha256": "9b7533f3a73b0528b82dcbeabd9396c38eb54b3cef88a22d31947e87f9f88167"
+    },
+    "C53-run.log": {
+      "bytes": 1261,
+      "sha256": "4fce5fbf3a496435a8bbf6f2df850eab688c9e931f619e3e1c7eea88bbd767e8"
+    },
+    "C53-selected-traces.json": {
+      "bytes": 48980,
+      "sha256": "c801837de1cb2862e6c8bb183e077ec82353faa33211a23567fb7f66781dc320"
+    },
+    "C53-tests.log": {
+      "bytes": 967,
+      "sha256": "e4b6224eb709eac9ba3086237d0c2b27a16e2a66f386def3f430d3a4b4c4c79d"
+    },
+    "C53-training.json": {
+      "bytes": 521378,
+      "sha256": "aeeee53f5ee21040db51987c1535406da6b99a50dc49757d23e42b66bb68820c"
+    }
+  },
+  "frozen_upstream": {
+    "C52 aligned checkpoint": "7a717ca28afa025dbb069dcfe8846e4577da3f3b91538ac96614d8bd3ca3d076",
+    "C52 source": "20b367bea58e2148da8903275e2614f1fa8eaf53bb7189a365d76546f9921129"
+  },
+  "gallery_replays_verified": 18,
+  "immutable_GitHub_Actions_checkpoint_custody": false,
+  "native_CyberSand_acceptance": false,
+  "optimizer_independent_refit": 2,
+  "owned_path": "experiments/driv3r/training/guidance_recovery/",
+  "pilot_preview_before_cohort_expansion": true,
+  "pr": 1,
+  "publication_files": {
+    "C53-executed-evidence.zip.b64": {
+      "bytes": 220483,
+      "sha256": "dd67e1bed4d722a654a910e723d8244e26fc7b2f01e3dacab1507eadfb829a6f"
+    },
+    "C53-extract.py": {
+      "bytes": 1124,
+      "sha256": "58f4858a0d6b1e1ecfd95827c0c4ad4ebc73f977e887973617087d5f771da22a"
+    },
+    "C53-gallery.svg": {
+      "bytes": 271006,
+      "sha256": "8fbc116c0d58531422b189bc03bfb62c47f772c4c9116a5c19ad72fb5e356190"
+    },
+    "C53-observed-branch-memory-2026-11-18.md": {
+      "bytes": 7712,
+      "sha256": "220702c925882d77759008fef4fcc092526e5052202cf5d67aa6421e86cbaff1"
+    },
+    "C53-summary.json": {
+      "bytes": 26886,
+      "sha256": "438978e9b3170ad73c282492c0ac8ffa05b40a206e74fe483006950408677302"
+    },
+    "c53_episodic_memory.py": {
+      "bytes": 20646,
+      "sha256": "c2388a019003e500e7d46d1fbd4eae5db95a88fe75d973a3b887b51ff170e0b0"
+    },
+    "c53_gallery.py": {
+      "bytes": 3781,
+      "sha256": "3ebfd726b66180b3e56ff92521352665f9dc3b05b7c57490a27b35e0c5c2d804"
+    },
+    "test_c53_episodic_memory.py": {
+      "bytes": 6193,
+      "sha256": "362f47e1c08299fcaa97407c5077de2260907586f7d498c9238be1c0d14d81a5"
+    }
+  },
+  "repository": "techrote/DRIV3R",
+  "schema": "driv3r-c53-evidence-custody/1",
+  "scientific_promotion": false,
+  "tests_passed": 7,
+  "unapproved_paid_compute": false
+}

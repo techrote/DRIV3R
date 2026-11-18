@@ -1,0 +1,53 @@
+{
+  "archive_source": "C45 local archive, SHA-256 verified manifest (141/141 entries)",
+  "branch": "research/import-consolidated-worm-labs",
+  "checkpoint_actions_custody": "not achieved",
+  "checkpoint_sha256": {
+    "C47-ALIGNED": "98e0c277ce01964b0851c1e60c6445c94d062ad9f590ca1619af69d317658e06",
+    "C47-SHUFFLED": "897832af84b512f5ed7a232681e9e8153d4d503f890e57a6a1aaf911fdd0bb3e"
+  },
+  "files": {
+    "C47-curated-paths.json": {
+      "bytes": 52284,
+      "sha256": "646ad4a786ff13a0d05a9f721da663a9be0b0263638ed26b4eb95521f32ac5e1"
+    },
+    "C47-differential-goal-recovery-2026-11-17.md": {
+      "bytes": 7688,
+      "sha256": "5b75dd35b122dc5aa2e59e1fa0a2b067bdc60ef83e8ffc5a45ad1e62311f050f"
+    },
+    "C47-gallery.html": {
+      "bytes": 94332,
+      "sha256": "d9feeb9dc14c1ff746ba52cf5aed837bdb31c5a652c6abf294d1c0fbcad64e66"
+    },
+    "C47-summary.json": {
+      "bytes": 9346,
+      "sha256": "bfdde8bc0373d64ec736b44554af1d96424eb158462e641eb1b7f67f9ba0b681"
+    },
+    "c47_gallery.py": {
+      "bytes": 2553,
+      "sha256": "12de837e4c24211280f37e9aa83932190628b021cb5856750da00ac9f5287c11"
+    },
+    "c47_pairwise_episode_switch.py": {
+      "bytes": 15405,
+      "sha256": "2a466339a2396f5025458f3e9e8aea13f1f120525f62af5b4b99af981fabfebd"
+    },
+    "test_c47_pairwise_episode_switch.py": {
+      "bytes": 3544,
+      "sha256": "76537d4b12e6193b95ba4144f2cd3c5cf8cc198691eea57ff8fad80177eb4703"
+    }
+  },
+  "graph_sets_sha256": {
+    "blind": "123332fcb39ebae6b4e6b1e6b2f17e1835ab606b6880958cd08df6a4081b0485",
+    "online": "d04a295786749aba401d5898ee112c491f4589f7cce3642130515299cdb5e8b3",
+    "train": "69ad481f882987941d1ca59e993c66edf03b633d7d163807a9233e6de804ba63"
+  },
+  "native": "not validated",
+  "path_prefix": "experiments/driv3r/training/guidance_recovery/",
+  "pr": 1,
+  "prerequisite_c40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+  "repo": "techrote/DRIV3R",
+  "schema": "driv3r-c47-local-custody/1",
+  "source_sha256": "2a466339a2396f5025458f3e9e8aea13f1f120525f62af5b4b99af981fabfebd",
+  "status": "HOLD / reject neural promotion",
+  "tests": "5 local targeted regression tests pass"
+}

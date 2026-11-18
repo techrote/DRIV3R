@@ -1,0 +1,27 @@
+{
+  "base": "research/import-consolidated-worm-labs",
+  "checkpoint_custody": "local archive SHA-256 only; no immutable Actions artifact",
+  "content_sha256": {
+    "C46-episode-arbitration-2026-11-17.md": "ceb298d55a5fcfd45201fb3acacbda75123c2bb5f5ecb5b44398e9d8468f49a6",
+    "output_c46/C46-curated-paths.json": "c8bb7f2bb5eed497b702d6176eb79f2a8d69f9aeb5cec97a1e4f61914415abf8",
+    "output_c46/C46-summary.json": "7574b08611e0a448bc9437e0ca6ed9566f2ff5441851124f141abb7e91a218a1",
+    "source/c46_episode_arbitration.py": "d0af491e69ae47cfa5434533c5b93e2a2513b81a841fd829b696b35eee19fb97",
+    "source/c46_gallery.py": "70508557f30894e5437fc749395e0f266f3cb519046c8127c925b2f3608b9d11",
+    "source/test_c46_episode_arbitration.py": "a23c0efb78ebd9798a601c689c7274e4bf54ba495e1c853eb9b5174d84362207"
+  },
+  "date": "2026-11-17",
+  "experiment": "C46",
+  "local_artifact_files": [
+    "C46-ALIGNED.safetensors",
+    "C46-SHUFFLED.safetensors",
+    "C46-online.json",
+    "C46-blind.json",
+    "C46-training.json",
+    "C46-traces.json",
+    "C46-gallery.html"
+  ],
+  "native_validation": "not performed",
+  "owned_path": "experiments/driv3r/training/guidance_recovery/**",
+  "promotion": "REJECT / Draft HOLD",
+  "repository": "techrote/DRIV3R"
+}

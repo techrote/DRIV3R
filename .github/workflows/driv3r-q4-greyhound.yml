@@ -1,0 +1,116 @@
+name: DRIV3R GREYHOUND Q4 — manual request and bounded CPU research
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/import-consolidated-worm-labs
+    paths:
+      - experiments/driv3r/frankenlayers_lab/q4-greyhound-request.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: driv3r-q4-greyhound-research-only
+  cancel-in-progress: false
+
+jobs:
+  q4-greyhound:
+    if: github.repository == 'techrote/DRIV3R' && github.ref == 'refs/heads/research/import-consolidated-worm-labs'
+    name: Official Q4 → compiled GREYHOUND nested layer ablation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 95
+    env:
+      PYTHONUNBUFFERED: '1'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Exact-source request, lineage and low-cost regression gate
+        run: |
+          set -euo pipefail
+          python3 -m compileall -q experiments/driv3r/frankenlayers_lab
+          python3 -m unittest experiments.driv3r.frankenlayers_lab.test_q4_greyhound -v
+          python3 - <<'PY'
+          from experiments.driv3r.frankenlayers_lab.q4_greyhound import validate_request,validate_lineage
+          from pathlib import Path
+          import json
+          validate_lineage()
+          req=validate_request(json.loads(Path("experiments/driv3r/frankenlayers_lab/q4-greyhound-request.json").read_text()))
+          print("PREMODEL_Q4_GREYHOUND_REQUEST_PASS", req["tier"], req["nonce"])
+          PY
+          mkdir -p evidence/q4-greyhound
+          git rev-parse HEAD > evidence/q4-greyhound/source-sha.txt
+          cp experiments/driv3r/frankenlayers_lab/q4-greyhound-request.json evidence/q4-greyhound/request.json
+
+      - name: Restore pinned historical host dependencies and verify each Git blob
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/q4-greyhound
+          timeout --signal=TERM --kill-after=20 180 python3 -m experiments.driv3r.frankenlayers_lab.q4_greyhound bootstrap \
+            --root "$RUNNER_TEMP/driv3r-legacy-readonly" --evidence evidence/q4-greyhound
+
+      - name: Acquire official pinned Q4_K_M GGUF (no Q8 acquisition or requantisation)
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=25 1700 python3 -m experiments.driv3r.frankenlayers_lab.q4_greyhound model \
+            --root "$RUNNER_TEMP/official-q4" --evidence evidence/q4-greyhound
+
+      - name: Build exact pinned llama.cpp with decision-only layer-flow patch
+        run: |
+          set -euo pipefail
+          LLAMA_ROOT="$RUNNER_TEMP/greyhound-q4-llama"
+          git init "$LLAMA_ROOT"
+          git -C "$LLAMA_ROOT" remote add origin https://github.com/ggml-org/llama.cpp.git
+          timeout --signal=TERM --kill-after=20 200 git -C "$LLAMA_ROOT" fetch --depth=1 origin 8642541b255bfb5dc39cd351a178be09013a55d6
+          git -C "$LLAMA_ROOT" checkout --detach FETCH_HEAD
+          test "$(git -C "$LLAMA_ROOT" rev-parse HEAD)" = 8642541b255bfb5dc39cd351a178be09013a55d6
+          python3 -m experiments.driv3r.frankenlayers_lab.q4_greyhound patch \
+            --llama-root "$LLAMA_ROOT" --evidence evidence/q4-greyhound
+          git -C "$LLAMA_ROOT" diff -- src/models/lfm3.cpp > evidence/q4-greyhound/compiled-graph.patch
+          cmake -S "$LLAMA_ROOT" -B "$LLAMA_ROOT/build" \
+            -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=OFF -DLLAMA_CURL=OFF \
+            -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF \
+            -DLLAMA_BUILD_UI=OFF -DLLAMA_USE_PREBUILT_UI=OFF
+          timeout --signal=TERM --kill-after=20 1400 cmake --build "$LLAMA_ROOT/build" --config Release \
+            --target llama-server -j2
+          test -x "$LLAMA_ROOT/build/bin/llama-server"
+          sha256sum "$LLAMA_ROOT/build/bin/llama-server" > evidence/q4-greyhound/llama-server.sha256
+          ldd "$LLAMA_ROOT/build/bin/llama-server" > evidence/q4-greyhound/llama-server-ldd.txt
+
+      - name: Real Q4 live System-One decisions and original host trajectories
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=35 3250 python3 -m experiments.driv3r.frankenlayers_lab.q4_greyhound run \
+            --binary "$RUNNER_TEMP/greyhound-q4-llama/build/bin/llama-server" \
+            --model "$RUNNER_TEMP/official-q4/d1-2B-Q4_K_M.gguf" \
+            --w0 "$RUNNER_TEMP/driv3r-legacy-readonly/experiments/agent_painter/worm/common/worm.py" \
+            --legacy-root "$RUNNER_TEMP/driv3r-legacy-readonly" \
+            --patch-receipt evidence/q4-greyhound/graph-patch-receipt.json \
+            --request experiments/driv3r/frankenlayers_lab/q4-greyhound-request.json \
+            --source-commit "$GITHUB_SHA" \
+            --evidence evidence/q4-greyhound/trajectories
+
+      - name: Preserve original success and failure evidence, checksums and CPU context
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/q4-greyhound
+          lscpu > evidence/q4-greyhound/cpu.txt || true
+          (cd evidence/q4-greyhound && find . -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 -r sha256sum) \
+            > evidence/q4-greyhound/SHA256SUMS.txt
+
+      - name: Upload original Q4 trial archive (even on failure)
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: driv3r-q4-greyhound-${{ github.run_id }}
+          path: evidence/q4-greyhound/
+          if-no-files-found: warn
+          retention-days: 90

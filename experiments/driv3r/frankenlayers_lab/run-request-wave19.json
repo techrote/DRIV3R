@@ -1,0 +1,107 @@
+{
+  "schema": "frankenlayers-wave19-bounded-manual-live-evaluation/1",
+  "status": "source-prepared-not-inferred",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "entrypoint": "python -m experiments.driv3r.frankenlayers_lab.wave19_live",
+  "auto_training": false,
+  "workflow_dispatch": false,
+  "execution_requires_manual_source_pinned_runner": true,
+  "legacy_compatibility_issue": "The imported experiments/driv3r/frankenlayers/infer.py run_arm(binary,model,w0,mode,out) has five parameters and uses module-global SEED; inherited counterfactual.run_variant passes a sixth seed. Wave19 binds/restores those globals around a five-argument call without modifying the parent module.",
+  "model": {
+    "donor": "d1-2B Q8_0",
+    "donor_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+    "quant": "Q4_K_M requantized from pinned Q8",
+    "skeleton": "aero4_no2",
+    "executed_layers": [
+      0,
+      4,
+      10,
+      20
+    ],
+    "base_weights_frozen": true
+  },
+  "training": {
+    "seed": 2718,
+    "family": "architecture",
+    "geometry_shift": 0,
+    "variants": [
+      "east_open",
+      "east_blocked",
+      "north_blocked",
+      "south_blocked"
+    ],
+    "steps_per_variant": 24,
+    "real_model_probability_records_max": 96,
+    "adapter_parameters": 55,
+    "epochs": 80
+  },
+  "heldout": [
+    {
+      "seed": 6089,
+      "family": "pipework",
+      "geometry_shift": 2
+    },
+    {
+      "seed": 7127,
+      "family": "greebles",
+      "geometry_shift": 3
+    }
+  ],
+  "heldout_variants": [
+    "east_open",
+    "east_blocked",
+    "north_blocked",
+    "south_blocked"
+  ],
+  "steps_per_variant": 24,
+  "arms": [
+    "q8_stock",
+    "q4_stock",
+    "q4_mutant_raw",
+    "q4_mutant_strong",
+    "q4_mutant_guarded",
+    "q4_mutant_loop"
+  ],
+  "bounded_work": {
+    "train_max_model_decisions": 96,
+    "eval_max_model_decisions": 1152,
+    "total_max_model_decisions": 1248,
+    "max_parallel": 1
+  },
+  "scoring": [
+    "same-runner median decision seconds",
+    "host legal-choice fraction",
+    "new cells per decision budget",
+    "exposed-pair-normalized action divergence",
+    "unexplained divergence",
+    "premature STOP episodes",
+    "revisit contacts",
+    "action entropy"
+  ],
+  "evidence": [
+    "per-decision HTTP and parsed probabilities",
+    "host trajectories",
+    "Q8 donor hash",
+    "Q4 receipt",
+    "W0 hash",
+    "adapter checkpoint and source sample hashes",
+    "fold-specific counterfactual observations",
+    "quantization receipt",
+    "source commit SHA",
+    "failed run outputs"
+  ],
+  "scientific_caveats": [
+    "Wave19 has no real-model results until manual execution on pinned inputs succeeds",
+    "two new synthetic W0 held-out folds are not native CyberSand gameplay",
+    "action divergences do not establish obstacle recovery competence",
+    "no protected-cell/material chemistry claim",
+    "decision latency is not whole-episode throughput"
+  ],
+  "no_paid_api": true,
+  "no_paid_gpu": true,
+  "no_merge": true,
+  "no_ready": true,
+  "game_code_mutation": false
+}

@@ -1,0 +1,167 @@
+{
+  "schema": "driv3r/corpus_factory/v23",
+  "label": "synthetic host; NOT native CyberSand",
+  "generator": "noncommutative_mission_v23.js",
+  "parent": [
+    "curriculum_pulse_v22.js",
+    "recipe_grounded_v21.js"
+  ],
+  "public_operators": {
+    "A": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "B": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "C": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "D": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "E": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "F": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "G": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "H": [
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "programme_bank_sha256": "6175dde1b40b044bce1a9f874339ad015a0a4923ad8c1aa5f428b1f33a3d408e",
+  "programme_bank_method": "predeclared 8-permutation sequence subset, disjoint by split",
+  "programme_prefix_suffix_ablations": {
+    "TRAIN": {
+      "first2": 0.25,
+      "last2": 0.25,
+      "first3": 0.3125,
+      "last3": 0.375
+    },
+    "DEV": {
+      "first2": 0.25,
+      "last2": 0.25,
+      "first3": 0.3125,
+      "last3": 0.375
+    },
+    "HELDOUT": {
+      "first2": 0.25,
+      "last2": 0.25,
+      "first3": 0.375,
+      "last3": 0.3125
+    }
+  },
+  "split_disjoint_programmes": true,
+  "split_disjoint_geometry": true,
+  "splits": {
+    "TRAIN": {
+      "world_groups": 12,
+      "episodes": 192,
+      "decisions": 12496,
+      "programmes": 16,
+      "first_actions": {
+        "N": 96,
+        "S": 96
+      },
+      "corrective_erases": 384,
+      "accepted_paints": 1344,
+      "public_pulses": 192,
+      "exact_duplicate_inputs": 496,
+      "unique_model_inputs": 12000,
+      "zero_weight_train_duplicates": 496
+    },
+    "DEV": {
+      "world_groups": 6,
+      "episodes": 96,
+      "decisions": 10032,
+      "programmes": 16,
+      "first_actions": {
+        "N": 48,
+        "S": 48
+      },
+      "corrective_erases": 352,
+      "accepted_paints": 832,
+      "public_pulses": 112,
+      "exact_duplicate_inputs": 48,
+      "unique_model_inputs": 9984,
+      "zero_weight_train_duplicates": 0
+    },
+    "HELDOUT": {
+      "world_groups": 6,
+      "episodes": 96,
+      "decisions": 15392,
+      "programmes": 16,
+      "first_actions": {
+        "N": 48,
+        "S": 48
+      },
+      "corrective_erases": 528,
+      "accepted_paints": 1008,
+      "public_pulses": 144,
+      "exact_duplicate_inputs": 48,
+      "unique_model_inputs": 15344,
+      "zero_weight_train_duplicates": 0
+    }
+  },
+  "episodes": 384,
+  "decisions": 37920,
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "6f2e2a5aa26fc7a54f6c4465705a50e4760e8221854bd6187d4380505cc65365",
+      "bytes": 73032,
+      "rows": 192
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "3007180fd1dcc8699cd0b41229117f4400eaa79777caf352aeab2e31d1f84ac3",
+      "bytes": 173917548,
+      "rows": 12496
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "a3d0b5fd5bba6260e08541a16baba5f45ece78e5bd78d38a013c774eadb2a782",
+      "bytes": 36068,
+      "rows": 96
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "27063d5e9a8c9e40b3edb8795920b7a02a3f480a3d2d957b4e5c36531820f672",
+      "bytes": 182459854,
+      "rows": 10032
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "9af61a304919a9b1dffebba1d65c2afc46dddf218c2cbe590f3a075d81b77746",
+      "bytes": 37332,
+      "rows": 96
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "b657afeb096e5745b46310c951c0ca4f5a900d5e69d1344b383152bf1581ad64",
+      "bytes": 362166316,
+      "rows": 15392
+    }
+  }
+}

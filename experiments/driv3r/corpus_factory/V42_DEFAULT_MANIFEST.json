@@ -1,0 +1,97 @@
+{
+  "schema": "driv3r/corpus_factory/dual-interlock-v42/manifest",
+  "synthetic_not_native_CyberSand": true,
+  "generator": "dual_interlock_v42.js",
+  "generator_sha256": "e08d8c186b54b4680a59c33169ec150f0873b4f309303a57ef909ad01449d993",
+  "dependencies": [
+    {
+      "file": "delayed_obstruction_v41.js",
+      "sha256": "25e72a3cbde6fd88893fe9881f5c5277527abed7c028a3f112f82d59058860df"
+    },
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "design": "Independent A/B remote actuator receipts; path blocked iff both are 1. Matched B=0/1 pairs have identical last A, recent events, local view, legality; different optimal actions only if A=1. Negative A=0 controls.",
+  "labels": "Host-legal accepted-action suffix oracle. Remote actuator transitions are scripted synthetic host events, not agent actions.",
+  "model_contract": "Only input is policy-visible. action is teacher label and weight=0 excludes duplicated TRAIN examples. DEV/HELDOUT challenges are evaluator-only.",
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "candidate_pairs": 512,
+      "strict_positive_pairs": 128,
+      "negative_controls": 32,
+      "episodes": 320,
+      "oracle_terminal_successes": 320,
+      "decisions": 8912,
+      "zero_weight": 0,
+      "unique_graphs": 8
+    },
+    "DEV": {
+      "candidate_pairs": 256,
+      "strict_positive_pairs": 64,
+      "negative_controls": 16,
+      "episodes": 160,
+      "oracle_terminal_successes": 160,
+      "decisions": 8736,
+      "zero_weight": 0,
+      "unique_graphs": 4
+    },
+    "HELDOUT": {
+      "candidate_pairs": 256,
+      "strict_positive_pairs": 64,
+      "negative_controls": 16,
+      "episodes": 160,
+      "oracle_terminal_successes": 160,
+      "decisions": 12096,
+      "zero_weight": 0,
+      "unique_graphs": 4
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 8912,
+      "bytes": 10941496,
+      "sha256": "b3ae80344cabbb7c3d4eb37a23cf77f473eb75369e6f20bd3ccf53ed55ecc000"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 8736,
+      "bytes": 15400832,
+      "sha256": "7cf480a1e089fc3a7c9bb6cf66901c4f855e2dbbbce1814c03be00726510c527"
+    },
+    "DEV_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 58256,
+      "sha256": "e1ca74940bc9befebc5af03861d5ea5e5c24e33a5b2e84ebb199e7e6b584a75a"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 12096,
+      "bytes": 26563456,
+      "sha256": "349549362c10ae263d99561c34ef271e94c278e0a52fa409d6ef97b7ceabb601"
+    },
+    "HELDOUT_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 58576,
+      "sha256": "e1ad1a3d2781c5a6544dc726a249282310980059af532a173b1045552e067701"
+    }
+  },
+  "caveats": [
+    "One hand-built symbolic remote junction with two logical interlocks",
+    "Scripted, accepted host events; not native CyberSand",
+    "Symbolic two-bit logic can solve challenge",
+    "No SLM inference or training undertaken"
+  ]
+}

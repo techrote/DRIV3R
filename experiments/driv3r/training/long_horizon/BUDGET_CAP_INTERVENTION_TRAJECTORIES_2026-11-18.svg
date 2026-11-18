@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770">
+<rect width="1200" height="770" fill="#0b1521"/>
+<text x="35" y="43" fill="#f0f4f8" font-family="sans-serif" font-size="26" font-weight="bold">DRIV3R · Counterfactual recovery caps</text>
+<text x="35" y="68" fill="#a9bfd0" font-family="sans-serif" font-size="14">Each panel holds the exact host state and path fixed. Only the synthetic maximum recovery allowance changes. NOT native gameplay.</text>
+<rect x="30" y="98" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="47" y="123" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 8172452c9fdc</text>
+<polyline points="129.00,220.00 106.00,220.00 83.00,220.00 83.00,197.00 83.00,174.00 60.00,174.00 60.00,151.00 83.00,151.00 106.00,151.00 106.00,174.00 106.00,197.00 129.00,197.00 129.00,174.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="129.00" cy="197.00" r="6" fill="#f7c56e"/>
+<circle cx="129.00" cy="174.00" r="5" fill="#ff777c"/>
+<text x="239" y="168" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.571</text>
+<text x="239" y="205" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: BACKTRACK · P(B)=0.524</text>
+<text x="239" y="242" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.489</text>
+<text x="239" y="276" fill="#adc4d8" font-family="monospace" font-size="13">history depth 1 · start credit 1</text>
+<rect x="620" y="98" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="637" y="123" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 8dc299e69ce3</text>
+<polyline points="650.00,151.00 673.00,151.00 696.00,151.00 696.00,174.00 673.00,174.00 650.00,174.00 650.00,197.00 650.00,220.00 673.00,220.00 673.00,197.00 696.00,197.00 719.00,197.00 719.00,174.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="673.00" cy="197.00" r="6" fill="#f7c56e"/>
+<circle cx="719.00" cy="174.00" r="5" fill="#ff777c"/>
+<text x="829" y="168" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.528</text>
+<text x="829" y="205" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.487</text>
+<text x="829" y="242" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.459</text>
+<text x="829" y="276" fill="#adc4d8" font-family="monospace" font-size="13">history depth 3 · start credit 3</text>
+<rect x="30" y="314" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="47" y="339" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 9717e8a59cc7</text>
+<polyline points="129.00,367.00 129.00,390.00 129.00,413.00 106.00,413.00 106.00,436.00 83.00,436.00 83.00,413.00 83.00,390.00 106.00,390.00 106.00,367.00 83.00,367.00 60.00,367.00 60.00,390.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="106.00" cy="367.00" r="6" fill="#f7c56e"/>
+<circle cx="60.00" cy="390.00" r="5" fill="#ff777c"/>
+<text x="239" y="384" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.554</text>
+<text x="239" y="421" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: BACKTRACK · P(B)=0.513</text>
+<text x="239" y="458" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.485</text>
+<text x="239" y="492" fill="#adc4d8" font-family="monospace" font-size="13">history depth 3 · start credit 3</text>
+<rect x="620" y="314" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="637" y="339" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 846f9c61bf45</text>
+<polyline points="650.00,367.00 650.00,390.00 673.00,390.00 673.00,413.00 650.00,413.00 650.00,436.00 673.00,436.00 696.00,436.00 719.00,436.00 719.00,413.00 696.00,413.00 696.00,390.00 696.00,367.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="673.00" cy="390.00" r="6" fill="#f7c56e"/>
+<circle cx="696.00" cy="367.00" r="5" fill="#ff777c"/>
+<text x="829" y="384" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.668</text>
+<text x="829" y="421" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.265</text>
+<text x="829" y="458" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.097</text>
+<text x="829" y="492" fill="#adc4d8" font-family="monospace" font-size="13">history depth 10 · start credit 1</text>
+<rect x="30" y="530" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="47" y="555" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 864f477888b8</text>
+<polyline points="60.00,583.00 60.00,606.00 60.00,629.00 60.00,652.00 83.00,652.00 83.00,629.00 83.00,606.00 83.00,583.00 106.00,583.00 106.00,606.00 106.00,629.00 106.00,652.00 129.00,652.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="83.00" cy="629.00" r="6" fill="#f7c56e"/>
+<circle cx="129.00" cy="652.00" r="5" fill="#ff777c"/>
+<text x="239" y="600" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.848</text>
+<text x="239" y="637" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.410</text>
+<text x="239" y="674" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.145</text>
+<text x="239" y="708" fill="#adc4d8" font-family="monospace" font-size="13">history depth 7 · start credit 3</text>
+<rect x="620" y="530" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
+<text x="637" y="555" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 99ea2b72e37e</text>
+<polyline points="650.00,583.00 650.00,606.00 650.00,629.00 673.00,629.00 673.00,652.00 696.00,652.00 696.00,629.00 719.00,629.00 719.00,606.00 719.00,583.00 696.00,583.00 673.00,583.00 673.00,606.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="650.00" cy="606.00" r="6" fill="#f7c56e"/>
+<circle cx="673.00" cy="606.00" r="5" fill="#ff777c"/>
+<text x="829" y="600" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.765</text>
+<text x="829" y="637" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.318</text>
+<text x="829" y="674" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.109</text>
+<text x="829" y="708" fill="#adc4d8" font-family="monospace" font-size="13">history depth 11 · start credit 3</text>
+<text x="30" y="760" font-family="sans-serif" font-size="13" fill="#95aec2">Cyan: actual legal prehistory suffix · amber: history goal · coral: current cursor · numbers: inference only, no counterfactual execution</text>
+</svg>

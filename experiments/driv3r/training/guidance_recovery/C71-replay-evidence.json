@@ -1,0 +1,61 @@
+{
+  "replayed": [
+    {
+      "actions": 49,
+      "drop": 0.0,
+      "graph": "7bdf82a1aed91aaf2fe38c480d3cc55e1017065b9a6a0c27c545f71545fd89f1",
+      "policy": "FRONTIER",
+      "sha256": "1fa5b676babb6c98d87fed7b1139d4bd0afb32c3e574cfdc680c05bec2d8ee89"
+    },
+    {
+      "actions": 40,
+      "drop": 0.0,
+      "graph": "7bdf82a1aed91aaf2fe38c480d3cc55e1017065b9a6a0c27c545f71545fd89f1",
+      "policy": "C71-ALIGNED",
+      "sha256": "831cb9aa848f50c920f9feacb22ea1933db94a4668066fa15ebbddced9d138e7"
+    },
+    {
+      "actions": 40,
+      "drop": 1.0,
+      "graph": "7bdf82a1aed91aaf2fe38c480d3cc55e1017065b9a6a0c27c545f71545fd89f1",
+      "policy": "C71-ALIGNED",
+      "sha256": "831cb9aa848f50c920f9feacb22ea1933db94a4668066fa15ebbddced9d138e7"
+    },
+    {
+      "actions": 38,
+      "drop": 1.0,
+      "graph": "5bb81d41601941916c0770ce389de5340b7add1b9f7bac0a33330f2f2b02b213",
+      "policy": "C71-ALIGNED",
+      "sha256": "909b267f85c76a09780948a78f26f2a37bda50650f6c4e25947dc6a486c29eaf"
+    },
+    {
+      "actions": 61,
+      "drop": 0.0,
+      "graph": "1ed4bfa3e63440c9e9e7cb3a36229c75700423d8c3569083a390677bfc964ab3",
+      "policy": "C71-ALIGNED",
+      "sha256": "f1011625b7b1c00e5760799cd3ce9f89870e147c55ae4ba904c75f36191d81e8"
+    },
+    {
+      "actions": 61,
+      "drop": 1.0,
+      "graph": "1ed4bfa3e63440c9e9e7cb3a36229c75700423d8c3569083a390677bfc964ab3",
+      "policy": "C71-ALIGNED",
+      "sha256": "f1011625b7b1c00e5760799cd3ce9f89870e147c55ae4ba904c75f36191d81e8"
+    },
+    {
+      "actions": 61,
+      "drop": 0.0,
+      "graph": "52ec492e8e0d11022bd3326660ba1bd12db53622d59f47511801c5bd2bed6f0f",
+      "policy": "C70-FROZEN",
+      "sha256": "e325c6bcb493b54a818a69f9fc332176ac1024ac557b6cbd7bd4555b267df4fa"
+    },
+    {
+      "actions": 61,
+      "drop": 1.0,
+      "graph": "52ec492e8e0d11022bd3326660ba1bd12db53622d59f47511801c5bd2bed6f0f",
+      "policy": "C71-ALIGNED",
+      "sha256": "6ba1f21cfa589fcd8465d41cd92ed29c336248cc8009b9919e79185b437d3232"
+    }
+  ],
+  "status": "pass"
+}

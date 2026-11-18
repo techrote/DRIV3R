@@ -1,0 +1,267 @@
+{
+  "C40_vs_A0": {
+    "cluster_sign_flip_two_sided_p_exploratory": 0.208979102089791,
+    "goal_delta": 12,
+    "graph_cluster_bootstrap_95_descriptive": [
+      -2.0,
+      28.0
+    ],
+    "n_graphs": 64,
+    "negative_graphs": 3,
+    "positive_graphs": 7,
+    "zero_graphs": 54
+  },
+  "C40_vs_RESET": {
+    "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+    "goal_delta": 1,
+    "graph_cluster_bootstrap_95_descriptive": [
+      0.0,
+      3.0
+    ],
+    "n_graphs": 64,
+    "negative_graphs": 0,
+    "positive_graphs": 1,
+    "zero_graphs": 63
+  },
+  "by_cohort": {
+    "C1": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 1,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          3.0
+        ],
+        "n_graphs": 64,
+        "negative_graphs": 0,
+        "positive_graphs": 1,
+        "zero_graphs": 63
+      },
+      "goals": {
+        "C18-A0": 31,
+        "C34-RESET": 42,
+        "C40-PAIR": 43
+      }
+    }
+  },
+  "by_cue_tick": {
+    "19": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 1,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          3.0
+        ],
+        "n_graphs": 25,
+        "negative_graphs": 0,
+        "positive_graphs": 1,
+        "zero_graphs": 24
+      },
+      "goals": {
+        "C18-A0": 7,
+        "C34-RESET": 12,
+        "C40-PAIR": 13
+      }
+    },
+    "9": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 0,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          0.0
+        ],
+        "n_graphs": 64,
+        "negative_graphs": 0,
+        "positive_graphs": 0,
+        "zero_graphs": 64
+      },
+      "goals": {
+        "C18-A0": 24,
+        "C34-RESET": 30,
+        "C40-PAIR": 30
+      }
+    }
+  },
+  "by_family": {
+    "kruskal": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 1,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          3.0
+        ],
+        "n_graphs": 33,
+        "negative_graphs": 0,
+        "positive_graphs": 1,
+        "zero_graphs": 32
+      },
+      "goals": {
+        "C18-A0": 13,
+        "C34-RESET": 26,
+        "C40-PAIR": 27
+      }
+    },
+    "wilson": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 0,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          0.0
+        ],
+        "n_graphs": 31,
+        "negative_graphs": 0,
+        "positive_graphs": 0,
+        "zero_graphs": 31
+      },
+      "goals": {
+        "C18-A0": 18,
+        "C34-RESET": 16,
+        "C40-PAIR": 16
+      }
+    }
+  },
+  "by_guidance_arm": {
+    "backtrack@0.35": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 0,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          0.0
+        ],
+        "n_graphs": 64,
+        "negative_graphs": 0,
+        "positive_graphs": 0,
+        "zero_graphs": 64
+      },
+      "goals": {
+        "C18-A0": 11,
+        "C34-RESET": 17,
+        "C40-PAIR": 17
+      }
+    },
+    "backtrack@1.0": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 1,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          3.0
+        ],
+        "n_graphs": 64,
+        "negative_graphs": 0,
+        "positive_graphs": 1,
+        "zero_graphs": 63
+      },
+      "goals": {
+        "C18-A0": 11,
+        "C34-RESET": 16,
+        "C40-PAIR": 17
+      }
+    },
+    "continue@1.0": {
+      "C40_vs_RESET": {
+        "cluster_sign_flip_two_sided_p_exploratory": 1.0,
+        "goal_delta": 0,
+        "graph_cluster_bootstrap_95_descriptive": [
+          0.0,
+          0.0
+        ],
+        "n_graphs": 64,
+        "negative_graphs": 0,
+        "positive_graphs": 0,
+        "zero_graphs": 64
+      },
+      "goals": {
+        "C18-A0": 9,
+        "C34-RESET": 9,
+        "C40-PAIR": 9
+      }
+    }
+  },
+  "cohorts": {
+    "C1": {
+      "graphs_generated": 96,
+      "skipped": {
+        "early_terminal": 103
+      },
+      "states_tested": 89,
+      "unique_graphs_tested": 64
+    }
+  },
+  "condition_groups": 24,
+  "condition_regressions_vs_RESET": 0,
+  "date": "2026-11-18",
+  "experiment": "frozen C40, independent OOD-only Wilson/Kruskal graph replication, continuous host RNG/clock",
+  "fine_condition_groups": 45,
+  "fine_condition_regressions_vs_RESET": 0,
+  "frozen_C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+  "graph_identities": 64,
+  "graphs_sha256": "9796fe65565db36727c78e4d49f04993c62962a06768197236cb0dffe3b35e9b",
+  "guided_episodes_per_policy": 267,
+  "guided_goals": {
+    "C18-A0": 31,
+    "C34-RESET": 42,
+    "C40-PAIR": 43
+  },
+  "limitations": [
+    "All worlds are synthetic, not native CyberSand acceptance",
+    "Frozen C40 was selected over many prior studies; bootstrap/sign-flip values are descriptive, uncorrected for model-selection and repeated research",
+    "Episodes conditional on baseline prefix surviving to correction and a new nonterminal target",
+    "Cohort graph independence checked by graph identity and compared with C50 graph identities, but families share 7x7 fixture and selection logic",
+    "The C40 controller is instantiated when the cue is issued; host state and RNG stream persist, controller internal state does not predate cue",
+    "Unguided exact parity and preferred-ink action share are style proxies, not whole-trajectory guided personality validation",
+    "Historical d_common reference is not canonical CyberSand ABI",
+    "No training or new checkpoint in C51",
+    "Checkpoint remains outside immutable GitHub Actions artifact custody"
+  ],
+  "matched_rows": 356,
+  "promotion_eligible": false,
+  "promotion_gates": {
+    "at_least_60_graph_clusters": true,
+    "exact_unguided_hash_parity": true,
+    "independent_ood_families_both_positive": false,
+    "whole_graph_bootstrap_lower_positive": false,
+    "zero_coarse_condition_regressions": true,
+    "zero_fine_condition_regressions": true
+  },
+  "schema": "driv3r-c51-frozen-c40-unseen-continuous-replication/1",
+  "seeds": [
+    510118
+  ],
+  "source_sha256": "4bab403e791f3ef563cfbc29f7b02dd074b256e63a99b9f86b527a4bb232f113",
+  "style_proxies": {
+    "C18-A0": {
+      "median_success_steps": 9.0,
+      "opposed_ink_actions": 320,
+      "preferred_ink_actions": 376,
+      "preferred_share_given_signed_actions": 0.54023,
+      "raw_illegal_top1": 0,
+      "successful_suffixes": 31,
+      "unguided_hash_matches": 89
+    },
+    "C34-RESET": {
+      "median_success_steps": 11.0,
+      "opposed_ink_actions": 334,
+      "preferred_ink_actions": 447,
+      "preferred_share_given_signed_actions": 0.572343,
+      "raw_illegal_top1": 0,
+      "successful_suffixes": 42,
+      "unguided_hash_matches": 89
+    },
+    "C40-PAIR": {
+      "median_success_steps": 11.0,
+      "opposed_ink_actions": 395,
+      "preferred_ink_actions": 483,
+      "preferred_share_given_signed_actions": 0.550114,
+      "raw_illegal_top1": 0,
+      "successful_suffixes": 43,
+      "unguided_hash_matches": 89
+    }
+  },
+  "total_episodes": 1068
+}

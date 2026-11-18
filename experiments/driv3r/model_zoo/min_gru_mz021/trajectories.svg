@@ -1,0 +1,573 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 960" width="896" height="960">
+<rect width="100%" height="100%" fill="#f9fafb"/>
+<text x="11" y="23" font-family="sans-serif" font-size="10" fill="#18202a">1807 mingru • painted=5 illegal=0</text>
+<g transform="translate(18,35)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="85" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="17" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="51" y="102" width="17" height="17" fill="#525966"/>
+<rect x="68" y="51" width="17" height="17" fill="#525966"/>
+<rect x="85" y="34" width="17" height="17" fill="#525966"/>
+<rect x="102" y="0" width="17" height="17" fill="#525966"/>
+<rect x="102" y="17" width="17" height="17" fill="#525966"/>
+<rect x="102" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="34" width="17" height="17" fill="#525966"/>
+<rect x="136" y="51" width="17" height="17" fill="#525966"/>
+<rect x="136" y="153" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="153" y="17" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="170" y="85" width="17" height="17" fill="#525966"/>
+<rect x="170" y="119" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="102" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="37" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 127.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5 144.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5 144.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5 144.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5 144.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5 144.5,93.5 161.5,93.5 161.5,76.5 144.5,76.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="144.5" cy="76.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="235" y="23" font-family="sans-serif" font-size="10" fill="#18202a">1807 linear • painted=11 illegal=1</text>
+<g transform="translate(242,35)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="85" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="17" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="51" y="102" width="17" height="17" fill="#525966"/>
+<rect x="68" y="51" width="17" height="17" fill="#525966"/>
+<rect x="85" y="34" width="17" height="17" fill="#525966"/>
+<rect x="102" y="0" width="17" height="17" fill="#525966"/>
+<rect x="102" y="17" width="17" height="17" fill="#525966"/>
+<rect x="102" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="34" width="17" height="17" fill="#525966"/>
+<rect x="136" y="51" width="17" height="17" fill="#525966"/>
+<rect x="136" y="153" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="153" y="17" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="170" y="85" width="17" height="17" fill="#525966"/>
+<rect x="170" y="119" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="102" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="37" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,76.5 76.5,76.5 93.5,76.5 93.5,93.5 59.5,93.5 59.5,76.5 42.5,76.5 42.5,93.5 59.5,93.5 42.5,93.5 42.5,76.5 42.5,59.5 25.5,59.5 42.5,59.5 42.5,76.5 59.5,76.5 59.5,59.5 59.5,76.5 42.5,76.5 42.5,93.5 59.5,93.5 42.5,93.5 42.5,76.5 25.5,76.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="25.5" cy="76.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+<path d="M 56 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+</g>
+<text x="459" y="23" font-family="sans-serif" font-size="10" fill="#18202a">1807 random_nonstop • painted=9 illegal=0</text>
+<g transform="translate(466,35)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="85" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="17" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="51" y="102" width="17" height="17" fill="#525966"/>
+<rect x="68" y="51" width="17" height="17" fill="#525966"/>
+<rect x="85" y="34" width="17" height="17" fill="#525966"/>
+<rect x="102" y="0" width="17" height="17" fill="#525966"/>
+<rect x="102" y="17" width="17" height="17" fill="#525966"/>
+<rect x="102" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="34" width="17" height="17" fill="#525966"/>
+<rect x="136" y="51" width="17" height="17" fill="#525966"/>
+<rect x="136" y="153" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="153" y="17" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="170" y="85" width="17" height="17" fill="#525966"/>
+<rect x="170" y="119" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="102" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="37" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 110.5,93.5 110.5,76.5 110.5,42.5 110.5,93.5 93.5,93.5 110.5,93.5 110.5,76.5 127.5,76.5 127.5,59.5 110.5,59.5 110.5,42.5 127.5,42.5 127.5,25.5 127.5,42.5 110.5,42.5 127.5,42.5 127.5,59.5 127.5,93.5 127.5,127.5 127.5,42.5 127.5,59.5 127.5,42.5 127.5,59.5 110.5,59.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="110.5" cy="59.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="683" y="23" font-family="sans-serif" font-size="10" fill="#18202a">1807 teacher • painted=21 illegal=0</text>
+<g transform="translate(690,35)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="85" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="17" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="51" y="102" width="17" height="17" fill="#525966"/>
+<rect x="68" y="51" width="17" height="17" fill="#525966"/>
+<rect x="85" y="34" width="17" height="17" fill="#525966"/>
+<rect x="102" y="0" width="17" height="17" fill="#525966"/>
+<rect x="102" y="17" width="17" height="17" fill="#525966"/>
+<rect x="102" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="34" width="17" height="17" fill="#525966"/>
+<rect x="136" y="51" width="17" height="17" fill="#525966"/>
+<rect x="136" y="153" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="153" y="17" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="170" y="85" width="17" height="17" fill="#525966"/>
+<rect x="170" y="119" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="102" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="37" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,76.5 110.5,76.5 127.5,76.5 127.5,93.5 144.5,93.5 144.5,76.5 161.5,76.5 161.5,93.5 161.5,110.5 178.5,110.5 161.5,110.5 161.5,93.5 161.5,76.5 161.5,59.5 161.5,42.5 178.5,42.5 178.5,25.5 178.5,8.5 161.5,8.5 144.5,8.5 144.5,25.5 127.5,25.5 127.5,8.5 127.5,25.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="127.5" cy="25.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="11" y="263" font-family="sans-serif" font-size="10" fill="#18202a">1808 mingru • painted=12 illegal=0</text>
+<g transform="translate(18,275)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="34" y="17" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="136" width="17" height="17" fill="#525966"/>
+<rect x="68" y="85" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="51" width="17" height="17" fill="#525966"/>
+<rect x="102" y="170" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="136" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="153" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="0" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="153" width="17" height="17" fill="#525966"/>
+<rect x="170" y="170" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="156" y="3" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,110.5 110.5,110.5 93.5,110.5 93.5,93.5 93.5,76.5 76.5,76.5 59.5,76.5 59.5,93.5 59.5,76.5 76.5,76.5 76.5,59.5 76.5,25.5 59.5,25.5 59.5,42.5 59.5,76.5 76.5,76.5 76.5,59.5 76.5,25.5 59.5,25.5 59.5,42.5 76.5,42.5 76.5,25.5 59.5,25.5 59.5,42.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="59.5" cy="42.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="235" y="263" font-family="sans-serif" font-size="10" fill="#18202a">1808 linear • painted=6 illegal=8</text>
+<g transform="translate(242,275)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="34" y="17" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="136" width="17" height="17" fill="#525966"/>
+<rect x="68" y="85" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="51" width="17" height="17" fill="#525966"/>
+<rect x="102" y="170" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="136" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="153" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="0" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="153" width="17" height="17" fill="#525966"/>
+<rect x="170" y="170" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="156" y="3" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,110.5 110.5,110.5 93.5,110.5 93.5,93.5 93.5,110.5 76.5,110.5 93.5,110.5 93.5,93.5 93.5,76.5 76.5,76.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="93.5" cy="93.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+</g>
+<text x="459" y="263" font-family="sans-serif" font-size="10" fill="#18202a">1808 random_nonstop • painted=13 illegal=0</text>
+<g transform="translate(466,275)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="34" y="17" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="136" width="17" height="17" fill="#525966"/>
+<rect x="68" y="85" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="51" width="17" height="17" fill="#525966"/>
+<rect x="102" y="170" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="136" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="153" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="0" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="153" width="17" height="17" fill="#525966"/>
+<rect x="170" y="170" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="156" y="3" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,110.5 76.5,110.5 93.5,110.5 93.5,127.5 110.5,127.5 144.5,127.5 144.5,110.5 110.5,127.5 110.5,110.5 93.5,110.5 110.5,110.5 93.5,110.5 76.5,110.5 42.5,110.5 42.5,127.5 76.5,110.5 93.5,110.5 93.5,127.5 93.5,161.5 76.5,161.5 76.5,178.5 93.5,178.5 93.5,161.5 110.5,161.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="110.5" cy="161.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="683" y="263" font-family="sans-serif" font-size="10" fill="#18202a">1808 teacher • painted=23 illegal=0</text>
+<g transform="translate(690,275)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="34" width="17" height="17" fill="#525966"/>
+<rect x="0" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#525966"/>
+<rect x="34" y="0" width="17" height="17" fill="#525966"/>
+<rect x="34" y="17" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="136" width="17" height="17" fill="#525966"/>
+<rect x="68" y="85" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="51" width="17" height="17" fill="#525966"/>
+<rect x="102" y="170" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="136" y="136" width="17" height="17" fill="#525966"/>
+<rect x="153" y="119" width="17" height="17" fill="#525966"/>
+<rect x="153" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="0" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="153" width="17" height="17" fill="#525966"/>
+<rect x="170" y="170" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="156" y="3" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,110.5 110.5,110.5 110.5,127.5 93.5,127.5 93.5,144.5 76.5,144.5 76.5,161.5 59.5,161.5 59.5,144.5 59.5,127.5 42.5,127.5 42.5,110.5 59.5,110.5 59.5,93.5 59.5,59.5 59.5,42.5 42.5,42.5 42.5,59.5 25.5,59.5 25.5,42.5 25.5,25.5 25.5,8.5 25.5,25.5 8.5,25.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="8.5" cy="25.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="11" y="503" font-family="sans-serif" font-size="10" fill="#18202a">1809 mingru • painted=8 illegal=0</text>
+<g transform="translate(18,515)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#525966"/>
+<rect x="34" y="119" width="17" height="17" fill="#525966"/>
+<rect x="51" y="34" width="17" height="17" fill="#525966"/>
+<rect x="51" y="170" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="34" width="17" height="17" fill="#525966"/>
+<rect x="119" y="68" width="17" height="17" fill="#525966"/>
+<rect x="153" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="17" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="122" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 76.5,93.5 59.5,93.5 59.5,110.5 59.5,144.5 76.5,144.5 76.5,127.5 59.5,127.5 59.5,144.5 76.5,144.5 76.5,127.5 59.5,127.5 59.5,144.5 76.5,144.5 76.5,127.5 59.5,127.5 59.5,144.5 76.5,144.5 76.5,127.5 59.5,127.5 59.5,144.5 76.5,144.5 76.5,127.5 59.5,127.5 59.5,144.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="59.5" cy="144.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="235" y="503" font-family="sans-serif" font-size="10" fill="#18202a">1809 linear • painted=10 illegal=1</text>
+<g transform="translate(242,515)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#525966"/>
+<rect x="34" y="119" width="17" height="17" fill="#525966"/>
+<rect x="51" y="34" width="17" height="17" fill="#525966"/>
+<rect x="51" y="170" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="34" width="17" height="17" fill="#525966"/>
+<rect x="119" y="68" width="17" height="17" fill="#525966"/>
+<rect x="153" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="17" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="122" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 76.5,93.5 93.5,93.5 93.5,110.5 110.5,110.5 93.5,110.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 76.5,76.5 93.5,76.5 93.5,59.5 76.5,59.5 93.5,59.5 93.5,76.5 93.5,59.5 110.5,59.5 93.5,59.5 93.5,76.5 76.5,76.5 76.5,59.5 76.5,76.5 59.5,76.5 76.5,76.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="76.5" cy="76.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+</g>
+<text x="459" y="503" font-family="sans-serif" font-size="10" fill="#18202a">1809 random_nonstop • painted=12 illegal=0</text>
+<g transform="translate(466,515)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#525966"/>
+<rect x="34" y="119" width="17" height="17" fill="#525966"/>
+<rect x="51" y="34" width="17" height="17" fill="#525966"/>
+<rect x="51" y="170" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="34" width="17" height="17" fill="#525966"/>
+<rect x="119" y="68" width="17" height="17" fill="#525966"/>
+<rect x="153" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="17" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="122" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 76.5,93.5 76.5,76.5 59.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5 110.5,93.5 110.5,110.5 127.5,110.5 110.5,110.5 110.5,93.5 127.5,93.5 110.5,93.5 127.5,93.5 161.5,93.5 161.5,76.5 178.5,76.5 161.5,76.5 161.5,93.5 161.5,76.5 161.5,93.5 161.5,76.5 144.5,76.5 161.5,76.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="161.5" cy="76.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="683" y="503" font-family="sans-serif" font-size="10" fill="#18202a">1809 teacher • painted=22 illegal=0</text>
+<g transform="translate(690,515)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="85" width="17" height="17" fill="#525966"/>
+<rect x="34" y="119" width="17" height="17" fill="#525966"/>
+<rect x="51" y="34" width="17" height="17" fill="#525966"/>
+<rect x="51" y="170" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="34" width="17" height="17" fill="#525966"/>
+<rect x="119" y="68" width="17" height="17" fill="#525966"/>
+<rect x="153" y="102" width="17" height="17" fill="#525966"/>
+<rect x="0" y="136" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="0" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="17" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="34" width="17" height="17" fill="#f2a56d"/>
+<rect x="102" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="119" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="170" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="173" y="122" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 110.5,93.5 110.5,110.5 127.5,110.5 144.5,110.5 144.5,93.5 161.5,93.5 178.5,93.5 178.5,110.5 178.5,127.5 161.5,127.5 161.5,144.5 144.5,144.5 144.5,161.5 127.5,161.5 110.5,161.5 110.5,144.5 127.5,144.5 127.5,127.5 144.5,127.5 127.5,127.5 127.5,144.5 110.5,144.5 110.5,127.5 93.5,127.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="93.5" cy="127.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="11" y="743" font-family="sans-serif" font-size="10" fill="#18202a">1810 mingru • painted=5 illegal=0</text>
+<g transform="translate(18,755)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="119" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="85" width="17" height="17" fill="#525966"/>
+<rect x="17" y="102" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="102" width="17" height="17" fill="#525966"/>
+<rect x="102" y="136" width="17" height="17" fill="#525966"/>
+<rect x="119" y="51" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="119" width="17" height="17" fill="#525966"/>
+<rect x="136" y="0" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="37" y="156" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 76.5,93.5 76.5,110.5 76.5,93.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5 93.5,76.5 76.5,76.5 76.5,93.5 93.5,93.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="93.5" cy="93.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="235" y="743" font-family="sans-serif" font-size="10" fill="#18202a">1810 linear • painted=6 illegal=3</text>
+<g transform="translate(242,755)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="119" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="85" width="17" height="17" fill="#525966"/>
+<rect x="17" y="102" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="102" width="17" height="17" fill="#525966"/>
+<rect x="102" y="136" width="17" height="17" fill="#525966"/>
+<rect x="119" y="51" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="119" width="17" height="17" fill="#525966"/>
+<rect x="136" y="0" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="37" y="156" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,76.5 76.5,76.5 93.5,76.5 93.5,93.5 93.5,76.5 93.5,93.5 110.5,93.5 110.5,76.5 93.5,76.5 110.5,76.5 110.5,93.5 127.5,93.5 110.5,93.5 110.5,76.5 93.5,76.5 110.5,76.5 110.5,93.5 127.5,93.5 110.5,93.5 110.5,76.5 93.5,76.5 110.5,76.5 110.5,93.5 127.5,93.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="127.5" cy="93.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+<path d="M 90 90 l 7 7 m 0 -7 l -7 7" stroke="#dd3444" stroke-width="1.5"/>
+</g>
+<text x="459" y="743" font-family="sans-serif" font-size="10" fill="#18202a">1810 random_nonstop • painted=13 illegal=0</text>
+<g transform="translate(466,755)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="119" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="85" width="17" height="17" fill="#525966"/>
+<rect x="17" y="102" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="102" width="17" height="17" fill="#525966"/>
+<rect x="102" y="136" width="17" height="17" fill="#525966"/>
+<rect x="119" y="51" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="119" width="17" height="17" fill="#525966"/>
+<rect x="136" y="0" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="37" y="156" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 93.5,76.5 110.5,76.5 110.5,59.5 110.5,76.5 93.5,76.5 110.5,76.5 144.5,76.5 144.5,59.5 161.5,59.5 161.5,42.5 161.5,59.5 161.5,42.5 161.5,59.5 161.5,42.5 144.5,42.5 127.5,42.5 144.5,42.5 144.5,25.5 127.5,25.5 127.5,8.5 127.5,25.5 144.5,25.5 161.5,25.5 144.5,25.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="144.5" cy="25.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="683" y="743" font-family="sans-serif" font-size="10" fill="#18202a">1810 teacher • painted=18 illegal=0</text>
+<g transform="translate(690,755)">
+<rect width="187" height="187" fill="#f4f6f9" stroke="#d3d9e0" stroke-width="1"/>
+<rect x="0" y="0" width="17" height="17" fill="#525966"/>
+<rect x="0" y="119" width="17" height="17" fill="#525966"/>
+<rect x="17" y="51" width="17" height="17" fill="#525966"/>
+<rect x="17" y="85" width="17" height="17" fill="#525966"/>
+<rect x="17" y="102" width="17" height="17" fill="#525966"/>
+<rect x="34" y="51" width="17" height="17" fill="#525966"/>
+<rect x="34" y="68" width="17" height="17" fill="#525966"/>
+<rect x="68" y="0" width="17" height="17" fill="#525966"/>
+<rect x="68" y="119" width="17" height="17" fill="#525966"/>
+<rect x="85" y="102" width="17" height="17" fill="#525966"/>
+<rect x="102" y="136" width="17" height="17" fill="#525966"/>
+<rect x="119" y="51" width="17" height="17" fill="#525966"/>
+<rect x="119" y="102" width="17" height="17" fill="#525966"/>
+<rect x="119" y="119" width="17" height="17" fill="#525966"/>
+<rect x="136" y="0" width="17" height="17" fill="#525966"/>
+<rect x="136" y="170" width="17" height="17" fill="#525966"/>
+<rect x="170" y="17" width="17" height="17" fill="#525966"/>
+<rect x="170" y="68" width="17" height="17" fill="#525966"/>
+<rect x="17" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="34" y="0" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="85" width="17" height="17" fill="#f2a56d"/>
+<rect x="51" y="170" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="17" width="17" height="17" fill="#f2a56d"/>
+<rect x="85" y="51" width="17" height="17" fill="#f2a56d"/>
+<rect x="136" y="153" width="17" height="17" fill="#f2a56d"/>
+<rect x="153" y="68" width="17" height="17" fill="#f2a56d"/>
+<rect x="37" y="156" width="11" height="11" fill="#12a884"/>
+<polyline points="93.5,93.5 76.5,93.5 76.5,76.5 59.5,76.5 59.5,59.5 76.5,59.5 76.5,42.5 59.5,42.5 42.5,42.5 25.5,42.5 25.5,25.5 8.5,25.5 8.5,42.5 8.5,59.5 8.5,93.5 8.5,110.5 8.5,59.5 8.5,76.5 8.5,93.5 8.5,76.5 8.5,59.5 8.5,42.5 8.5,25.5 25.5,25.5 42.5,25.5" fill="none" stroke="#2474dd" stroke-opacity=".83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93.5" cy="93.5" r="3" fill="#26354c"/>
+<circle cx="42.5" cy="25.5" r="4" fill="#f3cf43" stroke="#2d3138" stroke-width="1"/>
+</g>
+<text x="18" y="956" font-family="sans-serif" font-size="10" fill="#536073">Synthetic 11×11 worlds; grey walls, orange protected cells, green goal, blue path, yellow final, red raw→host-mask mismatch. Not native CyberSand.</text>
+</svg>

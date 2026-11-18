@@ -1,0 +1,29 @@
+{
+  "artifact_files": {
+    "C31-PROGRESS.safetensors": "490c1d8a1dd6f30aa2ae76e3dd37b78c30a74409bff6f0cfa82f07bfc30eb8f5",
+    "cohort_a.json": "9a96c9df7f40f2bfc68f4278f14e9da3eff2de71d5603fabaa64fb58241af8e3",
+    "cohort_b.json": "5b54722a4e9b2317f18242c9422cd9edfbe05e0ceedce50f45daf56d09849197",
+    "gallery.html": "2b64393e74af40e4dfaab7509c7cb1c457df93a4980b879a975c507cd3987d9a",
+    "metrics.json": "5212ebd85c8549d3622fbedc7410c8d9a841ff08dd47c8ee55a23728257de6ad",
+    "standard.json": "e561acf2d70123d1e3efba7bf620f497f065b204362c1e2502061b4cf6f3d748",
+    "training_receipts.json": "ae588cb1ef391c85d82fa88dff9be00939e4cc8e82487f7b9d4d643a6abde88f"
+  },
+  "date": "2026-11-17",
+  "host_executor": "synthetic World.apply / host legal menu",
+  "optimizer_updates": 240,
+  "promoted": false,
+  "qualifications": {
+    "checkpoint_custody": "local hash-verified archive only; GitHub Actions immutable artifact outstanding",
+    "sciences": "held-out synthetic only; no native CyberSand acceptance",
+    "source": "local tests passed; GitHub exact-HEAD CI pending"
+  },
+  "schema": "driv3r-c31-provenance/1",
+  "scope": "techrote/DRIV3R PR #1 guidance_recovery only",
+  "source_files": {
+    "C31-visited-progress-2026-11-17.md": "09892e0db69e632f44e2d43e28106e1b850d31e4b7d980ce7531a430debd2997",
+    "c31_gallery.py": "fcfe623afb011435dcaeadcfd6781dd73e6264260b84d4d3a40679be209531a7",
+    "c31_observed_progress.py": "1480daec50c62e522667b1c3a93dc004debd113e5992f5dddfdef3416748ca49",
+    "c31_standard_validation.py": "3695567726e782f0e059739af4f868911bcbf5d222f4228683b7160b159a1d16",
+    "test_c31_observed_progress.py": "6cff46f976bcbb42b78513720b1e79566ab196f383684e55de2391e1577b66e6"
+  }
+}

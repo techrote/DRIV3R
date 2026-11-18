@@ -1,0 +1,128 @@
+name: DRIV3R expressive worm recovery — matched Q8 and Q4 CPU
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/import-consolidated-worm-labs
+    paths:
+      - experiments/driv3r/frankenlayers_lab/expression-recovery-request.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: driv3r-real-q8-q4-expressive-research
+  cancel-in-progress: false
+
+jobs:
+  exact-source-real-cpu:
+    if: github.repository == 'techrote/DRIV3R' && github.ref == 'refs/heads/research/import-consolidated-worm-labs'
+    name: Pinned Q8/Q4 real System One — paired source, host, decoder and trajectories
+    runs-on: ubuntu-24.04
+    timeout-minutes: 95
+    env:
+      PYTHONUNBUFFERED: '1'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Exact source and cheap adversarial tests — before downloading models
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/expression-recovery
+          git rev-parse HEAD > evidence/expression-recovery/exact-source-commit.txt
+          cp experiments/driv3r/frankenlayers_lab/expression-recovery-request.json evidence/expression-recovery/original-request.json
+          python3 -m compileall -q experiments/driv3r/frankenlayers_lab
+          python3 -m unittest experiments.driv3r.frankenlayers_lab.test_q4_greyhound experiments.driv3r.frankenlayers_lab.test_expression_recovery -v
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from experiments.driv3r.frankenlayers_lab.expression_recovery import request_validation,pin_validation
+          request_validation(json.loads(Path('experiments/driv3r/frankenlayers_lab/expression-recovery-request.json').read_text()))
+          pin_validation()
+          print('SOURCE_AND_BOUND_AUDIT_PASS', flush=True)
+          PY
+
+      - name: Restore exact historical Python System One backend, process owner and W0 host
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=20 180 python3 - <<'PY'
+          from pathlib import Path
+          import os
+          from experiments.driv3r.frankenlayers_lab.q4_greyhound import bootstrap_legacy
+          root=Path(os.environ['RUNNER_TEMP'])/'driv3r-expression-legacy'
+          bootstrap_legacy(root,Path('evidence/expression-recovery'))
+          PY
+
+      - name: Acquire immutable official vendor Q8 and Q4 models — verified size and SHA256
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=25 1900 python3 - <<'PY'
+          import os
+          from pathlib import Path
+          from experiments.driv3r.frankenlayers_lab import expression_recovery as exp
+          from experiments.driv3r.frankenlayers_lab import q4_greyhound as base
+          root=Path(os.environ['RUNNER_TEMP'])/'driv3r-expression-models'
+          receipts=Path('evidence/expression-recovery')
+          exp.q8_acquire(root, receipts)
+          base.acquire_q4(root, receipts)
+          PY
+
+      - name: Build one pinned source-built llama.cpp runtime with actual graph-layer omission
+        run: |
+          set -euo pipefail
+          LLAMA_ROOT="$RUNNER_TEMP/driv3r-expression-llama"
+          git init "$LLAMA_ROOT"
+          git -C "$LLAMA_ROOT" remote add origin https://github.com/ggml-org/llama.cpp.git
+          timeout --signal=TERM --kill-after=20 220 git -C "$LLAMA_ROOT" fetch --depth=1 origin 8642541b255bfb5dc39cd351a178be09013a55d6
+          git -C "$LLAMA_ROOT" checkout --detach FETCH_HEAD
+          test "$(git -C "$LLAMA_ROOT" rev-parse HEAD)" = 8642541b255bfb5dc39cd351a178be09013a55d6
+          python3 -m experiments.driv3r.frankenlayers_lab.q4_greyhound patch \
+            --llama-root "$LLAMA_ROOT" --evidence evidence/expression-recovery
+          git -C "$LLAMA_ROOT" diff -- src/models/lfm3.cpp > evidence/expression-recovery/compiled-source-graph.patch
+          cmake -S "$LLAMA_ROOT" -B "$LLAMA_ROOT/build" -DCMAKE_BUILD_TYPE=Release \
+            -DGGML_NATIVE=OFF -DLLAMA_CURL=OFF -DLLAMA_BUILD_TESTS=OFF \
+            -DLLAMA_BUILD_EXAMPLES=OFF -DLLAMA_BUILD_UI=OFF -DLLAMA_USE_PREBUILT_UI=OFF
+          timeout --signal=TERM --kill-after=20 1400 cmake --build "$LLAMA_ROOT/build" \
+            --config Release --target llama-server -j2
+          test -x "$LLAMA_ROOT/build/bin/llama-server"
+          sha256sum "$LLAMA_ROOT/build/bin/llama-server" > evidence/expression-recovery/binary.sha256
+          ldd "$LLAMA_ROOT/build/bin/llama-server" > evidence/expression-recovery/binary-ldd.txt
+
+      - name: Paired real-model inference — greedy and common-seed stochastic decoders
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=45 3450 python3 -m experiments.driv3r.frankenlayers_lab.expression_recovery run \
+            --request experiments/driv3r/frankenlayers_lab/expression-recovery-request.json \
+            --binary "$RUNNER_TEMP/driv3r-expression-llama/build/bin/llama-server" \
+            --model-q8 "$RUNNER_TEMP/driv3r-expression-models/d1-2B-Q8_0.gguf" \
+            --model-q4 "$RUNNER_TEMP/driv3r-expression-models/d1-2B-Q4_K_M.gguf" \
+            --w0 "$RUNNER_TEMP/driv3r-expression-legacy/experiments/agent_painter/worm/common/worm.py" \
+            --legacy-root "$RUNNER_TEMP/driv3r-expression-legacy" \
+            --patch-receipt evidence/expression-recovery/graph-patch-receipt.json \
+            --source-commit "$GITHUB_SHA" \
+            --evidence evidence/expression-recovery/trajectories
+
+      - name: Save true original evidence and SHA256SUMS, including failures
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/expression-recovery
+          lscpu > evidence/expression-recovery/cpu.txt || true
+          (cd evidence/expression-recovery && find . -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 -r sha256sum) \
+            > evidence/expression-recovery/SHA256SUMS.txt
+
+      - name: Archive source-matched original W0 receipts, PNG, SVG and blind A4 review sheets
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: driv3r-expression-q8-q4-${{ github.run_id }}
+          path: evidence/expression-recovery/
+          if-no-files-found: warn
+          retention-days: 90

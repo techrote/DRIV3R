@@ -1,0 +1,120 @@
+{
+  "schema": "driv3r/corpus_factory/host-live-law-v38/pinned-manifest",
+  "date": "2026-11-18",
+  "synthetic_host_not_native_cybersand": true,
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "generator": "closed_loop_law_v38.js",
+  "generator_sha256": "599aaaa8b70007cd8a50be6e569d7e7a2d0e40ef7119b3cb40c889950fe95976",
+  "test": "test_closed_loop_law_v38.js",
+  "test_sha256": "b2a301845f071a42171989bfe6a2b16881f1fdaccfcabb7d68a1d7dfbc2cd109",
+  "full_generated_manifest_sha256": "0d0c3c8f821dc9900863d45c9aac916014e4d66e644f99799c491a82f6554f5f",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "splits": {
+    "TRAIN": {
+      "families": 32,
+      "episodes": 512,
+      "rows": 12800,
+      "paired_trajectories": 256,
+      "paired_paint_command_changes": 640,
+      "four_way_memory_families": 64,
+      "law_transitions": 1024,
+      "paint_actions_while_inverted": 640,
+      "zero_weight_rows": 256,
+      "unique_geometry_groups": 8
+    },
+    "DEV": {
+      "families": 16,
+      "episodes": 256,
+      "rows": 12096,
+      "paired_trajectories": 128,
+      "paired_paint_command_changes": 320,
+      "four_way_memory_families": 32,
+      "law_transitions": 512,
+      "paint_actions_while_inverted": 320,
+      "zero_weight_rows": 128,
+      "unique_geometry_groups": 4
+    },
+    "HELDOUT": {
+      "families": 16,
+      "episodes": 256,
+      "rows": 16576,
+      "paired_trajectories": 128,
+      "paired_paint_command_changes": 320,
+      "four_way_memory_families": 32,
+      "law_transitions": 512,
+      "paint_actions_while_inverted": 320,
+      "zero_weight_rows": 128,
+      "unique_geometry_groups": 4
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 12800,
+      "bytes": 14633584,
+      "sha256": "28fd9fac82b695bf9d7df14ebffdbaa56bf768b74f80b8a5610816106dd73af9"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 12096,
+      "bytes": 20239168,
+      "sha256": "c18ff59dec4d5a05d6b4a8a30d14737a2d942c6528b1b44e6ec24fef3093178c"
+    },
+    "DEV_challenge.jsonl": {
+      "rows": 256,
+      "bytes": 90464,
+      "sha256": "af57ca258c3cded053ce12005a1f0b24f4cbbcdce3c238d1c2c763f61a3ae8bd"
+    },
+    "DEV_memory.jsonl": {
+      "rows": 128,
+      "bytes": 419136,
+      "sha256": "e8d8faf307dae016485cc3d9395785fd59ca9b78ba14081b6ac8c1e30da9b450"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 16576,
+      "bytes": 34888000,
+      "sha256": "99daa0de32a13f8d4392151cab8b3fd616751094d11f54fc020c62119101f032"
+    },
+    "HELDOUT_challenge.jsonl": {
+      "rows": 256,
+      "bytes": 91488,
+      "sha256": "1a1ba739bcfecdd7e33ad7f5ae9fcef5ef745e76ca798fee2821f12491f068dd"
+    },
+    "HELDOUT_memory.jsonl": {
+      "rows": 128,
+      "bytes": 530272,
+      "sha256": "917ac02a644baf3f176e62972386139e1401202cff2266c2f16d0a04ec773343"
+    }
+  },
+  "qualification": {
+    "two_independent_full_generations_byte_identical": true,
+    "all_rows_independently_audited": 41472,
+    "intervention_control": 512,
+    "wrong_paint_control": 512,
+    "causal_tool_law_change_events": 2048,
+    "tests_local_not_ci": true
+  },
+  "limitations": [
+    "Synthetic graph Host plus material-law adapter, not native CyberSand",
+    "No actual SLM weights or model inference",
+    "Scripted preparatory host trajectory, injected wrong actions",
+    "No dynamic obstructing geometry",
+    "Shards not yet uploaded to immutable Actions artifacts"
+  ]
+}

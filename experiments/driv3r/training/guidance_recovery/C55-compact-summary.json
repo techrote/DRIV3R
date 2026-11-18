@@ -1,0 +1,341 @@
+{
+  "blind": {
+    "C55-ALIGNED": {
+      "mean_top_logit": 1.2158044382929802,
+      "states": 100,
+      "top1_legal_route_accuracy": 0.96
+    },
+    "C55-SHUFFLED": {
+      "mean_top_logit": 0.06286483407020568,
+      "states": 100,
+      "top1_legal_route_accuracy": 0.66
+    }
+  },
+  "caveats": [
+    "Synthetic host only, not authoritative CyberSand native ABI",
+    "Prospectively constructed reachable host-observed waypoint is intentionally easier than C54 far-goal transfer",
+    "Training supervision is route-step imitation from host-observed route, not full-goal return optimization",
+    "World factory starts with a separately host-executed 24-cell prefix not reconstructed in this study",
+    "No-cue parity does not establish guided whole-trajectory personality preservation",
+    "Unadjusted exploratory graph-cluster CI; research sequence has selection effects",
+    "No GitHub Actions immutable checkpoint custody or native acceptance"
+  ],
+  "checkpoint_sha256": {
+    "C55-ALIGNED": "040260d75eaa93e57ca17cbf2b353162f09e9c32f97a052ca1eb87d9182dcfbf",
+    "C55-SHUFFLED": "9940031527da61b0258d74c05f9197ff37720caf6845c0839670a45b9ff4efa0"
+  },
+  "date": "2026-11-18",
+  "decision": "HOLD/NOT PROMOTABLE",
+  "external": {
+    "graph_identities": {
+      "blind": 8,
+      "online": 128,
+      "train": 48
+    },
+    "guided_per_policy": 264,
+    "models": {
+      "C18-A0": {
+        "by_family": {
+          "braid": 28,
+          "kruskal": 34,
+          "prim": 9,
+          "prim_braid": 22,
+          "tree": 19,
+          "wilson": 48
+        },
+        "condition_regressions_vs_RESET": 26,
+        "goal_events": 160,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1016,
+        "no_guidance_parity": 132,
+        "opposed_ink": 348,
+        "preferred_ink": 355,
+        "route_opportunities": 0
+      },
+      "C34-RESET": {
+        "by_family": {
+          "braid": 40,
+          "kruskal": 47,
+          "prim": 15,
+          "prim_braid": 26,
+          "tree": 21,
+          "wilson": 50
+        },
+        "condition_regressions_vs_RESET": 0,
+        "goal_events": 199,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1167,
+        "no_guidance_parity": 132,
+        "opposed_ink": 257,
+        "preferred_ink": 289,
+        "route_opportunities": 0
+      },
+      "C55-ALIGNED": {
+        "by_family": {
+          "braid": 43,
+          "kruskal": 59,
+          "prim": 17,
+          "prim_braid": 27,
+          "tree": 24,
+          "wilson": 50
+        },
+        "condition_regressions_vs_RESET": 4,
+        "goal_events": 220,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1258,
+        "no_guidance_parity": 132,
+        "opposed_ink": 228,
+        "preferred_ink": 280,
+        "route_opportunities": 1801
+      },
+      "C55-RANDOM": {
+        "by_family": {
+          "braid": 40,
+          "kruskal": 45,
+          "prim": 14,
+          "prim_braid": 23,
+          "tree": 23,
+          "wilson": 46
+        },
+        "condition_regressions_vs_RESET": 14,
+        "goal_events": 191,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1098,
+        "no_guidance_parity": 132,
+        "opposed_ink": 307,
+        "preferred_ink": 346,
+        "route_opportunities": 1916
+      },
+      "C55-ROUTE": {
+        "by_family": {
+          "braid": 41,
+          "kruskal": 62,
+          "prim": 18,
+          "prim_braid": 28,
+          "tree": 24,
+          "wilson": 53
+        },
+        "condition_regressions_vs_RESET": 5,
+        "goal_events": 226,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1258,
+        "no_guidance_parity": 132,
+        "opposed_ink": 271,
+        "preferred_ink": 323,
+        "route_opportunities": 1745
+      },
+      "C55-SHUFFLED": {
+        "by_family": {
+          "braid": 40,
+          "kruskal": 46,
+          "prim": 15,
+          "prim_braid": 25,
+          "tree": 21,
+          "wilson": 46
+        },
+        "condition_regressions_vs_RESET": 7,
+        "goal_events": 193,
+        "guided_episodes": 264,
+        "next_waypoint_followed": 1180,
+        "no_guidance_parity": 132,
+        "opposed_ink": 250,
+        "preferred_ink": 289,
+        "route_opportunities": 1923
+      }
+    },
+    "no_guidance_per_policy": 132,
+    "paired": {
+      "C55-ALIGNED__C34-RESET": {
+        "descriptive_95": [
+          7.975000000000001,
+          35.0
+        ],
+        "goal_delta": 21,
+        "negative_graphs": 5,
+        "positive_graphs": 20
+      },
+      "C55-ALIGNED__C55-ROUTE": {
+        "descriptive_95": [
+          -18.0,
+          5.0
+        ],
+        "goal_delta": -6,
+        "negative_graphs": 12,
+        "positive_graphs": 8
+      },
+      "C55-ALIGNED__C55-SHUFFLED": {
+        "descriptive_95": [
+          12.0,
+          42.0
+        ],
+        "goal_delta": 27,
+        "negative_graphs": 3,
+        "positive_graphs": 23
+      },
+      "C55-RANDOM__C34-RESET": {
+        "descriptive_95": [
+          -22.0,
+          6.0
+        ],
+        "goal_delta": -8,
+        "negative_graphs": 19,
+        "positive_graphs": 9
+      },
+      "C55-RANDOM__C55-ROUTE": {
+        "descriptive_95": [
+          -52.0,
+          -19.0
+        ],
+        "goal_delta": -35,
+        "negative_graphs": 27,
+        "positive_graphs": 5
+      },
+      "C55-RANDOM__C55-SHUFFLED": {
+        "descriptive_95": [
+          -15.024999999999999,
+          13.0
+        ],
+        "goal_delta": -2,
+        "negative_graphs": 15,
+        "positive_graphs": 10
+      },
+      "C55-ROUTE__C34-RESET": {
+        "descriptive_95": [
+          13.0,
+          42.0
+        ],
+        "goal_delta": 27,
+        "negative_graphs": 5,
+        "positive_graphs": 20
+      },
+      "C55-ROUTE__C55-SHUFFLED": {
+        "descriptive_95": [
+          18.0,
+          50.0
+        ],
+        "goal_delta": 33,
+        "negative_graphs": 6,
+        "positive_graphs": 24
+      },
+      "C55-SHUFFLED__C34-RESET": {
+        "descriptive_95": [
+          -12.0,
+          0.0
+        ],
+        "goal_delta": -6,
+        "negative_graphs": 8,
+        "positive_graphs": 2
+      },
+      "C55-SHUFFLED__C55-ROUTE": {
+        "descriptive_95": [
+          -49.0,
+          -18.0
+        ],
+        "goal_delta": -33,
+        "negative_graphs": 24,
+        "positive_graphs": 6
+      }
+    },
+    "promotion_eligible": false,
+    "promotion_gates": {
+      "beats_RESET": true,
+      "beats_route": false,
+      "beats_shuffled": true,
+      "exact_unguided_parity": true,
+      "positive_cluster_lower": true,
+      "zero_condition_regressions": false
+    },
+    "validation": {
+      "excluded_previous_graphs": 160,
+      "frozen_checkpoint_no_retraining": true,
+      "independent_familiar_graphs": 64,
+      "independent_unseen_graphs": 64,
+      "no_parameters_tuned_using_external_outcomes": true,
+      "post_preview_exploratory": true,
+      "seed": 3150131
+    }
+  },
+  "gallery_sha256": "6e2bbfc367a821258766f9b9bfbeb705e50f45919e07d808a77f6e020a7c450f",
+  "ledger_sha256": "8f000a7a16ef3b14d62e60eb6f2492eae1c688e274ec81600ceda92f1256cba8",
+  "preview": {
+    "goal_events": {
+      "C18-A0": 26,
+      "C34-RESET": 30,
+      "C55-ALIGNED": 36,
+      "C55-RANDOM": 30,
+      "C55-ROUTE": 44,
+      "C55-SHUFFLED": 31
+    },
+    "graph_identities": {
+      "blind": 8,
+      "online": 32,
+      "train": 48
+    },
+    "guided_per_policy": 52,
+    "promotion_gates": {
+      "beats_RESET": true,
+      "beats_route": false,
+      "beats_shuffled": true,
+      "exact_unguided_parity": true,
+      "positive_cluster_lower": true,
+      "zero_condition_regressions": false
+    }
+  },
+  "publication_source_sha256": {
+    "C55-extract-ledger.py": "5ec23ac9b6bf281e4bb676f4e3b99e7df43d2e8a0d2f464c5e236f098be4ecfd",
+    "c55_curated_gallery.py": "53e39f0957387fb23c6d49565690e8df0874e0b30f22044c7499cabb6aa934b0",
+    "c55_external_validation.py": "a29c7240c9dfe03fc68999138d7d6cf45a54f5ac544c272dad3b42d576a5e374",
+    "c55_gallery.py": "7d2da2473c059935842ef8c49cce0866a96c8fa1385f481b385a2798705dd81e",
+    "test_c55_observed_waypoint.py": "69a934e45117c7bb238a16adf55e8049d6e375ebb5f084264597dcb568ebd2ec"
+  },
+  "schema": "DRIV3R-C55-evidence/1",
+  "source_sha256": "0327c5b75eeaadb6cfacd8bc7d9abd08204f2b83c57c2e5c4879868add615e7e",
+  "train": {
+    "X_sha256": "aec976190062294f5e03ece19ac9ca0bd94de538d56257d1aff08d5e53597514",
+    "Y_sha256": "5a79b36a79a5701e671b7bbfeb8db5aec94af5d2deef484aed87e0fe4c1e9352",
+    "n_examples": 2862,
+    "n_states": 358,
+    "optimizer_updates": {
+      "C55-ALIGNED": 630,
+      "C55-SHUFFLED": 630
+    },
+    "positive_examples": 1298,
+    "positive_rate": 0.4535,
+    "shuffled_changes": 1445,
+    "training_graphs": 30,
+    "training_losses": {
+      "C55-ALIGNED": [
+        0.69276,
+        0.68375,
+        0.67706,
+        0.67206,
+        0.6654,
+        0.65708,
+        0.64456,
+        0.62688,
+        0.60318,
+        0.57172,
+        0.53185,
+        0.48538,
+        0.432,
+        0.37551
+      ],
+      "C55-SHUFFLED": [
+        0.69673,
+        0.69181,
+        0.69093,
+        0.69011,
+        0.69001,
+        0.68972,
+        0.68946,
+        0.68947,
+        0.68923,
+        0.68912,
+        0.68934,
+        0.68898,
+        0.68917,
+        0.68877
+      ]
+    }
+  }
+}

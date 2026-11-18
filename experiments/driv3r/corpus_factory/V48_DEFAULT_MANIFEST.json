@@ -1,0 +1,104 @@
+{
+  "schema": "driv3r/corpus_factory/empirical-tool-calibration-v48/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "empirical_tool_v48.js",
+  "generator_sha256": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+  "parents": [
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "contracts": {
+    "policy": "ONLY policy.input may be given to SLM; policy.action/weight are supervised targets; NEVER train on evaluator-only shards",
+    "split": "v46 source worlds preserve original TRAIN/DEV/HELDOUT partitions; across v46/v47/v48 group/deduplicate by split+source_world_index+source_seed",
+    "probe": "PAINT_A/ERASE are host-accepted operations in PRELUDE, with the physically observed material written to historical PAINT_RESULT; no oracle TOOL_LAW appears in inputs"
+  },
+  "scope": "Partial survey; stale historical missions; remote gate; physical paint-outcome calibration and obsolete calibration controls; wrong paint recovery.",
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "host_successful_episodes": 384,
+      "policy_decisions": 7814,
+      "causal_mission_pairs": 48,
+      "causal_remote_gate_pairs": 48,
+      "causal_physical_probes": 48,
+      "stale_mission_controls": 48,
+      "obsolete_probe_controls": 48,
+      "train_duplicate_zero_weight": 0
+    },
+    "DEV": {
+      "worlds": 16,
+      "host_successful_episodes": 128,
+      "policy_decisions": 3110,
+      "causal_mission_pairs": 16,
+      "causal_remote_gate_pairs": 16,
+      "causal_physical_probes": 16,
+      "stale_mission_controls": 16,
+      "obsolete_probe_controls": 16,
+      "train_duplicate_zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "host_successful_episodes": 128,
+      "policy_decisions": 4067,
+      "causal_mission_pairs": 16,
+      "causal_remote_gate_pairs": 16,
+      "causal_physical_probes": 16,
+      "stale_mission_controls": 16,
+      "obsolete_probe_controls": 16,
+      "train_duplicate_zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 7814,
+      "bytes": 15831033,
+      "sha256": "2cf36517f02332caa2f3c1b74f77a03516383487b93193ef472b66fe23d90c4a"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 62384,
+      "sha256": "edda6407d6c8542f15138aa35f63ac4d5e7a2a6421c149a85e6a9a546c4e22df"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 3110,
+      "bytes": 6654374,
+      "sha256": "3ab3933ae4abe61a2fe5385ae95f8f47f2f67bc35ef04a4d5ebfc489959dc4a5"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 20761,
+      "sha256": "9e1fc26845e57897fc081c8c64c1fd80d780f9fec273465dea115e63ecc36e25"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 4067,
+      "bytes": 9502618,
+      "sha256": "f40c98c790d59062c006213c44d20cbbf9430d3e7cdb5746345b069a7d8e0895"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 20830,
+      "sha256": "fb6e30a2562ed6d0e72492717f45ce8d60b2adc2974f15193c59ed1ef60f2f04"
+    }
+  },
+  "total_policy_decisions": 14991,
+  "unique_world_geometries": 80,
+  "limitations": [
+    "Synthetic graph/material mapping adapter, NOT native CyberSand",
+    "Preludes including actual paint/erase probes are scripted host-accepted actions but excluded from supervised policy records",
+    "Tool law fixed within each rollout; v47 separately covers disclosed mid-mission flips",
+    "Explicit physical PAINT_RESULT can still be solved by a simple symbolic last-observation parser",
+    "No SLM optimizer step, no native gameplay episodes, no neural latency/RSS, no immutable Actions shard artifact"
+  ]
+}

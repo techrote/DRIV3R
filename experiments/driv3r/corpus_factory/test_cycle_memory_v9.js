@@ -1,0 +1,20 @@
+"use strict";
+const assert=require("node:assert/strict");
+const {world,lobeTrace,checkTrace,makeExample,produce,specs}=require("./cycle_memory_v9.js");
+const w=world(12,14,37);
+assert.equal(checkTrace(w,lobeTrace(w,"W")),52);
+assert.equal(checkTrace(w,lobeTrace(w,"E")),52);
+const a=makeExample(w,"memory","W","TRAIN"),b=makeExample(w,"memory","E","TRAIN");
+assert.equal(JSON.stringify(a.observation),JSON.stringify(b.observation));
+assert.equal(JSON.stringify(a.controls.history_12_only),JSON.stringify(b.controls.history_12_only));
+assert.notEqual(a.target,b.target);
+assert.deepEqual(a.legal_actions,["MOVE_EAST","MOVE_SOUTH","MOVE_WEST"]);
+assert.equal(a.provenance.host_applied_steps,52);
+const c=makeExample(w,"material_law","dry","TRAIN"),d=makeExample(w,"material_law","wet","TRAIN");
+assert.equal(JSON.stringify(c.observation),JSON.stringify(d.observation));
+assert.notEqual(c.target,d.target);
+const out=produce(2);assert.equal(out.rows.TRAIN.length,288);assert.equal(out.rows.DEV.length,96);
+assert.equal(out.rows.HELDOUT.length,96);
+assert.equal(Object.values(specs()).flat().length,60);
+for(const rows of Object.values(out.rows))for(const row of rows){assert(row.legal_actions.includes(row.target));assert.equal(row.trajectory.protected_entries,0);}
+console.log("PASS cycle_memory_v9: paired aliases, long common suffix, legal/protected, topology-disjoint, law reversal, counts");

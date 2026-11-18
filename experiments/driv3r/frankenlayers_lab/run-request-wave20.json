@@ -1,0 +1,125 @@
+{
+  "schema": "frankenlayers-wave20-execution-graph-ablations/1",
+  "status": "SOURCE_PREPARED_REAL_INFERENCE_NOT_RUN",
+  "owner_repo": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "source_commit": "SET_TO_EXECUTION_HEAD_AT_RUNTIME",
+  "donor": {
+    "model": "LiquidAI/d1-2B Q8_0",
+    "sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
+    "frozen": true
+  },
+  "runtime": {
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "patch_entrypoint": "experiments.driv3r.frankenlayers_lab.patch_lab",
+    "eval_entrypoint": "experiments.driv3r.frankenlayers_lab.wave20_structural",
+    "cpu_only": true,
+    "auto_workflow": false
+  },
+  "structural_operations": {
+    "grey8_cut": {
+      "executed_source_layers": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        10,
+        20,
+        23
+      ],
+      "omitted_entire_blocks": 16
+    },
+    "witch8_cut": {
+      "executed_source_layers": [
+        0,
+        2,
+        4,
+        7,
+        10,
+        14,
+        20,
+        23
+      ],
+      "omitted_entire_blocks": 16
+    },
+    "route6_cut": {
+      "executed_source_layers": [
+        0,
+        2,
+        4,
+        10,
+        18,
+        20
+      ],
+      "omitted_entire_blocks": 18
+    },
+    "tail6_cut": {
+      "executed_source_layers": [
+        0,
+        1,
+        4,
+        10,
+        20,
+        23
+      ],
+      "omitted_entire_blocks": 18
+    },
+    "curl4_cut": {
+      "executed_source_layers": [
+        0,
+        4,
+        10,
+        23
+      ],
+      "omitted_entire_blocks": 20
+    },
+    "branch4_cut": {
+      "executed_source_layers": [
+        0,
+        2,
+        10,
+        23
+      ],
+      "omitted_entire_blocks": 20
+    }
+  },
+  "controls": [
+    "stock",
+    "greyhound",
+    "branchwitch",
+    "aero4_no2"
+  ],
+  "folds": [
+    {
+      "seed": 7703,
+      "family": "pipework",
+      "steps": 24
+    },
+    {
+      "seed": 8807,
+      "family": "greebles",
+      "steps": 24
+    }
+  ],
+  "max_attempted_decisions": 480,
+  "max_parallel": 1,
+  "action_target": "synthetic W0 on-policy six-way /v1/systemone, no action reranking",
+  "artifacts": [
+    "immutable Q8 donor/runtime/patch/source SHA-256 receipts",
+    "per-call raw HTTP + parsed legal action records",
+    "original W0 host JSON/PNG",
+    "unsmoothed observed-position SVG/JSON",
+    "p50/p95, input and output token rates if available",
+    "sampled post-ready peak RSS",
+    "failed builds/STOP-only/runtime errors"
+  ],
+  "qualification": "All candidates UNQUALIFIED before real compiled binary inference; native CyberSand not tested",
+  "blockers": [
+    "No Q8 GGUF or pinned llama-server executable in automation container",
+    "Standalone DRIV3R import does not contain experiments/driv3r/backend.py, experiments/agent_painter/process.py, or the original W0 host; must mount pinned historical CyberSand reference files read-only",
+    "Current GitHub connector supports source commits but not workflow_dispatch; cannot launch real GitHub Actions inference from this session"
+  ],
+  "governance": "Draft/HOLD PR #1 only; no paid API/GPU; no writes to external repos; no new workflow"
+}

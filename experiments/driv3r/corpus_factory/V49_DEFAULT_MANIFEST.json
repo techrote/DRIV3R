@@ -1,0 +1,117 @@
+{
+  "schema": "driv3r/corpus_factory/contextual-probe-v49/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "contextual_probe_v49.js",
+  "generator_sha256": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+  "parents": [
+    {
+      "file": "empirical_tool_v48.js",
+      "sha256": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3"
+    },
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "contract": {
+    "near_duplicate": "TRAIN movement records are zero-weighted if a previous movement has identical input after stripping all physically irrelevant calibration receipts; all trajectories retained for honest replay. Positive/negative paint contrasts remain full-weight.",
+    "input": "Only policy.input can be passed to model. policy.action and policy.weight are supervised targets; no evaluator metadata in training.",
+    "group": "Group by source_split+source_world_index+source_seed across v45-v49 to avoid training on the same geometry and mission in a consumer HELDOUT.",
+    "calibration": "Every context A/B probe is an accepted PAINT_A+ERASE at a real synthetic-host cell. Model observes historical physical material and surface, not hidden tool mapping.",
+    "strict_counterfactual": "At paint decision, identical input after removing specifically the corresponding current surface receipt; distinct legal optimal paint commands."
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "successful_synthetic_episodes": 432,
+      "policy_decisions": 9009,
+      "causal_surface_A_pairs": 48,
+      "causal_surface_B_pairs": 48,
+      "stale_A_controls": 48,
+      "stale_B_controls": 48,
+      "probe_order_controls": 48,
+      "gate_pairs": 48,
+      "mission_pairs": 48,
+      "duplicate_train_zero_weight": 0,
+      "train_near_duplicate_navigation_zero_weight": 4337
+    },
+    "DEV": {
+      "worlds": 16,
+      "successful_synthetic_episodes": 144,
+      "policy_decisions": 3516,
+      "causal_surface_A_pairs": 16,
+      "causal_surface_B_pairs": 16,
+      "stale_A_controls": 16,
+      "stale_B_controls": 16,
+      "probe_order_controls": 16,
+      "gate_pairs": 16,
+      "mission_pairs": 16,
+      "duplicate_train_zero_weight": 0,
+      "train_near_duplicate_navigation_zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "successful_synthetic_episodes": 144,
+      "policy_decisions": 4571,
+      "causal_surface_A_pairs": 16,
+      "causal_surface_B_pairs": 16,
+      "stale_A_controls": 16,
+      "stale_B_controls": 16,
+      "probe_order_controls": 16,
+      "gate_pairs": 16,
+      "mission_pairs": 16,
+      "duplicate_train_zero_weight": 0,
+      "train_near_duplicate_navigation_zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 9009,
+      "bytes": 18961506,
+      "sha256": "48d31e5375f2f7b394b999ab3e9b9614b21a0ef70c296346484aafd48308fd2b"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 53461,
+      "sha256": "eb447188fd1d025f4bf2d9d96d1591d4c54d10f65d4716141dacccc639702a10"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 3516,
+      "bytes": 7767130,
+      "sha256": "4d5a5624c80e9ab650268e236f1b44a8139a581d4e4baef97370211cdefc15d0"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 17759,
+      "sha256": "7d4fb309d13f58a94490deed7ef0a26177d0c036eb9adb781cd1680ef9fbc97a"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 4571,
+      "bytes": 10987877,
+      "sha256": "70b5633c988dfcce9dade0d82857d6b2a0034983a1b0f7d1670ebf6f9b85d70c"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 17888,
+      "sha256": "7ee8118877fbfee2b3258ce2c287c69859e343fb5912d82855d9d72b5f98f984"
+    }
+  },
+  "total_policy_decisions": 17096,
+  "source_worlds": 80,
+  "limitations": [
+    "Synthetic graph/material host, not native CyberSand ABI",
+    "Oracle prelude includes scripted host-accepted calibration, not a learned probing policy",
+    "Surface mapping is a fixed binary A/B toy law for the episode; model can solve with a per-surface last-receipt parser",
+    "No root SLM training, neural inference latency/RSS, native game acceptance or Actions shard retention"
+  ]
+}

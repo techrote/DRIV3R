@@ -1,0 +1,24 @@
+{
+  "file_sha256": {
+    "C34-RETREAT.safetensors": "1871728f0e7b1b68d3844d103062cee3014a7c8911fcdb8ddbcb5d8adfff6ffb",
+    "C34-independent-maze-recovery-2026-11-17.md": "6cc2d29cef8d74560f1c442e1adf0dca24ab0c615459fbb0a67e2db255569954",
+    "C34-summary.json": "b5d9047e21d7eb5afa522d1c234336e8346189c71327d0900450f7c18bf444f4",
+    "C34-trace-gallery.json": "aab0ccc42b2447b55135387ea7e697fbaac589878a45609b0f03302159f98433",
+    "c34_gallery.py": "b15dc4554bf9ca9f1b689fa00135a2ee840c0deda865f7e252714ca8aafb3562",
+    "c34_independent_maze.py": "8fbe9c748b5ed838a226041097574d6381481cde45e769bc3e4ec736206d8d26",
+    "cohort_A.json": "15cff1f1d62c6bdfba82286630b8b35a7e6f4b518b0ab236d69fd5490ee5cf47",
+    "cohort_B.json": "ac851680d0caf1cdfeb5e17d29bfc22fa02f77fca960d123291444aa429d4150",
+    "fit.json": "138a6d08590a9b62b488c35d3d872b78b1c4620a5e19b377b170378fd0dc4d06",
+    "gallery.html": "a610f1e88b4203173439b89ebf3d70ff4151c16719b9aba66ebe2d434ad2c69b",
+    "test_c34_independent_maze.py": "2b5c0a08922e75f631a0d15f686054df66d170202ed65ece69d73c9c9580ec98",
+    "topologies_A.json": "157aa3b1f39b28745dcb36de8f010d27ed373142cc9b73f4f238342341bf48bd",
+    "topologies_B.json": "229132f8367074e27a4a733512f6b36741092ab2315e1b14e987629e0fc27163",
+    "training_receipts.json": "2c17136bf097732533c21e4275075583007493c140c5405d375a9fb91a6d99fb"
+  },
+  "no_research_model_binaries_in_git": true,
+  "remote_target": "techrote/DRIV3R PR #1 / research/import-consolidated-worm-labs",
+  "schema": "driv3r-c34-source-and-evidence-receipt/1",
+  "source_archive": "interim local-only SHA256 manifest; no immutable Actions custody",
+  "source_date": "2026-11-17",
+  "test_result": "15/15 passing targeted C32 C33 C34 tests"
+}

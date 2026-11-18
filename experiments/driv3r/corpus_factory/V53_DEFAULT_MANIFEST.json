@@ -1,0 +1,125 @@
+{
+  "schema": "driv3r/corpus_factory/deferred-cross-surface-v53/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "deferred_surface_v53.js",
+  "generator_sha256": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+  "parents": [
+    {
+      "file": "realert_v52.js",
+      "sha256": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9"
+    },
+    {
+      "file": "active_probe_v51.js",
+      "sha256": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae"
+    },
+    {
+      "file": "online_recovery_v50.js",
+      "sha256": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae"
+    },
+    {
+      "file": "contextual_probe_v49.js",
+      "sha256": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761"
+    },
+    {
+      "file": "empirical_tool_v48.js",
+      "sha256": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3"
+    },
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "contract": {
+    "model_visible": "Only policy.input. NEVER supply evaluator-only challenge metadata to the learner.",
+    "action_tokens": "Unmodified legal MOVE, PAINT_A, PAINT_B, ERASE, STOP.",
+    "intervention": "B alert while A active creates future B calibration obligation; A second alert and B warning may share action timestamp.",
+    "counterfactual": "Seven B law flip/no-flip pairs share identical preprobe input but different physical paint results and final B goal commands.",
+    "isolation": "Worlds use v46 candidate indices 700+ and split-locked topology hashes; group same seeds/geometries across all versions.",
+    "dedup": "Exact TRAIN repeats zero-weighted without deleting host-replay actions; DEV/HELDOUT unsampled."
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 32,
+      "synthetic_host_successes": 576,
+      "policy_decisions": 22842,
+      "host_probe_paints": 1184,
+      "deferred_B_physical_causal_pairs": 224,
+      "irrelevant_B_warning_negative_pairs": 128,
+      "coincident_A_B_warning_controls": 64,
+      "max_deferred_warning_age_actions": 68,
+      "exact_repeats_zero_weight_train": 11414
+    },
+    "DEV": {
+      "worlds": 12,
+      "synthetic_host_successes": 216,
+      "policy_decisions": 9310,
+      "host_probe_paints": 444,
+      "deferred_B_physical_causal_pairs": 84,
+      "irrelevant_B_warning_negative_pairs": 48,
+      "coincident_A_B_warning_controls": 24,
+      "max_deferred_warning_age_actions": 79,
+      "exact_repeats_zero_weight_train": 0
+    },
+    "HELDOUT": {
+      "worlds": 12,
+      "synthetic_host_successes": 216,
+      "policy_decisions": 12636,
+      "host_probe_paints": 444,
+      "deferred_B_physical_causal_pairs": 84,
+      "irrelevant_B_warning_negative_pairs": 48,
+      "coincident_A_B_warning_controls": 24,
+      "max_deferred_warning_age_actions": 88,
+      "exact_repeats_zero_weight_train": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 22842,
+      "bytes": 49032560,
+      "sha256": "4a2418d5c5699d51897430fa523dfab3dcc91612a6c8ec5ebf27c78135aa34c1"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 32,
+      "bytes": 41080,
+      "sha256": "bd8c70f98a749203edc565ce61660a0812ebe771cda8e8a0535abe9aa9b56c62"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 9310,
+      "bytes": 21343003,
+      "sha256": "0894d32d3856db4170b12d2fc324c3309ee110e3a12cfbbd4c62bbd9cd703230"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 12,
+      "bytes": 15383,
+      "sha256": "d5d903014ff76beb48989192602265ccf470e7179b061f2297593e2495e27c96"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 12636,
+      "bytes": 29423565,
+      "sha256": "cfd840704a7463d14f8ef42c4d7758443968a2b217286b04a6b372d591d08309"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 12,
+      "bytes": 15427,
+      "sha256": "1b4eae3a3928a96f61fe049fb443354bd05beb92938c9578d8475d103cfec978"
+    }
+  },
+  "world_geometries": 56,
+  "total_policy_decisions": 44788,
+  "limitations": [
+    "Synthetic graph host only, NOT native CyberSand; SURFACE_ALERT and protection semantics hypothetical.",
+    "A symbolic per-surface event/receipt parser can still solve all held-out scenarios.",
+    "Pre-mission physical survey and calibration scripted; no learned exploration demonstrated.",
+    "No actual target SLM trained, no native integration, no neural latency/RSS or immutable Actions shard publication."
+  ]
+}

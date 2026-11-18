@@ -1,0 +1,126 @@
+{
+  "schema": "DRIV3R_MZ020_RETNET_PORT_CPU_V1",
+  "collected_date_utc": "2026-11-17",
+  "candidate": "RetNet-derived retention policy, scratch-init research port",
+  "architecture_source": {
+    "repo": "microsoft/torchscale",
+    "commit": "4d1e0e82e5adf86dd424f1463192635b73fc8efc",
+    "license": "MIT",
+    "official_source_implementation": false,
+    "official_pretrained_weights_loaded": false
+  },
+  "evidence_status": "LOCAL_EXECUTED_WITHIN_CPU_CONTAINER; SOURCE_CAPSULE_COMMITTED; NO_ACTIONS_ARTIFACT_OR_REMOTE_REPLAY",
+  "source_sha256": "145cdf8270a85e7cef36be75a38f947f77a7701fcc6f911ed9cd2d9b66971071",
+  "source_commit": "1acbf2d112cdb9ce0b51d4ab612c6edb6dba03a1",
+  "checkpoint_sha256": "fe5aae49a5ec14465edbad29889d21a75b069056e44b0bbedc0d54f9d6766b24",
+  "checkpoint_bytes": 82305589,
+  "checkpoint_storage": "LOCAL_SANDBOX_ONLY; NOT IMMUTABLE ACTIONS; NOT IN GIT",
+  "run": {
+    "command": "python run.py --out /mnt/data/mz020_release --updates 32 --train-seeds 32 --test-seeds 2 --batch 1 --prefix 12",
+    "python": "3.13",
+    "torch": "2.10.0+cpu",
+    "parameters": 20568072,
+    "train_updates": 32,
+    "batch_size": 1,
+    "prefix_tokens": 12,
+    "train_seed_range_inclusive": [
+      1000,
+      1031
+    ],
+    "test_seed_range_inclusive": [
+      5000,
+      5001
+    ],
+    "rollout_seed_range_inclusive": [
+      9000,
+      9001
+    ],
+    "cue_options": [
+      0,
+      1
+    ],
+    "invert_options": [
+      0,
+      1
+    ],
+    "torch_manual_seed": 2020,
+    "sampler_seed": 2520,
+    "train_loss_initial": 2.13997,
+    "train_loss_final": 0.71196,
+    "loss_trace": [
+      2.13997,
+      3.59836,
+      2.89855,
+      3.10317,
+      6.07242,
+      4.13239,
+      2.39471,
+      4.4481,
+      4.15314,
+      1.49968,
+      3.67939,
+      7.18453,
+      2.11314,
+      2.55948,
+      1.25422,
+      2.97126,
+      2.45084,
+      1.77985,
+      1.16885,
+      2.39618,
+      0.87331,
+      1.35944,
+      3.32089,
+      1.59264,
+      4.19632,
+      1.60981,
+      5.31492,
+      7.28801,
+      2.28202,
+      1.4757,
+      1.51544,
+      0.71196
+    ],
+    "train_elapsed_seconds": 19.58,
+    "walltime_total_seconds": 30.89
+  },
+  "heldout": {
+    "decisions": 188,
+    "teacher_correct": 109,
+    "teacher_accuracy": 0.5798,
+    "mineral_forks": 16,
+    "mineral_forks_correct": 4,
+    "mineral_forks_accuracy": 0.25,
+    "raw_illegal_preferences": 41
+  },
+  "closed_loop": {
+    "episodes": 8,
+    "success": 0,
+    "clean": 0,
+    "protected_collisions": 62,
+    "painted_cells": 0,
+    "raw_illegal_preferences": 232,
+    "execution_all_host_legal": true
+  },
+  "latency": {
+    "type": "cached_step",
+    "batch": 1,
+    "steps_per_trial": 16,
+    "repeat_trials": 24,
+    "excluded_warmup_trials": 4,
+    "p50_ms": 5.6153,
+    "p95_ms": 6.2791
+  },
+  "cached_full_parity_max_abs": 0,
+  "peak_process_rss_mib": 717,
+  "outcome": "REJECT_PROMOTION; NO_ARCHITECTURAL_GENERALIZATION",
+  "limitations": [
+    "external synthetic two-station host, not native CyberSand",
+    "modified topology vs historical MZ-015 three-station host",
+    "no pretrained model",
+    "too few optimizer steps and too short temporal window",
+    "no matched teacher or architecture baseline on exactly this host",
+    "no remote exact-head execution or immutable checkpoint artifact",
+    "RSS is whole Python process, not incremental model RSS"
+  ]
+}

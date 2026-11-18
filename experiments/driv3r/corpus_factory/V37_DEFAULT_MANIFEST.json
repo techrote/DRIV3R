@@ -1,0 +1,133 @@
+{
+  "schema": "driv3r/corpus_factory/material-law-forks-v37/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generated_utc": "2026-11-18",
+  "generator": "material_law_forks_v37.js",
+  "generator_sha256": "8b21ff7e901478e4b3022b11c9ef53538a664cd07381496c4a7c7c22b3947786",
+  "parent_schema": "driv3r/corpus_factory/trainer-safe-v35/manifest",
+  "parent_manifest_sha256": "db19fb6e565d443f3df494c1b5b64fd332c34d54a7048e2cef58a02d55e6b3f9",
+  "parent_shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 23008,
+      "bytes": 27064040,
+      "sha256": "a977b870f97fa7f71d73c547a212c48325d77529e3a65b8bfeae85ae71e6889e"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 19136,
+      "bytes": 31347464,
+      "sha256": "93f553f3c68781a769aae83474fc113a8307e76058ca21cd843a53f2ce506e96"
+    },
+    "DEV_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 409952,
+      "sha256": "2ced1192fee17f0ce0754434f815b1e0fa348f1c1f3f05bb16a807de71822dbd"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 25856,
+      "bytes": 53562528,
+      "sha256": "c4237c997042dc8b09b5edbb3c27b9ce843506d7ced7f31265a204f8fb35c475"
+    },
+    "HELDOUT_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 521568,
+      "sha256": "24830292471f93b36be18d81157abf01050809d956b8e7166c6974f62a84c170"
+    }
+  },
+  "law_intervention": "A public, instantaneous, future-only tool mapping installed at an already-reached v35 decision state. Prior action receipts refer to the pre-installation normal mapping.",
+  "proof_scope": "For a fixed observed physical state, swapping subsequent PAINT command tokens preserves every physical action effect in the synthetic symbolic host. Does NOT constitute fresh closed-loop replay after the law update.",
+  "model_input_contract": "Only row.input is model-visible; action and weight are external training/evaluation fields. Counterfactual shards are evaluation-only and carry paired answer labels.",
+  "exclusions": [
+    "No CyberSand native law is asserted",
+    "Not a new topology/physics implementation",
+    "Not a trained neural model",
+    "No autonomous law-change trajectory qualification"
+  ],
+  "splits": {
+    "TRAIN": {
+      "geometry_groups": 16,
+      "source_rows_examined": 23008,
+      "paired_decisions": 5920,
+      "policy_rows": 11840,
+      "changed_action_pairs": 1792,
+      "unchanged_action_controls": 4128,
+      "weight_one": 10020,
+      "weight_zero": 1820,
+      "exact_duplicate_inputs": 1820,
+      "source_actions": {
+        "PAINT_A": 896,
+        "PAINT_B": 896,
+        "ERASE": 1792,
+        "STOP": 768,
+        "NAV": 1568
+      }
+    },
+    "DEV": {
+      "geometry_groups": 8,
+      "source_rows_examined": 19136,
+      "paired_decisions": 3641,
+      "policy_rows": 7282,
+      "changed_action_pairs": 896,
+      "unchanged_action_controls": 2745,
+      "weight_one": 5872,
+      "weight_zero": 1410,
+      "exact_duplicate_inputs": 1410,
+      "source_actions": {
+        "PAINT_A": 448,
+        "PAINT_B": 448,
+        "ERASE": 896,
+        "STOP": 384,
+        "NAV": 1465
+      }
+    },
+    "HELDOUT": {
+      "geometry_groups": 8,
+      "source_rows_examined": 25856,
+      "paired_decisions": 4090,
+      "policy_rows": 8180,
+      "changed_action_pairs": 896,
+      "unchanged_action_controls": 3194,
+      "weight_one": 6514,
+      "weight_zero": 1666,
+      "exact_duplicate_inputs": 1666,
+      "source_actions": {
+        "PAINT_A": 448,
+        "PAINT_B": 448,
+        "ERASE": 896,
+        "STOP": 384,
+        "NAV": 1914
+      }
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 11840,
+      "bytes": 15376524,
+      "sha256": "3d73fff199e1524df4e2c5ea1ceb9412e04c6a67e7133c13056255d8263d14a1"
+    },
+    "TRAIN_counterfactual.jsonl": {
+      "rows": 0,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 7282,
+      "bytes": 12936876,
+      "sha256": "85cf015de879aba43743f45c84e7a3e82a82004f814292fad0116b1713dcc77e"
+    },
+    "DEV_counterfactual.jsonl": {
+      "rows": 3641,
+      "bytes": 13453002,
+      "sha256": "ec36c67d3e7cf0a7bd307f7601aa15951836e25c178ea2d10270d3de614f2b88"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 8180,
+      "bytes": 18064948,
+      "sha256": "0658ddb1cc0315e77303d493fd347f3a209ed82fb22198a75ba773a464943221"
+    },
+    "HELDOUT_counterfactual.jsonl": {
+      "rows": 4090,
+      "bytes": 18644832,
+      "sha256": "816188acec0b68cdc057d520f141c178f907bb029974b86031c2966c4d9568bc"
+    }
+  }
+}

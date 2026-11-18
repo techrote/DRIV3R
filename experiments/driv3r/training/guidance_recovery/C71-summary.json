@@ -1,0 +1,1394 @@
+{
+  "aggregate": {
+    "0.0/0.35/C60-FROZEN": {
+      "goal": 3,
+      "new_sites": 93,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/0.35/C70-FROZEN": {
+      "goal": 3,
+      "new_sites": 96,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/0.35/C71-ALIGNED": {
+      "goal": 3,
+      "new_sites": 97,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/0.35/C71-NO-ROUTE": {
+      "goal": 3,
+      "new_sites": 97,
+      "route_matching_actions": 0,
+      "route_ticks": 3
+    },
+    "0.0/0.35/C71-SHIFTED": {
+      "goal": 3,
+      "new_sites": 90,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/0.35/FRONTIER": {
+      "goal": 4,
+      "new_sites": 105,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "0.0/0.35/RESET": {
+      "goal": 3,
+      "new_sites": 78,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/1.0/C60-FROZEN": {
+      "goal": 3,
+      "new_sites": 117,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/1.0/C70-FROZEN": {
+      "goal": 3,
+      "new_sites": 120,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/1.0/C71-ALIGNED": {
+      "goal": 3,
+      "new_sites": 110,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "0.0/1.0/C71-NO-ROUTE": {
+      "goal": 3,
+      "new_sites": 110,
+      "route_matching_actions": 0,
+      "route_ticks": 3
+    },
+    "0.0/1.0/C71-SHIFTED": {
+      "goal": 4,
+      "new_sites": 79,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "0.0/1.0/FRONTIER": {
+      "goal": 4,
+      "new_sites": 112,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "0.0/1.0/RESET": {
+      "goal": 3,
+      "new_sites": 78,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/0.35/C60-FROZEN": {
+      "goal": 3,
+      "new_sites": 93,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/0.35/C70-FROZEN": {
+      "goal": 3,
+      "new_sites": 96,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/0.35/C71-ALIGNED": {
+      "goal": 3,
+      "new_sites": 97,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/0.35/C71-NO-ROUTE": {
+      "goal": 3,
+      "new_sites": 97,
+      "route_matching_actions": 0,
+      "route_ticks": 3
+    },
+    "1.0/0.35/C71-SHIFTED": {
+      "goal": 3,
+      "new_sites": 90,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/0.35/FRONTIER": {
+      "goal": 4,
+      "new_sites": 106,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "1.0/0.35/RESET": {
+      "goal": 3,
+      "new_sites": 78,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/1.0/C60-FROZEN": {
+      "goal": 3,
+      "new_sites": 117,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/1.0/C70-FROZEN": {
+      "goal": 3,
+      "new_sites": 120,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/1.0/C71-ALIGNED": {
+      "goal": 3,
+      "new_sites": 110,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    },
+    "1.0/1.0/C71-NO-ROUTE": {
+      "goal": 3,
+      "new_sites": 110,
+      "route_matching_actions": 0,
+      "route_ticks": 3
+    },
+    "1.0/1.0/C71-SHIFTED": {
+      "goal": 4,
+      "new_sites": 79,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "1.0/1.0/FRONTIER": {
+      "goal": 4,
+      "new_sites": 131,
+      "route_matching_actions": 4,
+      "route_ticks": 4
+    },
+    "1.0/1.0/RESET": {
+      "goal": 3,
+      "new_sites": 78,
+      "route_matching_actions": 3,
+      "route_ticks": 3
+    }
+  },
+  "checkpoint_sha256": {
+    "C71-ALIGNED": "043dcec178cfc6ae88acd6926ef88b2d986ab9c12071d3ec06a19e381f402e94",
+    "C71-SHIFTED": "01312966d2213a5772802a24b254c511af377258098ee12f2ea9164db29a7314"
+  },
+  "cohort_eligibility": [
+    {
+      "family": "tree",
+      "generated": 20,
+      "remote_eligible": 13,
+      "selected_test": 2,
+      "selected_train": 2,
+      "skips": {
+        "early_terminal": 7
+      },
+      "strict_unseen_eligible": 11
+    },
+    {
+      "family": "braid",
+      "generated": 20,
+      "remote_eligible": 16,
+      "selected_test": 2,
+      "selected_train": 2,
+      "skips": {
+        "early_terminal": 4
+      },
+      "strict_unseen_eligible": 16
+    },
+    {
+      "family": "prim",
+      "generated": 20,
+      "remote_eligible": 12,
+      "selected_test": 2,
+      "selected_train": 2,
+      "skips": {
+        "early_terminal": 8
+      },
+      "strict_unseen_eligible": 11
+    },
+    {
+      "family": "wilson",
+      "generated": 20,
+      "remote_eligible": 15,
+      "selected_test": 2,
+      "selected_train": 2,
+      "skips": {
+        "early_terminal": 5
+      },
+      "strict_unseen_eligible": 15
+    },
+    {
+      "family": "kruskal",
+      "generated": 20,
+      "remote_eligible": 12,
+      "selected_test": 2,
+      "selected_train": 2,
+      "skips": {
+        "early_terminal": 8
+      },
+      "strict_unseen_eligible": 11
+    }
+  ],
+  "conditions": 60,
+  "excluded_prior_graphs": 497,
+  "executed_suffixes": 420,
+  "frozen_c70_source_sha256": "cac1f5a31b3d1c322a219b19e3987461ff67f4921957fc8325cd4860b2324436",
+  "frozen_c70_summary_sha256": "8a7d5f408919d0f538c01739f3b624a4083c9862cdb78b121a5e444b31540cce",
+  "gallery_traces": 24,
+  "generated_graph_receipts": [
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "d224d9c36f9fe89632658e1cb49d970fc9e7ea38905c30f4f3957be0a7ebe1cc",
+      "initial_seed": 710119,
+      "personality": -1,
+      "retry": 0,
+      "seed": 710119
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "e5163b8eed08ed9504179e9449b953e0b54ed69293a072c0e40a697140aba2ce",
+      "initial_seed": 731160,
+      "personality": -1,
+      "retry": 0,
+      "seed": 731160
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "d4756d849ba4ecbc40eba957f96733da597d8158fd5f7aa96e20c7b8854bad8c",
+      "initial_seed": 752201,
+      "personality": -1,
+      "retry": 0,
+      "seed": 752201
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "7bdf82a1aed91aaf2fe38c480d3cc55e1017065b9a6a0c27c545f71545fd89f1",
+      "initial_seed": 773242,
+      "personality": -1,
+      "retry": 0,
+      "seed": 773242
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "6d14fbdb51859edf6450f5affd71547f4a81f8b42376af5c6f60b05be1daa01c",
+      "initial_seed": 794283,
+      "personality": -1,
+      "retry": 0,
+      "seed": 794283
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "5bb81d41601941916c0770ce389de5340b7add1b9f7bac0a33330f2f2b02b213",
+      "initial_seed": 717593,
+      "personality": 1,
+      "retry": 0,
+      "seed": 717593
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "1886305f717ee41c97f071899e22fe31bc1582b1641e4f278ae688b06d854d98",
+      "initial_seed": 738634,
+      "personality": 1,
+      "retry": 0,
+      "seed": 738634
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "efac14358038cdd521b0984443a2380a30cfa88fcb706a171cf5ce10f7ccf24e",
+      "initial_seed": 759675,
+      "personality": 1,
+      "retry": 0,
+      "seed": 759675
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "fcec5692198282ef71f412b705650a3074f7d97342a07ab667175220e0ed4e71",
+      "initial_seed": 780716,
+      "personality": 1,
+      "retry": 0,
+      "seed": 780716
+    },
+    {
+      "case": "detour",
+      "family": "tree",
+      "graph": "e4a381ca2157b538327d280bcb9c33de42285c287694a905f29215bdac19fa19",
+      "initial_seed": 801757,
+      "personality": 1,
+      "retry": 0,
+      "seed": 801757
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "b440cff39038dfc1c3aacc4a7df211280468f3c4d1b32ec2f874ed5ca088c9a7",
+      "initial_seed": 729132,
+      "personality": -1,
+      "retry": 0,
+      "seed": 729132
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "e7fdda72becba8a6fa64e4705faed2972a7f2da37433a45a9b412c618d03d95f",
+      "initial_seed": 750173,
+      "personality": -1,
+      "retry": 0,
+      "seed": 750173
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "fbe812b484846ada6d35c2f4e57fc426eb201a0b04ee707d5b142d70f354d641",
+      "initial_seed": 771214,
+      "personality": -1,
+      "retry": 0,
+      "seed": 771214
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "e91fef890a391eca4ba70d7d3b632427e2169314b4a7307f7ad923bf1b9e6d16",
+      "initial_seed": 792255,
+      "personality": -1,
+      "retry": 0,
+      "seed": 792255
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "9460d3f999bdad9f220f2b9cc3ef4a8da63bc7ee5ba7f73278913d41bc288464",
+      "initial_seed": 813296,
+      "personality": -1,
+      "retry": 0,
+      "seed": 813296
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "cceb3b5d4bcd9bbd7bf4cb179d35e0f8fa97dbf27dd8ce8bae3df7948816d06e",
+      "initial_seed": 736606,
+      "personality": 1,
+      "retry": 0,
+      "seed": 736606
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "0b6c021d900529f39ee8918121711562706e28e2b337b1e908cdfd5e6073e16f",
+      "initial_seed": 757647,
+      "personality": 1,
+      "retry": 0,
+      "seed": 757647
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "613b67cd0877e5e57f7c3dc1f0909f4447d81a849f6a496dfdbbde5d7311c43a",
+      "initial_seed": 778688,
+      "personality": 1,
+      "retry": 0,
+      "seed": 778688
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "37548f09fc4fb73503aacd741221b8cfb98dcd821f1b9a0c652bc5ea6ce5cd60",
+      "initial_seed": 799729,
+      "personality": 1,
+      "retry": 0,
+      "seed": 799729
+    },
+    {
+      "case": "forward",
+      "family": "tree",
+      "graph": "dc826f498520f7d3bc91385eb65372fb0d6b5311ffc0bd61358398c02940a621",
+      "initial_seed": 820770,
+      "personality": 1,
+      "retry": 0,
+      "seed": 820770
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "fcc402ea784640e2ae0976aa979958383ffa7687b8d1f0b1d71ecbde12e29545",
+      "initial_seed": 921230,
+      "personality": -1,
+      "retry": 0,
+      "seed": 921230
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "0ac4226f6e44d3d4ff1f81b89a855a90b9c506ec67a939bf5fcfe2a83d690cbe",
+      "initial_seed": 942271,
+      "personality": -1,
+      "retry": 0,
+      "seed": 942271
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "d4b292a0dd7103fde77541ddbffe3b5f00922e1e8a494c08f1935bf798c12fab",
+      "initial_seed": 963312,
+      "personality": -1,
+      "retry": 0,
+      "seed": 963312
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "1ed4bfa3e63440c9e9e7cb3a36229c75700423d8c3569083a390677bfc964ab3",
+      "initial_seed": 984353,
+      "personality": -1,
+      "retry": 0,
+      "seed": 984353
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "5073f2cd613d3cecd19075987b9d93df5424abe11ee3c018b633f3fd619df0eb",
+      "initial_seed": 1005394,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1005394
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "52ec492e8e0d11022bd3326660ba1bd12db53622d59f47511801c5bd2bed6f0f",
+      "initial_seed": 928704,
+      "personality": 1,
+      "retry": 0,
+      "seed": 928704
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "67df90110aac49f7267e4bb8620437c38628f956b86a873cd5bd7c9c7c96babc",
+      "initial_seed": 949745,
+      "personality": 1,
+      "retry": 0,
+      "seed": 949745
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "5513bf4999821323eb97561ed817cd8367a640399019bd5cfe1f8095d8f3c5ad",
+      "initial_seed": 970786,
+      "personality": 1,
+      "retry": 0,
+      "seed": 970786
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "aea3c799f308a33d109cde08984ee84f835b559e9560e80fbd52afe189972e66",
+      "initial_seed": 991827,
+      "personality": 1,
+      "retry": 0,
+      "seed": 991827
+    },
+    {
+      "case": "detour",
+      "family": "braid",
+      "graph": "b7798add736c1cd9a31a4615b0d241f100bff24f814d95b4ab77276eca82ae10",
+      "initial_seed": 1012868,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1012868
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "4ab49897e99fd710dc9607eef0ddd250c4e3087cb42dff56995b3bc8f52b4127",
+      "initial_seed": 940243,
+      "personality": -1,
+      "retry": 0,
+      "seed": 940243
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "e8e18016417fa89660b2afd22e4259df77ab174c314a82a3e759cefad4c50da6",
+      "initial_seed": 961284,
+      "personality": -1,
+      "retry": 0,
+      "seed": 961284
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "5ec88b9f44dd842797ea7d3cc92550ec49e85812fdb35f09fe8665add2e52591",
+      "initial_seed": 982325,
+      "personality": -1,
+      "retry": 0,
+      "seed": 982325
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "3ea16d63d943a5c77be13cd2c42a2353e92e40796272462cbdc3aaee84647f7c",
+      "initial_seed": 1003366,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1003366
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "3af4c46011f5ebfea2e6d227ce1d34b3198718a88941b81b0c28fca0e80dfc15",
+      "initial_seed": 1024407,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1024407
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "a348474657c4cd7b7eb197a6951a577721145b5393e46e088ccce68642b73e5c",
+      "initial_seed": 947717,
+      "personality": 1,
+      "retry": 0,
+      "seed": 947717
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "5ef0aaaff0f647f9a3dca6c44c8013781b5af54c94d22cff48f7eb85f4357fb0",
+      "initial_seed": 968758,
+      "personality": 1,
+      "retry": 0,
+      "seed": 968758
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "aa5c8a26b3b547484f0f772e1565064b3cc86808ba5a2d198c4177c8badbe237",
+      "initial_seed": 989799,
+      "personality": 1,
+      "retry": 0,
+      "seed": 989799
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "90f5bbbc63ae8807cf6390ea37043152d84eb3447e69da37201e2866706e93f4",
+      "initial_seed": 1010840,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1010840
+    },
+    {
+      "case": "forward",
+      "family": "braid",
+      "graph": "69b3cbf447139f532d1167a2b5ebba5d445b3806d10aa633945b5b4e26a79fc5",
+      "initial_seed": 1031881,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1031881
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "4ad1fa4c3332f23ff5df77e57de51ece0a91f9d28412556e2ad5d37e01bae668",
+      "initial_seed": 1132341,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1132341
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "a9627fd0577bdf2243675f7b96ec5af2a774deee7f10c8f00d611e8314a93331",
+      "initial_seed": 1153382,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1153382
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "f74e1d97a08e16434fbe4998468fe636ad2ea59b97fdaee203efd9c7724e3957",
+      "initial_seed": 1174423,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1174423
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "3b9087453e36827dd07676b224ea5eac15550644206996825201f4f15799378b",
+      "initial_seed": 1195464,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1195464
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "914553cfadc75ab838333da72290033fe3208be14c12953c13983e62dbddc22c",
+      "initial_seed": 1216505,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1216505
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "5579cf37563c64dd13d0da46832326c11ec45406f24d67382fa4ffb87cfa8fde",
+      "initial_seed": 1139815,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1139815
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "6f519adbb6411f59956424b1ec7322ab659bd9c8ab86189048477cb0673c668d",
+      "initial_seed": 1160856,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1160856
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "3dd40839dd65f499589a48a36d9c5c823e7d6c37b96879bbcb6407c81992f97f",
+      "initial_seed": 1181897,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1181897
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "8ec639defa1092e0bd65b7fce2f907e7fabaf7e0e2215721433514e38308aabf",
+      "initial_seed": 1202938,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1202938
+    },
+    {
+      "case": "detour",
+      "family": "prim",
+      "graph": "1550522671aecfd3c89a35f067471210ac22a44f48de6a1f88834411791bc84a",
+      "initial_seed": 1223979,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1223979
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "626e52e6204310b6a37593f3d5988158b343d1b7bfb7ccc621bb48a92f499022",
+      "initial_seed": 1151354,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1151354
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "36c5199655e39f83a405d125f73e802e96a8ab2c1fd58b82c5a762f3468d3ce2",
+      "initial_seed": 1172395,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1172395
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "e9536411e4de99868db4ad71c265b12a3192271ec9784c699b6c9b8e3c83ff0c",
+      "initial_seed": 1193436,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1193436
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "7b7d86b6c3b258dae7278841f50bc505751f6809d1435c4c83f75fe8c52e74fa",
+      "initial_seed": 1214477,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1214477
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "cb8cb2a818b5cc7a541364051b37df2f7ca434571202eb0f9272e39d58bb2c53",
+      "initial_seed": 1235518,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1235518
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "5db126ddd7782df5488d4285b2de26011ba4e427969fc08328fae1d49b83dac8",
+      "initial_seed": 1158828,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1158828
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "89ce1d00a921b11afc1786adaaee0bd8b866eb590a454ed3bfd4e86605358163",
+      "initial_seed": 1179869,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1179869
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "88ef7e3a5990c80270575d988b9d46b139ea7f92f20c6096a5291a22d4ec08a5",
+      "initial_seed": 1200910,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1200910
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "3be504466129e617d6bada0f2d42edf566447b5ac6cdcc7ca25c825107585930",
+      "initial_seed": 1221951,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1221951
+    },
+    {
+      "case": "forward",
+      "family": "prim",
+      "graph": "85e5a84eb6c0f66362a263eae3600f18a58888becfbd2fd91279c1dd2e6585cf",
+      "initial_seed": 1242992,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1242992
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "77c66d85d038f7d443c8b2c719e3a55c573fcf549752b933ad1fdd2093be8418",
+      "initial_seed": 1343452,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1343452
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "9bdab8c94c434e376b13ae89688f991e6da811cdede4916477f90c7f2677f3a5",
+      "initial_seed": 1364493,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1364493
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "78ff565e294ea3b4e4477f8409d1d25f97fa04c1488235ed818c51b79101a37c",
+      "initial_seed": 1385534,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1385534
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "fc451e4fde2504fb8275ff146f80ff1de82f3d6d2d0516aac530a4553a850e30",
+      "initial_seed": 1406575,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1406575
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "aff75f699bb6f27f19df9c21686a549d74ee1337a3efe274e5a453e109420d8b",
+      "initial_seed": 1427616,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1427616
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "a3a0b475cdfcc621ad549cacb351ae83e3d24d043552609c983936348262cfb9",
+      "initial_seed": 1350926,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1350926
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "b1b586ebe3f8f334d57a691b39dc6f81c1e7d37f821fbcdb426e479cf447e9ba",
+      "initial_seed": 1371967,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1371967
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "a4c609e716166c4d9051b335b9214d733c47c50bd6941131c500e882baeb470f",
+      "initial_seed": 1393008,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1393008
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "826d36a3a72fe3eea000c6555553bc644b0d1bd35c1c3b21dfd71ae055309cc1",
+      "initial_seed": 1414049,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1414049
+    },
+    {
+      "case": "detour",
+      "family": "wilson",
+      "graph": "89fbf310dfbd1cc323e243a049c512a99b0e2326f90c6a001cb36a90025885c5",
+      "initial_seed": 1435090,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1435090
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "333fb06dab05cf6937c4606da47b47c7859a5ec699949e3d304e1d22499574b7",
+      "initial_seed": 1362465,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1362465
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "767529625886a70b0fb34da87d98b6dd636aa08ff7298b70a6b8b747f7356f43",
+      "initial_seed": 1383506,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1383506
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "6446c11159a090829092272540309e31753f48902cf9b641334d84e6a58b0f81",
+      "initial_seed": 1404547,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1404547
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "af581c93a9f4c227b05fa2a3212692c2dfdac185a3e17697c865e873b3158cfa",
+      "initial_seed": 1425588,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1425588
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "c377d3b42f4387316699b7f7b7ae42f1fd576c9870ee9e260c5b591c1c2f66b2",
+      "initial_seed": 1446629,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1446629
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "f51a43359796fec38990b7103c63805505dc5a8344526c58d908bbf9edb6758d",
+      "initial_seed": 1369939,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1369939
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "a9cc520ecb957a7e5ae551590fa560f8958d1f997655dd2c7fb88b9db0c5d5b9",
+      "initial_seed": 1390980,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1390980
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "44b148b29ac59ea1aa1fb036c13481f9288dcb2df6287b2d610f71aca279c579",
+      "initial_seed": 1412021,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1412021
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "57b9eac9eefc7e6399b47f0ce46b94a6c3ff4abe7a5265c4c77ff658f21f132b",
+      "initial_seed": 1433062,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1433062
+    },
+    {
+      "case": "forward",
+      "family": "wilson",
+      "graph": "e26f1df501d87b1f129480e6a819e0a8afb57ade998321e5c5c142628fd29e93",
+      "initial_seed": 1454103,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1454103
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "0135cc6dd93812f3f0ee619ae3fde6e68236024b9466b7919bc16fd3a2ac8498",
+      "initial_seed": 1554563,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1554563
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "414134c9302e13a35308eff6e0d5268962b28fbd1df7078c206ee68d6df0cccc",
+      "initial_seed": 1575604,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1575604
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "a6d16d05927360d46676d3a0a2daf4176656ac0b50848c70911dd4bf2d34dcb7",
+      "initial_seed": 1596645,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1596645
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "5f4a552ffb169fb07b588e80de1e1a2ab24bff935a7491047ed9836dd8740859",
+      "initial_seed": 1617686,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1617686
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "b99636edba4eed105374fb6b5bf3baf570bfd507560760c7df725e224c0bfe2d",
+      "initial_seed": 1638727,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1638727
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "c5f009a0f18c28600b787171c859870e66731ff8551e666c198188cd3e9f8ca9",
+      "initial_seed": 1562037,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1562037
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "a4ce71c94c0297ee89a49626388663f35eb010cf9c8aa948ae16e277fcf05f9e",
+      "initial_seed": 1583078,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1583078
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "eb88aaa66a609ae6681b93ef3d9c99516546d576609709d3b108894b46f5d5cf",
+      "initial_seed": 1604119,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1604119
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "b8174d614f1ec03e42c16a073f2e19c87b6f2eaa6db6b2ca55fa81b7db7ba11f",
+      "initial_seed": 1625160,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1625160
+    },
+    {
+      "case": "detour",
+      "family": "kruskal",
+      "graph": "5b412d20b38001c466112392c6f884ddf87543a409834ebddf399106c61b7314",
+      "initial_seed": 1646201,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1646201
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "02a0ac5f6b96578fab1661f3918a6a8f771ecdd63885621d37fc86a0a21f11d3",
+      "initial_seed": 1573576,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1573576
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "be8d14ec78b80b7ab8ee5dfd4138cead972f3e11718b993fa31c61716d9208ee",
+      "initial_seed": 1594617,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1594617
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "02d7e9f1dfd3f404b157ed9a9e7d55270785f4bff41d3e9a20095e91c3eb1105",
+      "initial_seed": 1615658,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1615658
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "af6ce2fd2e2e54fe18f4c0a91931ffa60d475e62250509d7c273bb0ca36d496e",
+      "initial_seed": 1636699,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1636699
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "657a8203c4f3701fbe59c2ed51b23136e49fd613604b17e17a2d809d15eaf67a",
+      "initial_seed": 1657740,
+      "personality": -1,
+      "retry": 0,
+      "seed": 1657740
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "22f40f6cba585fdc73d520921e6fb39f846e576887889868d6c1241986669899",
+      "initial_seed": 1581050,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1581050
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "15c92de3897739dce572fbbe29099e0269ea67792cdd5a2f3c8632a04c56bced",
+      "initial_seed": 1602091,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1602091
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "832fb1e89b10e66f920fa6f357965500f7d0db0930ddda529edcb8b1a218703f",
+      "initial_seed": 1623132,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1623132
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "a8ca170b842394d887635e708626b232b35de2655c7876060183cec3f89175f5",
+      "initial_seed": 1644173,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1644173
+    },
+    {
+      "case": "forward",
+      "family": "kruskal",
+      "graph": "d3432ef13c35618314200aa567c96f74e92169c9d0ef3ff4d8379de27fcfcafe",
+      "initial_seed": 1665214,
+      "personality": 1,
+      "retry": 0,
+      "seed": 1665214
+    }
+  ],
+  "host_actions_executed": 13540,
+  "limitations": [
+    "Synthetic CyberSand-like host only; no native acceptance",
+    "10 training graphs, 10 test graphs: exploratory topology-stratified cohort",
+    "On-policy aligned and shifted training suffix action exposure differs despite equal updates",
+    "Wrong credit rolls within episode and can retain autocorrelation",
+    "Ablating observed-route action feature is not the same as erasing all movement history",
+    "Personality metrics are limited movement/ink proxies, not native identity tests"
+  ],
+  "schema": "driv3r-c71-remote-goal-transfer/1",
+  "seed": 710119,
+  "selection_rule": "Prefix tick 9; goal not in observed visits, target not a known neighbor and no observed ledger route to target; fixed generation and stable eligible order; no suffix outcomes used",
+  "source_sha256": "bf19f954e5596b43bb9dd60e970a5826101c19b7f471f81a2fc6c77da28b346a",
+  "test_graph_ids": [
+    {
+      "family": "tree",
+      "graph": "7bdf82a1aed91aaf2fe38c480d3cc55e1017065b9a6a0c27c545f71545fd89f1",
+      "prefix_sha": "cce2c3e3bd6805704f2ed86213a01bf598b27470dc4cfe147b64b35b3a909116",
+      "target": [
+        11,
+        9
+      ]
+    },
+    {
+      "family": "tree",
+      "graph": "5bb81d41601941916c0770ce389de5340b7add1b9f7bac0a33330f2f2b02b213",
+      "prefix_sha": "29dd65b69cf1c02ae93ea85ec86bd75b3727155400c276984f8a594670aa4b73",
+      "target": [
+        5,
+        13
+      ]
+    },
+    {
+      "family": "braid",
+      "graph": "1ed4bfa3e63440c9e9e7cb3a36229c75700423d8c3569083a390677bfc964ab3",
+      "prefix_sha": "2552ae64fb63ee07ec2fed1c2d30fb1461e2835eed3ff17653a5f6a8fa841234",
+      "target": [
+        4,
+        7
+      ]
+    },
+    {
+      "family": "braid",
+      "graph": "52ec492e8e0d11022bd3326660ba1bd12db53622d59f47511801c5bd2bed6f0f",
+      "prefix_sha": "187b421efcee9e03d5047afa5abb9afc99a7dabdfed91aa39ab8d11d61c6c17c",
+      "target": [
+        12,
+        3
+      ]
+    },
+    {
+      "family": "prim",
+      "graph": "914553cfadc75ab838333da72290033fe3208be14c12953c13983e62dbddc22c",
+      "prefix_sha": "953f58777be881a287833fccd42dba9bdde38e2b3878955218ff940c1dee4241",
+      "target": [
+        13,
+        13
+      ]
+    },
+    {
+      "family": "prim",
+      "graph": "5579cf37563c64dd13d0da46832326c11ec45406f24d67382fa4ffb87cfa8fde",
+      "prefix_sha": "c91ab0542eb97017ef9a3013f4833925f58827a4b7d1b5f2bf7db47e137d511f",
+      "target": [
+        13,
+        13
+      ]
+    },
+    {
+      "family": "wilson",
+      "graph": "78ff565e294ea3b4e4477f8409d1d25f97fa04c1488235ed818c51b79101a37c",
+      "prefix_sha": "96b376df9bb841e9055e9666fb93df5b49a37341765c8e7a9b06ec8f56f1c3b9",
+      "target": [
+        13,
+        9
+      ]
+    },
+    {
+      "family": "wilson",
+      "graph": "fc451e4fde2504fb8275ff146f80ff1de82f3d6d2d0516aac530a4553a850e30",
+      "prefix_sha": "6db330a1c5bbc2eba039d4c68e0521781d70051ef794cb72391545348d298065",
+      "target": [
+        1,
+        13
+      ]
+    },
+    {
+      "family": "kruskal",
+      "graph": "a6d16d05927360d46676d3a0a2daf4176656ac0b50848c70911dd4bf2d34dcb7",
+      "prefix_sha": "af582682cbe7242815cd9310770637cc6d23f21aad9a14f808d9b0bc7c974b55",
+      "target": [
+        5,
+        11
+      ]
+    },
+    {
+      "family": "kruskal",
+      "graph": "5f4a552ffb169fb07b588e80de1e1a2ab24bff935a7491047ed9836dd8740859",
+      "prefix_sha": "c3bdd28ea809df89346df64507766d38a311ba590c2e323b972e6b44dfae539e",
+      "target": [
+        7,
+        1
+      ]
+    }
+  ],
+  "train_graph_ids": [
+    {
+      "family": "tree",
+      "graph": "e5163b8eed08ed9504179e9449b953e0b54ed69293a072c0e40a697140aba2ce",
+      "prefix_sha": "e0a7bb5cc983f2314db9ec9a7681b5f63826c87a1dc556ddba58cf771d6a98cc",
+      "target": [
+        1,
+        13
+      ]
+    },
+    {
+      "family": "tree",
+      "graph": "d4756d849ba4ecbc40eba957f96733da597d8158fd5f7aa96e20c7b8854bad8c",
+      "prefix_sha": "5f9eefeb65001fa40d081b5e15d9d72fde7da60da22d4c3e55b21b566addfd77",
+      "target": [
+        13,
+        7
+      ]
+    },
+    {
+      "family": "braid",
+      "graph": "fcc402ea784640e2ae0976aa979958383ffa7687b8d1f0b1d71ecbde12e29545",
+      "prefix_sha": "7682d0bb5880ad5386b284345a4e5249fe67c3f5dbb21a077097e0d6ac2a9f25",
+      "target": [
+        1,
+        3
+      ]
+    },
+    {
+      "family": "braid",
+      "graph": "0ac4226f6e44d3d4ff1f81b89a855a90b9c506ec67a939bf5fcfe2a83d690cbe",
+      "prefix_sha": "31671daf7fa5ddb21b458cb5f4b27d4ae8a9e6ac84aa24fa2d618ba2d488c98c",
+      "target": [
+        11,
+        13
+      ]
+    },
+    {
+      "family": "prim",
+      "graph": "a9627fd0577bdf2243675f7b96ec5af2a774deee7f10c8f00d611e8314a93331",
+      "prefix_sha": "1fb51dab3378d70cd5457dfb7c6dabbcf68adf16e5facea2ee054ee3d8485488",
+      "target": [
+        5,
+        3
+      ]
+    },
+    {
+      "family": "prim",
+      "graph": "3b9087453e36827dd07676b224ea5eac15550644206996825201f4f15799378b",
+      "prefix_sha": "fcc9509868633d381d290d8e8bfca51f2fa835f197b37d4117e5a6b8e3b41de1",
+      "target": [
+        11,
+        13
+      ]
+    },
+    {
+      "family": "wilson",
+      "graph": "77c66d85d038f7d443c8b2c719e3a55c573fcf549752b933ad1fdd2093be8418",
+      "prefix_sha": "aa2dfe25eb1ff22fde7bef21c6f7845ab01e57f033a0e0aa4099ef1e068d6f57",
+      "target": [
+        5,
+        3
+      ]
+    },
+    {
+      "family": "wilson",
+      "graph": "9bdab8c94c434e376b13ae89688f991e6da811cdede4916477f90c7f2677f3a5",
+      "prefix_sha": "853f8c2805c84ab514168942476ec6550f010dddefbcb9e449c93adf82b67822",
+      "target": [
+        9,
+        5
+      ]
+    },
+    {
+      "family": "kruskal",
+      "graph": "0135cc6dd93812f3f0ee619ae3fde6e68236024b9466b7919bc16fd3a2ac8498",
+      "prefix_sha": "a4e0ce259d4d1872f12a65dfc5fda08ac0b788891eefb850afa50d0bc6099b39",
+      "target": [
+        11,
+        1
+      ]
+    },
+    {
+      "family": "kruskal",
+      "graph": "414134c9302e13a35308eff6e0d5268962b28fbd1df7078c206ee68d6df0cccc",
+      "prefix_sha": "26b4f949f6e5ecc8b822b54bebaddfd86eba04793984b55636dd929e7b5a011b",
+      "target": [
+        9,
+        9
+      ]
+    }
+  ],
+  "training": {
+    "C71-ALIGNED": {
+      "epochs": [
+        {
+          "actions": 1552,
+          "epoch": 0,
+          "training_goals": 10,
+          "trajectories": 40,
+          "weight_norm": 0.5901226997375488
+        },
+        {
+          "actions": 1594,
+          "epoch": 1,
+          "training_goals": 8,
+          "trajectories": 40,
+          "weight_norm": 0.819724440574646
+        },
+        {
+          "actions": 1438,
+          "epoch": 2,
+          "training_goals": 12,
+          "trajectories": 40,
+          "weight_norm": 0.9566735029220581
+        }
+      ],
+      "mode": "aligned",
+      "updates": 36
+    },
+    "C71-SHIFTED": {
+      "epochs": [
+        {
+          "actions": 1552,
+          "epoch": 0,
+          "training_goals": 10,
+          "trajectories": 40,
+          "weight_norm": 0.6275401711463928
+        },
+        {
+          "actions": 1738,
+          "epoch": 1,
+          "training_goals": 8,
+          "trajectories": 40,
+          "weight_norm": 0.6419277191162109
+        },
+        {
+          "actions": 1604,
+          "epoch": 2,
+          "training_goals": 8,
+          "trajectories": 40,
+          "weight_norm": 0.5789155960083008
+        }
+      ],
+      "mode": "shifted",
+      "updates": 36
+    }
+  }
+}

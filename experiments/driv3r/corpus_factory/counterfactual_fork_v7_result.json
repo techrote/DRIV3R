@@ -1,0 +1,97 @@
+{
+  "DEV": {
+    "memory": {
+      "accuracy": 1.0,
+      "both_correct_pairs": 64,
+      "chosen_branch_has_goal_path": 128,
+      "correct": 128,
+      "examples": 128,
+      "independent_pairs": 64,
+      "neither_correct_pairs": 0,
+      "one_correct_pairs": 0
+    },
+    "sham": {
+      "accuracy": 0.5,
+      "both_correct_pairs": 0,
+      "chosen_branch_has_goal_path": 64,
+      "correct": 64,
+      "examples": 128,
+      "independent_pairs": 64,
+      "neither_correct_pairs": 0,
+      "one_correct_pairs": 64
+    }
+  },
+  "HELDOUT": {
+    "memory": {
+      "accuracy": 1.0,
+      "both_correct_pairs": 256,
+      "chosen_branch_has_goal_path": 512,
+      "correct": 512,
+      "examples": 512,
+      "independent_pairs": 256,
+      "neither_correct_pairs": 0,
+      "one_correct_pairs": 0
+    },
+    "memory_permuted_at_inference": {
+      "accuracy": 0.0,
+      "both_correct_pairs": 0,
+      "chosen_branch_has_goal_path": 0,
+      "correct": 0,
+      "examples": 512,
+      "independent_pairs": 256,
+      "neither_correct_pairs": 256,
+      "one_correct_pairs": 0
+    },
+    "sham": {
+      "accuracy": 0.5,
+      "both_correct_pairs": 0,
+      "chosen_branch_has_goal_path": 256,
+      "correct": 256,
+      "examples": 512,
+      "independent_pairs": 256,
+      "neither_correct_pairs": 0,
+      "one_correct_pairs": 256
+    }
+  },
+  "caveats": [
+    "Branch-choice-only conditional test, not autonomous navigation",
+    "The two labels in every pair are intentionally balanced",
+    "Synthetic host and scripted executed prelude, not native receipt",
+    "Held-out seeds but same procedural generator family",
+    "Do not interpret as native CyberSand or full agent competence"
+  ],
+  "coefficients_sha256": {
+    "memory": "5fb38bdb3d7b5504fbab05cc9a9417b4a8c04d979598b83fb6c5062b9af8bc23",
+    "sham": "705fd5dc34a0a93b773d53b42e9427a657161a0de0f0ae48b5b3c9a63e2b9ad9"
+  },
+  "data": {
+    "DEV": {
+      "rows": 128,
+      "world_groups": 64
+    },
+    "HELDOUT": {
+      "rows": 512,
+      "world_groups": 256
+    },
+    "TRAIN": {
+      "rows": 512,
+      "world_groups": 256
+    }
+  },
+  "safety": {
+    "canonical_native_abi_verified": false,
+    "game_files_changed": 0,
+    "host_legal_choices": 1152,
+    "protected_entry": 0
+  },
+  "schema": "driv3r/synthetic-counterfactual-fork-v7",
+  "source": "novel-independent-synthetic-host",
+  "train_rows": 512,
+  "train_sha256": "311bf2a65e11e3ef1331f1abafbc513d08a40af3a3f6e6e21a29bc7cfcce9828",
+  "training": {
+    "epochs": 24,
+    "feature_dimension": 129,
+    "optimizer": "sklearn.SGDClassifier(log_loss)",
+    "seeds_train_only": true
+  }
+}

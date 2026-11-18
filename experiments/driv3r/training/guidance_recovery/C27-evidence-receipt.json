@@ -1,0 +1,38 @@
+{
+  "baseline_control": "C18-A0",
+  "constraints": {
+    "Actions_immutable_checkpoint_custody": false,
+    "external_reference_written": false,
+    "model_binary_in_git": false,
+    "native_game_modified": false,
+    "native_game_validation": false
+  },
+  "counterfactual_suffixes": 928,
+  "diagnostic_trajectories": 192,
+  "file_sha256": {
+    "c27_gallery.html": "477f022cf08de3ad18fe1970a20655b7ec2032e410697f36ddc3c347c4755fa9",
+    "final_a/C27-DETECT.safetensors": "d4cbae94e54004dfb1b42e25592c9782f3a1f26682a0ffeb5ece0d5eb35a1485",
+    "final_a/C27-JOINT.safetensors": "52c1718d6b113af8f6999246121ea44f2218258382e3e6f438e3966e1031c14e",
+    "final_a/heldout_a.json": "43b41805dfbf0945c3db9d27724cc80118fd07877b0e5f3a4e4ff1be79cec5e4",
+    "final_a/heldout_b.json": "73da29f42d02c7d1cb660ab49ef9836a4229f415e0647ec685a267f94fb8ba1c",
+    "final_a/metrics.json": "28d7bdd08521d5d434444f419d3c1ac0efade164969eb9935577b76201c0f76d",
+    "final_a/training_receipts.json": "2d4bb26c56f4ea14f4052b2440d3d4d1017c3e1fd0b3020b4368102c4264e483",
+    "source/C27-deep-trap-detector-2026-11-17.md": "5a0ce3bafefdef022da75dd38071220b9bc63908530f2e2537f5c3420b74ce5f",
+    "source/c27_deep_recovery.py": "481a8b374cfdd71757b63f147688dcda9b8c0881ca73603b60d4bc575eefd2d7",
+    "source/c27_gallery.py": "0e5e1217bdcde06fbcd7dec786a4a2644eb2ad1c6fc06503d15f2e5b5e8360f8",
+    "source/c27_stop_diagnostic.py": "0833745cc9ada15b00a0afa1fb6984d3daee41599af76ffd034eb6e58f29b07b",
+    "source/test_c27_deep_recovery.py": "e6deb5870258d9c5a65030e8b4fc9d26d3159f1708187000493d2a2fb1ec9d18",
+    "stop_diag/diagnostic_metrics.json": "f0ec4438bc779dd84479e6f728d3146634cb559af997b54ed62b16e71983d7e5",
+    "stop_diag/diagnostic_trajectories.json": "22d3ffa412340300211fade3f8779076b214ee5297fcbf152b1b9633e82d93f5"
+  },
+  "heldout_trajectories": 1600,
+  "independent_checkpoint_reproduction": {
+    "C27-DETECT": "byte-identical",
+    "C27-JOINT": "byte-identical"
+  },
+  "research_disposition": "reject-both-models",
+  "schema": "driv3r-guidance-c27-evidence-receipt/1",
+  "source_sha256": "481a8b374cfdd71757b63f147688dcda9b8c0881ca73603b60d4bc575eefd2d7",
+  "train_menus": 464,
+  "training_data_sha256": "94ce1e353b68aed1ab5fee13cc693f18fbe44d48c34feb723fe2694a8f6f0a46"
+}

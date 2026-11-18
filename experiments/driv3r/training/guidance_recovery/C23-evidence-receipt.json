@@ -1,0 +1,80 @@
+{
+  "code_sha256": {
+    "c23_constrained_return.py": "f862f9224ec8d5d9d5adc4cbb8c6f4b761164d9a0c004e3702848a118f9adc98",
+    "c23_gallery.py": "26f01af9347179c226aca5b4ea86dc36a6d0fc9d6a27d695bfb4d9cd2e40df53",
+    "test_c23_constrained_return.py": "01be1e5b2441a48aae1559232f396ec51b0b69e766258d830cbc31d7ebeceef6"
+  },
+  "cohorts": {
+    "A": {
+      "accepted": {
+        "C23-GUARD": false,
+        "C23-RETURN": false
+      },
+      "candidate_sha256": {
+        "C23-GUARD": "5bb24ca4ed7678d97aba22a4ca74bb9629599dee1c10bebb9157ce3a96a874cd",
+        "C23-RETURN": "c82b9e964ad6b4ad6a5cec6c487b5a7096e874e6f326a11db320905e93bd5378"
+      },
+      "cue_off_pairwise_exact": {
+        "C18-A0": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C22-STRONG": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C23-GUARD": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C23-RETURN": {
+          "exact": 120,
+          "pairs": 120
+        }
+      },
+      "episodes": 3000,
+      "host_rejected": 0,
+      "illegal_raw_top1": 0,
+      "seed": 341117
+    },
+    "B": {
+      "accepted": {
+        "C23-GUARD": false,
+        "C23-RETURN": false
+      },
+      "candidate_sha256": {
+        "C23-GUARD": "5bb24ca4ed7678d97aba22a4ca74bb9629599dee1c10bebb9157ce3a96a874cd",
+        "C23-RETURN": "c82b9e964ad6b4ad6a5cec6c487b5a7096e874e6f326a11db320905e93bd5378"
+      },
+      "cue_off_pairwise_exact": {
+        "C18-A0": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C22-STRONG": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C23-GUARD": {
+          "exact": 120,
+          "pairs": 120
+        },
+        "C23-RETURN": {
+          "exact": 120,
+          "pairs": 120
+        }
+      },
+      "episodes": 3000,
+      "host_rejected": 0,
+      "illegal_raw_top1": 0,
+      "seed": 887741
+    }
+  },
+  "conclusion": "Negative promotion: both candidates fail held-out per-group nonregression across both cohorts.",
+  "custody": "Model checkpoint binaries remain external to Git, not yet in immutable Actions artifacts.",
+  "report_sha256": "555fbd275c6b90454ae28d6a288d2de98d32dc1e8e1c3cb36c73f77cc46bcc39",
+  "schema": "driv3r-c23-evidence-receipt/1",
+  "scope": "research only, synthetic game host",
+  "source_hash": "f862f9224ec8d5d9d5adc4cbb8c6f4b761164d9a0c004e3702848a118f9adc98",
+  "training_hash": "6adf85b690d300af43e2d32425ce620cc8f08e2db6e4bea1d532480885d76c67"
+}

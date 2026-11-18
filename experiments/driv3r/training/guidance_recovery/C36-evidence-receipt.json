@@ -1,0 +1,25 @@
+{
+  "checkpoint_sha256": {
+    "C36-LEARNED.safetensors": "a76d43e12b67c389d8fc5a3e898797a945cd9eb2084df7e5ad9bf2e32693be59",
+    "C36-RANDOM.safetensors": "b11f81d346b0f0f006972871bc64df5e9a31172138ce5127cd172cbb0008ab22"
+  },
+  "date": "2026-11-17",
+  "decision": "REJECT",
+  "files_sha256": {
+    "C36-active-guidance-personality-budget-2026-11-17.md": "212fe1ba85bc0bc5df6885c41b6366f700ba467011da1828af926258904633a9",
+    "C36-compact-results.json": "ee3ec953bf452031c12905249e274923f2420b8b07b6f63459b9ad8e5a9a19a8",
+    "c36_gallery.py": "656ac532ba90c5a808ec226f3e6fef14577ced0480a1f3bb2325b52f1e5bef8c",
+    "c36_personality_budget.py": "082ef5da6c3408de6efd8647524a008f7d51b6f3af85b4103326afbc8febfbe8",
+    "test_c36_personality_budget.py": "1a8383e7af5b96c9650e5b06b8833236124258e9bf212f97f5aa80c2a48df212"
+  },
+  "immutable_actions_checkpoint_artifact": false,
+  "local_tests": "4/4 passed",
+  "matched_synthetic_episodes": 1600,
+  "native_CyberSand_test": false,
+  "no_guidance_pairs_per_model": 64,
+  "replayed_panels": 12,
+  "schema": "driv3r-c36-source-custody/1",
+  "scope": "guidance_recovery only",
+  "source_baseline_head": "531b2010b4bf39ce4291b219316e647a5069ef55",
+  "trained_replica_identical": true
+}

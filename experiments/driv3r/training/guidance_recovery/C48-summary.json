@@ -1,0 +1,423 @@
+{
+  "blind": {
+    "C47-ALIGNED": {
+      "excess_goals_vs_RESET": 0,
+      "genuine_losses": 0,
+      "genuine_wins": 0,
+      "guided_n": 48,
+      "pair_picks": 12
+    },
+    "C48-HARD": {
+      "excess_goals_vs_RESET": 0,
+      "genuine_losses": 0,
+      "genuine_wins": 0,
+      "guided_n": 48,
+      "pair_picks": 16
+    },
+    "C48-RANDOM": {
+      "excess_goals_vs_RESET": 0,
+      "genuine_losses": 0,
+      "genuine_wins": 0,
+      "guided_n": 48,
+      "pair_picks": 9
+    },
+    "C48-SHUFFLED": {
+      "excess_goals_vs_RESET": 0,
+      "genuine_losses": 0,
+      "genuine_wins": 0,
+      "guided_n": 48,
+      "pair_picks": 18
+    }
+  },
+  "checkpoints_sha256": {
+    "C48-HARD": "3a9776a0598f9257b9c4c305ffe26e9bc108ed8635780ecb5dfbb83e74e6f848",
+    "C48-SHUFFLED": "3506e98ddb7c0157f16897eaf5b8b94361a5bb3e7be57ebede7b4439f0488784"
+  },
+  "cohorts": [
+    {
+      "graphs": 32,
+      "name": "ID-A",
+      "records": 896
+    },
+    {
+      "graphs": 32,
+      "name": "ID-B",
+      "records": 896
+    },
+    {
+      "graphs": 16,
+      "name": "OOD-A",
+      "records": 448
+    },
+    {
+      "graphs": 16,
+      "name": "OOD-B",
+      "records": 448
+    }
+  ],
+  "graph_counts": {
+    "blind": 16,
+    "online": 96,
+    "train": 128
+  },
+  "graph_sha256": {
+    "blind": "5a6d8e0395066c7dabcdcc8b97b79bb3f2fe017b48e6e051372c1469baf4908d",
+    "online": "04c7da12235e535914fc5175ffed84cd59684ed8c016e658c49007fc08172a6f",
+    "train": "65bf0f7215ad40acfef3ff2a7a8ca155bf3772d501766e9e15d817c0e6950324"
+  },
+  "limitations": [
+    "synthetic CyberSand-like host only; not native or physical CyberSand acceptance",
+    "intentional braid-enriched training distribution, weak generalization to tree topologies possible",
+    "no mid-trajectory controller change; decisions at episode start only",
+    "full-episode outcome labels have high tie rates and low discriminative power",
+    "trained head uses starting-observation features; cannot infer hidden maze topology",
+    "bootstraps descriptive and conditions multiple-comparison exploratory, not confirmation",
+    "unguided parity is insufficient to establish whole-trajectory personality equivalence",
+    "checkpoints remain local (not immutable GitHub Actions custody)"
+  ],
+  "models": {
+    "C18-A0": {
+      "by_family": {
+        "braid": 26,
+        "kruskal": 10,
+        "prim": 18,
+        "prim_braid": 6,
+        "tree": 15,
+        "wilson": 13
+      },
+      "guided_episodes": 288,
+      "guided_goals": 88,
+      "mean_personality_shift_within_state": 0.0,
+      "opposed_ink": 495,
+      "preferred_ink": 717,
+      "raw_illegal_top1": 1,
+      "regressed_condition_groups_vs_RESET": 15,
+      "selected_pair": 0,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5915841584158416
+    },
+    "C34-RESET": {
+      "by_family": {
+        "braid": 25,
+        "kruskal": 9,
+        "prim": 18,
+        "prim_braid": 11,
+        "tree": 21,
+        "wilson": 16
+      },
+      "guided_episodes": 288,
+      "guided_goals": 100,
+      "mean_personality_shift_within_state": 0.0,
+      "opposed_ink": 527,
+      "preferred_ink": 759,
+      "raw_illegal_top1": 7,
+      "regressed_condition_groups_vs_RESET": 0,
+      "selected_pair": 0,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5902021772939346
+    },
+    "C40-PAIR": {
+      "by_family": {
+        "braid": 31,
+        "kruskal": 11,
+        "prim": 17,
+        "prim_braid": 12,
+        "tree": 20,
+        "wilson": 18
+      },
+      "guided_episodes": 288,
+      "guided_goals": 109,
+      "mean_personality_shift_within_state": 0.008266869836209856,
+      "opposed_ink": 545,
+      "preferred_ink": 775,
+      "raw_illegal_top1": 0,
+      "regressed_condition_groups_vs_RESET": 7,
+      "selected_pair": 288,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5871212121212122
+    },
+    "C47-ALIGNED": {
+      "by_family": {
+        "braid": 29,
+        "kruskal": 10,
+        "prim": 18,
+        "prim_braid": 12,
+        "tree": 20,
+        "wilson": 15
+      },
+      "guided_episodes": 288,
+      "guided_goals": 104,
+      "mean_personality_shift_within_state": 0.007196052958626456,
+      "opposed_ink": 547,
+      "preferred_ink": 754,
+      "raw_illegal_top1": 5,
+      "regressed_condition_groups_vs_RESET": 6,
+      "selected_pair": 90,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.579554189085319
+    },
+    "C48-HARD": {
+      "by_family": {
+        "braid": 28,
+        "kruskal": 10,
+        "prim": 18,
+        "prim_braid": 10,
+        "tree": 20,
+        "wilson": 17
+      },
+      "guided_episodes": 288,
+      "guided_goals": 103,
+      "mean_personality_shift_within_state": 0.007459894463527412,
+      "opposed_ink": 531,
+      "preferred_ink": 766,
+      "raw_illegal_top1": 7,
+      "regressed_condition_groups_vs_RESET": 3,
+      "selected_pair": 94,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5905936777178104
+    },
+    "C48-RANDOM": {
+      "by_family": {
+        "braid": 28,
+        "kruskal": 9,
+        "prim": 18,
+        "prim_braid": 12,
+        "tree": 21,
+        "wilson": 16
+      },
+      "guided_episodes": 288,
+      "guided_goals": 104,
+      "mean_personality_shift_within_state": 0.008128569531513422,
+      "opposed_ink": 530,
+      "preferred_ink": 784,
+      "raw_illegal_top1": 4,
+      "regressed_condition_groups_vs_RESET": 1,
+      "selected_pair": 39,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5966514459665144
+    },
+    "C48-SHUFFLED": {
+      "by_family": {
+        "braid": 28,
+        "kruskal": 9,
+        "prim": 17,
+        "prim_braid": 10,
+        "tree": 20,
+        "wilson": 17
+      },
+      "guided_episodes": 288,
+      "guided_goals": 101,
+      "mean_personality_shift_within_state": 0.0073082243465368525,
+      "opposed_ink": 537,
+      "preferred_ink": 766,
+      "raw_illegal_top1": 7,
+      "regressed_condition_groups_vs_RESET": 4,
+      "selected_pair": 98,
+      "unguided_exact": 96,
+      "whole_path_preferred_ink_fraction": 0.5878741366078281
+    }
+  },
+  "paired": {
+    "C47-ALIGNED__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -4.0,
+        13.0
+      ],
+      "delta": 4,
+      "negative_graphs": 5,
+      "positive_graphs": 6
+    },
+    "C47-ALIGNED__C48-SHUFFLED": {
+      "bootstrap_95_descriptive": [
+        -4.0,
+        10.0
+      ],
+      "delta": 3,
+      "negative_graphs": 2,
+      "positive_graphs": 5
+    },
+    "C48-HARD__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -5.0,
+        12.0
+      ],
+      "delta": 3,
+      "negative_graphs": 4,
+      "positive_graphs": 4
+    },
+    "C48-HARD__C47-ALIGNED": {
+      "bootstrap_95_descriptive": [
+        -8.0,
+        6.0
+      ],
+      "delta": -1,
+      "negative_graphs": 4,
+      "positive_graphs": 3
+    },
+    "C48-HARD__C48-SHUFFLED": {
+      "bootstrap_95_descriptive": [
+        0.0,
+        5.0
+      ],
+      "delta": 2,
+      "negative_graphs": 0,
+      "positive_graphs": 2
+    },
+    "C48-RANDOM__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        0.0,
+        9.0
+      ],
+      "delta": 4,
+      "negative_graphs": 1,
+      "positive_graphs": 5
+    },
+    "C48-RANDOM__C47-ALIGNED": {
+      "bootstrap_95_descriptive": [
+        -7.0,
+        7.0
+      ],
+      "delta": 0,
+      "negative_graphs": 6,
+      "positive_graphs": 6
+    },
+    "C48-RANDOM__C48-SHUFFLED": {
+      "bootstrap_95_descriptive": [
+        -4.0,
+        10.0
+      ],
+      "delta": 3,
+      "negative_graphs": 3,
+      "positive_graphs": 7
+    },
+    "C48-SHUFFLED__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -6.0,
+        9.0
+      ],
+      "delta": 1,
+      "negative_graphs": 5,
+      "positive_graphs": 3
+    },
+    "C48-SHUFFLED__C47-ALIGNED": {
+      "bootstrap_95_descriptive": [
+        -10.0,
+        4.0
+      ],
+      "delta": -3,
+      "negative_graphs": 5,
+      "positive_graphs": 2
+    }
+  },
+  "predecessor": {
+    "C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+    "C47_checkpoint_sha256": "98e0c277ce01964b0851c1e60c6445c94d062ad9f590ca1619af69d317658e06",
+    "C47_source_git_blob": "a89d852a858de828415686098b74efe205e9567c"
+  },
+  "schema": "driv3r-c48-hard-case-guidance/1",
+  "source_sha256": "ae9be385e8739bd619fcfc40dd4631934336ae8565f3eeae271ae6f28909c4cb",
+  "train_differences": {
+    "-1": 14,
+    "0": 198,
+    "1": 44
+  },
+  "training": {
+    "hard": {
+      "adamw_updates": 288,
+      "epoch_losses": [
+        5.515485,
+        5.276328,
+        5.083016,
+        4.98887,
+        4.878947,
+        4.800459,
+        4.742566,
+        4.682355,
+        4.53617,
+        4.481365,
+        4.521307,
+        4.324073,
+        4.388256,
+        4.364521,
+        4.298791,
+        4.250328,
+        4.113726,
+        4.217352,
+        4.285174,
+        4.380167,
+        4.060128,
+        4.114578,
+        4.040718,
+        4.017088,
+        4.108102,
+        3.997735,
+        4.139031,
+        4.205966,
+        4.060623,
+        4.240547,
+        4.117526,
+        3.919315,
+        4.050055,
+        4.012719,
+        4.139093,
+        3.995227
+      ],
+      "target_count": {
+        "-1.0": 14,
+        "0.0": 198,
+        "1.0": 44
+      }
+    },
+    "shuffled": {
+      "adamw_updates": 288,
+      "epoch_losses": [
+        5.545885,
+        5.362074,
+        5.107572,
+        4.968039,
+        4.877939,
+        4.731075,
+        4.705579,
+        4.586178,
+        4.603533,
+        4.698957,
+        4.625079,
+        4.297017,
+        4.445549,
+        4.293412,
+        4.411536,
+        4.429804,
+        4.339686,
+        4.273925,
+        4.309634,
+        4.314015,
+        4.307064,
+        4.430187,
+        4.352,
+        4.263988,
+        4.155597,
+        4.168693,
+        4.181638,
+        4.245488,
+        4.363459,
+        4.339666,
+        3.93658,
+        4.166478,
+        4.129192,
+        4.474746,
+        4.169756,
+        4.113667
+      ],
+      "target_count": {
+        "-1.0": 14,
+        "0.0": 198,
+        "1.0": 44
+      }
+    },
+    "shuffled_sha256": "266c017771cee1a997e91286d8f383347e84f3035d04fde7ffd33c99c609a6e1",
+    "targets_sha256": "1a78323fd9c97fadf3cbde8486a53b05cf5fa36a7742f50ad3cb9c7e39c0fdf1",
+    "train_graphs": 128,
+    "train_rows": 256,
+    "x_mean_scale_sha256": "7152970e1052f4f8a94e44e0bf6b01c344dd0370acb42e944a51f69675a60b5d"
+  }
+}

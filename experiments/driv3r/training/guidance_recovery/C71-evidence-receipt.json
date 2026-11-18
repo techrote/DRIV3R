@@ -1,0 +1,43 @@
+{
+  "checkpoint_sha256": {
+    "C71-ALIGNED": "043dcec178cfc6ae88acd6926ef88b2d986ab9c12071d3ec06a19e381f402e94",
+    "C71-SHIFTED": "01312966d2213a5772802a24b254c511af377258098ee12f2ea9164db29a7314"
+  },
+  "files": {
+    "C71-gallery.svg": {
+      "bytes": 24705,
+      "sha256": "9eed052517c0405c1d68e59410e3879bb0e7c063baa04c32890cac9a44f13236"
+    },
+    "C71-ledger.zlib.b64": {
+      "bytes": 31077,
+      "sha256": "de42c2cbef651e354206a47a904cbb5a06cd9ab5f4816f6447566c21a6de38db"
+    },
+    "C71-replay-evidence.json": {
+      "bytes": 2039,
+      "sha256": "91fdb47c70eb372370e4c19f23d57429a792d3325ee549da1890e6633718627e"
+    },
+    "C71-summary.json": {
+      "bytes": 36921,
+      "sha256": "88f3e6de7d06926dee9810189ae8dd3060756733e104842010b001d3554ac007"
+    },
+    "C71-unseen-remote-goal-transfer-2026-11-18.md": {
+      "bytes": 7570,
+      "sha256": "b0d3ca23744f081ea6e8d4368f0e1d3b1242127c17b6adae8eaa8fd2c9e4df68"
+    },
+    "c71_remote_goal_transfer.py": {
+      "bytes": 10664,
+      "sha256": "bf19f954e5596b43bb9dd60e970a5826101c19b7f471f81a2fc6c77da28b346a"
+    },
+    "test_c71_remote_goal_transfer.py": {
+      "bytes": 5168,
+      "sha256": "3df36348b7bd01e1ad2e3d373baa40dc9a60bfbeedbc7624c5e5fb47385896f2"
+    }
+  },
+  "owned_path": "experiments/driv3r/training/guidance_recovery/",
+  "pr_number": 1,
+  "publication_date": "2026-11-18",
+  "publication_limits": "No binary checkpoints in Git; immutable Actions artifact custody and native CyberSand acceptance outstanding",
+  "repository": "techrote/DRIV3R",
+  "schema": "driv3r-c71-executed-evidence-receipt/1",
+  "test_status": "8/8 evidence regressions PASS, 2/2 fresh checkpoint byte-identical CPU refits PASS, 8/8 selected full-path replays PASS"
+}

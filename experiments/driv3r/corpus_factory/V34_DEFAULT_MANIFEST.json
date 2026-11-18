@@ -1,0 +1,159 @@
+{
+  "schema": "driv3r/corpus_factory/offpolicy-recovery-v34/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "generator": "compound_intervention_v34.js",
+  "generator_sha256": "8bc27d89d6950858b5b3205b42acf9f010443176ef7498afb0563a71c516fe51",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "quick": false,
+  "oracle": "exact shortest successful suffix by v32 reverse BFS, five ternary target statuses, dynamic latched gate",
+  "challenge": "Four-way delayed remote repair with host-accepted detrimental first navigation, then a second host-accepted wrong-material paint at a later target; independently checked shortest terminal recoveries.",
+  "information_separation": "oracle_action_costs, accepted intervention, episode metadata and labels are teacher-only; never supply as model observation.",
+  "caveats": [
+    "Synthetic host, not native CyberSand.",
+    "Older remote wrong paint and gate opener are scripted host-accepted actions.",
+    "Navigation and wrong-material actions are deliberately injected after the agent start; no autonomous neural policy evaluated.",
+    "Model latency/RSS and checkpoint are not measured."
+  ],
+  "first_action_recent64_uniform_ceiling": 0.25,
+  "interventions_label_policy": "Rows with an accepted suboptimal PAINT action retain the correct oracle target but applied_action is different and training_weight=0; teacher-only intervention annotations must not enter model input.",
+  "modes": [
+    "clean",
+    "wrong-first",
+    "wrong-first-plus-paint"
+  ],
+  "splits": {
+    "TRAIN": {
+      "groups": 8,
+      "worlds_considered": 64,
+      "qualified_four_way_families": 64,
+      "rejected": [],
+      "episodes": 768,
+      "clean_episodes": 256,
+      "offpolicy_recovery_episodes": 256,
+      "compound_recovery_episodes": 256,
+      "decisions": 23008,
+      "corrective_erasures": 1792,
+      "accepted_detrimental_first_actions": 512,
+      "total_proven_first_action_regret": 1024,
+      "accepted_wrong_material_paint_interventions": 256,
+      "total_proven_paint_regret": 512,
+      "compound_suffix_steps": 8096,
+      "clean_suffix_steps": 7328,
+      "recovery_suffix_steps": 15680,
+      "train_zero_weight": 5568,
+      "unique_full_inputs": 17440,
+      "first_actions_clean": {
+        "MOVE_W": 64,
+        "MOVE_E": 64,
+        "MOVE_S": 64,
+        "BACKTRACK": 64
+      },
+      "strict_gate_causal_clean": 64
+    },
+    "DEV": {
+      "groups": 4,
+      "worlds_considered": 32,
+      "qualified_four_way_families": 32,
+      "rejected": [],
+      "episodes": 384,
+      "clean_episodes": 128,
+      "offpolicy_recovery_episodes": 128,
+      "compound_recovery_episodes": 128,
+      "decisions": 19136,
+      "corrective_erasures": 896,
+      "accepted_detrimental_first_actions": 256,
+      "total_proven_first_action_regret": 512,
+      "accepted_wrong_material_paint_interventions": 128,
+      "total_proven_paint_regret": 256,
+      "compound_suffix_steps": 6592,
+      "clean_suffix_steps": 6208,
+      "recovery_suffix_steps": 12928,
+      "train_zero_weight": 128,
+      "unique_full_inputs": 13792,
+      "first_actions_clean": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "strict_gate_causal_clean": 32
+    },
+    "HELDOUT": {
+      "groups": 4,
+      "worlds_considered": 32,
+      "qualified_four_way_families": 32,
+      "rejected": [],
+      "episodes": 384,
+      "clean_episodes": 128,
+      "offpolicy_recovery_episodes": 128,
+      "compound_recovery_episodes": 128,
+      "decisions": 25856,
+      "corrective_erasures": 896,
+      "accepted_detrimental_first_actions": 256,
+      "total_proven_first_action_regret": 512,
+      "accepted_wrong_material_paint_interventions": 128,
+      "total_proven_paint_regret": 256,
+      "compound_suffix_steps": 8832,
+      "clean_suffix_steps": 8448,
+      "recovery_suffix_steps": 17408,
+      "train_zero_weight": 128,
+      "unique_full_inputs": 18272,
+      "first_actions_clean": {
+        "MOVE_W": 32,
+        "MOVE_E": 32,
+        "MOVE_S": 32,
+        "BACKTRACK": 32
+      },
+      "strict_gate_causal_clean": 32
+    }
+  },
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "rows": 768,
+      "bytes": 18177232,
+      "sha256": "b73c989cc4fc216c6d3c748b678187f0ea8350e72d254959134de273ad9275e5"
+    },
+    "TRAIN_decisions.jsonl": {
+      "rows": 23008,
+      "bytes": 56395912,
+      "sha256": "7321b6fa17d3cbadfe57a69c7c1e462e55c047b7ff52dce5a006555b07305b69"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 10810464,
+      "sha256": "3c3a84c5bce4374058ddcc84606efba74c106c3f92bd9e13ab3312a5d9a28203"
+    },
+    "DEV_decisions.jsonl": {
+      "rows": 19136,
+      "bytes": 55559464,
+      "sha256": "33d8652130b21b1f19e00c0bbbb209bededaffb24021c449287a9859fa9dd9a9"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 12343584,
+      "sha256": "d56fd254f70a6d49ba0c33ea3b8b0608fcdb66db9801d0d31e85b2724cfc4f4e"
+    },
+    "HELDOUT_decisions.jsonl": {
+      "rows": 25856,
+      "bytes": 86305280,
+      "sha256": "c853a6bb21f570a99fa7859a37715c61740a648072d215e338c1c405d4f5ab30"
+    }
+  }
+}

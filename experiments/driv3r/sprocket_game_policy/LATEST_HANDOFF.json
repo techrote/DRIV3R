@@ -1,0 +1,94 @@
+{
+  "schema": "driv3r.sprocket_game_policy.latest_handoff/1",
+  "date_utc": "2026-11-17",
+  "repository": "techrote/DRIV3R",
+  "branch": "research/import-consolidated-worm-labs",
+  "pr": 1,
+  "status": "BLOCKED_REAL_ROOT_LORA_EXECUTION; NO AUXILIARY SUBSTITUTE; DRAFT_HOLD",
+  "root_identity": {
+    "model": "kandivault/sprocket-500m",
+    "revision": "eb157d4ddddc4619e661d4a2426bb2dd000fc668",
+    "model_safetensors_sha256": "1a9fd1066f3f0873c4f5ae99b75beab3b0721100f45b036f9e255611b220d864",
+    "parameters": 501090560,
+    "architecture": "LlamaForCausalLM",
+    "context_tokens": 2048,
+    "root_instruct_not_chat": true
+  },
+  "checked_dependencies": {
+    "python": "3.13.5",
+    "torch_cpu": true,
+    "transformers": false,
+    "peft": false,
+    "accelerate": false,
+    "tokenizers": false,
+    "safetensors": true,
+    "model_files_local": 0,
+    "hf_cache": false,
+    "network_git_dns": "github.com resolution failed",
+    "cpu_available_memory_bytes_observed": 4190302208,
+    "DRIV3R_workflow": "research-smoke.yml only; no opt-in heavy model run; GitHub connector has no workflow_dispatch action"
+  },
+  "historical_qualified_recipe": {
+    "source": "experiments/agent_painter/lanes/sprocket/profile.json and adapter.py (read-only)",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "lora_trainable_parameters": 4739072,
+    "frozen_root": true,
+    "model_hash_and_chat_template_validation": "required before updates"
+  },
+  "synthetic_corpus": {
+    "source": "experiments/driv3r/corpus_factory/cycle_memory_v9.js",
+    "train_rows": 2304,
+    "dev_rows": 768,
+    "heldout_rows": 768,
+    "split": "disjoint topology groups",
+    "critical_limitation": "scripted preludes and one labelled legal decision; not autonomous closed loop or native CyberSand"
+  },
+  "control_prior": {
+    "source": "experiments/agent_painter/lanes/sprocket/W27_LOCAL_REPLAY_2026-11-16.md",
+    "model": "small auxiliary rank-24 gate, NOT target SLM",
+    "heldout_unique256": 218.87,
+    "heldout_unique384": 281.8,
+    "frontier_fixed_unique384": 311.33,
+    "confidence_interval_spans_zero": true
+  },
+  "this_run": {
+    "new_root_forwards": 0,
+    "new_root_optimizer_steps": 0,
+    "new_checkpoint_artifacts": 0,
+    "new_game_rollouts": 0,
+    "paid_compute": false,
+    "preflight": "offline_preflight.py",
+    "preflight_exit_code": 2,
+    "host_native_game_writes": 0
+  },
+  "exact_blocker": "No pinned 1.002GB upstream Sprocket root model files or tokenizer in executor; transformers/peft/accelerate/tokenizers absent; cannot download model due network restrictions. No DRIV3R opt-in model Actions dispatch endpoint available to this worker. Generated v9 shards not mounted. Do not run another NumPy/MLP surrogate.",
+  "handoff_for_fleet_distillation": {
+    "next_experiment": "Execute actual rank-8 Sprocket root LoRA on topology-disjoint TRAIN using an explicitly opt-in bounded free CPU runner with pinned model assets and verified v9 shards; compare untuned root, updated adapter and frozen W27 or deterministic frontier on the same fresh 128/256-step external game-like worlds.",
+    "required_steps": [
+      "Provision pinned root Instruct files and verify all nine hashes with offline_preflight.py",
+      "Install pinned compatible torch/transformers/peft/tokenizers/accelerate versions and requalify tokenizer template and exact 182 projection whitelist",
+      "Generate corpus-v9 shards outside Git; train on TRAIN only, select with DEV, open HELDOUT once",
+      "Save actual adapter+optimizer+RNG checkpoints and exact source/model/seed manifests in immutable Actions artifacts",
+      "Record root forward/update counts, raw preference illegality vs host application, goal progress, material-law pairs, branch/retrace/recovery, distinct cells, motif persistence and latency p50/p95 and peak RSS",
+      "No native promotion before CyberSand owner-run physical acceptance"
+    ],
+    "source_only_changes": true
+  },
+  "caveats": [
+    "Sprocket named model has published root weights but was not downloaded or loaded in this executor.",
+    "Historical W27 synthetic gains are not 500M root-model gains.",
+    "Source-smoke success is not a model training result.",
+    "No write to CyberSand or Neurounner. No new branch, PR, or workflow."
+  ]
+}

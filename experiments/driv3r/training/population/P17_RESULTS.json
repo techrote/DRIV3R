@@ -1,0 +1,151 @@
+{
+  "format": "population-p17-four-independent-cohorts",
+  "seeds": [
+    672,
+    673,
+    674,
+    675
+  ],
+  "train_updates_each": 240,
+  "candidates_per_seed": 36,
+  "candidates": 144,
+  "adam_updates": 34560,
+  "heldout_missions_per_treatment": 192,
+  "winner_selection": "selection-only mission success, then completed fraction; all candidates retained",
+  "aggregate": {
+    "goal_aware_curriculum": {
+      "success": 0.25521,
+      "completed": 0.25521,
+      "painted": 48.208332,
+      "retraces": 24.854167,
+      "hazard_paints": 23.874998,
+      "early_stop": 0.359375,
+      "legal_rate": 1.0,
+      "action_distance": 0.709235,
+      "paint_jaccard_distance": 0.61059,
+      "success_by_seed": {
+        "672": 0.25,
+        "673": 0.29167,
+        "674": 0.25,
+        "675": 0.22917
+      }
+    },
+    "goal_aware_static": {
+      "success": 0.229165,
+      "completed": 0.229165,
+      "painted": 46.624997,
+      "retraces": 24.479167,
+      "hazard_paints": 22.921873,
+      "early_stop": 0.411457,
+      "legal_rate": 1.0,
+      "action_distance": 0.695505,
+      "paint_jaccard_distance": 0.543578,
+      "success_by_seed": {
+        "672": 0.08333,
+        "673": 0.20833,
+        "674": 0.29167,
+        "675": 0.33333
+      }
+    },
+    "goal_blind_curriculum": {
+      "success": 0.0,
+      "completed": 0.0,
+      "painted": 61.380207,
+      "retraces": 26.526042,
+      "hazard_paints": 30.61458,
+      "early_stop": 0.130208,
+      "legal_rate": 1.0,
+      "action_distance": 0.71664,
+      "paint_jaccard_distance": 0.765227,
+      "success_by_seed": {
+        "672": 0.0,
+        "673": 0.0,
+        "674": 0.0,
+        "675": 0.0
+      }
+    }
+  },
+  "baselines": {
+    "expert": 1.0,
+    "nonstop_random": 0.0,
+    "persistent": 0.0
+  },
+  "audit": {
+    "format": "population-p17-independent-replay-v1",
+    "source": "local P0-derived synthetic host",
+    "seeds": [
+      672,
+      673,
+      674,
+      675
+    ],
+    "verified_checkpoints": 144,
+    "replayed_heldout_missions": 576,
+    "replayed_host_legal_actions": 44824,
+    "matched_original_gallery_trajectories": 144,
+    "illegal_actions": 0,
+    "protected_obstacle_violations": 0,
+    "cohorts": [
+      {
+        "seed": 672,
+        "manifest_entries": 111,
+        "candidates": 36,
+        "successes": {
+          "goal_aware_curriculum": 0.25,
+          "goal_aware_static": 0.08333,
+          "goal_blind_curriculum": 0.0
+        },
+        "manifests_sha256": "aa0e81b7a95c991a06ca6632c61c90bd041d75122b3b0b12bc879df8933ee667"
+      },
+      {
+        "seed": 673,
+        "manifest_entries": 111,
+        "candidates": 36,
+        "successes": {
+          "goal_aware_curriculum": 0.29167,
+          "goal_aware_static": 0.20833,
+          "goal_blind_curriculum": 0.0
+        },
+        "manifests_sha256": "269283febddb1e381446a03e6e40d7015c3a223310a1baf53db2a12ebaa7073c"
+      },
+      {
+        "seed": 674,
+        "manifest_entries": 111,
+        "candidates": 36,
+        "successes": {
+          "goal_aware_curriculum": 0.25,
+          "goal_aware_static": 0.29167,
+          "goal_blind_curriculum": 0.0
+        },
+        "manifests_sha256": "9454b654f3826d803c54c9efb9880b5abdd1a99ac78256a3fd65268cc96e12da"
+      },
+      {
+        "seed": 675,
+        "manifest_entries": 111,
+        "candidates": 36,
+        "successes": {
+          "goal_aware_curriculum": 0.22917,
+          "goal_aware_static": 0.33333,
+          "goal_blind_curriculum": 0.0
+        },
+        "manifests_sha256": "58225862467991b6eba9b5af258f5be76607ae360f66f254007961bfdb4c845b"
+      }
+    ]
+  },
+  "source_sha256": {
+    "population_p17.py": "0723443e73fe69d4afcb9f05d3bcf56ebb14cbbef5f850afc6bff25bbc9c2a25",
+    "test_population_p17.py": "b0b76ae00c4deb8b347361a336d2f5d3b674e989513dc709b451e0eded482963",
+    "p17_replay_audit.py": "ffc209e704ee56c09b07160c596d1d7407976b8ae0d51903d8decdc55dc761a2",
+    "population_lab.py": "c618c603771f0f1506170494bf6d29f632c42e91c4c0850cf1d562427add242b"
+  },
+  "evidence": "Four separately executed source-identical, seed-isolated local CPU campaigns; NOT GitHub Actions qualification",
+  "validity": "SYNTHETIC P0-derived host, no native Workbench acceptance",
+  "caveats": [
+    "No learned game legality; legal menu provided by synthetic host",
+    "Engine materials and action ABI are not verified by the imported fixture",
+    "Scripted connected corridors and privileged BFS teacher simplify the tasks",
+    "No human or artistic quality objective and no pretrained language-model training",
+    "Selection worlds are not used to train but champions are chosen by selection success",
+    "Four cohorts cannot establish significance for a 2.6 percentage-point curriculum advantage"
+  ]
+}

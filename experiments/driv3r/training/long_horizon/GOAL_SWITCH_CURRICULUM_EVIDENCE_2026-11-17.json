@@ -1,0 +1,209 @@
+{
+  "checkpoints_sha256": {
+    "619": {
+      "frozen": "f8c7afb2dcaea3bfbddfd8a00de2a96995238dfc90bf926bbf5e60dfae2086ab",
+      "sham": "a63aa2ad251ed1ffdccf5cb0d1c9712393826dd1690f950d9c3dae702d3b53e6",
+      "switch": "229de9acf1af92d0f454898ef3e1149f92ccf713ee30123bed0367552e18ba69"
+    },
+    "620": {
+      "frozen": "74e02d3dc1d04b57ee59444a26329348e06c46f9688beee9d7d5c2f461f473e3",
+      "sham": "470d5cf399a74bfcee4817faa9f13b86b15889bbc43cccb275921af51feb51b6",
+      "switch": "b14cfee1860ebf4e32b8cb8f429cd3b36da849d222f18de1ca00f33283ad240f"
+    }
+  },
+  "date": "2026-11-17",
+  "experiment": "GOAL-SWITCH-CURRICULUM-001",
+  "limitations": [
+    "Synthetic host-legal research, not CyberSand native ABI",
+    "DEVELOPMENT seeds 3002..3302 retain TRAIN structural families",
+    "No sealed heldout opened",
+    "Potential goal-switch targets differ in intrinsic difficulty and trajectories diverge",
+    "Only two optimizer seeds",
+    "No native or real trace inference",
+    "No d1-2B/LFM/Sprocket adapters",
+    "Checkpoint binaries only in local archive, not immutable Actions artifacts"
+  ],
+  "matched_pairs": 32,
+  "paired_effects": {
+    "frozen": {
+      "paint_diff_95pct_paired_bootstrap": [
+        -1.9375,
+        7.5
+      ],
+      "paint_diff_mean": 2.5938,
+      "paint_losses": 13,
+      "paint_ties": 7,
+      "paint_wins": 12,
+      "step_diff_mean": 0.7188,
+      "target_epoch_diff_95pct_paired_bootstrap": [
+        -0.375,
+        0.1562
+      ],
+      "target_epoch_diff_mean": -0.0938,
+      "target_epoch_diff_total": -3
+    },
+    "sham": {
+      "paint_diff_95pct_paired_bootstrap": [
+        -4.3125,
+        0.0312
+      ],
+      "paint_diff_mean": -1.5625,
+      "paint_losses": 7,
+      "paint_ties": 22,
+      "paint_wins": 3,
+      "step_diff_mean": -1.3125,
+      "target_epoch_diff_95pct_paired_bootstrap": [
+        -0.2812,
+        0
+      ],
+      "target_epoch_diff_mean": -0.125,
+      "target_epoch_diff_total": -4
+    }
+  },
+  "per_seed": {
+    "619": {
+      "frozen": {
+        "episodes": 16,
+        "epochs_painted": 39,
+        "mean_ink": 140.438,
+        "observed_full_eight_step_switch_windows": 48,
+        "steps": 2296,
+        "stops": 1
+      },
+      "sham": {
+        "episodes": 16,
+        "epochs_painted": 35,
+        "mean_ink": 143.062,
+        "observed_full_eight_step_switch_windows": 48,
+        "steps": 2304,
+        "stops": 0
+      },
+      "switch": {
+        "episodes": 16,
+        "epochs_painted": 35,
+        "mean_ink": 143.062,
+        "observed_full_eight_step_switch_windows": 48,
+        "steps": 2304,
+        "stops": 0
+      }
+    },
+    "620": {
+      "frozen": {
+        "episodes": 16,
+        "epochs_painted": 35,
+        "mean_ink": 137.062,
+        "observed_full_eight_step_switch_windows": 46,
+        "steps": 2247,
+        "stops": 3
+      },
+      "sham": {
+        "episodes": 16,
+        "epochs_painted": 40,
+        "mean_ink": 142.75,
+        "observed_full_eight_step_switch_windows": 48,
+        "steps": 2304,
+        "stops": 0
+      },
+      "switch": {
+        "episodes": 16,
+        "epochs_painted": 36,
+        "mean_ink": 139.625,
+        "observed_full_eight_step_switch_windows": 48,
+        "steps": 2262,
+        "stops": 2
+      }
+    }
+  },
+  "report_summary": {
+    "frozen": {
+      "actions": {
+        "BACKTRACK": 87,
+        "MOVE_E": 1139,
+        "MOVE_N": 1105,
+        "MOVE_S": 1152,
+        "MOVE_W": 1044,
+        "RELOCATE_START": 12,
+        "STOP": 4
+      },
+      "early_stops": 4,
+      "episodes": 32,
+      "epochs_painted": 74,
+      "mean_latency_ms": 0.0222,
+      "mean_painted": 138.75,
+      "switch_gain_observed_mean": 6.574,
+      "switch_windows_full": 94,
+      "total_decisions": 4543
+    },
+    "sham": {
+      "actions": {
+        "BACKTRACK": 4,
+        "MOVE_E": 1409,
+        "MOVE_N": 893,
+        "MOVE_S": 955,
+        "MOVE_W": 1316,
+        "RELOCATE_START": 31
+      },
+      "early_stops": 0,
+      "episodes": 32,
+      "epochs_painted": 75,
+      "mean_latency_ms": 0.02247,
+      "mean_painted": 142.906,
+      "switch_gain_observed_mean": 6.458,
+      "switch_windows_full": 96,
+      "total_decisions": 4608
+    },
+    "switch": {
+      "actions": {
+        "BACKTRACK": 6,
+        "MOVE_E": 1420,
+        "MOVE_N": 855,
+        "MOVE_S": 966,
+        "MOVE_W": 1282,
+        "RELOCATE_START": 35,
+        "STOP": 2
+      },
+      "early_stops": 2,
+      "episodes": 32,
+      "epochs_painted": 71,
+      "mean_latency_ms": 0.02167,
+      "mean_painted": 141.344,
+      "switch_gain_observed_mean": 6.125,
+      "switch_windows_full": 96,
+      "total_decisions": 4566
+    }
+  },
+  "source_provenance": {
+    "file_git_blobs_verified_by_clone_archive": {
+      "goal_recovery_lab.py": "b96695e5819a0e5963cd14582b19e6ac1f83533b",
+      "goal_retarget_lab.py": "739fe94ba2cd391302b2d316b5e64446fd89d691",
+      "policy.py": "c61573bdd4dc603ef38594b5b764fec1ff2142ab",
+      "world.py": "c7e33b7801c3a9d6c1f00f11f466732b312ddc92"
+    },
+    "remote_branch_head_while_started": "2be4639e78f609dcd5db906a5c33aa9b589ed6f1",
+    "repository": "techrote/DRIV3R"
+  },
+  "source_sha256": {
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "goal_retarget_lab.py": "88ba7013f3bc8eb1ec8f728c5d704aeeb6aafd4ebc6cf964f534dc14e7f8b14b",
+    "goal_switch_curriculum_lab.py": "a627adcb20a74b13701c5ee3ca20051ce447360c17dd9cb346f9d739e9ce903f",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "training": {
+    "additional_updates_per_adapted_controller": 108,
+    "comparability": "same seed and starting prior, same update budget; state visitation and training target schedules deliberately differ",
+    "initial_prior_optimizer_updates": 60,
+    "source": "on-policy student trajectories, teacher action labels, train only",
+    "train_cases_per_stage": 24
+  },
+  "verification": {
+    "decisions": 13717,
+    "episodes": 96,
+    "original_walltime_s": 27.573,
+    "peak_rss_kib": 145880,
+    "restored_checkpoints": 6,
+    "sha256_manifest_entries": 103
+  }
+}

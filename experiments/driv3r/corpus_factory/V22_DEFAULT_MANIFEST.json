@@ -1,0 +1,78 @@
+{
+  "schema": "driv3r/corpus_factory/v22",
+  "provenance": "synthetic host, not native CyberSand",
+  "generator": "curriculum_pulse_v22.js",
+  "parent": "recipe_grounded_v21.js",
+  "scale": 1,
+  "splits": {
+    "TRAIN": {
+      "world_groups": 24,
+      "episodes": 192,
+      "decisions": 12488,
+      "corrective_erases": 384,
+      "accepted_paints": 1344,
+      "public_pulses": 192,
+      "exact_duplicate_inputs": 872,
+      "unique_inputs": 11616,
+      "zero_weight_train_duplicates": 872
+    },
+    "DEV": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 7144,
+      "corrective_erases": 256,
+      "accepted_paints": 576,
+      "public_pulses": 80,
+      "exact_duplicate_inputs": 64,
+      "unique_inputs": 7080,
+      "zero_weight_train_duplicates": 0
+    },
+    "HELDOUT": {
+      "world_groups": 8,
+      "episodes": 64,
+      "decisions": 10200,
+      "corrective_erases": 352,
+      "accepted_paints": 672,
+      "public_pulses": 96,
+      "exact_duplicate_inputs": 64,
+      "unique_inputs": 10136,
+      "zero_weight_train_duplicates": 0
+    }
+  },
+  "episodes": 320,
+  "decisions": 29832,
+  "world_groups": 40,
+  "worlds_sha256": "efb6948ee3a3cc3dd033c087742f4f77cdee9ad7d2253fc7c1050e12813061e5",
+  "shards": {
+    "TRAIN_episodes.jsonl": {
+      "sha256": "79b3262b7a93c5a9b3197b0f748c595b29216f86550038bcec0d4f39447c431c",
+      "bytes": 68832,
+      "rows": 192
+    },
+    "TRAIN_decisions.jsonl": {
+      "sha256": "5d8fe1053014c5727de2d529b59058fb8f89532b0ae69d01f165772f55071f36",
+      "bytes": 158422728,
+      "rows": 12488
+    },
+    "DEV_episodes.jsonl": {
+      "sha256": "ad7932909223b88e90494360110dc029323f9d659bb07c9bcbba88d642fc3713",
+      "bytes": 22744,
+      "rows": 64
+    },
+    "DEV_decisions.jsonl": {
+      "sha256": "e86d22c46f179ff56c3e6585a0a85ca80b5ce0892321fff90d24dcae2e4ef420",
+      "bytes": 105404360,
+      "rows": 7144
+    },
+    "HELDOUT_episodes.jsonl": {
+      "sha256": "f491fbf60e57dd42cd93a973b555634b3b1bf3ff6ed44df05a714367776cc177",
+      "bytes": 23648,
+      "rows": 64
+    },
+    "HELDOUT_decisions.jsonl": {
+      "sha256": "570cdc4931f5f08b670f55858a69c25179949989a115706c3e688ed6dfce7330",
+      "bytes": 169190068,
+      "rows": 10200
+    }
+  }
+}

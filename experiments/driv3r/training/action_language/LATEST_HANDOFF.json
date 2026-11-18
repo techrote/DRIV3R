@@ -1,0 +1,72 @@
+{
+  "schema": "driv3r-game-action-language-latest-handoff/1",
+  "as_of": "2026-11-17",
+  "repository": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "owner_dir": "experiments/driv3r/training/action_language",
+  "status": "REAL_SLM_BLOCKED_OFFLINE_LOADER_REPAIRED",
+  "latest_program": "GAL-017b",
+  "target_model": {
+    "model_id": "EleutherAI/pythia-70m-deduped",
+    "revision": "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c",
+    "architecture": "GPT-NeoX",
+    "intended_adapter": "PEFT LoRA rank 4 over query_key_value",
+    "pretrained_model_loaded_this_increment": false,
+    "optimizer_updates_this_increment": 0,
+    "checkpoint_published_this_increment": false,
+    "blocker": "Missing pinned Pythia-70M weights, transformers and peft in available CPU execution runtime; no permitted opt-in workflow dispatch. Loader now cache-only, still unexecuted with real weights.",
+    "loader_api_regression_fixed": true,
+    "loader_fix": "Strict cache-only pinned snapshot before model load; tokenizer/model local_files_only; no HfApi network metadata; uncropped action menu with fail-closed context cap. Two mocked guard regressions; no actual SLM test."
+  },
+  "best_preexisting_synthetic_reference": {
+    "program": "GAL-016",
+    "slm": false,
+    "unlimited_memory_static_completions": "64/64",
+    "unlimited_memory_pulse_completions": "57/64",
+    "81_memory_static_completions": "25/64",
+    "81_memory_pulse_completions": "24/64",
+    "frozen_GAL011_checkpoint_sha256": "97f88f0349de134c3c430997f998a8534d1a2b62e372ba81970f85e12baf61d1",
+    "GAL015_paint_checkpoint_sha256": "5a158ec70292813b3b3d881f544c5bf7135f89825f7d695e17eeacabe699b94d",
+    "limitations": "Both policies are tiny/linear or deterministic controls; results external/synthetic only. Checkpoints remain externally held; immutable Actions publication not demonstrated."
+  },
+  "gal017_oracle_preflight_only": {
+    "n": 32,
+    "max_decisions": 48,
+    "one_cell_completion": "2/16",
+    "one_cell_mean_coverage": 0.668,
+    "swept_completion": "4/16",
+    "swept_mean_coverage": 0.8099,
+    "is_learned_policy": false,
+    "native_receipts": 0
+  },
+  "heldout_seeds": [
+    3009001,
+    3009002
+  ],
+  "known_failures": [
+    "GAL-016 bounded memory loses frontier knowledge and route recovery",
+    "GAL-016 changing host material defeats even unlimited memory in 7/64 synthetic cases",
+    "No actual named SLM was evaluated by GAL-017",
+    "No measured real model inference call reduction or native game artistic quality",
+    "GAL-017 initial source used unavailable huggingface_hub.cached_file; fixed in GAL-017a, not yet validated against real weights.",
+    "GAL-017b offline-loader and truncation tests are mocked source checks, not evidence of neural training."
+  ],
+  "consumer_handoff": [
+    "long_horizon",
+    "guidance_recovery",
+    "tiny_policy",
+    "lfm_game_policy",
+    "model_zoo",
+    "corpus_factory"
+  ],
+  "next_experiment": "Run actual 24-update per-arm Pythia-70M LoRA on approved bounded CPU with pinned pretrained snapshot and immutable Actions checkpoint artifact; matched stock vs adapted, cell vs swept, static/pulse and 81/161-cell memory. Capture measured latency/RSS and negative results.",
+  "scope": {
+    "game_modifications": 0,
+    "cybersand_writes": 0,
+    "neurounner_writes": 0,
+    "new_github_workflows": 0,
+    "new_experiment_prs": 0,
+    "merge_or_promotion": false
+  }
+}

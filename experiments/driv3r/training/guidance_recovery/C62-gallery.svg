@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="810" viewBox="0 0 1536 810">
+<rect width="1536" height="810" fill="#101821"/>
+<text x="28" y="38" font-family="sans-serif" font-size="26" fill="#e6f3f6" font-weight="bold">C62 · Host-executed remote-goal recovery</text>
+<text x="29" y="60" font-family="sans-serif" font-size="13" fill="#a8bbca">Paired synthetic-host trajectories · same prefix / cue · circles start, diamonds host-assigned target · no inferred geometry</text>
+<rect x="28" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="40" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C34-RESET</text>
+<text x="40" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: no</text>
+<polyline points="46.0,241.7 70.7,241.7 95.3,241.7 120.0,241.7 144.7,241.7 169.3,241.7 194.0,241.7 169.3,241.7 144.7,241.7 120.0,241.7 95.3,241.7 70.7,241.7 95.3,241.7 120.0,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 120.0,241.7 144.7,241.7 120.0,241.7 144.7,241.7 120.0,241.7 144.7,241.7 120.0,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 194.0,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 120.0,241.7 144.7,241.7 120.0,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 120.0,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 144.7,241.7 169.3,241.7 194.0,241.7 169.3,241.7 194.0,241.7 169.3,241.7 194.0,241.7 169.3,241.7" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="46.0" cy="241.7" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 169.3 186.3 L 175.3 192.3 L 169.3 198.3 L 163.3 192.3Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="40" y="294" font-family="monospace" font-size="11" fill="#96aebe">67 steps · 57e59a0add19 · ff549d356</text>
+<rect x="278" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="290" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C60-FRONTIER</text>
+<text x="290" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: YES</text>
+<polyline points="296.0,238.1 317.1,238.1 338.3,238.1 359.4,238.1 380.6,238.1 401.7,238.1 422.9,238.1 444.0,238.1 444.0,217.0 444.0,195.9 422.9,195.9 401.7,195.9" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="296.0" cy="238.1" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 401.7 189.9 L 407.7 195.9 L 401.7 201.9 L 395.7 195.9Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="290" y="294" font-family="monospace" font-size="11" fill="#96aebe">11 steps · 57e59a0add19 · 8f5b8b8ce</text>
+<rect x="528" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="540" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C62-ALIGNED</text>
+<text x="540" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: no</text>
+<polyline points="567.1,280.4 588.3,280.4 609.4,280.4 630.6,280.4 651.7,280.4 672.9,280.4 694.0,280.4 672.9,280.4 651.7,280.4 630.6,280.4 609.4,280.4 588.3,280.4 567.1,280.4 588.3,280.4 567.1,280.4 588.3,280.4 567.1,280.4 546.0,280.4 546.0,259.3 546.0,280.4 546.0,259.3 546.0,238.1 567.1,238.1 588.3,238.1 567.1,238.1 546.0,238.1 546.0,217.0 546.0,238.1 546.0,259.3 546.0,280.4 567.1,280.4 546.0,280.4 567.1,280.4 588.3,280.4 567.1,280.4 588.3,280.4 609.4,280.4 630.6,280.4 609.4,280.4 588.3,280.4 609.4,280.4 588.3,280.4 567.1,280.4 588.3,280.4 567.1,280.4 546.0,280.4 546.0,259.3 546.0,238.1 546.0,217.0 546.0,195.9 567.1,195.9 588.3,195.9 609.4,195.9 588.3,195.9 609.4,195.9 630.6,195.9 630.6,217.0 630.6,238.1 630.6,217.0 630.6,238.1 630.6,217.0 630.6,238.1 630.6,217.0 630.6,195.9 630.6,174.7 630.6,153.6 630.6,174.7 630.6,195.9" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="567.1" cy="280.4" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 672.9 232.1 L 678.9 238.1 L 672.9 244.1 L 666.9 238.1Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="540" y="294" font-family="monospace" font-size="11" fill="#96aebe">67 steps · 57e59a0add19 · 4f6d9b0af</text>
+<rect x="778" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="790" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C34-RESET</text>
+<text x="790" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: no</text>
+<polyline points="796.0,241.7 820.7,241.7 845.3,241.7 870.0,241.7 894.7,241.7 919.3,241.7 944.0,241.7 919.3,241.7 894.7,241.7 870.0,241.7 845.3,241.7 820.7,241.7 845.3,241.7 870.0,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 870.0,241.7 894.7,241.7 870.0,241.7 894.7,241.7 870.0,241.7 894.7,241.7 870.0,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 944.0,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 870.0,241.7 894.7,241.7 870.0,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 870.0,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 894.7,241.7 919.3,241.7 944.0,241.7 919.3,241.7 944.0,241.7 919.3,241.7 944.0,241.7 919.3,241.7" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="796.0" cy="241.7" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 919.3 186.3 L 925.3 192.3 L 919.3 198.3 L 913.3 192.3Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="790" y="294" font-family="monospace" font-size="11" fill="#96aebe">67 steps · 57e59a0add19 · ff549d356</text>
+<rect x="1028" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1040" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C60-FRONTIER</text>
+<text x="1040" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: YES</text>
+<polyline points="1046.0,238.1 1067.1,238.1 1088.3,238.1 1109.4,238.1 1130.6,238.1 1151.7,238.1 1172.9,238.1 1194.0,238.1 1194.0,217.0 1194.0,195.9 1172.9,195.9 1151.7,195.9" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1046.0" cy="238.1" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1151.7 189.9 L 1157.7 195.9 L 1151.7 201.9 L 1145.7 195.9Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1040" y="294" font-family="monospace" font-size="11" fill="#96aebe">11 steps · 57e59a0add19 · 8f5b8b8ce</text>
+<rect x="1278" y="86" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1290" y="110" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">KRUSKAL / C62-ALIGNED</text>
+<text x="1290" y="129" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: no</text>
+<polyline points="1317.1,259.3 1296.0,259.3 1296.0,238.1 1296.0,217.0 1317.1,217.0 1338.3,217.0 1317.1,217.0 1296.0,217.0 1296.0,238.1 1296.0,217.0 1296.0,238.1 1296.0,217.0 1296.0,238.1 1296.0,259.3 1317.1,259.3 1338.3,259.3 1359.4,259.3 1380.6,259.3 1401.7,259.3 1422.9,259.3 1444.0,259.3 1422.9,259.3 1401.7,259.3 1380.6,259.3 1359.4,259.3 1380.6,259.3 1359.4,259.3 1338.3,259.3 1317.1,259.3 1296.0,259.3 1317.1,259.3 1296.0,259.3 1296.0,238.1 1296.0,217.0 1296.0,238.1 1296.0,217.0 1317.1,217.0 1338.3,217.0 1317.1,217.0 1296.0,217.0 1317.1,217.0 1296.0,217.0 1296.0,195.9 1296.0,174.7 1317.1,174.7 1296.0,174.7 1296.0,195.9 1296.0,217.0 1296.0,238.1 1296.0,259.3 1317.1,259.3 1296.0,259.3 1296.0,238.1 1296.0,217.0 1296.0,195.9 1296.0,217.0 1296.0,195.9 1296.0,217.0 1296.0,195.9 1296.0,174.7 1296.0,195.9 1296.0,217.0 1317.1,217.0 1338.3,217.0 1317.1,217.0 1296.0,217.0 1296.0,195.9 1296.0,174.7" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1317.1" cy="259.3" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1422.9 211.0 L 1428.9 217.0 L 1422.9 223.0 L 1416.9 217.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1290" y="294" font-family="monospace" font-size="11" fill="#96aebe">67 steps · 57e59a0add19 · f44781f86</text>
+<rect x="28" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="40" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C34-RESET</text>
+<text x="40" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: no</text>
+<polyline points="169.3,429.3 169.3,417.0 169.3,429.3 169.3,441.7 181.7,441.7 169.3,441.7 181.7,441.7 194.0,441.7 194.0,454.0 194.0,466.3 181.7,466.3 169.3,466.3 157.0,466.3 144.7,466.3 144.7,478.7 144.7,491.0 132.3,491.0 120.0,491.0 132.3,491.0 120.0,491.0 132.3,491.0 120.0,491.0 132.3,491.0 120.0,491.0 132.3,491.0 144.7,491.0 132.3,491.0 120.0,491.0 132.3,491.0 120.0,491.0 132.3,491.0 144.7,491.0 132.3,491.0 144.7,491.0 144.7,478.7 144.7,491.0 144.7,478.7 144.7,491.0 144.7,478.7 144.7,491.0 144.7,478.7 144.7,466.3 144.7,478.7 144.7,466.3 157.0,466.3 169.3,466.3 157.0,466.3 169.3,466.3 157.0,466.3 144.7,466.3 157.0,466.3 169.3,466.3 181.7,466.3 169.3,466.3 181.7,466.3 169.3,466.3 181.7,466.3 194.0,466.3 181.7,466.3 194.0,466.3 181.7,466.3 194.0,466.3 181.7,466.3 194.0,466.3 194.0,454.0 194.0,441.7 194.0,454.0 194.0,441.7" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="169.3" cy="429.3" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 46.0 485.0 L 52.0 491.0 L 46.0 497.0 L 40.0 491.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="40" y="531" font-family="monospace" font-size="11" fill="#96aebe">67 steps · ce91977156fd · 7914c0a16</text>
+<rect x="278" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="290" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C60-FRONTIER</text>
+<text x="290" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: YES</text>
+<polyline points="419.3,429.3 419.3,417.0 419.3,429.3 419.3,441.7 431.7,441.7 444.0,441.7 444.0,454.0 444.0,466.3 431.7,466.3 419.3,466.3 407.0,466.3 394.7,466.3 394.7,478.7 394.7,491.0 382.3,491.0 370.0,491.0 382.3,491.0 370.0,491.0 382.3,491.0 370.0,491.0 370.0,478.7 370.0,491.0 370.0,478.7 370.0,466.3 357.7,466.3 345.3,466.3 345.3,478.7 345.3,491.0 345.3,478.7 345.3,491.0 345.3,478.7 345.3,466.3 333.0,466.3 320.7,466.3 320.7,478.7 320.7,491.0 320.7,478.7 320.7,466.3 308.3,466.3 296.0,466.3 296.0,478.7 296.0,491.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="419.3" cy="429.3" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 296.0 485.0 L 302.0 491.0 L 296.0 497.0 L 290.0 491.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="290" y="531" font-family="monospace" font-size="11" fill="#96aebe">41 steps · ce91977156fd · 027b500b4</text>
+<rect x="528" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="540" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C62-ALIGNED</text>
+<text x="540" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: no</text>
+<polyline points="669.3,441.7 669.3,429.3 669.3,441.7 669.3,454.0 681.7,454.0 694.0,454.0 694.0,466.3 694.0,478.7 681.7,478.7 669.3,478.7 657.0,478.7 644.7,478.7 644.7,491.0 644.7,503.3 632.3,503.3 620.0,503.3 632.3,503.3 620.0,503.3 632.3,503.3 620.0,503.3 632.3,503.3 644.7,503.3 644.7,491.0 644.7,503.3 644.7,491.0 644.7,478.7 644.7,491.0 644.7,478.7 657.0,478.7 669.3,478.7 657.0,478.7 669.3,478.7 681.7,478.7 694.0,478.7 694.0,466.3 694.0,454.0 694.0,441.7 694.0,429.3 694.0,441.7 694.0,429.3 694.0,417.0 694.0,404.7 681.7,404.7 694.0,404.7 681.7,404.7 669.3,404.7 657.0,404.7 644.7,404.7 644.7,417.0 644.7,429.3 644.7,417.0 644.7,404.7 632.3,404.7 620.0,404.7 620.0,417.0 620.0,429.3 620.0,441.7 620.0,454.0 607.7,454.0 595.3,454.0 595.3,441.7 595.3,454.0 607.7,454.0 620.0,454.0 620.0,441.7 620.0,454.0 620.0,441.7 620.0,454.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="669.3" cy="441.7" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 546.0 497.3 L 552.0 503.3 L 546.0 509.3 L 540.0 503.3Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="540" y="531" font-family="monospace" font-size="11" fill="#96aebe">67 steps · ce91977156fd · 2a2e1e36e</text>
+<rect x="778" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="790" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C34-RESET</text>
+<text x="790" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: no</text>
+<polyline points="919.3,429.3 919.3,417.0 919.3,429.3 919.3,441.7 931.7,441.7 919.3,441.7 931.7,441.7 944.0,441.7 944.0,454.0 944.0,466.3 931.7,466.3 919.3,466.3 907.0,466.3 894.7,466.3 894.7,478.7 894.7,491.0 882.3,491.0 870.0,491.0 882.3,491.0 870.0,491.0 882.3,491.0 870.0,491.0 882.3,491.0 870.0,491.0 882.3,491.0 894.7,491.0 882.3,491.0 870.0,491.0 882.3,491.0 870.0,491.0 882.3,491.0 894.7,491.0 882.3,491.0 894.7,491.0 894.7,478.7 894.7,491.0 894.7,478.7 894.7,491.0 894.7,478.7 894.7,491.0 894.7,478.7 894.7,466.3 894.7,478.7 894.7,466.3 907.0,466.3 919.3,466.3 907.0,466.3 919.3,466.3 907.0,466.3 894.7,466.3 907.0,466.3 919.3,466.3 931.7,466.3 919.3,466.3 931.7,466.3 919.3,466.3 931.7,466.3 944.0,466.3 931.7,466.3 944.0,466.3 931.7,466.3 944.0,466.3 931.7,466.3 944.0,466.3 944.0,454.0 944.0,441.7 944.0,454.0 944.0,441.7" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="919.3" cy="429.3" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 796.0 485.0 L 802.0 491.0 L 796.0 497.0 L 790.0 491.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="790" y="531" font-family="monospace" font-size="11" fill="#96aebe">67 steps · ce91977156fd · 7914c0a16</text>
+<rect x="1028" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1040" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C60-FRONTIER</text>
+<text x="1040" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: YES</text>
+<polyline points="1169.3,429.3 1169.3,417.0 1169.3,429.3 1169.3,441.7 1181.7,441.7 1194.0,441.7 1194.0,454.0 1194.0,466.3 1181.7,466.3 1169.3,466.3 1157.0,466.3 1144.7,466.3 1144.7,478.7 1144.7,491.0 1132.3,491.0 1120.0,491.0 1132.3,491.0 1120.0,491.0 1132.3,491.0 1120.0,491.0 1120.0,478.7 1120.0,491.0 1120.0,478.7 1120.0,466.3 1107.7,466.3 1095.3,466.3 1095.3,478.7 1095.3,491.0 1095.3,478.7 1095.3,491.0 1095.3,478.7 1095.3,466.3 1083.0,466.3 1070.7,466.3 1070.7,478.7 1070.7,491.0 1070.7,478.7 1070.7,466.3 1058.3,466.3 1046.0,466.3 1046.0,478.7 1046.0,491.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1169.3" cy="429.3" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1046.0 485.0 L 1052.0 491.0 L 1046.0 497.0 L 1040.0 491.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1040" y="531" font-family="monospace" font-size="11" fill="#96aebe">41 steps · ce91977156fd · 027b500b4</text>
+<rect x="1278" y="323" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1290" y="347" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">WILSON / C62-ALIGNED</text>
+<text x="1290" y="366" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: no</text>
+<polyline points="1419.3,441.7 1419.3,429.3 1419.3,441.7 1419.3,454.0 1431.7,454.0 1444.0,454.0 1444.0,466.3 1444.0,478.7 1431.7,478.7 1419.3,478.7 1407.0,478.7 1394.7,478.7 1394.7,491.0 1394.7,503.3 1382.3,503.3 1370.0,503.3 1382.3,503.3 1370.0,503.3 1382.3,503.3 1370.0,503.3 1382.3,503.3 1394.7,503.3 1394.7,491.0 1394.7,503.3 1394.7,491.0 1394.7,478.7 1394.7,491.0 1394.7,478.7 1407.0,478.7 1419.3,478.7 1407.0,478.7 1419.3,478.7 1431.7,478.7 1444.0,478.7 1444.0,466.3 1444.0,454.0 1444.0,441.7 1444.0,429.3 1444.0,441.7 1444.0,429.3 1444.0,417.0 1444.0,404.7 1431.7,404.7 1444.0,404.7 1431.7,404.7 1419.3,404.7 1407.0,404.7 1394.7,404.7 1394.7,417.0 1394.7,429.3 1394.7,417.0 1394.7,404.7 1382.3,404.7 1370.0,404.7 1370.0,417.0 1370.0,429.3 1370.0,441.7 1370.0,454.0 1357.7,454.0 1345.3,454.0 1345.3,441.7 1345.3,454.0 1357.7,454.0 1370.0,454.0 1370.0,441.7 1370.0,454.0 1370.0,441.7 1370.0,454.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1419.3" cy="441.7" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1296.0 497.3 L 1302.0 503.3 L 1296.0 509.3 L 1290.0 503.3Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1290" y="531" font-family="monospace" font-size="11" fill="#96aebe">67 steps · ce91977156fd · 2a2e1e36e</text>
+<rect x="28" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="40" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C34-RESET</text>
+<text x="40" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: no</text>
+<polyline points="75.6,765.0 90.4,765.0 105.2,765.0 90.4,765.0 105.2,765.0 120.0,765.0 134.8,765.0 120.0,765.0 134.8,765.0 149.6,765.0 134.8,765.0 149.6,765.0 134.8,765.0 149.6,765.0 164.4,765.0 149.6,765.0 134.8,765.0 120.0,765.0 105.2,765.0 120.0,765.0 105.2,765.0 120.0,765.0 105.2,765.0 90.4,765.0 105.2,765.0 120.0,765.0 134.8,765.0 120.0,765.0 134.8,765.0 149.6,765.0 134.8,765.0 120.0,765.0 105.2,765.0 120.0,765.0 105.2,765.0 120.0,765.0 120.0,765.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="75.6" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 105.2 611.0 L 111.2 617.0 L 105.2 623.0 L 99.2 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="40" y="768" font-family="monospace" font-size="11" fill="#96aebe">36 steps · 5ec769f82de6 · 6011375c8</text>
+<rect x="278" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="290" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C60-FRONTIER</text>
+<text x="290" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: YES</text>
+<polyline points="362.6,765.0 377.4,765.0 362.6,765.0 347.8,765.0 347.8,750.2 347.8,735.4 347.8,720.6 347.8,705.8 347.8,691.0 347.8,676.2 362.6,676.2 347.8,676.2 347.8,661.4 347.8,646.6 347.8,631.8 347.8,617.0 362.6,617.0 377.4,617.0 392.2,617.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="362.6" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 392.2 611.0 L 398.2 617.0 L 392.2 623.0 L 386.2 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="290" y="768" font-family="monospace" font-size="11" fill="#96aebe">18 steps · 5ec769f82de6 · 9bd0969b3</text>
+<rect x="528" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="540" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C62-ALIGNED</text>
+<text x="540" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 0%  ·  goal: YES</text>
+<polyline points="568.2,765.0 583.0,765.0 597.8,765.0 583.0,765.0 597.8,765.0 612.6,765.0 627.4,765.0 642.2,765.0 657.0,765.0 671.8,765.0 671.8,750.2 671.8,735.4 657.0,735.4 642.2,735.4 627.4,735.4 612.6,735.4 597.8,735.4 583.0,735.4 583.0,720.6 583.0,705.8 597.8,705.8 583.0,705.8 583.0,691.0 583.0,676.2 597.8,676.2 583.0,676.2 583.0,691.0 583.0,676.2 583.0,691.0 583.0,705.8 597.8,705.8 612.6,705.8 612.6,691.0 612.6,676.2 612.6,661.4 612.6,646.6 612.6,631.8 612.6,617.0 597.8,617.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="568.2" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 597.8 611.0 L 603.8 617.0 L 597.8 623.0 L 591.8 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="540" y="768" font-family="monospace" font-size="11" fill="#96aebe">38 steps · 5ec769f82de6 · acd047ef2</text>
+<rect x="778" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="790" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C34-RESET</text>
+<text x="790" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: no</text>
+<polyline points="825.6,765.0 840.4,765.0 855.2,765.0 840.4,765.0 855.2,765.0 870.0,765.0 884.8,765.0 870.0,765.0 884.8,765.0 899.6,765.0 884.8,765.0 899.6,765.0 884.8,765.0 899.6,765.0 914.4,765.0 899.6,765.0 884.8,765.0 870.0,765.0 855.2,765.0 870.0,765.0 855.2,765.0 870.0,765.0 855.2,765.0 840.4,765.0 855.2,765.0 870.0,765.0 884.8,765.0 870.0,765.0 884.8,765.0 899.6,765.0 884.8,765.0 870.0,765.0 855.2,765.0 870.0,765.0 855.2,765.0 870.0,765.0 870.0,765.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="825.6" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 855.2 611.0 L 861.2 617.0 L 855.2 623.0 L 849.2 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="790" y="768" font-family="monospace" font-size="11" fill="#96aebe">36 steps · 5ec769f82de6 · 6011375c8</text>
+<rect x="1028" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1040" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C60-FRONTIER</text>
+<text x="1040" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: YES</text>
+<polyline points="1112.6,765.0 1127.4,765.0 1112.6,765.0 1097.8,765.0 1097.8,750.2 1097.8,735.4 1097.8,720.6 1097.8,705.8 1097.8,691.0 1097.8,676.2 1112.6,676.2 1097.8,676.2 1097.8,661.4 1097.8,646.6 1097.8,631.8 1097.8,617.0 1112.6,617.0 1127.4,617.0 1142.2,617.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1112.6" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1142.2 611.0 L 1148.2 617.0 L 1142.2 623.0 L 1136.2 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1040" y="768" font-family="monospace" font-size="11" fill="#96aebe">18 steps · 5ec769f82de6 · 9bd0969b3</text>
+<rect x="1278" y="560" width="240" height="222" rx="9" fill="#1d2b36" stroke="#39566a"/>
+<text x="1290" y="584" font-family="sans-serif" font-size="14" fill="#d7e6ef" font-weight="bold">BRAID / C62-ALIGNED</text>
+<text x="1290" y="603" font-family="sans-serif" font-size="12" fill="#96aebe">memory erased: 50%  ·  goal: YES</text>
+<polyline points="1318.2,765.0 1333.0,765.0 1347.8,765.0 1333.0,765.0 1347.8,765.0 1362.6,765.0 1377.4,765.0 1392.2,765.0 1407.0,765.0 1421.8,765.0 1421.8,750.2 1421.8,735.4 1407.0,735.4 1392.2,735.4 1377.4,735.4 1362.6,735.4 1347.8,735.4 1333.0,735.4 1333.0,720.6 1333.0,705.8 1347.8,705.8 1333.0,705.8 1333.0,691.0 1333.0,676.2 1347.8,676.2 1333.0,676.2 1333.0,691.0 1333.0,676.2 1333.0,691.0 1333.0,705.8 1347.8,705.8 1362.6,705.8 1362.6,691.0 1362.6,676.2 1362.6,661.4 1362.6,646.6 1362.6,631.8 1362.6,617.0 1347.8,617.0" fill="none" stroke="#7cd3c9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.84"/>
+<circle cx="1318.2" cy="765.0" r="5" fill="#70b2ff" stroke="#ffffff" stroke-width="1"/>
+<path d="M 1347.8 611.0 L 1353.8 617.0 L 1347.8 623.0 L 1341.8 617.0Z" fill="#ffc16d" stroke="#ffffff" stroke-width="1"/>
+<text x="1290" y="768" font-family="monospace" font-size="11" fill="#96aebe">38 steps · 5ec769f82de6 · acd047ef2</text>
+<text x="28" y="805" font-family="sans-serif" font-size="11" fill="#8398a9">Source: C62-executed-ledger; 18 deterministic replay-matched trajectories; synthetic-host evidence, NOT native CyberSand acceptance.</text></svg>
