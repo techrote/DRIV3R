@@ -7,6 +7,7 @@ import unittest
 from .feasibility_shield_lab import decide, episode, verify_trace, ARMS, SEEDS
 from .detour_recovery_lab import fixture, prefix_plan
 from .goal_conditioning_lab import GoalRanker
+from .feasibility_shield_gallery import trace_points
 from .world import Spec, specs
 
 ROOT = Path(__file__).resolve().parents[5] / 'run' / 'checkpoints'
@@ -41,6 +42,14 @@ class ShieldTests(unittest.TestCase):
                 self.assertEqual(row['protected_material_edits'],0)
                 if arm in ('planner','late24','shield0','shield8'):
                     self.assertTrue(row['arrived'])
+
+    def test_gallery_includes_complete_prelude(self):
+        _,trace=episode(self.sp,3,self.goal,711,'neural',self.model)
+        pts=trace_points(trace)
+        self.assertEqual(pts[0],(48,48))
+        self.assertEqual(pts[3],(51,48))
+        self.assertEqual(len(pts),1+len(trace['prelude'])+len(trace['entries']))
+        self.assertEqual(pts[-1],tuple(trace['row']['goal']) if trace['row']['arrived'] else tuple(trace['entries'][-1]['receipt']['cursor_after']))
 
     def test_probabilities_tamper_rejected(self):
         _,trace=episode(self.sp,3,self.goal,711,'neural',self.model)

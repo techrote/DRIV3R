@@ -125,7 +125,7 @@
   "split": "development",
   "structural_heldout_opened": false,
   "synthetic_64_gate": true,
-  "trajectories_svg_sha256": "fb02dd9c50353c5abb03ce086486662f5cda4dffa14a624f9c4e77a6373f43d2",
+  "trajectories_svg_sha256": "2519cc1e98428b38e9d5639e356c3df86fe3c8373e5c8606a84b01f880f4c001",
   "verified_action_receipts": 5814,
   "verified_neural_probability_vectors": 3688,
   "version": "feasibility-shield/1"

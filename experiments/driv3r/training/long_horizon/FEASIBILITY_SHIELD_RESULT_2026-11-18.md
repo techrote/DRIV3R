@@ -33,7 +33,7 @@ All 32 planner-start states were solvable within 64 logical moves under the **re
 ## Audit, latency and failure modes
 
 - 160 complete episodes; **5,814 replay-verified synthetic legal action receipts**, including forced preludes; **3,688 restored-checkpoint probability vectors**; 161 output files with SHA-256 manifest.
-- Five focused tests passed, including wrong-action and neural-probability tampering rejection. Independent complete archive replay passed against the final source. Each trace stores source spec, prelude, state and final hashes, full legal menus in the receipts, chosen actions and probabilities.
+- Six focused tests passed, including wrong-action and neural-probability tampering rejection. Independent complete archive replay passed against the final source. Each trace stores source spec, prelude, state and final hashes, full legal menus in the receipts, chosen actions and probabilities.
 - CPU campaign **31.885 seconds**; peak RSS **97,940 KiB**. The per-controller selection measurements include planning and Python overhead, are measured on one local CPU, and are not native deployment latency.
 - Synthetic legal menus were respected and no protected/material cell was edited. The original gallery is rendered from recorded receipt cursor positions (no invented or shortened path segments).
 

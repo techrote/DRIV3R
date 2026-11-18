@@ -13,6 +13,12 @@ CASES = ((711,'pickets',3000,3,1),(711,'islands',3200,3,0),
          (712,'islands',3200,5,0),(712,'zigzag',3300,5,1))
 
 
+def trace_points(t):
+    """Return every recorded cursor position, including forced prelude."""
+    return ([(48,48)] + [tuple(e['cursor_after']) for e in t['prelude']]
+            + [tuple(e['receipt']['cursor_after']) for e in t['entries']])
+
+
 def draw(archive:Path,destination:Path):
     W,H=1380,920;panel_w=430;panel_h=416
     a=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
@@ -26,9 +32,9 @@ def draw(archive:Path,destination:Path):
             items[arm]=json.loads(p.read_text())
         anytrace=items['neural'];sp=Spec(**anytrace['spec']);w=fixture(sp,depth)
         paths={}
-        allpoints=[tuple(w.cursor),tuple(anytrace['row']['goal'])]
+        allpoints=[(48,48),tuple(anytrace['row']['goal'])]
         for arm,t in items.items():
-            pts=[tuple(w.cursor)]+[tuple(e['receipt']['cursor_after']) for e in t['entries']]
+            pts=trace_points(t)
             paths[arm]=pts;allpoints+=pts
         lo_x=max(0,min(x for x,y in allpoints)-2);hi_x=min(95,max(x for x,y in allpoints)+2)
         lo_y=max(0,min(y for x,y in allpoints)-2);hi_y=min(95,max(y for x,y in allpoints)+2)
