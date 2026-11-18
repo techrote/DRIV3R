@@ -1,0 +1,178 @@
+{
+  "version": "ink-alias-memory/1",
+  "date": "2026-11-18",
+  "authority": "techrote/DRIV3R Draft/HOLD PR #1",
+  "source_scope": "experiments/driv3r/training/long_horizon/**",
+  "splits": {
+    "TRAIN": {
+      "states": 72,
+      "world_families": 4,
+      "seeds_per_family": 3,
+      "decisions": [
+        36,
+        72,
+        128
+      ]
+    },
+    "DEVELOPMENT": {
+      "states": 48,
+      "pairs": 24,
+      "world_families": 4,
+      "seeds_per_family": 2,
+      "decisions": [
+        36,
+        72,
+        128
+      ]
+    },
+    "HELDOUT": "SEALED; no structural families accessed"
+  },
+  "synthetic_host_contract": {
+    "source_world_git_blob": "c7e33b7801c3a9d6c1f00f11f466732b312ddc92",
+    "goal_ranker_git_blob": "243294176699abc56386eaf12b95580843499b55",
+    "planner_git_blob": "76f34f512e4c66ba529c9361b2bf2be1219f04d2",
+    "historical_d_common_immutable": true,
+    "native_receipts": 0,
+    "protected_cell_mutations": 0,
+    "synthetic_prelude_logical_moves": {
+      "36": 64,
+      "72": 136,
+      "128": 248
+    }
+  },
+  "optimizer": {
+    "kind": "NumPy full-batch Adam softmax",
+    "steps": 240,
+    "train_samples": 72,
+    "features": [
+      "ink(50,48)",
+      "ink(46,48)",
+      "bias"
+    ],
+    "output_actions": [
+      "MOVE_W",
+      "MOVE_E"
+    ],
+    "initial_loss": 0.6931472,
+    "final_loss": 0.0071685,
+    "trained_checkpoint_sha256": "ea7a0e291a898b2b9215c676e2bdcbd466284305292a42d767dd8906e8c6a981"
+  },
+  "frozen_checkpoints": {
+    "711-conditioned.npz": {
+      "sha256": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+      "updates": 120
+    },
+    "712-conditioned.npz": {
+      "sha256": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3",
+      "updates": 120
+    }
+  },
+  "controls": {
+    "memory": {
+      "correct": 48,
+      "of": 48,
+      "scripted_goal_arrivals": 48,
+      "planner_suffix_actions": 528,
+      "first_action_counts": {
+        "MOVE_E": 24,
+        "MOVE_W": 24
+      },
+      "median_choose_ms": 0.11853,
+      "p95_choose_ms": 0.187058
+    },
+    "last8_local": {
+      "correct": 24,
+      "of": 48,
+      "scripted_goal_arrivals": 48,
+      "planner_suffix_actions": 624,
+      "first_action_counts": {
+        "MOVE_W": 48
+      },
+      "median_choose_ms": 0.000711,
+      "p95_choose_ms": 0.000928
+    },
+    "frozen711": {
+      "correct": 14,
+      "of": 48,
+      "scripted_goal_arrivals": 48,
+      "planner_suffix_actions": 624,
+      "first_action_counts": {
+        "MOVE_E": 28,
+        "MOVE_S": 20
+      },
+      "median_choose_ms": 0.181809,
+      "p95_choose_ms": 0.221892
+    },
+    "frozen712": {
+      "correct": 15,
+      "of": 48,
+      "scripted_goal_arrivals": 48,
+      "planner_suffix_actions": 624,
+      "first_action_counts": {
+        "MOVE_E": 30,
+        "MOVE_S": 18
+      },
+      "median_choose_ms": 0.100033,
+      "p95_choose_ms": 0.169949
+    },
+    "oracle": {
+      "correct": 48,
+      "of": 48,
+      "scripted_goal_arrivals": 48,
+      "planner_suffix_actions": 528,
+      "first_action_counts": {
+        "MOVE_E": 24,
+        "MOVE_W": 24
+      },
+      "median_choose_ms": 0.000366,
+      "p95_choose_ms": 0.000626
+    }
+  },
+  "per_depth_first_action_correct": {
+    "36": {
+      "memory": 16,
+      "last8_local": 8,
+      "frozen711": 4,
+      "frozen712": 5,
+      "oracle": 16
+    },
+    "72": {
+      "memory": 16,
+      "last8_local": 8,
+      "frozen711": 5,
+      "frozen712": 5,
+      "oracle": 16
+    },
+    "128": {
+      "memory": 16,
+      "last8_local": 8,
+      "frozen711": 5,
+      "frozen712": 5,
+      "oracle": 16
+    }
+  },
+  "integrity": {
+    "evaluated_episodes": 240,
+    "independently_replayed_legal_synthetic_actions": 22048,
+    "recomputed_neural_probability_vectors": 144,
+    "focused_unittest_passed": 5,
+    "reproduction_runs": 2,
+    "checkpoint_and_receipts_byte_identical": true,
+    "complete_gzip_receipts_sha256": "f3e80965305e09f9b1e0c325c426e2d85ef4e300d29008c27e503e0ff43979de",
+    "campaign_wall_seconds": 14.5855,
+    "peak_rss_kib": 136720
+  },
+  "checkpoint_custody": {
+    "local_archive_only": true,
+    "immutable_actions_artifact": null,
+    "unapproved_paid_spend": false
+  },
+  "evaluation_limitations": [
+    "Engineered paired old-ink histories share precleared arena and fixed coordinates",
+    "probe sees hand-selected early old-ink sites and does not encode general histories",
+    "after the first model decision, goal-reaching suffix is deterministic BFS, not policy autonomy",
+    "historical native 64-logical-move gate exceeded at 72/128 synthetic lengths",
+    "structural HELDOUT and native CyberSand not assessed",
+    "checkpoint binaries intentionally not in Git"
+  ]
+}
