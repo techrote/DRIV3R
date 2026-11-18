@@ -1,0 +1,655 @@
+{
+  "actions_executed": 14295,
+  "aggregate": {
+    "0.0/0.35/C60-FROZEN": {
+      "goals": 8,
+      "new_sites": 57,
+      "route_matches": 183,
+      "route_ticks": 360
+    },
+    "0.0/0.35/C70-ALIGNED": {
+      "goals": 11,
+      "new_sites": 54,
+      "route_matches": 189,
+      "route_ticks": 353
+    },
+    "0.0/0.35/C70-SHIFTED": {
+      "goals": 11,
+      "new_sites": 44,
+      "route_matches": 152,
+      "route_ticks": 251
+    },
+    "0.0/0.35/FRONTIER": {
+      "goals": 8,
+      "new_sites": 48,
+      "route_matches": 175,
+      "route_ticks": 346
+    },
+    "0.0/0.35/RESET": {
+      "goals": 8,
+      "new_sites": 48,
+      "route_matches": 156,
+      "route_ticks": 303
+    },
+    "0.0/0.35/STATIC-ROUTE": {
+      "goals": 10,
+      "new_sites": 43,
+      "route_matches": 154,
+      "route_ticks": 250
+    },
+    "0.0/1.0/C60-FROZEN": {
+      "goals": 11,
+      "new_sites": 84,
+      "route_matches": 236,
+      "route_ticks": 452
+    },
+    "0.0/1.0/C70-ALIGNED": {
+      "goals": 11,
+      "new_sites": 35,
+      "route_matches": 222,
+      "route_ticks": 379
+    },
+    "0.0/1.0/C70-SHIFTED": {
+      "goals": 14,
+      "new_sites": 47,
+      "route_matches": 136,
+      "route_ticks": 194
+    },
+    "0.0/1.0/FRONTIER": {
+      "goals": 9,
+      "new_sites": 101,
+      "route_matches": 220,
+      "route_ticks": 436
+    },
+    "0.0/1.0/RESET": {
+      "goals": 7,
+      "new_sites": 48,
+      "route_matches": 188,
+      "route_ticks": 383
+    },
+    "0.0/1.0/STATIC-ROUTE": {
+      "goals": 15,
+      "new_sites": 31,
+      "route_matches": 135,
+      "route_ticks": 179
+    },
+    "0.5/0.35/C60-FROZEN": {
+      "goals": 8,
+      "new_sites": 56,
+      "route_matches": 38,
+      "route_ticks": 65
+    },
+    "0.5/0.35/C70-ALIGNED": {
+      "goals": 11,
+      "new_sites": 54,
+      "route_matches": 35,
+      "route_ticks": 46
+    },
+    "0.5/0.35/C70-SHIFTED": {
+      "goals": 9,
+      "new_sites": 56,
+      "route_matches": 32,
+      "route_ticks": 42
+    },
+    "0.5/0.35/FRONTIER": {
+      "goals": 7,
+      "new_sites": 56,
+      "route_matches": 24,
+      "route_ticks": 31
+    },
+    "0.5/0.35/RESET": {
+      "goals": 8,
+      "new_sites": 48,
+      "route_matches": 26,
+      "route_ticks": 36
+    },
+    "0.5/0.35/STATIC-ROUTE": {
+      "goals": 8,
+      "new_sites": 49,
+      "route_matches": 24,
+      "route_ticks": 32
+    },
+    "0.5/1.0/C60-FROZEN": {
+      "goals": 11,
+      "new_sites": 84,
+      "route_matches": 57,
+      "route_ticks": 88
+    },
+    "0.5/1.0/C70-ALIGNED": {
+      "goals": 8,
+      "new_sites": 44,
+      "route_matches": 36,
+      "route_ticks": 55
+    },
+    "0.5/1.0/C70-SHIFTED": {
+      "goals": 10,
+      "new_sites": 50,
+      "route_matches": 30,
+      "route_ticks": 40
+    },
+    "0.5/1.0/FRONTIER": {
+      "goals": 6,
+      "new_sites": 109,
+      "route_matches": 26,
+      "route_ticks": 38
+    },
+    "0.5/1.0/RESET": {
+      "goals": 7,
+      "new_sites": 48,
+      "route_matches": 26,
+      "route_ticks": 37
+    },
+    "0.5/1.0/STATIC-ROUTE": {
+      "goals": 7,
+      "new_sites": 52,
+      "route_matches": 21,
+      "route_ticks": 27
+    },
+    "1.0/0.35/C60-FROZEN": {
+      "goals": 9,
+      "new_sites": 55,
+      "route_matches": 18,
+      "route_ticks": 34
+    },
+    "1.0/0.35/C70-ALIGNED": {
+      "goals": 11,
+      "new_sites": 54,
+      "route_matches": 11,
+      "route_ticks": 11
+    },
+    "1.0/0.35/C70-SHIFTED": {
+      "goals": 9,
+      "new_sites": 56,
+      "route_matches": 9,
+      "route_ticks": 9
+    },
+    "1.0/0.35/FRONTIER": {
+      "goals": 10,
+      "new_sites": 54,
+      "route_matches": 11,
+      "route_ticks": 12
+    },
+    "1.0/0.35/RESET": {
+      "goals": 8,
+      "new_sites": 48,
+      "route_matches": 11,
+      "route_ticks": 14
+    },
+    "1.0/0.35/STATIC-ROUTE": {
+      "goals": 8,
+      "new_sites": 48,
+      "route_matches": 8,
+      "route_ticks": 8
+    },
+    "1.0/1.0/C60-FROZEN": {
+      "goals": 11,
+      "new_sites": 80,
+      "route_matches": 19,
+      "route_ticks": 27
+    },
+    "1.0/1.0/C70-ALIGNED": {
+      "goals": 7,
+      "new_sites": 44,
+      "route_matches": 8,
+      "route_ticks": 9
+    },
+    "1.0/1.0/C70-SHIFTED": {
+      "goals": 8,
+      "new_sites": 52,
+      "route_matches": 9,
+      "route_ticks": 10
+    },
+    "1.0/1.0/FRONTIER": {
+      "goals": 11,
+      "new_sites": 85,
+      "route_matches": 13,
+      "route_ticks": 15
+    },
+    "1.0/1.0/RESET": {
+      "goals": 7,
+      "new_sites": 48,
+      "route_matches": 9,
+      "route_ticks": 11
+    },
+    "1.0/1.0/STATIC-ROUTE": {
+      "goals": 7,
+      "new_sites": 53,
+      "route_matches": 8,
+      "route_ticks": 9
+    }
+  },
+  "checkpoint_sha256": {
+    "C70-ALIGNED": "d29341a8fa4c11e3f0ca190f0b4f64ab0b70c6629493e42f30fd6e3e44befabf",
+    "C70-SHIFTED": "223e7694b8509459b9856ac00f7cb3493dd91ba9e733d698d984dcdf4fe174ba"
+  },
+  "conditions": 135,
+  "eligibility_skips": {
+    "no_observed_route": 1,
+    "prefix_terminal": 283,
+    "too_little_memory": 36
+  },
+  "excluded_graph_count": 472,
+  "executed_suffixes": 810,
+  "fitness": {
+    "aligned": {
+      "epochs": [
+        {
+          "actions": 990,
+          "epoch": 0,
+          "training_goals": 22,
+          "trajectories": 40,
+          "weight_norm": 0.5475100874900818
+        },
+        {
+          "actions": 895,
+          "epoch": 1,
+          "training_goals": 24,
+          "trajectories": 40,
+          "weight_norm": 0.94911128282547
+        },
+        {
+          "actions": 826,
+          "epoch": 2,
+          "training_goals": 28,
+          "trajectories": 40,
+          "weight_norm": 1.2464045286178589
+        }
+      ],
+      "mode": "aligned",
+      "updates": 36
+    },
+    "shifted": {
+      "epochs": [
+        {
+          "actions": 990,
+          "epoch": 0,
+          "training_goals": 22,
+          "trajectories": 40,
+          "weight_norm": 0.7153318524360657
+        },
+        {
+          "actions": 633,
+          "epoch": 1,
+          "training_goals": 22,
+          "trajectories": 40,
+          "weight_norm": 1.1875067949295044
+        },
+        {
+          "actions": 587,
+          "epoch": 2,
+          "training_goals": 32,
+          "trajectories": 40,
+          "weight_norm": 1.420758605003357
+        }
+      ],
+      "mode": "shifted",
+      "updates": 36
+    }
+  },
+  "gallery_traces": 18,
+  "limitations": [
+    "Synthetic host, not CyberSand native gameplay",
+    "Observed waypoint already lies within past explored route; not remote unknown goal",
+    "Different on-policy episode lengths mean training action exposure not equal despite identical updates",
+    "Shifted-credit control cyclically shifts within each episode; leakage from within-episode reward autocorrelation remains",
+    "Small topology-stratified heldout cohort and exploratory paired statistics",
+    "Only simple movement/ink behavioral metrics, not independent worm-personality acceptance"
+  ],
+  "schema": "driv3r-c70-observed-memory-actor/1",
+  "seed": 700119,
+  "selection": [
+    {
+      "eligible_prefixes": 15,
+      "family": "tree",
+      "generated_worlds": 40,
+      "selected": 5
+    },
+    {
+      "eligible_prefixes": 28,
+      "family": "braid",
+      "generated_worlds": 40,
+      "selected": 5
+    },
+    {
+      "eligible_prefixes": 8,
+      "family": "prim",
+      "generated_worlds": 40,
+      "selected": 5
+    },
+    {
+      "eligible_prefixes": 12,
+      "family": "wilson",
+      "generated_worlds": 40,
+      "selected": 5
+    },
+    {
+      "eligible_prefixes": 17,
+      "family": "kruskal",
+      "generated_worlds": 40,
+      "selected": 5
+    }
+  ],
+  "source_sha256": "cac1f5a31b3d1c322a219b19e3987461ff67f4921957fc8325cd4860b2324436",
+  "test_graphs": [
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 17,
+      "family": "tree",
+      "graph": "4ca520c636cee780c0a0c495cd831e5eb90d29481deb6a681329ef83641b6cc5",
+      "prefix_actions": 19,
+      "prefix_menus": 8,
+      "prefix_sha": "8055a2cce8d3922a569d21b7eb3f2e992e24aafbaf14a6dc966aace4726bf601",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 29,
+      "family": "tree",
+      "graph": "e16dd8216e249f2c4e3998ff8e0fd122b73211be2715af05c23b1e33fbc27b26",
+      "prefix_actions": 19,
+      "prefix_menus": 13,
+      "prefix_sha": "2148215a7cc3421d9fbe03ebc16720371ebbce4ac2e9e7fe8a2609e6aa4bec2f",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 16,
+      "family": "tree",
+      "graph": "38a9d9941bc31ca7c040dbf10b59a228655a75f21121fb447b066e132e2b0c0b",
+      "prefix_actions": 19,
+      "prefix_menus": 8,
+      "prefix_sha": "b8a172a58711bd7cc05235b46bfe96a210c06dd0fbcec8af2e873faa4abbd2aa",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 38,
+      "family": "braid",
+      "graph": "2a4099e36137461248e94825fb4d03b6f52ba0e962efab06b37ee894a2fbcb34",
+      "prefix_actions": 19,
+      "prefix_menus": 15,
+      "prefix_sha": "00e8e1f2b547ec41d34b641ee50da733a7825e2fae965ed5e8fc34706dd3c04e",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 28,
+      "family": "braid",
+      "graph": "ebc0fb501e13f8e7903bfc7034975e641e4fb3283c25e28e2f12dca99bd7c11b",
+      "prefix_actions": 19,
+      "prefix_menus": 12,
+      "prefix_sha": "58d802fd52e42e344eb62c17a187fae97a0a3de788ef36cb00e64ba636a6b426",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 24,
+      "family": "braid",
+      "graph": "0361aeee06e480caa2495ac91a0dcbea7d67a84d774192a0d1dad94ba3a6e02d",
+      "prefix_actions": 19,
+      "prefix_menus": 11,
+      "prefix_sha": "bad49d8c9a58c917b71cb3ade472810410e6a40114b23b10e7eb032fcecd786a",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 17,
+      "family": "prim",
+      "graph": "d50f751a3ceb203c2d2735c6fde83f57eb4f8fc57b41432138f4bec00b267b0f",
+      "prefix_actions": 19,
+      "prefix_menus": 8,
+      "prefix_sha": "833e809cadee0fe0b258001cca56353bf0aa5fbb528a65292fba53d43eb74c23",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 16,
+      "family": "prim",
+      "graph": "9d86713c8324850b033c1906103690cc6a0ac21f95dc7cd645160655e3e58c16",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "0cc1da2a771233a6e0212786eab0a6fe25189e4e520bfd3fd93e78dfb4cdda31",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 14,
+      "family": "prim",
+      "graph": "83b330ad63a9507e680682cdb1245b8cf0e3a72970f2e38bda9704977cafff85",
+      "prefix_actions": 19,
+      "prefix_menus": 6,
+      "prefix_sha": "7a258dcea6a46ba75495afa233f866d82964b7f146325739c8bdc2b0ea64eb27",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 15,
+      "family": "wilson",
+      "graph": "b414707384e729a11380422d05e761bf3d2e63ac8fe45fd218685654b8817d4e",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "0ff86263c8cced3f60e8445b17037eb31593c79cd92b18eb424c6be3d51d7b6d",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 16,
+      "family": "wilson",
+      "graph": "620ef8cba3674bb09ddd47d7d3d71b2ca39207f1a65ea07f9c33cb118023225e",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "74515befc50f8c2f2c28285407c432161107272af1b8f18dd99647680cb51af9",
+      "route_absent_full_erasure": true,
+      "route_edges": 5,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 23,
+      "family": "wilson",
+      "graph": "83a99c9c6ffd8c81bdc6ceb495d55ed684ca3e69c75bce6c054dc1a66d5a46bf",
+      "prefix_actions": 19,
+      "prefix_menus": 11,
+      "prefix_sha": "9b1865bf1142b6ce15fa0bd4944ceba8522ba4045aff16ef961ef80aaa016ba8",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 16,
+      "family": "kruskal",
+      "graph": "cb9719a6cf917b6f653eb6f43de4894579dfbe075afbd2e8e71e75d97e153159",
+      "prefix_actions": 19,
+      "prefix_menus": 8,
+      "prefix_sha": "44b2c99e5d8da9898d56038fdce1bbfc49befed81c7c7d39c804f73503747e77",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 13,
+      "family": "kruskal",
+      "graph": "96bbd952ca50088badb5d0619840d91912c4a49acd569cb7e3c61a7fe91e04fb",
+      "prefix_actions": 19,
+      "prefix_menus": 6,
+      "prefix_sha": "3886f8c39c1b355e50d86e9e9663cf2ec5a37d06923b0b0c603cabb2302a6c48",
+      "route_absent_full_erasure": true,
+      "route_edges": 4,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 14,
+      "family": "kruskal",
+      "graph": "64ad253d48487baf5c095385709516433808b8cd9bb21638f118ae82058a405b",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "d102a9e9a7cffad766a7679b87e9577006545653dfb8c8524b1eefbcbf57047d",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    }
+  ],
+  "train_graphs": [
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 16,
+      "family": "tree",
+      "graph": "5863988419bfdb62d3e9f729f7cc65118c25581f74e03fe0038ccce3e8bb574a",
+      "prefix_actions": 19,
+      "prefix_menus": 8,
+      "prefix_sha": "84ba57efb9632da63e605b90f0b02ea329bb9241e64903876cc98ab229b5ebb2",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 12,
+      "family": "tree",
+      "graph": "0a9d6ce73e13e493d99140533be8b975959f96beaf7017d4cab8a349944983f6",
+      "prefix_actions": 19,
+      "prefix_menus": 6,
+      "prefix_sha": "6ab49dcb319e32cbfbc4cf5d05f250b6a24971fe820e9833b5d8f8e45ccc7673",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 46,
+      "family": "braid",
+      "graph": "dcb2b1ae6a429c8e4ed3b052ce6002ff721261ca3890907721318efadd08ba78",
+      "prefix_actions": 19,
+      "prefix_menus": 19,
+      "prefix_sha": "dcdc8a0689296caa3fa2bfd295151b04e1e7def32964016c1804ac8c7a883f43",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 28,
+      "family": "braid",
+      "graph": "38b9c04652a2f8d292d710b8157cad1d10b9d7789316dd079387eb44826b95f7",
+      "prefix_actions": 19,
+      "prefix_menus": 13,
+      "prefix_sha": "1996639a5b9c172ea8bcc9bc41483b8772e30fb9e6a80b17ffd1304c73ee2779",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 21,
+      "family": "prim",
+      "graph": "9f32a7a7cf61aefbcb612bf962bbda88d019d5bfa5aaa3e60a0e65aec4f852e3",
+      "prefix_actions": 19,
+      "prefix_menus": 10,
+      "prefix_sha": "f82b97640df6be924b04d0cb1738d169c78c9ed3f50b294d32bded6e6fbe0fea",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 28,
+      "family": "prim",
+      "graph": "c59729dc6424a699ca372a9ef313978753167cb274186299ac99d0ffc25f4e7b",
+      "prefix_actions": 19,
+      "prefix_menus": 13,
+      "prefix_sha": "6255665694e628e5aeb62c069007420e8d8e30059afb39408c0ff3d49742f342",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 18,
+      "family": "wilson",
+      "graph": "4289ea87b0bf55cd391d9f2fb23038bb38de85f3163c7da4b4ef167647671284",
+      "prefix_actions": 19,
+      "prefix_menus": 9,
+      "prefix_sha": "5a86ed9454f7abd963618b7b9e864d11cd7357caf6a6043634044c92828aeb04",
+      "route_absent_full_erasure": true,
+      "route_edges": 8,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 14,
+      "family": "wilson",
+      "graph": "018aece138079d9159ac8b0ce55f968fe7aeb0bd0d9f8321abd3798e177e1ed5",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "226e320cee312d6cf9cd41ec1bfbf252b037f007a309d9fa147473c8a5b67328",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 25,
+      "family": "kruskal",
+      "graph": "272e0479e429773e161a8b25646f38937baf9725910bb7a3c032c82c7093a7f0",
+      "prefix_actions": 19,
+      "prefix_menus": 11,
+      "prefix_sha": "6f9d616737818f8d028fc49eb72e111940129e913fbb7829c539f93a84dc64b2",
+      "route_absent_full_erasure": true,
+      "route_edges": 4,
+      "tick": 19
+    },
+    {
+      "after_full_erasure_edges": 2,
+      "before_edges": 14,
+      "family": "kruskal",
+      "graph": "97dee764dc6ff28c7360473a6d43f11522c5e177e0d7789996f3127f232c809c",
+      "prefix_actions": 19,
+      "prefix_menus": 7,
+      "prefix_sha": "d7a20e8ff12f1a425cc87274bd3d84a6b4dedf2a6e047d35350bade816a26bee",
+      "route_absent_full_erasure": true,
+      "route_edges": 6,
+      "tick": 19
+    }
+  ],
+  "weights": {
+    "C70-ALIGNED": [
+      0.5230322480201721,
+      0.5156427025794983,
+      0.21104536950588226,
+      0.7021675705909729,
+      0.5810225605964661,
+      0.37270259857177734
+    ],
+    "C70-SHIFTED": [
+      0.4994644224643707,
+      0.8879280686378479,
+      0.8341115117073059,
+      0.09956548362970352,
+      -0.40444323420524597,
+      -0.33383312821388245
+    ]
+  }
+}
