@@ -1,0 +1,96 @@
+{
+  "schema": "driv3r/corpus_factory/physical-fork-v57/1",
+  "date": "2026-11-18",
+  "purpose": "Host-replayed positive and opposite-command branches for every v56 causal material-memory comparison; evaluator-only evidence, not new policies.",
+  "synthetic_not_native_CyberSand": true,
+  "data_only": true,
+  "generator_sha256": "f60f5e711aeb8066ab488e23b409007872d63a65a104900e3cde458a7f064427",
+  "parent_v56_manifest_sha256": "b7f4b9f0d76416378c0d38713b4c60df90c149c2ef29533c73cb0e030ec9690e",
+  "parent_v56_shard_sha256": {
+    "TRAIN_causal_stream.jsonl": "462ed7ab1d77a4d1e34759b0a799e70ba349e6cf262b2d63e71a0d2aab39de24",
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": "80f0043c15064f255f2bdd4450d2e59ebd82ec7c78a96d76722ae92c56dce651",
+    "TRAIN_material_pairs_EVALUATOR_ONLY.jsonl": "53b2c1182a7967c72ee5d6f5f94dc4b9a81d15dfe36066f83ec09bb4c9b0f29a",
+    "DEV_EVALUATOR_ONLY_causal_stream.jsonl": "09f0e34d298ebc7b2d967b63b730db2b8f6a86db36f426df1a0c779738b81d14",
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": "87df2a7df80414a9b252637dfad7a066abba4de58346ee45c3059c67250e7e5b",
+    "DEV_material_pairs_EVALUATOR_ONLY.jsonl": "b339657ef7c986cfef193716c5d5964103a65fe3752e2936ccb96f6ed680102f",
+    "HELDOUT_EVALUATOR_ONLY_causal_stream.jsonl": "ac08a5b54f4a8dede32859ad63b3900d93add84ccc2c49070e2f3be135e102c4",
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": "257afb28701a2d647770ec309e6279bbc0b74a194a5eaa0062db16cb1f0d026a",
+    "HELDOUT_material_pairs_EVALUATOR_ONLY.jsonl": "1e45220b06a049966bb249f65cfafeba357166eb7adc48be2d7bd65c29f1ef15"
+  },
+  "host_module_sha256": {
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "contract": {
+    "training": "Continue consuming original v56 TRAIN causal streams; v57 provides no extra training or policy labels.",
+    "model_visible": "NONE of the v57 evaluator-only fork certificates. v56 input observations remain the only policy observations.",
+    "evaluation": "Check correct chosen action and legal opposite action at identical current input; report both physical material outcomes, mission stage progress, terminal damage and nonterminal incorrect paint separately.",
+    "splits": "Never mix DEV/HELDOUT evaluator-only records into training; retain v53-v56 source split and geometry lineage.",
+    "interpretation": "A one-step synthetic-host branch intervention, NOT closed-loop learned policy success. Correct-action progress and opposite-action regression are replayed in the original host code."
+  },
+  "files": {
+    "TRAIN_host_forks_EVALUATOR_ONLY.jsonl": {
+      "sha256": "3185503d8c43112c4e164e4eda97d4e948d7163cec84294b38c02892e4f8c26d",
+      "bytes": 142112,
+      "rows": 64
+    },
+    "DEV_host_forks_EVALUATOR_ONLY.jsonl": {
+      "sha256": "88d4f9cca47c837bab14ae8135fe9476085b3a0113b2f54cefdfb0f5baf09d6f",
+      "bytes": 53213,
+      "rows": 24
+    },
+    "HELDOUT_host_forks_EVALUATOR_ONLY.jsonl": {
+      "sha256": "89806e0500bfc851bf2ac65f781812ef5b162200fad6ef93d9ff13a0896dfa10",
+      "bytes": 53303,
+      "rows": 24
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "paired_contrasts": 64,
+      "correct_action_forks": 128,
+      "host_confirmed_correct_mission_advances": 128,
+      "wrong_action_forks": 128,
+      "wrong_terminal_failures": 64,
+      "wrong_nonterminal_bad_paints": 64,
+      "wrong_nonterminal_oracle_recoveries": 64,
+      "host_confirmed_wrong_mission_advances": 0,
+      "equal_past_32step_pairs": 0
+    },
+    "DEV": {
+      "paired_contrasts": 24,
+      "correct_action_forks": 48,
+      "host_confirmed_correct_mission_advances": 48,
+      "wrong_action_forks": 48,
+      "wrong_terminal_failures": 24,
+      "wrong_nonterminal_bad_paints": 24,
+      "wrong_nonterminal_oracle_recoveries": 24,
+      "host_confirmed_wrong_mission_advances": 0,
+      "equal_past_32step_pairs": 0
+    },
+    "HELDOUT": {
+      "paired_contrasts": 24,
+      "correct_action_forks": 48,
+      "host_confirmed_correct_mission_advances": 48,
+      "wrong_action_forks": 48,
+      "wrong_terminal_failures": 24,
+      "wrong_nonterminal_bad_paints": 24,
+      "wrong_nonterminal_oracle_recoveries": 24,
+      "host_confirmed_wrong_mission_advances": 0,
+      "equal_past_32step_pairs": 3
+    }
+  },
+  "limitations": [
+    "v57 does not generate fresh geometry or train an SLM, and inherits v56 short-history concentration and symbolic-parse shortcuts.",
+    "One wrong action per fork; a deterministic oracle recovery tests physical recoverability but does not show whether a trained model can recover.",
+    "Synthetic host protected-paint behavior is not native CyberSand and must not be claimed as a gameplay result.",
+    "No pinned LFM/Sprocket neural training, neural CPU RSS/latency, or immutable Actions corpus artifact publication."
+  ]
+}
