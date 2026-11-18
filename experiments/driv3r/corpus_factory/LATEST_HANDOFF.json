@@ -4,52 +4,53 @@
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold_pr": 1,
-  "latest_qualified_corpus": "v52 repeated mid-return surface warnings invalidate host-executed safe paint calibration; supplements v43-v51",
-  "status": "LOCAL_TWO_FULL_GENERATIONS_BYTE_IDENTICAL_INDEPENDENT_ALL_HOST_REPLAY_PASS; remote publication and CI independent",
-  "source": "experiments/driv3r/corpus_factory/realert_v52.js",
-  "audit": "experiments/driv3r/corpus_factory/test_realert_v52.js",
-  "manifest": "experiments/driv3r/corpus_factory/V52_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/REPEATED_ALERT_V52_2026-11-18.md",
+  "latest_qualified_corpus": "v53 deferred cross-surface physical-observation obligation with interleaved warning controls; supplements v43-v52",
+  "source": "experiments/driv3r/corpus_factory/deferred_surface_v53.js",
+  "audit": "experiments/driv3r/corpus_factory/test_deferred_surface_v53.js",
+  "manifest": "experiments/driv3r/corpus_factory/V53_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/DEFERRED_SURFACE_V53_2026-11-18.md",
   "benchmark": {
     "synthetic_not_native_CyberSand": true,
-    "source_worlds": 56,
-    "terminal_synthetic_episodes": 672,
-    "policy_rows": 26856,
-    "train_rows": 14420,
-    "dev_rows": 5488,
-    "heldout_rows": 6948,
-    "host_executed_safe_probe_paints": 1120,
-    "repeated_warnings_while_returning": 504,
-    "second_probe_counterfactual_pairs": 224,
-    "masked_duplicate_train_rows": 6519,
-    "saved_actions_independently_replayed": 26856,
-    "byte_identical_full_generations": 2,
-    "detected_geometry_overlap_prior_v44_to_v51": 0,
-    "cross_split_label_or_geometry_conflicts": 0
+    "worlds": 56,
+    "host_successful_episodes": 1008,
+    "policy_rows": 44788,
+    "host_safe_probe_paints": 2072,
+    "B_physical_causal_pairs": 392,
+    "irrelevant_B_A_negative_pairs": 224,
+    "coincident_A_B_warning_controls": 112,
+    "heldout_max_deferred_age_actions": 88,
+    "source_independent_host_replay_policy_rows": 44788,
+    "full_generations_byte_identical": 2,
+    "zero_weight_TRAIN_duplicates": 11414,
+    "cross_split_conflicts": 0,
+    "v53_geometry_overlap_v44_to_v52": 0
   },
-  "heldout_negative_control": {
-    "episodes": 144,
-    "stale_second_notice_symbolic_success": 84,
-    "stale_second_notice_symbolic_fail_protected_damage": 60,
-    "up_to_date_intervention_oracle_success": 144,
-    "label": "symbolic/host controls, not neural model performance"
+  "negative_control": {
+    "label": "deterministic symbolic, NOT neural",
+    "heldout_B_drift_arms": 84,
+    "wrong_material_if_B_warning_ignored": 84,
+    "successful_reference_oracle_heldout_episodes": 216
   },
-  "reproducibility": {
-    "generator_and_parent_sha256_pinned": true,
-    "six_jsonl_shard_sha256_pinned": true,
-    "splits_geometry_isolated": true,
-    "datasets_in_immutable_actions_artifacts": false,
-    "automatic_training_on_push": false
+  "hashes": {
+    "generator_sha256": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "shards": {
+      "TRAIN_policy.jsonl": "4a2418d5c5699d51897430fa523dfab3dcc91612a6c8ec5ebf27c78135aa34c1",
+      "TRAIN_challenge_EVALUATOR_ONLY.jsonl": "bd8c70f98a749203edc565ce61660a0812ebe771cda8e8a0535abe9aa9b56c62",
+      "DEV_policy.jsonl": "0894d32d3856db4170b12d2fc324c3309ee110e3a12cfbbd4c62bbd9cd703230",
+      "DEV_challenge_EVALUATOR_ONLY.jsonl": "d5d903014ff76beb48989192602265ccf470e7179b061f2297593e2495e27c96",
+      "HELDOUT_policy.jsonl": "cfd840704a7463d14f8ef42c4d7758443968a2b217286b04a6b372d591d08309",
+      "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": "1b4eae3a3928a96f61fe049fb443354bd05beb92938c9578d8475d103cfec978"
+    }
   },
   "model_training": {
-    "root_SLM_optimizer_steps": 0,
+    "actual_target_SLM_optimizer_steps": 0,
     "root_SLM_inference": 0,
     "native_CyberSand_episodes": 0,
-    "neural_p50_p95_latency_RSS": null,
+    "neural_CPU_latency_RSS": null,
     "checkpoint_sha256": null,
     "paid_GPU_or_API_spend": false
   },
-  "known_failure": "Still solvable by a symbolic per-surface timestamped physical-result parser. Warnings are hypothetical externally injected synthetic-host events; no actual SLM training, native evaluation, or immutable Actions shards.",
-  "next_consumer_experiment": "Train pinned named LFM350/Sprocket model on v50+v51 versus v50+v51+v52 TRAIN; evaluate HELDOUT v52 under autonomous closed-loop host, stale-warning and physical-result ablations, no/single/repeat-no-flip/repeat-flip arms, protected-goal damage, PAINT/ERASE/STOP legality, CPU p50/p95 inference and RSS. Pin all weights/tokenizer/checkpoint SHA; keep evaluator-only pairs private. No native claims without independent CyberSand ABI validation.",
-  "authority": "DATA ONLY. DRIV3R PR #1 Draft/HOLD; mutate only experiments/driv3r/corpus_factory/**; CyberSand/Neurounner read-only; no force push, main, merge, paid spend."
+  "known_failure": "Per-surface symbolic temporal/event parser still sufficient; synthetic external alerts unvalidated natively. Training/inference and immutable Actions publication outstanding.",
+  "next_consumer_experiment": "Actual pinned LFM350/Sprocket CPU SLM/adapter training v50-v52 vs v50-v53, heldout closed-loop future-surface warning ablation and material feedback; latency p50/p95 and RSS; strict family grouping and evaluator isolation.",
+  "authority": "DATA ONLY. DRIV3R PR #1 Draft/HOLD; mutate only experiments/driv3r/corpus_factory/**; CyberSand and Neurounner read-only; no force, main or paid spend."
 }
