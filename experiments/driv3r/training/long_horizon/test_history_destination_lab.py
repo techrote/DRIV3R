@@ -1,6 +1,7 @@
 """Focused, source-exact HISTORY-DESTINATION-001 tests (synthetic only)."""
 import unittest
 from pathlib import Path
+from tempfile import TemporaryDirectory
 import numpy as np
 from . import history_destination_lab as lab
 from .world import World, Spec, MOVE
@@ -49,15 +50,18 @@ class HistoryDestinationTests(unittest.TestCase):
                 self.assertIn('BACKTRACK',w.menu(12))
                 self.assertTrue(any(a in MOVE for a in w.menu(12)))
                 self.assertEqual(len(w.decisions),w.steps)
-                self.assertTrue(all(r['chosen'] in r['legal'] and not r['painted']
-                        or r['chosen'] in r['legal'] for r in w.decisions))
+                self.assertTrue(all(r['chosen'] in r['legal'] for r in w.decisions))
 
     def test_checkpoint_restore(self):
-        p=Path('/mnt/data/lh_run12/history_destination_evidence/checkpoints/619-visible.npz')
-        if not p.exists():self.skipTest('local run checkpoint absent')
-        m=lab.Model.load(p)
-        self.assertEqual(m.updates,144)
-        self.assertEqual(sum(x.size for x in m.p.values()),1057)
-        self.assertTrue(all(np.isfinite(z).all() for z in m.p.values()))
+        m=lab.Model(619)
+        with TemporaryDirectory() as td:
+            p=Path(td)/'checkpoint.npz'
+            m.save(p)
+            recovered=lab.Model.load(p)
+            self.assertEqual(recovered.updates,m.updates)
+            self.assertEqual(sum(x.size for x in recovered.p.values()),1057)
+            for k in m.p:
+                self.assertTrue(np.array_equal(m.p[k],recovered.p[k]))
+                self.assertTrue(np.isfinite(recovered.p[k]).all())
 
 if __name__=='__main__':unittest.main()
