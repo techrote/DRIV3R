@@ -1,0 +1,24 @@
+{
+  "artifacts_only_sha256": {
+    "C49-ALIGNED.safetensors": "601f57e3409786c7fbc4c8ea26a5322bfbfd878d83d7ad5c710d6ca9e7f64121",
+    "C49-SHUFFLED.safetensors": "af7364f6314df21d871634fcc83e873d03b4430738511a8b5d914f1b15e94018"
+  },
+  "checkpoint_custody": "local archive only; GitHub Actions artifact custody outstanding",
+  "files_sha256": {
+    "C49-curated-paths.json": "66f75f58dc4be4d084b1feb5d6b5ff9ecfb6f1efed030e57cc5f7aea1294d51e",
+    "C49-gallery.svg": "1e9632058ce6ca70cb7d77dd025a44b1246a4836791cfc3718be62b2b8341862",
+    "C49-midtrajectory-host-recovery-2026-11-17.md": "4ec5737ef29ec8e8b1c76629e0d22591eb74491e070751504d588cce255262e3",
+    "C49-summary.json": "57aa99965645bf17e30fecd98d5ac664305ca3258a3b74bf3d020f4970935ac6",
+    "c49_midtrajectory_correction.py": "965c55ca177f86a2464c0d8801caae13228338ec9ccd363a5cc564f90971d1ca",
+    "c49_trajectory_gallery.py": "e957724053b81b00a879d4a1e873d9fab81ff3ac4d309222414ea09bd5b4d074",
+    "test_c49_midtrajectory_correction.py": "128aa54536f03a3c0b197eff71cb10578f7e2ea3256257ea2e8f6d3a9dc90735"
+  },
+  "generated_utc": "2026-11-17",
+  "git_upload_status": "pending",
+  "publication_scope": "techrote/DRIV3R PR #1 / experiments/driv3r/training/guidance_recovery",
+  "replay_count": 18,
+  "research_only": true,
+  "run_training_replication": "two independent optimizer executions compared by torch.equal at training stage; checkpoint hashes in ledger",
+  "schema": "driv3r-c49-evidence-receipt/1",
+  "source_matched_draft_hold": true
+}

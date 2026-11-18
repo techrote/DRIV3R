@@ -1,0 +1,335 @@
+{
+  "blind": {
+    "C49-ALIGNED": {
+      "actual_advantage_over_A0": -2,
+      "n": 36,
+      "selected_RESET": 3,
+      "selected_losses": 2,
+      "selected_wins": 0
+    },
+    "C49-RANDOM": {
+      "actual_advantage_over_A0": -1,
+      "n": 36,
+      "selected_RESET": 3,
+      "selected_losses": 1,
+      "selected_wins": 0
+    },
+    "C49-SHUFFLED": {
+      "actual_advantage_over_A0": 0,
+      "n": 36,
+      "selected_RESET": 0,
+      "selected_losses": 0,
+      "selected_wins": 0
+    }
+  },
+  "checkpoints_sha256": {
+    "C49-ALIGNED": "601f57e3409786c7fbc4c8ea26a5322bfbfd878d83d7ad5c710d6ca9e7f64121",
+    "C49-SHUFFLED": "af7364f6314df21d871634fcc83e873d03b4430738511a8b5d914f1b15e94018"
+  },
+  "cohorts": [
+    {
+      "graphs": 16,
+      "name": "ID",
+      "prefix_states": 21,
+      "records": 588
+    },
+    {
+      "graphs": 8,
+      "name": "OOD",
+      "prefix_states": 6,
+      "records": 168
+    }
+  ],
+  "graph_set_sha256": {
+    "blind": "749e6308c636c31c71edfb818a5b4136e5b675914bb1bbcaaea0e9d5c7958f6d",
+    "online": "8e51411d46cdeaa09e62a505f75f127b422a9342d2fc71fd213fb222707c852c",
+    "train": "59ce151d7b3a3b72d7f5d72787710f0183f4d10f52babf99282b66ada4650a76"
+  },
+  "graphs": {
+    "blind": 8,
+    "online": 24,
+    "train": 46
+  },
+  "limitations": [
+    "Synthetic host only: no native CyberSand or physical actor acceptance",
+    "Counterfactual advice begins after host-legal prefixes and explicit host goal-change/correction events, but suffixes reset RNG stream and clock to zero; not a continuous 78-tick live host intervention",
+    "Goal switching occurs between prefix and suffix; the suffix contains one fixed terminal goal",
+    "Episode suffix performance differs from full long-horizon worm gameplay",
+    "Recovery corpus samples stochastic natural host-executed prefixes; population is enriched by an explicit host goal-change/cue event",
+    "Bootstrap intervals are descriptive and not multiplicity-adjusted",
+    "Non-guided parity does not prove active-guidance whole-path personality retention",
+    "Historical d_common fixture is not native canonical ABI",
+    "No immutable GitHub Actions checkpoint custody"
+  ],
+  "models": {
+    "C18-A0": {
+      "by_family": {
+        "braid": 12,
+        "kruskal": 0,
+        "prim": 3,
+        "prim_braid": 0,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_episodes": 81,
+      "guided_goal_events": 21,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 121,
+      "preferred_ink": 125,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 0,
+      "unguided_exact": 27
+    },
+    "C34-RESET": {
+      "by_family": {
+        "braid": 12,
+        "kruskal": 0,
+        "prim": 4,
+        "prim_braid": 1,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 0,
+      "guided_episodes": 81,
+      "guided_goal_events": 23,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 113,
+      "preferred_ink": 123,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 81,
+      "unguided_exact": 27
+    },
+    "C40-PAIR": {
+      "by_family": {
+        "braid": 13,
+        "kruskal": 0,
+        "prim": 7,
+        "prim_braid": 2,
+        "tree": 4,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 0,
+      "guided_episodes": 81,
+      "guided_goal_events": 32,
+      "mean_personality_shift": 0.009589392698200774,
+      "opposed_ink": 133,
+      "preferred_ink": 137,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 0,
+      "unguided_exact": 27
+    },
+    "C49-ALIGNED": {
+      "by_family": {
+        "braid": 13,
+        "kruskal": 0,
+        "prim": 3,
+        "prim_braid": 1,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 1,
+      "guided_episodes": 81,
+      "guided_goal_events": 23,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 110,
+      "preferred_ink": 121,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 13,
+      "unguided_exact": 27
+    },
+    "C49-CONSERVATIVE": {
+      "by_family": {
+        "braid": 12,
+        "kruskal": 0,
+        "prim": 3,
+        "prim_braid": 0,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_episodes": 81,
+      "guided_goal_events": 21,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 121,
+      "preferred_ink": 125,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 0,
+      "unguided_exact": 27
+    },
+    "C49-RANDOM": {
+      "by_family": {
+        "braid": 11,
+        "kruskal": 0,
+        "prim": 3,
+        "prim_braid": 0,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_episodes": 81,
+      "guided_goal_events": 20,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 118,
+      "preferred_ink": 125,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 14,
+      "unguided_exact": 27
+    },
+    "C49-SHUFFLED": {
+      "by_family": {
+        "braid": 12,
+        "kruskal": 0,
+        "prim": 3,
+        "prim_braid": 0,
+        "tree": 0,
+        "wilson": 6
+      },
+      "condition_regressions_vs_RESET": 3,
+      "guided_episodes": 81,
+      "guided_goal_events": 21,
+      "mean_personality_shift": 0.0,
+      "opposed_ink": 117,
+      "preferred_ink": 121,
+      "raw_illegal_top1": 0,
+      "selected_RESET": 4,
+      "unguided_exact": 27
+    }
+  },
+  "paired_differences": {
+    "C49-ALIGNED__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -3.0,
+        3.0
+      ],
+      "goal_delta": 0,
+      "negative_graphs": 1,
+      "positive_graphs": 1
+    },
+    "C49-ALIGNED__C49-SHUFFLED": {
+      "bootstrap_95_descriptive": [
+        0.0,
+        5.0
+      ],
+      "goal_delta": 2,
+      "negative_graphs": 0,
+      "positive_graphs": 2
+    },
+    "C49-RANDOM__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -6.0,
+        0.0
+      ],
+      "goal_delta": -3,
+      "negative_graphs": 3,
+      "positive_graphs": 0
+    },
+    "C49-RANDOM__C49-SHUFFLED": {
+      "bootstrap_95_descriptive": [
+        -3.0,
+        0.0
+      ],
+      "goal_delta": -1,
+      "negative_graphs": 1,
+      "positive_graphs": 0
+    },
+    "C49-SHUFFLED__C34-RESET": {
+      "bootstrap_95_descriptive": [
+        -6.0,
+        2.0
+      ],
+      "goal_delta": -2,
+      "negative_graphs": 3,
+      "positive_graphs": 1
+    }
+  },
+  "predecessor": {
+    "C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184"
+  },
+  "schema": "driv3r-c49-midtrajectory-correction/1",
+  "skipped_prefixes": {
+    "ID": {
+      "early_terminal": 11
+    },
+    "OOD": {
+      "early_terminal": 10
+    },
+    "blind": {
+      "early_terminal": 7
+    },
+    "train": {
+      "early_terminal": "not retained during completed training"
+    }
+  },
+  "source_sha256": "965c55ca177f86a2464c0d8801caae13228338ec9ccd363a5cc564f90971d1ca",
+  "training": {
+    "aligned": {
+      "epoch_losses": [
+        3.405423,
+        3.481664,
+        3.337879,
+        3.054061,
+        3.330679,
+        3.217577,
+        3.256373,
+        3.156661,
+        3.099116,
+        3.253276,
+        3.117225,
+        2.933578,
+        2.901409,
+        2.929861,
+        2.766069,
+        2.753032,
+        2.576528,
+        2.839903,
+        3.216818,
+        2.779417,
+        2.794276,
+        2.619823,
+        2.564628,
+        2.590359
+      ],
+      "optimizer_updates": 120
+    },
+    "deltas": {
+      "-1": 15,
+      "0": 102,
+      "1": 21
+    },
+    "examples": 138,
+    "graphs": 46,
+    "normalization_sha256": "38dec5b20a3f83bdb357b416a764e6c687ef3eb2f733861bf39b443c00f9a612",
+    "shuffled": {
+      "epoch_losses": [
+        3.707341,
+        3.701431,
+        3.498754,
+        3.49247,
+        3.40357,
+        3.26943,
+        3.383961,
+        3.302375,
+        3.330251,
+        3.335573,
+        3.246256,
+        3.449998,
+        3.161119,
+        3.091125,
+        3.073111,
+        3.109816,
+        3.328615,
+        3.147293,
+        3.302029,
+        3.081148,
+        3.007661,
+        3.032117,
+        3.039184,
+        2.962433
+      ],
+      "optimizer_updates": 120
+    },
+    "shuffled_targets_sha256": "911bb590671cb92421b82ca9db72b3c774d2f5df6097b0a019eda3f15794dd32",
+    "targets_sha256": "2749ccd7efd1cc000069fa6c3f783fdf24458ef918cd1eb9dbaacb99eab9b3db"
+  }
+}
