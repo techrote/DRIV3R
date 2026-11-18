@@ -1,0 +1,34 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "checkpoint_sha256": {
+    "ALIGNED": "e305c1ee36d8f9b336a15ac8cd6a873afb95988869d4ceeefde87940c45ad4bd",
+    "SHUFFLED": "198d809559ffce7974969777b95a9cae8e333ce0b595faf81ee70a825d16000d"
+  },
+  "full_ledger_uncompressed_bytes": 595372,
+  "full_ledger_uncompressed_sha256": "98e7613c7bce09f0560f6f039d982f541c429b49b6a8d252edb32bb5c9066bad",
+  "gallery_verified_panels": 16,
+  "limitations": [
+    "No native CyberSand execution",
+    "No Actions checkpoint artifacts",
+    "Previously adaptive synthetic research"
+  ],
+  "owner": "experiments/driv3r/training/guidance_recovery/**",
+  "pr": 1,
+  "publication_sha256": {
+    "C60-evidence-receipt.json": "b1b0d81ad564c558c9d73e26b2b8f1ebe1327e90cc5a29c55f408b986c7be25c",
+    "C60-executed-ledger.zlib.b64": "491b5a6d36e3d4483ed91e32ba6e17b0da38cdb7627baa1a9f3dc108265cb753",
+    "C60-extract-ledger.py": "7a2e28cbe2a9de3e551ab64876ffb06840461ad94dbadebd8df1a50e0c948295",
+    "C60-gallery.svg": "92e62a74d8283a491f6af8ebb52fafc4b356e818f07abe48b876b777ac0fedf3",
+    "C60-historical-graph-exclusions.json": "346e9d16fe66602e872dcd8432102299e5aaca210c30a4913326f349dd515f3c",
+    "C60-remote-frontier-policy-gradient-2026-11-18.md": "b6eb50155519496d1046ffb8d6dbf460798555f506c4438f7cce151bc049957a",
+    "C60-summary.json": "c2a4dac75578ebd185899cbc0c23755dc167e12a083bb32901caeafcac4832f7",
+    "c60_gallery.py": "10db1e588f255aafd42cdf4841ef7df27dc8671fedf225c497df06534adf7780",
+    "c60_remote_frontier_rl.py": "988dcc5b168c52b91103791c65e2fc578b1c2dfca9b2e69230dee931308f95ad",
+    "test_c60_remote_frontier_rl.py": "fdddfaa93456916dd4bcc229a5dbebeebee4a72764ada78e019ebaeef722acf2"
+  },
+  "refit_exact_tensors": true,
+  "repo": "techrote/DRIV3R",
+  "schema": "driv3r-c60-custody/1",
+  "source_sha256": "988dcc5b168c52b91103791c65e2fc578b1c2dfca9b2e69230dee931308f95ad",
+  "tests": "6 passed"
+}
