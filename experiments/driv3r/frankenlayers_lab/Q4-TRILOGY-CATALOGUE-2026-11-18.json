@@ -1,0 +1,209 @@
+{
+  "schema": "driv3r/frankenlayers-q4-trilogy-catalogue/1",
+  "dated": "2026-11-18",
+  "status": "THREE_TIERS_ORIGINAL_ARTIFACTS_INDEPENDENTLY_AUDITED_FINAL",
+  "repo": "techrote/DRIV3R",
+  "pr": 1,
+  "branch": "research/import-consolidated-worm-labs",
+  "qualification": "Real compiled official Q4 inference and synthetic closed-loop W0 game host; NOT native CyberSand",
+  "host": {
+    "contract": "cybersand.worm.observation-action/0-experimental",
+    "folds": [
+      {
+        "seed": 7703,
+        "family": "pipework"
+      },
+      {
+        "seed": 8807,
+        "family": "greebles"
+      }
+    ],
+    "budget_per_case": 24,
+    "host_applied_raw_legal_choices": "304/304",
+    "completed_cases": "22/24",
+    "failed_cases": "2/24 (GREY2_CUT context initialization, both worlds)",
+    "causal_host_trace": true,
+    "no_posthoc_heuristics": true
+  },
+  "fixed_model": {
+    "source": "LiquidAI/d1-2B-GGUF",
+    "revision": "4a181094d1b6addfaa3a0956f78e7ab2aa406a0c",
+    "quant": "official vendor Q4_K_M, not Q8-requantized",
+    "bytes": 1099629888,
+    "sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b"
+  },
+  "binary": {
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "kind": "compiled llama.cpp graph-selection patch",
+    "weights_physically_removed": false,
+    "entire_skipped_blocks_not_computed": true,
+    "base_weights_modified": false
+  },
+  "stage_artifacts": [
+    {
+      "tier": "upper",
+      "run": 44202739826,
+      "artifact_id": 14381663329,
+      "source_sha": "e704fb8b4f450becf0b7613a26c70ad42b2f1f12",
+      "zip_sha256": "7091428bbedb92e486e8b41925277660a894feb6c19387fe3641f201c787ecea",
+      "manifest": "84/84",
+      "real_legal": "60/60"
+    },
+    {
+      "tier": "middle",
+      "run": 44253735083,
+      "artifact_id": 14405820902,
+      "source_sha": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
+      "zip_sha256": "ceefd282f64e14bf05fc9b7da4188fdd5269009473058b77872222422ab25688",
+      "manifest": "84/84",
+      "real_legal": "146/146"
+    },
+    {
+      "tier": "extreme",
+      "run": 44307129291,
+      "artifact_id": 14429156993,
+      "source_sha": "fa98269f8d2db827eed4df984a23ecea9515bc1d",
+      "zip_sha256": "ad481236a3d47aface28485771db0b2ab8ef65eff366db40a8b40db045672fd5",
+      "manifest": "70/70",
+      "real_legal": "98/98",
+      "failed_cases": 2
+    }
+  ],
+  "raw_file_template": "Inside each stage's original Actions artifact: trajectories/{seed}-{family}/{mode}/{mode}-{family}-choices.json, {mode}-{family}.json, {mode}-{family}.png, observed-path.json, observed-path.svg, result.json; GREY2_CUT has only process/server.log and result.json",
+  "candidates": [
+    {
+      "mode": "stock",
+      "blocks": 24,
+      "mask": "0..23",
+      "result": "STOP tick 0 both worlds in all three stages",
+      "status": "NEGATIVE"
+    },
+    {
+      "mode": "greyhound",
+      "blocks": 13,
+      "mask": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        10,
+        14,
+        18,
+        20,
+        22,
+        23
+      ],
+      "result": "24 LEFT actions per fold, 3 new cells and 21 revisits each; compact square loop",
+      "status": "NEGATIVE"
+    },
+    {
+      "mode": "grey10_cut",
+      "blocks": 10,
+      "mask": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        14,
+        20,
+        23
+      ],
+      "result": "STOP at tick 4 / 2; 2 / 1 new cells",
+      "status": "NEGATIVE"
+    },
+    {
+      "mode": "grey8_cut",
+      "blocks": 8,
+      "mask": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        10,
+        20,
+        23
+      ],
+      "result": "Immediate STOP both folds",
+      "status": "NEGATIVE"
+    },
+    {
+      "mode": "grey6_cut",
+      "blocks": 6,
+      "mask": [
+        0,
+        2,
+        4,
+        8,
+        10,
+        20
+      ],
+      "result": "24 decision budget both folds, 3 new cells each, RIGHT square loop",
+      "status": "NEGATIVE"
+    },
+    {
+      "mode": "aero4_no2",
+      "blocks": 4,
+      "mask": [
+        0,
+        4,
+        10,
+        20
+      ],
+      "result": "24/24 decisions, 21/16 new cells; BRANCH 21/14, RETRACE 3/5; p50 0.397/0.390 s, p95 0.402/0.402 s",
+      "status": "PROMISING_SYNTHETIC_NOT_NICHE_ACCEPTED"
+    },
+    {
+      "mode": "grey3_cut",
+      "blocks": 3,
+      "mask": [
+        0,
+        4,
+        10
+      ],
+      "result": "24/24 decisions, 10/18 new cells; BRANCH 4/9, LEFT 15/12, RETRACE 5/3; p50 0.274/0.278 s, p95 0.281/0.289 s; 5 two-step oscillations in greebles",
+      "status": "PROMISING_SYNTHETIC_NOT_NICHE_ACCEPTED"
+    },
+    {
+      "mode": "grey2_cut",
+      "blocks": 2,
+      "mask": [
+        0,
+        10
+      ],
+      "result": "FAILED both worlds before HTTP inference: llama context lacks full/sliding attention ballast; no choices, trajectories, latency or post-ready RSS",
+      "status": "ARCHITECTURAL_INCOMPATIBILITY"
+    }
+  ],
+  "niche_assessments": {
+    "MEANDERER": "unverified",
+    "CURLER": "unverified",
+    "BRANCHER": "unverified; AERO4_NO2 and GREY3 are trace review prospects only",
+    "CHAOTIC_ARTIST": "unverified"
+  },
+  "caveats": [
+    "Post-ready sampled RSS around 1.87 million KiB is not true process lifetime peak; full Q4 weights are still loaded",
+    "Reported input token throughput is prefill-only; output tokens=0 so ordinary generation tok/s is not measured",
+    "Early STOP stock makes speed superiority less indicative of useful gameplay; later-world trajectories diverge on-policy",
+    "These two short synthetic folds cannot establish behavioural generalisation or native host acceptance",
+    "No two-block result is present; startup failure retained exactly; no automated retries or extra tier"
+  ],
+  "next_consumers": {
+    "preference_lab": "Blind independent review of original per-case SVG/JSON/PNG without forcing niche labels; evaluate multi-seed novel trajectories",
+    "extreme_quant": "Benchmark 4/3-block sparse graphs with lower-bit variants using same-runner matched controls; keep artifact provenance",
+    "distillation": "Use AERO4_NO2 and GREY3 as tentative teachers/candidates only after separate held-out task/protected-cell/goal validation"
+  },
+  "completion": {
+    "repeat_q4_tiers": false,
+    "requested_tiers_complete": true,
+    "recurrence_should_stop": true,
+    "no_repo_merge": true
+  }
+}
