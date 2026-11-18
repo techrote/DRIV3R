@@ -2,7 +2,7 @@
   "schema": "driv3r/frankenlayers-latest-handoff/v1",
   "dated": "2026-11-18",
   "lab": "frankenlayers_lab",
-  "status": "Q4_UPPER_REAL_INFERENCE_VERIFIED_SCIENTIFICALLY_NEGATIVE_MIDDLE_RATE_LIMITED",
+  "status": "Q4_MIDDLE_REAL_INFERENCE_VERIFIED_EXTREME_RATE_LIMITED",
   "repository": "techrote/DRIV3R",
   "pr": 1,
   "branch": "research/import-consolidated-worm-labs",
@@ -24,9 +24,9 @@
   "fresh_candidate_catalogue": "run-request-wave20.json",
   "manual_inference_driver": "wave20_structural.py",
   "source_test": "test_wave20_structural.py",
-  "actual_new_inference": "YES; real compiled CPU Q4 upper tier, Actions run 44202739826 at e704fb8b4f450becf0b7613a26c70ad42b2f1f12; no new inference executed during 2026-11-18 custody review.",
-  "precise_blocker": "No execution infrastructure blocker: repaired upper Q4 real inference successful and 84/84 payloads custody checked; next tier prohibited before 2026-11-18T05:49:47Z by six-hour request cadence.",
-  "next_consumer": "After next eligibility, check queued/running runs and exact branch/request, and submit at most one middle request with frozen Q4 runtime/folds/steps; retain negative 6/4 evidence. Provide source/original art references only to Preference Lab and Extreme Quant/Distillation; no niche claims.",
+  "actual_new_inference": "Real Q4 middle tier completed in Actions run 44253735083 at cd642b7d319c80526eb97e980e5401d9fb0c74e2 (reviewed now); this custody review performed no additional inference.",
+  "precise_blocker": "No infrastructure blocker. Rate fence: middle inference started 2026-11-18T06:45:47Z; next permitted new Q4 model request at or after 2026-11-18T12:45:47Z, subject to fresh no-running-job and branch-HEAD checks.",
+  "next_consumer": "At next eligible review, recheck all Q4 runs, request file blob SHA and branch head; submit exactly one extreme 3/2 layer request only if no running/queued campaign, keeping donor SHA, CPU, W0 folds 7703/8807, 24 steps, max_parallel=1. After extreme original artifact audit freeze verified original SVG/PNG/JSON catalogue and stop recurrence. Send only references to Preference/Extreme Quant/Distillation; no unsupported niche claims.",
   "exclusions": [
     "No native CyberSand acceptance",
     "No novel model scores",
@@ -148,5 +148,136 @@
     "performance_caveats": "Input prefill tokens/sec measured, generation output tokens 0; post-ready RSS 1.87M KiB, no weights removed; STOP-only stock Q4 limits comparative interpretation; no verified personality niche.",
     "evidence_ledger": "Q4-UPPER-EVIDENCE-2026-11-18.md"
   },
-  "next_eligible_request_utc": "2026-11-18T05:49:47Z"
+  "next_eligible_request_utc": "2026-11-18T05:49:47Z",
+  "q4_middle_verified": {
+    "run_id": 44253735083,
+    "source_sha": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
+    "artifact_id": 14405820902,
+    "artifact_zip_sha256": "ceefd282f64e14bf05fc9b7da4188fdd5269009473058b77872222422ab25688",
+    "manifest_entries_verified": "84/84",
+    "raw_and_host_legal_decisions": "146/146",
+    "request_nonce": "middle-20261118T0643Z-six-four-ablation",
+    "started_at": "2026-11-18T06:45:47Z",
+    "model_quant": "official vendor Q4_K_M, not Q8-derived",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "model_bytes": 1099629888,
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "host": "synthetic W0, NOT native CyberSand",
+    "folds": [
+      [
+        7703,
+        "pipework"
+      ],
+      [
+        8807,
+        "greebles"
+      ]
+    ],
+    "cases": {
+      "stock": {
+        "layers": 24,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "first_STOP_tick": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          2.336,
+          2.335
+        ]
+      },
+      "greyhound": {
+        "layers": 13,
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "revisits": [
+          21,
+          21
+        ],
+        "p50_seconds": [
+          1.395,
+          1.396
+        ],
+        "failure": "LEFT loop 24/24 both worlds"
+      },
+      "grey6_cut": {
+        "layers": 6,
+        "executed_source_layers": [
+          0,
+          2,
+          4,
+          8,
+          10,
+          20
+        ],
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "revisits": [
+          21,
+          21
+        ],
+        "p50_seconds": [
+          0.611,
+          0.615
+        ],
+        "failure": "RIGHT loop 23/24 and 24/24"
+      },
+      "aero4_no2": {
+        "layers": 4,
+        "executed_source_layers": [
+          0,
+          4,
+          10,
+          20
+        ],
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          21,
+          16
+        ],
+        "revisits": [
+          0,
+          3
+        ],
+        "branches": [
+          21,
+          14
+        ],
+        "retraces": [
+          3,
+          5
+        ],
+        "p50_seconds": [
+          0.397,
+          0.39
+        ],
+        "caveat": "24-step synthetic branch/retrace candidate only; no native/goal/personality acceptance"
+      }
+    },
+    "evidence_report": "Q4-MIDDLE-EVIDENCE-2026-11-18.md",
+    "independent_audit": "zip SHA, all SHA256SUMS payloads, normalized probability, raw-to-applied host choice legality, HTTP 200 and event/decision count"
+  }
 }
