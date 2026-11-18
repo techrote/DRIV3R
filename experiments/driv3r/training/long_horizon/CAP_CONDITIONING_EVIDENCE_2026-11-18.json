@@ -1,0 +1,239 @@
+{
+  "analytic_stack_oracle_accuracy": 1.0,
+  "arms": [
+    "paired",
+    "static",
+    "cap_blind"
+  ],
+  "checkpoint_sha256": {
+    "833-cap_blind.npz": "799f724f57ff443b5eac3ac47246b9267b9bb7cceb87240dd0059d8a7710c9fd",
+    "833-paired.npz": "10eea42635e7d099948133aed23cd53358c9565ad55eddd4192cf6f96e6d6093",
+    "833-static.npz": "69c520e50959b7560fa7b238f0535097920443b2bd16a63f690b7e13f2171f85",
+    "834-cap_blind.npz": "82bd25b17c7f9e27eb8a63bfdcdaa43d4cba7b4ac513c672d70369de29399924",
+    "834-paired.npz": "d0bb2f97f82b51b7c1bcc3abf720d4878b24c7fc81c676f694cce5865bbf5306",
+    "834-static.npz": "222093acc5c8c21036a3111b81ec1bc20d43ca012291be2d1fbe09176c18ce88"
+  },
+  "checkpoints_in_git": false,
+  "date": "2026-11-18",
+  "development_cap_values": [
+    1,
+    3,
+    5
+  ],
+  "evaluation_summary": {
+    "cap_blind": {
+      "actions": {
+        "BACKTRACK": 1383,
+        "STOP": 1497
+      },
+      "by_budget": {
+        "1": {
+          "correct": 811,
+          "futile_backtrack": 149,
+          "n": 960,
+          "oracle_recoverable": 312
+        },
+        "3": {
+          "correct": 941,
+          "futile_backtrack": 0,
+          "n": 960,
+          "oracle_recoverable": 480
+        },
+        "5": {
+          "correct": 917,
+          "futile_backtrack": 0,
+          "n": 960,
+          "oracle_recoverable": 504
+        }
+      },
+      "choice_order_inversions": 0,
+      "correct": 2669,
+      "n": 2880,
+      "off_task_first": 0,
+      "probability_nonmonotone": 0,
+      "wrong_futile_backtrack": 149,
+      "wrong_stops_reachable": 62
+    },
+    "paired": {
+      "actions": {
+        "BACKTRACK": 1193,
+        "STOP": 1687
+      },
+      "by_budget": {
+        "1": {
+          "correct": 907,
+          "futile_backtrack": 9,
+          "n": 960,
+          "oracle_recoverable": 312
+        },
+        "3": {
+          "correct": 912,
+          "futile_backtrack": 0,
+          "n": 960,
+          "oracle_recoverable": 480
+        },
+        "5": {
+          "correct": 940,
+          "futile_backtrack": 0,
+          "n": 960,
+          "oracle_recoverable": 504
+        }
+      },
+      "choice_order_inversions": 0,
+      "correct": 2759,
+      "n": 2880,
+      "off_task_first": 0,
+      "probability_nonmonotone": 284,
+      "wrong_futile_backtrack": 9,
+      "wrong_stops_reachable": 112
+    },
+    "static": {
+      "actions": {
+        "BACKTRACK": 1489,
+        "STOP": 1391
+      },
+      "by_budget": {
+        "1": {
+          "correct": 775,
+          "futile_backtrack": 185,
+          "n": 960,
+          "oracle_recoverable": 312
+        },
+        "3": {
+          "correct": 944,
+          "futile_backtrack": 16,
+          "n": 960,
+          "oracle_recoverable": 480
+        },
+        "5": {
+          "correct": 952,
+          "futile_backtrack": 0,
+          "n": 960,
+          "oracle_recoverable": 504
+        }
+      },
+      "choice_order_inversions": 1,
+      "correct": 2671,
+      "n": 2880,
+      "off_task_first": 0,
+      "probability_nonmonotone": 952,
+      "wrong_futile_backtrack": 201,
+      "wrong_stops_reachable": 8
+    }
+  },
+  "evidence_full_archive_files_sha256": {
+    "SHA256SUMS.json": "6aebad3c7a26db1bdf4575e4afb1edc5b40f70c283ecfdd3085f629c26b64139",
+    "decisions.json": "c4f740b8cd40f27e099421aeaa735f5a33883e4906ae322fe52c9034746e5814",
+    "report.json": "5afc0d2881223c6605e641ea1d422444d0bbbb9e388eb011814940b34bb85a4f",
+    "trajectories.json": "351086039f5ae6c3fc0768f01cdd3505213b836ea491e8ccf79474e3895cd940"
+  },
+  "experiment": "CAP-CONDITIONING-001",
+  "gallery_source_svg_sha256": "7f5f8524c8003bbfd7555b9611d774e71acb51ff10345fcabc527512e889cd9d",
+  "heldout_opened": false,
+  "immutable_actions_artifact": false,
+  "model_only_median_ms": 0.017035,
+  "model_only_p95_ms": 0.032038,
+  "native_game_run": false,
+  "nominal_training_stages": [
+    36,
+    72,
+    128
+  ],
+  "notes": [
+    "Variable max_recoveries is only a synthetic fixture intervention, not a native CyberSand API.",
+    "Deterministic stack depth oracle is an analytic comparator; task-specific STOP is not general game policy.",
+    "Synthetic generated prehistories and a 7-step continuation do not prove sustained 72-128-decision autonomy.",
+    "Checkpoint archive is local, not immutable GitHub Actions artifact."
+  ],
+  "optimizer_updates_each_checkpoint": 288,
+  "paired_bootstrap_by_motif": {
+    "cap_blind_minus_static": {
+      "independent_motifs": 20,
+      "mean": -0.00069,
+      "motif_bootstrap_95": [
+        -0.01285,
+        0.01215
+      ]
+    },
+    "paired_minus_static": {
+      "independent_motifs": 20,
+      "mean": 0.03056,
+      "motif_bootstrap_95": [
+        -0.00174,
+        0.06563
+      ]
+    }
+  },
+  "peak_rss_kib": 191900,
+  "seed_disaggregation": {
+    "833": {
+      "cap_blind": {
+        "correct": 1332,
+        "futile_backtrack": 72,
+        "missed_reachable": 36,
+        "n": 1440
+      },
+      "paired": {
+        "correct": 1411,
+        "futile_backtrack": 9,
+        "missed_reachable": 20,
+        "n": 1440
+      },
+      "static": {
+        "correct": 1335,
+        "futile_backtrack": 101,
+        "missed_reachable": 4,
+        "n": 1440
+      }
+    },
+    "834": {
+      "cap_blind": {
+        "correct": 1337,
+        "futile_backtrack": 77,
+        "missed_reachable": 26,
+        "n": 1440
+      },
+      "paired": {
+        "correct": 1348,
+        "futile_backtrack": 0,
+        "missed_reachable": 92,
+        "n": 1440
+      },
+      "static": {
+        "correct": 1336,
+        "futile_backtrack": 100,
+        "missed_reachable": 4,
+        "n": 1440
+      }
+    }
+  },
+  "source_file_sha256": {
+    "budget_calibration_lab.py": "89de8ab12b5217ffb46307f5b10d3299c20381839e578ab2f7c3315af9846f3f",
+    "cap_conditioning_gallery.py": "c30b9e5f2864600b5ba4447cd1046e0f91b4328295a50e3cd180311ea8bd78e1",
+    "cap_conditioning_lab.py": "6c3ffe5c737d1ed5b47caeefc75c0b74ea07cfb72836814740abf34b1aeeebe9",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "history_alias_lab.py": "98e41672fe4283e35fa5e2ce32263407d35c5a860d9a04231ebfbcddf9c04fdf",
+    "history_destination_lab.py": "ffadeae9944a7f9ba1122a7351eab71b79cfc745724bb3326cb29a2767137546",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "test_cap_conditioning_lab.py": "3ed8c7b9291e4e862b56579341b609d0579729393571c147e8c8539f3a872beb",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "source_head_before_run": "9ed4d813565e24cab41fcc41d5f90c1c91c76b43",
+  "summary": "Futile backtrack 201->9 but recoverable goal misses 8->112; +3.06pp first-decision accuracy, motif bootstrap includes zero; sampled goal hits 49/63 on all arms.",
+  "train_wall_s": 10.565,
+  "training_and_evaluation_wall_s": 19.087,
+  "training_cap_values": [
+    2,
+    4,
+    6
+  ],
+  "training_seeds": [
+    833,
+    834
+  ],
+  "verified_action_receipts": 245,
+  "verified_continuations": 189,
+  "verified_probability_vectors": 8640
+}
