@@ -1,0 +1,125 @@
+{
+  "schema": "driv3r/corpus_factory/active-probe-v51/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "active_probe_v51.js",
+  "generator_sha256": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+  "parents": [
+    {
+      "file": "online_recovery_v50.js",
+      "sha256": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae"
+    },
+    {
+      "file": "contextual_probe_v49.js",
+      "sha256": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761"
+    },
+    {
+      "file": "empirical_tool_v48.js",
+      "sha256": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3"
+    },
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "contract": {
+    "input": "Only policy.input is model-visible; action/weight training labels; never train on evaluator-only challenge rows.",
+    "action_space": "Same host legal movement, PAINT_A, PAINT_B, ERASE, STOP. No new policy action token.",
+    "grouping": "Retain train/dev/heldout source split and group by source_seed/geometry_sha256 across all corpus versions; v51 sources use v46 candidate indices >=300.",
+    "active_probe": "A non-diagnostic surface alert is visible at a target. Teacher returns through its observed graph to the safe site, issues actual PAINT_A, receives the host physical result, ERASEs, returns, and selects material-correct target paint.",
+    "protection": "Synthetic protected-goal test: wrong physical paint after a surface warning terminates the episode unsuccessfully; no failed examples disguised as successes.",
+    "negatives": "Warning with no law change must still cause safe validation but must not change the correct material command. No-alert baseline avoids unnecessary probe.",
+    "causal": "Matched no-drift/drift arms are input-identical before the safe probe; after it, removing the new physical outcome makes target inputs identical although legal correct commands differ.",
+    "leak": "Hidden mapping/flip/protection-damage and scenario labels appear only in evaluator metadata, never in input."
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "successful_synthetic_episodes": 432,
+      "policy_decisions": 16816,
+      "active_host_probe_paints": 480,
+      "protected_correct_goal_paints": 864,
+      "causal_A_probe_pairs": 48,
+      "causal_B_probe_pairs": 48,
+      "causal_joint_probe_pairs": 48,
+      "reverse_prior_probe_pairs": 48,
+      "warning_without_drift_negative_controls": 96,
+      "train_exact_repeats_zero_weight": 7708
+    },
+    "DEV": {
+      "worlds": 16,
+      "successful_synthetic_episodes": 144,
+      "policy_decisions": 6196,
+      "active_host_probe_paints": 160,
+      "protected_correct_goal_paints": 288,
+      "causal_A_probe_pairs": 16,
+      "causal_B_probe_pairs": 16,
+      "causal_joint_probe_pairs": 16,
+      "reverse_prior_probe_pairs": 16,
+      "warning_without_drift_negative_controls": 32,
+      "train_exact_repeats_zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "successful_synthetic_episodes": 144,
+      "policy_decisions": 7358,
+      "active_host_probe_paints": 160,
+      "protected_correct_goal_paints": 288,
+      "causal_A_probe_pairs": 16,
+      "causal_B_probe_pairs": 16,
+      "causal_joint_probe_pairs": 16,
+      "reverse_prior_probe_pairs": 16,
+      "warning_without_drift_negative_controls": 32,
+      "train_exact_repeats_zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 16816,
+      "bytes": 35860056,
+      "sha256": "a2342b07ecb4f920c0dc09a5532a913f7e0437d43382f9c944a3d316f58e6f1a"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 40162,
+      "sha256": "7abda67e96c2dc873f6841f653338894ee20c3d392926e8ac4130636e48c84cb"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 6196,
+      "bytes": 14166134,
+      "sha256": "ae2248334fcf556860aa35e166248ec633e30f77836f5d439ece43c6370bb746"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 13357,
+      "sha256": "db68b277ca98786b4c3e1fe64e2b65b1c39affb47a01036caa68a8e7b6dad9d0"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 7358,
+      "bytes": 16422377,
+      "sha256": "1adc6ab020cc1580f66c75c038a81aab9d48002bca7ff1da49eff7f558d0b42b"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 13423,
+      "sha256": "ce801d46ba39800c5c14802b0ca8cc8e7398dab7bf8f01894b4ea6e431d85eb5"
+    }
+  },
+  "total_policy_decisions": 30370,
+  "unique_graph_worlds": 80,
+  "limitations": [
+    "Synthetic graph/material adapter NOT native CyberSand; warnings and failure semantics hypothetical, require native ABI validation.",
+    "Prelude survey and historical calibrations are scripted host-executed operations, not learned exploration.",
+    "One per-surface safe test still suffices; labels are symbolic observable-state teacher not neural success.",
+    "No LFM/Sprocket training, SLM p95 latency/RSS, native episodes, or immutable Actions shard artifacts."
+  ]
+}
