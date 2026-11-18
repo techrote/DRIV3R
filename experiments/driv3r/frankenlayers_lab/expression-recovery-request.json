@@ -1,6 +1,6 @@
 {
   "schema": "driv3r/expression-recovery-request/v1",
-  "nonce": "owner-20261118-expression-long-after-audit-14465663492",
+  "nonce": "owner-20261118-expression-long-one-retest-test-fixture-01",
   "phase": "long",
   "branch": "research/import-consolidated-worm-labs",
   "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
@@ -51,5 +51,7 @@
   "merge": false,
   "owner_ratings_supplied": false,
   "intent": "Pre-registered single 96-decision confirmation/stress test after SHA256-checked 60-case original screen artifact 14465663492: quantisation-matched Q8/Q4 on 4 W0 starting worlds, AERO4_NO2 exploratory robust arm and GREY3_CUT collapse/variation control, greedy versus explicit host-side stochastic decoder. No artificial forced turns, no native claim, no automatic continuation.",
-  "screen_artifact_id": "14465663492"
+  "screen_artifact_id": "14465663492",
+  "retry_of_run_id": 44399088416,
+  "retry_reason": "Original 96-decision run never reached model download; a negative unit test incorrectly inherited current phase=long request. Test now uses frozen screen fixture."
 }
