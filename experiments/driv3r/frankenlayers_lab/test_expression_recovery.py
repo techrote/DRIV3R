@@ -21,7 +21,15 @@ class ExpressionRecoveryTests(unittest.TestCase):
         self.assertEqual(r.STYLE_NICHES,("Meanderer","Curler","Brancher","Chaotic Artist"))
 
     def test_request_refuses_unapproved_work_or_invalid_variants(self):
-        a=self.request()
+        # The live request may legitimately be in its gated long phase.
+        # Negatives must use a separately constructed screen fixture, rather
+        # than inheriting the current request's screen_artifact_id.
+        active=self.request()
+        self.assertEqual(r.request_validation(active),active)
+        a=dict(active, phase="screen", modes=list(r.MODES),
+               folds=[list(x) for x in r.SCREEN_FOLDS],
+               steps_per_episode=r.SCREEN_STEPS)
+        a.pop("screen_artifact_id",None)
         self.assertEqual(r.request_validation(a),a)
         for k,v in (("steps_per_episode",160),("max_parallel",2),
                     ("q8_sha256","0"*64),("q4_bytes",1),
