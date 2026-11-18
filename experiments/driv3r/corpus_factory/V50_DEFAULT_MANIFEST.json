@@ -1,0 +1,130 @@
+{
+  "schema": "driv3r/corpus_factory/online-recovery-v50/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "online_recovery_v50.js",
+  "generator_sha256": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+  "parents": [
+    {
+      "file": "contextual_probe_v49.js",
+      "sha256": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761"
+    },
+    {
+      "file": "empirical_tool_v48.js",
+      "sha256": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3"
+    },
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "contract": {
+    "input": "ONLY policy.input is model-visible; action and weight are supervised labels. Never train on *_challenge_EVALUATOR_ONLY.jsonl.",
+    "world_group": "Group by (source_split,source_world_index,source_seed,geometry_sha256), and explicitly compare geometry hashes across all v44-v50 releases. v50 source-world indices start at 200 and are not used by v46-v49.",
+    "drift": "Physical host flips the contextual material mapping at first arrival at an objective without issuing a change event. Teacher cannot see flip; it initially issues the previously calibrated command, reads physical outcome, erases wrong material and corrects using that new observation.",
+    "leakage": "No hidden drift flags or host laws are in model input. Episode-labelled world / arm / expected material / error counts occur only in evaluator metadata.",
+    "dedup": "TRAIN exact repeated inputs and movement records that differ only by irrelevant A/B physical receipts are zero-weighted. DEV/HELDOUT retained unsampled.",
+    "labels": "Every trajectory action was legal and host accepted; PAINT_RESULT is generated only after actual synthetic accepted paint, not an oracle tool-law signal."
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "synthetic_terminal_episodes": 576,
+      "policy_decisions": 12708,
+      "unsignalled_A_drift_pairs": 48,
+      "unsignalled_B_drift_pairs": 48,
+      "double_drift_pairs": 48,
+      "backwards_prior_drift_pairs": 96,
+      "stale_probe_controls": 96,
+      "mission_pairs": 48,
+      "gate_pairs": 48,
+      "wrong_physical_paints": 288,
+      "host_erases_after_wrong_paint": 288,
+      "train_exact_duplicate_zero_weight": 3839,
+      "train_near_duplicate_movement_zero_weight": 2806
+    },
+    "DEV": {
+      "worlds": 16,
+      "synthetic_terminal_episodes": 192,
+      "policy_decisions": 5665,
+      "unsignalled_A_drift_pairs": 16,
+      "unsignalled_B_drift_pairs": 16,
+      "double_drift_pairs": 16,
+      "backwards_prior_drift_pairs": 32,
+      "stale_probe_controls": 32,
+      "mission_pairs": 16,
+      "gate_pairs": 16,
+      "wrong_physical_paints": 96,
+      "host_erases_after_wrong_paint": 96,
+      "train_exact_duplicate_zero_weight": 0,
+      "train_near_duplicate_movement_zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "synthetic_terminal_episodes": 192,
+      "policy_decisions": 6982,
+      "unsignalled_A_drift_pairs": 16,
+      "unsignalled_B_drift_pairs": 16,
+      "double_drift_pairs": 16,
+      "backwards_prior_drift_pairs": 32,
+      "stale_probe_controls": 32,
+      "mission_pairs": 16,
+      "gate_pairs": 16,
+      "wrong_physical_paints": 96,
+      "host_erases_after_wrong_paint": 96,
+      "train_exact_duplicate_zero_weight": 0,
+      "train_near_duplicate_movement_zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 12708,
+      "bytes": 26759425,
+      "sha256": "68136dd3d9f7969db610d16dfec193a6d6cc346c67a3a503855f710cb3466765"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 83696,
+      "sha256": "18c71e6c05b8c69c3bb5432d9436db70f7df6e08f63a4e9ff189bcef17a1c3fb"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 5665,
+      "bytes": 12898130,
+      "sha256": "c48c421b228fa844e4ee18aac1d5a3488d1fe4db0831994db47dfb2d0038437c"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 27878,
+      "sha256": "d1b40e2fb8812d61376bd92a038fb07ba40f510ad9ae1ed7ccec21423cad5400"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 6982,
+      "bytes": 17515739,
+      "sha256": "a2ba7f2b6d23ffa3e1749c168f73ba092671622258f0dbaba328844a25b1e539"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 27934,
+      "sha256": "380b1bc6cadf0912d47e8f32b931df357249d71a349103d526545f6333938e1c"
+    }
+  },
+  "total_policy_decisions": 25355,
+  "source_worlds": 80,
+  "limitations": [
+    "Synthetic graph/material game-like host, not native CyberSand",
+    "Pre-mission calibration and early survey remain scripted host operations",
+    "Binary contextual tool laws permit symbolic inference; model training and actual transfer remain unevaluated",
+    "Unannounced mid-objective drift is synthetic; native game semantics require separate validation",
+    "A simple online receipt parser can still solve recovery; this is a discriminative DATA challenge, not learned behavior",
+    "No LFM/Sprocket training or neural latency/RSS; dataset not in immutable Actions artifacts"
+  ]
+}
