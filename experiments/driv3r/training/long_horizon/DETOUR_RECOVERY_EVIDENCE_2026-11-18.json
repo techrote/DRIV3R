@@ -1,0 +1,266 @@
+{
+  "CPU_wall_s": 27.049,
+  "all_no_protected_or_material_edits": true,
+  "archive_note": "Full frozen checkpoint binaries, complete receipt/probability traces and SHA manifest are outside Git, not immutable Actions artifacts.",
+  "checkpoints": {
+    "711-blind": {
+      "parameters": 769,
+      "sha256": "012232dd6f2d615d8fa6a609d055416bc552813d80cf29a167e8ed504d0bbc27"
+    },
+    "711-conditioned": {
+      "parameters": 769,
+      "sha256": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df"
+    },
+    "712-blind": {
+      "parameters": 769,
+      "sha256": "f5d94baaa63741ed8eaef78ae48d24bbb39dcf7adcbf447201b03831f36b87b4"
+    },
+    "712-conditioned": {
+      "parameters": 769,
+      "sha256": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+    }
+  },
+  "date": "2026-11-18",
+  "experiment": "DETOUR-RECOVERY-001",
+  "frozen_optimizer_updates": 120,
+  "limitations": [
+    "Frozen models originally trained on normal challenge; this corridor is out-of-distribution.",
+    "Four structural DEVELOPMENT geometry families share an identical purpose-built central corridor.",
+    "Prefix search is complete only for backtrack-prefix then empty-cell moves, not for arbitrary state-space paths.",
+    "All synthetic trajectories are not native host acceptance.",
+    "Checkpoint binaries kept outside Git; immutable Actions artifacts not yet published."
+  ],
+  "native_accepted_receipts": 0,
+  "new_optimizer_updates": 0,
+  "paired_intervals": {
+    "conditioned_minus_blind": {
+      "descriptive_world_cluster_95_pct_points": [
+        58.333,
+        87.5
+      ],
+      "point_percentage_points": 72.917
+    },
+    "conditioned_minus_legacy_bfs": {
+      "descriptive_world_cluster_95_pct_points": [
+        -29.167,
+        -6.25
+      ],
+      "point_percentage_points": -16.667
+    }
+  },
+  "peak_RSS_KiB": 98832,
+  "per_group": {
+    "blind/depth3/goal1": {
+      "arrivals": 5,
+      "episodes": 24
+    },
+    "blind/depth3/goal2": {
+      "arrivals": 0,
+      "episodes": 24
+    },
+    "blind/depth5/goal1": {
+      "arrivals": 5,
+      "episodes": 24
+    },
+    "blind/depth5/goal2": {
+      "arrivals": 0,
+      "episodes": 24
+    },
+    "conditioned/depth3/goal1": {
+      "arrivals": 17,
+      "episodes": 24
+    },
+    "conditioned/depth3/goal2": {
+      "arrivals": 23,
+      "episodes": 24
+    },
+    "conditioned/depth5/goal1": {
+      "arrivals": 17,
+      "episodes": 24
+    },
+    "conditioned/depth5/goal2": {
+      "arrivals": 23,
+      "episodes": 24
+    },
+    "legacy_bfs/depth3/goal1": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "legacy_bfs/depth3/goal2": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "legacy_bfs/depth5/goal1": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "legacy_bfs/depth5/goal2": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "prefix_search/depth3/goal1": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "prefix_search/depth3/goal2": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "prefix_search/depth5/goal1": {
+      "arrivals": 24,
+      "episodes": 24
+    },
+    "prefix_search/depth5/goal2": {
+      "arrivals": 24,
+      "episodes": 24
+    }
+  },
+  "per_seed": {
+    "blind": {
+      "711": {
+        "arrived": 4,
+        "episodes": 48
+      },
+      "712": {
+        "arrived": 6,
+        "episodes": 48
+      }
+    },
+    "conditioned": {
+      "711": {
+        "arrived": 40,
+        "episodes": 48
+      },
+      "712": {
+        "arrived": 40,
+        "episodes": 48
+      }
+    },
+    "legacy_bfs": {
+      "711": {
+        "arrived": 48,
+        "episodes": 48
+      },
+      "712": {
+        "arrived": 48,
+        "episodes": 48
+      }
+    },
+    "prefix_search": {
+      "711": {
+        "arrived": 48,
+        "episodes": 48
+      },
+      "712": {
+        "arrived": 48,
+        "episodes": 48
+      }
+    }
+  },
+  "recomputed_neural_distribution_vectors": 8530,
+  "results": {
+    "blind": {
+      "action_counts": {
+        "BACKTRACK": 482,
+        "MOVE_E": 1768,
+        "MOVE_N": 532,
+        "MOVE_S": 1678,
+        "MOVE_W": 988
+      },
+      "all_replay_legal": true,
+      "arrivals": 10,
+      "episodes": 96,
+      "mean_continuation_actions": 56.75,
+      "mean_final_logical_moves": 60.75,
+      "median_episode_choice_ms": 0.090559
+    },
+    "conditioned": {
+      "action_counts": {
+        "BACKTRACK": 480,
+        "MOVE_E": 1226,
+        "MOVE_N": 186,
+        "MOVE_S": 596,
+        "MOVE_W": 594
+      },
+      "all_replay_legal": true,
+      "arrivals": 80,
+      "episodes": 96,
+      "mean_continuation_actions": 32.104,
+      "mean_final_logical_moves": 36.104,
+      "median_episode_choice_ms": 0.1015
+    },
+    "legacy_bfs": {
+      "action_counts": {
+        "BACKTRACK": 288,
+        "MOVE_E": 912,
+        "MOVE_N": 96,
+        "MOVE_S": 480,
+        "MOVE_W": 96
+      },
+      "all_replay_legal": true,
+      "arrivals": 96,
+      "episodes": 96,
+      "mean_continuation_actions": 19.5,
+      "mean_final_logical_moves": 23.5,
+      "median_episode_choice_ms": 0.074476
+    },
+    "prefix_search": {
+      "action_counts": {
+        "BACKTRACK": 288,
+        "MOVE_E": 912,
+        "MOVE_N": 96,
+        "MOVE_S": 480,
+        "MOVE_W": 96
+      },
+      "all_replay_legal": true,
+      "arrivals": 96,
+      "episodes": 96,
+      "mean_continuation_actions": 19.5,
+      "mean_final_logical_moves": 23.5,
+      "median_episode_choice_ms": 1.261762
+    }
+  },
+  "sample_design": {
+    "arms": [
+      "blind",
+      "conditioned",
+      "legacy_bfs",
+      "prefix_search"
+    ],
+    "development_specs": 12,
+    "episodes": 384,
+    "families": 4,
+    "fixed_forced_prelude_depths": [
+      3,
+      5
+    ],
+    "frozen_optimizer_seeds": 2,
+    "goals": [
+      [
+        60,
+        48
+      ],
+      [
+        55,
+        56
+      ]
+    ],
+    "identical_arm_start_state": true
+  },
+  "source_branch_at_design": "f9dc08cf18b98e28927b61639d986a2cfa612ac9",
+  "source_gallery_sha256": "05689416aae723dae9b7826265dbd4583e3c69e82051eaa20debccd3c84b9bab",
+  "source_run_manifest_sha256": "c7e08912997acf8849b237803fcee01f273c2062da0f2c29e84b7c78cab3df3f",
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "DEVELOPMENT",
+  "structural_heldout_opened": false,
+  "synthetic_relocations": 0,
+  "trajectory_gallery_sha256": "fc7cad58788b6daa547269d952f40015bf740cc152a4a363e7f943c943f8f0e3",
+  "verified_synthetic_action_receipts_including_forced_prelude": 13810
+}
