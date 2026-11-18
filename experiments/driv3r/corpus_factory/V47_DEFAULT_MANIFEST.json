@@ -1,0 +1,104 @@
+{
+  "schema": "driv3r/corpus_factory/historical-mission-tool-law-v47/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "lawful_mission_v47.js",
+  "generator_sha256": "bd521f30428d6f501234be2096fb6cba64476f2bb94add12a5d0f9d13a5d6191",
+  "parents": [
+    {
+      "file": "mission_memory_v46.js",
+      "sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f"
+    },
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "model_contract": "ONLY the input object from *_policy.jsonl may be fed to the model. action/weight are supervised labels; all *_challenge_EVALUATOR_ONLY.jsonl must remain sealed.",
+  "split_contract": "Same v46 source worlds and assignments: each world remains in its original TRAIN/DEV/HELDOUT split. Deduplicate and group across v46+v47 by source_world_index+source_seed.",
+  "task": "Partial survey, old superseded mission, remote obstructed junction, host-executed wrong-paint recovery, old tool-law permutation receipts and mid-episode material mapping transition. Eight matched trajectories per world.",
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "host_successful_episodes": 384,
+      "decisions": 7814,
+      "mission_positive_pairs": 48,
+      "gate_positive_pairs": 48,
+      "tool_law_positive_pairs": 48,
+      "stale_mission_controls": 48,
+      "stale_law_controls": 48,
+      "duplicate_zero_weight": 0,
+      "law_flip_worlds": 21
+    },
+    "DEV": {
+      "worlds": 16,
+      "host_successful_episodes": 128,
+      "decisions": 3110,
+      "mission_positive_pairs": 16,
+      "gate_positive_pairs": 16,
+      "tool_law_positive_pairs": 16,
+      "stale_mission_controls": 16,
+      "stale_law_controls": 16,
+      "duplicate_zero_weight": 0,
+      "law_flip_worlds": 7
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "host_successful_episodes": 128,
+      "decisions": 4067,
+      "mission_positive_pairs": 16,
+      "gate_positive_pairs": 16,
+      "tool_law_positive_pairs": 16,
+      "stale_mission_controls": 16,
+      "stale_law_controls": 16,
+      "duplicate_zero_weight": 0,
+      "law_flip_worlds": 11
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 7814,
+      "bytes": 15842781,
+      "sha256": "2def946a19e1c62e78466aec06392ca692794272bd53ea325cb1501b304066b3"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 61835,
+      "sha256": "ab9e7cc4e1a7e4d2ccd8265d9dba24443c32a73a0142925f38885b7d3cb2928f"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 3110,
+      "bytes": 6658147,
+      "sha256": "18acbca5583f3db01201b720b1bf4b89cda82e95ec318440096f609663cb0b4a"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 20578,
+      "sha256": "8140ef472b15af08fb57eb6b359f0125ebd2f66dc7b79b237a67c174ad3f25f4"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 4067,
+      "bytes": 9508568,
+      "sha256": "b195a160038b2203e0ee607643d0a5c50e4933830ac5e7a25cc9741de9329587"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 20643,
+      "sha256": "f6dbc34499b97e4a50d1c79c7be5442c023ffe1f639672d30e4918f244cb4c83"
+    }
+  },
+  "total_policy_decisions": 14991,
+  "unique_world_geometries": 80,
+  "known_limitations": [
+    "SYNTHETIC graph host/adapter, not native CyberSand ABI",
+    "Initial survey and history ageing scripted but host-accepted",
+    "Tool-law events are symbolic and explicit, so a parser can solve without an SLM",
+    "Post-first-paint law transition disclosed in durable history; synthetic host stage completion remains narrow",
+    "No SLM training/inference, no neural latency/RSS, and no immutable Actions artifact publication"
+  ]
+}
