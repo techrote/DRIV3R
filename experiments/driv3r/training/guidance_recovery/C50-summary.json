@@ -1,0 +1,141 @@
+{
+  "cohorts": {
+    "ID": {
+      "graphs_generated": 64,
+      "skipped": {
+        "early_terminal": 58
+      },
+      "states_tested": 70,
+      "unique_graphs_tested": 42
+    },
+    "OOD": {
+      "graphs_generated": 32,
+      "skipped": {
+        "early_terminal": 34
+      },
+      "states_tested": 30,
+      "unique_graphs_tested": 20
+    }
+  },
+  "condition_groups": 72,
+  "date": "2026-11-18",
+  "frozen_C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+  "limitations": [
+    "Synthetic CyberSand-like host and finite graph family cohort; not native CyberSand gameplay",
+    "No new model training in C50: frozen C40-PAIR checkpoint is used to replicate C49 exploratory signal",
+    "Controller is instantiated on host-issued cue and its internal phase begins then; world state/RNG/global tick persist",
+    "Goal changes are synthetic host events and selected only when both prefix and post-cue target are nonterminal; this is a conditional population",
+    "Same graph can contribute both t9 and t19 scenarios; bootstrap samples entire graph clusters",
+    "This is matched stochastic counterfactual research, not proven real-game guidance efficacy",
+    "Unguided parity does not establish complete active-guidance personality preservation",
+    "Frozen d_common fixture is not canonical CyberSand host ABI",
+    "No GitHub Actions immutable checkpoint artifact custody; checkpoint used locally only",
+    "Descriptive bootstrap intervals are unadjusted for multiple experiments and research selection"
+  ],
+  "models": {
+    "C18-A0": {
+      "condition_regressions_vs_RESET": 8,
+      "goals_by_cohort": {
+        "ID": 65,
+        "OOD": 12
+      },
+      "goals_by_family": {
+        "braid": 29,
+        "kruskal": 9,
+        "prim": 3,
+        "prim_braid": 27,
+        "tree": 6,
+        "wilson": 3
+      },
+      "guided_episodes": 300,
+      "guided_goals": 77,
+      "host_rejections": 0,
+      "modified_states": 0,
+      "none_hash_match": 100,
+      "opposed_ink": 453,
+      "preferred_ink": 628,
+      "raw_illegal_top1": 0,
+      "total_style_post_shift": 0
+    },
+    "C34-RESET": {
+      "condition_regressions_vs_RESET": 0,
+      "goals_by_cohort": {
+        "ID": 69,
+        "OOD": 14
+      },
+      "goals_by_family": {
+        "braid": 30,
+        "kruskal": 9,
+        "prim": 1,
+        "prim_braid": 23,
+        "tree": 15,
+        "wilson": 5
+      },
+      "guided_episodes": 300,
+      "guided_goals": 83,
+      "host_rejections": 0,
+      "modified_states": 0,
+      "none_hash_match": 100,
+      "opposed_ink": 432,
+      "preferred_ink": 615,
+      "raw_illegal_top1": 2,
+      "total_style_post_shift": 0
+    },
+    "C40-PAIR": {
+      "condition_regressions_vs_RESET": 1,
+      "goals_by_cohort": {
+        "ID": 82,
+        "OOD": 15
+      },
+      "goals_by_family": {
+        "braid": 30,
+        "kruskal": 9,
+        "prim": 4,
+        "prim_braid": 30,
+        "tree": 18,
+        "wilson": 6
+      },
+      "guided_episodes": 300,
+      "guided_goals": 97,
+      "host_rejections": 0,
+      "modified_states": 9042,
+      "none_hash_match": 100,
+      "opposed_ink": 442,
+      "preferred_ink": 632,
+      "raw_illegal_top1": 2,
+      "total_style_post_shift": 77.29549370998666
+    }
+  },
+  "paired": {
+    "C34-RESET__C18-A0": {
+      "goal_delta": 6,
+      "graph_cluster_bootstrap_95_descriptive": [
+        -9.0,
+        22.0
+      ],
+      "negative_graphs": 5,
+      "positive_graphs": 8
+    },
+    "C40-PAIR__C18-A0": {
+      "goal_delta": 20,
+      "graph_cluster_bootstrap_95_descriptive": [
+        1.0,
+        40.0
+      ],
+      "negative_graphs": 3,
+      "positive_graphs": 12
+    },
+    "C40-PAIR__C34-RESET": {
+      "goal_delta": 14,
+      "graph_cluster_bootstrap_95_descriptive": [
+        4.0,
+        26.0
+      ],
+      "negative_graphs": 2,
+      "positive_graphs": 9
+    }
+  },
+  "rows": 400,
+  "schema": "driv3r-c50-continuous-midtrajectory-frozen-c40/1",
+  "source_sha256": "97fd4077a6771714515f612fabd2fda365ddb6f4f08cb96079d008331e0d7e2f"
+}
