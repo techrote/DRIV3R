@@ -61,7 +61,7 @@ def render(receipts: Path, destination: Path):
         out.append(f'<text x="{fx}" y="{fy+240}" fill="#a5bbca" font-size="14" font-family="sans-serif">Amber: planned suffix</text>')
         out.append(f'<text x="{fx}" y="{fy+262}" fill="#a5bbca" font-size="14" font-family="sans-serif">Cyan: actual ink trail</text>')
     out+=['<text x="35" y="1684" fill="#b9d1df" font-size="15" font-family="sans-serif">Coordinates depict synthetic World action receipts; route after first model decision is BFS-controlled, not model autonomy.</text>','</svg>']
-    destination.write_text('\\n'.join(out)+'\\n')
+    destination.write_text('\n'.join(out)+'\n')
     return len(chosen)
 
 if __name__=='__main__':
