@@ -1,7 +1,7 @@
 {
   "schema": "driv3r/greyhound-q4-request/1",
-  "nonce": "middle-20261118T0643Z-six-four-ablation",
-  "tier": "middle",
+  "nonce": "extreme-20261118T1246Z-three-two-layer-ablation",
+  "tier": "extreme",
   "branch": "research/import-consolidated-worm-labs",
   "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
   "q4_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
@@ -25,5 +25,5 @@
   "ready": false,
   "native_game": false,
   "automatic_on_routine_push": false,
-  "intent": "Single bounded middle-tier actual compiled Q4 layer-execution ablation after original upper evidence custody (run 44202739826, 84/84 verified): GREY6 6-layer and AERO4_NO2 4-layer, paired with unchanged Q4 stock and 13-layer GREYHOUND. Upper showed stock STOP immediately, GREYHOUND 4-cell LEFT loop, GREY10 early STOP, GREY8 STOP-only. Preserve both negative controls. Same frozen model/llama, 24 decisions x two synthetic W0 folds, CPU only, max_parallel=1. No native game acceptance."
+  "intent": "Single bounded extreme-tier real compiled Q4 executed-layer deletion: GREY3_CUT (3 blocks) and GREY2_CUT (2 blocks), paired with untouched 24-block Q4 stock and 13-block GREYHOUND, after independent middle run 44253735083 original artifact 14405820902 SHA256 ceefd282f64e14bf05fc9b7da4188fdd5269009473058b77872222422ab25688 (84/84 manifests, 146/146 legal raw/applied). Middle GREY6 was a RIGHT square loop; AERO4_NO2 explored 21/16 steps, tightly local. Retain all STOP-only, build and action negatives. Same vendor model, runtime, synthetic W0 folds, 24 decisions max, CPU only and max_parallel 1. Not native CyberSand. No further Q4 tier after extreme."
 }
