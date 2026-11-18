@@ -7,37 +7,57 @@
   "only_mutable_pr": 1,
   "status": "DRAFT_HOLD_NO_MERGE",
   "best_sequential_corpus": "v38_host_accepted_live_tool_law_two_transition_recovery",
-  "supplemental_dynamic_obstruction": "v39_remote_two_edge_junction_counterfactual_full_recovery",
-  "supplemental_offline_law_pairs": "v37_material_tool_mapping_counterfactual",
+  "supplemental_dynamic_obstruction": "v40_delayed_obstruction_160_host_accepted_movements_old_history",
+  "predecessor": "v39_current_obstruction_bulletin_rule",
   "best_checkpoint": null,
-  "generator": "obstruction_replan_v39.js",
-  "generator_sha256": "bf93ff3deb59a255e9cacc28d1203bb51098355082f5e60fd9ee4e31c53a9f36",
-  "test": "test_obstruction_replan_v39.js",
-  "test_sha256": "2194207516431d9f71a3e13a7229dc168ee4f337fb0e706c7f41641d0cccb701",
-  "pinned_manifest": "V39_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "a12aabd8f570683ba5b6ff0d5899c570088c0f0ad488eb2ff039fdcadf5d3d27",
-  "report": "OBSTRUCTION_REPLAN_V39_2026-11-18.md",
+  "generator": "delayed_obstruction_v40.js",
+  "generator_sha256": "4c40b73987f690c25822f1fba88bf4a6e4c9c8e5b47ad89e7584352e2ece2740",
+  "test": "test_delayed_obstruction_v40.js",
+  "test_sha256": "ff7a31e4054240fe2e2295602fd2c2483e7cad8ecf75a0871b773dde6adda914",
+  "pinned_manifest": "V40_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "b0c3aad0d49548c337b67335661adc4a61bc37f54384a884f9cd36d890fe62db",
+  "report": "DELAYED_OBSTRUCTION_V40_2026-11-18.md",
   "stats": {
     "train_decisions": 3488,
     "dev_decisions": 3456,
     "heldout_decisions": 4800,
     "episodes": 256,
-    "terminal_oracle_successes": 256,
+    "oracle_terminal_successes": 256,
     "positive_counterfactual_pairs": 64,
     "negative_control_pairs": 64,
-    "strict_first_action_regret_each_branch": 2,
+    "historical_event_aging_accepted_moves": 160,
+    "strict_first_action_regret_per_positive_branch": 2,
+    "positive_heldout_pairs": 16,
+    "positive_event_ablated_ideal_accuracy_ceiling": 0.5,
     "unique_geometries": 16,
-    "model_legal_first_action_contrast": "CLEAR: MOVE_E, BLOCKED: MOVE_S; both legal in both conditions",
-    "train_exact_duplicate_rows": 0
+    "input_duplicate_or_label_conflicts": 0,
+    "model_visible_old_event": "durable history receipt, NOT input.obstruction current-state field"
+  },
+  "reproduction": "node delayed_obstruction_v40.js OUT; node test_delayed_obstruction_v40.js OUT1 OUT2",
+  "qualification": "Two independent full manifests+shards byte-identical; independent audit 11744 policy records; host actually accepted all 160 post-transition moves per episode; strict oracle suffix, legal labels and split isolation; quick 4704 records audited.",
+  "performance": {
+    "two_full_generation_wall_seconds": [
+      4.67,
+      4.71
+    ],
+    "peak_rss_kib": [
+      216004,
+      214440
+    ],
+    "neural_latency_rss": "NOT_MEASURED"
   },
   "negative_results": [
-    "No new named SLM weights, adapter updates, inference timing or model RSS",
-    "Synthetic, nonnative environmental obstruction not CyberSand physics",
-    "Fixed two-edge east junction and scripted closure timing; deterministic rule solver remains possible",
-    "No immutable Actions dataset artifact; locally reproducible shards only",
-    "v39 is supplemental to v38; does not supersede its law/memory/compound recovery suite"
+    "No named SLM forwards, adapter updates or trained checkpoint in corpus lane",
+    "Fixed closure motif and repetitive ageing loop; an explicit symbolic long-history parser can solve it",
+    "Synthetic actuator and host, not native CyberSand",
+    "No immutable Actions artifact; shards held out of Git and packaged locally",
+    "v40 is supplemental; v38 remains broader sequential law/memory/compound-recovery suite"
   ],
-  "next_useful_consumer_experiment": "Train pinned real LFM/Sprocket adapter on TRAIN v39 and v38 with model-visible input only; held-out closed-loop obstacle bulletin vs bulletin-ablated and durable/truncated history, terminal recovery, realized regret, illegal preferences, latency p50/p95, model RSS, verified model/checkpoint/data hashes. Consumer/model team to own weights, not Corpus Factory.",
+  "cross_lane_blockers": {
+    "lfm_game_policy": "Pinned root/adapter execution blocked in current worker; historical LoRA evidence only",
+    "sprocket_game_policy": "No pinned 500M root assets/tokenizer/transformers runtime for real adapter training"
+  },
+  "next_useful_consumer_experiment": "Pinned real SLM TRAIN-only adapter on v38+v40, HELDOUT autonomous positive+control counterfactuals old bulletin vs receipt-ablated; terminal completion, realized regret, residual paint, illegal prefs, inference p50/p95+RSS, SHA-256 source/model/tokenizer/adapter. Native CyberSand a separate owner acceptance.",
   "no_paid_api_or_gpu": true,
   "no_out_of_lane_writes": true
 }
