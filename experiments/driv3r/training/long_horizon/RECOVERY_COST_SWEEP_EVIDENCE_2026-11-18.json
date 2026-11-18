@@ -1,0 +1,264 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "by_seed": {
+    "941": {
+      "recover2": {
+        "correct_first": 1272,
+        "first_n": 1440,
+        "futile_backtrack_first": 0,
+        "missed_reachable_first": 168,
+        "reachable_arrivals": 47,
+        "reachable_sampled_n": 64
+      },
+      "recover4": {
+        "correct_first": 1384,
+        "first_n": 1440,
+        "futile_backtrack_first": 8,
+        "missed_reachable_first": 48,
+        "reachable_arrivals": 58,
+        "reachable_sampled_n": 64
+      },
+      "standard": {
+        "correct_first": 1307,
+        "first_n": 1440,
+        "futile_backtrack_first": 0,
+        "missed_reachable_first": 133,
+        "reachable_arrivals": 51,
+        "reachable_sampled_n": 64
+      }
+    },
+    "942": {
+      "recover2": {
+        "correct_first": 1368,
+        "first_n": 1440,
+        "futile_backtrack_first": 0,
+        "missed_reachable_first": 72,
+        "reachable_arrivals": 58,
+        "reachable_sampled_n": 64
+      },
+      "recover4": {
+        "correct_first": 1358,
+        "first_n": 1440,
+        "futile_backtrack_first": 4,
+        "missed_reachable_first": 78,
+        "reachable_arrivals": 57,
+        "reachable_sampled_n": 64
+      },
+      "standard": {
+        "correct_first": 1332,
+        "first_n": 1440,
+        "futile_backtrack_first": 0,
+        "missed_reachable_first": 108,
+        "reachable_arrivals": 55,
+        "reachable_sampled_n": 64
+      }
+    }
+  },
+  "checkpoint_binary_in_git": false,
+  "conclusion": "4x imitation oversampling raises sampled recovery arrival 106/128 to 115/128, with 12/2880 false first retreat vs zero; analytic stack oracle remains 100% classification.",
+  "date": "2026-11-18",
+  "development_caps": [
+    1,
+    3,
+    5
+  ],
+  "experiment": "RECOVERY-COST-SWEEP-001",
+  "first_action_probability_vectors_recomputed": 8640,
+  "frozen_core_source_verified_against_predecessor_ledger": true,
+  "full_receipt_transcripts_replayed": 108,
+  "gallery_sha256": "93706e35af8df05ccc0df6cea6820ad59590f0ba2d16875477b2d0b19462c199",
+  "heldout_opened": false,
+  "immutable_actions_artifact": false,
+  "limitations": [
+    "Class resampling changes supervised first-action emphasis, not an end-to-end optimizer.",
+    "Identical synthetic histories and variable cap are not established native CyberSand capabilities.",
+    "Synthetic STOP is task-specific and must not be extrapolated to general navigation.",
+    "Seven-action continuations do not prove 72/128 sequential play.",
+    "RELOCATE_START remains on the legal synthetic menu and its effects are counted.",
+    "Structural HELDOUT remains unopened; checkpoint binaries retained outside Git history."
+  ],
+  "local_evidence_file_sha256": {
+    "SHA256SUMS.json": "f9102e3b382370b11174a86577e597129de19cfb3c5fb03f2d35d09b9ffb5840",
+    "continuations.json": "43e6fe17ca1ce57883f1eeb3368ef5cc1409bfafa4ed41d92b07cf8e0546ff98",
+    "first_actions.json": "a9aa16978b48f88e77dbebd72016632d0f31c30c4da434d84f077020ef8536cd",
+    "report.json": "64c7e889f43ee2471a02719d71a4b40c35d2441680d0a6c19f248835b912ce3c",
+    "trajectory_samples.json": "b8ae92f14727f8964db968a6812219f8c8bf4aa8f8bd8ef1a4b9761a463b86e7"
+  },
+  "median_model_only_ms": 0.010236,
+  "model_checkpoints_sha256": {
+    "941-recover2.npz": "59a27b798bc7d71ed9729d97c5de072410b9d95cd7f6bf98336e8bfb1cf976cf",
+    "941-recover4.npz": "8078d374c4aa5889e2be08c765854c95de35a156b11f37559b653cca92f8c7ed",
+    "941-standard.npz": "1a61ce8d9e39b7d49746e91d05363ddf1dcc8a4b0d05f2688a6225d90197bed2",
+    "942-recover2.npz": "864e41a2a3083e96cce19d1216454b5e3e2bf3a6e93d67da0392afa96686d893",
+    "942-recover4.npz": "db119414ec9df347884a534bc7d531d83017dcdbcdbed81a8dc03ef29d8144c0",
+    "942-standard.npz": "a0ff42a5dde4a49a9fd5130f5a756798c471b43655c3026f029db8befeadef4b"
+  },
+  "motif_bootstrap_exploratory": {
+    "recover2_minus_standard_reachable_arrivals": {
+      "delta_unconditional": 0.0,
+      "motif_cluster_95": [
+        -0.016667,
+        0.016667
+      ],
+      "motifs": 20
+    },
+    "recover4_minus_standard_reachable_arrivals": {
+      "delta_unconditional": 0.033333,
+      "motif_cluster_95": [
+        0.010417,
+        0.058333
+      ],
+      "motifs": 20
+    }
+  },
+  "n_development_cases": 480,
+  "n_train_cases": 336,
+  "native_executed": false,
+  "new_report_sha256": "b1c32a37c6b0fd65e1fba61da776ac6adbd95f2d936929f03b6cf866030bc550",
+  "p95_model_only_ms": 0.033206,
+  "paid_spend": false,
+  "peak_rss_kib": 177044,
+  "pr": 1,
+  "receipt_actions_replayed": 114,
+  "remote_branch_head_before_edit": "df0ae48772e62ae302b515b57937c629f6c0292f",
+  "repository": "techrote/DRIV3R",
+  "run_wall_s": 14.66,
+  "sampled_continuations_recomputed": 864,
+  "source_sha256": {
+    "budget_calibration_lab.py": "89de8ab12b5217ffb46307f5b10d3299c20381839e578ab2f7c3315af9846f3f",
+    "cap_conditioning_lab.py": "6c3ffe5c737d1ed5b47caeefc75c0b74ea07cfb72836814740abf34b1aeeebe9",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_recovery_lab.py": "7a8bf710a644b2a42c7e3fb032036f7aa246665e995683891ce9db5fc3caa290",
+    "history_alias_lab.py": "98e41672fe4283e35fa5e2ce32263407d35c5a860d9a04231ebfbcddf9c04fdf",
+    "history_destination_lab.py": "ffadeae9944a7f9ba1122a7351eab71b79cfc745724bb3326cb29a2767137546",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "recovery_cost_sweep_gallery.py": "ec7ab1b7edabb261a6d5c8421967ff60b015e38ababe6a76800af66f26bcfab1",
+    "recovery_cost_sweep_lab.py": "72162cf7a3db199639a7506e08c42d3eb913db806a306f0da183ed71fcb17168",
+    "test_recovery_cost_sweep_lab.py": "96c2c574831733524ac0aefc78e910e34eff06ad6730ec9f63ec31b31e4f7b04",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "summary": {
+    "recover2": {
+      "all_horizon_actions": 340,
+      "by_cap": {
+        "1": {
+          "correct": 808,
+          "n": 960,
+          "reachable_hits": 15,
+          "reachable_n": 30
+        },
+        "3": {
+          "correct": 896,
+          "n": 960,
+          "reachable_hits": 42,
+          "reachable_n": 48
+        },
+        "5": {
+          "correct": 936,
+          "n": 960,
+          "reachable_hits": 48,
+          "reachable_n": 50
+        }
+      },
+      "correct_first": 2640,
+      "false_retreat": 0,
+      "first_n": 2880,
+      "missed_recoverable": 240,
+      "other_initial": 0,
+      "reachable_hits": 105,
+      "reachable_n": 128,
+      "recovery_actions": 157,
+      "relocations": 0,
+      "unreachable_n": 160,
+      "unreachable_recoveries_spent": 0,
+      "unreachable_terminated": 160
+    },
+    "recover4": {
+      "all_horizon_actions": 344,
+      "by_cap": {
+        "1": {
+          "correct": 888,
+          "n": 960,
+          "reachable_hits": 24,
+          "reachable_n": 30
+        },
+        "3": {
+          "correct": 914,
+          "n": 960,
+          "reachable_hits": 43,
+          "reachable_n": 48
+        },
+        "5": {
+          "correct": 940,
+          "n": 960,
+          "reachable_hits": 48,
+          "reachable_n": 50
+        }
+      },
+      "correct_first": 2742,
+      "false_retreat": 12,
+      "first_n": 2880,
+      "missed_recoverable": 126,
+      "other_initial": 0,
+      "reachable_hits": 115,
+      "reachable_n": 128,
+      "recovery_actions": 171,
+      "relocations": 0,
+      "unreachable_n": 160,
+      "unreachable_recoveries_spent": 0,
+      "unreachable_terminated": 160
+    },
+    "standard": {
+      "all_horizon_actions": 338,
+      "by_cap": {
+        "1": {
+          "correct": 804,
+          "n": 960,
+          "reachable_hits": 17,
+          "reachable_n": 30
+        },
+        "3": {
+          "correct": 899,
+          "n": 960,
+          "reachable_hits": 41,
+          "reachable_n": 48
+        },
+        "5": {
+          "correct": 936,
+          "n": 960,
+          "reachable_hits": 48,
+          "reachable_n": 50
+        }
+      },
+      "correct_first": 2639,
+      "false_retreat": 0,
+      "first_n": 2880,
+      "missed_recoverable": 241,
+      "other_initial": 0,
+      "reachable_hits": 106,
+      "reachable_n": 128,
+      "recovery_actions": 156,
+      "relocations": 0,
+      "unreachable_n": 160,
+      "unreachable_recoveries_spent": 0,
+      "unreachable_terminated": 160
+    }
+  },
+  "train_wall_s": 6.397,
+  "training_caps": [
+    2,
+    4,
+    6
+  ],
+  "training_seeds": [
+    941,
+    942
+  ],
+  "training_stages_nominal": [
+    36,
+    72,
+    128
+  ],
+  "updates_per_checkpoint": 288
+}
