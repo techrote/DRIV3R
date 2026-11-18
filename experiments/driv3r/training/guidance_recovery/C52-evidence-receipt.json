@@ -1,0 +1,81 @@
+{
+  "checkpoints_external_to_git": {
+    "C52-ALIGNED.safetensors": {
+      "bytes": 2100,
+      "sha256": "7a717ca28afa025dbb069dcfe8846e4577da3f3b91538ac96614d8bd3ca3d076"
+    },
+    "C52-SHUFFLED.safetensors": {
+      "bytes": 2100,
+      "sha256": "7056ff85ca2832dc04b770c222c65a76608e4e6503a99c54c22949ee6250b632"
+    }
+  },
+  "compressed_bundle_sha256": "4015d7ab88ad198f2747b3d5081ef387d1fc8974103d663ee16082eeb38f5939",
+  "compressed_text_evidence": {
+    "C52-blind.json": {
+      "bytes": 258727,
+      "sha256": "09aab4d3b081560dbe44c161afdde01b1e7df4f9610f1e1119820a6f2a7b775d"
+    },
+    "C52-gallery-replay-receipts.json": {
+      "bytes": 5391,
+      "sha256": "9f5640238dd241f07b9e1ab1925ebd17da17536c029eaa999acfebf0cfb5d3a8"
+    },
+    "C52-normalization.json": {
+      "bytes": 673,
+      "sha256": "5e35aa14aed4fa4976320464c8e5992d85066372ce08190ff6fe2286668b8f93"
+    },
+    "C52-online.json": {
+      "bytes": 499483,
+      "sha256": "47f934a9709d08f0301879f5f8f822c18e49d6da5b24adf6bb87006a5b679056"
+    },
+    "C52-run.log": {
+      "bytes": 2686,
+      "sha256": "0d7d98256cb2b7a0ef2d664e73b0647476d7d42bde257d8647367382911a7d06"
+    },
+    "C52-selected-traces.json": {
+      "bytes": 61716,
+      "sha256": "d72e2d6133a122793c4307326067e8e5855ae7df329abdac98eb2f270d77fe54"
+    },
+    "C52-tests.log": {
+      "bytes": 927,
+      "sha256": "95c78317c1b8eb16f17cb764cc0ab97ef914de7abd20ee990a55f1d5e5cc502f"
+    },
+    "C52-training.json": {
+      "bytes": 1036528,
+      "sha256": "2a92f536d09d5e25ff9b14dfa0dafd315a55dff2ca69bf3d055c83d336a5fdea"
+    }
+  },
+  "date": "2026-11-18",
+  "frozen_C40_checkpoint_sha256": "5d9d7c6602e3be68ec7ad3a593e1c06e709b4804974107ef572c30a548766184",
+  "immutable_Actions_checkpoint_custody": false,
+  "native_CyberSand_acceptance": false,
+  "online_live_host_safety": "zero-rejections",
+  "optimizer_deterministic_replays": 2,
+  "same_pre_cue_rng_state": true,
+  "schema": "driv3r-c52-source-and-evidence-custody/1",
+  "source_and_Git_evidence": {
+    "C52-gallery.svg": {
+      "bytes": 198698,
+      "sha256": "e184d5ff7205eee5e9b3ad9d979a088bdac0fa1c2776ac1a365765fb0c3192b1"
+    },
+    "C52-summary.json": {
+      "bytes": 25638,
+      "sha256": "9370884e6c35bbcde51dc59d38d04a3e68a0db8cc657d49e8b2e800653936224"
+    },
+    "c52_extract.py": {
+      "bytes": 1228,
+      "sha256": "dbd509bc7a4d7491def9244914737f8ed62731d19669f07e8bc8a02100c14f3e"
+    },
+    "c52_gallery.py": {
+      "bytes": 4872,
+      "sha256": "5dca0a53ab816232ea16a2201357a4493292b24a4fa8b697a2e692e5b9fbf856"
+    },
+    "c52_shortest_step_cue.py": {
+      "bytes": 24536,
+      "sha256": "20b367bea58e2148da8903275e2614f1fa8eaf53bb7189a365d76546f9921129"
+    },
+    "test_c52_shortest_step_cue.py": {
+      "bytes": 5050,
+      "sha256": "fe7700d360f30c66d42bf7792add8e3770d46c62af8fb7c93f778beaa7f5fc9c"
+    }
+  }
+}
