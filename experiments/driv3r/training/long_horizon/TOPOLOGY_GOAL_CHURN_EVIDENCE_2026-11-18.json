@@ -1,0 +1,176 @@
+{
+  "archive_includes_all_320_episodes": true,
+  "archive_name": "DRIV3R_TOPOLOGY_GOAL_CHURN_20261118_EVIDENCE.zip",
+  "archive_retention": "local deliverable, NOT immutable GitHub Actions artifact",
+  "archive_sha256": "0b23b4c33b13d518f6acb582172d8416342ec31550f3a05a0c30a7e7fc712d6f",
+  "archive_size_bytes": 2046442,
+  "candidate_scenarios": 16,
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "episodes": 320,
+  "excluded": [],
+  "goals": [
+    [
+      67,
+      48
+    ],
+    [
+      46,
+      64
+    ]
+  ],
+  "heldout_opened": false,
+  "initially_feasible_scenarios": 16,
+  "layouts": [
+    "opposing_gates",
+    "enclosed_courtyard",
+    "horizontal_switchback",
+    "protected_slalom"
+  ],
+  "limitations": [
+    "Research-only overlay clears 31x31 central area; no native environment editing or acceptance.",
+    "All tests remain DEVELOPMENT families, not sealed structural HELDOUT.",
+    "Goals switch by external synthetic schedule, with early-arrival idles not host actions.",
+    "Initial feasibility filter may bias scenarios; infeasible continuation states count as failures.",
+    "Prefix search complete only within backtrack-prefix then empty-cell movement.",
+    "The frozen goal ranker receives engineered Manhattan-distance features.",
+    "No material changes during episodes; masks are fixed at initialization.",
+    "Checkpoint binaries locally retained, not yet immutable Actions artifacts."
+  ],
+  "native_receipts": 0,
+  "new_optimizer_updates": 0,
+  "peak_rss_kib": 98448,
+  "publication_sha256": {
+    "TOPOLOGY_GOAL_CHURN_RESULT_2026-11-18.md": "5cf87f41c26b9ac4044f267878e4bdc1899f3526f31a02a0968749f8eb89c6cb",
+    "TOPOLOGY_GOAL_CHURN_TRAJECTORIES_2026-11-18.svg": "8b6bab37db611be5107ba45741f83ac11116871f3b8fba30ec9ba9d976822bdc",
+    "test_topology_goal_churn_lab.py": "34bbc4c22fd38b913ed9b8c7dfff46d536e7e54956b4b46940b8731b473f3a24",
+    "topology_goal_churn_gallery.py": "539d2fceb3bedaa24863c340ddba6a9bd069c1fe1448aa52f8f2a139efb894ad",
+    "topology_goal_churn_lab.py": "878e1acbb177e0c8280f020556f265f17b3d8cd5f1b63c677189bca0b9a4c5f0"
+  },
+  "qualification": {
+    "archive_replay_passed": true,
+    "focused_unittest_passed": 4,
+    "github_actions_checkpoint_artifact": false,
+    "native_host_receipts": 0,
+    "remote_source_ci": "not_run"
+  },
+  "scheduled_switch_ticks": [
+    12,
+    30
+  ],
+  "source_git_blobs_at_branch_parent": {
+    "detour_recovery_lab.py": "76f34f512e4c66ba529c9361b2bf2be1219f04d2",
+    "goal_conditioning_lab.py": "243294176699abc56386eaf12b95580843499b55",
+    "goal_observability_lab.py": "d089e55842a633bf6cfc4ece9a9780c8436f94d9",
+    "policy.py": "c61573bdd4dc603ef38594b5b764fec1ff2142ab",
+    "train.py": "0e6da7de3ac52279049f0c7482d6c4754042e034",
+    "world.py": "c7e33b7801c3a9d6c1f00f11f466732b312ddc92"
+  },
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "topology_goal_churn_lab.py": "878e1acbb177e0c8280f020556f265f17b3d8cd5f1b63c677189bca0b9a4c5f0",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "development",
+  "summary": {
+    "absolute24": {
+      "action_counts": {
+        "BACKTRACK": 44,
+        "MOVE_E": 804,
+        "MOVE_N": 446,
+        "MOVE_S": 1032,
+        "MOVE_W": 464,
+        "STOP": 28
+      },
+      "both_switches_seen": 58,
+      "episodes": 64,
+      "final_arrivals": 36,
+      "mean_actions": 44.031,
+      "median_episode_choose_ms": 0.003786,
+      "neural_actions": 1536,
+      "planner_actions": 1254,
+      "planner_calls": 122
+    },
+    "neural": {
+      "action_counts": {
+        "BACKTRACK": 30,
+        "MOVE_E": 1082,
+        "MOVE_N": 786,
+        "MOVE_S": 1201,
+        "MOVE_W": 750
+      },
+      "both_switches_seen": 64,
+      "episodes": 64,
+      "final_arrivals": 27,
+      "mean_actions": 60.141,
+      "median_episode_choose_ms": 0.096298,
+      "neural_actions": 3849,
+      "planner_actions": 0,
+      "planner_calls": 0
+    },
+    "planner_each_stage": {
+      "action_counts": {
+        "BACKTRACK": 120,
+        "MOVE_E": 680,
+        "MOVE_N": 440,
+        "MOVE_S": 1152,
+        "MOVE_W": 416,
+        "STOP": 24
+      },
+      "both_switches_seen": 64,
+      "episodes": 64,
+      "final_arrivals": 40,
+      "mean_actions": 44.25,
+      "median_episode_choose_ms": 0.002494,
+      "neural_actions": 0,
+      "planner_actions": 2808,
+      "planner_calls": 192
+    },
+    "stall4": {
+      "action_counts": {
+        "BACKTRACK": 41,
+        "MOVE_E": 896,
+        "MOVE_N": 584,
+        "MOVE_S": 1021,
+        "MOVE_W": 704,
+        "STOP": 39
+      },
+      "both_switches_seen": 64,
+      "episodes": 64,
+      "final_arrivals": 25,
+      "mean_actions": 51.328,
+      "median_episode_choose_ms": 0.097882,
+      "neural_actions": 3074,
+      "planner_actions": 172,
+      "planner_calls": 68
+    },
+    "stop_rescue": {
+      "action_counts": {
+        "BACKTRACK": 30,
+        "MOVE_E": 1082,
+        "MOVE_N": 786,
+        "MOVE_S": 1201,
+        "MOVE_W": 750
+      },
+      "both_switches_seen": 64,
+      "episodes": 64,
+      "final_arrivals": 27,
+      "mean_actions": 60.141,
+      "median_episode_choose_ms": 0.097487,
+      "neural_actions": 3849,
+      "planner_actions": 0,
+      "planner_calls": 0
+    }
+  },
+  "synthetic_64_gate": true,
+  "verified_action_receipts": 16633,
+  "verified_neural_distributions": 12308,
+  "version": "topology-goal-churn/1",
+  "wall_s": 30.062
+}
