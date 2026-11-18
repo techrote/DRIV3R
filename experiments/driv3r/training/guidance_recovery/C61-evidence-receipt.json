@@ -1,8 +1,9 @@
 {
+  "editorial_correction": "Clarified C18-A0 guided-arm baseline receives host cue; it is not a no-guidance arm.",
   "files_sha256": {
     "lab/C61-extract-ledger.py": "6229fe6df0e47288eac1d9e149295409d55923a86a4b360e03dba0c1a39210df",
     "lab/C61-gallery.svg": "8a0e48a59be8143760b12811f8c6b8ed5f12cabd2f7bca1a2ff18471da72537b",
-    "lab/C61-wilson-to-kruskal-2026-11-18.md": "f814689ea624b1e4bfb274dac5666b3b615656bfb4efec62067a67a0b199cecd",
+    "lab/C61-wilson-to-kruskal-2026-11-18.md": "53a3c163545984f377e3e08ed1193878653fafe40386751de375d63e2655d298",
     "lab/c61_gallery.py": "8041e07daa2bf2ed05d35e6301bb316dd847aa8c941d050e7a76b1ce9bae7ccf",
     "lab/c61_wilson_to_kruskal.py": "f9484b5c8713aa9c6dbce5194e8db2f07870924eb39e4c4c2d1671306ca52688",
     "lab/test_c61_wilson_to_kruskal.py": "313800e059e2099b8cbfec19eea764f130a6dfbe765ea1241d958ffdfe62a3f1",
