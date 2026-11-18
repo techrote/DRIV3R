@@ -1,0 +1,135 @@
+{
+  "schema": "driv3r/corpus_factory/paired-stream-memory-v55/1",
+  "date": "2026-11-18",
+  "data_only": true,
+  "synthetic_not_native_CyberSand": true,
+  "v54_source_manifest_sha256": "1ad1c11e8c3d24fd13d0a8aaab8743f8af3a2c1059aa871b6c775b1357fbe107",
+  "v54_source_files_sha256": {
+    "TRAIN_stream.jsonl": "aafdde3983d924ce69a4d8dd185e6fdb067367ac189b2a822a69cd412386646d",
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": "fc094e0190b0e1daad5d408dde8969d2b9ea17ff55f3d7f62674f89b9eac7f55",
+    "DEV_EVALUATOR_ONLY_stream.jsonl": "bd8ad86f3a6816b9037b24303f0d49fcecbc9fe7c1597fbc645c70ef42ed137d",
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": "c37d05d1010b847816a7740e71dd6650bd3aaf4d2f93cb005759c5ee9d4c5a33",
+    "HELDOUT_EVALUATOR_ONLY_stream.jsonl": "1ab9cdafdf228779b9e804b03a8fdf674807e8f4dc2509a7983afe2f6cf63820",
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": "478429e6e431f0a7a561cc51dd3a056e6a53fc7e4c0dcde845ed182065c46639"
+  },
+  "selection": "one deterministic opposite-label pair per exactly identical instantaneous observation, with same world topology, disjoint episodes, nonzero source weight for TRAIN, and maximum minimum age since last newly delivered event",
+  "splits": {
+    "TRAIN": {
+      "source_worlds": 32,
+      "source_episodes": 576,
+      "selected_full_episodes": 243,
+      "pairs": 168,
+      "paired_decisions": 336,
+      "memoryless_max_correct_on_balanced_paired_decisions": 168,
+      "memoryless_balanced_paired_accuracy_ceiling": 0.5,
+      "pair_both_correct_memoryless_ceiling": 0.0,
+      "categories": {
+        "material_calibration": 64,
+        "mixed_action_history": 9,
+        "navigation_history": 95
+      },
+      "min_event_age_ge8_pairs": 28,
+      "min_event_age_ge16_pairs": 1,
+      "decisions": 8608,
+      "focus_decisions": 336,
+      "zero_weight_repeats": 2756
+    },
+    "DEV": {
+      "source_worlds": 12,
+      "source_episodes": 216,
+      "selected_full_episodes": 86,
+      "pairs": 59,
+      "paired_decisions": 118,
+      "memoryless_max_correct_on_balanced_paired_decisions": 59,
+      "memoryless_balanced_paired_accuracy_ceiling": 0.5,
+      "pair_both_correct_memoryless_ceiling": 0.0,
+      "categories": {
+        "material_calibration": 24,
+        "mixed_action_history": 8,
+        "navigation_history": 27
+      },
+      "min_event_age_ge8_pairs": 15,
+      "min_event_age_ge16_pairs": 2,
+      "decisions": 3253,
+      "focus_decisions": 118,
+      "zero_weight_repeats": 0
+    },
+    "HELDOUT": {
+      "source_worlds": 12,
+      "source_episodes": 216,
+      "selected_full_episodes": 80,
+      "pairs": 55,
+      "paired_decisions": 110,
+      "memoryless_max_correct_on_balanced_paired_decisions": 55,
+      "memoryless_balanced_paired_accuracy_ceiling": 0.5,
+      "pair_both_correct_memoryless_ceiling": 0.0,
+      "categories": {
+        "material_calibration": 24,
+        "mixed_action_history": 6,
+        "navigation_history": 25
+      },
+      "min_event_age_ge8_pairs": 18,
+      "min_event_age_ge16_pairs": 4,
+      "decisions": 4192,
+      "focus_decisions": 110,
+      "zero_weight_repeats": 0
+    }
+  },
+  "files": {
+    "TRAIN_focus_stream.jsonl": {
+      "sha256": "e10542d7066206e677e682705b6d940b3040f9eedcbaade3963f450ec4677554",
+      "bytes": 9702576
+    },
+    "TRAIN_pairs_EVALUATOR_ONLY.jsonl": {
+      "sha256": "162e9ce4201fdd2ba6389a221959566784e89c1502d39096fa05a3e2732185a3",
+      "bytes": 80581
+    },
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "feaca2a644fda665e886d7aaa152ac6419768dabd6b62e09d65f0f9ac8d03aa3",
+      "bytes": 61098
+    },
+    "DEV_EVALUATOR_ONLY_focus_stream.jsonl": {
+      "sha256": "8c0855ce71b44d7d3a7cd3db4e9ba2eb22c30c3542908975b59d44697df259a8",
+      "bytes": 4034910
+    },
+    "DEV_pairs_EVALUATOR_ONLY.jsonl": {
+      "sha256": "88d385a7401a341a09d55e49e7ba994f9c7135e524dac58e763c7f3edad2f06b",
+      "bytes": 28158
+    },
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "1d2024640254b9b820825cd2a3723982449be0a2a65d459f795f1158c58d71b8",
+      "bytes": 21299
+    },
+    "HELDOUT_EVALUATOR_ONLY_focus_stream.jsonl": {
+      "sha256": "43dde1cc0f702e06fc6f95f2b25de5fbafae7f50696be487abbf4deca2dd3b31",
+      "bytes": 5288696
+    },
+    "HELDOUT_pairs_EVALUATOR_ONLY.jsonl": {
+      "sha256": "e55201df27047633be5f254e67236915f4be46d39468d05f269916f1f9719bcb",
+      "bytes": 26255
+    },
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": {
+      "sha256": "0ec635f51bc68701ab6738ed1055ae233f0c51a72716506d3ec1f07248b1b9ea",
+      "bytes": 20053
+    }
+  },
+  "contract": {
+    "format": "Full ordered v54 source episodes are retained, never individual shuffled critical examples.",
+    "train": "TRAIN_focus_stream.jsonl is an additional curriculum subset, not a replacement for v54 TRAIN. Model input is steps[].input only. steps[].focus_loss_weight upweights matched memory decisions; original weight=0 stays masked.",
+    "dev": "DEV_EVALUATOR_ONLY_focus_stream.jsonl is for development evaluation only, never optimization.",
+    "heldout": "HELDOUT_EVALUATOR_ONLY_focus_stream.jsonl is sealed evaluation; do not tune or train on it.",
+    "pairs": "*_pairs_EVALUATOR_ONLY.jsonl contain action labels and decisive indices. NEVER enter them into the model prompt, feature stream or recurrent state.",
+    "provenance": "*_provenance_EVALUATOR_ONLY.jsonl are separate, inaccessible to model.",
+    "metrics": "Evaluate both members of each pair; report pair-both-correct as primary, per-choice balanced accuracy, 8+-step and 16+-step memory-age tiers, category subgroups and full-episode terminal success separately.",
+    "deployment": "Offline teacher-forced labels do not prove closed-loop autonomy; validate using synthetic host first and CyberSand-native ABI only in an independently authorized read/evaluation process.",
+    "leakage": "Never pool related world identities across splits or corpus versions. Do not leak selected pair metadata or evaluator labels."
+  },
+  "limitations": [
+    "Selection is from existing v54/v53 synthetic episodes, not new host-executed scenarios",
+    "Hardness is defined by instantaneous observation collisions; a full symbolic event-memory controller could still solve it",
+    "Some opposite navigation labels may be tie-related; evaluate action-regret/goal completion in a real host before treating as causal",
+    "Prelude receipts are script-generated; age measured only since latest *streamed* event, not prelude host time",
+    "No LFM/Sprocket weight changes or neural CPU latency/RSS; no native CyberSand execution",
+    "No immutable Actions release included by this generator"
+  ]
+}
