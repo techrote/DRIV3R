@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530">
+<rect width="1000" height="530" fill="#111620"/>
+<text x="20" y="28" fill="#e7edf5" font-size="20" font-family="sans-serif">DRIV3R / GATE-OSCILLATION-001 · executed synthetic trajectories</text>
+<g transform="translate(16,44)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">early_reopen / blind · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 35.39,75.48 35.39,66.78 35.39,58.09 35.39,49.39 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 1 searches</text>
+</g>
+<g transform="translate(263,44)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">early_reopen / intersect · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 44.09,84.17 44.09,75.48 44.09,66.78 44.09,58.09 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 2 searches</text>
+</g>
+<g transform="translate(510,44)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">early_reopen / lazy · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 35.39,75.48 35.39,66.78 35.39,58.09 35.39,49.39 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 1 searches</text>
+</g>
+<g transform="translate(757,44)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">early_reopen / neural · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 35.39,75.48 35.39,66.78 35.39,58.09 35.39,49.39 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 1 searches</text>
+</g>
+<g transform="translate(16,282)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">late_reopen / blind · FAILED</text>
+<polyline points="51.40,165.60 51.40,148.90 51.40,132.20 51.40,115.50 51.40,98.80 51.40,82.10 51.40,82.10" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="48.90" y="62.90" width="5" height="5" fill="#fc7968"/>
+<circle cx="51.40" cy="82.10" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">6 decisions · 1 searches</text>
+</g>
+<g transform="translate(263,282)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">late_reopen / intersect · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 44.09,84.17 44.09,75.48 44.09,66.78 44.09,58.09 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 2 searches</text>
+</g>
+<g transform="translate(510,282)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">late_reopen / lazy · ARRIVED</text>
+<polyline points="35.39,127.65 35.39,118.96 35.39,110.26 35.39,101.57 35.39,92.87 35.39,84.17 44.09,84.17 44.09,75.48 44.09,66.78 44.09,58.09 44.09,49.39 52.78,49.39 61.48,49.39 70.17,49.39 78.87,49.39 87.57,49.39 96.26,49.39 104.96,49.39 113.65,49.39 122.35,49.39 131.04,49.39 139.74,49.39 148.43,49.39 157.13,49.39 165.83,49.39 174.52,49.39 183.22,49.39 191.91,49.39 200.61,49.39 200.61,58.09 200.61,66.78 200.61,75.48 200.61,84.17 200.61,92.87 200.61,101.57 200.61,110.26 200.61,118.96 200.61,127.65" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="72.98" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="127.65" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">37 decisions · 2 searches</text>
+</g>
+<g transform="translate(757,282)">
+<rect width="236" height="222" rx="8" fill="#1c2430" stroke="#3f5062"/>
+<text x="10" y="19" fill="#fff" font-size="12" font-family="sans-serif">late_reopen / neural · ARRIVED</text>
+<polyline points="35.39,101.57 35.39,92.87 35.39,84.17 35.39,75.48 35.39,66.78 35.39,58.09 44.09,58.09 52.78,58.09 61.48,58.09 70.17,58.09 78.87,58.09 87.57,58.09 96.26,58.09 104.96,58.09 113.65,58.09 122.35,58.09 131.04,58.09 131.04,66.78 131.04,75.48 131.04,84.17 131.04,92.87 131.04,101.57 131.04,110.26 131.04,118.96 131.04,127.65 131.04,136.35 131.04,145.04 131.04,153.74 131.04,162.43 131.04,171.13 131.04,179.83 139.74,179.83 148.43,179.83 157.13,179.83 165.83,179.83 174.52,179.83 183.22,179.83 191.91,179.83 200.61,179.83 200.61,171.13 200.61,162.43 200.61,153.74 200.61,145.04 200.61,136.35 200.61,127.65 200.61,118.96 200.61,110.26 200.61,101.57" fill="none" stroke="#5dc6f5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="32.89" y="46.89" width="5" height="5" fill="#fc7968"/>
+<circle cx="200.61" cy="101.57" r="3" fill="#c7f77a"/>
+<text x="10" y="211" fill="#a1b2c7" font-size="10" font-family="sans-serif">47 decisions · 1 searches</text>
+</g>
+<text x="19" y="524" fill="#9cabbf" font-size="10" font-family="sans-serif">Blue: executed cursor path · red: material gate · lime: final cursor · synthetic DEVELOPMENT only</text>
+</svg>
