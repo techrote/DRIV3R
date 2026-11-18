@@ -26,13 +26,20 @@ def svg(report_path, out):
         parts.append(f'<rect x="{bx}" y="{by}" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>')
         arm=html.escape(w['arm']);case=html.escape(w['case'][:12]);kind=html.escape(w['kind'])
         parts.append(f'<text x="{bx+17}" y="{by+25}" fill="white" font-family="monospace" font-size="16">{arm} · {kind} · {case}</text>')
-        pts=[p for p in c['state'].path if 47<=p[0]<=52 and 47<=p[1]<=52]
-        if pts:
-            path=' '.join(f'{bx+27+(p[0]-47)*24},{by+58+(p[1]-47)*24}' for p in pts)
-            parts.append(f'<polyline points="{path}" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
-        gx,gy=c['goal'];cx,cy=c['state'].cursor
-        parts.append(f'<circle cx="{bx+27+(gx-47)*24}" cy="{by+58+(gy-47)*24}" r="6" fill="#f7c56e"/>')
-        parts.append(f'<circle cx="{bx+27+(cx-47)*24}" cy="{by+58+(cy-47)*24}" r="5" fill="#ff777c"/>')
+        # Preserve complete source-faithful prehistory, including any detour
+        # outside the original 4x4 traversal motif; fit inside each panel.
+        points=list(c['state'].path)+[c['goal'],c['state'].cursor]
+        minx=min(p[0] for p in points);maxx=max(p[0] for p in points)
+        miny=min(p[1] for p in points);maxy=max(p[1] for p in points)
+        step=min(23,142/max(1,maxx-minx),118/max(1,maxy-miny))
+        def xy(p):
+            return (bx+30+(p[0]-minx)*step,by+53+(p[1]-miny)*step)
+        pts=c['state'].path
+        trace=' '.join(f'{xy(p)[0]:.2f},{xy(p)[1]:.2f}' for p in pts)
+        parts.append(f'<polyline points="{trace}" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
+        gx,gy=xy(c['goal']);cx,cy=xy(c['state'].cursor)
+        parts.append(f'<circle cx="{gx:.2f}" cy="{gy:.2f}" r="6" fill="#f7c56e"/>')
+        parts.append(f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="5" fill="#ff777c"/>')
         for j,(budget,choice,prob) in enumerate(zip(lab.BUDGETS,w['choices'],w['backtrack_probs'])):
             parts.append(f'<text x="{bx+209}" y="{by+70+j*37}" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ {budget} left: {html.escape(choice)} · P(B)={prob:.3f}</text>')
         parts.append(f'<text x="{bx+209}" y="{by+178}" fill="#adc4d8" font-family="monospace" font-size="13">history depth {w["depth"]} · start credit {w["original_budget"]}</text>')

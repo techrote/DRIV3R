@@ -4,54 +4,54 @@
 <text x="35" y="68" fill="#a9bfd0" font-family="sans-serif" font-size="14">Each panel holds the exact host state and path fixed. Only the synthetic maximum recovery allowance changes. NOT native gameplay.</text>
 <rect x="30" y="98" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="47" y="123" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 8172452c9fdc</text>
-<polyline points="81,180 57,180 57,156 81,156" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="81" cy="156" r="6" fill="#f7c56e"/>
-<circle cx="81" cy="132" r="5" fill="#ff777c"/>
+<polyline points="129.00,220.00 106.00,220.00 83.00,220.00 83.00,197.00 83.00,174.00 60.00,174.00 60.00,151.00 83.00,151.00 106.00,151.00 106.00,174.00 106.00,197.00 129.00,197.00 129.00,174.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="129.00" cy="197.00" r="6" fill="#f7c56e"/>
+<circle cx="129.00" cy="174.00" r="5" fill="#ff777c"/>
 <text x="239" y="168" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.571</text>
 <text x="239" y="205" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: BACKTRACK · P(B)=0.524</text>
 <text x="239" y="242" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.489</text>
 <text x="239" y="276" fill="#adc4d8" font-family="monospace" font-size="13">history depth 1 · start credit 1</text>
 <rect x="620" y="98" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="637" y="123" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 8dc299e69ce3</text>
-<polyline points="671,180 695,180 719,180 719,204 695,204 671,204 671,228 671,252 695,252 695,228 719,228 743,228 743,204" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="695" cy="228" r="6" fill="#f7c56e"/>
-<circle cx="743" cy="204" r="5" fill="#ff777c"/>
+<polyline points="650.00,151.00 673.00,151.00 696.00,151.00 696.00,174.00 673.00,174.00 650.00,174.00 650.00,197.00 650.00,220.00 673.00,220.00 673.00,197.00 696.00,197.00 719.00,197.00 719.00,174.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="673.00" cy="197.00" r="6" fill="#f7c56e"/>
+<circle cx="719.00" cy="174.00" r="5" fill="#ff777c"/>
 <text x="829" y="168" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.528</text>
 <text x="829" y="205" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.487</text>
 <text x="829" y="242" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.459</text>
 <text x="829" y="276" fill="#adc4d8" font-family="monospace" font-size="13">history depth 3 · start credit 3</text>
 <rect x="30" y="314" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="47" y="339" fill="white" font-family="monospace" font-size="16">calibrated · former_positive · 9717e8a59cc7</text>
-<polyline points="81,396 81,420 81,444 57,444 57,468 57,420 57,396" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="57" cy="396" r="6" fill="#f7c56e"/>
-<circle cx="9" cy="420" r="5" fill="#ff777c"/>
+<polyline points="129.00,367.00 129.00,390.00 129.00,413.00 106.00,413.00 106.00,436.00 83.00,436.00 83.00,413.00 83.00,390.00 106.00,390.00 106.00,367.00 83.00,367.00 60.00,367.00 60.00,390.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="106.00" cy="367.00" r="6" fill="#f7c56e"/>
+<circle cx="60.00" cy="390.00" r="5" fill="#ff777c"/>
 <text x="239" y="384" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.554</text>
 <text x="239" y="421" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: BACKTRACK · P(B)=0.513</text>
 <text x="239" y="458" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.485</text>
 <text x="239" y="492" fill="#adc4d8" font-family="monospace" font-size="13">history depth 3 · start credit 3</text>
 <rect x="620" y="314" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="637" y="339" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 846f9c61bf45</text>
-<polyline points="671,396 671,420 695,420 695,444 671,444 671,468 695,468 719,468 743,468 743,444 719,444 719,420 719,396" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="695" cy="420" r="6" fill="#f7c56e"/>
-<circle cx="719" cy="396" r="5" fill="#ff777c"/>
+<polyline points="650.00,367.00 650.00,390.00 673.00,390.00 673.00,413.00 650.00,413.00 650.00,436.00 673.00,436.00 696.00,436.00 719.00,436.00 719.00,413.00 696.00,413.00 696.00,390.00 696.00,367.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="673.00" cy="390.00" r="6" fill="#f7c56e"/>
+<circle cx="696.00" cy="367.00" r="5" fill="#ff777c"/>
 <text x="829" y="384" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.668</text>
 <text x="829" y="421" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.265</text>
 <text x="829" y="458" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.097</text>
 <text x="829" y="492" fill="#adc4d8" font-family="monospace" font-size="13">history depth 10 · start credit 1</text>
 <rect x="30" y="530" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="47" y="555" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 864f477888b8</text>
-<polyline points="81,612 81,636 81,660 81,684 105,684 105,660 105,636 105,612 129,612 129,636 129,660 129,684 153,684" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="105" cy="660" r="6" fill="#f7c56e"/>
-<circle cx="153" cy="684" r="5" fill="#ff777c"/>
+<polyline points="60.00,583.00 60.00,606.00 60.00,629.00 60.00,652.00 83.00,652.00 83.00,629.00 83.00,606.00 83.00,583.00 106.00,583.00 106.00,606.00 106.00,629.00 106.00,652.00 129.00,652.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="83.00" cy="629.00" r="6" fill="#f7c56e"/>
+<circle cx="129.00" cy="652.00" r="5" fill="#ff777c"/>
 <text x="239" y="600" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.848</text>
 <text x="239" y="637" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.410</text>
 <text x="239" y="674" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.145</text>
 <text x="239" y="708" fill="#adc4d8" font-family="monospace" font-size="13">history depth 7 · start credit 3</text>
 <rect x="620" y="530" width="564" height="198" rx="10" fill="#172638" stroke="#36526b"/>
 <text x="637" y="555" fill="white" font-family="monospace" font-size="16">fixed3 · former_negative · 99ea2b72e37e</text>
-<polyline points="671,612 671,636 671,660 695,660 695,684 719,684 719,660 743,660 743,636 743,612 719,612 695,612 695,636" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="671" cy="636" r="6" fill="#f7c56e"/>
-<circle cx="695" cy="636" r="5" fill="#ff777c"/>
+<polyline points="650.00,583.00 650.00,606.00 650.00,629.00 673.00,629.00 673.00,652.00 696.00,652.00 696.00,629.00 719.00,629.00 719.00,606.00 719.00,583.00 696.00,583.00 673.00,583.00 673.00,606.00" fill="none" stroke="#6fc5c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="650.00" cy="606.00" r="6" fill="#f7c56e"/>
+<circle cx="673.00" cy="606.00" r="5" fill="#ff777c"/>
 <text x="829" y="600" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 1 left: BACKTRACK · P(B)=0.765</text>
 <text x="829" y="637" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 3 left: STOP · P(B)=0.318</text>
 <text x="829" y="674" font-family="monospace" font-size="15" fill="#f1f4f9">cap→ 5 left: STOP · P(B)=0.109</text>

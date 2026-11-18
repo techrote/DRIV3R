@@ -15,7 +15,7 @@
   },
   "native_execution": false,
   "new_source_sha256": {
-    "budget_cap_intervention_gallery.py": "459c7ac5bdfe019521eaf8f3622ded2eb5fb0b0d95247d5be27ddae1ac2920fb",
+    "budget_cap_intervention_gallery.py": "2cfc55da86da20ca424071556a7869bd41832a5c3888a0c50189fa919343332f",
     "budget_cap_intervention_lab.py": "9fbd81515e2b3f02d5d128afe225f36c7947838c43164769099a58e379532b3d",
     "test_budget_cap_intervention_lab.py": "fcccf223d19c945a0e795e9afd74e8a1c023564732446923690118320203e474"
   },
@@ -115,7 +115,7 @@
   },
   "selection_warning": "STOP denotes task-specific inability to reach a historical goal; not gameplay-wide stop advice.",
   "source_commit": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
-  "trace_gallery_sha256": "469a199163a4565b99dd229305a82c92d74df00632a81333970823e33b163d3d",
+  "trace_gallery_sha256": "dd2041489ef43feca78a651d197a52458688b9be75e77e7afbd72a49905a5602",
   "unique_triads": 2880,
   "version": "budget-cap-intervention/1",
   "wall_s": 5.375,
