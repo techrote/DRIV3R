@@ -1,0 +1,58 @@
+{
+  "branch": "research/import-consolidated-worm-labs",
+  "date": "2026-11-18",
+  "files": {
+    "C63-counterfactual-stochastic-gate-2026-11-18.md": {
+      "bytes": 9172,
+      "git_blob_sha1": "00a54d1409d84f7f88f16e6270203a9b75a21438",
+      "sha256": "92b37af8cc2f64c6c90dd190365c02f849813210b759e43876aa83527f8b25a3"
+    },
+    "C63-executed-ledger.zlib.b64": {
+      "bytes": 159777,
+      "git_blob_sha1": "ad7f59fb2cfc779f6ba7f5f0fa1e5ae03f615160",
+      "sha256": "9d9542e3464b7016ab3aaac8ed9653ef9997ccdfa9bb5097dd38a1f59d317588"
+    },
+    "C63-extract-ledger.py": {
+      "bytes": 521,
+      "git_blob_sha1": "4dccb4cf3f1eecd3be03e4e859598c2a7cd177a8",
+      "sha256": "fcc5cfda10af464d75ce74a3be734b0a30eb3739daf1499068e02d0953b0e3c2"
+    },
+    "C63-gallery.svg": {
+      "bytes": 59992,
+      "git_blob_sha1": "341907793ec5a445ee431644907586a8efd03e1c",
+      "sha256": "2bb8beb2f49dec9467dd5ffb7d3f1d9586e6071738097b09c42b0ebdf4f252f0"
+    },
+    "C63-summary.json": {
+      "bytes": 73325,
+      "git_blob_sha1": "1da4e7a59f3852778712d68ca6cc12099cfcd6f4",
+      "sha256": "96a1b503163997e975093ddcc33d6a00f137550708e9af67195db0b6fbecf63b"
+    },
+    "c63_counterfactual_gate.py": {
+      "bytes": 17593,
+      "git_blob_sha1": "0180727d7e0da9ddac7ec34f3a4dfa43ebf9cee5",
+      "sha256": "52ec21767b2ff03a513d5d4344ff74b1cadf51aa3b52b486ff3f1ff009daaf96"
+    },
+    "c63_gallery.py": {
+      "bytes": 2485,
+      "git_blob_sha1": "da4714facec7918e9733d73285dbafeeb2baf368",
+      "sha256": "a68e60d7b467e635591bf1268332e566920927a8d8a039d515914fa9bc42986a"
+    },
+    "test_c63_counterfactual_gate.py": {
+      "bytes": 4929,
+      "git_blob_sha1": "d8cb4193fd1771a5c4c448c8b23caf4cb855730b",
+      "sha256": "027fa8cc27c12245b05907ece26eb710acf47f277d6768b7c8e2ef058cce4b29"
+    }
+  },
+  "notes": [
+    "Evidence is synthetic-host only, not native CyberSand ABI",
+    "Full rollout ledger is losslessly compressed",
+    "Checkpoints are excluded from Git; owner ZIP contains them",
+    "GitHub Actions immutable checkpoint custody not established",
+    "Cold replay matches have actual host action and ink SHA identities"
+  ],
+  "pr": 1,
+  "repository": "techrote/DRIV3R",
+  "schema": "driv3r-C63-published-source-evidence-receipt/1",
+  "scientific_disposition": "RESEARCH HOLD \u2014 no model promotion",
+  "scope": "experiments/driv3r/training/guidance_recovery/**"
+}
