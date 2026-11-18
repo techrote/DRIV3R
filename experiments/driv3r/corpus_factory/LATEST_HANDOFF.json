@@ -6,55 +6,61 @@
   "branch": "research/import-consolidated-worm-labs",
   "only_mutable_pr": 1,
   "status": "DRAFT_HOLD_NO_MERGE",
+  "best_checkpoint": null,
+  "best_multidomain_trainer_curriculum": "v43_balanced_trainer_safe_v38_plus_v42",
   "best_sequential_corpus": "v38_host_accepted_live_tool_law_two_transition_recovery",
   "best_delayed_memory_corpus": "v42_two_interlock_remote_causal_memory",
-  "new_multi_domain_export": "v43_balanced_trainer_safe_composite_of_v38_v42",
-  "best_checkpoint": null,
-  "generator": "composite_curriculum_v43.js",
-  "generator_sha256": "779994453ca1d134ee640739d090a1a717b263e22fdfdcd4475cc9538c620487",
-  "test": "test_composite_curriculum_v43.js",
-  "test_sha256": "cfc0d78664481cf18935198025d11be5587dbdc9a557a78af3e33538fe1b60e6",
-  "pinned_manifest": "V43_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "0ec96332b8406a77083cea8c626b3d94dac6a7cd3795fef90538e2148bb90b4c",
-  "report": "COMPOSITE_CURRICULUM_V43_2026-11-18.md",
+  "new_ood_topology_challenge": "v44_random_graph_remote_edge_history_and_goal_revision",
+  "generator": "unseen_topology_v44.js",
+  "generator_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "test": "test_unseen_topology_v44.js",
+  "test_sha256": "bdfe849d89956702a1129060bb2f4d82bb3f1bb408bac551176123e69f24acbe",
+  "pinned_manifest": "V44_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "705ecb176304054c06e3e0e9d7eb8feda05e313009b36d6b0f93d5522844a052",
+  "report": "UNSEEN_TOPOLOGY_V44_2026-11-18.md",
   "stats": {
-    "train_policy_rows": 17824,
-    "dev_policy_rows": 20832,
-    "heldout_policy_rows": 28672,
-    "total_policy_rows": 67328,
-    "train_law_and_memory_rows_each": 8912,
-    "dev_heldout_evaluator_only_challenge_rows": 928,
-    "distinct_split_isolated_geometries": 32,
-    "source_verifiable_rows": 67328,
+    "train_policy_rows": 5652,
+    "dev_policy_rows": 2298,
+    "heldout_policy_rows": 2562,
+    "total_policy_rows": 10512,
+    "synthetic_host_terminal_successes": 480,
+    "positive_pair_count": 120,
+    "negative_control_pair_count": 120,
+    "topology_count": 120,
     "cross_split_topology_collisions": 0,
     "conflicting_labels": 0,
-    "train_dropped_v38_navigation_rows": 3632,
-    "original_train_v38_zero_weight_rows_excluded": 256
+    "duplicate_train_weights": 0,
+    "remote_gate_event_age_moves": 144,
+    "long_event_histories": true,
+    "accepted_wrong_material_preludes": 320,
+    "heldout_world_size": "10-11 grid vs train 7-8 grid"
   },
-  "qualification": "Two complete byte-identical generations and independent 67,328-row source-replay/hash/split audit; 928 evaluator challenge rows bit-identical to pinned parent; all original rare v38 paint/erase/stop TRAIN rows retained.",
+  "qualification": "Two byte-identical complete generations; independent full 10,512-row shortest-route/legal-label/teacher-leak check; full 480-episode exact-input host-action replay; evaluator pairs and cross-split topology isolation; source-smoke CI pending after publication.",
   "performance": {
-    "generation_seconds": [
-      6.23,
-      6.28
+    "generator_seconds_first": 1.05,
+    "generator_seconds_second": 1.13,
+    "generator_peak_rss_kib": [
+      161084,
+      154884
     ],
-    "generation_peak_rss_kib": [
-      1119368,
-      1124460
-    ],
-    "independent_auditor_seconds": 6.1,
-    "independent_auditor_peak_rss_kib": 1336464,
-    "model_inference_latency_rss": "NOT_MEASURED"
+    "independent_audit_seconds": 3.12,
+    "independent_audit_peak_rss_kib": 496868,
+    "model_latency_and_rss": "NOT_MEASURED"
   },
   "negative_results": [
-    "v43 combines rather than creates original host trajectories; no genuinely new graph family or owner-held-out environment",
-    "Counterfactual tasks remain solvable by rule interpretation; mixed-task SLM generalization untested",
-    "Source family potentially identifiable from synthetic observation structure; the export does not claim source-blind policy transfer",
-    "No actual SLM training, checkpoint, native CyberSand gameplay or model latency/RSS",
-    "Output shards are local reproducible files; immutable GitHub Actions publication remains unavailable"
+    "New game-like synthetic graph host; NOT native CyberSand. No native command ABI coverage or physical dynamics claimed.",
+    "Full static survey graph is already visible: challenge tests stale remote gate memory and topology transfer, not unknown-map exploration.",
+    "Deterministic shortest-path oracle remains a symbolic lower bound; no learned model performance established.",
+    "Procedural world generator has a single grid-graph family despite 120 distinct topologies.",
+    "No actual LFM/Sprocket weights updated; no model inference latency/RSS measured.",
+    "Only source manifests committed; generated JSONL shards remain local and not uploaded as immutable Actions artifacts."
   ],
-  "consumer_contract": "Use only policy row.input as model context, row.action as label and row.weight for loss. Never ingest evaluator_only provenance/challenge/memory files during training.",
-  "next_useful_consumer_experiment": "Pin a named LFM/Sprocket model, train a bounded CPU adapter on composite TRAIN, compare against v38-only and v42-only controls; DEV select before sealed HELDOUT autonomous native-legal-equivalent synthetic host replays. Evaluate law contrast vs memory ablation and negative controls, track terminal recovery/regret/contamination/illegal proposals/p50-p95 inference latency/model RSS. Separately test unseen-topology remote-goal degradation documented by C58.",
-  "cross_lane_observation": "C58 guidance/recovery on 18 Nov reports previously unseen remote-goal degradation; v43 does not solve remote exploration or information recovery.",
+  "consumer_contract": "Only *_policy.jsonl input presented to model. action is label, weight is sample weight. *_challenge_EVALUATOR_ONLY.jsonl is sealed evaluator metadata. For autonomy call scenario(split,index), prepare(world,kind,closed), input(host), apply(host,action) from generator; do not pass hidden host state to model.",
+  "next_useful_consumer_experiment": "Train pinned LFM/Sprocket adapter only on TRAIN v43+v44, DEV-select then autonomous closed-loop HELDOUT on unseen 10-11 grid topologies; compare with v43-only and v44-only, gate-history/full vs ablated, relevant vs irrelevant gates, first-action regret, terminal painting recovery, illegal/premature STOP, p50/p95 latency and RSS. Do not claim native CyberSand results.",
+  "cross_lane_observations": {
+    "lfm": "GP350-018 LFM 350M decoder hardening handoff reports no new full-model inference/update and branch/retrace collapse in some controls (2026-11-17).",
+    "sprocket": "Sprocket game policy latest handoff 2026-11-17 blocked on missing pinned root/tokenizer/dependencies/network/dispatch; no actual LoRA."
+  },
   "no_paid_api_or_gpu": true,
   "no_out_of_lane_writes": true
 }

@@ -1,0 +1,82 @@
+{
+  "schema": "driv3r/corpus_factory/unseen-topology-v44/manifest",
+  "date": "2026-11-18",
+  "synthetic_not_native_CyberSand": true,
+  "generator": "unseen_topology_v44.js",
+  "generator_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "design": "Procedurally generated randomized planar graph junctions with remote edge-gate counterfactuals, long host-accepted history ageing, alternating goal/material painting and wrong-paint recovery. Strict positive reroute vs irrelevant-gate negative controls.",
+  "distribution": {
+    "TRAIN": "7-8 grid, extra-edge probability 0.40",
+    "DEV": "9 grid, extra-edge probability 0.32",
+    "HELDOUT": "10-11 grid, extra-edge probability 0.26"
+  },
+  "model_contract": "ONLY policy.input to model; policy.action supervised label; policy.weight for loss; *_challenge_EVALUATOR_ONLY never training.",
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "worlds": 72,
+      "unique_topologies": 72,
+      "positive_pairs": 72,
+      "negative_control_pairs": 72,
+      "terminal_episodes": 288,
+      "decisions": 5652,
+      "zero_weight": 0
+    },
+    "DEV": {
+      "worlds": 24,
+      "unique_topologies": 24,
+      "positive_pairs": 24,
+      "negative_control_pairs": 24,
+      "terminal_episodes": 96,
+      "decisions": 2298,
+      "zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 24,
+      "unique_topologies": 24,
+      "positive_pairs": 24,
+      "negative_control_pairs": 24,
+      "terminal_episodes": 96,
+      "decisions": 2562,
+      "zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 5652,
+      "bytes": 10232891,
+      "sha256": "1590a1b3e61a4731ac404a383223c6eaa438c55a9bf6068bd599e7a1f3bf768d"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 144,
+      "bytes": 85267,
+      "sha256": "91ce10dd87dcc33671d72b0686de540ccce649764c5b8cd86170c7e18182cee6"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 2298,
+      "bytes": 4887022,
+      "sha256": "6b889320901dcfebe010b28f06410f821c45339c22cf676c24463557eba5f4d8"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 28327,
+      "sha256": "8bc4a4792f0a013d03b0117f545c98dcbd7f68d1105bf76041d1e87187a960f8"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 2562,
+      "bytes": 6463104,
+      "sha256": "2c8154003d8e225c740f4b1b3e2bb23ade59e86949c6179a023c13d381c7c300"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 28525,
+      "sha256": "aeb24810458e6da2a4a54821a14505956992c65e82acb0837c9ad399ffb30334"
+    }
+  },
+  "caveats": [
+    "Synthetic graph host and event dispatcher, not native CyberSand",
+    "Oracle knows environment dynamics that policy can infer from full old event receipts; no native dynamics",
+    "No model weights trained or evaluated",
+    "Full static graph provided after synthetic survey; not unexplored frontier discovery"
+  ]
+}
