@@ -2,7 +2,7 @@
   "schema": "driv3r/frankenlayers-latest-handoff/v1",
   "dated": "2026-11-18",
   "lab": "frankenlayers_lab",
-  "status": "Q4_MIDDLE_REAL_INFERENCE_VERIFIED_EXTREME_RATE_LIMITED",
+  "status": "Q4_EXTREME_REAL_CPU_INFERENCE_IN_PROGRESS",
   "repository": "techrote/DRIV3R",
   "pr": 1,
   "branch": "research/import-consolidated-worm-labs",
@@ -24,9 +24,9 @@
   "fresh_candidate_catalogue": "run-request-wave20.json",
   "manual_inference_driver": "wave20_structural.py",
   "source_test": "test_wave20_structural.py",
-  "actual_new_inference": "Real Q4 middle tier completed in Actions run 44253735083 at cd642b7d319c80526eb97e980e5401d9fb0c74e2 (reviewed now); this custody review performed no additional inference.",
-  "precise_blocker": "No infrastructure blocker. Rate fence: middle inference started 2026-11-18T06:45:47Z; next permitted new Q4 model request at or after 2026-11-18T12:45:47Z, subject to fresh no-running-job and branch-HEAD checks.",
-  "next_consumer": "At next eligible review, recheck all Q4 runs, request file blob SHA and branch head; submit exactly one extreme 3/2 layer request only if no running/queued campaign, keeping donor SHA, CPU, W0 folds 7703/8807, 24 steps, max_parallel=1. After extreme original artifact audit freeze verified original SVG/PNG/JSON catalogue and stop recurrence. Send only references to Preference/Extreme Quant/Distillation; no unsupported niche claims.",
+  "actual_new_inference": "Middle Q4 genuine inference verified (run 44253735083, 84/84 hashes, 146/146 legal host actions). One extreme Q4 genuine inference request launched on 2026-11-18 in run 44307129291 at fa98269f8d2db827eed4df984a23ecea9515bc1d; results PENDING, do not claim yet.",
+  "precise_blocker": "No infrastructure blocker currently: exact-head Q4 extreme run 44307129291 was in_progress at first status check. Do not submit another model request during this run or repeat any tier.",
+  "next_consumer": "Inspect exact-run extreme 44307129291 until completed, then download original immutable artifact; verify SHA256SUMS/real HTTP raw legal choices/graph receipt/official Q4 and compiled-server hashes/all W0 original SVG PNG JSON/p50 p95 sampled RSS, retain STOP-only failures. On full upper+middle+extreme custody, freeze a small verified source-matched catalogue and source-only handoff to Preference Lab/Extreme Quant/Distillation. No fourth tier or paid training. Disable the recurrence only after all three tiers are fully audited/documented.",
   "exclusions": [
     "No native CyberSand acceptance",
     "No novel model scores",
@@ -279,5 +279,28 @@
     },
     "evidence_report": "Q4-MIDDLE-EVIDENCE-2026-11-18.md",
     "independent_audit": "zip SHA, all SHA256SUMS payloads, normalized probability, raw-to-applied host choice legality, HTTP 200 and event/decision count"
+  },
+  "q4_extreme_dispatch": {
+    "run_id": 44307129291,
+    "request_commit": "fa98269f8d2db827eed4df984a23ecea9515bc1d",
+    "request_nonce": "extreme-20261118T1246Z-three-two-layer-ablation",
+    "request_tier": "extreme",
+    "requested_at": "2026-11-18T12:46:29Z",
+    "status_at_check": "in_progress",
+    "expected_modes": [
+      "stock",
+      "greyhound",
+      "grey3_cut",
+      "grey2_cut"
+    ],
+    "controls": [
+      "stock",
+      "greyhound"
+    ],
+    "exclusions": [
+      "Not yet a result",
+      "Synthetic W0, not native CyberSand",
+      "No further queued requests permitted"
+    ]
   }
 }
