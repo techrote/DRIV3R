@@ -2,7 +2,7 @@
   "schema": "driv3r/frankenlayers-latest-handoff/v1",
   "dated": "2026-11-18",
   "lab": "frankenlayers_lab",
-  "status": "Q4_EXTREME_REAL_CPU_INFERENCE_IN_PROGRESS",
+  "status": "Q4_UPPER_MIDDLE_EXTREME_ORIGINAL_EVIDENCE_AUDITED_COMPLETE",
   "repository": "techrote/DRIV3R",
   "pr": 1,
   "branch": "research/import-consolidated-worm-labs",
@@ -24,15 +24,18 @@
   "fresh_candidate_catalogue": "run-request-wave20.json",
   "manual_inference_driver": "wave20_structural.py",
   "source_test": "test_wave20_structural.py",
-  "actual_new_inference": "Middle Q4 genuine inference verified (run 44253735083, 84/84 hashes, 146/146 legal host actions). One extreme Q4 genuine inference request launched on 2026-11-18 in run 44307129291 at fa98269f8d2db827eed4df984a23ecea9515bc1d; results PENDING, do not claim yet.",
-  "precise_blocker": "No infrastructure blocker currently: exact-head Q4 extreme run 44307129291 was in_progress at first status check. Do not submit another model request during this run or repeat any tier.",
-  "next_consumer": "Inspect exact-run extreme 44307129291 until completed, then download original immutable artifact; verify SHA256SUMS/real HTTP raw legal choices/graph receipt/official Q4 and compiled-server hashes/all W0 original SVG PNG JSON/p50 p95 sampled RSS, retain STOP-only failures. On full upper+middle+extreme custody, freeze a small verified source-matched catalogue and source-only handoff to Preference Lab/Extreme Quant/Distillation. No fourth tier or paid training. Disable the recurrence only after all three tiers are fully audited/documented.",
+  "actual_new_inference": "Official pinned Q4 real CPU inference across three staged Actions original archives completed, 238/238 SHA256 manifest entries and 304/304 raw HTTP legal host-applied decisions independently reverified. 22/24 cases completed; GREY2_CUT failed to initialize both worlds due missing full/sliding attention ballast.",
+  "precise_blocker": null,
+  "next_consumer": "Freeze owner-approved Q4 trilogy and disable repeated Q4 schedule. Preference Lab: blind review original unsmoothed AERO4_NO2/GREY3 W0 SVG/JSON/PNG trails in original pinned Actions artifacts. Extreme Quant/Distillation: exact source/graph/bytes and lower-bit comparisons on new held-out game objectives, no mutation of their files. No native acceptance, no additional Q4 model request.",
   "exclusions": [
     "No native CyberSand acceptance",
     "No novel model scores",
     "No false niche labels",
     "No posthoc guards or surrogate weights",
-    "No changes to external repos"
+    "No changes to external repos",
+    "No fifth or repeat official-Q4 scheduled tier",
+    "2-block failure retained; no false performance result",
+    "Model GGUF weights still all loaded in RSS; only execution blocks omitted"
   ],
   "historical_wave20_status": "WAVE20_STRUCTURAL_GRAPH_SOURCE_COMMITTED_NOT_INFERRED",
   "historical_wave20_blocker": "This session cannot acquire the 1.846 GB Q8 GGUF/build pinned llama.cpp or dispatch an Actions job; imported DRIV3R checkout also lacks the externally mounted legacy backend/process and W0 modules needed for parent run_arm. Source smoke cannot substitute.",
@@ -148,7 +151,7 @@
     "performance_caveats": "Input prefill tokens/sec measured, generation output tokens 0; post-ready RSS 1.87M KiB, no weights removed; STOP-only stock Q4 limits comparative interpretation; no verified personality niche.",
     "evidence_ledger": "Q4-UPPER-EVIDENCE-2026-11-18.md"
   },
-  "next_eligible_request_utc": "2026-11-18T05:49:47Z",
+  "next_eligible_request_utc": null,
   "q4_middle_verified": {
     "run_id": 44253735083,
     "source_sha": "cd642b7d319c80526eb97e980e5401d9fb0c74e2",
@@ -286,7 +289,7 @@
     "request_nonce": "extreme-20261118T1246Z-three-two-layer-ablation",
     "request_tier": "extreme",
     "requested_at": "2026-11-18T12:46:29Z",
-    "status_at_check": "in_progress",
+    "status_at_check": "completed",
     "expected_modes": [
       "stock",
       "greyhound",
@@ -301,6 +304,102 @@
       "Not yet a result",
       "Synthetic W0, not native CyberSand",
       "No further queued requests permitted"
-    ]
+    ],
+    "conclusion": "success_with_two_architectural_failures",
+    "artifact_id": 14429156993,
+    "artifact_sha256": "ad481236a3d47aface28485771db0b2ab8ef65eff366db40a8b40db045672fd5",
+    "completed_utc": "2026-11-18T12:52:43Z"
+  },
+  "current_best_official_q4": {
+    "candidate": "aero4_no2",
+    "executed_source_layers": [
+      0,
+      4,
+      10,
+      20
+    ],
+    "evidence_run_id": 44253735083,
+    "heldout_folds": [
+      {
+        "seed": 7703,
+        "family": "pipework",
+        "decisions": 24,
+        "new_steps": 21,
+        "p50_seconds": 0.397,
+        "p95_seconds": 0.402
+      },
+      {
+        "seed": 8807,
+        "family": "greebles",
+        "decisions": 24,
+        "new_steps": 16,
+        "p50_seconds": 0.39,
+        "p95_seconds": 0.402
+      }
+    ],
+    "status": "promising synthetic host survival/exploration; no native, held-out goal or niche acceptance"
+  },
+  "alternative_sparse_official_q4": {
+    "candidate": "grey3_cut",
+    "executed_source_layers": [
+      0,
+      4,
+      10
+    ],
+    "evidence_run_id": 44307129291,
+    "folds": [
+      {
+        "seed": 7703,
+        "family": "pipework",
+        "decisions": 24,
+        "new_steps": 10,
+        "p50_seconds": 0.274,
+        "p95_seconds": 0.281,
+        "revisit_contacts": 9
+      },
+      {
+        "seed": 8807,
+        "family": "greebles",
+        "decisions": 24,
+        "new_steps": 18,
+        "p50_seconds": 0.278,
+        "p95_seconds": 0.289,
+        "revisit_contacts": 3,
+        "two_step_oscillations": 5
+      }
+    ],
+    "status": "fast real neural graph survivor; not accepted as an expressive personality"
+  },
+  "q4_extreme_verified": {
+    "run_id": 44307129291,
+    "source_sha": "fa98269f8d2db827eed4df984a23ecea9515bc1d",
+    "artifact_id": 14429156993,
+    "artifact_zip_sha256": "ad481236a3d47aface28485771db0b2ab8ef65eff366db40a8b40db045672fd5",
+    "manifest_entries_verified": "70/70",
+    "original_legal_http_host_applied": "98/98",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "completed_cases": 6,
+    "failed_cases": 2,
+    "grey3": "24/24 continuing decisions per fold; 10/18 new cells; 0.274/0.278s p50; 0.281/0.289s p95",
+    "grey2": "context startup failed in both folds: Experimental flow lacks full/sliding attention ballast",
+    "evidence_report": "Q4-TRILOGY-EVIDENCE-2026-11-18.md",
+    "catalogue": "Q4-TRILOGY-CATALOGUE-2026-11-18.json"
+  },
+  "q4_trilogy_final": {
+    "stage_runs": [
+      44202739826,
+      44253735083,
+      44307129291
+    ],
+    "manifest_verified": "238/238",
+    "real_http_legal_and_host_applied": "304/304",
+    "completed_cases": "22/24",
+    "architectural_failures": "2/24 GREY2_CUT",
+    "catalogue": "Q4-TRILOGY-CATALOGUE-2026-11-18.json",
+    "report": "Q4-TRILOGY-EVIDENCE-2026-11-18.md",
+    "recurring_campaign_complete": true,
+    "no_more_tiers": true,
+    "scientific_niches_accepted": []
   }
 }
