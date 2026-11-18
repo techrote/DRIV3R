@@ -4,53 +4,107 @@
   "repository": "techrote/DRIV3R",
   "branch": "research/import-consolidated-worm-labs",
   "draft_hold_pr": 1,
-  "latest_qualified_corpus": "v53 deferred cross-surface physical-observation obligation with interleaved warning controls; supplements v43-v52",
-  "source": "experiments/driv3r/corpus_factory/deferred_surface_v53.js",
-  "audit": "experiments/driv3r/corpus_factory/test_deferred_surface_v53.js",
-  "manifest": "experiments/driv3r/corpus_factory/V53_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/DEFERRED_SURFACE_V53_2026-11-18.md",
+  "latest_qualified_corpus": "v54 event-stream memory benchmark derived from qualified v53; historical receipts arrive once, ordered episodes require memory",
+  "source": "experiments/driv3r/corpus_factory/stream_v54.py",
+  "audit": "experiments/driv3r/corpus_factory/test_stream_v54.py",
+  "manifest": "experiments/driv3r/corpus_factory/V54_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/EVENT_STREAM_MEMORY_V54_2026-11-18.md",
+  "source_v53_manifest_sha256": "4a1cfbd27781bd960805de4fbb0316be67e9a14d21848015c79fafd570ca001f",
   "benchmark": {
     "synthetic_not_native_CyberSand": true,
     "worlds": 56,
-    "host_successful_episodes": 1008,
-    "policy_rows": 44788,
-    "host_safe_probe_paints": 2072,
-    "B_physical_causal_pairs": 392,
-    "irrelevant_B_A_negative_pairs": 224,
-    "coincident_A_B_warning_controls": 112,
-    "heldout_max_deferred_age_actions": 88,
-    "source_independent_host_replay_policy_rows": 44788,
-    "full_generations_byte_identical": 2,
-    "zero_weight_TRAIN_duplicates": 11414,
-    "cross_split_conflicts": 0,
-    "v53_geometry_overlap_v44_to_v52": 0
+    "host_accepted_source_episodes": 1008,
+    "stream_decisions": 44788,
+    "TRAIN": {
+      "worlds": 32,
+      "decisions": 22842,
+      "new_event_receipts": 10432,
+      "no_new_event_steps": 19194,
+      "zero_weight_repeats": 11414,
+      "episodes": 576,
+      "actions": {
+        "ERASE": 1760,
+        "MOVE_E": 4066,
+        "MOVE_N": 5154,
+        "MOVE_S": 4578,
+        "MOVE_W": 4372,
+        "PAINT_A": 1824,
+        "PAINT_B": 512,
+        "STOP": 576
+      }
+    },
+    "DEV": {
+      "worlds": 12,
+      "decisions": 9310,
+      "new_event_receipts": 3912,
+      "no_new_event_steps": 7942,
+      "zero_weight_repeats": 0,
+      "episodes": 216,
+      "actions": {
+        "ERASE": 660,
+        "MOVE_E": 1720,
+        "MOVE_N": 2059,
+        "MOVE_S": 2041,
+        "MOVE_W": 1738,
+        "PAINT_A": 684,
+        "PAINT_B": 192,
+        "STOP": 216
+      }
+    },
+    "HELDOUT": {
+      "worlds": 12,
+      "decisions": 12636,
+      "new_event_receipts": 3912,
+      "no_new_event_steps": 11268,
+      "zero_weight_repeats": 0,
+      "episodes": 216,
+      "actions": {
+        "ERASE": 660,
+        "MOVE_E": 2685,
+        "MOVE_N": 2694,
+        "MOVE_S": 2604,
+        "MOVE_W": 2901,
+        "PAINT_A": 684,
+        "PAINT_B": 192,
+        "STOP": 216
+      }
+    },
+    "memory_ambiguity": {
+      "TRAIN": {
+        "identical_instant_input_opposite_label_keys": 168,
+        "decision_rows_in_conflicting_keys": 1440,
+        "stateless_majority_ceiling_in_conflicting_rows": 0.644444,
+        "stateless_majority_ceiling_all_rows": 0.977585,
+        "observable_prefix_conflicts": 0,
+        "full_history_label_conflicts": 0
+      },
+      "DEV": {
+        "identical_instant_input_opposite_label_keys": 59,
+        "decision_rows_in_conflicting_keys": 540,
+        "stateless_majority_ceiling_in_conflicting_rows": 0.644444,
+        "stateless_majority_ceiling_all_rows": 0.979377,
+        "observable_prefix_conflicts": 0,
+        "full_history_label_conflicts": 0
+      },
+      "HELDOUT": {
+        "identical_instant_input_opposite_label_keys": 55,
+        "decision_rows_in_conflicting_keys": 560,
+        "stateless_majority_ceiling_in_conflicting_rows": 0.657143,
+        "stateless_majority_ceiling_all_rows": 0.984805,
+        "observable_prefix_conflicts": 0,
+        "full_history_label_conflicts": 0
+      }
+    },
+    "independent_stream_audit": "PASS all 44788 labels, event deltas, grouping and output SHA"
   },
-  "negative_control": {
-    "label": "deterministic symbolic, NOT neural",
-    "heldout_B_drift_arms": 84,
-    "wrong_material_if_B_warning_ignored": 84,
-    "successful_reference_oracle_heldout_episodes": 216
-  },
-  "hashes": {
-    "generator_sha256": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
-    "shards": {
-      "TRAIN_policy.jsonl": "4a2418d5c5699d51897430fa523dfab3dcc91612a6c8ec5ebf27c78135aa34c1",
-      "TRAIN_challenge_EVALUATOR_ONLY.jsonl": "bd8c70f98a749203edc565ce61660a0812ebe771cda8e8a0535abe9aa9b56c62",
-      "DEV_policy.jsonl": "0894d32d3856db4170b12d2fc324c3309ee110e3a12cfbbd4c62bbd9cd703230",
-      "DEV_challenge_EVALUATOR_ONLY.jsonl": "d5d903014ff76beb48989192602265ccf470e7179b061f2297593e2495e27c96",
-      "HELDOUT_policy.jsonl": "cfd840704a7463d14f8ef42c4d7758443968a2b217286b04a6b372d591d08309",
-      "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": "1b4eae3a3928a96f61fe049fb443354bd05beb92938c9578d8475d103cfec978"
-    }
-  },
-  "model_training": {
-    "actual_target_SLM_optimizer_steps": 0,
-    "root_SLM_inference": 0,
-    "native_CyberSand_episodes": 0,
+  "neural_model": {
+    "target_SLM_optimizer_steps": 0,
+    "closed_loop_target_SLM_episodes": 0,
     "neural_CPU_latency_RSS": null,
     "checkpoint_sha256": null,
     "paid_GPU_or_API_spend": false
   },
-  "known_failure": "Per-surface symbolic temporal/event parser still sufficient; synthetic external alerts unvalidated natively. Training/inference and immutable Actions publication outstanding.",
-  "next_consumer_experiment": "Actual pinned LFM350/Sprocket CPU SLM/adapter training v50-v52 vs v50-v53, heldout closed-loop future-surface warning ablation and material feedback; latency p50/p95 and RSS; strict family grouping and evaluator isolation.",
+  "known_failure": "v53 repeatedly replayed full durable history, making symbolic stateless parsing sufficient. v54 solves that observation shortcut, but training has not shown a named SLM can retain useful event history. Synthetic prelude/native-ABI mismatch remains.",
+  "next_consumer_experiment": "Pinned named LFM350/Sprocket CPU SLM/adapter training on complete TRAIN streaming episodes, no within-episode shuffle; autonomous DEV and sealed HELDOUT with carry-memory vs reset-every-step ablation, separate contradictory-subset accuracy, p50/p95 latency and RSS; native host validation only after positive synthetic result.",
   "authority": "DATA ONLY. DRIV3R PR #1 Draft/HOLD; mutate only experiments/driv3r/corpus_factory/**; CyberSand and Neurounner read-only; no force, main or paid spend."
 }
