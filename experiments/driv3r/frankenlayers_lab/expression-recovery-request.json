@@ -1,7 +1,7 @@
 {
   "schema": "driv3r/expression-recovery-request/v1",
-  "nonce": "owner-20261118-recover-expression-screen-01",
-  "phase": "screen",
+  "nonce": "owner-20261118-expression-long-after-audit-14465663492",
+  "phase": "long",
   "branch": "research/import-consolidated-worm-labs",
   "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
   "q8_sha256": "073313d92b53b0ac8193db6e906cb3c78a98183d244b15b7b8f5426115c6738c",
@@ -19,9 +19,6 @@
     "q4"
   ],
   "modes": [
-    "stock",
-    "greyhound",
-    "branchwitch",
     "aero4_no2",
     "grey3_cut"
   ],
@@ -37,9 +34,13 @@
     [
       8807,
       "architecture"
+    ],
+    [
+      9601,
+      "greebles"
     ]
   ],
-  "steps_per_episode": 40,
+  "steps_per_episode": 96,
   "max_parallel": 1,
   "cpu_only": true,
   "paid_api": false,
@@ -49,5 +50,6 @@
   "ready": false,
   "merge": false,
   "owner_ratings_supplied": false,
-  "intent": "Matched source-pinned real CPU Q8/Q4 on-policy candidate screen; raw greedy versus common-random-number temperature 1.5 plus 0.25 flat mixture. No forced zigzags. Paired W0 initial world and legal action menu; detect periodic 2..16 position cycles and score only as measured proxies."
+  "intent": "Pre-registered single 96-decision confirmation/stress test after SHA256-checked 60-case original screen artifact 14465663492: quantisation-matched Q8/Q4 on 4 W0 starting worlds, AERO4_NO2 exploratory robust arm and GREY3_CUT collapse/variation control, greedy versus explicit host-side stochastic decoder. No artificial forced turns, no native claim, no automatic continuation.",
+  "screen_artifact_id": "14465663492"
 }
