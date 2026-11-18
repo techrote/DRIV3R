@@ -190,7 +190,9 @@ def blind_rank(rows,heads):
 def rollout(base,option,snap,rngstate,log,tick,target,arm,policy,heads=None,trace=False):
     w=copy.deepcopy(snap);w.goal=tuple(target);w.goal_change=True;w.goals_seen+=1;w.stuck=2
     advice=cue(w,arm);r=np.random.default_rng();r.bit_generator.state=copy.deepcopy(rngstate)
-    ctrl=None if policy=='C18-A0' else ReArmedWatch(option,None)
+    # All policies must execute independently in the no-cue arm; the guidance
+    # controller is deliberately inactive, not a copied baseline record.
+    ctrl=None if policy=='C18-A0' or arm[0]=='none' else ReArmedWatch(option,None)
     ledger=copy.deepcopy(log);acts=[];turns=0;matched=0;compliant=0;pref=opp=0;path=[];goal=False
     for t in range(tick,HORIZON):
         if w.stopped:break
@@ -243,8 +245,7 @@ def evaluate(base,option,worlds,heads,trace_limit=18):
       for arm in ARMS:
         out={}
         for p in POLICIES:
-          if arm[0]=='none' and p!='C18-A0':out[p]=copy.deepcopy(out['C18-A0'])
-          else:out[p]=rollout(base,option,snap,rng,log,tick,target,arm,p,heads)
+          out[p]=rollout(base,option,snap,rng,log,tick,target,arm,p,heads)
         assert all(o['host_rejections']==0 and o['protected_sha']==receipt['protected_sha'] for o in out.values())
         if arm[0]=='none':assert len({(o['action_sha'],o['ink_sha']) for o in out.values()})==1
         row={'graph':info['graph_sha'],'family':fam,'case':case,'seed':seed,'tick':tick,

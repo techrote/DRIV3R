@@ -256,7 +256,7 @@
     }
   },
   "gallery_sha256": "6e2bbfc367a821258766f9b9bfbeb705e50f45919e07d808a77f6e020a7c450f",
-  "ledger_sha256": "6f8a9c69de7c1c5516ae26cdd047904a3980eaea23b04dafd4bcb458bc6d3772",
+  "ledger_sha256": "8f000a7a16ef3b14d62e60eb6f2492eae1c688e274ec81600ceda92f1256cba8",
   "preview": {
     "goal_events": {
       "C18-A0": 26,
@@ -289,7 +289,7 @@
     "test_c55_observed_waypoint.py": "69a934e45117c7bb238a16adf55e8049d6e375ebb5f084264597dcb568ebd2ec"
   },
   "schema": "DRIV3R-C55-evidence/1",
-  "source_sha256": "bb0cae42bbe94452c83ff508f5e6cbf9f504b3377f6d6202578934c12b45701d",
+  "source_sha256": "0327c5b75eeaadb6cfacd8bc7d9abd08204f2b83c57c2e5c4879868add615e7e",
   "train": {
     "X_sha256": "aec976190062294f5e03ece19ac9ca0bd94de538d56257d1aff08d5e53597514",
     "Y_sha256": "5a79b36a79a5701e671b7bbfeb8db5aec94af5d2deef484aed87e0fe4c1e9352",
