@@ -28,7 +28,7 @@ The event-only policy reached 39/64, with 128 searches. External events were rep
 - 64-logical-move external gate; zero native receipts, zero optimizer updates, no new checkpoints, zero paid GPU/API calls.
 - Original eight-panel SVG trajectories rendered from receipts, with distinct neural versus planner segments, material edits and goals. These are **not** native gameplay captures.
 - Three focused local tests passed, including event pre/post state hashes, ink-safe closure suppression, and tamper detection for actions/material event/probabilities. Independent full-campaign 4-process replay passed in **12.64 seconds**, parent peak RSS **101,392 KiB**, with separate worker processes. This is a replay benchmark, not uninterrupted end-to-end experiment time.
-- Exact source and frozen checkpoint SHA-256 hashes, compressed receipt hashes, scenario-level outcomes and explicit caveats are in `MATERIAL_EPOCH_EVIDENCE_2026-11-18.json`.
+- Exact source and frozen checkpoint SHA-256 hashes, compressed receipt hashes, scenario-level outcomes and explicit caveats are in `MATERIAL_EPOCH_EVIDENCE_2026-11-18.json`. The committed `material_epoch_verify_publication.py` independently verifies the compressed Git receipt archive against the frozen checkpoints; this verification passed for **320/320 episodes**, **16,140** actions and **8,542** probability vectors in **6.612 s** (4-process replay).
 
 ## Limits and recommended next test
 

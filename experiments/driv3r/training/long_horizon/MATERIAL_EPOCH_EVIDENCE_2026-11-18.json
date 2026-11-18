@@ -37,7 +37,8 @@
   "native_receipts": 0,
   "optimizer_updates": 0,
   "paid_gpu_api_calls": 0,
-  "replay": "python -m experiments.driv3r.training.long_horizon.material_epoch_lab verify --out <extracted-run-folder> --checkpoints <external-711-712-checkpoint-folder>",
+  "publication_verifier_sha256": "d1e890ed167c89166e1bb02ef9b29e10d01b8569b4fc69f3cf67a5503891052a",
+  "replay": "python -m experiments.driv3r.training.long_horizon.material_epoch_verify_publication --ledger experiments/driv3r/training/long_horizon/MATERIAL_EPOCH_EVIDENCE_2026-11-18.json --receipts experiments/driv3r/training/long_horizon/MATERIAL_EPOCH_RECEIPTS_2026-11-18.jsonl.gz --checkpoints <external-checkpoint-directory>",
   "root_at_start": "431e5bbde82abb07a27562a67473fed7e3766127",
   "scenario_pairs": [
     {
