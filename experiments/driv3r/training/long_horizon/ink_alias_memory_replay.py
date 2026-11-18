@@ -43,7 +43,6 @@ def verify(path, probe_checkpoint, frozen_dir):
     return {'verified_episodes':count,'verified_host_decisions':decisions,
             'recomputed_model_probability_vectors':vectors}
 
-
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--receipts',required=True,type=Path)
