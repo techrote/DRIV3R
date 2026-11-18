@@ -1,11 +1,8 @@
 """Tests for bounded rootless/adjacent-backtrack counterfactual audit."""
-import copy
-import json
-import tempfile
+import os
 import unittest
 from pathlib import Path
 
-import numpy as np
 
 from . import retrace_realism_lab as lab
 from .world import Spec, World
@@ -55,8 +52,12 @@ class RetraceRealismTests(unittest.TestCase):
         self.assertFalse(lab.robust_margin(hit(None,4),hit(30,10)))
 
     def test_source_replay_one_real_checkpoint_and_budget(self):
-        cp=Path('/mnt/data/lh_next/evidence/checkpoints')
-        if not cp.exists(): self.skipTest('source-checkpoint archive not present')
+        checkpoint_path=os.environ.get('DRIV3R_LONG_HORIZON_CHECKPOINT_DIR')
+        if not checkpoint_path:
+            self.skipTest('set DRIV3R_LONG_HORIZON_CHECKPOINT_DIR for source-checkpoint replay')
+        cp=Path(checkpoint_path)
+        if not cp.exists():
+            self.fail('checkpoint directory explicitly configured but missing')
         models,_=lab.previous.load_models(cp,(619,))
         sp=lab.specimen_specs('previous_development')[0]
         state,prefix=lab.start_state(sp,619,0,models[619]['frozen'])
