@@ -1,0 +1,2812 @@
+{
+  "actions": 2536,
+  "arms": [
+    "stale_cache",
+    "epoch_all",
+    "route_overlap",
+    "lazy_illegal",
+    "neural_recovery"
+  ],
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "date": "2026-11-18",
+  "episodes": 96,
+  "event_tick": 2,
+  "execution_wall_s": 3.924,
+  "gallery_sha256": "cc07b4f604d4d09a228f2e6ea56fd91e0ae18085ddde69b311df4e57e39deb29",
+  "gate_index": 5,
+  "hazards": [
+    "on_route",
+    "off_route"
+  ],
+  "heldout_opened": false,
+  "layouts": [
+    "opposing_gates",
+    "enclosed_courtyard",
+    "horizontal_switchback",
+    "protected_slalom"
+  ],
+  "limitations": [
+    "Deterministic future-route closure is engineered from a reference plan, not naturally occurring reaction physics.",
+    "Four topology overlays reuse the synthetic 96x96 World; four outer base families share a cleared central region.",
+    "The restricted prefix planner is not complete host-state search.",
+    "Frozen tiny rankers only run on blocked-path recovery; engineered goal features remain.",
+    "This is DEVELOPMENT, not structural HELDOUT or native CyberSand acceptance."
+  ],
+  "native_receipts": 0,
+  "neural_probability_vectors": 534,
+  "optimizer_updates": 0,
+  "peak_rss_kib": 107660,
+  "receipt_archive_bytes": 108755,
+  "receipt_archive_sha256": "23430afbabca7e58a4f1619f4f38b403fca025c87e2ec8d501397a4dfd922a42",
+  "rows": [
+    {
+      "action_counts": {
+        "MOVE_N": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "d2e444d49e321879f3902a791e33a6a1d2e6f78643a69f0e8a538438c61cabf1",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 32,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "ac89069480b3aced519d68e79238a9653a73648d8f56b17aeb094a59a588ca74"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "7d05861ba1c28442d2d1bf6d0fd3a4a1964cb29a63b5e52bb8c6f228d2598aa1",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 35,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "6c9bf0fc64f332caf7d52aa659087412dbca6039fe7b0fd29b1dcd0c0d2de749"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "7d05861ba1c28442d2d1bf6d0fd3a4a1964cb29a63b5e52bb8c6f228d2598aa1",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 35,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "6c9bf0fc64f332caf7d52aa659087412dbca6039fe7b0fd29b1dcd0c0d2de749"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "7d05861ba1c28442d2d1bf6d0fd3a4a1964cb29a63b5e52bb8c6f228d2598aa1",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 32,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "6c9bf0fc64f332caf7d52aa659087412dbca6039fe7b0fd29b1dcd0c0d2de749"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 14,
+        "MOVE_S": 14
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": 711,
+        "world_seed": 3000
+      },
+      "final_sha256": "a14f7d02965356c4b8ef89f477ff4a4af10b579c056a0fc1a20d8c7c2e41306a",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 32,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 42,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "d83be9d9154253df59db588aeabc12cddecbfc67f6c281692b3eca83feee2849"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 14,
+        "MOVE_S": 14
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": 712,
+        "world_seed": 3000
+      },
+      "final_sha256": "a14f7d02965356c4b8ef89f477ff4a4af10b579c056a0fc1a20d8c7c2e41306a",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 32,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 42,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "d83be9d9154253df59db588aeabc12cddecbfc67f6c281692b3eca83feee2849"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 35,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": 711,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 9,
+        "MOVE_S": 9
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": 712,
+        "world_seed": 3000
+      },
+      "final_sha256": "cb658861cb006442d9a0bb6091937427fed85366fcd91f8d8f7a1c59249c5d36",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "7e7d8ade9305367fff270d9018265577766a809664f3973b607e3fb896c5699b"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "34916eb98ba846d77175ee48213ec2d010ddfef303c4ec2de80f330b68b4309e",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "48789fbf1e55fb21bf6da2cc099002e739fc95922a080665142c823374e72283"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "af0139a07750dc33b6db1b3bcc2d9894b6ad744d6190b040fedb831a62aa5500",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "adb6954f7e904727d3f98057fe6e62732e5260d9f4a56a1b35e0b360bba2d115"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "af0139a07750dc33b6db1b3bcc2d9894b6ad744d6190b040fedb831a62aa5500",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "adb6954f7e904727d3f98057fe6e62732e5260d9f4a56a1b35e0b360bba2d115"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "af0139a07750dc33b6db1b3bcc2d9894b6ad744d6190b040fedb831a62aa5500",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "adb6954f7e904727d3f98057fe6e62732e5260d9f4a56a1b35e0b360bba2d115"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": 711,
+        "world_seed": 3000
+      },
+      "final_sha256": "daa5f258a42c5452f603fa7b435e8c5bc7fc86997b51ea51d6e7e8564b4175eb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5b6ccf891e0d9c61b40abd43ab14c9605a5733e08ad4552e59371ee09a60d39a"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "opposing_gates",
+        "model_seed": 712,
+        "world_seed": 3000
+      },
+      "final_sha256": "daa5f258a42c5452f603fa7b435e8c5bc7fc86997b51ea51d6e7e8564b4175eb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5b6ccf891e0d9c61b40abd43ab14c9605a5733e08ad4552e59371ee09a60d39a"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": null,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": 711,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "pickets",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "opposing_gates",
+        "model_seed": 712,
+        "world_seed": 3000
+      },
+      "final_sha256": "2494a500f4ae293cadd29dbdf476630b752c789beb0052c041eedee1bb32d5bb",
+      "initial_sha256": "f08f63069d9b3658aa1a7c2d0ea02f6ee2595743606340849aba08aac54f3bef",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c44334d096d1a79bdc75949f7c370a80a5ddd78a3befbad1c0eace7c97fc2d82"
+    },
+    {
+      "action_counts": {
+        "MOVE_N": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "20c4ed1c18b222649a5df036732fef81f2e2ad4fd7bd70dca6bf997290db6eaa",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 28,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "061c4641f31c954f36b9e6709475813192a921c7531e8d0cfd4a34571e0cbb93"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "794eabfa8a4d801eb08182abfd9565840f780eca53d5183ca9c741a653e98670",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 31,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "37dc938ee1abff13dc15371a7ae91a1f871ca514946977d5c7ce33a5a2842ac6"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "794eabfa8a4d801eb08182abfd9565840f780eca53d5183ca9c741a653e98670",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 31,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "37dc938ee1abff13dc15371a7ae91a1f871ca514946977d5c7ce33a5a2842ac6"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "794eabfa8a4d801eb08182abfd9565840f780eca53d5183ca9c741a653e98670",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 28,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "37dc938ee1abff13dc15371a7ae91a1f871ca514946977d5c7ce33a5a2842ac6"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 33,
+        "MOVE_N": 16,
+        "MOVE_S": 15
+      },
+      "arrived": false,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 711,
+        "world_seed": 3100
+      },
+      "final_sha256": "1110304481077f989b9796098f04c87f9aba4cbe2c87f5145d9cdd4aaff3aafb",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 28,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 59,
+      "planner_calls": 1,
+      "reason": "decision_gate",
+      "trace_sha256": "e97dcc2921b9d752f198f5bc2a4cc245a96e13890d65fdd5ef19aceec78aace3"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 33,
+        "MOVE_N": 16,
+        "MOVE_S": 15
+      },
+      "arrived": false,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 712,
+        "world_seed": 3100
+      },
+      "final_sha256": "1110304481077f989b9796098f04c87f9aba4cbe2c87f5145d9cdd4aaff3aafb",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 28,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 59,
+      "planner_calls": 1,
+      "reason": "decision_gate",
+      "trace_sha256": "e97dcc2921b9d752f198f5bc2a4cc245a96e13890d65fdd5ef19aceec78aace3"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 31,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 711,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 7,
+        "MOVE_S": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 712,
+        "world_seed": 3100
+      },
+      "final_sha256": "06fc9c76f3c82ec9c2f80a90788ccc43999a50cf0978475cd7fc71adc32d50b6",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6dffb02c18c543adc06aba0dd64a1a9fc8639c11dbd04ff700bfc40bc1ba5269"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "ff562cc9a090b442c7ddc8038616797ef050bc9561a1b2ced21d24c7b78f6b8a",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "26d284e581df7178714f5af3701ac1ecc73f570d1528a9f929acc9f1ba037d23"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "d5a4b98c5685d311c962c8f9d882ea5e72c83fd038e6305e7ea579e8350502c0",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "c35b95699b72a1cf45836b899e0c5b768703bc1cb47e67d220b6657156be2bbd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "d5a4b98c5685d311c962c8f9d882ea5e72c83fd038e6305e7ea579e8350502c0",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "c35b95699b72a1cf45836b899e0c5b768703bc1cb47e67d220b6657156be2bbd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "d5a4b98c5685d311c962c8f9d882ea5e72c83fd038e6305e7ea579e8350502c0",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "c35b95699b72a1cf45836b899e0c5b768703bc1cb47e67d220b6657156be2bbd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 711,
+        "world_seed": 3100
+      },
+      "final_sha256": "d5a4b98c5685d311c962c8f9d882ea5e72c83fd038e6305e7ea579e8350502c0",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c35b95699b72a1cf45836b899e0c5b768703bc1cb47e67d220b6657156be2bbd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 712,
+        "world_seed": 3100
+      },
+      "final_sha256": "d5a4b98c5685d311c962c8f9d882ea5e72c83fd038e6305e7ea579e8350502c0",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "c35b95699b72a1cf45836b899e0c5b768703bc1cb47e67d220b6657156be2bbd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": null,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 711,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "ridges",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "enclosed_courtyard",
+        "model_seed": 712,
+        "world_seed": 3100
+      },
+      "final_sha256": "85a2ba54813da505f465ca88ed06ec55dffa366bebe8da5e3b8adba05d702da2",
+      "initial_sha256": "2961e03fb9043b0a3f527f58e46b1361730de3bf5a23bd9122dd3d66abc61909",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "636a5a6d618888742b0164f245d8068a31d494e93531be509c58e22aebefd1eb"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "5672af1215ac241e5966c2059f045c9dbab0d0a560c3ad9ce59d822cffd32b3e",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "83054b1b3cc85f5431729b9e6fd7f14baa4eb2e1c9fb4996a2ca3e21a91e1a09"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "b33263dce5d862905a06f24d0a9619746b1554a50546c7dcd61b88acbba0b9d1",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 19,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "14ac5846a7b85b6baae26385da6e02bf85b30c82826a47e1c26cd8618130dc20"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "b33263dce5d862905a06f24d0a9619746b1554a50546c7dcd61b88acbba0b9d1",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 19,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "14ac5846a7b85b6baae26385da6e02bf85b30c82826a47e1c26cd8618130dc20"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "b33263dce5d862905a06f24d0a9619746b1554a50546c7dcd61b88acbba0b9d1",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "14ac5846a7b85b6baae26385da6e02bf85b30c82826a47e1c26cd8618130dc20"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 2,
+        "MOVE_S": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 711,
+        "world_seed": 3200
+      },
+      "final_sha256": "e55409957997204230dac6bec8d9e95b826a5b448bfcd7b1212fadd7f9c81927",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 18,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "289601f9b74afa8988c9047f9f9ff29ae2d60fe70767a5ff240a06a918550e31"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 22,
+        "MOVE_N": 7,
+        "MOVE_S": 7,
+        "MOVE_W": 3
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 712,
+        "world_seed": 3200
+      },
+      "final_sha256": "4b70c2446b18263116679fc9d7847bcb1b162ac31bb04ad1d015ea47fa3dee8b",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 34,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "f23cf30e02c525a51f3d6b932f7e87a78d5423e15d14a56d43a7a7ac1c59f32b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 19,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 711,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 1,
+        "MOVE_S": 1
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 712,
+        "world_seed": 3200
+      },
+      "final_sha256": "138987dc03d1fc2fc54871c9d5bfef6fa06f0d44b83c8fdc18598f157f79e5f8",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "cd875e6aca62b13ee426f493a1acbdfe1b169040d2ce3c412bdb119deb023a52"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 3,
+        "MOVE_W": 2,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "179909d865cde00353a2e2bb18e80d95ef06fd548dcb8ce6a5a3e6c8653b6fc4",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 23,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "2375a00cbb071d6903311f45311266bcf826e4819d659f587a54d468dc2db346"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "b70c8966ef15bff7369fe6601a8dccc842761e7bf0436b99c439ffc7a31d155f",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 26,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "2f09be4b3aca0707c312934c45914bbc7db0e21ac3ca58d251bdaf3244e257f1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "b70c8966ef15bff7369fe6601a8dccc842761e7bf0436b99c439ffc7a31d155f",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 26,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "2f09be4b3aca0707c312934c45914bbc7db0e21ac3ca58d251bdaf3244e257f1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_N": 1,
+        "MOVE_S": 17,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "5d93859130dde65652c341acedf6636dd8066596a6c7ae144a30c0002188de2e",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 23,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "eca0fb34dcbfff99d4ce1434d819f25573c21b0bce9793bd3d80b63cf815af5d"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 15,
+        "MOVE_N": 30,
+        "MOVE_S": 3,
+        "MOVE_W": 16
+      },
+      "arrived": false,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 711,
+        "world_seed": 3200
+      },
+      "final_sha256": "af9ea9544a790335efde71be727fea04ad8301ddb48d8b02fc3fc194af5b23f9",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 23,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 59,
+      "planner_calls": 1,
+      "reason": "decision_gate",
+      "trace_sha256": "6b04e8446a2caf01e58e213624c31fb50cfe7c6b8c1e3a08cbc2087fa6c6eb23"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 15,
+        "MOVE_N": 30,
+        "MOVE_S": 3,
+        "MOVE_W": 16
+      },
+      "arrived": false,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 712,
+        "world_seed": 3200
+      },
+      "final_sha256": "af9ea9544a790335efde71be727fea04ad8301ddb48d8b02fc3fc194af5b23f9",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 23,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 59,
+      "planner_calls": 1,
+      "reason": "decision_gate",
+      "trace_sha256": "6b04e8446a2caf01e58e213624c31fb50cfe7c6b8c1e3a08cbc2087fa6c6eb23"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [
+        {
+          "pre_cache_size": 26,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": null,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 711,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 5,
+        "MOVE_S": 16,
+        "MOVE_W": 7
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "islands",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "horizontal_switchback",
+        "model_seed": 712,
+        "world_seed": 3200
+      },
+      "final_sha256": "79078a69e72f2bd94cf9b075fddb57cfc5ef8e8aecd6c9d5b383d0aed9ba8545",
+      "initial_sha256": "d168b0bec992f86ffd766c1764a6e2c4b6345501e1b5442aa0e5a94dca6b5d05",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "5a33d9515c66a551e80bf5afbbc2907141a81def7b7a95e461837e0d47636146"
+    },
+    {
+      "action_counts": {
+        "MOVE_N": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "e8b904cf7380b6919b73baecf90205f8c7d8754a8ad83c827d7509c2396c30d2",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 30,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "c43cb50aabcba8d55e954196344ad14d2beaf70f8e37122a11bf98e9caa9da2d"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d4be9fd2f51515a99ec8b99da4fff9f019456fdcd72fc42fe2235a741094ff50",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 33,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "f202219e852dfb4431769538f938a724b966796f9f404f9600808870798700ab"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d4be9fd2f51515a99ec8b99da4fff9f019456fdcd72fc42fe2235a741094ff50",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 33,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "f202219e852dfb4431769538f938a724b966796f9f404f9600808870798700ab"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d4be9fd2f51515a99ec8b99da4fff9f019456fdcd72fc42fe2235a741094ff50",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 30,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "f202219e852dfb4431769538f938a724b966796f9f404f9600808870798700ab"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 14,
+        "MOVE_S": 14
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": 711,
+        "world_seed": 3300
+      },
+      "final_sha256": "5302bc3b6d72e7aef2ea0694bebf4cb92fcac935f192eb847f5f9d3d6bf1716d",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 30,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 42,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b2c5dd6f0a6f2812dead61e8699e9004d87b1afbfd090c560f50c3f052b6c26b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 14,
+        "MOVE_S": 14
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": 712,
+        "world_seed": 3300
+      },
+      "final_sha256": "5302bc3b6d72e7aef2ea0694bebf4cb92fcac935f192eb847f5f9d3d6bf1716d",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 30,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 42,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b2c5dd6f0a6f2812dead61e8699e9004d87b1afbfd090c560f50c3f052b6c26b"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 33,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": 711,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_E": 19,
+        "MOVE_N": 8,
+        "MOVE_S": 8
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 0,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": 712,
+        "world_seed": 3300
+      },
+      "final_sha256": "d33e0e8b7f454060529dc2039b3f93b0e0676656e3f1cae2eaa313071f847abc",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "b1ca97dfed3b2555322061a3227aa313db50bbe5609d0937bcf8aaceb1c1e4e1"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 5,
+        "STOP": 1
+      },
+      "arrived": false,
+      "case": {
+        "arm": "stale_cache",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "f7cb359b402c1d74332a14ecacf9ea15f17836baee952a4b1ac401dd55112e8e",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "stale_route_stopped",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "policy_stop",
+      "trace_sha256": "f8c3f82a0bc50f14e042fd0090924afcfaa37fdcb10b47d24f05e0c3a2311ddd"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "8a5861f7c2b86fc4febf6d92f92a8b1cbbd96640ec5647cf841b71cb40b4c4fd",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "3270a1de00872cbd4bf5e576d0557c4dfbb6d26032d3eb0d7b6abc0680763bb4"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "8a5861f7c2b86fc4febf6d92f92a8b1cbbd96640ec5647cf841b71cb40b4c4fd",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "route_intersection",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "3270a1de00872cbd4bf5e576d0557c4dfbb6d26032d3eb0d7b6abc0680763bb4"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "8a5861f7c2b86fc4febf6d92f92a8b1cbbd96640ec5647cf841b71cb40b4c4fd",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "next_action_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "3270a1de00872cbd4bf5e576d0557c4dfbb6d26032d3eb0d7b6abc0680763bb4"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": 711,
+        "world_seed": 3300
+      },
+      "final_sha256": "43c323fbd2c140cd374dce301355dd85fe89db880090c55987a68229f859c23b",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "8156eaa387bd2324c75c957bcca808409a947d2205957485c77ba5ad81dec39f"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "on_route",
+        "layout": "protected_slalom",
+        "model_seed": 712,
+        "world_seed": 3300
+      },
+      "final_sha256": "43c323fbd2c140cd374dce301355dd85fe89db880090c55987a68229f859c23b",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 13,
+          "reason": "neural_on_illegal",
+          "tick": 5
+        }
+      ],
+      "neural_actions": 13,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "8156eaa387bd2324c75c957bcca808409a947d2205957485c77ba5ad81dec39f"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "stale_cache",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "epoch_all",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [
+        {
+          "pre_cache_size": 16,
+          "reason": "epoch_all",
+          "tick": 2
+        }
+      ],
+      "neural_actions": 0,
+      "planner_calls": 2,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "route_overlap",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "lazy_illegal",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": null,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": 711,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    },
+    {
+      "action_counts": {
+        "MOVE_S": 16,
+        "MOVE_W": 2
+      },
+      "arrived": true,
+      "case": {
+        "arm": "neural_recovery",
+        "family": "zigzag",
+        "goal_idx": 1,
+        "hazard": "off_route",
+        "layout": "protected_slalom",
+        "model_seed": 712,
+        "world_seed": 3300
+      },
+      "final_sha256": "36ddaa711c25fa6418f91c46898a646b914355cfd85c91848be9d8ab8682b1f6",
+      "initial_sha256": "65dcd05d7692bbc2726ec7cd63658b7bb9bebac27166ec3e395e92ae1cd0be32",
+      "invalidations": [],
+      "neural_actions": 0,
+      "planner_calls": 1,
+      "reason": "goal_arrived",
+      "trace_sha256": "6be1ffd91ca44a93c888410d1497707bf67ff0135a04b69e64626455d18afeae"
+    }
+  ],
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "stale_route_gate_lab.py": "0fb5c8aa0bca6a99412585649fdea7233bcb9de84096eb99ce22c0ae42aac12a",
+    "topology_adaptive_handoff_lab.py": "23858d9911df19f6d5121174e768371fd726862aaa86c8a5e939084aac5aaa3e",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "development",
+  "summary": {
+    "epoch_all": {
+      "actions": 416,
+      "actions_by_type": {
+        "MOVE_E": 162,
+        "MOVE_N": 50,
+        "MOVE_S": 178,
+        "MOVE_W": 26
+      },
+      "arrivals": 16,
+      "by_hazard": {
+        "off_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 16
+        },
+        "on_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 16
+        }
+      },
+      "episodes": 16,
+      "invalidations": {
+        "epoch_all": 16
+      },
+      "median_selection_ms": 0.004973,
+      "neural_actions": 0,
+      "searches": 32
+    },
+    "lazy_illegal": {
+      "actions": 418,
+      "actions_by_type": {
+        "MOVE_E": 162,
+        "MOVE_N": 51,
+        "MOVE_S": 179,
+        "MOVE_W": 26
+      },
+      "arrivals": 16,
+      "by_hazard": {
+        "off_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 8
+        },
+        "on_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 16
+        }
+      },
+      "episodes": 16,
+      "invalidations": {
+        "next_action_illegal": 8
+      },
+      "median_selection_ms": 0.004997,
+      "neural_actions": 0,
+      "searches": 24
+    },
+    "neural_recovery": {
+      "actions": 1030,
+      "actions_by_type": {
+        "MOVE_E": 375,
+        "MOVE_N": 207,
+        "MOVE_S": 375,
+        "MOVE_W": 73
+      },
+      "arrivals": 28,
+      "by_hazard": {
+        "off_route": {
+          "arrivals": 16,
+          "episodes": 16,
+          "planner_calls": 16
+        },
+        "on_route": {
+          "arrivals": 12,
+          "episodes": 16,
+          "planner_calls": 16
+        }
+      },
+      "episodes": 32,
+      "invalidations": {
+        "neural_on_illegal": 16
+      },
+      "median_selection_ms": 0.06707,
+      "neural_actions": 534,
+      "searches": 32
+    },
+    "route_overlap": {
+      "actions": 416,
+      "actions_by_type": {
+        "MOVE_E": 162,
+        "MOVE_N": 50,
+        "MOVE_S": 178,
+        "MOVE_W": 26
+      },
+      "arrivals": 16,
+      "by_hazard": {
+        "off_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 8
+        },
+        "on_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 16
+        }
+      },
+      "episodes": 16,
+      "invalidations": {
+        "route_intersection": 8
+      },
+      "median_selection_ms": 0.00502,
+      "neural_actions": 0,
+      "searches": 24
+    },
+    "stale_cache": {
+      "actions": 256,
+      "actions_by_type": {
+        "MOVE_E": 86,
+        "MOVE_N": 40,
+        "MOVE_S": 107,
+        "MOVE_W": 15,
+        "STOP": 8
+      },
+      "arrivals": 8,
+      "by_hazard": {
+        "off_route": {
+          "arrivals": 8,
+          "episodes": 8,
+          "planner_calls": 8
+        },
+        "on_route": {
+          "arrivals": 0,
+          "episodes": 8,
+          "planner_calls": 8
+        }
+      },
+      "episodes": 16,
+      "invalidations": {
+        "stale_route_stopped": 8
+      },
+      "median_selection_ms": 0.005192,
+      "neural_actions": 0,
+      "searches": 16
+    }
+  },
+  "synthetic_64_move_cap": true,
+  "uncompressed_receipts_sha256": "2eff8e1ba49c0e0fb37a2eb12ccd628678a9a3c36e15ddd4e88c1d82dd0970b2",
+  "version": "stale-route-gate/1"
+}
