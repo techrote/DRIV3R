@@ -11,6 +11,7 @@ from .goal_conditioning_lab import GoalRanker
 from .detour_recovery_lab import shortest_empty_path
 from .world import Spec, digest
 
+
 def verify_scientific_record(r, weights, frozen):
     sp=Spec(**r['spec']);w=state(sp,r['depth'],r['side'])
     assert digest(w.decisions)==r['prelude_sha256']
@@ -27,6 +28,7 @@ def verify_scientific_record(r, weights, frozen):
     assert r['first_optimal']==(chosen==expected)
     return replay_receipt(r)
 
+
 def verify(path, probe_checkpoint, frozen_dir):
     with np.load(probe_checkpoint,allow_pickle=False) as z:
         weights=z['weights'].copy();assert int(z['updates'])==240
@@ -40,6 +42,7 @@ def verify(path, probe_checkpoint, frozen_dir):
             count+=1
     return {'verified_episodes':count,'verified_host_decisions':decisions,
             'recomputed_model_probability_vectors':vectors}
+
 
 if __name__=='__main__':
     p=argparse.ArgumentParser()
