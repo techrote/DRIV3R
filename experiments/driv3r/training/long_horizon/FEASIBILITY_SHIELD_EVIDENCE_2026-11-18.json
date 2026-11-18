@@ -1,0 +1,132 @@
+{
+  "archive_manifest_sha256": "40fb81f16900d7e8ebd55e8c34799e313945709b30378417a8258b14513b5621",
+  "arms": {
+    "late24": {
+      "actions": {
+        "BACKTRACK": 172,
+        "MOVE_E": 494,
+        "MOVE_N": 64,
+        "MOVE_S": 204,
+        "MOVE_W": 158
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "interventions": 18,
+      "mean_actions": 34.125,
+      "mean_episode_median_control_ms": 0.22375,
+      "neural_actions": 754,
+      "planner_actions": 338,
+      "planner_calls": 338
+    },
+    "neural": {
+      "actions": {
+        "BACKTRACK": 160,
+        "MOVE_E": 448,
+        "MOVE_N": 92,
+        "MOVE_S": 250,
+        "MOVE_W": 244
+      },
+      "arrivals": 22,
+      "episodes": 32,
+      "interventions": 0,
+      "mean_actions": 37.312,
+      "mean_episode_median_control_ms": 0.10141,
+      "neural_actions": 1194,
+      "planner_actions": 0,
+      "planner_calls": 0
+    },
+    "planner": {
+      "actions": {
+        "BACKTRACK": 96,
+        "MOVE_E": 304,
+        "MOVE_N": 32,
+        "MOVE_S": 160,
+        "MOVE_W": 32
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "interventions": 0,
+      "mean_actions": 19.5,
+      "mean_episode_median_control_ms": 1.24683,
+      "neural_actions": 0,
+      "planner_actions": 624,
+      "planner_calls": 624
+    },
+    "shield0": {
+      "actions": {
+        "BACKTRACK": 174,
+        "MOVE_E": 520,
+        "MOVE_N": 72,
+        "MOVE_S": 214,
+        "MOVE_W": 184
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "interventions": 10,
+      "mean_actions": 36.375,
+      "mean_episode_median_control_ms": 3.66633,
+      "neural_actions": 880,
+      "planner_actions": 284,
+      "planner_calls": 2032
+    },
+    "shield8": {
+      "actions": {
+        "BACKTRACK": 174,
+        "MOVE_E": 492,
+        "MOVE_N": 68,
+        "MOVE_S": 210,
+        "MOVE_W": 156
+      },
+      "arrivals": 32,
+      "episodes": 32,
+      "interventions": 10,
+      "mean_actions": 34.375,
+      "mean_episode_median_control_ms": 3.37055,
+      "neural_actions": 840,
+      "planner_actions": 260,
+      "planner_calls": 1928
+    }
+  },
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "cpu_wall_seconds": 31.885,
+  "date": "2026-11-18",
+  "episodes": 160,
+  "limitations": [
+    "All challenge worlds share a purpose-built synthetic corridor.",
+    "Oracle has full privileged synthetic map and history; not a native policy ABI.",
+    "Prefix search is complete only for monotone history retreat then empty-space painting.",
+    "No native gameplay; no structural HELDOUT opened.",
+    "Shield uses costly repeated oracle calls: intervention count is NOT compute cost."
+  ],
+  "native_receipts": 0,
+  "negative_result": "Continuous viability shielding gave 32/32 goal arrivals but required 2032 (zero-slack) or 1928 (eight-reserve) planner searches versus 338 calls for matched 24-decision handoff with the same 32/32 arrivals in this fixed synthetic corridor.",
+  "new_optimizer_steps": 0,
+  "ownership": {
+    "branch": "research/import-consolidated-worm-labs",
+    "pr": 1,
+    "repository": "techrote/DRIV3R",
+    "writable_paths": [
+      "experiments/driv3r/training/long_horizon/"
+    ]
+  },
+  "peak_rss_kib": 97940,
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "feasibility_shield_lab.py": "cd23e51241169bec53fd8aa69e4ac2ce26c51001410649fcdad5b044505cc52e",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "development",
+  "structural_heldout_opened": false,
+  "synthetic_64_gate": true,
+  "trajectories_svg_sha256": "fb02dd9c50353c5abb03ce086486662f5cda4dffa14a624f9c4e77a6373f43d2",
+  "verified_action_receipts": 5814,
+  "verified_neural_probability_vectors": 3688,
+  "version": "feasibility-shield/1"
+}
