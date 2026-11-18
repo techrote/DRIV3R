@@ -5,68 +5,80 @@
   "repo": "techrote/DRIV3R",
   "pr": 1,
   "state": "DRAFT_HOLD_NO_MERGE",
-  "best_corpus": "v34_compound_intervention",
+  "best_corpus": "v35_trainer_safe_export_of_v34",
   "best_checkpoint": null,
-  "manifest_path": "experiments/driv3r/corpus_factory/V34_DEFAULT_MANIFEST.json",
-  "generator_path": "experiments/driv3r/corpus_factory/compound_intervention_v34.js",
-  "generator_sha256": "8bc27d89d6950858b5b3205b42acf9f010443176ef7498afb0563a71c516fe51",
+  "source": "experiments/driv3r/corpus_factory/trainer_safe_export_v35.js",
+  "source_sha256": "0a75be558e33592cf886e9b5855bb04594c194a4b2bb827b6f2eb0d5960299c8",
+  "manifest_path": "experiments/driv3r/corpus_factory/V35_DEFAULT_MANIFEST.json",
+  "parent_v34_generator_sha256": "8bc27d89d6950858b5b3205b42acf9f010443176ef7498afb0563a71c516fe51",
+  "parent_v34_manifest_sha256": "a67d853311681e0db8004c6a2a7b3769a11d763ca17d5d6b8b9c0f3806ff74f3",
   "splits": {
     "TRAIN": {
       "episodes": 768,
+      "geometry_groups": 16,
       "decisions": 23008,
-      "accepted_bad_navigation": 512,
-      "accepted_bad_paint": 256,
-      "corrective_erasures": 1792
+      "nonzero_training_decisions": 17440,
+      "zero_weight_decisions": 5568,
+      "repeated_bounded_inputs": 5568,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 256,
+      "qualified_clean_four_way_families": 64
     },
     "DEV": {
       "episodes": 384,
+      "geometry_groups": 8,
       "decisions": 19136,
-      "accepted_bad_navigation": 256,
-      "accepted_bad_paint": 128,
-      "corrective_erasures": 896
+      "nonzero_training_decisions": 19008,
+      "zero_weight_decisions": 128,
+      "repeated_bounded_inputs": 5344,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 128,
+      "qualified_clean_four_way_families": 32,
+      "memory_challenge_rows": 128,
+      "historyless_theoretical_best_accuracy": 0.25,
+      "memory_challenge_distinct_contexts": 32
     },
     "HELDOUT": {
       "episodes": 384,
+      "geometry_groups": 8,
       "decisions": 25856,
-      "accepted_bad_navigation": 256,
-      "accepted_bad_paint": 128,
-      "corrective_erasures": 896
+      "nonzero_training_decisions": 25728,
+      "zero_weight_decisions": 128,
+      "repeated_bounded_inputs": 7584,
+      "conflicting_bounded_inputs": 0,
+      "accepted_wrong_paint_rows_excluded_from_training": 128,
+      "qualified_clean_four_way_families": 32,
+      "memory_challenge_rows": 128,
+      "historyless_theoretical_best_accuracy": 0.25,
+      "memory_challenge_distinct_contexts": 32
     }
   },
-  "metrics": {
-    "episodes": 1536,
-    "decisions": 68000,
-    "accepted_bad_navigation": 1024,
-    "accepted_wrong_paint": 512,
-    "corrective_erasures": 3584,
-    "synthetic_host_terminal_successes": 1536,
-    "nav_regret_each": 2,
-    "paint_regret_each": 2,
-    "recent_64_four_way_ceiling": 0.25,
-    "duplicate_train_rows_zero_weight": 5568,
-    "cross_split_observation_collision": 0,
-    "cross_split_topology_collision": 0
+  "shard_sha256": {
+    "TRAIN_policy.jsonl": "a977b870f97fa7f71d73c547a212c48325d77529e3a65b8bfeae85ae71e6889e",
+    "DEV_policy.jsonl": "93f553f3c68781a769aae83474fc113a8307e76058ca21cd843a53f2ce506e96",
+    "DEV_memory_challenge.jsonl": "2ced1192fee17f0ce0754434f815b1e0fa348f1c1f3f05bb16a807de71822dbd",
+    "HELDOUT_policy.jsonl": "c4237c997042dc8b09b5edbb3c27b9ce843506d7ced7f31265a204f8fb35c475",
+    "HELDOUT_memory_challenge.jsonl": "24830292471f93b36be18d81157abf01050809d956b8e7166c6974f62a84c170"
   },
   "qualification": {
-    "two_full_generations_binary_identical": true,
-    "independent_quick_replay": {
-      "episodes": 288,
-      "decisions": 12336,
-      "passed": true
-    },
-    "full_dataset_independent_sample_replay_passed": true,
-    "all_six_default_shard_hashes_checked": true,
-    "exhaustive_full_independent_replay": "TIMEOUT_NOT_CLAIMED"
+    "full_dataset_safe_field_audit": true,
+    "full_bounded_input_label_conflicts": 0,
+    "cross_split_bounded_input_collisions": 0,
+    "cross_split_geometry_collisions": 0,
+    "four_way_DEV_clean_groups": 32,
+    "four_way_HELDOUT_clean_groups": 32,
+    "two_full_exports_byte_identical": true,
+    "total_safe_decisions": 68000,
+    "effective_weight_one_decisions": 62176
   },
-  "current_limitations": [
-    "synthetic host is not native CyberSand",
-    "remote prelude remains scripted, only later wrong PAINT is accepted after start",
-    "four-arm topology and two-of-five-target quota are still synthetic/simple",
-    "no SLM training, pretrained root model inference, native evaluation, model RSS or model latency",
-    "not published to immutable Actions artifacts"
+  "negative_results": [
+    "No new world grammar or native game evaluation in v35",
+    "Original v34 teacher metadata is dangerous if rows are consumed as prompts; v35 isolates it",
+    "No actual SLM training or inference measurement",
+    "Four-way recent-history limit is synthetic theoretical bound, not neural evaluation",
+    "No immutable Actions corpus artifact"
   ],
-  "next_consumer_experiment": "Real pinned LFM/Sprocket TRAIN-only LoRA or other actual SLM weights then HELDOUT autonomous closed-loop clean vs bad-navigation vs bad-paint, full vs truncated history. Report successful completion, contamination/erasures, realized regret, action legality, premature STOP, model inference p50/p95 and peak RSS. Avoid teacher-action costs leakage.",
-  "source_predecessor": "experiments/driv3r/corpus_factory/offpolicy_recovery_v33.js",
+  "next_consumer_experiment": "Use only TRAIN_policy row.input and row.action (weight=1); train pinned actual LFM/Sprocket adapter. Test DEV then untouched HELDOUT on full-vs-truncated memory, then true autonomous game-like host rollouts with terminal success, contamination, regret, latency and RSS. Do not pass teacher metadata or any held-out rows into training.",
   "no_paid_compute": true,
   "no_out_of_lane_writes": true
 }
