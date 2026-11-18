@@ -1,0 +1,202 @@
+{
+  "archive_checksums_sha256": "3f47ed04c7098014adb2738c066092bac3d3a5981758f3885adf64e459696d53",
+  "archive_evidence_sha256": "4434b63da33f59a0bdaa943a1aebc84c1907023eb75153be59194258cad71062",
+  "candidates": 40,
+  "caveats": [
+    "Synthetic command changes the external goal, not native gameplay state.",
+    "All five overlay layouts share one deliberately trapped base corridor.",
+    "Initial reachability does not imply reachability after a policy paints.",
+    "Cached planner is a restricted history-prefix/BFS strategy, not complete optimal control.",
+    "A policy may STOP before the scheduled switch; exposure denominators reported.",
+    "On retarget, cached planner search state is invalidated for all arms.",
+    "Local CPU Python benchmark, not native timing or HELDOUT results."
+  ],
+  "checkpoint_sha256": {
+    "711": "64643cc987d095a94e3dfcd9b5681377f361c2e0df5363f3027bacbe2b8db7df",
+    "712": "111dba8a604c00497d5c5e5726023f67fc06ea62be77a63001122f9bdca5a9a3"
+  },
+  "cpu_wall_s": 17.638,
+  "date": "2026-11-18",
+  "episodes": 456,
+  "excluded": [
+    {
+      "base_sha256": "714ee28c90b34d0a3eda1e91e9c33c94f2da6244f8bdcc185382916e2f7215b2",
+      "goals": [
+        [
+          60,
+          48
+        ],
+        [
+          55,
+          56
+        ]
+      ],
+      "layout": "south_ledge",
+      "reason": "initially_unreachable",
+      "spec": "08eb017b762ef4898c3896b1"
+    },
+    {
+      "base_sha256": "714ee28c90b34d0a3eda1e91e9c33c94f2da6244f8bdcc185382916e2f7215b2",
+      "goals": [
+        [
+          55,
+          56
+        ],
+        [
+          60,
+          48
+        ]
+      ],
+      "layout": "south_ledge",
+      "reason": "initially_unreachable",
+      "spec": "08eb017b762ef4898c3896b1"
+    }
+  ],
+  "id": "RETARGET-HANDOFF-001",
+  "native_receipts": 0,
+  "optimizer_updates": 0,
+  "paired_difference_late24_vs_neural": {
+    "arrivals_rescued": 18,
+    "bootstrap_95_pct_points": [
+      11.842,
+      36.842
+    ],
+    "bootstrap_seed": 22311,
+    "cluster_count": 38,
+    "percentage_points": 23.68421,
+    "replicates": 10000,
+    "trials": 76
+  },
+  "peak_rss_kib": 98708,
+  "retained_scenarios": 38,
+  "scheduled_switch_tick": 8,
+  "source_branch": "research/import-consolidated-worm-labs",
+  "source_sha256": {
+    "detour_recovery_lab.py": "2f53f5ff8d54168abbfea9e269e756b69128aa2960e6245e3c8383e187202abf",
+    "goal_conditioning_lab.py": "6e00bfdfbaecc8195a86cb626bbbcbb65184a449adc5b7272d5642553cf02659",
+    "goal_observability_lab.py": "b1b965543b043d8d619bc8458ce0680b06962ce38fd9bd1a338ab4595d7d3408",
+    "policy.py": "f3e6469b592e68c0d3410dca88e107b215f1bdb1c16f7ebd73232ea9470cbb82",
+    "retarget_handoff_lab.py": "3f6eae12623b9f12053cffb4553f417f5cbdc2e9ee8900cfb95484ac19c753c3",
+    "sparse_handoff_lab.py": "97751a158631a14870d075b6ca074abc61764150fc9c0ddcdf33704c27009e65",
+    "train.py": "9ed2c9ac49fa397c12f0b8256e4d4439bd3a9294b002b54276b702a1e3ddcacb",
+    "world.py": "6801c401c356869ed6535fec5da4a627871cb05fff9c95d6726224a492db678a"
+  },
+  "split": "development",
+  "starting_remote_head": "226bbdad46459642f7a0c4de16ead4ad6087a1fe",
+  "structural_heldout_opened": false,
+  "summary": {
+    "late24": {
+      "actions": {
+        "BACKTRACK": 417,
+        "MOVE_E": 944,
+        "MOVE_N": 187,
+        "MOVE_S": 522,
+        "MOVE_W": 216
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 8.216142,
+      "mean_decisions": 30.079,
+      "mean_episode_choose_total_ms": 4.086685,
+      "median_episode_choice_ms": 0.092086,
+      "neural_actions": 1778,
+      "planner_searches": 32,
+      "retarget_arrivals": 76,
+      "retarget_seen": 76
+    },
+    "neural": {
+      "actions": {
+        "BACKTRACK": 380,
+        "MOVE_E": 878,
+        "MOVE_N": 261,
+        "MOVE_S": 657,
+        "MOVE_W": 322
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 2.053632,
+      "mean_decisions": 32.868,
+      "mean_episode_choose_total_ms": 3.369503,
+      "median_episode_choice_ms": 0.097342,
+      "neural_actions": 2498,
+      "planner_searches": 0,
+      "retarget_arrivals": 58,
+      "retarget_seen": 76
+    },
+    "plan_per_goal": {
+      "actions": {
+        "BACKTRACK": 334,
+        "MOVE_E": 758,
+        "MOVE_N": 190,
+        "MOVE_S": 470,
+        "MOVE_W": 106
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 3.63079,
+      "mean_decisions": 24.447,
+      "mean_episode_choose_total_ms": 2.903375,
+      "median_episode_choice_ms": 0.002796,
+      "neural_actions": 0,
+      "planner_searches": 152,
+      "retarget_arrivals": 76,
+      "retarget_seen": 76
+    },
+    "stall4": {
+      "actions": {
+        "BACKTRACK": 382,
+        "MOVE_E": 891,
+        "MOVE_N": 175,
+        "MOVE_S": 471,
+        "MOVE_W": 167,
+        "STOP": 2
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 8.778681,
+      "mean_decisions": 27.474,
+      "mean_episode_choose_total_ms": 4.000215,
+      "median_episode_choice_ms": 0.096288,
+      "neural_actions": 1586,
+      "planner_searches": 98,
+      "retarget_arrivals": 74,
+      "retarget_seen": 76
+    },
+    "switch_plan": {
+      "actions": {
+        "BACKTRACK": 392,
+        "MOVE_E": 820,
+        "MOVE_N": 89,
+        "MOVE_S": 397,
+        "MOVE_W": 98
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 1.714511,
+      "mean_decisions": 23.632,
+      "mean_episode_choose_total_ms": 1.814586,
+      "median_episode_choice_ms": 0.003417,
+      "neural_actions": 608,
+      "planner_searches": 76,
+      "retarget_arrivals": 76,
+      "retarget_seen": 76
+    },
+    "switch_stall4": {
+      "actions": {
+        "BACKTRACK": 420,
+        "MOVE_E": 804,
+        "MOVE_N": 122,
+        "MOVE_S": 402,
+        "MOVE_W": 82
+      },
+      "episodes": 76,
+      "max_single_choice_ms": 2.030097,
+      "mean_decisions": 24.079,
+      "mean_episode_choose_total_ms": 2.363153,
+      "median_episode_choice_ms": 0.003168,
+      "neural_actions": 380,
+      "planner_searches": 152,
+      "retarget_arrivals": 76,
+      "retarget_seen": 76
+    }
+  },
+  "synthetic_64_gate": true,
+  "verified_probability_vectors": 6850,
+  "verified_receipts": 14636,
+  "version": "retarget-handoff/1"
+}
