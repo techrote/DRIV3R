@@ -1,0 +1,96 @@
+{
+  "schema": "driv3r/corpus_factory/delayed-obstruction-v41/manifest",
+  "synthetic_not_native_CyberSand": true,
+  "generator": "delayed_obstruction_v41.js",
+  "generator_sha256": "25e72a3cbde6fd88893fe9881f5c5277527abed7c028a3f112f82d59058860df",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    }
+  ],
+  "model_contract": "Only input goes to learner. action is teacher label; weight=0 excludes duplicate TRAIN records. challenge is evaluator-only.",
+  "environmental_intervention": "Multiple accepted synthetic remote actuator changes interleaved with sensor diagnostics within 160 legally accepted movement actions; last relevant change is at least 72 movement actions old; final graph and oracle are causally coupled",
+  "caveats": [
+    "Synthetic symbolic host, not native CyberSand",
+    "Host-dispatched remote actuator, not learned agent action",
+    "Deterministic north-root ageing loops; symbolic event interpretation can solve challenge",
+    "Fixed remote obstruction junction; sensor diagnostics are not graph modifications",
+    "No named SLM run or latency/RSS"
+  ],
+  "quick": false,
+  "splits": {
+    "TRAIN": {
+      "candidate_pairs": 512,
+      "positive_pairs": 128,
+      "negative_controls": 32,
+      "paired_legal_first_action_contrasts": 128,
+      "episodes": 320,
+      "decisions": 8912,
+      "zero_weight": 0,
+      "unique_geometries": 8,
+      "rejected_worlds": []
+    },
+    "DEV": {
+      "candidate_pairs": 256,
+      "positive_pairs": 64,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 64,
+      "episodes": 160,
+      "decisions": 8736,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    },
+    "HELDOUT": {
+      "candidate_pairs": 256,
+      "positive_pairs": 64,
+      "negative_controls": 16,
+      "paired_legal_first_action_contrasts": 64,
+      "episodes": 160,
+      "decisions": 12096,
+      "zero_weight": 0,
+      "unique_geometries": 4,
+      "rejected_worlds": []
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 8912,
+      "bytes": 11048424,
+      "sha256": "752e39398b8b114ef214fad237cd932c021cdf1dfb5900af17fec14c5b312778"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 8736,
+      "bytes": 15501424,
+      "sha256": "486cf5c8fe881996e18286ad447c03862b3c68765f4cd2df72311074503d015f"
+    },
+    "DEV_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 45376,
+      "sha256": "b716f812f9b61096eef6fa3d49a0909aca3b0826f41a37eff62d6b97af24fd83"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 12096,
+      "bytes": 26704256,
+      "sha256": "323ddeccfee51fd54dad85e4dce660abb366627125fe1612b1125f4ff71c80c6"
+    },
+    "HELDOUT_challenge.jsonl": {
+      "rows": 80,
+      "bytes": 45696,
+      "sha256": "6a8252a33a2c5b130f82248cdcec36a37e849d212b7a61d9039100233a4c6427"
+    }
+  }
+}

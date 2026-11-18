@@ -7,57 +7,55 @@
   "only_mutable_pr": 1,
   "status": "DRAFT_HOLD_NO_MERGE",
   "best_sequential_corpus": "v38_host_accepted_live_tool_law_two_transition_recovery",
-  "supplemental_dynamic_obstruction": "v40_delayed_obstruction_160_host_accepted_movements_old_history",
-  "predecessor": "v39_current_obstruction_bulletin_rule",
+  "supplemental_dynamic_obstruction": "v41_order_sensitive_multi_transition_delayed_obstruction",
+  "predecessor": "v40_one_delayed_obstruction_receipt",
   "best_checkpoint": null,
-  "generator": "delayed_obstruction_v40.js",
-  "generator_sha256": "4c40b73987f690c25822f1fba88bf4a6e4c9c8e5b47ad89e7584352e2ece2740",
-  "test": "test_delayed_obstruction_v40.js",
-  "test_sha256": "ff7a31e4054240fe2e2295602fd2c2483e7cad8ecf75a0871b773dde6adda914",
-  "pinned_manifest": "V40_DEFAULT_MANIFEST.json",
-  "generated_manifest_sha256": "b0c3aad0d49548c337b67335661adc4a61bc37f54384a884f9cd36d890fe62db",
-  "report": "DELAYED_OBSTRUCTION_V40_2026-11-18.md",
+  "generator": "delayed_obstruction_v41.js",
+  "generator_sha256": "25e72a3cbde6fd88893fe9881f5c5277527abed7c028a3f112f82d59058860df",
+  "test": "test_delayed_obstruction_v41.js",
+  "test_sha256": "921385804791bc1e964d17ac44bf27ba6adbb35043d4b4c4c2431d47d48f097f",
+  "pinned_manifest": "V41_DEFAULT_MANIFEST.json",
+  "generated_manifest_sha256": "e6b719b2187b74565fa923602e796195d838324d1a0615d2fdbf313ce0ecc9aa",
+  "report": "DELAYED_OBSTRUCTION_SEQUENCE_V41_2026-11-18.md",
   "stats": {
-    "train_decisions": 3488,
-    "dev_decisions": 3456,
-    "heldout_decisions": 4800,
-    "episodes": 256,
-    "oracle_terminal_successes": 256,
-    "positive_counterfactual_pairs": 64,
-    "negative_control_pairs": 64,
-    "historical_event_aging_accepted_moves": 160,
-    "strict_first_action_regret_per_positive_branch": 2,
-    "positive_heldout_pairs": 16,
-    "positive_event_ablated_ideal_accuracy_ceiling": 0.5,
+    "train_decisions": 8912,
+    "dev_decisions": 8736,
+    "heldout_decisions": 12096,
+    "episodes": 640,
+    "oracle_terminal_successes": 640,
+    "positive_counterfactual_pairs": 256,
+    "negative_controls": 64,
+    "min_relevant_event_age_accepted_moves": 72,
+    "minimum_strict_first_action_regret": 2,
+    "positive_heldout_pairs": 64,
+    "event_ablated_accuracy_ceiling": 0.5,
     "unique_geometries": 16,
-    "input_duplicate_or_label_conflicts": 0,
-    "model_visible_old_event": "durable history receipt, NOT input.obstruction current-state field"
+    "duplicate_or_label_conflicts": 0,
+    "sensor_preserved_during_obstruction_only_ablation": true
   },
-  "reproduction": "node delayed_obstruction_v40.js OUT; node test_delayed_obstruction_v40.js OUT1 OUT2",
-  "qualification": "Two independent full manifests+shards byte-identical; independent audit 11744 policy records; host actually accepted all 160 post-transition moves per episode; strict oracle suffix, legal labels and split isolation; quick 4704 records audited.",
+  "qualification": "Two full generation runs byte-identical; independent audit 29744 records and evaluator-only challenges; strict legal first-action contrast, host-accepted graph switches, final oracle terminal replay, cross-split topology isolation.",
   "performance": {
-    "two_full_generation_wall_seconds": [
-      4.67,
-      4.71
+    "full_generation_seconds": [
+      18.28,
+      18.01
     ],
     "peak_rss_kib": [
-      216004,
-      214440
+      368280,
+      371640
     ],
-    "neural_latency_rss": "NOT_MEASURED"
+    "model_inference_latency_rss": "NOT_MEASURED"
   },
   "negative_results": [
-    "No named SLM forwards, adapter updates or trained checkpoint in corpus lane",
-    "Fixed closure motif and repetitive ageing loop; an explicit symbolic long-history parser can solve it",
-    "Synthetic actuator and host, not native CyberSand",
-    "No immutable Actions artifact; shards held out of Git and packaged locally",
-    "v40 is supplemental; v38 remains broader sequential law/memory/compound-recovery suite"
+    "No SLM forwards, adapter training or trained checkpoint in Corpus Factory lane",
+    "One fixed symbolic junction, deterministic ageing loops; most-recent-relevant-event rule solves task",
+    "No native CyberSand evaluation",
+    "No immutable Actions artifacts; generated shards remain outside Git"
   ],
   "cross_lane_blockers": {
-    "lfm_game_policy": "Pinned root/adapter execution blocked in current worker; historical LoRA evidence only",
-    "sprocket_game_policy": "No pinned 500M root assets/tokenizer/transformers runtime for real adapter training"
+    "lfm_game_policy": "Historical genuine rank-8 LoRA reported, no new full-root forwards/updates in current runner",
+    "sprocket_game_policy": "No pinned root model binaries/tokenizer or compatible runtime in current executor"
   },
-  "next_useful_consumer_experiment": "Pinned real SLM TRAIN-only adapter on v38+v40, HELDOUT autonomous positive+control counterfactuals old bulletin vs receipt-ablated; terminal completion, realized regret, residual paint, illegal prefs, inference p50/p95+RSS, SHA-256 source/model/tokenizer/adapter. Native CyberSand a separate owner acceptance.",
+  "next_useful_consumer_experiment": "Train actual pinned SLM on TRAIN only; compare HELDOUT full durable history versus junction-only ablation preserving sensor events versus last-64 history; report first-action, closed-loop terminal success, regret, contamination, illegality, p50/p95 model latency and peak model RSS; validate native CyberSand separately.",
   "no_paid_api_or_gpu": true,
   "no_out_of_lane_writes": true
 }
