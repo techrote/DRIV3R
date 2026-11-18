@@ -1,0 +1,91 @@
+{
+  "schema": "driv3r/corpus_factory/historical-mission-memory-v46/manifest",
+  "date": "2026-11-18",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator": "mission_memory_v46.js",
+  "generator_sha256": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+  "parents": [
+    {
+      "file": "frontier_memory_v45.js",
+      "sha256": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df"
+    },
+    {
+      "file": "unseen_topology_v44.js",
+      "sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+    }
+  ],
+  "input_contract": "Only policy.input is exposed. policy.action and weight are supervised labels; all *_challenge_EVALUATOR_ONLY.jsonl are sealed evaluation metadata.",
+  "focus": "Historical superseded-goal receipts without current target/stage; 176 accepted action age, partial map survey, remote obstruction and counterfactual mission vs stale-history control.",
+  "splits": {
+    "TRAIN": {
+      "worlds": 48,
+      "terminal_episodes": 240,
+      "decisions": 4957,
+      "positive_mission_pairs": 48,
+      "positive_gate_pairs": 48,
+      "negative_stale_controls": 48,
+      "duplicate_zero_weight": 0
+    },
+    "DEV": {
+      "worlds": 16,
+      "terminal_episodes": 80,
+      "decisions": 1970,
+      "positive_mission_pairs": 16,
+      "positive_gate_pairs": 16,
+      "negative_stale_controls": 16,
+      "duplicate_zero_weight": 0
+    },
+    "HELDOUT": {
+      "worlds": 16,
+      "terminal_episodes": 80,
+      "decisions": 2616,
+      "positive_mission_pairs": 16,
+      "positive_gate_pairs": 16,
+      "negative_stale_controls": 16,
+      "duplicate_zero_weight": 0
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 4957,
+      "bytes": 9563610,
+      "sha256": "1a376135d012031cbecbd12d37171cd1f4682c09275526781895687b96eabda2"
+    },
+    "TRAIN_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 48,
+      "bytes": 26185,
+      "sha256": "fa4ec867051cc34ee0d022f0c73eb46d1492c6831c0cd88c35e37a5d8608167c"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 1970,
+      "bytes": 4026118,
+      "sha256": "49402cea0791925dd540f4ef7e8ccc8a7ac6350636b5d2920d885738a6251c1a"
+    },
+    "DEV_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 8700,
+      "sha256": "e70efb6697f7f4d046aab7771c5d8e89350c67ff00edefc48a07ba714888cfbb"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 2616,
+      "bytes": 5863083,
+      "sha256": "1c7ce2ac53c9597a430bcb267ac5ee26051b99f3d7c18e8db336f70cd16b4502"
+    },
+    "HELDOUT_challenge_EVALUATOR_ONLY.jsonl": {
+      "rows": 16,
+      "bytes": 8768,
+      "sha256": "209cf51822e065795a160d4224fa81d23ef239008259137736c2468d94d79bf5"
+    }
+  },
+  "total_policy_decisions": 9543,
+  "unique_world_geometries": 80,
+  "caveats": [
+    "SYNTHETIC graph host, not native CyberSand",
+    "Survey and historical ageing are host-accepted but scripted",
+    "Mission external events synthetic, not native gameplay signals",
+    "Teacher uses observed survey, not hidden graph, except challenge qualification",
+    "No target SLM weights updated or inference measured",
+    "Actions artifact retention not implemented"
+  ]
+}
