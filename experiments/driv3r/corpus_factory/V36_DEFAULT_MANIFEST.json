@@ -1,0 +1,146 @@
+{
+  "schema": "driv3r/corpus_factory/goal-revision-v36/manifest",
+  "synthetic_host_not_native_CyberSand": true,
+  "quick": false,
+  "generator": "goal_revision_v36.js",
+  "generator_sha256": "6a096dd4f411ff5ab2a7cd14f50fc9726db40dbb217a8789f9a8f4eb4b30a3cf",
+  "dependencies": [
+    {
+      "file": "causal_shortcut_v32.js",
+      "sha256": "e8eeb8f0f874b570d0a9dadb0fde35c9793a238564a45d4c103662eecd0db7e2"
+    },
+    {
+      "file": "causal_gate_v26.js",
+      "sha256": "b64925f57b95a20fc1562748a25ba24d7a6cdc01d11787413544aa26451bdd1c"
+    },
+    {
+      "file": "bounded_view_v30.js",
+      "sha256": "0c180e662d8d00e99e93837b25ab9c4c6fe2d516567c9b1c39907f11bf2a9d89"
+    },
+    {
+      "file": "outcome_forks_v25.js",
+      "sha256": "c879024a7c8ac96408a0a507be8f12bc7299b2bc6f8baf6be918e738e5d01a7d"
+    }
+  ],
+  "provenance": {
+    "parent_v35": "trainer-safe-v35",
+    "design": "v32 graph/host with new host-originating goal revision after v32 accepted history, then 160 additional accepted moves",
+    "synthetic_host_only": true,
+    "revision_event_is_environment_not_agent_action": true
+  },
+  "policy_contract": "Only row.input is model-visible; row.action is teacher label, row.weight is training loss weight (0 means exclude). Episodes and memory_challenge are teacher/eval files.",
+  "challenge_contract": "Within each 4-arm family identical recent/position/goal/legal/budget but different durable painting records. Exact recent-only first-action majority bound =25% stable quota2, 50% revised quota3. No learner claim.",
+  "goal_control": "Compare actual quota3 shortest-successful-suffix policy with frozen quota2 teacher at identical reachable states; strict >=2-action regret or invalid action is required in each revised episode. Stable quota2 is exact negative control.",
+  "non_goals": [
+    "Synthetic, not native CyberSand",
+    "No actual SLM training or autonomous neural rollouts",
+    "No claim of generalization to unseen geometry families under nonlinear renamings"
+  ],
+  "splits": {
+    "TRAIN": {
+      "geometry_groups": 6,
+      "goal_families": 48,
+      "stable_goal_families": 24,
+      "revised_goal_families": 24,
+      "episodes": 384,
+      "decisions": 9504,
+      "unique_bounded_inputs": 9504,
+      "weight_one": 8472,
+      "weight_zero": 1032,
+      "exact_duplicate_inputs": 0,
+      "near_duplicate_contexts": 1032,
+      "conservative_near_dedup_applied_to_training_only": true,
+      "goal_causal_episodes": 192,
+      "strict_goal_regret_decisions": 648,
+      "accepted_detrimental_navigation": 192,
+      "min_detrimental_navigation_regret": 2,
+      "challenge_examples": 0,
+      "stable_recent_only_accuracy": 0.25,
+      "revised_recent_only_accuracy": 0.5
+    },
+    "DEV": {
+      "geometry_groups": 4,
+      "goal_families": 32,
+      "stable_goal_families": 16,
+      "revised_goal_families": 16,
+      "episodes": 256,
+      "decisions": 12896,
+      "unique_bounded_inputs": 12896,
+      "weight_one": 12896,
+      "weight_zero": 0,
+      "exact_duplicate_inputs": 0,
+      "near_duplicate_contexts": 1904,
+      "conservative_near_dedup_applied_to_training_only": true,
+      "goal_causal_episodes": 128,
+      "strict_goal_regret_decisions": 736,
+      "accepted_detrimental_navigation": 128,
+      "min_detrimental_navigation_regret": 2,
+      "challenge_examples": 128,
+      "stable_recent_only_accuracy": 0.25,
+      "revised_recent_only_accuracy": 0.5
+    },
+    "HELDOUT": {
+      "geometry_groups": 4,
+      "goal_families": 32,
+      "stable_goal_families": 16,
+      "revised_goal_families": 16,
+      "episodes": 256,
+      "decisions": 17824,
+      "unique_bounded_inputs": 17824,
+      "weight_one": 17824,
+      "weight_zero": 0,
+      "exact_duplicate_inputs": 0,
+      "near_duplicate_contexts": 2800,
+      "conservative_near_dedup_applied_to_training_only": true,
+      "goal_causal_episodes": 128,
+      "strict_goal_regret_decisions": 960,
+      "accepted_detrimental_navigation": 128,
+      "min_detrimental_navigation_regret": 2,
+      "challenge_examples": 128,
+      "stable_recent_only_accuracy": 0.25,
+      "revised_recent_only_accuracy": 0.5
+    }
+  },
+  "shards": {
+    "TRAIN_policy.jsonl": {
+      "rows": 9504,
+      "bytes": 10088792,
+      "sha256": "4a1bca5215852059c4cd3a4965943763027bd1711cb8165eff1feef921d47aab"
+    },
+    "TRAIN_episodes.jsonl": {
+      "rows": 384,
+      "bytes": 16294352,
+      "sha256": "8c9e9e5660387f63405173e8ec13544719806154150eb8e5b833ba4e5cd6e7d3"
+    },
+    "DEV_policy.jsonl": {
+      "rows": 12896,
+      "bytes": 20909410,
+      "sha256": "65e6c70be04f12391a2d6043cac1bb40f9b310456ab30da88af3353aa255fa52"
+    },
+    "DEV_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 13531147,
+      "sha256": "c7eca7cac4d4bc06fe18b3b1a8bac9e38954791e47ca764f3d7c8f483d078163"
+    },
+    "DEV_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 399248,
+      "sha256": "fb24863c0ae755090125f3de676b3fca5247ea7f472b9dc399b9311e9d395b65"
+    },
+    "HELDOUT_policy.jsonl": {
+      "rows": 17824,
+      "bytes": 36612850,
+      "sha256": "ded572243124ea2b6b064e05f75a11b3b839050949ea99d0efb5eec8c4332d61"
+    },
+    "HELDOUT_episodes.jsonl": {
+      "rows": 256,
+      "bytes": 15552459,
+      "sha256": "5280d850f2ae94670cc197e5bc7da6b858a16dfcb20d5db4dbd93c960858f904"
+    },
+    "HELDOUT_memory_challenge.jsonl": {
+      "rows": 128,
+      "bytes": 510384,
+      "sha256": "3234fc2153fbd75202e2f2590801bfeec9de469e806ab4145a8283288c3800cc"
+    }
+  }
+}
