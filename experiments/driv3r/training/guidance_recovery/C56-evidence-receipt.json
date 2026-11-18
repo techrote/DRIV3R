@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-18",
+  "manifest": {
+    "C56-executed-ledger.zlib.b64": {
+      "sha256": "77ad61516da9a76a66507aef3c883f38b40aaea7306295dedc6e4296623eab7e",
+      "size": 191524
+    },
+    "C56-partial-memory-transfer-2026-11-18.md": {
+      "sha256": "116fe9349c1f473c13f931fe3d2257eec78b4d44417dc2c4eddafda0776cd94f",
+      "size": 7012
+    },
+    "output/C56-AUGMENTED.safetensors": {
+      "sha256": "f5e173a9cd4d117c43382d85b1e69aa930cd821ae7cd1197d6d4530ead5e7c4e",
+      "size": 1492
+    },
+    "output/C56-SHUFFLED.safetensors": {
+      "sha256": "2cca8d962d0712e8e4c5529ad30d5cfc7fb6cb34a4f9e30832e844f67c48a709",
+      "size": 1492
+    },
+    "output/C56-gallery.svg": {
+      "sha256": "2f6baa32cc5dced173af3562a5263d0a2dd9222f4ec6f236b08fb3989abb7c24",
+      "size": 275749
+    },
+    "output/C56-summary.json": {
+      "sha256": "d10d2be50ced73f12a67aa66d9c43b0e311c5ee7448d98b8393c74779ea36a09",
+      "size": 18238
+    },
+    "source/c56_gallery.py": {
+      "sha256": "3dc39f4f3e4bdb8b9b3785e8ff525e7bef4d686bcb2802df878d701ac1bc0d03",
+      "size": 3197
+    },
+    "source/c56_memory_recovery.py": {
+      "sha256": "3aa71cd04f1921a6a91c080b7837500f74e784bc74e9cd5fc950338cfffb7e91",
+      "size": 15512
+    },
+    "source/test_c56_memory_recovery.py": {
+      "sha256": "1f91e7c1bea2849e818431caf50ce9b09a71c9b80b02632ef1be92b858c29af1",
+      "size": 4970
+    }
+  },
+  "predecessor": "C55",
+  "publication_note": "Checkpoint binaries only in the local owner archive; no immutable Actions artifact custody or native CyberSand acceptance",
+  "schema": "C56-publication-receipt/1",
+  "source_branch": "research/import-consolidated-worm-labs",
+  "source_sha256": "3aa71cd04f1921a6a91c080b7837500f74e784bc74e9cd5fc950338cfffb7e91",
+  "tests": "6/6 independent replay/refit/legality/provenance tests passed"
+}
