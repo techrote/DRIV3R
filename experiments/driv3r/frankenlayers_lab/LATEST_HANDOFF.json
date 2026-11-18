@@ -1,8 +1,8 @@
 {
   "schema": "driv3r/frankenlayers-latest-handoff/v1",
-  "dated": "2026-11-17",
+  "dated": "2026-11-18",
   "lab": "frankenlayers_lab",
-  "status": "WAVE20_STRUCTURAL_GRAPH_SOURCE_COMMITTED_NOT_INFERRED",
+  "status": "Q4_UPPER_REAL_INFERENCE_VERIFIED_SCIENTIFICALLY_NEGATIVE_MIDDLE_RATE_LIMITED",
   "repository": "techrote/DRIV3R",
   "pr": 1,
   "branch": "research/import-consolidated-worm-labs",
@@ -24,14 +24,129 @@
   "fresh_candidate_catalogue": "run-request-wave20.json",
   "manual_inference_driver": "wave20_structural.py",
   "source_test": "test_wave20_structural.py",
-  "actual_new_inference": "NOT_EXECUTED",
-  "precise_blocker": "This session cannot acquire the 1.846 GB Q8 GGUF/build pinned llama.cpp or dispatch an Actions job; imported DRIV3R checkout also lacks the externally mounted legacy backend/process and W0 modules needed for parent run_arm. Source smoke cannot substitute.",
-  "next_consumer": "Run source-pinned, manual CPU Q8 W20 experiment with six structural masks + stock/GREYHOUND/BRANCHWITCH/aero4_no2 controls; preserve real full six-way W0 decisions and trajectories, then offer only qualified neural candidates to Preference Lab and Extreme Quant/Distillation.",
+  "actual_new_inference": "YES; real compiled CPU Q4 upper tier, Actions run 44202739826 at e704fb8b4f450becf0b7613a26c70ad42b2f1f12; no new inference executed during 2026-11-18 custody review.",
+  "precise_blocker": "No execution infrastructure blocker: repaired upper Q4 real inference successful and 84/84 payloads custody checked; next tier prohibited before 2026-11-18T05:49:47Z by six-hour request cadence.",
+  "next_consumer": "After next eligibility, check queued/running runs and exact branch/request, and submit at most one middle request with frozen Q4 runtime/folds/steps; retain negative 6/4 evidence. Provide source/original art references only to Preference Lab and Extreme Quant/Distillation; no niche claims.",
   "exclusions": [
     "No native CyberSand acceptance",
     "No novel model scores",
     "No false niche labels",
     "No posthoc guards or surrogate weights",
     "No changes to external repos"
-  ]
+  ],
+  "historical_wave20_status": "WAVE20_STRUCTURAL_GRAPH_SOURCE_COMMITTED_NOT_INFERRED",
+  "historical_wave20_blocker": "This session cannot acquire the 1.846 GB Q8 GGUF/build pinned llama.cpp or dispatch an Actions job; imported DRIV3R checkout also lacks the externally mounted legacy backend/process and W0 modules needed for parent run_arm. Source smoke cannot substitute.",
+  "q4_upper_verified": {
+    "run_id": 44202739826,
+    "source_sha": "e704fb8b4f450becf0b7613a26c70ad42b2f1f12",
+    "artifact_id": 14381663329,
+    "artifact_zip_sha256": "7091428bbedb92e486e8b41925277660a894feb6c19387fe3641f201c787ecea",
+    "manifest_entries_verified": "84/84",
+    "original_failure_run_id": 44202385937,
+    "original_failure_artifact_id": 14381134532,
+    "original_failure_zip_sha256": "a134a3dc2a276d97170862239fcbea3113327e533274292ba34bff61aec446d4",
+    "original_failure_manifest_verified": "7/7",
+    "quant": "official original Q4_K_M (not Q8-requantized)",
+    "model_sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+    "model_bytes": 1099629888,
+    "llama_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+    "compiled_server_sha256": "251cf82f5e26f0db8107e24d95d9f0ac27e659a6a301c03306afa73c0521aa75",
+    "host": "synthetic W0, not native CyberSand",
+    "folds": [
+      [
+        7703,
+        "pipework"
+      ],
+      [
+        8807,
+        "greebles"
+      ]
+    ],
+    "decisions_raw_legal": "60/60",
+    "completed_cases": "8/8",
+    "per_mode": {
+      "stock": {
+        "layers": 24,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "stop_ticks": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          2.545,
+          2.533
+        ]
+      },
+      "greyhound": {
+        "layers": 13,
+        "decisions": [
+          24,
+          24
+        ],
+        "new_steps": [
+          3,
+          3
+        ],
+        "stop_ticks": [
+          null,
+          null
+        ],
+        "p50_seconds": [
+          1.508,
+          1.511
+        ],
+        "failure": "24 LEFT decisions in each fold; four-cell loop; 21 revisit contacts per fold"
+      },
+      "grey10_cut": {
+        "layers": 10,
+        "decisions": [
+          5,
+          3
+        ],
+        "new_steps": [
+          2,
+          1
+        ],
+        "stop_ticks": [
+          4,
+          2
+        ],
+        "p50_seconds": [
+          1.125,
+          1.023
+        ],
+        "failure": "BRANCH/RETRACE then STOP"
+      },
+      "grey8_cut": {
+        "layers": 8,
+        "decisions": [
+          1,
+          1
+        ],
+        "new_steps": [
+          0,
+          0
+        ],
+        "stop_ticks": [
+          0,
+          0
+        ],
+        "p50_seconds": [
+          0.82,
+          0.785
+        ],
+        "failure": "immediate STOP both folds"
+      }
+    },
+    "performance_caveats": "Input prefill tokens/sec measured, generation output tokens 0; post-ready RSS 1.87M KiB, no weights removed; STOP-only stock Q4 limits comparative interpretation; no verified personality niche.",
+    "evidence_ledger": "Q4-UPPER-EVIDENCE-2026-11-18.md"
+  },
+  "next_eligible_request_utc": "2026-11-18T05:49:47Z"
 }
