@@ -11,7 +11,7 @@
   "manifest": "experiments/driv3r/corpus_factory/V67_DEFAULT_MANIFEST.json",
   "report": "experiments/driv3r/corpus_factory/REMOTE_ABRASION_V67_2026-11-19.md",
   "source_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
-  "auditor_sha256": "7fad707a3130961f1e3cd1ae6756a0af537e5e9f558c7993dcb0984ad866fb4e",
+  "auditor_sha256": "32350db772c59f390d672e5ef5cad9940df5ee7aafc55156999dc013420a3589",
   "manifest_sha256": "f43e62f102eb283f75ff883d6b283f34b2b343523385dca0d17e7fd2cf0e0b1a",
   "parent_v44_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
   "source_head_before_v67": "be27c46d2d044511a67d11278a32e39bed247ac5",
@@ -61,7 +61,9 @@
       }
     },
     "byte_identical_generation": true,
-    "v65_geometry_sha_overlap": 0
+    "v65_geometry_sha_overlap": 0,
+    "independent_baseline_forks": 960,
+    "tamper_rejected": true
   },
   "target_SLM_optimizer_steps_this_lane": 0,
   "closed_loop_neural_HELDOUT": 0,

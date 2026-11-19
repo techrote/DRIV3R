@@ -9,6 +9,22 @@ const assert=(x,m)=>{if(!x)throw Error('V67 AUDIT '+m)};
 const H=x=>crypto.createHash('sha256').update(Buffer.isBuffer(x)||typeof x==='string'?x:JSON.stringify(x)).digest('hex');
 const read=p=>fs.readFileSync(p,'utf8').trim().split('\n').map(JSON.parse);
 const files={TRAIN:'TRAIN_remote_abrasion_stream.jsonl',DEV:'DEV_EVALUATOR_ONLY_remote_abrasion_stream.jsonl',HELDOUT:'HELDOUT_EVALUATOR_ONLY_remote_abrasion_stream.jsonl'};
+
+function counterfactual(snapshot, w, both){
+ const h=JSON.parse(JSON.stringify(snapshot));let cost=0;
+ const action=a=>{assert(host.legal(h).includes(a)&&host.apply(h,a).accepted,'control action rejected '+a);cost++};
+ if(!both){action('STOP');return {success:h.success,actions:cost}}
+ const goals=[w.goal,w.goal2],ds=(a,b)=>host.dist(h.g,b,-1)[a];
+ const order=ds(h.pos,goals[0])+ds(goals[0],goals[1])<=ds(h.pos,goals[1])+ds(goals[1],goals[0])?[0,1]:[1,0];
+ for(const i of order){const target=goals[i];let limit=0;
+  while(h.pos!==target){const d=host.dist(h.g,target,-1),from=h.pos;
+   const next=h.g.adj[from].filter(([k])=>d[k]===d[from]-1).sort((a,b)=>a[0]-b[0])[0];assert(next,'control disconnected');
+   const [x,y]=h.g.coords[from], [xx,yy]=h.g.coords[next[0]],dir=xx>x?'E':xx<x?'W':yy>y?'S':'N';action('MOVE_'+dir);assert(++limit<h.g.coords.length,'control route loop')}
+  const visible=host.input(h).painted.find(([p])=>p===target);if(!visible)action(i===0?'PAINT_A':'PAINT_B');
+ }
+ action('STOP');return {success:h.success,actions:cost};
+}
+
 function audit(dir){const mf=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json')));assert(mf.schema==='driv3r/corpus_factory/remote-abrasion-v67/1'&&mf.synthetic_not_native_CyberSand,'schema');
  for(const [f,m] of Object.entries(mf.files)){const b=fs.readFileSync(path.join(dir,f));assert(H(b)===m.sha256&&b.length===m.bytes,'manifest hash '+f)}
  const seen=new Map();let decisions=0,success=0,firstActions=new Map(),stop=0,revisit=0,overhead=0;
@@ -19,7 +35,7 @@ function audit(dir){const mf=JSON.parse(fs.readFileSync(path.join(dir,'manifest.
    const c=certs[i],steps=rows[i].steps;assert(c.split===split&&c.episode===i,'cert identity');
    const w=host.scenario(split,c.source_world_index);assert(w.geometry_sha256===c.geometry_sha256&&w.s===c.start&&w.goal===c.world_goal&&w.goal2===c.world_goal2,'world provenance');
    if(!seen.has(c.geometry_sha256))seen.set(c.geometry_sha256,split);assert(seen.get(c.geometry_sha256)===split,'split geometry overlap');
-   const h=host.start(w,'positive',false),count={A:0,B:0};let physicalErasures=0,critical=null,probe=0,shockCount=0,lastRemoteAt=-1;
+   const h=host.start(w,'positive',false),count={A:0,B:0};let physicalErasures=0,critical=null,criticalSnapshot=null,probe=0,shockCount=0,lastRemoteAt=-1;
    for(let k=0;k<steps.length;k++){
     const r=steps[k],inp=r.input;assert(Array.isArray(inp.events_delta),'missing incremental events');
     for(const event of inp.events_delta){assert(event[0]===h.accepted,'event acceptance timestamp');
@@ -38,7 +54,7 @@ function audit(dir){const mf=JSON.parse(fs.readFileSync(path.join(dir,'manifest.
     const raw=host.input(h),[sx,sy]=h.g.coords[h.pos];raw.painted=raw.painted.filter(([idx])=>{const [x,y]=h.g.coords[idx];return Math.abs(x-sx)+Math.abs(y-sy)<=1});
     raw.v='synthetic-v67-local-paint';raw.events_delta=inp.events_delta;
     assert(H(raw)===H(inp),'pre-action observation mismatch split='+split+' episode='+i+' step='+k);
-    assert(inp.legal.includes(r.action),'illegal advertised '+r.action);assert(host.apply(h,r.action).accepted,'host rejected '+r.action);
+    assert(inp.legal.includes(r.action),'illegal advertised '+r.action);if(k===c.critical_step)criticalSnapshot=JSON.parse(JSON.stringify(h));assert(host.apply(h,r.action).accepted,'host rejected '+r.action);
     assert(r.focus_loss_weight===r.weight,'loss weights diverge');
     if(k===c.critical_step){critical=inp;assert(r.weight===1,'masked critical action');assert(lastRemoteAt>=0&&k-lastRemoteAt>=60,'shock too recent');
      const broken=['A','B'].filter(mat=>h.painted[mat==='A'?w.goal:w.goal2]!==mat); // r.action already applied; if immediate STOP, h unchanged painted
@@ -49,8 +65,11 @@ function audit(dir){const mf=JSON.parse(fs.readFileSync(path.join(dir,'manifest.
     decisions++;
    }
    assert(critical&&h.done&&h.success,'terminal failure');assert(probe===1&&shockCount===c.sequence.length,'probe/shock incomplete');
-   assert(c.stop_only_success===(c.broken.length===0),'STOP baseline inconsistent');
-   assert(c.always_revisit_success===true&&c.always_revisit_overhead>=0,'revisit control inconsistent');
+   const halt=counterfactual(criticalSnapshot,w,false),all=counterfactual(criticalSnapshot,w,true);
+   assert(halt.success===c.stop_only_success&&halt.actions===1,'STOP fork inconsistent');
+   assert(all.success===c.always_revisit_success&&all.success===true,'always-reinspect physical fork failed');
+   assert(all.actions===c.always_revisit_actions&&all.actions-(steps.length-c.critical_step)===c.always_revisit_overhead,'revisit cost certificate inconsistent');
+   assert(c.always_revisit_overhead>=0,'revisit less costly than oracle');
    success++;stop+=Number(c.stop_only_success);revisit+=Number(c.always_revisit_success);overhead+=c.always_revisit_overhead;
    const group=split+':'+c.world_index;if(!firstActions.has(group))firstActions.set(group,{inputs:[],actions:new Set(),signatures:new Set()});
    const g=firstActions.get(group);g.inputs.push(H(critical));g.actions.add(c.first_action);g.signatures.add(H([c.threshold,c.sequence]));
