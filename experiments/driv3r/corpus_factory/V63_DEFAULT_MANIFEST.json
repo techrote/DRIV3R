@@ -1,0 +1,98 @@
+{
+  "schema": "driv3r/corpus_factory/gate-revision-v63/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "a96e1d03d5f01113beb15d719b52de31216cc1f7e5b39b08f53b86cb59b46f8f",
+  "parent_shas": {
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1"
+  },
+  "visible_contract": "Only ordered steps.input and prior selected actions; no evaluator cert fields, no durable event ledger repeating. All actions are legal MOVE/PAINT/ERASE/STOP.",
+  "scenario": "Old remotely reported gate state can be superseded by newer gate bulletin. Positive pivotal obstruction changes optimal first route; irrelevant control gate does not. Physically executed partial-survey, branch exploration, retrace and two painted goals.",
+  "evaluation": "Positive cases: current-only 50% critical action ceiling, stale-first-gate controller 50% critical accuracy, latest-event controller 100% symbolic baseline. Wrong first turn incurs >=2 legal moves of regret in full graph. Irrelevant gate is negative control.",
+  "leakage": "Distinct split-specific procedural topology sizes/seeds; evaluator certificates and group arm labels are separate. No hidden gate state in model input. Redundant TRAIN noncritical same-state same-action rows are zero-weight; intentionally contradictory critical pairs are preserved.",
+  "intervention": "Old history is host-executed before stream; latest gate event delivered at the midpoint of the visible sequential episode; detours legal, reversible, masked. Those detours are not demonstrations of learned exploration.",
+  "files": {
+    "TRAIN_gate_stream.jsonl": {
+      "sha256": "26d4b969bf443bd29b137708b0c47e73cc225067dd6de19dba792a986bcbebd1",
+      "bytes": 4680274,
+      "rows": 64
+    },
+    "TRAIN_gate_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "c2984afab406002fac59838613feb0fd6754842e226c53f74eef8b563f1bec9c",
+      "bytes": 33214,
+      "rows": 64
+    },
+    "DEV_EVALUATOR_ONLY_gate_stream.jsonl": {
+      "sha256": "dd67c0727dc73bb1b876e1defca97b783286a86e1a8eddb575dc685b029ef427",
+      "bytes": 4724860,
+      "rows": 32
+    },
+    "DEV_gate_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "b68def047fc137c557c8e4448a07583b24d314a3d0e007396094e150f6b78a2c",
+      "bytes": 16510,
+      "rows": 32
+    },
+    "HELDOUT_EVALUATOR_ONLY_gate_stream.jsonl": {
+      "sha256": "b81dc0a4db77f8114e735a309dd67312eed6207421aa9c24e9b0418461334ba9",
+      "bytes": 7424098,
+      "rows": 32
+    },
+    "HELDOUT_gate_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "6b0d450ecde07d2f3cd8fb0d62d811474a364f35e18827aaf68645358975bfb5",
+      "bytes": 16838,
+      "rows": 32
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "groups": 8,
+      "episodes": 64,
+      "successful_host_episodes": 64,
+      "decisions": 4440,
+      "positive_pivotal_forks": 32,
+      "irrelevant_gate_negative_controls": 32,
+      "zero_weight_detour_actions": 3072,
+      "duplicate_train_state_action_labels_masked": 942,
+      "delay_actions": 48
+    },
+    "DEV": {
+      "worlds": 4,
+      "groups": 4,
+      "episodes": 32,
+      "successful_host_episodes": 32,
+      "decisions": 3972,
+      "positive_pivotal_forks": 16,
+      "irrelevant_gate_negative_controls": 16,
+      "zero_weight_detour_actions": 3072,
+      "duplicate_train_state_action_labels_masked": 0,
+      "delay_actions": 96
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "groups": 4,
+      "episodes": 32,
+      "successful_host_episodes": 32,
+      "decisions": 6208,
+      "positive_pivotal_forks": 16,
+      "irrelevant_gate_negative_controls": 16,
+      "zero_weight_detour_actions": 5120,
+      "duplicate_train_state_action_labels_masked": 0,
+      "delay_actions": 160
+    }
+  },
+  "limitations": [
+    "Synthetic host != native CyberSand, and these are oracle-labelled episodes, not neural closed-loop successes.",
+    "Latest-gate symbolic event-memory policy solves routing; navigation beyond surveyed frontier is not proved learned.",
+    "Host-executed detours are zero-weight scripted interventions; no target SLM weight update, neural latency/RSS or immutable Actions dataset artifact."
+  ],
+  "total_decisions": 14620,
+  "total_groups": 16,
+  "distinct_world_geometries": 16,
+  "positive_episodes": 64,
+  "control_episodes": 64,
+  "wrong_first_turn_minimum_regret": 2
+}
