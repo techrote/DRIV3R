@@ -5,41 +5,70 @@
   "programme_pr": 3,
   "programme_branch": "research/corpus-factory-postmerge-programme",
   "lane": "experiments/driv3r/corpus_factory/**",
-  "latest_qualified_corpus": "v66 measurement-time-aware sensor recalibration after/before gate measurement, synthetic transport only",
-  "generator": "experiments/driv3r/corpus_factory/temporal_calibration_v66.js",
-  "independent_auditor": "experiments/driv3r/corpus_factory/test_temporal_calibration_v66.js",
-  "manifest": "experiments/driv3r/corpus_factory/V66_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/TEMPORAL_CALIBRATION_V66_2026-11-19.md",
-  "source_sha256": "0b4aed845e25efd094708ba87481dd16ee0a41ea0a07d544a5f14997878c2c1d",
-  "auditor_sha256": "7f9edbc96399a6e1bb2590939150641958089cb27676f9dc9efc4d83b83aa7f7",
-  "manifest_sha256": "d04629346303d7f389b81b469023f2e1e8deef0a1db7790d96cddf26882a8077",
-  "parent_v65_manifest_sha256": "6176dae7dfb39026a9e38c744aef7f4ae0aff04e3f48c351e472e59ae194204d",
-  "source_head_before_v66": "81f0f9aaad2790e07c2647ce002002239bd10c5b",
+  "latest_qualified_corpus": "v67 local abrasion sample + temporally separated physical remote erasure + cost-sensitive repaint/reinspection; synthetic host extension only",
+  "generator": "experiments/driv3r/corpus_factory/remote_abrasion_v67.js",
+  "independent_auditor": "experiments/driv3r/corpus_factory/test_remote_abrasion_host_v67.js",
+  "manifest": "experiments/driv3r/corpus_factory/V67_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/REMOTE_ABRASION_V67_2026-11-19.md",
+  "source_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "auditor_sha256": "7fad707a3130961f1e3cd1ae6756a0af537e5e9f558c7993dcb0984ad866fb4e",
+  "manifest_sha256": "f43e62f102eb283f75ff883d6b283f34b2b343523385dca0d17e7fd2cf0e0b1a",
+  "parent_v44_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "source_head_before_v67": "be27c46d2d044511a67d11278a32e39bed247ac5",
   "latest_model_checkpoint_artifact": null,
   "native_CyberSand_qualified": false,
   "benchmark": {
     "synthetic_host_only": true,
-    "host_action_trajectories_source": "certified unchanged v65/v64 host action receipts",
-    "split_episodes": {"TRAIN": 512, "DEV": 256, "HELDOUT": 256},
-    "split_decisions": {"TRAIN": 35232, "DEV": 33216, "HELDOUT": 48640},
-    "complete_parent_host_certified_successes": 1024,
-    "model_visible_legal_decisions_checked": 117088,
-    "reused_world_geometries": 16,
-    "pivotal_critical_decisions": 512,
-    "first_diagnostic_accuracy": 0.5,
-    "latest_diagnostic_accuracy": 0.5,
-    "measurement_time_aware_symbolic_accuracy": 1.0,
+    "host_extension_physical_remote_erasure": true,
+    "split_episodes": {
+      "TRAIN": 240,
+      "DEV": 120,
+      "HELDOUT": 120
+    },
+    "split_decisions": {
+      "TRAIN": 33220,
+      "DEV": 17390,
+      "HELDOUT": 17147
+    },
+    "host_successes": 480,
+    "independent_legal_action_replays": 67757,
+    "split_disjoint_new_worlds": 24,
+    "matched_arm_per_world": 20,
+    "stop_only_success": 0.3,
+    "always_reinspect_success": 1,
+    "always_reinspect_mean_extra_actions": 7.747916666666667,
+    "first_action_majority_ablations_evaluator_only": {
+      "TRAIN": {
+        "instantaneous_only": 0.479167,
+        "last_remote_event_only": 0.679167,
+        "test_outcome_only": 0.6,
+        "test_and_last_event_only": 0.7,
+        "full_history_oracle": 1.0
+      },
+      "DEV": {
+        "instantaneous_only": 0.466667,
+        "last_remote_event_only": 0.666667,
+        "test_outcome_only": 0.6,
+        "test_and_last_event_only": 0.7,
+        "full_history_oracle": 1.0
+      },
+      "HELDOUT": {
+        "instantaneous_only": 0.466667,
+        "last_remote_event_only": 0.666667,
+        "test_outcome_only": 0.6,
+        "test_and_last_event_only": 0.7,
+        "full_history_oracle": 1.0
+      }
+    },
     "byte_identical_generation": true,
-    "independent_transport_audit": true,
-    "source_host_original_episodes_replayed_by_v64": 256,
-    "source_host_original_decisions_replayed_by_v64": 29272
+    "v65_geometry_sha_overlap": 0
   },
   "target_SLM_optimizer_steps_this_lane": 0,
   "closed_loop_neural_HELDOUT": 0,
   "neural_CPU_latency_RSS": null,
   "immutable_actions_corpus_artifact": null,
   "paid_API_or_GPU_spend": false,
-  "known_failure": "Synthetic diagnostic codes 901/902 are not native CyberSand semantics. Geometry intentionally reused from v65; a small symbolic measurement-time controller still achieves 100%. Full v65 transport re-audit exceeded this run's local budget; parent hash and v64 physical host replay passed. No actual target SLM, CPU latency, or native game observations assessed.",
-  "next_useful_consumer_experiment": "In separate DRIV3R trainer PR #2, train the pinned actual SLM on v65+v66 TRAIN only, not evaluator certificates; compare retained historical measurement-time calibration against first-only/last-only/last-8/16/memory reset controls; report counterfactual both-correct, autonomous HELDOUT completion, CPU p50/p95 latency/peak RSS, model SHA. No need for another surrogate trainer here.",
-  "ownership": "Existing Draft/HOLD corpus-factory PR #3 only; no main, CyberSand, Neurounner or other lab edits, force push, paid spend, Ready or merge."
+  "known_failure": "Synthetic extension and inventively named events cannot be interpreted as native CyberSand ABI. A symbolic two-threshold counter solves all 20 arms. Deterministic teacher-forced precritical detours do not prove neural exploration or generalization. No model updated by this data lane.",
+  "next_useful_consumer_experiment": "In separate trainer PR #2, train actual pinned CPU SLM on v67 TRAIN chronologically (zero weights on scripted prefix), compare autonomous DEV and sealed HELDOUT game-like closed loops vs always-reinspect, last-event, current-only and memory-reset controls; report success, wasted travel/utility, p50/p95 latency, peak RSS and exact model artifact hash. Do not expose evaluator-only certificates to training.",
+  "ownership": "Only existing Draft/HOLD corpus-factory PR #3, only corpus_factory/**. No CyberSand/Neurounner/main/trainer lane modifications or paid spend; never Ready or merge."
 }
