@@ -1,0 +1,27 @@
+{
+  "schema": "driv3r/corpus_factory/v77-default-pins/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "full_qualification": {
+    "worlds": 24,
+    "episodes": 192,
+    "legal_actions": 37476,
+    "paired_conflicting_worlds": 24,
+    "offpolicy_recoveries": 96,
+    "theoretical_current_only_first_action_ceiling": 0.5,
+    "full_history_timestamp_oracle_first_action_accuracy": 1,
+    "model_performance_measured": false,
+    "synthetic_not_native_CyberSand": true
+  },
+  "files": {
+    "dynamic_gate_memory_v77.js": {
+      "bytes": 8399,
+      "sha256": "31b47cdc84d67bbdcb794001078bfc955ba5f3a3c10afdb3987e63ea434ed9aa"
+    },
+    "test_dynamic_gate_host_v77.js": {
+      "bytes": 8039,
+      "sha256": "48e60a6c6411ff5e5ad47488ac9a47f2146c7bb1c8679e48e32bbfa2d236d021"
+    }
+  },
+  "parent_main": "85df84666a8bad18f0092b930c08557b8010687f"
+}
