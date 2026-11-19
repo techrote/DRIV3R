@@ -1,0 +1,136 @@
+{
+  "schema": "driv3r/corpus_factory/v78-default-pins/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "parent_main_at_start": "85df84666a8bad18f0092b930c08557b8010687f",
+  "previous_qualified_head": "44f7a2aaccbb859e371585661ffa099591bf578c",
+  "source_files": {
+    "relay_gate_replanning_v78.js": {
+      "bytes": 11376,
+      "sha256": "c853316723f0a7749d3620028b264cb18459ac712f566f700e80c4dd9efa7925"
+    },
+    "test_relay_gate_host_v78.js": {
+      "bytes": 11616,
+      "sha256": "74f9b4cef5b27daf1fda7d35346e2d013995bfd24f480f873b67cb43fe5a4bb8"
+    },
+    "score_relay_memory_v78.js": {
+      "bytes": 5817,
+      "sha256": "737d265163afd1e4f4dcae2eef60565e4f181c3d1b54e7280e956e770532b892"
+    },
+    "export_relay_decision_index_v78.js": {
+      "bytes": 3947,
+      "sha256": "87685794acf7414a2b3fad3ae8f4c4c9e4fae7c239f32d2d6ef1bd52c74bfa51"
+    }
+  },
+  "generated_corpus_manifest_sha256": "2fca43938b30e64577984d6dd43ed9ef6060ad6e2e68e2be6e25d50883db9a69",
+  "decision_index_manifest_sha256": "05e6466a6e5f2991805d55ee39715a5f8ae1242f80b576ceb441d3184864728c",
+  "audited_expected": {
+    "schema": "driv3r/corpus_factory/relay-v78-independent-audit/1",
+    "worlds": 24,
+    "episodes": 768,
+    "legal_actions": 215488,
+    "physical_wrong_corridor_recoveries": 384,
+    "unreported_gate_replans": 384,
+    "first_and_second_memory_discriminative_worlds": 24,
+    "all_episodes_terminal": true,
+    "model_trained": false,
+    "synthetic_not_native_CyberSand": true
+  },
+  "memory_controls": {
+    "TRAIN": {
+      "episodes": 384,
+      "first_choice": {
+        "source_time_correct": 384,
+        "arrival_order_correct": 288,
+        "last128_top_correct": 192,
+        "current_only_top_correct": 192
+      },
+      "second_choice_report_intention": {
+        "source_time_correct": 384,
+        "arrival_order_correct": 288,
+        "last128_top_correct": 192,
+        "current_only_top_correct": 192
+      },
+      "second_choice_physical_actual": {
+        "latest_report_correct": 192,
+        "unpredictable_flip_count": 192
+      },
+      "matched_first_current_input_conflicts": 12,
+      "matched_second_current_input_conflicts": 35,
+      "distinct_full_history_action_pairs": 288,
+      "mean_extra_actions_flip_vs_stable": 19.666666666666668,
+      "mean_extra_actions_offpolicy_vs_teacher": 16.666666666666668
+    },
+    "DEV": {
+      "episodes": 192,
+      "first_choice": {
+        "source_time_correct": 192,
+        "arrival_order_correct": 144,
+        "last128_top_correct": 96,
+        "current_only_top_correct": 96
+      },
+      "second_choice_report_intention": {
+        "source_time_correct": 192,
+        "arrival_order_correct": 144,
+        "last128_top_correct": 96,
+        "current_only_top_correct": 96
+      },
+      "second_choice_physical_actual": {
+        "latest_report_correct": 96,
+        "unpredictable_flip_count": 96
+      },
+      "matched_first_current_input_conflicts": 6,
+      "matched_second_current_input_conflicts": 18,
+      "distinct_full_history_action_pairs": 144,
+      "mean_extra_actions_flip_vs_stable": 29,
+      "mean_extra_actions_offpolicy_vs_teacher": 25
+    },
+    "HELDOUT": {
+      "episodes": 192,
+      "first_choice": {
+        "source_time_correct": 192,
+        "arrival_order_correct": 144,
+        "last128_top_correct": 96,
+        "current_only_top_correct": 96
+      },
+      "second_choice_report_intention": {
+        "source_time_correct": 192,
+        "arrival_order_correct": 144,
+        "last128_top_correct": 96,
+        "current_only_top_correct": 96
+      },
+      "second_choice_physical_actual": {
+        "latest_report_correct": 96,
+        "unpredictable_flip_count": 96
+      },
+      "matched_first_current_input_conflicts": 6,
+      "matched_second_current_input_conflicts": 18,
+      "distinct_full_history_action_pairs": 144,
+      "mean_extra_actions_flip_vs_stable": 29,
+      "mean_extra_actions_offpolicy_vs_teacher": 29
+    }
+  },
+  "index_split_summary": {
+    "TRAIN": {
+      "indexed_supervised_decisions": 576,
+      "distinct_decisions": 288,
+      "deduplicated_occurrences": 288
+    },
+    "DEV": {
+      "indexed_supervised_decisions": 288,
+      "distinct_decisions": 144,
+      "deduplicated_occurrences": 144
+    },
+    "HELDOUT": {
+      "indexed_supervised_decisions": 288,
+      "distinct_decisions": 144,
+      "deduplicated_occurrences": 144
+    }
+  },
+  "generation_byte_identical": true,
+  "tamper_rehashed_report_rejected": true,
+  "corpus_data_committed_to_git": false,
+  "immutable_actions_artifact": null,
+  "trained_actual_slm": false,
+  "native_CyberSand_verified": false
+}

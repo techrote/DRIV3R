@@ -5,14 +5,15 @@
   "programme_pr": 3,
   "programme_branch": "research/corpus-factory-postmerge-programme",
   "lane": "experiments/driv3r/corpus_factory/**",
-  "latest_qualified_corpus": "v77 physical dynamic gate route-memory; sealed TRAIN/DEV/HELDOUT with stale source-time spatial reports and host-executed wrong-corridor recovery",
-  "generator": "experiments/driv3r/corpus_factory/dynamic_gate_memory_v77.js",
-  "independent_auditor": "experiments/driv3r/corpus_factory/test_dynamic_gate_host_v77.js",
-  "evaluator_scorer": "experiments/driv3r/corpus_factory/score_gate_report_memory_v77.js",
-  "manifest": "experiments/driv3r/corpus_factory/V77_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/DYNAMIC_GATE_MEMORY_V77_2026-11-19.md",
-  "metrics": "experiments/driv3r/corpus_factory/V77_DEFAULT_MANIFEST.json",
-  "generator_sha256": "31b47cdc84d67bbdcb794001078bfc955ba5f3a3c10afdb3987e63ea434ed9aa",
+  "latest_qualified_corpus": "v78 two-stage synthetic gate relay, stale reports, spontaneous physical obstruction and legal route recovery",
+  "generator": "experiments/driv3r/corpus_factory/relay_gate_replanning_v78.js",
+  "independent_auditor": "experiments/driv3r/corpus_factory/test_relay_gate_host_v78.js",
+  "evaluator_scorer": "experiments/driv3r/corpus_factory/score_relay_memory_v78.js",
+  "decision_index_exporter": "experiments/driv3r/corpus_factory/export_relay_decision_index_v78.js",
+  "manifest": "experiments/driv3r/corpus_factory/V78_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/TWO_STAGE_RELAY_REPLAN_V78_2026-11-19.md",
+  "generator_sha256": "c853316723f0a7749d3620028b264cb18459ac712f566f700e80c4dd9efa7925",
+  "generated_corpus_manifest_sha256": "2fca43938b30e64577984d6dd43ed9ef6060ad6e2e68e2be6e25d50883db9a69",
   "synthetic_not_native_CyberSand": true,
   "model_checkpoint_artifact": null,
   "immutable_actions_corpus_artifact": null,
@@ -23,132 +24,49 @@
       6
     ],
     "episodes_train_dev_heldout": [
-      96,
-      48,
-      48
+      384,
+      192,
+      192
     ],
     "legal_actions_train_dev_heldout": [
-      18028,
-      9564,
-      9884
+      100288,
+      56064,
+      59136
     ],
-    "legal_actions_total": 37476,
-    "physically_successful_episodes": 192,
-    "wrong_corridor_host_recoveries": 96,
-    "matched_current_observation_conflicts": 24,
-    "latest_report_to_critical_accepted_actions": 138,
-    "evaluator_only_first_action_correct": {
-      "source_time": [
-        96,
-        48,
-        48
-      ],
-      "arrival_order": [
-        72,
-        36,
-        36
-      ],
-      "current_only_top": [
-        48,
-        24,
-        24
-      ],
-      "last128_top": [
-        48,
-        24,
-        24
-      ]
-    },
+    "legal_actions_total": 215488,
+    "terminal_episodes": 768,
+    "stage1_wrong_lane_physical_recoveries": 384,
+    "stage2_unreported_flip_physical_recoveries": 384,
+    "both_junction_memory_contrast_worlds": 24,
+    "observed_histories_older_than_last128": true,
+    "train_supervised_decisions_before_after_dedup": [
+      576,
+      288
+    ],
+    "first_stage_current_only_accuracy": 0.5,
+    "first_stage_arrival_order_accuracy": 0.75,
+    "first_stage_historical_source_time_oracle_accuracy": 1,
+    "second_stage_historical_intention_oracle_accuracy": 1,
+    "second_stage_historical_intention_matches_physical_open_lane": 0.5,
     "full_host_replay": true,
     "exact_byte_repeat": true,
     "rehash_tamper_rejected": true,
-    "neural_model_evaluated": false,
-    "previous_v76_dev_B_contrast_negative_remains_open": true
+    "neural_model_evaluated": false
   },
   "trained_target_slm_optimizer_steps_this_lane": 0,
   "closed_loop_neural_HELDOUT": 0,
   "cpu_neural_model_latency_RSS": null,
   "paid_API_or_GPU_spend": false,
-  "known_failure": "Synthetic self-contained two-corridor graph, not native CyberSand; gate status is delivered through experimental source-time reports. Matched local-state choice requires older history, but source-time symbolic parser still solves 100%; only 24 geometries with one repeated topology motif and scripted 160-step patrol. No trained target SLM, neural closed-loop HELDOUT, CPU inference latency/RSS or immutable Actions corpus publication. Prior v76 DEV zero B-specific contrast remains open; v76 revised scorer still lacks full generated-corpus rerun.",
-  "next_useful_consumer_experiment": "Trainer lane only: train actual pinned CPU SLM/adapter from v77 TRAIN positive-weight actions; evaluate HELDOUT autonomous route completion and 96 off-policy recovery counterparts, measure source-time vs arrival-order vs last128/current-only memory ablations, p50/p95 CPU latency, peak RSS and exact model/tokenizer/checkpoint hashes. Do not use evaluator-only fields for features; native game compatibility is unproven.",
-  "next_factory_experiment": "Increase split-disjoint graph topology diversity beyond corridor-width shifts, add adversarial asymmetric gates and genuine observation-triggered re-planning, and repair v76 DEV B-specific zero intervention contrasts. Keep post-merge PR#3 Draft/HOLD and full independent replay.",
-  "ownership": "Only experiments/driv3r/corpus_factory/** writable; main, long-horizon trainer PR#2, CyberSand and Neurounner read-only. No merge, paid spend, or force push.",
+  "known_failure": "Still synthetic double-diamond topology with repeat motif, not native CyberSand ABI. Stage-two unannounced flip is exactly 50%, so report-following first choice has no physical Bayes advantage without another prior; treat action labels as intention imitation only and evaluate actual completion/recovery/cost. Historical symbolic source-time parser plus BFS solves; neural inference unmeasured. v76 DEV B-specific 0 contrasts and v76 full scorer rerun unresolved. No immutable Actions corpus artifact.",
+  "next_useful_consumer_experiment": "Separate trainer lane only: train a pinned actual CPU SLM/adapter using v78 positive-weight TRAIN trajectories with deduplicated reference index. Evaluate autonomous sealed HELDOUT 2-stage legal navigation and spontaneous physical replan, terminal paint retention, travel regret, current-only/last128/arrival-order ablations, p50/p95 CPU latency, peak RSS and exact model/tokenizer/checkpoint hashes. Keep evaluator-only fields sealed.",
+  "next_factory_experiment": "Build topologically diverse 3+ branch loops and a nondegenerate (not 50/50) but genuinely unpredictable gate fault prior; measure physically causal action preference, patch v76 DEV B-specific zero contrast, revalidate its full scorer; do not train target models here.",
+  "ownership": "DRIV3R Corpus Factory only; main and other labs read-only; no merge/Ready/force push/paid compute.",
   "previous_qualified_corpus": {
-    "name": "v76 material-specific 8+8 physically enacted risk coupons, independent A/B erasure prior and 4-arm paired source-time challenge on 8 new split-disjoint synthetic geometries",
-    "generator": "experiments/driv3r/corpus_factory/material_specific_risk_v76.js",
-    "manifest": "experiments/driv3r/corpus_factory/V76_DEFAULT_MANIFEST.json",
-    "benchmark": {
-      "new_worlds_train_dev_heldout": [
-        4,
-        2,
-        2
-      ],
-      "source_episodes_train_dev_heldout": [
-        1024,
-        512,
-        512
-      ],
-      "reported_host_legal_actions_train_dev_heldout": [
-        202016,
-        101304,
-        101380
-      ],
-      "total_reported_actions": 404700,
-      "physical_coupon_trials_per_material": 8,
-      "observed_risk_counts_per_eight": {
-        "TRAIN": [
-          2,
-          6
-        ],
-        "DEV": [
-          3,
-          5
-        ],
-        "HELDOUT": [
-          1,
-          7
-        ]
-      },
-      "four_risk_matched_groups_train_dev_heldout": [
-        256,
-        128,
-        128
-      ],
-      "groups_with_any_risk_dependent_intervention_train_dev_heldout": [
-        10,
-        4,
-        6
-      ],
-      "a_specific_intervention_contrasts_train_dev_heldout": [
-        8,
-        8,
-        8
-      ],
-      "b_specific_intervention_contrasts_train_dev_heldout": [
-        16,
-        0,
-        8
-      ],
-      "uniform_half_prior_strict_mistakes_train_dev_heldout": [
-        14,
-        8,
-        14
-      ],
-      "uniform_half_prior_mean_regret_train_dev_heldout": [
-        0.046875,
-        0.05078125,
-        0.28857421875
-      ],
-      "current_only_first_action_ceiling_train_dev_heldout": [
-        0.765625,
-        0.6875,
-        0.78125
-      ],
-      "parent_v76_generation_and_independent_replay_reported_PASS": true,
-      "scorer_revised_to_reconstruct_four_corner_bilinear_uniform_prior": true,
-      "scorer_revised_locally_full_v76_corpus_replayed": false,
-      "manifest_sha256": "pending independent digest verification"
-    },
-    "known_failure": "Only 20/512 matched four-risk groups change intervention; DEV contains zero B-specific contrasts; near-trivial NONE/default strategy still dominates. v76 ex-ante cost audit now recomputes causal pair metrics, but current run lacked the ~790MB generated v76 JSONL shards, so the revised scorer has not yet been re-executed on the full v76 corpus. Synthetic telemetry, sensor inversion and erasure are not established native CyberSand ABI. No actual neural checkpoints, immutable corpus Actions artifact or native evaluation."
+    "name": "v77 dynamic two-corridor gate route-memory",
+    "head": "44f7a2aaccbb859e371585661ffa099591bf578c",
+    "worlds": 24,
+    "episodes": 192,
+    "host_legal_actions": 37476,
+    "physical_wrong_route_recoveries": 96
   }
 }
