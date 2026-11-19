@@ -1,0 +1,310 @@
+{
+  "experiment": "SIGNAL-AVAILABILITY-015",
+  "date": "2026-11-19",
+  "parent_sha": "04626dac746aec2a1ad4b0e48552e6b66729345a",
+  "source_git_blob": "5ba2c2b170af661861829e3bea7ecf5a407ebb68",
+  "train_fit_seeds": [
+    12100,
+    12169
+  ],
+  "stress_calibration_seeds": [
+    14100,
+    14139
+  ],
+  "development_seeds": [
+    15100,
+    15159
+  ],
+  "horizons_and_caps": [
+    [
+      36,
+      36
+    ],
+    [
+      72,
+      64
+    ],
+    [
+      128,
+      64
+    ],
+    [
+      128,
+      128
+    ]
+  ],
+  "structural_heldout_unopened": true,
+  "trained_cutoff": 0.02,
+  "stress_cutoff": 0.7,
+  "stress_frontier": [
+    {
+      "cutoff": 0.7,
+      "avoidable_goal_losses": 0,
+      "utility": 773.9203125
+    },
+    {
+      "cutoff": 0.5,
+      "avoidable_goal_losses": 0,
+      "utility": 773.8578125
+    },
+    {
+      "cutoff": 0.2,
+      "avoidable_goal_losses": 0,
+      "utility": 773.665625
+    },
+    {
+      "cutoff": 0.35,
+      "avoidable_goal_losses": 0,
+      "utility": 773.665625
+    },
+    {
+      "cutoff": 0.1,
+      "avoidable_goal_losses": 0,
+      "utility": 773.103125
+    },
+    {
+      "cutoff": 0.05,
+      "avoidable_goal_losses": 0,
+      "utility": 772.95625
+    },
+    {
+      "cutoff": 0.02,
+      "avoidable_goal_losses": 0,
+      "utility": 772.8953125
+    },
+    {
+      "cutoff": 0.01,
+      "avoidable_goal_losses": 0,
+      "utility": 772.5484375
+    },
+    {
+      "cutoff": 0.005,
+      "avoidable_goal_losses": 0,
+      "utility": 759.6859375
+    },
+    {
+      "cutoff": 0,
+      "avoidable_goal_losses": 0,
+      "utility": 750.8375
+    },
+    {
+      "cutoff": 1.01,
+      "avoidable_goal_losses": 92,
+      "utility": 636.7375
+    }
+  ],
+  "results": [
+    {
+      "mode": "independent",
+      "always": 197,
+      "learned": 197,
+      "stress": 191,
+      "guarded": 197,
+      "baseline_planners": 1185,
+      "trained_planners": 1030,
+      "guard_planners": 1066,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [],
+        "robust": [
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": []
+      }
+    },
+    {
+      "mode": "shift25",
+      "always": 197,
+      "learned": 195,
+      "stress": 185,
+      "guarded": 195,
+      "baseline_planners": 1185,
+      "trained_planners": 1025,
+      "guard_planners": 1057,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [
+          15147
+        ],
+        "robust": [
+          15115,
+          15123,
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": [
+          15147
+        ]
+      }
+    },
+    {
+      "mode": "shift50",
+      "always": 197,
+      "learned": 193,
+      "stress": 185,
+      "guarded": 193,
+      "baseline_planners": 1185,
+      "trained_planners": 1020,
+      "guard_planners": 1053,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [
+          15130,
+          15147
+        ],
+        "robust": [
+          15115,
+          15123,
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": [
+          15130,
+          15147
+        ]
+      }
+    },
+    {
+      "mode": "shift100",
+      "always": 197,
+      "learned": 193,
+      "stress": 185,
+      "guarded": 193,
+      "baseline_planners": 1185,
+      "trained_planners": 1024,
+      "guard_planners": 1053,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [
+          15130,
+          15147
+        ],
+        "robust": [
+          15115,
+          15123,
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": [
+          15130,
+          15147
+        ]
+      }
+    },
+    {
+      "mode": "no_second",
+      "always": 197,
+      "learned": 193,
+      "stress": 185,
+      "guarded": 197,
+      "baseline_planners": 1185,
+      "trained_planners": 1024,
+      "guard_planners": 1185,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [
+          15130,
+          15147
+        ],
+        "robust": [
+          15115,
+          15123,
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": []
+      }
+    },
+    {
+      "mode": "late_second",
+      "always": 197,
+      "learned": 193,
+      "stress": 185,
+      "guarded": 197,
+      "baseline_planners": 1185,
+      "trained_planners": 1024,
+      "guard_planners": 1185,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [
+          15130,
+          15147
+        ],
+        "robust": [
+          15115,
+          15123,
+          15130,
+          15134,
+          15147,
+          15156
+        ],
+        "availability_guard": []
+      }
+    },
+    {
+      "mode": "primary_outage",
+      "always": 197,
+      "learned": 197,
+      "stress": 192,
+      "guarded": 197,
+      "baseline_planners": 1185,
+      "trained_planners": 1058,
+      "guard_planners": 1185,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [],
+        "robust": [
+          15134,
+          15140,
+          15156
+        ],
+        "availability_guard": []
+      }
+    },
+    {
+      "mode": "perfect",
+      "always": 197,
+      "learned": 197,
+      "stress": 197,
+      "guarded": 197,
+      "baseline_planners": 1185,
+      "trained_planners": 1010,
+      "guard_planners": 1185,
+      "unique_lost_seeds": {
+        "always": [],
+        "trained": [],
+        "robust": [],
+        "availability_guard": []
+      }
+    }
+  ],
+  "total_development_rollouts": 15360,
+  "total_replayed_receipts": 575020,
+  "control014_reproduced": true,
+  "independent_mode_v8_rerun_identical": true,
+  "train_parameters_invariant_all_imperfect_modes": true,
+  "late_secondary_equals_absent_secondary": true,
+  "corrupt_receipts_rejected_every_mode": true,
+  "replay_type": "Fresh same-code synthetic Host instances with separate receipt algebra, not independent CyberSand native replay",
+  "node_kernel_benchmark": {
+    "scope": "Isolated 14-feature logistic predictor ONLY; not experiment 015 end-to-end or native",
+    "node": "v22.16.0",
+    "sample_count": 50000,
+    "p50_ns": 114,
+    "p95_ns": 204,
+    "p99_ns": 266,
+    "rss_at_end_bytes": 31477760,
+    "max_rss_KiB": 30740
+  }
+}
