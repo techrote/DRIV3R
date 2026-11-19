@@ -1,0 +1,71 @@
+{
+  "TRAIN": {
+    "worlds": 8,
+    "episodes": 1024,
+    "counterfactual_groups": 128,
+    "per_risk_decisions": 256,
+    "risk_agnostic_modal_policy_regret_expected_actions": 0.046875,
+    "risk_agnostic_incorrect_group_choices": 24,
+    "contrasting_risk_groups": 24,
+    "decision_input_same_across_risk_groups": 128,
+    "identical_instantaneous_obs_conflicting_intervention_groups": 24,
+    "policy_choice_distribution_per_risk_group": {
+      "BOTH": 18,
+      "B": 32,
+      "A": 42,
+      "NONE": 164
+    },
+    "uniform_prior_policy_distribution_per_risk_group": {
+      "BOTH": 32,
+      "NONE": 164,
+      "B": 28,
+      "A": 32
+    }
+  },
+  "DEV": {
+    "worlds": 4,
+    "episodes": 512,
+    "counterfactual_groups": 64,
+    "per_risk_decisions": 128,
+    "risk_agnostic_modal_policy_regret_expected_actions": 0.009765625,
+    "risk_agnostic_incorrect_group_choices": 4,
+    "contrasting_risk_groups": 4,
+    "decision_input_same_across_risk_groups": 64,
+    "identical_instantaneous_obs_conflicting_intervention_groups": 4,
+    "policy_choice_distribution_per_risk_group": {
+      "BOTH": 18,
+      "B": 22,
+      "NONE": 78,
+      "A": 10
+    },
+    "uniform_prior_policy_distribution_per_risk_group": {
+      "BOTH": 20,
+      "B": 20,
+      "NONE": 80,
+      "A": 8
+    }
+  },
+  "HELDOUT": {
+    "worlds": 4,
+    "episodes": 512,
+    "counterfactual_groups": 64,
+    "per_risk_decisions": 128,
+    "risk_agnostic_modal_policy_regret_expected_actions": 0.330078125,
+    "risk_agnostic_incorrect_group_choices": 18,
+    "contrasting_risk_groups": 18,
+    "decision_input_same_across_risk_groups": 64,
+    "identical_instantaneous_obs_conflicting_intervention_groups": 18,
+    "policy_choice_distribution_per_risk_group": {
+      "BOTH": 14,
+      "B": 12,
+      "NONE": 82,
+      "A": 20
+    },
+    "uniform_prior_policy_distribution_per_risk_group": {
+      "BOTH": 20,
+      "B": 16,
+      "NONE": 76,
+      "A": 16
+    }
+  }
+}
