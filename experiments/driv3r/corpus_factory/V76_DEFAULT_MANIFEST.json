@@ -1,0 +1,183 @@
+{
+  "schema": "driv3r/corpus_factory/material-specific-risk-v76/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "risk_distribution_counts_per_8": {
+    "TRAIN": [
+      2,
+      6
+    ],
+    "DEV": [
+      3,
+      5
+    ],
+    "HELDOUT": [
+      1,
+      7
+    ]
+  },
+  "generator_sha256": "50f2650a515f5818885ade53e52d6fa5cc5aac661d59a393ce534863a56e8e89",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v67_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "parent_v72_sha256": "3ef2235f86414349ab60b59a687667a0d2966aa109547407271392b1cc4c195a",
+  "design": "Sixteen physically enacted stress tests, eight separately for materials A and B, independently vary source-time evidence for two remote erosion risks. Witness decision is EX ANTE over four joint physical outcomes and two fault flips, without privileged future state; four A/B risk arms share identical instantaneous host state after >=112 actions. Synthetic, not native CyberSand.",
+  "split_contract": "Only TRAIN_material_specific_risk_stream.jsonl is trainable. DEV and HELDOUT streams plus all certificates and oracle policy_means are evaluator-only. Prefix actions masked; first intervention and recovery supervised; deduplicated repeated TRAIN followups.",
+  "caveats": [
+    "Synthetic v44 host + added erosion, multichannel telemetry and coupon procedure, not native CyberSand ABI.",
+    "Eight local coupon trials per material are scripted synthetic physical evidence; empirical rates are not calibrated real-world probabilities and are assumed to describe future remote abrasion independently.",
+    "TRAIN/DEV/HELDOUT differ in material-specific physical sample rate with deterministic split assignments. This evaluates input-conditioned shift, not neural performance."
+  ],
+  "files": {
+    "TRAIN_material_specific_risk_stream.jsonl": {
+      "rows": 1024,
+      "bytes": 337217736,
+      "sha256": "b9d0463874e5ccbd00b99d31a48ff371d5452fe8a7e9444c85c9f7d1252495a8"
+    },
+    "TRAIN_material_specific_risk_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 1024,
+      "bytes": 1508662,
+      "sha256": "ba20712e7380b6c8b796e0fc684174e9a392f414394a8aa79cb733d8557e3cfc"
+    },
+    "DEV_EVALUATOR_ONLY_material_specific_risk_stream.jsonl": {
+      "rows": 512,
+      "bytes": 211613632,
+      "sha256": "abd348059d5c0b282b95ec5079667430f8c2fde3461bba7ba67c580dc8aa6cd2"
+    },
+    "DEV_material_specific_risk_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 753914,
+      "sha256": "7740ffeda2452bb336f72d9798a07edb799fd79ff07510a307fb9e3bda965e88"
+    },
+    "HELDOUT_EVALUATOR_ONLY_material_specific_risk_stream.jsonl": {
+      "rows": 512,
+      "bytes": 238991008,
+      "sha256": "539b0e9087f38dc1a4dedc2b2d47fdeea8d45bb0ad32b98128710c999db9dff7"
+    },
+    "HELDOUT_material_specific_risk_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 757158,
+      "sha256": "c9de713e6e452751b0a5a308d4dca56760cef093e37ee545af105601b47c7bfa"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 374000,
+          "attempt": 0,
+          "seed": 945876574,
+          "geometry_sha256": "d0c35758a539e11e1bee7ec49858733330461d9488186463ed8979f48232e007"
+        },
+        {
+          "index": 374167,
+          "attempt": 0,
+          "seed": 539619914,
+          "geometry_sha256": "43d8d2399b890302262fe18ea916f254a6c0ba173c20c1cd0288ad8a24d091b9"
+        },
+        {
+          "index": 374343,
+          "attempt": 3,
+          "seed": 4221508417,
+          "geometry_sha256": "571a1d7442c27f4c530d247d64d62fb4f03b51473e006472919b013890e8b84c"
+        },
+        {
+          "index": 374501,
+          "attempt": 0,
+          "seed": 411075977,
+          "geometry_sha256": "d13be145b2e2942648b8c133f6cb8c56c3524e94d5062e496822343d3df6ce47"
+        }
+      ],
+      "episodes": 1024,
+      "decisions": 202016,
+      "terminal_successes": 1024,
+      "masked_train_followups": 11278,
+      "probe_choices": {
+        "NONE": 752,
+        "A": 144,
+        "B": 80,
+        "BOTH": 48
+      },
+      "counterfactual_expected_cost_groups": 128,
+      "groups_with_different_optimal_probe_across_cost_profiles": 4,
+      "groups_with_different_optimal_probe_across_risk": 10,
+      "groups_with_different_optimal_probe_across_A_risk": 8,
+      "groups_with_different_optimal_probe_across_B_risk": 16,
+      "uniform_half_prior_mistakes": 14,
+      "uniform_half_prior_regret": 0.046875,
+      "mean_expected_actions_saved_vs_no_probe": 0.921875
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 384036,
+          "attempt": 3,
+          "seed": 131408298,
+          "geometry_sha256": "3dfcd9a9eda17f20426fec84e9e48aada181872ba2cf6ecec074e7671f371cad"
+        },
+        {
+          "index": 384194,
+          "attempt": 0,
+          "seed": 2739098236,
+          "geometry_sha256": "c1833479848a54e111169277f91f448e0b10fac771a254e04db112a926d87115"
+        }
+      ],
+      "episodes": 512,
+      "decisions": 101304,
+      "terminal_successes": 512,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 352,
+        "A": 32,
+        "B": 96,
+        "BOTH": 32
+      },
+      "counterfactual_expected_cost_groups": 64,
+      "groups_with_different_optimal_probe_across_cost_profiles": 2,
+      "groups_with_different_optimal_probe_across_risk": 4,
+      "groups_with_different_optimal_probe_across_A_risk": 8,
+      "groups_with_different_optimal_probe_across_B_risk": 0,
+      "uniform_half_prior_mistakes": 8,
+      "uniform_half_prior_regret": 0.05078125,
+      "mean_expected_actions_saved_vs_no_probe": 0.70703125
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 394003,
+          "attempt": 1,
+          "seed": 1314517732,
+          "geometry_sha256": "c2ef865cedc40bdb901092730a8fe22971ec1f409fa6bdf3463eeb84562b324c"
+        },
+        {
+          "index": 394167,
+          "attempt": 0,
+          "seed": 1923851572,
+          "geometry_sha256": "d331a9bba1b684c5bf2e9d5d0aee2925a29fe345e389fc667d8f848d042e013d"
+        }
+      ],
+      "episodes": 512,
+      "decisions": 101380,
+      "terminal_successes": 512,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 400,
+        "A": 48,
+        "B": 48,
+        "BOTH": 16
+      },
+      "counterfactual_expected_cost_groups": 64,
+      "groups_with_different_optimal_probe_across_cost_profiles": 2,
+      "groups_with_different_optimal_probe_across_risk": 6,
+      "groups_with_different_optimal_probe_across_A_risk": 8,
+      "groups_with_different_optimal_probe_across_B_risk": 8,
+      "uniform_half_prior_mistakes": 14,
+      "uniform_half_prior_regret": 0.28857421875,
+      "mean_expected_actions_saved_vs_no_probe": 1.00732421875
+    }
+  },
+  "total_episodes": 2048,
+  "total_decisions": 404700,
+  "mean_expected_actions_saved_vs_no_probe": 0.8895263671875
+}
