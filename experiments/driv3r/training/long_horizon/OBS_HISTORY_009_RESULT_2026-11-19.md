@@ -40,7 +40,7 @@ The 128-decision synthetic **64-action censor** makes all policies equal at 14/4
 
 ## Qualification and exact execution
 
-- Source run locally with Python bytecode compilation, explicit bounded CPU optimizer and deterministic DEV campaign. Same-source fresh-host receipt replay, deterministic re-fork equality, independent per-receipt action/position/material algebra checks and tampered illegal-action rejection all passed. No independent native host replay was performed.
+- Source run locally with Python bytecode compilation, explicit bounded CPU optimizer and deterministic DEV campaign. Same-source fresh-host receipt replay, deterministic re-fork equality, independent per-receipt action/position/material algebra checks and tampered illegal-action and position-coordinate rejection all passed. No independent native host replay was performed.
 - Measured peak Python process RSS approximately **111 MiB** (111,000 KiB range). Exact process RSS, wall time and controller p50/p95 timings are captured in `OBS_HISTORY_009_EVIDENCE_2026-11-19.json`. The learned-decision timing includes Python route-feature computation; it is not an external SLM/adaptor inference benchmark.
 - Checkpoint is eleven scalar coefficients per model stored as text with the evidence, not a deployable model binary or immutable Actions checkpoint. No paid GPUs, commercial APIs, model downloads, synthetic HELDOUT inspection or CyberSand runtime mutations.
 - The generated evidence carries the *local exact source SHA-256* and complete paired loss metadata with seed/horizon/cap/receipt SHA; the representative SVG traces are synthetic and should not be confused with native PNG sessions.

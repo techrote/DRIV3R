@@ -213,21 +213,30 @@ def decision(policy,h,cap,models):
     return sigmoid(sum(w*v for w,v in zip(m['weights'],x)))>=0.5
 
 
-def audit_receipts(h):
-    # Separate algebraic checks; same-source Host replay is also applied below.
-    for i,r in enumerate(h.log):
-        assert r['tick']==i and r['action'] in r['legal_menu']
+def verify_receipt_algebra(log):
+    # Check recorded actions/positions/material outcomes without executing the Host.
+    for i,r in enumerate(log):
+        if r['tick'] != i or r['action'] not in r['legal_menu']:
+            raise ValueError('receipt tick/action/menu mismatch')
         x,y=r['before'];u,v=r['after'];a=r['action']
         if a in MOVES:
-            dx,dy=MOVES[a];assert (u,v)==(x+dx,y+dy)
-        else:assert (u,v)==(x,y)
-        if a=='ERASE':assert r['visible_after'] is None
-        if a=='PAINT':assert r['visible_after'] in (1,2)
+            dx,dy=MOVES[a]
+            if (u,v)!=(x+dx,y+dy):raise ValueError('receipt movement mismatch')
+        elif (u,v)!=(x,y):raise ValueError('receipt nonmovement mismatch')
+        if a=='ERASE' and r['visible_after'] is not None:
+            raise ValueError('receipt erase mismatch')
+        if a=='PAINT' and r['visible_after'] not in (1,2):
+            raise ValueError('receipt paint mismatch')
+    return len(log)
+
+
+def audit_receipts(h):
+    # Independent algebra + complete same-source Host replay.
+    n=verify_receipt_algebra(h.log)
     replay=Host(h.seed,h.horizon,h.split)
     for r in h.log:assert replay.step(r['action'])==r
     assert replay.ink==h.ink and replay.pos==h.pos and replay.messages==h.messages
-    return len(h.log)
-
+    return n
 
 def campaign():
     started=time.perf_counter(); train=[]
@@ -263,10 +272,15 @@ def campaign():
                                       'recheck':chosen,'positions':outcome['positions'], 'receipt_sha256':outcome['receipt_sha256']})
     bad=[dict(x) for x in h.log]
     bad[0]['action']='TELEPORT'
-    try:
-        assert bad[0]['action'] in bad[0]['legal_menu']
-    except AssertionError:tamper=True
+    try:verify_receipt_algebra(bad)
+    except ValueError:tamper=True
     assert tamper
+    bad2=[dict(x) for x in h.log]
+    bad2[0]['after']=(999,999)
+    corrupted_position_rejected=False
+    try:verify_receipt_algebra(bad2)
+    except ValueError:corrupted_position_rejected=True
+    assert corrupted_position_rejected
     results={}
     for policy in POLICIES:
         r=[x for x in rows if x['policy']==policy]
@@ -308,6 +322,7 @@ def campaign():
               'episodes':len(rows),'replayed_action_receipts':action_count,
               'latency_microseconds':decision_lat,'maxrss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
               'runtime_seconds':round(time.perf_counter()-started,3),'tamper_rejected':tamper,
+              'corrupted_position_rejected':corrupted_position_rejected,
               'representative_paths':cases,'limitations':[
                   'Simulation uses synthetic receipts and host semantics, not verified CyberSand ABI.',
                   'The structural HELDOUT is unopened; DEV results only.',
