@@ -1,0 +1,3663 @@
+{
+  "study": "OBSERVED-GATE-DEFER-004",
+  "version": "driv3r-forecast-utility/1",
+  "base_main": "85df84666a8bad18f0092b930c08557b8010687f",
+  "predecessor": "FUTURE-GATE-ALIAS-001",
+  "scope": "DEVELOPMENT synthetic gated corridors, controlled future-conditioned experimental cue, not CyberSand ABI",
+  "train_seeds": [
+    1000,
+    1047
+  ],
+  "development_seeds": [
+    3000,
+    3015
+  ],
+  "train_examples": 432,
+  "updates": 720,
+  "real_optimizer": "Independent seeded minibatch Adam logistic training, 120 per 36/72/128 stage per cue and no-cue policy",
+  "policies": {
+    "cue": {
+      "weight_fingerprint_fnv64": "ac19ec798c04f695",
+      "losses": [
+        {
+          "horizon": 36,
+          "updates": 120,
+          "cross_entropy": 0.446583,
+          "accuracy": 0.833333
+        },
+        {
+          "horizon": 72,
+          "updates": 240,
+          "cross_entropy": 0.406323,
+          "accuracy": 0.833333
+        },
+        {
+          "horizon": 128,
+          "updates": 360,
+          "cross_entropy": 0.391664,
+          "accuracy": 0.833333
+        }
+      ]
+    },
+    "no_cue": {
+      "weight_fingerprint_fnv64": "9130f7bf8d2020e9",
+      "losses": [
+        {
+          "horizon": 36,
+          "updates": 120,
+          "cross_entropy": 0.538206,
+          "accuracy": 0.666667
+        },
+        {
+          "horizon": 72,
+          "updates": 240,
+          "cross_entropy": 0.49639,
+          "accuracy": 0.666667
+        },
+        {
+          "horizon": 128,
+          "updates": 360,
+          "cross_entropy": 0.481111,
+          "accuracy": 0.666667
+        }
+      ]
+    }
+  },
+  "cue_channel": {
+    "correct": 72,
+    "total": 96,
+    "reliability": 0.75,
+    "qualifier": "Exogenous 75%-correct future-conditioned forecast, seeded deterministic error; NOT an observed CyberSand field"
+  },
+  "handoffs": {
+    "overlap": {
+      "correct": 96,
+      "total": 144,
+      "accuracy": 0.666667
+    },
+    "no_cue": {
+      "correct": 96,
+      "total": 144,
+      "accuracy": 0.666667
+    },
+    "cue_classifier": {
+      "correct": 120,
+      "total": 144,
+      "accuracy": 0.833333
+    },
+    "cue_utility": {
+      "correct": 96,
+      "total": 144,
+      "accuracy": 0.666667
+    },
+    "privileged_oracle": {
+      "correct": 144,
+      "total": 144,
+      "accuracy": 1
+    }
+  },
+  "utility_calibration": {
+    "36:1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 751,
+      "choose_overlap": true
+    },
+    "36:-1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 232.958,
+      "choose_overlap": true
+    },
+    "36:0": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 0,
+      "choose_overlap": false
+    },
+    "72:1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 775,
+      "choose_overlap": true
+    },
+    "72:-1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 240.958,
+      "choose_overlap": true
+    },
+    "72:0": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 0,
+      "choose_overlap": false
+    },
+    "128:1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 816.25,
+      "choose_overlap": true
+    },
+    "128:-1": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 254.708,
+      "choose_overlap": true
+    },
+    "128:0": {
+      "n": 48,
+      "mean_overlap_minus_lazy": 0,
+      "choose_overlap": false
+    }
+  },
+  "policy_selection": {
+    "36": "overlap",
+    "72": "defer3",
+    "128": "defer3"
+  },
+  "development_episodes": 2880,
+  "independent_replay_episodes": 2880,
+  "action_receipts_replayed": 178289,
+  "tests_passed": 16,
+  "summary": {
+    "lazy": {
+      "episodes": 192,
+      "goals": 96,
+      "mean_utility": 358.833,
+      "total_planner_calls": 256,
+      "total_backtracks": 1512
+    },
+    "overlap": {
+      "episodes": 192,
+      "goals": 144,
+      "mean_utility": 623.094,
+      "total_planner_calls": 320,
+      "total_backtracks": 128
+    },
+    "epoch": {
+      "episodes": 192,
+      "goals": 144,
+      "mean_utility": 622.094,
+      "total_planner_calls": 384,
+      "total_backtracks": 128
+    },
+    "privileged_oracle": {
+      "episodes": 192,
+      "goals": 144,
+      "mean_utility": 630.094,
+      "total_planner_calls": 256,
+      "total_backtracks": 64
+    },
+    "no_cue": {
+      "episodes": 192,
+      "goals": 128,
+      "mean_utility": 525.542,
+      "total_planner_calls": 288,
+      "total_backtracks": 1220
+    },
+    "cue_classifier": {
+      "episodes": 192,
+      "goals": 132,
+      "mean_utility": 560.49,
+      "total_planner_calls": 272,
+      "total_backtracks": 444
+    },
+    "cue_utility": {
+      "episodes": 192,
+      "goals": 144,
+      "mean_utility": 623.094,
+      "total_planner_calls": 320,
+      "total_backtracks": 128
+    },
+    "defer1": {
+      "episodes": 192,
+      "goals": 140,
+      "mean_utility": 599.302,
+      "total_planner_calls": 320,
+      "total_backtracks": 256
+    },
+    "defer2": {
+      "episodes": 192,
+      "goals": 122,
+      "mean_utility": 502.865,
+      "total_planner_calls": 320,
+      "total_backtracks": 384
+    },
+    "defer3": {
+      "episodes": 192,
+      "goals": 128,
+      "mean_utility": 542.75,
+      "total_planner_calls": 256,
+      "total_backtracks": 256
+    },
+    "defer4": {
+      "episodes": 192,
+      "goals": 128,
+      "mean_utility": 541.542,
+      "total_planner_calls": 260,
+      "total_backtracks": 316
+    },
+    "distance2": {
+      "episodes": 192,
+      "goals": 94,
+      "mean_utility": 348.219,
+      "total_planner_calls": 260,
+      "total_backtracks": 1460
+    },
+    "distance3": {
+      "episodes": 192,
+      "goals": 98,
+      "mean_utility": 368.594,
+      "total_planner_calls": 266,
+      "total_backtracks": 1410
+    },
+    "distance4": {
+      "episodes": 192,
+      "goals": 98,
+      "mean_utility": 368.208,
+      "total_planner_calls": 272,
+      "total_backtracks": 1362
+    },
+    "train_selected": {
+      "episodes": 192,
+      "goals": 144,
+      "mean_utility": 624.677,
+      "total_planner_calls": 272,
+      "total_backtracks": 224
+    }
+  },
+  "aggregates": [
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64.25,
+      "mean_paints": 64,
+      "mean_planner_calls": 1.25,
+      "mean_utility": -132.5,
+      "action_counts": {
+        "MOVE_E": 1004,
+        "BACKTRACK": 4,
+        "MOVE_N": 20
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 66,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -140,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 32,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 67,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -143,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 48,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -134,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 64,
+      "mean_paints": 64,
+      "mean_planner_calls": 1,
+      "mean_utility": -131,
+      "action_counts": {
+        "MOVE_E": 1024
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 73.813,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -163.438,
+      "action_counts": {
+        "MOVE_E": 964,
+        "BACKTRACK": 157,
+        "MOVE_N": 24,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 66,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -140,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 32,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 67,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -143,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 48,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 68,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -146,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 64,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 69,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -149,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 80,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 99.125,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -239.375,
+      "action_counts": {
+        "MOVE_E": 992,
+        "BACKTRACK": 562,
+        "MOVE_N": 16,
+        "MOVE_S": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 98.125,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -236.375,
+      "action_counts": {
+        "MOVE_E": 992,
+        "BACKTRACK": 546,
+        "MOVE_N": 16,
+        "MOVE_S": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 97.125,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -233.375,
+      "action_counts": {
+        "MOVE_E": 992,
+        "BACKTRACK": 530,
+        "MOVE_N": 16,
+        "MOVE_S": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 100.125,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -242.375,
+      "action_counts": {
+        "MOVE_E": 992,
+        "BACKTRACK": 578,
+        "MOVE_N": 16,
+        "MOVE_S": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 100.125,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -242.375,
+      "action_counts": {
+        "MOVE_E": 992,
+        "BACKTRACK": 578,
+        "MOVE_N": 16,
+        "MOVE_S": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 65,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -137,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 16,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 68,
+      "mean_paints": 64,
+      "mean_planner_calls": 2,
+      "mean_utility": -146,
+      "action_counts": {
+        "MOVE_E": 952,
+        "BACKTRACK": 64,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 24.938,
+      "mean_paints": 24.688,
+      "mean_planner_calls": 1.25,
+      "mean_utility": 946.125,
+      "action_counts": {
+        "MOVE_E": 355,
+        "BACKTRACK": 4,
+        "MOVE_N": 20,
+        "MOVE_S": 20
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 14,
+      "mean_decisions": 34.813,
+      "mean_paints": 32.813,
+      "mean_planner_calls": 2,
+      "mean_utility": 797.375,
+      "action_counts": {
+        "MOVE_E": 383,
+        "BACKTRACK": 32,
+        "MOVE_N": 71,
+        "MOVE_S": 71
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 5,
+      "mean_decisions": 35.875,
+      "mean_paints": 32.875,
+      "mean_planner_calls": 2,
+      "mean_utility": 231.75,
+      "action_counts": {
+        "MOVE_E": 399,
+        "BACKTRACK": 48,
+        "MOVE_N": 63,
+        "MOVE_S": 64
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 13,
+      "mean_decisions": 25.438,
+      "mean_paints": 24.688,
+      "mean_planner_calls": 1.25,
+      "mean_utility": 757.125,
+      "action_counts": {
+        "MOVE_E": 363,
+        "BACKTRACK": 12,
+        "MOVE_S": 16,
+        "MOVE_N": 16
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 12,
+      "mean_decisions": 30.438,
+      "mean_paints": 28.813,
+      "mean_planner_calls": 1.625,
+      "mean_utility": 682.625,
+      "action_counts": {
+        "MOVE_E": 377,
+        "BACKTRACK": 26,
+        "MOVE_N": 41,
+        "MOVE_S": 43
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 9,
+      "mean_decisions": 35.188,
+      "mean_paints": 32.813,
+      "mean_planner_calls": 2,
+      "mean_utility": 483.75,
+      "action_counts": {
+        "MOVE_E": 389,
+        "BACKTRACK": 38,
+        "MOVE_N": 69,
+        "MOVE_S": 67
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "early",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 950.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "irrelevant",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 21.938,
+      "mean_paints": 21.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 953.125,
+      "action_counts": {
+        "MOVE_E": 351
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 12,
+      "mean_decisions": 33.5,
+      "mean_paints": 31.438,
+      "mean_planner_calls": 2,
+      "mean_utility": 674.938,
+      "action_counts": {
+        "MOVE_E": 379,
+        "BACKTRACK": 33,
+        "MOVE_N": 72,
+        "MOVE_S": 52
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 14,
+      "mean_decisions": 34.813,
+      "mean_paints": 32.813,
+      "mean_planner_calls": 2,
+      "mean_utility": 797.375,
+      "action_counts": {
+        "MOVE_E": 383,
+        "BACKTRACK": 32,
+        "MOVE_N": 71,
+        "MOVE_S": 71
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 5,
+      "mean_decisions": 35.875,
+      "mean_paints": 32.875,
+      "mean_planner_calls": 2,
+      "mean_utility": 231.75,
+      "action_counts": {
+        "MOVE_E": 399,
+        "BACKTRACK": 48,
+        "MOVE_N": 63,
+        "MOVE_S": 64
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 36,
+      "mean_paints": 32,
+      "mean_planner_calls": 2,
+      "mean_utility": -82,
+      "action_counts": {
+        "MOVE_E": 415,
+        "BACKTRACK": 64,
+        "MOVE_N": 48,
+        "MOVE_S": 49
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 36,
+      "mean_paints": 31.25,
+      "mean_planner_calls": 2.25,
+      "mean_utility": -83.5,
+      "action_counts": {
+        "MOVE_E": 421,
+        "BACKTRACK": 76,
+        "MOVE_N": 42,
+        "MOVE_S": 37
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 1,
+      "mean_decisions": 35.938,
+      "mean_paints": 31.813,
+      "mean_planner_calls": 2,
+      "mean_utility": -19.5,
+      "action_counts": {
+        "MOVE_E": 414,
+        "BACKTRACK": 66,
+        "MOVE_N": 50,
+        "MOVE_S": 45
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 6,
+      "mean_decisions": 35.688,
+      "mean_paints": 32.563,
+      "mean_planner_calls": 2,
+      "mean_utility": 294.5,
+      "action_counts": {
+        "MOVE_E": 401,
+        "BACKTRACK": 50,
+        "MOVE_N": 62,
+        "MOVE_S": 58
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 9,
+      "mean_decisions": 35.188,
+      "mean_paints": 32.813,
+      "mean_planner_calls": 2,
+      "mean_utility": 483.75,
+      "action_counts": {
+        "MOVE_E": 389,
+        "BACKTRACK": 38,
+        "MOVE_N": 69,
+        "MOVE_S": 67
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 36,
+      "mean_paints": 30.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -83.125,
+      "action_counts": {
+        "MOVE_E": 415,
+        "BACKTRACK": 82,
+        "MOVE_N": 42,
+        "MOVE_S": 37
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "mode": "late",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 32.938,
+      "mean_paints": 31.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 927.125,
+      "action_counts": {
+        "MOVE_E": 367,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 50.938,
+      "mean_paints": 50.688,
+      "mean_planner_calls": 1.25,
+      "mean_utility": 894.125,
+      "action_counts": {
+        "MOVE_E": 771,
+        "BACKTRACK": 4,
+        "MOVE_N": 20,
+        "MOVE_S": 20
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 60.938,
+      "mean_paints": 58.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 870.125,
+      "action_counts": {
+        "MOVE_E": 799,
+        "BACKTRACK": 32,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 62.938,
+      "mean_paints": 59.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 865.125,
+      "action_counts": {
+        "MOVE_E": 815,
+        "BACKTRACK": 48,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "early",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 898.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "irrelevant",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 47.938,
+      "mean_paints": 47.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 901.125,
+      "action_counts": {
+        "MOVE_E": 767
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 12,
+      "mean_decisions": 62,
+      "mean_paints": 56.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 614.938,
+      "action_counts": {
+        "MOVE_E": 787,
+        "BACKTRACK": 81,
+        "MOVE_N": 72,
+        "MOVE_S": 52
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 60.938,
+      "mean_paints": 58.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 870.125,
+      "action_counts": {
+        "MOVE_E": 799,
+        "BACKTRACK": 32,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 62.938,
+      "mean_paints": 59.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 865.125,
+      "action_counts": {
+        "MOVE_E": 815,
+        "BACKTRACK": 48,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 64.938,
+      "mean_paints": 60.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 860.125,
+      "action_counts": {
+        "MOVE_E": 831,
+        "BACKTRACK": 64,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 66.938,
+      "mean_paints": 61.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 855.125,
+      "action_counts": {
+        "MOVE_E": 847,
+        "BACKTRACK": 80,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 72,
+      "mean_paints": 55.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -166.125,
+      "action_counts": {
+        "MOVE_E": 822,
+        "BACKTRACK": 258,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 72,
+      "mean_paints": 56.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -165.125,
+      "action_counts": {
+        "MOVE_E": 838,
+        "BACKTRACK": 242,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 72,
+      "mean_paints": 57.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -164.125,
+      "action_counts": {
+        "MOVE_E": 854,
+        "BACKTRACK": 226,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 72,
+      "mean_paints": 54.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -167.125,
+      "action_counts": {
+        "MOVE_E": 806,
+        "BACKTRACK": 274,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 58.938,
+      "mean_paints": 57.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 875.125,
+      "action_counts": {
+        "MOVE_E": 783,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "mode": "late",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 64.938,
+      "mean_paints": 60.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 860.125,
+      "action_counts": {
+        "MOVE_E": 831,
+        "BACKTRACK": 64,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 88.938,
+      "mean_paints": 88.688,
+      "mean_planner_calls": 1.25,
+      "mean_utility": 818.125,
+      "action_counts": {
+        "MOVE_E": 1379,
+        "BACKTRACK": 4,
+        "MOVE_N": 20,
+        "MOVE_S": 20
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 98.938,
+      "mean_paints": 96.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 794.125,
+      "action_counts": {
+        "MOVE_E": 1407,
+        "BACKTRACK": 32,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 100.938,
+      "mean_paints": 97.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 789.125,
+      "action_counts": {
+        "MOVE_E": 1423,
+        "BACKTRACK": 48,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "early",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 822.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "irrelevant",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 85.938,
+      "mean_paints": 85.938,
+      "mean_planner_calls": 1,
+      "mean_utility": 825.125,
+      "action_counts": {
+        "MOVE_E": 1375
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "cue_classifier",
+      "n": 16,
+      "goals": 12,
+      "mean_decisions": 104.5,
+      "mean_paints": 94.688,
+      "mean_planner_calls": 2,
+      "mean_utility": 525.188,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 157,
+        "MOVE_N": 72,
+        "MOVE_S": 52
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "cue_utility",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer1",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 98.938,
+      "mean_paints": 96.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 794.125,
+      "action_counts": {
+        "MOVE_E": 1407,
+        "BACKTRACK": 32,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer2",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 100.938,
+      "mean_paints": 97.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 789.125,
+      "action_counts": {
+        "MOVE_E": 1423,
+        "BACKTRACK": 48,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer3",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 102.938,
+      "mean_paints": 98.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 784.125,
+      "action_counts": {
+        "MOVE_E": 1439,
+        "BACKTRACK": 64,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "defer4",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 104.938,
+      "mean_paints": 99.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 779.125,
+      "action_counts": {
+        "MOVE_E": 1455,
+        "BACKTRACK": 80,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance2",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 128,
+      "mean_paints": 92.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -297.125,
+      "action_counts": {
+        "MOVE_E": 1414,
+        "BACKTRACK": 562,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance3",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 128,
+      "mean_paints": 93.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -296.125,
+      "action_counts": {
+        "MOVE_E": 1430,
+        "BACKTRACK": 546,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "distance4",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 128,
+      "mean_paints": 94.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -295.125,
+      "action_counts": {
+        "MOVE_E": 1446,
+        "BACKTRACK": 530,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "epoch",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "lazy",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 128,
+      "mean_paints": 91.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -298.125,
+      "action_counts": {
+        "MOVE_E": 1398,
+        "BACKTRACK": 578,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "no_cue",
+      "n": 16,
+      "goals": 0,
+      "mean_decisions": 128,
+      "mean_paints": 91.875,
+      "mean_planner_calls": 2,
+      "mean_utility": -298.125,
+      "action_counts": {
+        "MOVE_E": 1398,
+        "BACKTRACK": 578,
+        "MOVE_N": 36,
+        "MOVE_S": 36
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "overlap",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "privileged_oracle",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 96.938,
+      "mean_paints": 95.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 799.125,
+      "action_counts": {
+        "MOVE_E": 1391,
+        "BACKTRACK": 16,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "mode": "late",
+      "arm": "train_selected",
+      "n": 16,
+      "goals": 16,
+      "mean_decisions": 102.938,
+      "mean_paints": 98.938,
+      "mean_planner_calls": 2,
+      "mean_utility": 784.125,
+      "action_counts": {
+        "MOVE_E": 1439,
+        "BACKTRACK": 64,
+        "MOVE_N": 72,
+        "MOVE_S": 72
+      }
+    }
+  ],
+  "examples": [
+    {
+      "spec": "development:3001:72:early",
+      "arm": "lazy",
+      "cap": 64,
+      "arrived": true,
+      "paint_moves": 48,
+      "planner_calls": 1,
+      "receipt_fnv64": "a80fc5906c61f7e0",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ]
+    },
+    {
+      "spec": "development:3001:72:early",
+      "arm": "overlap",
+      "cap": 64,
+      "arrived": true,
+      "paint_moves": 57,
+      "planner_calls": 2,
+      "receipt_fnv64": "994dd51ed58a352e",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "BACKTRACK",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S"
+      ]
+    },
+    {
+      "spec": "development:3001:72:early",
+      "arm": "defer3",
+      "cap": 64,
+      "arrived": true,
+      "paint_moves": 48,
+      "planner_calls": 1,
+      "receipt_fnv64": "a9051ca7cfa22f1b",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ]
+    },
+    {
+      "spec": "development:3001:72:late",
+      "arm": "lazy",
+      "cap": 64,
+      "arrived": false,
+      "paint_moves": 55,
+      "planner_calls": 2,
+      "receipt_fnv64": "af7301e2da91617e",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E"
+      ]
+    },
+    {
+      "spec": "development:3001:72:late",
+      "arm": "overlap",
+      "cap": 64,
+      "arrived": true,
+      "paint_moves": 57,
+      "planner_calls": 2,
+      "receipt_fnv64": "43b821b95755cc4d",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "BACKTRACK",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S"
+      ]
+    },
+    {
+      "spec": "development:3001:72:late",
+      "arm": "defer3",
+      "cap": 64,
+      "arrived": true,
+      "paint_moves": 60,
+      "planner_calls": 2,
+      "receipt_fnv64": "b747f268ca0751b0",
+      "actions": [
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "BACKTRACK",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_N",
+        "MOVE_N",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_E",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S",
+        "MOVE_S"
+      ]
+    }
+  ],
+  "gallery_fnv64": "ea34e96b020ab86b",
+  "wall_ms": 155309,
+  "native_receipts": 0,
+  "structural_heldout_opened": false,
+  "binary_checkpoint_committed": false,
+  "limitations": [
+    "JS replica uses parent-inspired layout/semantics but is not a byte-identical Python replay",
+    "No deployed forecast input exists in CyberSand host action/observation ABI",
+    "Cost-sensitive model chooses overlap for both cue signs: classifier accuracy alone is not gameplay utility",
+    "Weights are reproducibly trained but not retained as immutable checkpoint binaries",
+    "Action receipt fingerprints are FNV64 diagnostic hashes, not cryptographic signatures",
+    "Per-inference latency percentiles and process RSS require a separate instrumented Node run",
+    "shadow128 is synthetic research only, native64 proxy stays capped at 64 logical paint moves"
+  ]
+}
