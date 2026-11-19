@@ -1,0 +1,242 @@
+{
+  "schema": "driv3r/corpus_factory/calibrated-gate-risk-v79/1",
+  "date": "2026-11-19",
+  "source_sha256": "8d33957730f459823fc529f874b4a56f444e9afa696e6f8c526bc0effb76dd6a",
+  "synthetic_not_native_CyberSand": true,
+  "contract": "Only positive-weight TRAIN host legal actions. First-route prefix and second-junction decision are loss-masked on flip_index 1..3 to prevent repeated identical observed prefixes dominating. Calibration is measured prior to decision; no hidden midpoint transition or certificate in model input. Labels minimise expected physical travel cost under observed trials, never future-known flip.",
+  "files": {
+    "TRAIN_calibrated_stream.jsonl": {
+      "rows": 384,
+      "bytes": 36708992,
+      "sha256": "b36b1dfa7ae09a49f98abeefc79458ec2c300f1138116cb6807699a943c2300b"
+    },
+    "TRAIN_calibrated_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 384,
+      "bytes": 791858,
+      "sha256": "3921d4a9e96b3fd746e259d2a535a1ed916bf0502a012ea3d05c405089b351cf"
+    },
+    "DEV_EVALUATOR_ONLY_calibrated_stream.jsonl": {
+      "rows": 192,
+      "bytes": 19772000,
+      "sha256": "54a5e4c642c7e3d84b0ad9ce88d7d445cf3719eee69bd4b294f3f324ef8faf8a"
+    },
+    "DEV_EVALUATOR_ONLY_calibrated_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 192,
+      "bytes": 395618,
+      "sha256": "c51ffc1673d193c457bdaa0766e2becd6aff7974aa380c513a2b424dc2dd77e3"
+    },
+    "HELDOUT_EVALUATOR_ONLY_calibrated_stream.jsonl": {
+      "rows": 192,
+      "bytes": 21661728,
+      "sha256": "2f3fb6268820266b99e5fdb92cd32388aa14345ecc55fc24b577fa412c9ccf7d"
+    },
+    "HELDOUT_EVALUATOR_ONLY_calibrated_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 192,
+      "bytes": 396386,
+      "sha256": "4a0b095c82cdc63fc1d97a5416e00380e1e710edca3ea1ee25c5586415229902"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 72,
+          "mid": 31,
+          "geometry_sha256": "201954f73d54c883fabaf54d0cb265035507e206b9222d1c6314ceec777c98aa",
+          "stage1_gates": {
+            "TOP": 7,
+            "BOTTOM": 5
+          },
+          "stage2_gates": {
+            "TOP": 39,
+            "BOTTOM": 39
+          }
+        },
+        {
+          "index": 1,
+          "width": 75,
+          "mid": 33,
+          "geometry_sha256": "d049329702c8150d16272c3b6e3adb49fd9630bfdda732b28398e4e2786c1ead",
+          "stage1_gates": {
+            "TOP": 14,
+            "BOTTOM": 10
+          },
+          "stage2_gates": {
+            "TOP": 52,
+            "BOTTOM": 52
+          }
+        },
+        {
+          "index": 2,
+          "width": 78,
+          "mid": 34,
+          "geometry_sha256": "4c74605ec922730065e78879794648c5a941bad9efe228589108e2d5cf62e1fd",
+          "stage1_gates": {
+            "TOP": 21,
+            "BOTTOM": 15
+          },
+          "stage2_gates": {
+            "TOP": 64,
+            "BOTTOM": 64
+          }
+        },
+        {
+          "index": 3,
+          "width": 81,
+          "mid": 35,
+          "geometry_sha256": "98e47d78b7867d2e6f0225fd48b2ef930965a63321088dd02f0401def975b161",
+          "stage1_gates": {
+            "TOP": 28,
+            "BOTTOM": 20
+          },
+          "stage2_gates": {
+            "TOP": 40,
+            "BOTTOM": 40
+          }
+        },
+        {
+          "index": 4,
+          "width": 84,
+          "mid": 36,
+          "geometry_sha256": "27fb7beeb3f027e8e2eb5122e23f1fac9db82f74c4af62e897d62512dd2b6384",
+          "stage1_gates": {
+            "TOP": 7,
+            "BOTTOM": 25
+          },
+          "stage2_gates": {
+            "TOP": 50,
+            "BOTTOM": 50
+          }
+        },
+        {
+          "index": 5,
+          "width": 87,
+          "mid": 38,
+          "geometry_sha256": "e23585d467d1778074db5366d50d2e7545d48b8b50bce36f720933991a48b77c",
+          "stage1_gates": {
+            "TOP": 12,
+            "BOTTOM": 30
+          },
+          "stage2_gates": {
+            "TOP": 62,
+            "BOTTOM": 62
+          }
+        }
+      ],
+      "episodes": 384,
+      "legal_actions": 120512,
+      "terminal_successes": 384,
+      "physical_wrong_route_recoveries": 96,
+      "calibration_sensitive_groups": 48,
+      "expected_optimal_action_correct": 288,
+      "observed_pilot_trials": 1536
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 99,
+          "mid": 43,
+          "geometry_sha256": "9a08c76b89fd71ca6bf331a8104067e2a206942eb3b930877d67bbf10eb70927",
+          "stage1_gates": {
+            "TOP": 7,
+            "BOTTOM": 5
+          },
+          "stage2_gates": {
+            "TOP": 51,
+            "BOTTOM": 51
+          }
+        },
+        {
+          "index": 1,
+          "width": 102,
+          "mid": 44,
+          "geometry_sha256": "382db3242099d0b9482f08ceae57f54ace269d82f9bfb6282283f795c1bfcc65",
+          "stage1_gates": {
+            "TOP": 14,
+            "BOTTOM": 10
+          },
+          "stage2_gates": {
+            "TOP": 63,
+            "BOTTOM": 63
+          }
+        },
+        {
+          "index": 2,
+          "width": 105,
+          "mid": 46,
+          "geometry_sha256": "f3025872baa78084844cba0683ee9c2925f849d4f4041c9042709d10ae761eb4",
+          "stage1_gates": {
+            "TOP": 21,
+            "BOTTOM": 15
+          },
+          "stage2_gates": {
+            "TOP": 76,
+            "BOTTOM": 76
+          }
+        }
+      ],
+      "episodes": 192,
+      "legal_actions": 64800,
+      "terminal_successes": 192,
+      "physical_wrong_route_recoveries": 48,
+      "calibration_sensitive_groups": 24,
+      "expected_optimal_action_correct": 144,
+      "observed_pilot_trials": 768
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 131,
+          "mid": 57,
+          "geometry_sha256": "7a07ba868b2707b4c45a4ceea10e176a00314e095d08fbae9bd819bc3f27843d",
+          "stage1_gates": {
+            "TOP": 7,
+            "BOTTOM": 5
+          },
+          "stage2_gates": {
+            "TOP": 65,
+            "BOTTOM": 65
+          }
+        },
+        {
+          "index": 1,
+          "width": 134,
+          "mid": 58,
+          "geometry_sha256": "6bab2fdcda83f9985cf4f5649c17191851d8c2f25d145b8cae32b1ca004a006f",
+          "stage1_gates": {
+            "TOP": 14,
+            "BOTTOM": 10
+          },
+          "stage2_gates": {
+            "TOP": 77,
+            "BOTTOM": 77
+          }
+        },
+        {
+          "index": 2,
+          "width": 137,
+          "mid": 60,
+          "geometry_sha256": "5dea8549a21c83730c89da50760710600416d5a4f095648e50e2315584bb2d6b",
+          "stage1_gates": {
+            "TOP": 21,
+            "BOTTOM": 15
+          },
+          "stage2_gates": {
+            "TOP": 90,
+            "BOTTOM": 90
+          }
+        }
+      ],
+      "episodes": 192,
+      "legal_actions": 70944,
+      "terminal_successes": 192,
+      "physical_wrong_route_recoveries": 48,
+      "calibration_sensitive_groups": 24,
+      "expected_optimal_action_correct": 144,
+      "observed_pilot_trials": 768
+    }
+  }
+}
