@@ -1,0 +1,167 @@
+{
+  "schema": "driv3r/corpus_factory/cross-calibrated-receipt-v70/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v67_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "parent_v68_sha256": "c9d2cd11b8ae4de0ebb8ff96ead0b3de1d88b7810aa5f18675eca736ef7423db",
+  "design": "Cross two-material remote erosion with independently calibrated INVERT/MATCH sensor modes and missing/out-of-order timestamped receipts. Calibration is directly grounded by co-located physical paint, not a privileged sensor-mode label; later sensor readings are decoded using remembered local calibration plus source timestamps. No hidden state used to label teacher actions.",
+  "observation_contract": "Synthetic local radius-1 material view, earlier LOCAL_SENSOR_CHECK_A/B simultaneously with visible physically painted goal; remote sensor may report truth or inverted state consistently by material. Source-time receipts arrive out of order, and NONE suppresses them. No sensor-mode field is exposed. The agent must retain the physical-ground-truth comparison and source timestamps; no native CyberSand sensor or material ABI claim.",
+  "model_contract": "Only TRAIN cross_calibrated_receipt_stream contains trainable examples; all prefix interventions and physical probe steps loss weight 0; DEV/HELDOUT and all certificates evaluator-only. Observation arms alter input but not underlying physical intervention or host dynamics. Never train on certificates, manifests, privileged physical broken targets or diagnostic validation.",
+  "caveats": [
+    "No model weights trained; a symbolic source-time and historical-calibration controller remains sufficient.",
+    "Synthetic local calibration checks, sensor inversion and monotone erosion are not established native CyberSand features.",
+    "Conservatively reinspects when report is missing; teacher-forced detours do not prove autonomy.",
+    "Calibrations are stable within one episode and the source clock is trusted; these assumptions are research hypotheses."
+  ],
+  "quick": false,
+  "files": {
+    "TRAIN_cross_calibrated_receipt_stream.jsonl": {
+      "rows": 1152,
+      "bytes": 303746216,
+      "sha256": "483be2077b2112aad665143429a974a0992d89ac9beb091855570b0a307c1beb"
+    },
+    "TRAIN_cross_calibrated_receipt_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 1152,
+      "bytes": 1576708,
+      "sha256": "de8a4acad890553425f0b33ce17a37e7241f747a314f846ffe20ddd19e309d01"
+    },
+    "DEV_EVALUATOR_ONLY_cross_calibrated_receipt_stream.jsonl": {
+      "rows": 576,
+      "bytes": 185514448,
+      "sha256": "2932d4ccbc83c04dd2f95c3f4fbd563a0adf18abd94c1dbe78a4f400b185a139"
+    },
+    "DEV_cross_calibrated_receipt_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 576,
+      "bytes": 786657,
+      "sha256": "bd953f4d88a3a84a86d81ddcdd50235f3fa04aabb3c944e84c7e88042e719e09"
+    },
+    "HELDOUT_EVALUATOR_ONLY_cross_calibrated_receipt_stream.jsonl": {
+      "rows": 576,
+      "bytes": 240160456,
+      "sha256": "3f338f0b11c958cbd07bd820a2519f58f111bc8fbfdc3e7a3a69202bf4e8be86"
+    },
+    "HELDOUT_cross_calibrated_receipt_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 576,
+      "bytes": 790229,
+      "sha256": "ecb1caefb96aca53385da65965d3a54fb22723ba22642dc643d77420ca4691e8"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 6,
+      "episodes": 1152,
+      "decisions": 175088,
+      "host_terminal_successes": 1152,
+      "critical_192_arm_groups": 6,
+      "both_reordered_episodes": 288,
+      "arrival_order_control_goal_failures": 294,
+      "partially_or_unverified_episodes": 864,
+      "stop_only_successes": 192,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 3616,
+      "travel_actions_avoided_vs_always_reinspect": 3568,
+      "redundant_train_followups_loss_masked": 13547,
+      "geometry": [
+        {
+          "sha256": "2fd197b0af42ff29cea61953f4c92ebfe8d6fe427afdd011450fa48351780096",
+          "source_world_index": 174006,
+          "attempt": 2
+        },
+        {
+          "sha256": "43cd112c578b200e5314c161ae674a4f8873bcf03da31459889e18015aaf4b0b",
+          "source_world_index": 174171,
+          "attempt": 0
+        },
+        {
+          "sha256": "8fbaebe36903aff6c81687eeb358268b412bb661030a766fb5ac3eaa0c422d42",
+          "source_world_index": 174345,
+          "attempt": 1
+        },
+        {
+          "sha256": "636e96145bbf9e8aad5b526940b6a76488f337c6b92a1f6dc0a11c71ff81ed62",
+          "source_world_index": 174513,
+          "attempt": 0
+        },
+        {
+          "sha256": "6aeb2d702e4346d9503925cbab7444393cb7ffc24a15305a1d55b318f466f198",
+          "source_world_index": 174699,
+          "attempt": 5
+        },
+        {
+          "sha256": "d8dd05a3c41302c16603b3241e6dd6cfb0f3da2aee65006451c8c564e8126af3",
+          "source_world_index": 174858,
+          "attempt": 1
+        }
+      ]
+    },
+    "DEV": {
+      "worlds": 3,
+      "episodes": 576,
+      "decisions": 89288,
+      "host_terminal_successes": 576,
+      "critical_192_arm_groups": 3,
+      "both_reordered_episodes": 144,
+      "arrival_order_control_goal_failures": 147,
+      "partially_or_unverified_episodes": 432,
+      "stop_only_successes": 96,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 2232,
+      "travel_actions_avoided_vs_always_reinspect": 2344,
+      "redundant_train_followups_loss_masked": 0,
+      "geometry": [
+        {
+          "sha256": "f39fd06eed3f15dd7865ee618908371b7f8099557f9f5dea7359b47e9b425577",
+          "source_world_index": 184006,
+          "attempt": 2
+        },
+        {
+          "sha256": "ea7b37bb3b8ca816866cf0b1ef116e82905f49369de51f182a9d567fb836ce5f",
+          "source_world_index": 184180,
+          "attempt": 3
+        },
+        {
+          "sha256": "c4dec970936a1460515723c2be02db64a8b83e6d5448cc742997e93ee68cc9e4",
+          "source_world_index": 184345,
+          "attempt": 1
+        }
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 3,
+      "episodes": 576,
+      "decisions": 93544,
+      "host_terminal_successes": 576,
+      "critical_192_arm_groups": 3,
+      "both_reordered_episodes": 144,
+      "arrival_order_control_goal_failures": 147,
+      "partially_or_unverified_episodes": 432,
+      "stop_only_successes": 96,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 2440,
+      "travel_actions_avoided_vs_always_reinspect": 2504,
+      "redundant_train_followups_loss_masked": 0,
+      "geometry": [
+        {
+          "sha256": "d287b3b06939eb24013dff81313341989b32aa55f7a60b57e83fd9745e7fe970",
+          "source_world_index": 194006,
+          "attempt": 2
+        },
+        {
+          "sha256": "321aa3ca2fb884c1c59c85e4f40d51c1292d53081670e1f6ba883b380a76539f",
+          "source_world_index": 194171,
+          "attempt": 0
+        },
+        {
+          "sha256": "971ee403d4b0dda402d4d351a025cc6409362659b9570cd5189f58f439d9703d",
+          "source_world_index": 194345,
+          "attempt": 1
+        }
+      ]
+    }
+  },
+  "total_episodes": 2304,
+  "total_decisions": 357920,
+  "mean_actions_avoided_vs_always_reinspect": 3.6527777777777777,
+  "mean_unavoidable_ambiguity_cost_vs_privileged_oracle": 3.5972222222222223,
+  "stop_only_success_rate": 0.16666666666666666,
+  "arrival_only_success_rate": 0.7447916666666667
+}
