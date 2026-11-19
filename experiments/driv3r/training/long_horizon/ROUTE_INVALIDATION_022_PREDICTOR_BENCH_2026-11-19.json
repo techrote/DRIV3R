@@ -1,0 +1,45 @@
+{
+  "experiment": "ROUTE_INVALIDATION_022",
+  "date": "2026-11-19",
+  "method": "isolated softmax predictor-only using exact MULTIPULSE-018 probs formula and TWIN-SUPERVISION-021 frozen weights from corrected 022 evidence; one public 128/64 feature vector, 30k warmups + 50k timed calls per process",
+  "node": "v22.16.0",
+  "arch": "x86_64",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "runs": [
+    {
+      "p95_ns": 437,
+      "peakRSS_KiB": 30580,
+      "batch_wall_ms": 36.602112
+    },
+    {
+      "p95_ns": 442,
+      "peakRSS_KiB": 30448,
+      "batch_wall_ms": 39.514095
+    },
+    {
+      "p95_ns": 441,
+      "peakRSS_KiB": 30324,
+      "batch_wall_ms": 36.865557
+    },
+    {
+      "p95_ns": 434,
+      "peakRSS_KiB": 30448,
+      "batch_wall_ms": 32.235593
+    }
+  ],
+  "p95_range_ns": [
+    434,
+    442
+  ],
+  "peakRSS_range_KiB": [
+    30324,
+    30580
+  ],
+  "provenance": {
+    "model": "train-only 021 fitted 4-class 13-feature softmax",
+    "evidence": "ROUTE_INVALIDATION_022_EVIDENCE.json",
+    "source": "bench_route_invalidation_022.js",
+    "mainResearchHead": "2e577e701eb25b091f71d2de3a98243e59e24755"
+  },
+  "limitations": "Not a real SLM, full game-policy, navigation replanning, native host, or end-to-end inference. No model weights included in benchmark script. Original benchmark ran with a minimal fixture holding the exact training weights because the container has no network to fetch the repository; numerical predictor assertion passed on the same weights and feature vector."
+}

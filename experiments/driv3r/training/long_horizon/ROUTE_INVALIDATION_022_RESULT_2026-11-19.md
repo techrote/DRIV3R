@@ -35,3 +35,7 @@ V2 rejects every mandatory goal and protected divider cell, preserves alternate 
 Scientific replay is from fresh instances of the same pinned synthetic host plus separately implemented receipt-field checks, NOT independent world logic or native CyberSand acceptance. The 128/128 cohort is shadow only. Node p95 and peak RSS are unqualified in this V8 run; explicit Node CLI records peak RSS when executed. No deployable SLM checkpoint, no paid resources, no production code, no HELDOUT opening.
 
 Reproduce explicitly: `node experiments/driv3r/training/long_horizon/route_invalidation_022.js /absolute/output_dir`.
+
+## Bounded Node predictor-only measurement
+
+An isolated Node v22.16.0 softmax benchmark on x86-64 Xeon Platinum 8573C, reproducing the 018 probability kernel with the frozen 021 weights and a real public prefix feature vector, produced four independent process p95 measurements of **434–442 ns** over 50,000 timed calls each after 30,000 warmup predictions. Peak process RSS ranged **30,324–30,580 KiB**. The benchmark explicitly validates its reference probability vector and is retained in `bench_route_invalidation_022.js` and `ROUTE_INVALIDATION_022_PREDICTOR_BENCH_2026-11-19.json`. These are *predictor-only* measurements, not full DRIV3R policy, route planning, neural SLM, or native game performance. The original research run's Node RSS remains unmeasured.
