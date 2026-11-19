@@ -1,0 +1,93 @@
+{
+  "schema": "driv3r/corpus_factory/causal-memory-decision-v74/1",
+  "source_parent_manifest_sha256": "63dc5a110db2108ff4eece26f063e6962ad31d69c650ccd0ff8fd3cd1c0a34e5",
+  "generator_sha256": "085b44f78ad10500b7dbe4307b140c839ba5842382f6063bb48a241b28c8afbd",
+  "scope": "observable synthetic-v73 host inputs and exact host legal action targets only",
+  "trainable_files": [
+    "TRAIN_messages.jsonl"
+  ],
+  "evaluator_only": [
+    "DEV_EVALUATOR_ONLY_pairs.jsonl",
+    "HELDOUT_EVALUATOR_ONLY_pairs.jsonl"
+  ],
+  "warning": "Do not train on any evaluator-only pairs or ablation sidecars. No native CyberSand training or inference implied.",
+  "files": {
+    "TRAIN_messages.jsonl": {
+      "bytes": 2974898,
+      "sha256": "9e29a4bf1fb77f5f4f914b82a57cc8376395fc562db2da19015edc1b13dd05ac",
+      "rows": 684
+    },
+    "DEV_EVALUATOR_ONLY_pairs.jsonl": {
+      "bytes": 6058280,
+      "sha256": "92da769616455924fb356056ba52110f8ace34e7a3ca0a1a4465467a9d27ea24",
+      "rows": 360
+    },
+    "HELDOUT_EVALUATOR_ONLY_pairs.jsonl": {
+      "bytes": 6699268,
+      "sha256": "90ca38749f77975332e26d09f1a1aaa31b3ffb19d759cd159e218e699e3dd344",
+      "rows": 352
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "parent_episodes": 512,
+      "pivotal_examples": 684,
+      "actions": {
+        "PAINT_A": 22,
+        "PAINT_B": 44,
+        "STOP": 160,
+        "MOVE_S": 216,
+        "MOVE_N": 128,
+        "MOVE_E": 60,
+        "MOVE_W": 54
+      },
+      "exact_duplicate_removed": 428,
+      "source_world_geometry_sha256": [
+        "4fb16b4b3ec229cd5b5f876edfc220a8a755eca852ddf7357f90cd2b90386598",
+        "618147f7957563aac666f941713908e793d35a80051cad1c6dfa4195c854a793",
+        "03f5bcdf1a8e41bfb508bfadb1d5c8753f89216d292b99bfe8750be59d92c094",
+        "e8aafda4fa6409c89ef89c4844b85118acd0f0a567a8d134d8892d718cf12855"
+      ]
+    },
+    "DEV": {
+      "parent_episodes": 256,
+      "pivotal_examples": 360,
+      "actions": {
+        "PAINT_A": 20,
+        "PAINT_B": 28,
+        "STOP": 80,
+        "MOVE_N": 216,
+        "MOVE_S": 8,
+        "MOVE_W": 8
+      },
+      "exact_duplicate_removed": 232,
+      "source_world_geometry_sha256": [
+        "ca5677d6c6f4543fe1e9535423ccb701da19428f19a14c4c7e020d27e8a5e5c1",
+        "316ad4286559806735cfac791527d419d40c2157402a6f8c8a0d6b14c3a7d1ab"
+      ]
+    },
+    "HELDOUT": {
+      "parent_episodes": 256,
+      "pivotal_examples": 352,
+      "actions": {
+        "PAINT_A": 16,
+        "PAINT_B": 28,
+        "STOP": 88,
+        "MOVE_S": 88,
+        "MOVE_W": 68,
+        "MOVE_E": 64
+      },
+      "exact_duplicate_removed": 224,
+      "source_world_geometry_sha256": [
+        "2d1f21022035af8fa073e188967b67dcac46f37664eb4247233fa1af975a16fa",
+        "0afe5e0bfa3417a253a6a949cbc02b9d4078f50f62a28ac3ea3c4f3f9fbc2e6f"
+      ]
+    }
+  },
+  "parent_source_hashes": {
+    "generator_sha256": "92cf463e1b09f902823e1d5522a415f3c226aa5d61169bbe93f8e5841c3fb82d",
+    "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+    "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+    "parent_v72_sha256": "3ef2235f86414349ab60b59a687667a0d2966aa109547407271392b1cc4c195a"
+  }
+}
