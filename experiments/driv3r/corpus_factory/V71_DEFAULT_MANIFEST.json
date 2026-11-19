@@ -1,0 +1,147 @@
+{
+  "schema": "driv3r/corpus_factory/common-mode-fault-v71/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "quick": false,
+  "generator_sha256": "eb892a863cc636ae3e6335e62d4e849dae40403e622848e4ee562949e6061abc",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "design": "Sensor two-channel reliability under independent-secondary versus common-mode fault; long-horizon calibration, source-time stale receipts, physical erosion and conservative reinspection. Fault domain observable at event time, whether either sensor actually flipped remains hidden. Perfectly duplicated agreement cannot certify a failed common bus.",
+  "model_contract": "Only TRAIN_common_mode_fault_stream.jsonl is trainable; DEV/HELDOUT and ALL certificates are evaluator-only, no training. Prefix actions weight 0; critical and distinct later recovery decisions weighted. Synthetic bus/reset/sensor signals are NOT native CyberSand ABI.",
+  "caveats": [
+    "All source-host physics and telemetry extensions synthetic; not native CyberSand.",
+    "Single deterministic fault warning and 112 scripted detour.",
+    "Sensor modes stable before warning; no proof of neural learnability.",
+    "A verified independent primary channel is assumed trustworthy after secondary-isolated fault."
+  ],
+  "files": {
+    "TRAIN_common_mode_fault_stream.jsonl": {
+      "rows": 576,
+      "bytes": 143435308,
+      "sha256": "ffdab072cf2cb042e99830e3e0c858e754960dfdde622f3b1807bc60e7f98910"
+    },
+    "TRAIN_common_mode_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 576,
+      "bytes": 608574,
+      "sha256": "3784444abf86b4b9eb2fe59973ceaaf0f255c8d6bcccb7f8fffdc9fb2c874a04"
+    },
+    "DEV_EVALUATOR_ONLY_common_mode_fault_stream.jsonl": {
+      "rows": 288,
+      "bytes": 94546700,
+      "sha256": "68c4766c18573c660274134aa7fd01476fd3136ffb7510f3c83bcae41df9aac0"
+    },
+    "DEV_common_mode_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 288,
+      "bytes": 303962,
+      "sha256": "d36110a3f73cecb133eacb5997b07d50fe1e2a526ca9349aff25f316e74c4ecc"
+    },
+    "HELDOUT_EVALUATOR_ONLY_common_mode_fault_stream.jsonl": {
+      "rows": 288,
+      "bytes": 104018264,
+      "sha256": "de312b652d447d817c491b33c7d90d17174f97a1fc7c97d0476eb44323b5d388"
+    },
+    "HELDOUT_common_mode_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 288,
+      "bytes": 304994,
+      "sha256": "14380f3af531b68b24281daa947a95ab9f016ee61cf2b211aac2b3e059eb96d4"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 4,
+      "episodes": 576,
+      "decisions": 86388,
+      "terminal_successes": 576,
+      "counterfactual_36_arm_groups": 16,
+      "fault_common_arm_count": 224,
+      "fault_isolated_secondary_arm_count": 224,
+      "physical_stop_only_failures": 288,
+      "mean_actions_saved_vs_always_reinspect": 3.3333333333333335,
+      "masked_train_followup_decisions": 6194,
+      "maximum_distinct_critical_actions": 3,
+      "geometry": [
+        {
+          "sha256": "ea860581324144c5607fa711eef05427e53bfcbde02771ac91a207dd28497e66",
+          "index": 214000,
+          "attempt": 0,
+          "world_seed": 1833218702
+        },
+        {
+          "sha256": "0c30bad70c5f0c4b9877e6429a5b534d046a2bde20adcc611618ccb6e224292f",
+          "index": 214167,
+          "attempt": 6,
+          "world_seed": 2621807189
+        },
+        {
+          "sha256": "4bfadee91d98283cbf285f92c7e7c099784dc2fe244b025e991f5c0f1efb5b8e",
+          "index": 214304,
+          "attempt": 2,
+          "world_seed": 2895859838
+        },
+        {
+          "sha256": "39574e39c2ed35db67c7118474d41738ce2839e9ac3b0488ef2264f183f6247c",
+          "index": 214447,
+          "attempt": 0,
+          "world_seed": 1181346280
+        }
+      ]
+    },
+    "DEV": {
+      "worlds": 2,
+      "episodes": 288,
+      "decisions": 46860,
+      "terminal_successes": 288,
+      "counterfactual_36_arm_groups": 8,
+      "fault_common_arm_count": 112,
+      "fault_isolated_secondary_arm_count": 112,
+      "physical_stop_only_failures": 144,
+      "mean_actions_saved_vs_always_reinspect": 5.791666666666667,
+      "masked_train_followup_decisions": 0,
+      "maximum_distinct_critical_actions": 3,
+      "geometry": [
+        {
+          "sha256": "871ac6d3c822aa6d4c37061252ef369338f3458798dd73ccb56da1c7e0450e8d",
+          "index": 224009,
+          "attempt": 3,
+          "world_seed": 381016631
+        },
+        {
+          "sha256": "d449c0e8379ef3f8c674c26770ab11ce913f371da44e69840161f5a401809721",
+          "index": 224149,
+          "attempt": 0,
+          "world_seed": 2346734139
+        }
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 2,
+      "episodes": 288,
+      "decisions": 44604,
+      "terminal_successes": 288,
+      "counterfactual_36_arm_groups": 8,
+      "fault_common_arm_count": 112,
+      "fault_isolated_secondary_arm_count": 112,
+      "physical_stop_only_failures": 144,
+      "mean_actions_saved_vs_always_reinspect": 5.125,
+      "masked_train_followup_decisions": 0,
+      "maximum_distinct_critical_actions": 3,
+      "geometry": [
+        {
+          "sha256": "ccbe9066da8651454bd78537bd71034db39afcb4fe31fe9b6a2efc86e4e6df0b",
+          "index": 234000,
+          "attempt": 0,
+          "world_seed": 459790238
+        },
+        {
+          "sha256": "c95952ff56d098a25595791777a6bc8d39ce6043541f9cb6ebc1365ab8936e33",
+          "index": 234161,
+          "attempt": 4,
+          "world_seed": 749814254
+        }
+      ]
+    }
+  },
+  "total_episodes": 1152,
+  "total_decisions": 177852,
+  "mean_actions_saved_vs_always_reinspect": 4.395833333333333
+}
