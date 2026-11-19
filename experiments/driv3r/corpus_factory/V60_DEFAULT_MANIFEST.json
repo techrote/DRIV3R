@@ -1,0 +1,120 @@
+{
+  "schema": "driv3r/corpus_factory/delayed-material-memory-v60/1",
+  "date": "2026-11-19",
+  "data_only": true,
+  "synthetic_not_native_CyberSand": true,
+  "quick": false,
+  "generator_sha256": "0be8f98e99b8238391951d86c548b948c0c8ade8501adf9b5fad28094034b44a",
+  "parent_shas": {
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1"
+  },
+  "provenance": "Reconstructed v53 host/source geometry from v46 candidate(split,700+world_index), with v53 paired material-law arms; no host ABI additions.",
+  "input_contract": {
+    "visible": "Only ordered steps[].input and past actions; one-shot events_delta; NEVER supply evaluator-only certificates to model.",
+    "train": "TRAIN_delayed_memory_stream.jsonl only; DEV/HELDOUT are evaluator-only.",
+    "weight": "Host-forced exploration/retrace detour actions have weight=0. Physical calibration and final material decisions are supervised. Distinguish policy from intervention.",
+    "split": "Geometry/world ownership stable across v53/v56/v59; held-out world geometries never train. DEV/HELDOUT sealed.",
+    "challenge": "At B goal, paired final instantaneous inputs are byte-identical but one requires PAINT_A and the other PAINT_B. Old one-shot B paint receipt is causally necessary.",
+    "scoring": "Report paired both-correct and per-arm action accuracy, plus closed-loop host completion after final material action; do not use teacher success as neural performance."
+  },
+  "limitations": [
+    "Synthetic host; forced detours are navigation interventions, not optimal movement demonstrations.",
+    "No actual target SLM trained and no native CyberSand gameplay demonstrated.",
+    "Host is a graph with immutable walls and surface laws between probes; long detours alone do not prove realistic open-world memory.",
+    "No immutable Actions publication or neural CPU latency/RSS in this corpus lane."
+  ],
+  "files": {
+    "TRAIN_delayed_memory_stream.jsonl": {
+      "sha256": "0b3c9897ff45a65ac1f52fc031c60a3b231b889f5932c369f11e2fe9ac96e187",
+      "bytes": 12789906,
+      "rows": 72
+    },
+    "TRAIN_delayed_memory_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "6dece9d74fb1cd56e17316aac67e6084005d4ef9816d8c9f446f6f2c08d90868",
+      "bytes": 40258,
+      "rows": 72
+    },
+    "DEV_EVALUATOR_ONLY_delayed_memory_stream.jsonl": {
+      "sha256": "d6c4be4fa546d14cb87dc9d49b567af65b72e08d1a583a369eef047c5c63607e",
+      "bytes": 8305148,
+      "rows": 36
+    },
+    "DEV_delayed_memory_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "7948428119f646abe8fa026ceaf9bf8d45c832c3f76aaa46f79e69cfc1aff10f",
+      "bytes": 19996,
+      "rows": 36
+    },
+    "HELDOUT_EVALUATOR_ONLY_delayed_memory_stream.jsonl": {
+      "sha256": "e881d4312c17895fc9e8c79d2ee10d376d0f96454e0666a25e1a6198ffb458cb",
+      "bytes": 13350818,
+      "rows": 36
+    },
+    "HELDOUT_delayed_memory_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "4eb8e1809216b739c3a949e646a5b539f8803bc9467f3c7ac652d735f3db1a8c",
+      "bytes": 20306,
+      "rows": 36
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 12,
+      "episodes": 72,
+      "material_contrast_pairs": 36,
+      "final_opposing_commands": 72,
+      "host_terminal_success": 72,
+      "decisions": 9532,
+      "intervention_actions_loss_masked": 6528,
+      "nontrivial_excursions": 804,
+      "repeat_training_steps_loss_masked": 2009,
+      "contrast_ages_actions": [
+        48,
+        96,
+        128
+      ]
+    },
+    "DEV": {
+      "worlds": 6,
+      "episodes": 36,
+      "material_contrast_pairs": 18,
+      "final_opposing_commands": 36,
+      "host_terminal_success": 36,
+      "decisions": 5736,
+      "intervention_actions_loss_masked": 4224,
+      "nontrivial_excursions": 516,
+      "repeat_training_steps_loss_masked": 0,
+      "contrast_ages_actions": [
+        64,
+        128,
+        160
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 6,
+      "episodes": 36,
+      "material_contrast_pairs": 18,
+      "final_opposing_commands": 36,
+      "host_terminal_success": 36,
+      "decisions": 8678,
+      "intervention_actions_loss_masked": 6528,
+      "nontrivial_excursions": 920,
+      "repeat_training_steps_loss_masked": 0,
+      "contrast_ages_actions": [
+        96,
+        192,
+        256
+      ]
+    }
+  },
+  "total_decisions": 23946,
+  "total_material_pairs": 72,
+  "distinct_geometry": 24
+}
