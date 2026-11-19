@@ -5,73 +5,95 @@
   "programme_pr": 3,
   "programme_branch": "research/corpus-factory-postmerge-programme",
   "lane": "experiments/driv3r/corpus_factory/**",
-  "latest_qualified_corpus": "v75 split-shifted physical 8-trial abrasion priors on 16 new disjoint synthetic worlds",
-  "generator": "experiments/driv3r/corpus_factory/physical_prior_shift_v75.js",
-  "independent_auditor": "experiments/driv3r/corpus_factory/test_physical_prior_shift_host_v75.js",
-  "manifest": "experiments/driv3r/corpus_factory/V75_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/PHYSICAL_PRIOR_SHIFT_V75_2026-11-19.md",
-  "metrics": "experiments/driv3r/corpus_factory/V75_HELDOUT_RISK_SHIFT_METRICS.json",
-  "generator_sha256": "d4d36ee41cbc8229a56a11c1ecfacf9865e04d0d1c9bc0cf9869baea829b3c2b",
-  "independent_auditor_sha256": "b7ac172ac743b26fda51a291b6457894b4e4262aa14d822a42ccbac015f302bf",
+  "latest_qualified_corpus": "v76 material-specific 8+8 physically enacted risk coupons, independent A/B erasure prior and 4-arm paired source-time challenge on 8 new split-disjoint synthetic geometries",
+  "generator": "experiments/driv3r/corpus_factory/material_specific_risk_v76.js",
+  "independent_auditor": "experiments/driv3r/corpus_factory/test_material_specific_risk_host_v76.js",
+  "evaluator_scorer": "experiments/driv3r/corpus_factory/score_material_specific_risk_v76.py",
+  "manifest": "experiments/driv3r/corpus_factory/V76_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/MATERIAL_SPECIFIC_RISK_V76_2026-11-19.md",
+  "metrics": "experiments/driv3r/corpus_factory/V76_EVALUATOR_ONLY_METRICS.json",
+  "generator_sha256": "50f2650a515f5818885ade53e52d6fa5cc5aac661d59a393ce534863a56e8e89",
   "synthetic_not_native_CyberSand": true,
   "model_checkpoint_artifact": null,
   "immutable_actions_corpus_artifact": null,
   "benchmark": {
     "new_worlds_train_dev_heldout": [
-      8,
       4,
-      4
+      2,
+      2
     ],
     "source_episodes_train_dev_heldout": [
       1024,
       512,
       512
     ],
-    "host_legal_actions_train_dev_heldout": [
-      176192,
-      91028,
-      95108
+    "reported_host_legal_actions_train_dev_heldout": [
+      202016,
+      101304,
+      101380
     ],
-    "complete_host_replay_pass": true,
-    "byte_identical_independent_regeneration": true,
-    "rehash_tamper_rejected": true,
-    "previous_v73_geometry_overlap": 0,
-    "physical_stress_sample_count": 8,
-    "train_risk_rates": [
-      0.25,
-      0.75
-    ],
-    "dev_risk_rates": [
-      0.375,
-      0.625
-    ],
-    "heldout_risk_rates": [
-      0.125,
-      0.875
-    ],
-    "same_instantaneous_observation_matched_risk_groups_train_dev_heldout": [
+    "total_reported_actions": 404700,
+    "physical_coupon_trials_per_material": 8,
+    "observed_risk_counts_per_eight": {
+      "TRAIN": [
+        2,
+        6
+      ],
+      "DEV": [
+        3,
+        5
+      ],
+      "HELDOUT": [
+        1,
+        7
+      ]
+    },
+    "four_risk_matched_groups_train_dev_heldout": [
+      256,
       128,
-      64,
-      64
+      128
     ],
-    "contrasting_required_intervention_groups_train_dev_heldout": [
-      24,
+    "groups_with_any_risk_dependent_intervention_train_dev_heldout": [
+      10,
       4,
-      18
+      6
     ],
-    "uniform_prior_mean_expected_action_regret_train_dev_heldout": [
+    "a_specific_intervention_contrasts_train_dev_heldout": [
+      8,
+      8,
+      8
+    ],
+    "b_specific_intervention_contrasts_train_dev_heldout": [
+      16,
+      0,
+      8
+    ],
+    "uniform_half_prior_strict_mistakes_train_dev_heldout": [
+      14,
+      8,
+      14
+    ],
+    "uniform_half_prior_mean_regret_train_dev_heldout": [
       0.046875,
-      0.009765625,
-      0.330078125
+      0.05078125,
+      0.28857421875
     ],
-    "corpus_manifest_sha256": "021c74e906f40ef66826c036ed98ad30bd30f2e0a45246f443bf9743b61f4f11"
+    "current_only_first_action_ceiling_train_dev_heldout": [
+      0.765625,
+      0.6875,
+      0.78125
+    ],
+    "parent_v76_generation_and_independent_replay_reported_PASS": true,
+    "scorer_revised_to_reconstruct_four_corner_bilinear_uniform_prior": true,
+    "scorer_revised_locally_full_v76_corpus_replayed": false,
+    "manifest_sha256": "pending independent digest verification"
   },
   "trained_target_slm_optimizer_steps_this_lane": 0,
   "closed_loop_neural_HELDOUT": 0,
   "cpu_neural_model_latency_RSS": null,
   "paid_API_or_GPU_spend": false,
-  "known_failure": "Synthetic empirical coupon/remote prior connection is scripted; small DEV risk contrast (4/64); deterministic risk-counting rule still solves; 8 TRAIN geometries and no neural or native CyberSand qualification; no immutable Actions corpus artifact.",
-  "next_useful_consumer_experiment": "Trainer-owned pinned CPU SLM adapter on v75 TRAIN plus v74 TRAIN; evaluate HELDOUT extrapolated stress rates, no-stress-history/last32/uniform-prior ablations, autonomous physical closed-loop goals, cost and CPU latency/RSS; exact model/adapter hashes.",
-  "next_factory_experiment": "Physically heterogeneous material-specific risk priors and dynamic obstructions while preserving paired observable evidence, strict split holdout and signal-quality controls.",
-  "ownership": "Draft/HOLD Corpus Factory PR only, no writes to main, trainer lanes, CyberSand/Neurounner, no force push/merge/paid compute."
+  "known_failure": "Only 20/512 matched four-risk groups change intervention; DEV contains zero B-specific contrasts; near-trivial NONE/default strategy still dominates. v76 ex-ante cost audit now recomputes causal pair metrics, but current run lacked the ~790MB generated v76 JSONL shards, so the revised scorer has not yet been re-executed on the full v76 corpus. Synthetic telemetry, sensor inversion and erasure are not established native CyberSand ABI. No actual neural checkpoints, immutable corpus Actions artifact or native evaluation.",
+  "next_useful_consumer_experiment": "Trainer lane: pin named CPU SLM and tokenizer; train on v74/v75/v76 TRAIN only; blind HELDOUT with memory-coupon and A/B history ablations; report matched-pair action accuracy, zero-goal-loss, expected-action regret, p50/p95 latency, peak RSS and exact checkpoint/model hashes. Do not read evaluator-only certificates as features.",
+  "next_factory_experiment": "Fix zero B-specific DEV contrast with split-disjoint geometry and tariff stratification; then dynamic remote gate/obstruction updates with different legal navigation decisions after old reports, physical reinspection, recovery and counterfactual paired histories. Require independent host replay and uniform source hashes.",
+  "ownership": "Draft/HOLD Corpus Factory PR only; main, PR#2, CyberSand and Neurounner read-only; no force push, paid spend or merge."
 }
