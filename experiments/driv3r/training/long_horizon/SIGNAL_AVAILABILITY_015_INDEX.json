@@ -2,7 +2,7 @@
   "experiment": "SIGNAL-AVAILABILITY-015",
   "date": "2026-11-19",
   "parent_sha": "04626dac746aec2a1ad4b0e48552e6b66729345a",
-  "source_git_blob": "5ba2c2b170af661861829e3bea7ecf5a407ebb68",
+  "source_git_blob": "1ac8cc4cdce3c7c88588b2c958a8616192b9d44a",
   "train_fit_seeds": [
     12100,
     12169

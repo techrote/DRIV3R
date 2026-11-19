@@ -1,6 +1,6 @@
 # SIGNAL-AVAILABILITY-015 — causal observation availability and stress calibration
 
-**Date:** 19 November 2026. **Exact experimental source:** `5ba2c2b170af661861829e3bea7ecf5a407ebb68` (Git blob) on `04626dac746aec2a1ad4b0e48552e6b66729345a`. Research Draft/HOLD, not CyberSand native acceptance.
+**Date:** 19 November 2026. **Exact experimental source:** `1ac8cc4cdce3c7c88588b2c958a8616192b9d44a` (Git blob) on `04626dac746aec2a1ad4b0e48552e6b66729345a`. Research Draft/HOLD, not CyberSand native acceptance.
 
 ## Controlled intervention
 
