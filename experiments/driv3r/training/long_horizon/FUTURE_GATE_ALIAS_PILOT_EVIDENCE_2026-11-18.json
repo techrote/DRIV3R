@@ -1,0 +1,30 @@
+{
+  "study": "FUTURE-GATE-ALIAS-001",
+  "date": "2026-11-18",
+  "status": "provisional_local_pilot_not_exact_published_source",
+  "pilot_source_sha256": "61ce5954f87bc6d9665182b46de187d3800b3b33a29026c29c7758958189b3b1",
+  "base_main": "85df84666a8bad18f0092b930c08557b8010687f",
+  "pilot_model_weights_sha256": "ea3abd6eaac458ac720e2d694b3bd26b0e0c3f5daa92c19d36905cce738295ba",
+  "pilot_external_checkpoint_sha256": "fe59dd34a07605d6a1c9c6c7719f25bf5301aec97b57982ea6f5a1ddbc457c84",
+  "optimizer_updates": 540,
+  "parameters": 161,
+  "train_examples": 432,
+  "conflicting_alias_pairs": 144,
+  "development_episodes": 1152,
+  "verified_action_receipts": 67290,
+  "pilot_unit_tests": "8/8 PASS",
+  "native_receipts": 0,
+  "native64_gate_unchanged": true,
+  "shadow128_is_research_only": true,
+  "heldout_opened": false,
+  "production_mutations": 0,
+  "pilot_handoff_correct": 96,
+  "pilot_handoff_total": 144,
+  "pilot_learned_group_probability_mean": {
+    "early": 0.622406,
+    "late": 0.622406,
+    "irrelevant": 0.004834
+  },
+  "pilot_result_digest": "3f96e7790493e790a84c988b6af382a9a355f6860a45531da9e860d971300d48",
+  "source_reproduction_needed": true
+}
