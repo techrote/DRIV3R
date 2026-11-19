@@ -1,0 +1,119 @@
+{
+  "schema": "driv3r/corpus_factory/relevance-gated-memory-v62/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "source_generator_sha256": "33b854e4d60b1e786bfc820fd5a4fdad18140e31e097a68457465c2231bd71ae",
+  "parent_shas": {
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "contract": {
+    "train": "TRAIN_relevance_stream.jsonl only; DEV/HELDOUT evaluator-only, never fit.",
+    "visible": "Only each steps[].input in sequence and previous agent actions; no hidden laws, variant identities or sidecars.",
+    "contrast": "Identical critical instantaneous host observation across OLD x MID material laws and post-calibration {none, irrelevant_A, B_no_drift, B_flip}.",
+    "outcome": "B warning after latest B probe requires another host-executed B probe even when no physical drift. Unrelated A warning does not invalidate B evidence.",
+    "actions": "Legal host MOVE, PAINT_A, PAINT_B, ERASE, STOP, no invented action tokens.",
+    "intervention": "Long excursions/retraces execute in synthetic host; zero supervised weight. Alerts synthetically injected, never claimed native.",
+    "scoring": "Critical action split between current-paint and move-to-probe; full host completion, per-16-arm all-correct, false alarm handling; ablate surface and relative timestamp.",
+    "leakage": "Group by original v46 geometry_sha256 and split, event deltas once, evaluator certificates only in sidecars.",
+    "negative": "Current-only majority ceiling 50% at critical action; latest-probe-only ignores late B invalidation and is wrong for 50%.",
+    "cross_release": "v61 world family indices 700+; do not mix v61 held-out with v62 training."
+  },
+  "files": {
+    "TRAIN_relevance_stream.jsonl": {
+      "sha256": "2c53b3d1d269120cac836f7cfe3d2701748f1416a60eebb85b0b9bb79d766a48",
+      "bytes": 17817216,
+      "rows": 128
+    },
+    "TRAIN_relevance_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "0bd24eb9f79624ce9a2fa88f2eb852e32403bd687134b6d604799af3fb516a90",
+      "bytes": 65386,
+      "rows": 128
+    },
+    "DEV_EVALUATOR_ONLY_relevance_stream.jsonl": {
+      "sha256": "ec6860e5e4637a710ac6326035bb88d5847c03f99fa4ed2b4062d882b4ad3608",
+      "bytes": 16620544,
+      "rows": 64
+    },
+    "DEV_relevance_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "4e079c29ab7cfde47024afea2b82a1f0a44603ce01788f742cea3ad320171746",
+      "bytes": 32566,
+      "rows": 64
+    },
+    "HELDOUT_EVALUATOR_ONLY_relevance_stream.jsonl": {
+      "sha256": "aca77bc836ae0a1956781e1276527aa464cb0e8d76d56ac25cf223c6a52c9a24",
+      "bytes": 32337736,
+      "rows": 64
+    },
+    "HELDOUT_relevance_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "ae95b29c621e8aea8e299efb1ed9763501ff7ec022600f333d54158a9911f22f",
+      "bytes": 33030,
+      "rows": 64
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "sets": 8,
+      "episodes": 128,
+      "decisions": 12960,
+      "host_successes": 128,
+      "post_calibration_B_alerts": 64,
+      "irrelevant_A_alerts": 32,
+      "correct_no_alert_paints": 32,
+      "loss_masked_detour_moves": 8192,
+      "duplicate_train_actions_masked": 4221,
+      "delays": [
+        64
+      ]
+    },
+    "DEV": {
+      "worlds": 4,
+      "sets": 4,
+      "episodes": 64,
+      "decisions": 10976,
+      "host_successes": 64,
+      "post_calibration_B_alerts": 32,
+      "irrelevant_A_alerts": 16,
+      "correct_no_alert_paints": 16,
+      "loss_masked_detour_moves": 8192,
+      "duplicate_train_actions_masked": 0,
+      "delays": [
+        128
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "sets": 4,
+      "episodes": 64,
+      "decisions": 20224,
+      "host_successes": 64,
+      "post_calibration_B_alerts": 32,
+      "irrelevant_A_alerts": 16,
+      "correct_no_alert_paints": 16,
+      "loss_masked_detour_moves": 16384,
+      "duplicate_train_actions_masked": 0,
+      "delays": [
+        256
+      ]
+    }
+  },
+  "limitations": [
+    "Synthetic host, not native CyberSand. Late surface warning injected by experiment.",
+    "Timestamped per-surface symbolic event/probe controller solves benchmark; not neural performance.",
+    "Long detours are scripted zero-weight host interventions, not learned navigation.",
+    "No SLM trained, no native trial, no CPU neural latency/RSS or immutable Actions data artifact."
+  ],
+  "total_decisions": 44160,
+  "total_sets": 16,
+  "distinct_world_geometries": 16
+}
