@@ -5,72 +5,50 @@
   "programme_pr": 3,
   "programme_branch": "research/corpus-factory-postmerge-programme",
   "lane": "experiments/driv3r/corpus_factory/**",
-  "latest_qualified_corpus": "v67 local abrasion sample + temporally separated physical remote erasure + cost-sensitive repaint/reinspection; synthetic host extension only",
-  "generator": "experiments/driv3r/corpus_factory/remote_abrasion_v67.js",
-  "independent_auditor": "experiments/driv3r/corpus_factory/test_remote_abrasion_host_v67.js",
-  "manifest": "experiments/driv3r/corpus_factory/V67_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/REMOTE_ABRASION_V67_2026-11-19.md",
-  "source_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
-  "auditor_sha256": "32350db772c59f390d672e5ef5cad9940df5ee7aafc55156999dc013420a3589",
-  "manifest_sha256": "f43e62f102eb283f75ff883d6b283f34b2b343523385dca0d17e7fd2cf0e0b1a",
-  "parent_v44_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
-  "source_head_before_v67": "be27c46d2d044511a67d11278a32e39bed247ac5",
+  "latest_qualified_corpus": "v68 synthetic physical two-material abrasion with 4-channel verified/partial/unknown observations, nonprivileged reinspection teacher, 80 matched arms per world",
+  "generator": "experiments/driv3r/corpus_factory/reinspection_quality_v68.js",
+  "independent_auditor": "experiments/driv3r/corpus_factory/test_reinspection_quality_v68.js",
+  "manifest": "experiments/driv3r/corpus_factory/V68_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/OBSERVATION_QUALITY_V68_2026-11-19.md",
+  "generator_sha256": "c9d2cd11b8ae4de0ebb8ff96ead0b3de1d88b7810aa5f18675eca736ef7423db",
+  "auditor_sha256": "0a2b42bae933ab7628bb2858bcb581fd807b9d4ef8bb37bdae77af4ff806bb6f",
+  "manifest_sha256": "e66f8273fe85d9427c9e6cd7305f55d0b4b56b8e00ec49ed195ebd87b16eb477",
+  "host_v44_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v67_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "source_head_before_v68": "defa4db3863398e132ffc6567eefd5342ff96ac3",
   "latest_model_checkpoint_artifact": null,
   "native_CyberSand_qualified": false,
   "benchmark": {
     "synthetic_host_only": true,
-    "host_extension_physical_remote_erasure": true,
+    "episodes": 1280,
+    "host_replayed_actions": 198296,
     "split_episodes": {
-      "TRAIN": 240,
-      "DEV": 120,
-      "HELDOUT": 120
+      "TRAIN": 640,
+      "DEV": 320,
+      "HELDOUT": 320
     },
     "split_decisions": {
-      "TRAIN": 33220,
-      "DEV": 17390,
-      "HELDOUT": 17147
+      "TRAIN": 97842,
+      "DEV": 49518,
+      "HELDOUT": 50936
     },
-    "host_successes": 480,
-    "independent_legal_action_replays": 67757,
-    "split_disjoint_new_worlds": 24,
-    "matched_arm_per_world": 20,
-    "stop_only_success": 0.3,
-    "always_reinspect_success": 1,
-    "always_reinspect_mean_extra_actions": 7.747916666666667,
-    "first_action_majority_ablations_evaluator_only": {
-      "TRAIN": {
-        "instantaneous_only": 0.479167,
-        "last_remote_event_only": 0.679167,
-        "test_outcome_only": 0.6,
-        "test_and_last_event_only": 0.7,
-        "full_history_oracle": 1.0
-      },
-      "DEV": {
-        "instantaneous_only": 0.466667,
-        "last_remote_event_only": 0.666667,
-        "test_outcome_only": 0.6,
-        "test_and_last_event_only": 0.7,
-        "full_history_oracle": 1.0
-      },
-      "HELDOUT": {
-        "instantaneous_only": 0.466667,
-        "last_remote_event_only": 0.666667,
-        "test_outcome_only": 0.6,
-        "test_and_last_event_only": 0.7,
-        "full_history_oracle": 1.0
-      }
-    },
+    "new_exclusive_worlds": 16,
+    "matched_80_arm_groups": 16,
+    "unverified_observation_identical_history_groups": 32,
+    "synthetic_host_teacher_successes": 1280,
+    "mean_actions_avoided_vs_always_reinspect": 4.09375,
+    "mean_unknown_inspection_cost_vs_privileged_oracle": 4.075,
+    "stop_only_success_rate": 0.3,
     "byte_identical_generation": true,
-    "v65_geometry_sha_overlap": 0,
-    "independent_baseline_forks": 960,
-    "tamper_rejected": true
+    "tamper_rejected": true,
+    "geometry_overlap_v67": 0
   },
   "target_SLM_optimizer_steps_this_lane": 0,
   "closed_loop_neural_HELDOUT": 0,
   "neural_CPU_latency_RSS": null,
   "immutable_actions_corpus_artifact": null,
   "paid_API_or_GPU_spend": false,
-  "known_failure": "Synthetic extension and inventively named events cannot be interpreted as native CyberSand ABI. A symbolic two-threshold counter solves all 20 arms. Deterministic teacher-forced precritical detours do not prove neural exploration or generalization. No model updated by this data lane.",
-  "next_useful_consumer_experiment": "In separate trainer PR #2, train actual pinned CPU SLM on v67 TRAIN chronologically (zero weights on scripted prefix), compare autonomous DEV and sealed HELDOUT game-like closed loops vs always-reinspect, last-event, current-only and memory-reset controls; report success, wasted travel/utility, p50/p95 latency, peak RSS and exact model artifact hash. Do not expose evaluator-only certificates to training.",
-  "ownership": "Only existing Draft/HOLD corpus-factory PR #3, only corpus_factory/**. No CyberSand/Neurounner/main/trainer lane modifications or paid spend; never Ready or merge."
+  "known_failure": "Hypothetical verified remote material check is not CyberSand host ABI. Unverified/no-receipt case is unidentifiable from available model observations and therefore deliberately labeled conservative reinspection, not privileged foresight. Symbolic per-material receipt memory solves. Scripted detours do not prove neural autonomy.",
+  "next_useful_consumer_experiment": "Separate trainer PR #2: actual pinned SLM CPU training on v67+v68 TRAIN alone, then autonomous DEV and sealed HELDOUT matched masks; compare degraded/verified completion and revisit/action utility vs always-reinspect and privileged oracle; report p50/p95 inference, RSS, source/model hashes and memory-truncation controls. Never mix evaluator-only certificates into training.",
+  "ownership": "Only current Draft/HOLD corpus-factory PR #3 and experiments/driv3r/corpus_factory/**; no main/CyberSand/Neurounner/trainer writes, no paid compute, no Ready or merge."
 }
