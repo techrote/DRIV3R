@@ -1,5 +1,6 @@
 "use strict";
-// ROUTE-INVALIDATION-022. Opt-in bounded game-policy research; never CI-triggered.
+// ROUTE-INVALIDATION-022 v2. Corrects target-occlusion confound from historical v1.
+// Opt-in bounded game-policy research; never CI-triggered.
 // 64 logical moves are censored; 128/128 remains a separate synthetic shadow.
 // Route closures and terminal STOP accounting are experimental, not native ABI.
 const FILES=["physical_inspection_016.js","multipulse_physical_018.js","stop_reservation_020.js","twin_supervision_021.js"];
@@ -14,10 +15,10 @@ function chooseClosure(c,root){
  for(const a of route){pos[0]+=c.DIR[a][0];pos[1]+=c.DIR[a][1];sites.push([...pos])}
  for(let i=2;i<Math.min(7,sites.length);i++){
   const cell=sites[i],k=key(cell),blocked=new Set(root.walls);
-  if([4,8,9].includes(cell[0])||c.eq(cell,target)||blocked.has(k))continue;
+  if([4,8,9].includes(cell[0])||c.TARGETS.some(p=>c.eq(p,cell))||blocked.has(k))continue;
   blocked.add(k);
   const alternate=c.bfs(root.pos,target,blocked);
-  if(alternate.length&&alternate.length<60)
+  if(alternate.length&&alternate.length<60&&c.TARGETS.every(p=>c.eq(p,root.pos)||c.bfs(root.pos,p,blocked).length>0))
    return{cell:k,atTick:root.tick+i,plannedIndex:i,routeLength:route.length,alternateLength:alternate.length};
  }
  return null;
@@ -154,7 +155,7 @@ function study(c,e,t,z,limit=N){
   throw Error("campaign incomplete "+JSON.stringify({conditions,rollouts,receipts,rejected}));
  for(const group of Object.values(results))for(const s of Object.values(group))
   s.meanUtility=+(s.utility/s.n).toFixed(3);
- return{experiment:"ROUTE_INVALIDATION_022",sources:{dependencyGitBlobs:BLOBS,
+ return{experiment:"ROUTE_INVALIDATION_022",sources:{originalV1Commit:"5993624ec20c4f5077dc842cc7f26768b631b475",correction:"v1 blocked goal 11,4 and did not preserve goal reachability",dependencyGitBlobs:BLOBS,
   TRAIN:"021 training seeds 120100-120169",DEV:"unsealed shifted 150100-150149",
   structuralHELDOUT:"unopened"},limitations:"Deterministic synthetic route closure is a research intervention, not the native CyberSand host ABI. Same-source host replay and separate receipt checks do not constitute native acceptance. STOP is synthetic terminal accounting.",
   training:{updates:model.updates,labelDistribution:model.labels,weights:model.weights,
