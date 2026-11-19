@@ -1,0 +1,287 @@
+{
+  "study": "RECEIPT-RECOVERY-008",
+  "date": "2026-11-19",
+  "source_sha256": "39200da27ff7a135e1fa7216b4d8531c57b7ee5b19d2e6c2b402efb0ca3fc3ac",
+  "source_git_blob": "36af759d52e1834998727433640ca4772a08ebb4",
+  "caveat": "The source_artifact_sha256 identifies locally generated full evidence, not an uploaded immutable external artifact; regenerate with explicit script.",
+  "training": {
+    "TRAIN_seeds": [
+      1100,
+      1163
+    ],
+    "DEV_seeds": [
+      3100,
+      3123
+    ],
+    "label_examples_per_arm": 768,
+    "optimizer_steps_per_arm": 1000,
+    "weights": {
+      "learned": [
+        -2.4741839751554435,
+        6.337427522941148,
+        6.337427522941148,
+        -2.6689739483370425,
+        -0.36844217988121825,
+        -0.5131220180048014
+      ],
+      "no_feedback": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "train_label_agreement": {
+      "learned": 1,
+      "no_feedback": 0.5
+    }
+  },
+  "evaluation": {
+    "episodes": 480,
+    "compared_per_controller": 96,
+    "replayed_action_receipts": 29262,
+    "tampered_action_rejected": true,
+    "real_native_sessions": 0,
+    "shadow128_is_synthetic_only": true,
+    "structural_heldout_opened": false
+  },
+  "policies": {
+    "receipt_rule": {
+      "goals": 51,
+      "mean_utility": 368.0417,
+      "planner_calls": 526,
+      "total_actions": 5922,
+      "actions": {
+        "N": 1254,
+        "E": 1374,
+        "S": 1594,
+        "W": 992,
+        "PAINT": 552,
+        "ERASE": 88,
+        "STOP": 68
+      }
+    },
+    "learned": {
+      "goals": 51,
+      "mean_utility": 368.0417,
+      "planner_calls": 526,
+      "total_actions": 5922,
+      "actions": {
+        "N": 1254,
+        "E": 1374,
+        "S": 1594,
+        "W": 992,
+        "PAINT": 552,
+        "ERASE": 88,
+        "STOP": 68
+      }
+    },
+    "no_feedback": {
+      "goals": 51,
+      "mean_utility": 364.9271,
+      "planner_calls": 549,
+      "total_actions": 6014,
+      "actions": {
+        "N": 1266,
+        "E": 1408,
+        "S": 1606,
+        "W": 1026,
+        "PAINT": 552,
+        "ERASE": 88,
+        "STOP": 68
+      }
+    },
+    "blind": {
+      "goals": 3,
+      "mean_utility": -116.9479,
+      "planner_calls": 461,
+      "total_actions": 5390,
+      "actions": {
+        "N": 1128,
+        "E": 1342,
+        "S": 1477,
+        "W": 936,
+        "PAINT": 435,
+        "ERASE": 0,
+        "STOP": 72
+      }
+    },
+    "always_repair": {
+      "goals": 51,
+      "mean_utility": 364.9271,
+      "planner_calls": 549,
+      "total_actions": 6014,
+      "actions": {
+        "N": 1266,
+        "E": 1408,
+        "S": 1606,
+        "W": 1026,
+        "PAINT": 552,
+        "ERASE": 88,
+        "STOP": 68
+      }
+    }
+  },
+  "censor_goals_per_24": {
+    "h36_cap36": {
+      "receipt_rule": 7,
+      "learned": 7,
+      "no_feedback": 7,
+      "blind": 3,
+      "always_repair": 7
+    },
+    "h72_cap64": {
+      "receipt_rule": 20,
+      "learned": 20,
+      "no_feedback": 20,
+      "blind": 0,
+      "always_repair": 20
+    },
+    "h128_cap64": {
+      "receipt_rule": 0,
+      "learned": 0,
+      "no_feedback": 0,
+      "blind": 0,
+      "always_repair": 0
+    },
+    "h128_cap128_shadow": {
+      "receipt_rule": 24,
+      "learned": 24,
+      "no_feedback": 24,
+      "blind": 0,
+      "always_repair": 24
+    }
+  },
+  "paired_against_receipt_rule": {
+    "learned": {
+      "utility_wins": 0,
+      "utility_losses": 0,
+      "ties": 96,
+      "goal_losses": 0,
+      "goal_gains": 0,
+      "mean_delta": 0
+    },
+    "no_feedback": {
+      "utility_wins": 0,
+      "utility_losses": 12,
+      "ties": 84,
+      "goal_losses": 0,
+      "goal_gains": 0,
+      "mean_delta": -3.1146
+    },
+    "blind": {
+      "utility_wins": 16,
+      "utility_losses": 56,
+      "ties": 24,
+      "goal_losses": 48,
+      "goal_gains": 0,
+      "mean_delta": -484.9896
+    },
+    "always_repair": {
+      "utility_wins": 0,
+      "utility_losses": 12,
+      "ties": 84,
+      "goal_losses": 0,
+      "goal_gains": 0,
+      "mean_delta": -3.1146
+    }
+  },
+  "negative_case_receipts": [
+    {
+      "policy": "no_feedback",
+      "seed": 3100,
+      "horizon": 72,
+      "cap": 64,
+      "utility_delta": -11,
+      "hash": "3f56478cf0c91213005bd1a43b10ad9afe43491513ae7f9dc08807bd0b92ce86"
+    },
+    {
+      "policy": "no_feedback",
+      "seed": 3104,
+      "horizon": 72,
+      "cap": 64,
+      "utility_delta": -6,
+      "hash": "80345d1e294c05f3b8132263a1635ea1413de27a5a00607131802578c4c9b814"
+    },
+    {
+      "policy": "no_feedback",
+      "seed": 3108,
+      "horizon": 72,
+      "cap": 64,
+      "utility_delta": -6,
+      "hash": "46791f833de8850da2e6f8c60e535e6a97f3968b00238f63b5da00699d308ff0"
+    },
+    {
+      "policy": "blind",
+      "seed": 3100,
+      "horizon": 36,
+      "cap": 36,
+      "utility_delta": -996,
+      "hash": "7d4c736ce8d95dd457e8c479e5521702dbd95d6c0479577dc3068ac9ec38fb83"
+    },
+    {
+      "policy": "blind",
+      "seed": 3108,
+      "horizon": 36,
+      "cap": 36,
+      "utility_delta": -996,
+      "hash": "05f3b06c97bde3a6c61c92d4e32f15949873fc9e8a18d872fcb7ff6325d34c48"
+    },
+    {
+      "policy": "blind",
+      "seed": 3112,
+      "horizon": 36,
+      "cap": 36,
+      "utility_delta": -996,
+      "hash": "97d92e2beb1330ccbf1116c3eb2bea5bbcb79773033cf9b9c94b832bc8dcbfc9"
+    }
+  ],
+  "sample_traces": [
+    {
+      "seed": 3100,
+      "horizon": 72,
+      "cap": 64,
+      "policy": "receipt_rule",
+      "goal": 1,
+      "receipt_sha256": "0252be782e7b6801205e2f8a2a877b236bcc4147ee4061cee1b26f7e04d90bd1"
+    },
+    {
+      "seed": 3102,
+      "horizon": 128,
+      "cap": 64,
+      "policy": "receipt_rule",
+      "goal": 0,
+      "receipt_sha256": "7826c370dadaea8b3e31360d74d1c62cbef887dd2707b2cff3dc69e28b28a7ea"
+    },
+    {
+      "seed": 3102,
+      "horizon": 128,
+      "cap": 128,
+      "policy": "receipt_rule",
+      "goal": 1,
+      "receipt_sha256": "db004c79d0c72020a5ff83795f4794bbeeb2254335472b5294fbb0cc1febd07a"
+    }
+  ],
+  "metrics": {
+    "inference_samples": 680,
+    "p50_microseconds": 0.681,
+    "p95_microseconds": 8.533,
+    "p99_microseconds": 12.939,
+    "python_wall_seconds": 2.819,
+    "python_maxrss_kib": 114952
+  },
+  "boundaries": {
+    "structural_heldout_opened": false,
+    "checkpoint_binaries_in_git": false,
+    "paid_compute": false,
+    "production_changes": false
+  },
+  "limitations": [
+    "Receipt replay shares the Python host implementation, not independent Python/native validation",
+    "The synthetic host observation fields are not verified against official CyberSand ABI",
+    "Compact ledger; full action receipts and full nine-panel gallery are reproducible on explicit CPU run"
+  ],
+  "local_full_evidence_sha256": "c740175527994c3f884a918e78fab214e985d25d20695fb681768f70445fe14f"
+}
