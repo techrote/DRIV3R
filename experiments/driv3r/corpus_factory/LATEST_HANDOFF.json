@@ -3,7 +3,7 @@
   "updated_utc": "2026-11-19",
   "repository": "techrote/DRIV3R",
   "branch": "research/corpus-factory-postmerge-programme",
-  "programme_pr": "new Draft/HOLD post-merge corpus-factory programme PR based on current main",
+  "programme_pr": 3,
   "lane": "experiments/driv3r/corpus_factory/**",
   "latest_qualified_corpus": "v58 host-executed off-policy paint error and recoverable-B repair full event streams; v57 correct/wrong fork certificates retained. Synthetic only, no neural policy claimed.",
   "generator": "experiments/driv3r/corpus_factory/offpolicy_repair_v58.js",
@@ -36,5 +36,6 @@
   "paid_API_or_GPU_spend": false,
   "known_failure": "Still synthetic v53 source worlds with short, oracle-repaired B mistakes and terminal A asymmetry. Scripted preludes plus symbolic receipts permit shortcut parsing. Actual LFM350/Sprocket weights, neural CPU latency/RSS, autonomous heldout completion, native ABI validation and immutable Actions corpus publication absent.",
   "next_useful_consumer_experiment": "Pinned target-SLM CPU adapter training on v54 full TRAIN episodes with optional v56 material-memory weighting and v58 TRAIN off-policy B-recovery episodes; mask forced wrong command, then test autonomous unseen-world HELDOUT and erasure/correct-paint/STOP recovery, memory ablations, stage completion, p50/p95 action latency and peak RSS. Keep DEV/HELDOUT sealed and separate from model optimization.",
-  "authority": "DATA ONLY; one postmerge programme Draft/HOLD PR; CyberSand, Neurounner and DRIV3R main read-only."
+  "authority": "DATA ONLY; one postmerge programme Draft/HOLD PR; CyberSand, Neurounner and DRIV3R main read-only.",
+  "base_main_sha": "85df84666a8bad18f0092b930c08557b8010687f"
 }
