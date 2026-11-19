@@ -1,0 +1,92 @@
+{
+  "schema": "driv3r/corpus_factory/temporal-calibration-v66/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "0b4aed845e25efd094708ba87481dd16ee0a41ea0a07d544a5f14997878c2c1d",
+  "parent_v65_manifest_sha256": "6176dae7dfb39026a9e38c744aef7f4ae0aff04e3f48c351e472e59ae194204d",
+  "parent_v65_generator_sha256": "c1ba589ad4cdd66bf4ed514021f33f1032379619e06b2a73bf9738325f6c6e16",
+  "parent_dataset_file_sha256": {
+    "TRAIN_sensor_fault_stream.jsonl": "081071c38591467220eb5e873a3d850097f84e8ba9ffb4bd1f7ce203d15eef11",
+    "TRAIN_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": "522e0da2be08d7e7481d517d38b0976b5fb6a91b6316ff871f0bb34f899c262b",
+    "DEV_EVALUATOR_ONLY_sensor_fault_stream.jsonl": "ea1c337b04e29651f72a5ca38a13b11d3326da98fde8efb8abe45ea07c615428",
+    "DEV_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": "c93e6d95fa5b884c367447e343ad400984fa8b6e1144f728eb14dfad1f48ed65",
+    "HELDOUT_EVALUATOR_ONLY_sensor_fault_stream.jsonl": "e35135131670361ec8fa0b0bdc4289536fa041d2aa958caee846c7ecf220c429",
+    "HELDOUT_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": "67908f7e6de5ec8efb0b4c39c9770a3eb2db93969a835e98a2f8403ddcbdfe04"
+  },
+  "physical_host": "Unmodified v65 source host decisions; only telemetered revised EDGE_GATE state and post-diagnostic event are transformed. No additional host action or success measurement.",
+  "purpose": "Calibrated sensor changes before or after a physical measurement. The earliest diagnostic and the latest diagnostic EACH give only 50% pivotal accuracy; choose the diagnostic effective at measurement time.",
+  "consumer_contract": "TRAIN observation/action input only. DEV/HELDOUT streams and ALL certificates evaluator-only; no group/phase/true-state metadata in model inputs. Code 901/902 is synthetic, NOT native CyberSand ABI.",
+  "topology": "Exact v65 geometry reused with matching split assignments; not independent cross-version world generalization. No TRAIN/DEV/HELDOUT world overlap.",
+  "limitations": "Synthetic host; scripted detours excluded from loss; no model trained. Measurement-time rule remains solvable symbolically. Full native CyberSand interpretation unsupported.",
+  "files": {
+    "TRAIN_temporal_calibration_stream.jsonl": {
+      "rows": 512,
+      "bytes": 41427936,
+      "sha256": "0b210c9e28910d1fdea0b3cab98129cf2dbf5e383950810bbe75c5ad9b07d046"
+    },
+    "TRAIN_temporal_calibration_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 383926,
+      "sha256": "13b2717255706fd099559aea982eb40f2f7f08439343b9a716536714bb733ce2"
+    },
+    "DEV_EVALUATOR_ONLY_temporal_calibration_stream.jsonl": {
+      "rows": 256,
+      "bytes": 38590672,
+      "sha256": "068409d46c1115f8ea9a4ed3adfb8ba79ba3bc02452bcc0053d3de7bda3d5d40"
+    },
+    "DEV_temporal_calibration_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 256,
+      "bytes": 191286,
+      "sha256": "5647f13d68e3ea7d4086f6d3c62dcac1489ef61bee175ee8a46097092175109a"
+    },
+    "HELDOUT_EVALUATOR_ONLY_temporal_calibration_stream.jsonl": {
+      "rows": 256,
+      "bytes": 66328624,
+      "sha256": "7d7838ff6d05bc065596ccf61c336f9bf907e9d0d96950df4098f75dcedae16d"
+    },
+    "HELDOUT_temporal_calibration_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 256,
+      "bytes": 192694,
+      "sha256": "7c0d0e24b747d9eb515e68c34494b2dfcfa4e6b02504d9665dd80edf32496bd9"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "episodes": 512,
+      "host_certified_successful_episodes": 512,
+      "decisions": 35232,
+      "positive_pivotal_cases": 256,
+      "first_diagnostic_accuracy": 0.5,
+      "latest_diagnostic_accuracy": 0.5,
+      "measurement_time_calibrated_accuracy": 1
+    },
+    "DEV": {
+      "worlds": 4,
+      "episodes": 256,
+      "host_certified_successful_episodes": 256,
+      "decisions": 33216,
+      "positive_pivotal_cases": 128,
+      "first_diagnostic_accuracy": 0.5,
+      "latest_diagnostic_accuracy": 0.5,
+      "measurement_time_calibrated_accuracy": 1
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "episodes": 256,
+      "host_certified_successful_episodes": 256,
+      "decisions": 48640,
+      "positive_pivotal_cases": 128,
+      "first_diagnostic_accuracy": 0.5,
+      "latest_diagnostic_accuracy": 0.5,
+      "measurement_time_calibrated_accuracy": 1
+    }
+  },
+  "total_episodes": 1024,
+  "total_decisions": 117088,
+  "distinct_world_geometries": 16,
+  "positive_pivotal_cases": 512,
+  "first_diagnostic_accuracy": 0.5,
+  "latest_diagnostic_accuracy": 0.5,
+  "measurement_time_calibrated_accuracy": 1
+}
