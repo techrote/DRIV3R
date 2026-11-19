@@ -1,0 +1,55 @@
+{
+  "schema": "driv3r/corpus_factory/three-lane-decision-index-v80/1",
+  "source_manifest_sha256": "7c427554ae3d7a5d0cedfdecd3af24e409c2fc9b8c2312f7cf4c6adfc95f0450",
+  "synthetic_not_native_CyberSand": true,
+  "files": {
+    "TRAIN_three_lane_decision_index.jsonl": {
+      "rows": 864,
+      "bytes": 415576,
+      "sha256": "64fd40e0beee9dd876731d4a3fcfe825b7e5c4fc27c35a64c163c65db11d844f"
+    },
+    "DEV_EVALUATOR_ONLY_three_lane_decision_index.jsonl": {
+      "rows": 432,
+      "bytes": 213184,
+      "sha256": "3c8221261adf52ece225de12998c8d430ad1644fd9e1313759f5c57268182dc0"
+    },
+    "HELDOUT_EVALUATOR_ONLY_three_lane_decision_index.jsonl": {
+      "rows": 432,
+      "bytes": 214912,
+      "sha256": "f0419d6975510a7606f475a52f37cfc16948ab1ff608c2e7199b43be45979ec8"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "indexed": 864,
+      "unique_hashes": 864,
+      "by_kind": {
+        "first_route": 216,
+        "second_route": 216,
+        "goal_memory": 432
+      },
+      "source_episodes": 432
+    },
+    "DEV": {
+      "indexed": 432,
+      "unique_hashes": 432,
+      "by_kind": {
+        "first_route": 108,
+        "second_route": 108,
+        "goal_memory": 216
+      },
+      "source_episodes": 216
+    },
+    "HELDOUT": {
+      "indexed": 432,
+      "unique_hashes": 432,
+      "by_kind": {
+        "first_route": 108,
+        "second_route": 108,
+        "goal_memory": 216
+      },
+      "source_episodes": 216
+    }
+  },
+  "consumer_contract": "Only TRAIN positive-weight model input/action pairs. DEV/HELDOUT evaluator-only. To reconstruct chronological past use raw stream row [0,step); ignore row.role and evaluator certificates."
+}
