@@ -23,7 +23,7 @@ function rewriteHistory(base,parentRewrite,transferRewrite){
        'models.selected=selected;const guardSelected={},guardScores={};for(const h of H){let best=null,score={};for(const a of ["overlap","guard1","guard2","guard4","guard8","guard12"]){let n=0,sum=0;for(const seed of TRAIN)for(const mode of MODES){const r=episode(spec("train",seed,h,mode),a,models,{cap:h===128?128:64});sum+=utility(r);n++}const mean=sum/n;score[a]=+mean.toFixed(6);if(!best||mean>best.mean||(mean===best.mean&&a<best.arm))best={arm:a,mean};}guardSelected[h]=best.arm;guardScores[h]=score;}models.guard_selected=guardSelected;');
  patch('episodes===2880&&results.length===2880','episodes===4032&&results.length===4032');
  patch('"defer1","defer3","train_selected"].includes(r.arm)',
-       '"guard_train","guard2","guard4","guard8","guard12"].includes(r.arm)');
+       '"guard1","guard2","guard4","guard8","guard12","guard_train","train_selected"].includes(r.arm)');
  patch('study:"PATIENCE-TRANSFER-005"','study:"OBSERVABLE-GUARD-006"');
  patch('transfer_design:{topology:',
        'guard_selection:guardSelected,guard_train_scores:guardScores,transfer_design:{topology:');
@@ -55,6 +55,7 @@ function summarize(result){
    else neither++;
    examples++;
   }
+  if(examples!==192)throw Error("Incomplete paired development comparison for "+arm+": "+examples);
   paired[arm]={compared:examples,goals_lost:lost,goals_gained:wins,both_arrive:both,neither_arrive:neither};
  }
  return{

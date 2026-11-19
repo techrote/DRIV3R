@@ -1717,11 +1717,11 @@
   ],
   "paired": {
     "guard1": {
-      "compared": 0,
-      "goals_lost": 0,
-      "goals_gained": 0,
-      "both_arrive": 0,
-      "neither_arrive": 0
+      "compared": 192,
+      "goals_lost": 51,
+      "goals_gained": 1,
+      "both_arrive": 89,
+      "neither_arrive": 51
     },
     "guard2": {
       "compared": 192,
@@ -1759,14 +1759,1958 @@
       "neither_arrive": 52
     },
     "train_selected": {
-      "compared": 0,
-      "goals_lost": 0,
+      "compared": 192,
+      "goals_lost": 12,
       "goals_gained": 0,
-      "both_arrive": 0,
-      "neither_arrive": 0
+      "both_arrive": 128,
+      "neither_arrive": 52
     }
   },
   "negative_cases": [
+    {
+      "arm": "guard1",
+      "spec": "development:3000:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3000:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3000:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 25,
+          "MOVE_N": 6,
+          "MOVE_W": 5
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3001:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3001:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 30,
+        "paint_moves": 30,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3001:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_N": 3,
+          "MOVE_W": 5,
+          "MOVE_S": 1
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3002:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3002:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 31,
+        "paint_moves": 31,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3002:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 28,
+          "MOVE_S": 3,
+          "MOVE_W": 5
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3002:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3002:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 31,
+        "paint_moves": 31,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3002:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 28,
+          "MOVE_S": 3,
+          "MOVE_W": 5
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3003:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3003:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 6,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3003:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3003:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 6,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3004:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3004:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3004:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_N": 6,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3005:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3005:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 31,
+        "paint_moves": 31,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3005:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_N": 3,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3007:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3007:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 26,
+          "MOVE_S": 6,
+          "MOVE_W": 4
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3007:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3007:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 26,
+          "MOVE_S": 6,
+          "MOVE_W": 4
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3009:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3009:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 29,
+        "paint_moves": 29,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3009:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 26,
+          "MOVE_N": 3,
+          "MOVE_W": 5,
+          "MOVE_S": 2
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3010:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3010:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 30,
+        "paint_moves": 30,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3010:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_S": 3,
+          "MOVE_W": 5,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3010:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3010:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 30,
+        "paint_moves": 30,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3010:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_S": 3,
+          "MOVE_W": 5,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3012:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3012:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3012:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_N": 6,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3013:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3013:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 30,
+        "paint_moves": 30,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 23,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3013:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_N": 3,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3014:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3014:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 31,
+        "paint_moves": 31,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3014:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_S": 3,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3014:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3014:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 31,
+        "paint_moves": 31,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 24,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3014:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 27,
+          "MOVE_S": 3,
+          "MOVE_W": 6
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3015:36:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3015:36:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:36:early",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 25,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3015:36:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3015:36:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 35,
+        "paint_moves": 35,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 22,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:36:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 36,
+        "paint_moves": 36,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 25,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3000:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3000:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3000:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 41,
+          "MOVE_N": 6,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3001:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3001:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 56,
+        "paint_moves": 56,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3001:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 44,
+          "MOVE_N": 3,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3002:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3002:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 57,
+        "paint_moves": 57,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3002:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 44,
+          "MOVE_S": 3,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3003:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3003:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 40,
+          "MOVE_S": 6,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3004:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3004:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 62,
+        "paint_moves": 62,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3004:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 40,
+          "MOVE_N": 6,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3005:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3005:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 57,
+        "paint_moves": 57,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3005:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 43,
+          "MOVE_N": 3,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3006:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3006:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 55,
+        "paint_moves": 55,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3006:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 45,
+          "MOVE_S": 3,
+          "MOVE_W": 16
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3007:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3007:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 62,
+        "paint_moves": 62,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 42,
+          "MOVE_S": 6,
+          "MOVE_W": 16
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3008:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3008:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 63,
+        "paint_moves": 63,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3008:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 42,
+          "MOVE_N": 6,
+          "MOVE_W": 16
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3009:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3009:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 55,
+        "paint_moves": 55,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3009:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 44,
+          "MOVE_N": 3,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3010:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3010:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 56,
+        "paint_moves": 56,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3010:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 44,
+          "MOVE_S": 3,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3011:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3011:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 63,
+        "paint_moves": 63,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3011:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 41,
+          "MOVE_S": 6,
+          "MOVE_W": 17
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3012:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3012:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3012:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 40,
+          "MOVE_N": 6,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3013:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3013:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 56,
+        "paint_moves": 56,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3013:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 43,
+          "MOVE_N": 3,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3014:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3014:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 57,
+        "paint_moves": 57,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3014:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 43,
+          "MOVE_S": 3,
+          "MOVE_W": 18
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3015:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3015:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:72:late",
+        "arm": "guard1",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 42,
+          "MOVE_S": 6,
+          "MOVE_W": 16
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3000:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3000:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 99,
+        "paint_moves": 99,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3000:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_N": 6,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3001:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3001:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 94,
+        "paint_moves": 94,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3001:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 89,
+          "MOVE_N": 3,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3002:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3002:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 95,
+        "paint_moves": 95,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3002:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 89,
+          "MOVE_S": 3,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3003:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3003:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 99,
+        "paint_moves": 99,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 85,
+          "MOVE_S": 6,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3004:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3004:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 100,
+        "paint_moves": 100,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3004:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 85,
+          "MOVE_N": 6,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3005:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3005:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 95,
+        "paint_moves": 95,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3005:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_N": 3,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3006:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3006:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 93,
+        "paint_moves": 93,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3006:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 90,
+          "MOVE_S": 3,
+          "MOVE_W": 35
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3007:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3007:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 100,
+        "paint_moves": 100,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_S": 6,
+          "MOVE_W": 35
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3008:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3008:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 101,
+        "paint_moves": 101,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3008:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_N": 6,
+          "MOVE_W": 35
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3009:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3009:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 93,
+        "paint_moves": 93,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3009:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 89,
+          "MOVE_N": 3,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3010:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3010:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 94,
+        "paint_moves": 94,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3010:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 89,
+          "MOVE_S": 3,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3011:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3011:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 101,
+        "paint_moves": 101,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3011:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_S": 6,
+          "MOVE_W": 36
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3012:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3012:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 99,
+        "paint_moves": 99,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3012:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 85,
+          "MOVE_N": 6,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3013:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3013:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 94,
+        "paint_moves": 94,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_N": 3,
+          "MOVE_W": 1,
+          "MOVE_S": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3013:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_N": 3,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3014:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3014:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 95,
+        "paint_moves": 95,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_S": 3,
+          "MOVE_W": 1,
+          "MOVE_N": 3
+        }
+      },
+      "alternative": {
+        "spec": "development:3014:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 88,
+          "MOVE_S": 3,
+          "MOVE_W": 37
+        }
+      }
+    },
+    {
+      "arm": "guard1",
+      "spec": "development:3015:128:late",
+      "cohort": "shadow128",
+      "baseline": {
+        "spec": "development:3015:128:late",
+        "arm": "overlap",
+        "cohort": "shadow128",
+        "arrived": true,
+        "steps": 99,
+        "paint_moves": 99,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 86,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:128:late",
+        "arm": "guard1",
+        "cohort": "shadow128",
+        "arrived": false,
+        "steps": 128,
+        "paint_moves": 128,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 87,
+          "MOVE_S": 6,
+          "MOVE_W": 35
+        }
+      }
+    },
     {
       "arm": "guard2",
       "spec": "development:3000:36:late",
@@ -8571,6 +10515,474 @@
           "MOVE_W": 24
         }
       }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3000:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3000:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3000:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_N": 6,
+          "MOVE_W": 4,
+          "MOVE_S": 3
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3003:72:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3003:72:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:72:early",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 3
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3003:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3003:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3003:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 3
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3004:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3004:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 62,
+        "paint_moves": 62,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3004:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 52,
+          "MOVE_N": 6,
+          "MOVE_W": 4,
+          "MOVE_S": 2
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3007:72:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3007:72:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 62,
+        "paint_moves": 62,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:72:early",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 52,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 2
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3007:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3007:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 62,
+        "paint_moves": 62,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 49,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3007:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 52,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 2
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3008:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3008:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 63,
+        "paint_moves": 63,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3008:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 53,
+          "MOVE_N": 6,
+          "MOVE_W": 4,
+          "MOVE_S": 1
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3011:72:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3011:72:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 63,
+        "paint_moves": 63,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3011:72:early",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 53,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3011:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3011:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 63,
+        "paint_moves": 63,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 50,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3011:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 53,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 1
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3012:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3012:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_N": 6,
+          "MOVE_W": 1,
+          "MOVE_S": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3012:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_N": 6,
+          "MOVE_W": 4,
+          "MOVE_S": 3
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3015:72:early",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3015:72:early",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:72:early",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 3
+        }
+      }
+    },
+    {
+      "arm": "train_selected",
+      "spec": "development:3015:72:late",
+      "cohort": "native64_proxy",
+      "baseline": {
+        "spec": "development:3015:72:late",
+        "arm": "overlap",
+        "cohort": "native64_proxy",
+        "arrived": true,
+        "steps": 61,
+        "paint_moves": 61,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 48,
+          "MOVE_S": 6,
+          "MOVE_W": 1,
+          "MOVE_N": 6
+        }
+      },
+      "alternative": {
+        "spec": "development:3015:72:late",
+        "arm": "train_selected",
+        "cohort": "native64_proxy",
+        "arrived": false,
+        "steps": 64,
+        "paint_moves": 64,
+        "backtracks": 0,
+        "planner_calls": 2,
+        "illegal_prevented": 0,
+        "action_counts": {
+          "MOVE_E": 51,
+          "MOVE_S": 6,
+          "MOVE_W": 4,
+          "MOVE_N": 3
+        }
+      }
     }
   ],
   "examples": [
@@ -8994,5 +11406,5 @@
     "Receipt fingerprints in synthetic source are FNV diagnostics, not SHA-256 and not evidence of native ABI",
     "Every DEVELOPMENT episode is independently replayed by the source simulator; cross-language Python/native replay not established"
   ],
-  "v8_wall_ms": 215696
+  "v8_wall_ms": 217357
 }

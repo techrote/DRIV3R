@@ -9,7 +9,7 @@ Test whether a **source-replayed, host-observable** current-material gate guard 
 - Source-V8 execution: **4032 synthetic DEVELOPMENT policy episodes**, **245851 independently source-replayed action receipts**, **18 assertions**. V8 elapsed 215696 ms; this is not Node or per-inference latency, and no RSS measurement is available in this run.
 - TRAIN choice: **36→overlap, 72→overlap, 128→overlap**.
 - DEVELOPMENT immediate-overlap: **140/192 goals**, utility 603.302; selected guard: **140/192**, utility 603.302.
-- guard1: **90/192** DEV goals, utility 341.542; paired goals lost **0**, gained **0** versus immediate overlap.
+- guard1: **90/192** DEV goals, utility 341.542; paired goals lost **51**, gained **1** versus immediate overlap.
 - guard2: **94/192** DEV goals, utility 362.427; paired goals lost **47**, gained **1** versus immediate overlap.
 - guard4: **100/192** DEV goals, utility 393.479; paired goals lost **41**, gained **1** versus immediate overlap.
 - guard8: **97/192** DEV goals, utility 377.432; paired goals lost **44**, gained **1** versus immediate overlap.
