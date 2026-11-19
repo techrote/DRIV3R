@@ -1,0 +1,147 @@
+{
+  "schema": "driv3r/corpus_factory/physical-rewitness-v72/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "quick": false,
+  "generator_sha256": "3ef2235f86414349ab60b59a687667a0d2966aa109547407271392b1cc4c195a",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "design": "Physically executed, material-selective hub witness after a possible common-bus fault; stale remote samples, invalidated calibration, physical erosion, uncertainty-driven conservative repairs. Matched full-observation critical decisions; sensor fault state hidden.",
+  "model_contract": "Only TRAIN_physical_rewitness_stream.jsonl trainable. Other streams and ALL certificates evaluator-only. Prefix and intervention actions masked; critical and distinct recovery actions supervised. No hidden calibration/fault/physical status in input.",
+  "caveats": [
+    "Entire host plus material erosion, sensor channels, and witness receipts are synthetic, not established CyberSand ABI.",
+    "Detour and coupons scripted. Reinspection teacher symbolic; no trained SLM or closed-loop neural evidence.",
+    "A witnessed PRIMARY local coupon is assumed sufficient to restore calibration for same material; no cross-material generalization."
+  ],
+  "files": {
+    "TRAIN_physical_rewitness_stream.jsonl": {
+      "rows": 1024,
+      "bytes": 285598192,
+      "sha256": "2f492cc6803cdc58b2232d3c4cf082b82778a0921081eb53c63d1a9d88e516c6"
+    },
+    "TRAIN_physical_rewitness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 1024,
+      "bytes": 1239498,
+      "sha256": "048fa4b2a45bee97f7c20fa1dd93bafd866b8ea1b7dacd7b6b6ca78a6f84c4c1"
+    },
+    "DEV_EVALUATOR_ONLY_physical_rewitness_stream.jsonl": {
+      "rows": 512,
+      "bytes": 165627568,
+      "sha256": "c779f4ce5eb88333fe4f9b94259cfa4e078c4613d4d7b96c9fa8f7e4e926a9ca"
+    },
+    "DEV_physical_rewitness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 618898,
+      "sha256": "70d6f2d4c415f9c04529c81d9fbe20640f65a4e6ccf423a5944e03125afd3085"
+    },
+    "HELDOUT_EVALUATOR_ONLY_physical_rewitness_stream.jsonl": {
+      "rows": 512,
+      "bytes": 209600160,
+      "sha256": "73ed51d0e8775d9eb88f3269e5b8d4d6b76224e423531724f35c420f3c2e66bf"
+    },
+    "HELDOUT_physical_rewitness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 621698,
+      "sha256": "78b5c36414a7da5345e3df2805e68139d4e5585fb78633e7c2347456b18eedef"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 4,
+      "episodes": 1024,
+      "decisions": 157408,
+      "terminal_successes": 1024,
+      "counterfactual_64_arm_groups": 16,
+      "groups_with_different_critical_actions": 12,
+      "maximum_distinct_critical_actions": 3,
+      "common_fault_post_witness_cases": 192,
+      "train_repeated_followup_masked": 8266,
+      "mean_gross_actions_saved_vs_always_reinspect": 8.59375,
+      "mean_net_actions_saved_after_witness_cost": 6.59375,
+      "geometry": [
+        {
+          "sha256": "68aec6e936b7704e3775c4e003cd3e4a3764cc3bf0490732ea3fd2227a13ea73",
+          "index": 254021,
+          "attempt": 7,
+          "seed": 356247701
+        },
+        {
+          "sha256": "ef2a1538aed0ba518bcadd021d9ad8d84c3ca56922fc89be1c38db20b76861c8",
+          "index": 254169,
+          "attempt": 2,
+          "seed": 2543856919
+        },
+        {
+          "sha256": "50535fd6bf70c67dc48b63154c0db18f95a26a78ca52e46a063f8df8804aa2e8",
+          "index": 254329,
+          "attempt": 1,
+          "seed": 1273498375
+        },
+        {
+          "sha256": "692366b7fab6d681816846babc785ba067792813e613d8839d61f14c0a7c07d8",
+          "index": 254489,
+          "attempt": 0,
+          "seed": 1065646969
+        }
+      ]
+    },
+    "DEV": {
+      "worlds": 2,
+      "episodes": 512,
+      "decisions": 80480,
+      "terminal_successes": 512,
+      "counterfactual_64_arm_groups": 8,
+      "groups_with_different_critical_actions": 6,
+      "maximum_distinct_critical_actions": 3,
+      "common_fault_post_witness_cases": 96,
+      "train_repeated_followup_masked": 0,
+      "mean_gross_actions_saved_vs_always_reinspect": 9.3125,
+      "mean_net_actions_saved_after_witness_cost": 7.3125,
+      "geometry": [
+        {
+          "sha256": "ae5209c197073895f8a77c1000578542851a2d167865a518fa67b9a2bc5d0f64",
+          "index": 264006,
+          "attempt": 2,
+          "seed": 3373214842
+        },
+        {
+          "sha256": "27458caa5d41a3690682d1a4372bd319c5365e800c9f987af123039c605b1b7b",
+          "index": 264169,
+          "attempt": 2,
+          "seed": 315188308
+        }
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 2,
+      "episodes": 512,
+      "decisions": 85952,
+      "terminal_successes": 512,
+      "counterfactual_64_arm_groups": 8,
+      "groups_with_different_critical_actions": 8,
+      "maximum_distinct_critical_actions": 3,
+      "common_fault_post_witness_cases": 96,
+      "train_repeated_followup_masked": 0,
+      "mean_gross_actions_saved_vs_always_reinspect": 14.625,
+      "mean_net_actions_saved_after_witness_cost": 12.625,
+      "geometry": [
+        {
+          "sha256": "770d379e72ff72c1896d274e853e2c5c3a9370a593401d3bfdd87c576659bbb2",
+          "index": 274015,
+          "attempt": 5,
+          "seed": 2489566655
+        },
+        {
+          "sha256": "357b12a5c54d2b4189a61b5a7522569c1cf270dc971fccca7fb189a9454df99d",
+          "index": 274166,
+          "attempt": 1,
+          "seed": 3092575622
+        }
+      ]
+    }
+  },
+  "total_episodes": 2048,
+  "total_decisions": 323840,
+  "mean_gross_actions_saved_vs_always_reinspect": 10.28125,
+  "mean_net_actions_saved_after_witness_cost": 8.28125
+}
