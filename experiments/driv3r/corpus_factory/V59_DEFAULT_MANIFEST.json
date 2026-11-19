@@ -1,0 +1,131 @@
+{
+  "schema": "driv3r/corpus_factory/receipt-conditioned-continuation-v59/1",
+  "date": "2026-11-19",
+  "data_only": true,
+  "synthetic_not_native_CyberSand": true,
+  "source_v56_manifest_sha256": "b7f4b9f0d76416378c0d38713b4c60df90c149c2ef29533c73cb0e030ec9690e",
+  "parent_shard_sha256": {
+    "TRAIN_causal_stream.jsonl": "462ed7ab1d77a4d1e34759b0a799e70ba349e6cf262b2d63e71a0d2aab39de24",
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": "80f0043c15064f255f2bdd4450d2e59ebd82ec7c78a96d76722ae92c56dce651",
+    "TRAIN_material_pairs_EVALUATOR_ONLY.jsonl": "53b2c1182a7967c72ee5d6f5f94dc4b9a81d15dfe36066f83ec09bb4c9b0f29a",
+    "DEV_EVALUATOR_ONLY_causal_stream.jsonl": "09f0e34d298ebc7b2d967b63b730db2b8f6a86db36f426df1a0c779738b81d14",
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": "87df2a7df80414a9b252637dfad7a066abba4de58346ee45c3059c67250e7e5b",
+    "DEV_material_pairs_EVALUATOR_ONLY.jsonl": "b339657ef7c986cfef193716c5d5964103a65fe3752e2936ccb96f6ed680102f",
+    "HELDOUT_EVALUATOR_ONLY_causal_stream.jsonl": "ac08a5b54f4a8dede32859ad63b3900d93add84ccc2c49070e2f3be135e102c4",
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": "257afb28701a2d647770ec309e6279bbc0b74a194a5eaa0062db16cb1f0d026a",
+    "HELDOUT_material_pairs_EVALUATOR_ONLY.jsonl": "1e45220b06a049966bb249f65cfafeba357166eb7adc48be2d7bd65c29f1ef15"
+  },
+  "generator_sha256": "f27509d9fe4c5757269e2256b9883322eadc89ddc52715459baa57a8612d8ef9",
+  "host_module_sha256": {
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "contract": {
+    "training": "TRAIN_receipt_choice_stream.jsonl ONLY. Complete episodes: identical historical prefixes, then equally many forced-correct and forced-wrong B paints (both loss-masked), then observed-result-specific STOP versus ERASE/PAINT/STOP.",
+    "visibility": "Only steps[].input, prior model-observed actions and labelled training decisions; NEVER supply sidecar certificates, source references, branch_arm labels or underlying hidden material laws.",
+    "action_abi": "No new action tokens. Host-legal MOVE, PAINT_A/PAINT_B, ERASE, STOP. Post-action receipt observed in events_delta only after accepted paint.",
+    "split": "Use original v56 geometry ownership, group by geometry/world across v54-v59; HELDOUT never used for training or model selection.",
+    "weights": "Forced correct AND wrong intervention actions have weight=0 and focus_loss_weight=0. All post-intervention actions weight=1, focus_loss_weight=6; redundant identical TRAIN episode-prefix actions zero-weighted but preserved for recurrent state.",
+    "scoring": "Conditioned binary choice: after forced correct paint STOP, after forced wrong B paint ERASE then corrected PAINT and STOP. Score separately from holistic autonomous mission success; never count teacher replay as neural score.",
+    "evaluation": "Use paired source world and action memory; compare correct/wrong postaction receipt, monitor both exact sequence and host success. Positive interventions prohibit unconditional ERASE policies; negative prohibit unconditional STOP policies."
+  },
+  "limitations": [
+    "Synthetic v53 host, not native CyberSand; surfaces, A/B protection and law flips are hypothetical.",
+    "The material state is visible in painted/current receipts; a simple symbolic host-aware rule may still solve continuation.",
+    "Branch choice is an external intervention; actions at fork are not neural decisions and are masked from supervised loss.",
+    "Inherited v56 worlds and scripted physical calibration; not new topology, not real SLM training, no neural CPU latency/RSS.",
+    "No immutable Actions dataset artifact; output generated locally from exact pinned v56 source."
+  ],
+  "files": {
+    "TRAIN_receipt_choice_stream.jsonl": {
+      "sha256": "715a61e140f483fac0c804a5e94b639121115e4e579506f7b74a8cd4c1f23ed7",
+      "bytes": 4054500,
+      "rows": 128
+    },
+    "TRAIN_receipt_choice_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "37d5393cc5f5d439990c6b9906813fc5722833714d57cafc3d60378a813424e5",
+      "bytes": 88945,
+      "rows": 128
+    },
+    "DEV_EVALUATOR_ONLY_receipt_choice_stream.jsonl": {
+      "sha256": "37a76ae49c13e7a3fc99e23c14444af0a14dffd465c95ea52a9d79e6c906cda9",
+      "bytes": 1843636,
+      "rows": 48
+    },
+    "DEV_receipt_choice_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "2b0158b1c9b7d3777a273f2cfa81addc19cdab6fa46251afb3c6aa9f7d6b8907",
+      "bytes": 33294,
+      "rows": 48
+    },
+    "HELDOUT_EVALUATOR_ONLY_receipt_choice_stream.jsonl": {
+      "sha256": "43347793878b0483ab36b7ecdce4ab7e4939c14a45c57f4007a5168e0fa8f1e0",
+      "bytes": 2686344,
+      "rows": 48
+    },
+    "HELDOUT_receipt_choice_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "995b4667edccc7181e65fbf2597cf8dea838b87b2fb21ee0cb6e91a11291b9de",
+      "bytes": 33202,
+      "rows": 48
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "source_physical_pairs": 64,
+      "source_B_goal_decisions": 64,
+      "correct_intervention_episodes": 64,
+      "wrong_intervention_episodes": 64,
+      "host_terminal_successes": 128,
+      "episodes": 128,
+      "decisions": 3540,
+      "forced_paints_zero_weight": 128,
+      "correct_postaction_STOP": 64,
+      "wrong_postaction_ERASE": 64,
+      "wrong_postaction_corrected_PAINT": 64,
+      "wrong_postaction_STOP": 64,
+      "supervised_postintervention_decisions": 256,
+      "repeated_train_prefix_decisions_loss_masked": 1578
+    },
+    "DEV": {
+      "source_physical_pairs": 24,
+      "source_B_goal_decisions": 24,
+      "correct_intervention_episodes": 24,
+      "wrong_intervention_episodes": 24,
+      "host_terminal_successes": 48,
+      "episodes": 48,
+      "decisions": 1448,
+      "forced_paints_zero_weight": 48,
+      "correct_postaction_STOP": 24,
+      "wrong_postaction_ERASE": 24,
+      "wrong_postaction_corrected_PAINT": 24,
+      "wrong_postaction_STOP": 24,
+      "supervised_postintervention_decisions": 96,
+      "repeated_train_prefix_decisions_loss_masked": 0
+    },
+    "HELDOUT": {
+      "source_physical_pairs": 24,
+      "source_B_goal_decisions": 24,
+      "correct_intervention_episodes": 24,
+      "wrong_intervention_episodes": 24,
+      "host_terminal_successes": 48,
+      "episodes": 48,
+      "decisions": 2072,
+      "forced_paints_zero_weight": 48,
+      "correct_postaction_STOP": 24,
+      "wrong_postaction_ERASE": 24,
+      "wrong_postaction_corrected_PAINT": 24,
+      "wrong_postaction_STOP": 24,
+      "supervised_postintervention_decisions": 96,
+      "repeated_train_prefix_decisions_loss_masked": 0
+    }
+  },
+  "unique_geometry_worlds": 56,
+  "total_decisions": 7060
+}
