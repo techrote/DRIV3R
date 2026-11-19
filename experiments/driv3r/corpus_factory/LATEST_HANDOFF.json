@@ -5,81 +5,83 @@
   "programme_branch": "research/corpus-factory-postmerge-programme",
   "programme_pr": 3,
   "lane": "experiments/driv3r/corpus_factory/**",
-  "latest_qualified_corpus": "v60 paired long-delay safe-probe physical memory challenges with host-executed forced movement interventions and 72 opposing material-law causal pairs",
-  "generator": "experiments/driv3r/corpus_factory/delayed_calibration_v60.js",
-  "independent_auditor": "experiments/driv3r/corpus_factory/test_delayed_calibration_host_v60.js",
-  "manifest": "experiments/driv3r/corpus_factory/V60_DEFAULT_MANIFEST.json",
-  "report": "experiments/driv3r/corpus_factory/DELAYED_CALIBRATION_V60_2026-11-19.md",
-  "generator_sha256": "0be8f98e99b8238391951d86c548b948c0c8ade8501adf9b5fad28094034b44a",
-  "auditor_sha256": "caa6a9c499c87524290fcaec881beff7974befa790d50c8570630a64eb8ba5bc",
-  "generated_manifest_sha256": "bbbd9a6b97fdadc1eae8d51ef5adec6cbd76fd9ba8940200d73f85a7c77d3443",
+  "latest_qualified_corpus": "v61 last-valid physical calibration crossed old/new law quartets and independent full synthetic host replay",
+  "generator": "experiments/driv3r/corpus_factory/last_valid_probe_v61.js",
+  "independent_auditor": "experiments/driv3r/corpus_factory/test_last_valid_probe_host_v61.js",
+  "manifest": "experiments/driv3r/corpus_factory/V61_DEFAULT_MANIFEST.json",
+  "report": "experiments/driv3r/corpus_factory/LAST_VALID_PROBE_V61_2026-11-19.md",
+  "source_sha256": "3c7b55ff5d462173505c0e82b1c01697adf66c56a64b671aa5eb6a05856005ab",
+  "audit_sha256": "8c831d389325657b36d05e54fa14a0b914ea8634ad4f3b907bcf5bc0e1c5e94d",
+  "generated_manifest_sha256": "cdd3320c46c06e2b918fee06e1198f7ff24a78d7a711e2deb61f31792129df59",
+  "model_checkpoint_or_adapter": null,
+  "native_CyberSand_qualified": false,
   "benchmark": {
-    "synthetic_not_native_CyberSand": true,
-    "geometry_worlds": 24,
-    "TRAIN": {
-      "worlds": 12,
-      "episodes": 72,
-      "material_contrast_pairs": 36,
-      "final_opposing_commands": 72,
-      "host_terminal_success": 72,
-      "decisions": 9532,
-      "intervention_actions_loss_masked": 6528,
-      "nontrivial_excursions": 804,
-      "repeat_training_steps_loss_masked": 2009,
-      "contrast_ages_actions": [
-        48,
-        96,
-        128
-      ]
+    "synthetic_host_only": true,
+    "splits": {
+      "TRAIN": {
+        "worlds": 12,
+        "quartets": 24,
+        "episodes": 96,
+        "decisions": 9952,
+        "host_successes": 96,
+        "critical_command_A": 48,
+        "critical_command_B": 48,
+        "misleading_stale_first_probe": 48,
+        "detour_interventions_loss_masked": 6912,
+        "nontrivial_excursions": 856,
+        "duplicate_train_prefix_actions_loss_masked": 2516,
+        "delays": [
+          48,
+          96
+        ]
+      },
+      "DEV": {
+        "worlds": 6,
+        "quartets": 12,
+        "episodes": 48,
+        "decisions": 7680,
+        "host_successes": 48,
+        "critical_command_A": 24,
+        "critical_command_B": 24,
+        "misleading_stale_first_probe": 24,
+        "detour_interventions_loss_masked": 6144,
+        "nontrivial_excursions": 752,
+        "duplicate_train_prefix_actions_loss_masked": 0,
+        "delays": [
+          96,
+          160
+        ]
+      },
+      "HELDOUT": {
+        "worlds": 6,
+        "quartets": 12,
+        "episodes": 48,
+        "decisions": 13000,
+        "host_successes": 48,
+        "critical_command_A": 24,
+        "critical_command_B": 24,
+        "misleading_stale_first_probe": 24,
+        "detour_interventions_loss_masked": 10752,
+        "nontrivial_excursions": 1516,
+        "duplicate_train_prefix_actions_loss_masked": 0,
+        "delays": [
+          192,
+          256
+        ]
+      }
     },
-    "DEV": {
-      "worlds": 6,
-      "episodes": 36,
-      "material_contrast_pairs": 18,
-      "final_opposing_commands": 36,
-      "host_terminal_success": 36,
-      "decisions": 5736,
-      "intervention_actions_loss_masked": 4224,
-      "nontrivial_excursions": 516,
-      "repeat_training_steps_loss_masked": 0,
-      "contrast_ages_actions": [
-        64,
-        128,
-        160
-      ]
-    },
-    "HELDOUT": {
-      "worlds": 6,
-      "episodes": 36,
-      "material_contrast_pairs": 18,
-      "final_opposing_commands": 36,
-      "host_terminal_success": 36,
-      "decisions": 8678,
-      "intervention_actions_loss_masked": 6528,
-      "nontrivial_excursions": 920,
-      "repeat_training_steps_loss_masked": 0,
-      "contrast_ages_actions": [
-        96,
-        192,
-        256
-      ]
-    },
-    "paired_material_contrasts": 72,
-    "host_replayed_success_episodes": 144,
-    "total_decisions": 23946,
-    "independent_exact_host_action_observation_replay": "PASS 23946 / 23946",
-    "wrong_command_no_stage_progress": "PASS 144 / 144",
-    "paired_instant_observation_equal": "PASS 72 / 72",
-    "symbolic_past_receipt_control_accuracy": "144/144, NOT neural",
-    "instant_only_memoryless_accuracy_ceiling": "72/144, NOT neural"
+    "total_episodes": 192,
+    "total_decisions": 30632,
+    "causal_quartets": 48,
+    "heldout_quartets": 12,
+    "old_only_or_memoryless_ceiling": 0.5,
+    "latest_probe_symbolic_accuracy": 1.0,
+    "fully_reconstructed_accepted_host_decisions": 30632,
+    "second_generation_byte_identical": true,
+    "tamper_rejected": true
   },
-  "best_checkpoint_artifact": null,
-  "target_SLM_optimizer_steps": 0,
-  "neural_CPU_latency_RSS": null,
-  "native_CyberSand_evaluation": null,
-  "immutable_actions_corpus_artifact": null,
-  "paid_API_or_GPU_spend": false,
-  "known_failure": "A symbolic history parser still solves all pairs; movement detours are host-executed interventions masked out of loss, not optimal autonomous navigation. Only 18 held-out causal pairs. No actual target SLM, native evaluation or neural RSS/latency. Dataset generated locally; no immutable Actions publication.",
-  "next_useful_consumer_experiment": "Separate trainer: pinned target LFM350/Sprocket actual adapter training, using TRAIN v54/v56/v59 and optionally v60 TRAIN, then reset/truncated memory ablations and sealed v60 HELDOUT both-correct and host-terminal scoring; time p50/p95 CPU inference/RSS and hash exact model/tokenizer/adapter. No HELDOUT tuning.",
-  "authority": "DATA ONLY; programme Draft/HOLD; CyberSand, Neurounner and DRIV3R main READ-ONLY; no paid compute."
+  "known_failure": "Latest-history symbolic controller solves v61; no neural HELDOUT score, native ABI validation, actual LFM/Sprocket optimizer steps, or inference latency/RSS. Synthetic second warning is not verified native game event.",
+  "next_useful_consumer_experiment": "Pin a real available LFM350/Sprocket checkpoint+hash in trainer lane; train on chronological TRAIN v54/v56/v59 plus v61. Score v61 HELDOUT quartet all-four-correct with long-term context vs memory reset and stale/last receipt ablations; run closed-loop synthetic host and report p50/p95 CPU latency and RSS. Do not use evaluator certificates in training.",
+  "previous_release": "v60 delayed single B calibration (24 worlds; 144 successful synthetic episodes; 23946 decisions; 72 pairs)",
+  "ownership": "Single ongoing Draft/HOLD Corpus Factory PR #3, lane-owned writes only; no expensive automatic CI, no main/Neurounner/CyberSand writes."
 }
