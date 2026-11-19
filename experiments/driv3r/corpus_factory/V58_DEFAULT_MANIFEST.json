@@ -1,0 +1,120 @@
+{
+  "schema": "driv3r/corpus_factory/offpolicy-repair-v58/1",
+  "date": "2026-11-19",
+  "data_only": true,
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+  "source_v56_manifest_sha256": "b7f4b9f0d76416378c0d38713b4c60df90c149c2ef29533c73cb0e030ec9690e",
+  "source_v56_shards": {
+    "TRAIN_causal_stream.jsonl": "462ed7ab1d77a4d1e34759b0a799e70ba349e6cf262b2d63e71a0d2aab39de24",
+    "TRAIN_provenance_EVALUATOR_ONLY.jsonl": "80f0043c15064f255f2bdd4450d2e59ebd82ec7c78a96d76722ae92c56dce651",
+    "TRAIN_material_pairs_EVALUATOR_ONLY.jsonl": "53b2c1182a7967c72ee5d6f5f94dc4b9a81d15dfe36066f83ec09bb4c9b0f29a",
+    "DEV_EVALUATOR_ONLY_causal_stream.jsonl": "09f0e34d298ebc7b2d967b63b730db2b8f6a86db36f426df1a0c779738b81d14",
+    "DEV_provenance_EVALUATOR_ONLY.jsonl": "87df2a7df80414a9b252637dfad7a066abba4de58346ee45c3059c67250e7e5b",
+    "DEV_material_pairs_EVALUATOR_ONLY.jsonl": "b339657ef7c986cfef193716c5d5964103a65fe3752e2936ccb96f6ed680102f",
+    "HELDOUT_EVALUATOR_ONLY_causal_stream.jsonl": "ac08a5b54f4a8dede32859ad63b3900d93add84ccc2c49070e2f3be135e102c4",
+    "HELDOUT_provenance_EVALUATOR_ONLY.jsonl": "257afb28701a2d647770ec309e6279bbc0b74a194a5eaa0062db16cb1f0d026a",
+    "HELDOUT_material_pairs_EVALUATOR_ONLY.jsonl": "1e45220b06a049966bb249f65cfafeba357166eb7adc48be2d7bd65c29f1ef15"
+  },
+  "host_module_sha256": {
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "contract": {
+    "train": "TRAIN_offpolicy_repair_stream.jsonl ONLY. Full historical source prefixes plus forced wrong material paint (weight=0), followed by actual host-replayed ERASE/corrected PAINT/STOP (weight>0).",
+    "model_visible": "Only ordered steps[].input + past observed actions. All source identities, outcomes and forks are in EVALUATOR_ONLY sidecars; never pass them to a policy.",
+    "intervention": "Deliberately WRONG paint action, host-executed and loss-masked, not a teacher-supervision target. Keep model recurrent state across the action; do not add evaluator metadata.",
+    "dev": "DEV_EVALUATOR_ONLY_offpolicy_repair_stream.jsonl for development scoring; no training or hyperparameter optimization.",
+    "heldout": "HELDOUT_EVALUATOR_ONLY_offpolicy_repair_stream.jsonl sealed; no training, selection or prompt tuning.",
+    "scope": "Only recoverable surface-B wrong-paint episodes become trainable complete episodes. Terminal surface-A wrong-paints form evaluator-only failure-control certificates, NOT training examples or recoveries.",
+    "evaluation": "Score off-policy ERASE->correct PAINT->STOP recovery separately from original correct-paint pair accuracy and whole-episode autonomous terminal success. This dataset is teacher-forced and synthetic.",
+    "split": "Preserve parent v56 world geometry ownership; cross-version worlds must remain grouped by source split.",
+    "weights": "All original source weights retained; intervention zero; recovery ERASE and corrected PAINT receive focus_loss_weight=6; terminal STOP=1. No evaluator label exposed."
+  },
+  "files": {
+    "TRAIN_offpolicy_repair_stream.jsonl": {
+      "sha256": "2e9bddbd365df6f956ab8272e0fe2998df9a5b23062c7c370dd8a59350031c88",
+      "bytes": 2106180,
+      "rows": 64
+    },
+    "TRAIN_offpolicy_fork_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "c814162270c8a8b453df18cc8587bd4dcbf409f8e0be2efa5da0897ca7c92426",
+      "bytes": 115384,
+      "rows": 128
+    },
+    "DEV_EVALUATOR_ONLY_offpolicy_repair_stream.jsonl": {
+      "sha256": "3c6e1bfb0000690f62e5bd8fb8c310d20869947c55bda9878768c6d69c4aacbd",
+      "bytes": 954024,
+      "rows": 24
+    },
+    "DEV_offpolicy_fork_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "50bbbb6b38e0c4ac1c447769258b0426ebc5a849064c77379353d51a2690fb95",
+      "bytes": 43242,
+      "rows": 48
+    },
+    "HELDOUT_EVALUATOR_ONLY_offpolicy_repair_stream.jsonl": {
+      "sha256": "f937fbdca920ccd204cd169a5502ad00e3f71751cb38ebee19a90298633802d2",
+      "bytes": 1381301,
+      "rows": 24
+    },
+    "HELDOUT_offpolicy_fork_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "11d8d51b6a46092a4a6b5b329aad66203ac0a154a376bb4d20a5629d7da8abae",
+      "bytes": 43188,
+      "rows": 48
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "source_material_pairs": 64,
+      "wrong_accepted_forks": 128,
+      "irreversible_wrong_A": 64,
+      "recoverable_wrong_B": 64,
+      "recovered_complete_episodes": 64,
+      "demonstration_decisions": 1834,
+      "zero_weight_forced_wrong_paints": 64,
+      "naive_stop_successes": 0,
+      "host_recovery_erase": 64,
+      "host_recovery_corrected_paint": 64,
+      "host_recovery_stop": 64
+    },
+    "DEV": {
+      "source_material_pairs": 24,
+      "wrong_accepted_forks": 48,
+      "irreversible_wrong_A": 24,
+      "recoverable_wrong_B": 24,
+      "recovered_complete_episodes": 24,
+      "demonstration_decisions": 748,
+      "zero_weight_forced_wrong_paints": 24,
+      "naive_stop_successes": 0,
+      "host_recovery_erase": 24,
+      "host_recovery_corrected_paint": 24,
+      "host_recovery_stop": 24
+    },
+    "HELDOUT": {
+      "source_material_pairs": 24,
+      "wrong_accepted_forks": 48,
+      "irreversible_wrong_A": 24,
+      "recoverable_wrong_B": 24,
+      "recovered_complete_episodes": 24,
+      "demonstration_decisions": 1060,
+      "zero_weight_forced_wrong_paints": 24,
+      "naive_stop_successes": 0,
+      "host_recovery_erase": 24,
+      "host_recovery_corrected_paint": 24,
+      "host_recovery_stop": 24
+    }
+  },
+  "limitations": [
+    "Recovery uses v51 symbolic oracle after a forced wrong action and therefore is a demonstration, not autonomous learned policy recovery.",
+    "v53 synthetic host makes A material errors terminal while B errors are recoverable; this is not a native CyberSand rule.",
+    "Source-selected v56 worlds and scripted preludes still admit simple parsers and do not constitute new geometry.",
+    "No pinned target SLM weights updated, CPU neural latency/RSS, native CyberSand playback or immutable Actions corpus artifacts."
+  ]
+}
