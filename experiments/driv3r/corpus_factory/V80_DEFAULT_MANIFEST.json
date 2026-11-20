@@ -1,0 +1,319 @@
+{
+  "schema": "driv3r/corpus_factory/three-lane-loop-v80/1",
+  "synthetic_not_native_CyberSand": true,
+  "source_sha256": "d8225fca56d8f3027c4198546a3af42d5c77168dac02be983acc40add3b3d041",
+  "split_policy": "geometry and trajectory splits disjoint by width; DEV/HELDOUT evaluator only",
+  "files": {
+    "TRAIN_three_lane_stream.jsonl": {
+      "rows": 432,
+      "bytes": 46371252,
+      "sha256": "1d8a785ce463dfac3167acb1bc0384e3a27696b0611c2b7611f0429f3c33c500"
+    },
+    "TRAIN_three_lane_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 432,
+      "bytes": 606094,
+      "sha256": "1753e02dbdc68e96ae409f00360de376bf4145e04fb4e09aa6d0983e3a68bf48"
+    },
+    "DEV_EVALUATOR_ONLY_three_lane_stream.jsonl": {
+      "rows": 216,
+      "bytes": 24962442,
+      "sha256": "bb9b9aba698f4eea7ca2ffb4b0f212083fb5d9a91763466a173fb0414c567c70"
+    },
+    "DEV_EVALUATOR_ONLY_three_lane_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 216,
+      "bytes": 302560,
+      "sha256": "b95a1cabccc659cfff4e1c7532bb17a346d5237c1e66f1c865b603ccf444a100"
+    },
+    "HELDOUT_EVALUATOR_ONLY_three_lane_stream.jsonl": {
+      "rows": 216,
+      "bytes": 27235914,
+      "sha256": "404c3be3e6728718ac1c19e8003fc608a7f9e926332cf0b62ee1a729eef4ddb4"
+    },
+    "HELDOUT_EVALUATOR_ONLY_three_lane_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 216,
+      "bytes": 303424,
+      "sha256": "9f4728550fc7f4394ac07afda1e2041889923ddf987e22c5d1eac47781a9fca0"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 46,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            46
+          ],
+          "geometry_sha256": "94eefd50c885387d40809c1d736fec5c8f12dd714af7cd7a0efd1c035cb99733"
+        },
+        {
+          "index": 1,
+          "width": 49,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            49
+          ],
+          "geometry_sha256": "cd71f1422544d18967181409f92ec37897c98ab6c34d41feee47a8800b87ceff"
+        },
+        {
+          "index": 2,
+          "width": 52,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            52
+          ],
+          "geometry_sha256": "8e691dc541ea2828b1511776323b430a8a720b3cf2086848d6879ce385603682"
+        },
+        {
+          "index": 3,
+          "width": 55,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 31,
+          "g2": 33,
+          "bridges": [
+            8,
+            22,
+            31,
+            12,
+            36,
+            55
+          ],
+          "geometry_sha256": "90911b78a1a4b1e5fab8a1ea050a7e8519a79c200e8169d2e91df22e0a37c477"
+        },
+        {
+          "index": 4,
+          "width": 58,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 31,
+          "g2": 33,
+          "bridges": [
+            9,
+            23,
+            31,
+            13,
+            36,
+            58
+          ],
+          "geometry_sha256": "7ae7660fb2039bbc5c1883bba336f1636115638980d11fff83ca6fc14561b5f6"
+        },
+        {
+          "index": 5,
+          "width": 61,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 33,
+          "g2": 35,
+          "bridges": [
+            10,
+            24,
+            33,
+            14,
+            38,
+            61
+          ],
+          "geometry_sha256": "106fc814782ee2ed81d71270394b2902a2fd947aa16b1e7ea9df993e22d38a49"
+        }
+      ],
+      "episodes": 432,
+      "legal_actions": 135504,
+      "success": 432,
+      "physical_recoveries": 216,
+      "wrong_paint_recoveries": 108,
+      "ambiguity_first": 144,
+      "ambiguity_goal": 216,
+      "first_legal_labeled": {
+        "MOVE_N": 72,
+        "MOVE_E": 72,
+        "MOVE_S": 72
+      },
+      "goal_labels": {
+        "PAINT_A": 108,
+        "PAINT_B": 108
+      },
+      "supervised_landmarks": 432
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 74,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            74
+          ],
+          "geometry_sha256": "9469480ecdf7b9bbb1b27b5581079379b8644ed0e27d54663d38b1a486284be6"
+        },
+        {
+          "index": 1,
+          "width": 77,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            77
+          ],
+          "geometry_sha256": "3bb03dc9313eb5783cac04667687069597fe48efabee17bbb741aef9f093f55f"
+        },
+        {
+          "index": 2,
+          "width": 80,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            80
+          ],
+          "geometry_sha256": "a304735827d9e740af23fe1c83a0cc2071f8706ba6eaaf6ddb36979f02f41cd1"
+        }
+      ],
+      "episodes": 216,
+      "legal_actions": 72828,
+      "success": 216,
+      "physical_recoveries": 108,
+      "wrong_paint_recoveries": 54,
+      "ambiguity_first": 72,
+      "ambiguity_goal": 108,
+      "first_legal_labeled": {
+        "MOVE_N": 36,
+        "MOVE_E": 36,
+        "MOVE_S": 36
+      },
+      "goal_labels": {
+        "PAINT_A": 54,
+        "PAINT_B": 54
+      },
+      "supervised_landmarks": 216
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 103,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            103
+          ],
+          "geometry_sha256": "935723cb39c82b78b5c4e66cf7f2559563583bb834c034392fb4317c82364416"
+        },
+        {
+          "index": 1,
+          "width": 106,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            106
+          ],
+          "geometry_sha256": "782776bd6b558c28df2e80ac5856a4fbdda5fa709a4b759a28de46aacc6f2134"
+        },
+        {
+          "index": 2,
+          "width": 109,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            109
+          ],
+          "geometry_sha256": "0629e99de90f46e5983ece989a487c02d8c915bccfd5eba4645e6d34cdc444e1"
+        }
+      ],
+      "episodes": 216,
+      "legal_actions": 79092,
+      "success": 216,
+      "physical_recoveries": 108,
+      "wrong_paint_recoveries": 54,
+      "ambiguity_first": 72,
+      "ambiguity_goal": 108,
+      "first_legal_labeled": {
+        "MOVE_N": 36,
+        "MOVE_E": 36,
+        "MOVE_S": 36
+      },
+      "goal_labels": {
+        "PAINT_A": 54,
+        "PAINT_B": 54
+      },
+      "supervised_landmarks": 216
+    }
+  }
+}

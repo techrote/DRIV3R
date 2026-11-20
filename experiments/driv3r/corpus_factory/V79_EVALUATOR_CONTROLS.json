@@ -1,0 +1,37 @@
+{
+  "schema": "driv3r/corpus_factory/v79-evaluator-controls/1",
+  "synthetic_not_native_CyberSand": true,
+  "neural_policy_trained": false,
+  "splits": {
+    "TRAIN": {
+      "episodes": 384,
+      "expected_action_correct_with_pilot": 384,
+      "expected_action_correct_without_pilot_report_follow": 192,
+      "physically_open_first_lane_with_pilot": 288,
+      "physically_open_first_lane_without_pilot_report_follow": 192,
+      "mean_expected_extra_actions_without_pilot": 8.333333333333334,
+      "history_older_than_128_steps": 384,
+      "paired_full_history_identical_future_counterfactuals": 96
+    },
+    "DEV": {
+      "episodes": 192,
+      "expected_action_correct_with_pilot": 192,
+      "expected_action_correct_without_pilot_report_follow": 96,
+      "physically_open_first_lane_with_pilot": 144,
+      "physically_open_first_lane_without_pilot_report_follow": 96,
+      "mean_expected_extra_actions_without_pilot": 9.5,
+      "history_older_than_128_steps": 192,
+      "paired_full_history_identical_future_counterfactuals": 48
+    },
+    "HELDOUT": {
+      "episodes": 192,
+      "expected_action_correct_with_pilot": 192,
+      "expected_action_correct_without_pilot_report_follow": 96,
+      "physically_open_first_lane_with_pilot": 144,
+      "physically_open_first_lane_without_pilot_report_follow": 96,
+      "mean_expected_extra_actions_without_pilot": 9.5,
+      "history_older_than_128_steps": 192,
+      "paired_full_history_identical_future_counterfactuals": 48
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "driv3r/corpus_factory/material-law-controls-v81/1",
+  "synthetic_not_native_CyberSand": true,
+  "neural_model_evaluated": false,
+  "splits": {
+    "TRAIN": {
+      "episodes": 432,
+      "history_parser_correct": 432,
+      "current_only": {
+        "correct": 216,
+        "total": 432,
+        "accuracy": 0.5,
+        "groups": 24,
+        "conflicting_groups": 24
+      },
+      "last128": {
+        "correct": 216,
+        "total": 432,
+        "accuracy": 0.5,
+        "groups": 36,
+        "conflicting_groups": 36
+      },
+      "goal_only": {
+        "correct": 216,
+        "total": 432,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "physical_probe_plus_goal": {
+        "correct": 216,
+        "total": 432,
+        "accuracy": 0.5,
+        "groups": 24,
+        "conflicting_groups": 24
+      },
+      "remote_law_receipt_plus_goal": {
+        "correct": 216,
+        "total": 432,
+        "accuracy": 0.5,
+        "groups": 24,
+        "conflicting_groups": 24
+      },
+      "complete_observable_history_factors": {
+        "correct": 432,
+        "total": 432,
+        "accuracy": 1,
+        "groups": 48,
+        "conflicting_groups": 0
+      }
+    },
+    "DEV": {
+      "episodes": 216,
+      "history_parser_correct": 216,
+      "current_only": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "last128": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 18,
+        "conflicting_groups": 18
+      },
+      "goal_only": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 6,
+        "conflicting_groups": 6
+      },
+      "physical_probe_plus_goal": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "remote_law_receipt_plus_goal": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "complete_observable_history_factors": {
+        "correct": 216,
+        "total": 216,
+        "accuracy": 1,
+        "groups": 24,
+        "conflicting_groups": 0
+      }
+    },
+    "HELDOUT": {
+      "episodes": 216,
+      "history_parser_correct": 216,
+      "current_only": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "last128": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 18,
+        "conflicting_groups": 18
+      },
+      "goal_only": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 6,
+        "conflicting_groups": 6
+      },
+      "physical_probe_plus_goal": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "remote_law_receipt_plus_goal": {
+        "correct": 108,
+        "total": 216,
+        "accuracy": 0.5,
+        "groups": 12,
+        "conflicting_groups": 12
+      },
+      "complete_observable_history_factors": {
+        "correct": 216,
+        "total": 216,
+        "accuracy": 1,
+        "groups": 24,
+        "conflicting_groups": 0
+      }
+    }
+  }
+}

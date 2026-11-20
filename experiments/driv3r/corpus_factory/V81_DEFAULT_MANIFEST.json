@@ -1,0 +1,322 @@
+{
+  "schema": "driv3r/corpus_factory/material-law-memory-v81/1",
+  "synthetic_not_native_CyberSand": true,
+  "source_sha256": "5a1eff69f814cee422b1cebdebf17cf8b50042ba9a8f1973dcca00ff4f324c5b",
+  "split_policy": "geometry and trajectory splits disjoint by width; DEV/HELDOUT evaluator only",
+  "files": {
+    "TRAIN_material_law_stream.jsonl": {
+      "rows": 576,
+      "bytes": 64908016,
+      "sha256": "64c499b8bac529fd5d13bd2d39db51b2a5b470fef1286ea68773266a03be52cd"
+    },
+    "TRAIN_material_law_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 576,
+      "bytes": 909538,
+      "sha256": "a42c6d6a4d12cfcc0daa64215c2f9eb071dbc7941c6d80466886a58fe64141a4"
+    },
+    "DEV_EVALUATOR_ONLY_material_law_stream.jsonl": {
+      "rows": 288,
+      "bytes": 34850168,
+      "sha256": "43c5274c2f86c341a6aef9771cdd880f5508554568221730f7da6d21d35c2728"
+    },
+    "DEV_EVALUATOR_ONLY_material_law_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 288,
+      "bytes": 454138,
+      "sha256": "32c3f190549678d38adb36316b124ede13ee1756be23ddff394172b1f36c055a"
+    },
+    "HELDOUT_EVALUATOR_ONLY_material_law_stream.jsonl": {
+      "rows": 288,
+      "bytes": 37916024,
+      "sha256": "0c02d58b33698c2836b9bd143b8184e2064395a05e4f509c152661154c4ed726"
+    },
+    "HELDOUT_EVALUATOR_ONLY_material_law_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 288,
+      "bytes": 455290,
+      "sha256": "1bdfb1304bdafef5d23d1c7ff7badfdc53dc9176aa30824c2823f07ae7efbcd6"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 46,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            46
+          ],
+          "geometry_sha256": "94eefd50c885387d40809c1d736fec5c8f12dd714af7cd7a0efd1c035cb99733"
+        },
+        {
+          "index": 1,
+          "width": 49,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            49
+          ],
+          "geometry_sha256": "cd71f1422544d18967181409f92ec37897c98ab6c34d41feee47a8800b87ceff"
+        },
+        {
+          "index": 2,
+          "width": 52,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            52
+          ],
+          "geometry_sha256": "8e691dc541ea2828b1511776323b430a8a720b3cf2086848d6879ce385603682"
+        },
+        {
+          "index": 3,
+          "width": 55,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 31,
+          "g2": 33,
+          "bridges": [
+            8,
+            22,
+            31,
+            12,
+            36,
+            55
+          ],
+          "geometry_sha256": "90911b78a1a4b1e5fab8a1ea050a7e8519a79c200e8169d2e91df22e0a37c477"
+        },
+        {
+          "index": 4,
+          "width": 58,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 31,
+          "g2": 33,
+          "bridges": [
+            9,
+            23,
+            31,
+            13,
+            36,
+            58
+          ],
+          "geometry_sha256": "7ae7660fb2039bbc5c1883bba336f1636115638980d11fff83ca6fc14561b5f6"
+        },
+        {
+          "index": 5,
+          "width": 61,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 33,
+          "g2": 35,
+          "bridges": [
+            10,
+            24,
+            33,
+            14,
+            38,
+            61
+          ],
+          "geometry_sha256": "106fc814782ee2ed81d71270394b2902a2fd947aa16b1e7ea9df993e22d38a49"
+        }
+      ],
+      "episodes": 576,
+      "legal_actions": 182976,
+      "success": 576,
+      "physical_recoveries": 288,
+      "wrong_paint_recoveries": 144,
+      "ambiguity_first": 192,
+      "ambiguity_goal": 288,
+      "ambiguity_law": 144,
+      "first_legal_labeled": {
+        "MOVE_N": 96,
+        "MOVE_E": 96,
+        "MOVE_S": 96
+      },
+      "goal_labels": {
+        "PAINT_A": 216,
+        "PAINT_B": 216
+      },
+      "supervised_landmarks": 1008
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 74,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            74
+          ],
+          "geometry_sha256": "9469480ecdf7b9bbb1b27b5581079379b8644ed0e27d54663d38b1a486284be6"
+        },
+        {
+          "index": 1,
+          "width": 77,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            77
+          ],
+          "geometry_sha256": "3bb03dc9313eb5783cac04667687069597fe48efabee17bbb741aef9f093f55f"
+        },
+        {
+          "index": 2,
+          "width": 80,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            80
+          ],
+          "geometry_sha256": "a304735827d9e740af23fe1c83a0cc2071f8706ba6eaaf6ddb36979f02f41cd1"
+        }
+      ],
+      "episodes": 288,
+      "legal_actions": 98256,
+      "success": 288,
+      "physical_recoveries": 144,
+      "wrong_paint_recoveries": 72,
+      "ambiguity_first": 96,
+      "ambiguity_goal": 144,
+      "ambiguity_law": 72,
+      "first_legal_labeled": {
+        "MOVE_N": 48,
+        "MOVE_E": 48,
+        "MOVE_S": 48
+      },
+      "goal_labels": {
+        "PAINT_A": 108,
+        "PAINT_B": 108
+      },
+      "supervised_landmarks": 504
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 0,
+          "width": 103,
+          "j1": 8,
+          "g1": 10,
+          "mid": 22,
+          "j2": 30,
+          "g2": 32,
+          "bridges": [
+            8,
+            22,
+            30,
+            12,
+            35,
+            103
+          ],
+          "geometry_sha256": "935723cb39c82b78b5c4e66cf7f2559563583bb834c034392fb4317c82364416"
+        },
+        {
+          "index": 1,
+          "width": 106,
+          "j1": 9,
+          "g1": 11,
+          "mid": 23,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            9,
+            23,
+            32,
+            13,
+            37,
+            106
+          ],
+          "geometry_sha256": "782776bd6b558c28df2e80ac5856a4fbdda5fa709a4b759a28de46aacc6f2134"
+        },
+        {
+          "index": 2,
+          "width": 109,
+          "j1": 10,
+          "g1": 12,
+          "mid": 24,
+          "j2": 32,
+          "g2": 34,
+          "bridges": [
+            10,
+            24,
+            32,
+            14,
+            37,
+            109
+          ],
+          "geometry_sha256": "0629e99de90f46e5983ece989a487c02d8c915bccfd5eba4645e6d34cdc444e1"
+        }
+      ],
+      "episodes": 288,
+      "legal_actions": 106608,
+      "success": 288,
+      "physical_recoveries": 144,
+      "wrong_paint_recoveries": 72,
+      "ambiguity_first": 96,
+      "ambiguity_goal": 144,
+      "ambiguity_law": 72,
+      "first_legal_labeled": {
+        "MOVE_N": 48,
+        "MOVE_E": 48,
+        "MOVE_S": 48
+      },
+      "goal_labels": {
+        "PAINT_A": 108,
+        "PAINT_B": 108
+      },
+      "supervised_landmarks": 504
+    }
+  }
+}

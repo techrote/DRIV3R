@@ -1,0 +1,182 @@
+{
+  "schema": "driv3r/corpus_factory/observation-quality-v68/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "c9d2cd11b8ae4de0ebb8ff96ead0b3de1d88b7810aa5f18675eca736ef7423db",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v67_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "design": "Cross physically identical two-material remote abrasion arms against hypothetical authenticated/partial/missing sensor receipts. Unknown requires physical reinspection; known eroded requires repair, known intact avoids travel. Observe long past verified result only; complete local geometry but no remote material truth.",
+  "observation_contract": "Synthetic local radius-1 paint, host legal actions, noisy noncertifying shocks, delayed signed A/B result or NO_VERIFIED_RESULT; results delivered >67 host-accepted detour actions before first supervised decision. Certified readings are idealized hypothetical signals, not established native CyberSand ABI.",
+  "model_contract": "Only TRAIN observation_quality_stream contains trainable examples; all prefix interventions and physical probe steps loss weight 0; DEV/HELDOUT and all certificates evaluator-only. Verification masks alter input but not underlying physical intervention or host dynamics. Never train on certificates, manifests, privileged physical broken targets or diagnostic validation.",
+  "caveats": [
+    "This data lane trains no neural weights. Symbolic plan based on latest verified report solves challenge.",
+    "Unverified condition conservatively reinspects, possibly unnecessarily, because physical damage cannot be inferred perfectly.",
+    "Detour is teacher-forced; autonomous exploration is unproven.",
+    "No native CyberSand host acceptance or observed production-grade damage receipt."
+  ],
+  "quick": false,
+  "files": {
+    "TRAIN_observation_quality_stream.jsonl": {
+      "rows": 640,
+      "bytes": 167712938,
+      "sha256": "1dfb6e2c59de79280f8f89e3fc0870becddb4f7073e91c802956d2dc3403fda1"
+    },
+    "TRAIN_observation_quality_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 640,
+      "bytes": 721966,
+      "sha256": "948c1b59eb4c614666108610209fc6a146f5c0d3f17f0e599c5cc8f1b25a3540"
+    },
+    "DEV_EVALUATOR_ONLY_observation_quality_stream.jsonl": {
+      "rows": 320,
+      "bytes": 100456846,
+      "sha256": "9abd6319e019cd13bcfb97c57eeb5ee57a95be0e2982ddb0d2faf5858a88f4ce"
+    },
+    "DEV_observation_quality_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 320,
+      "bytes": 360264,
+      "sha256": "4ee936be177c722b86e6f67404f0bc4bb1dc5504044e28363affee3ade5e0e1c"
+    },
+    "HELDOUT_EVALUATOR_ONLY_observation_quality_stream.jsonl": {
+      "rows": 320,
+      "bytes": 125924886,
+      "sha256": "183cc8a32f43587f24dfff00b339ad586052ef11cffcf3b0893bf5f4d3f7021f"
+    },
+    "HELDOUT_observation_quality_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 320,
+      "bytes": 361794,
+      "sha256": "a0d462b8f55d5a26d0bcc9e79ea2684486009d87afceaa7c54fd08eeb547da10"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "episodes": 640,
+      "decisions": 97842,
+      "host_terminal_successes": 640,
+      "critical_80_arm_groups": 8,
+      "fully_verified_episodes": 160,
+      "partially_or_unverified_episodes": 480,
+      "stop_only_successes": 192,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 2370,
+      "travel_actions_avoided_vs_always_reinspect": 2286,
+      "redundant_train_followups_loss_masked": 7079,
+      "geometry": [
+        {
+          "sha256": "1f3d6a7aedf1dc0a5665d10fa5adfd4d2afca96d1f94bedaf025acdfe982cc29",
+          "source_world_index": 114006,
+          "attempt": 2
+        },
+        {
+          "sha256": "0ff50a5274b1ef0117906164b9c36f0a518052d0eaf1da4a51919c19d49732ea",
+          "source_world_index": 114171,
+          "attempt": 0
+        },
+        {
+          "sha256": "7cb5626788756fd704f0058d079d8f3cd8d07e8687704fb942b927d79cfe8cb4",
+          "source_world_index": 114342,
+          "attempt": 0
+        },
+        {
+          "sha256": "ccd1401c3a098cfd0a9e5685cf3eef870a7b8afb6b31df3028b2941eb7544871",
+          "source_world_index": 114513,
+          "attempt": 0
+        },
+        {
+          "sha256": "37bf378c89fe291fd3889475a5d441644a455be7d709eea6826fed333fc20603",
+          "source_world_index": 114687,
+          "attempt": 1
+        },
+        {
+          "sha256": "6bf71e8bdffac1c6f0ef9005f453057755ed2aef0688f9c0209e3f05b28ed64e",
+          "source_world_index": 114855,
+          "attempt": 0
+        },
+        {
+          "sha256": "805e39c928648b47b49e80ada17fc64c14beb2137a201cdaec6ab5a9c6fc9e47",
+          "source_world_index": 115029,
+          "attempt": 1
+        },
+        {
+          "sha256": "e03084544e6a8930f74e3d4c1b1132bbdc8af98fcbfe47af12447162d9f69e39",
+          "source_world_index": 115200,
+          "attempt": 1
+        }
+      ]
+    },
+    "DEV": {
+      "worlds": 4,
+      "episodes": 320,
+      "decisions": 49518,
+      "host_terminal_successes": 320,
+      "critical_80_arm_groups": 4,
+      "fully_verified_episodes": 80,
+      "partially_or_unverified_episodes": 240,
+      "stop_only_successes": 96,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 1354,
+      "travel_actions_avoided_vs_always_reinspect": 1426,
+      "redundant_train_followups_loss_masked": 0,
+      "geometry": [
+        {
+          "sha256": "1dce88dd1e08c7f4a899e890e19d8547b9ac68d492b18fb4a59cfe6efb720865",
+          "source_world_index": 124003,
+          "attempt": 1
+        },
+        {
+          "sha256": "596d532c84243e703d013ab45a7c4246cecd5f738ab997b84afcae47232bd508",
+          "source_world_index": 124180,
+          "attempt": 3
+        },
+        {
+          "sha256": "791b4a38a832fbbc7ccbbe568987d1b29c2eb089b23a3ce00f97b7fe48b8e35b",
+          "source_world_index": 124342,
+          "attempt": 0
+        },
+        {
+          "sha256": "b910845c71970b44bdf76074067d820b9051549b3b9a4e9848ab8006f8c047b2",
+          "source_world_index": 124513,
+          "attempt": 0
+        }
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "episodes": 320,
+      "decisions": 50936,
+      "host_terminal_successes": 320,
+      "critical_80_arm_groups": 4,
+      "fully_verified_episodes": 80,
+      "partially_or_unverified_episodes": 240,
+      "stop_only_successes": 96,
+      "unnecessary_extra_inspection_actions_vs_privileged_oracle": 1492,
+      "travel_actions_avoided_vs_always_reinspect": 1528,
+      "redundant_train_followups_loss_masked": 0,
+      "geometry": [
+        {
+          "sha256": "391aeaa203952528221b946b3a9a28fc31999a585e2512b2f542b35d87d7ce81",
+          "source_world_index": 134003,
+          "attempt": 1
+        },
+        {
+          "sha256": "81346cbbd834720d969d501d63eb0c051c15e870b37babf30c6f5ade1a479486",
+          "source_world_index": 134174,
+          "attempt": 1
+        },
+        {
+          "sha256": "757a5da6a3c91439b1a6afaf61698bd58ae09e07890207a7bbfb99d81d37d65e",
+          "source_world_index": 134345,
+          "attempt": 1
+        },
+        {
+          "sha256": "d99c361408d6f113ab21d44554694127194eb6e733815700eae12ba094f8de01",
+          "source_world_index": 134525,
+          "attempt": 4
+        }
+      ]
+    }
+  },
+  "total_episodes": 1280,
+  "total_decisions": 198296,
+  "mean_actions_avoided_vs_always_reinspect": 4.09375,
+  "mean_unavoidable_ambiguity_cost_vs_privileged_oracle": 4.075,
+  "stop_only_success_rate": 0.3
+}

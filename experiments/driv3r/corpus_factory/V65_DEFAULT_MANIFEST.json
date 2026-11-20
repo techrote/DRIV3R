@@ -1,0 +1,107 @@
+{
+  "schema": "driv3r/corpus_factory/sensor-fault-v65/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "c1ba589ad4cdd66bf4ed514021f33f1032379619e06b2a73bf9738325f6c6e16",
+  "parent_sha256": {
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+    "gate_revision_v63.js": "a96e1d03d5f01113beb15d719b52de31216cc1f7e5b39b08f53b86cb59b46f8f",
+    "delayed_bulletin_v64.js": "2f30a346d2a14969b6d28349987b668f7a6fb1f5770cc5c01e07fb0a45b17d20"
+  },
+  "base_generator_manifest_sha256": "ea03e22258bee27dec89e783472957013b651372203e7985ac665b3ced246e95",
+  "scenario": "Counterfactual physical remote-gate state plus out-of-order stale authentic reports, and a synthetic observable telemetry channel that sometimes inverts a later sensor reading. Early SENSOR_DIAGNOSTIC 901/902 identifies honest/inverted channel. True physical gate remains host-executed; immediate critical input does not expose fault mode.",
+  "contract": "Only steps.input and prior actions reach model. No source certificates, full durable ledger, true gate, diagnostic arms or manifest metadata. Synthetic diagnostic codes 901=healthy; 902=inverted (not native CyberSand codes). Only post-sensor transport is modified; pre-action host-visible feedback otherwise identical.",
+  "topology": "New deterministic source indices in 41000/51000/61000 ranges; disjoint from v63/v64 24000 range. Each split has separate graph sizes/seeds, checked by geometry sha256.",
+  "limitation": "The fault-correction rule is still solvable by a symbolic historical diagnostic and measurement-time parser. Oracle action traces and scripted detours do not prove neural learning; no native CyberSand sensor semantics or host evaluation.",
+  "controls": "At positive critical pairs, current-only 50%; highest-timestamp without fault correction 50%; earliest diagnostic plus highest timestamp corrected 100%. Measured host-physics labels are identical for both telemetry modes.",
+  "source_base_manifest": "driv3r/corpus_factory/delayed-bulletin-v64/1",
+  "files": {
+    "TRAIN_sensor_fault_stream.jsonl": {
+      "rows": 256,
+      "bytes": 20706544,
+      "sha256": "081071c38591467220eb5e873a3d850097f84e8ba9ffb4bd1f7ce203d15eef11"
+    },
+    "TRAIN_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 256,
+      "bytes": 225814,
+      "sha256": "522e0da2be08d7e7481d517d38b0976b5fb6a91b6316ff871f0bb34f899c262b"
+    },
+    "DEV_EVALUATOR_ONLY_sensor_fault_stream.jsonl": {
+      "rows": 128,
+      "bytes": 19291624,
+      "sha256": "ea1c337b04e29651f72a5ca38a13b11d3326da98fde8efb8abe45ea07c615428"
+    },
+    "DEV_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 128,
+      "bytes": 112254,
+      "sha256": "c93e6d95fa5b884c367447e343ad400984fa8b6e1144f728eb14dfad1f48ed65"
+    },
+    "HELDOUT_EVALUATOR_ONLY_sensor_fault_stream.jsonl": {
+      "rows": 128,
+      "bytes": 33160600,
+      "sha256": "e35135131670361ec8fa0b0bdc4289536fa041d2aa958caee846c7ecf220c429"
+    },
+    "HELDOUT_sensor_fault_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 128,
+      "bytes": 113694,
+      "sha256": "67908f7e6de5ec8efb0b4c39c9770a3eb2db93969a835e98a2f8403ddcbdfe04"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "groups": 8,
+      "arm_count": 32,
+      "episodes": 256,
+      "host_successes": 256,
+      "decisions": 17616,
+      "positive_pivotal_episodes": 128,
+      "irrelevant_controls": 128,
+      "critical_supervised_labels": 256,
+      "masked_duplicate_train_noncritical": 322,
+      "current_only_accuracy": 0.5,
+      "raw_highest_timestamp_accuracy": 0.5,
+      "calibration_corrected_accuracy": 1
+    },
+    "DEV": {
+      "worlds": 4,
+      "groups": 4,
+      "arm_count": 32,
+      "episodes": 128,
+      "host_successes": 128,
+      "decisions": 16608,
+      "positive_pivotal_episodes": 64,
+      "irrelevant_controls": 64,
+      "critical_supervised_labels": 128,
+      "masked_duplicate_train_noncritical": 0,
+      "current_only_accuracy": 0.5,
+      "raw_highest_timestamp_accuracy": 0.5,
+      "calibration_corrected_accuracy": 1
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "groups": 4,
+      "arm_count": 32,
+      "episodes": 128,
+      "host_successes": 128,
+      "decisions": 24320,
+      "positive_pivotal_episodes": 64,
+      "irrelevant_controls": 64,
+      "critical_supervised_labels": 128,
+      "masked_duplicate_train_noncritical": 0,
+      "current_only_accuracy": 0.5,
+      "raw_highest_timestamp_accuracy": 0.5,
+      "calibration_corrected_accuracy": 1
+    }
+  },
+  "total_episodes": 512,
+  "total_decisions": 58544,
+  "distinct_world_geometries": 16,
+  "positive_pivotal_episodes": 256,
+  "raw_highest_timestamp_accuracy": 0.5,
+  "calibrated_timestamp_accuracy": 1,
+  "current_only_accuracy": 0.5
+}

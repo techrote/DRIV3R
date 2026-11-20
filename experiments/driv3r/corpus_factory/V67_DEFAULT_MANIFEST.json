@@ -1,0 +1,212 @@
+{
+  "schema": "driv3r/corpus_factory/remote-abrasion-v67/1",
+  "date": "2026-11-19",
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "quick": false,
+  "scenario": "Physical remote erasure of formerly completed painted goals after local abrasion calibration, material-specific shock history and long distractor detours. Agent must trade pointless reinspection against irreversible STOP failure.",
+  "observation_contract": "Local painted radius 1 only, unmodified legal actions/geometry/stage, incremental physical abrasion events and ordinary host movement/painting receipts. No distant paint truth, threshold, counts or certificate fields in input. Event names are invented synthetic symbols, NOT native CyberSand ABI.",
+  "supervision": "Forced calibration/pre-goal/remote-detour steps weight 0. Only post-intervention critical continuation and necessary reinspection/repainting weight 1. DEV, HELDOUT and every certificate evaluator-only. Same-sequence 2-threshold arms share topology, goals and remote shock events; current critical observations identical within each world.",
+  "provenance": "Novel disjoint v44 world indices by split; exclude any supplied older geometry hashes when generating. All physical paint/erase/movement via v44 host.apply; erosion physically removes host painted state via explicit v67 external intervention.",
+  "known_limitations": "Synthetic host extension (not native CyberSand), full graph known, teacher-forced visits, deterministic 1/2 abrasion threshold can be solved by symbolic event counter; no neural training, model or GPU. Some paths may share prefixes. Always-reinspect succeeds but wastes travel.",
+  "files": {
+    "TRAIN_remote_abrasion_stream.jsonl": {
+      "sha256": "d2563347122fa039a278093d21e793049f47a942621c952830dc3992a1cf5b3a",
+      "rows": 240,
+      "bytes": 58112484
+    },
+    "TRAIN_remote_abrasion_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "127e87eae785aeca98785e843433b2f338483952b23ea6e28d02ee1fc066269a",
+      "rows": 240,
+      "bytes": 196171
+    },
+    "DEV_EVALUATOR_ONLY_remote_abrasion_stream.jsonl": {
+      "sha256": "14e57200cda244d0f89a2651334a226f6b017d29dd3ac68e64630c6e4772b019",
+      "rows": 120,
+      "bytes": 34912204
+    },
+    "DEV_remote_abrasion_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "6a8f620e212a6cc6e4ab33a3595f77f91d51d01dfb7d08f22ba429315602deba",
+      "rows": 120,
+      "bytes": 97807
+    },
+    "HELDOUT_EVALUATOR_ONLY_remote_abrasion_stream.jsonl": {
+      "sha256": "992aae8c07fa09c0d0d61bcbd15ac15311fb9d284f7a8d01aa3dbc719ba3db79",
+      "rows": 120,
+      "bytes": 39569164
+    },
+    "HELDOUT_remote_abrasion_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "0e82a4947fb928051c50cc31a0ea25140d0723313fd7de366d6713bc886abb94",
+      "rows": 120,
+      "bytes": 98390
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 12,
+      "episodes": 240,
+      "decisions": 33220,
+      "host_terminal_successes": 240,
+      "critical_decisions": 240,
+      "stop_only_successes": 72,
+      "always_revisit_successes": 240,
+      "mean_always_revisit_extra_steps": 7.033333333333333,
+      "masked_duplicate_train_followups": 1480,
+      "world_geometry_sha256": [
+        {
+          "world": 0,
+          "geometry_sha256": "5661a162bcbcf1cefc8e5f52510dbb9d9fc412dfc3e242cfb13e70c9727441d4",
+          "source_world_index": 84021
+        },
+        {
+          "world": 1,
+          "geometry_sha256": "f3993818044c1e9d9471272986a7a29d127890542c110e8a90156f710de72b4e",
+          "source_world_index": 84174
+        },
+        {
+          "world": 2,
+          "geometry_sha256": "39d3df2c0da6f26dd5a29c46069d270fd49833c70cb28950a18227896f775db5",
+          "source_world_index": 84342
+        },
+        {
+          "world": 3,
+          "geometry_sha256": "93ed62dacd3ca11c9d46d549c99f1f11217c6b007ebb1157fe6aa08df8ccfa9f",
+          "source_world_index": 84534
+        },
+        {
+          "world": 4,
+          "geometry_sha256": "6b8b0bc602158672185665b73ee601a207c37b95d26c00385b55a09acc879cf1",
+          "source_world_index": 84687
+        },
+        {
+          "world": 5,
+          "geometry_sha256": "eff07306eb52572bcdf124789f35d9dfbbb1714add2771c8992eb0af59337ee4",
+          "source_world_index": 84873
+        },
+        {
+          "world": 6,
+          "geometry_sha256": "1b0eadae2e80fdbf90ea7f59d111d22b22e6376c0bd50466ce76000d809b7d84",
+          "source_world_index": 85050
+        },
+        {
+          "world": 7,
+          "geometry_sha256": "556ab0a05d910e1bd6148665aa3fb5eed4c30467bfef988c014ab8a505e618b8",
+          "source_world_index": 85197
+        },
+        {
+          "world": 8,
+          "geometry_sha256": "af09a3bbf822b846ce1e527be56537a474c664c1e99bbe759781782b45f0fa68",
+          "source_world_index": 85374
+        },
+        {
+          "world": 9,
+          "geometry_sha256": "261410f2871b3bf40f1d17a41fd1ecb9acfebe80a0572b025b5eb72fb96964c7",
+          "source_world_index": 85575
+        },
+        {
+          "world": 10,
+          "geometry_sha256": "192580adb1290ce380d3b0606f3dead9520b63ce0722f4f8ec1ab41c763aae83",
+          "source_world_index": 85710
+        },
+        {
+          "world": 11,
+          "geometry_sha256": "fcf6b844b960bbbc53f8e08b3d45998e9c5b07029bfae7c384dfb18af67f21f6",
+          "source_world_index": 85884
+        }
+      ]
+    },
+    "DEV": {
+      "worlds": 6,
+      "episodes": 120,
+      "decisions": 17390,
+      "host_terminal_successes": 120,
+      "critical_decisions": 120,
+      "stop_only_successes": 36,
+      "always_revisit_successes": 120,
+      "mean_always_revisit_extra_steps": 9.533333333333333,
+      "masked_duplicate_train_followups": 0,
+      "world_geometry_sha256": [
+        {
+          "world": 0,
+          "geometry_sha256": "cb50ddc6c4f093fd5504ed438d4c73b8dfb68b222ebc18ed9388281292d164bc",
+          "source_world_index": 94000
+        },
+        {
+          "world": 1,
+          "geometry_sha256": "0316f03ff040379ddd1ff3027033a6ce326e9c5073d9229d41e5fd5676cd2ae1",
+          "source_world_index": 94174
+        },
+        {
+          "world": 2,
+          "geometry_sha256": "66fe6f0cf6be2daeb0201cafd7c1dcb90623926e03f508cc62ef6e4e1c485c2a",
+          "source_world_index": 94345
+        },
+        {
+          "world": 3,
+          "geometry_sha256": "b27b7881ac0b817afc8e1a38b14e3e16d41e4e69873c45aa66ae5bb53d5666f6",
+          "source_world_index": 94516
+        },
+        {
+          "world": 4,
+          "geometry_sha256": "b71850b8a9b8f9f07795d96d4adf14d6563e67689a08ba12ef9bc989a8f4ee2a",
+          "source_world_index": 94684
+        },
+        {
+          "world": 5,
+          "geometry_sha256": "fdb70b080bd3fa42d004f153969b8077a3acd893b51d5ce3f30e759fdfc0ef48",
+          "source_world_index": 94855
+        }
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 6,
+      "episodes": 120,
+      "decisions": 17147,
+      "host_terminal_successes": 120,
+      "critical_decisions": 120,
+      "stop_only_successes": 36,
+      "always_revisit_successes": 120,
+      "mean_always_revisit_extra_steps": 7.391666666666667,
+      "masked_duplicate_train_followups": 0,
+      "world_geometry_sha256": [
+        {
+          "world": 0,
+          "geometry_sha256": "a6cc2d109b8bb2bd360ee227a9be54a5c93f08a3bb90c231d6bcdf5d479157ac",
+          "source_world_index": 104000
+        },
+        {
+          "world": 1,
+          "geometry_sha256": "fb09accb44303ffbc593c057a215c5ea71393512abb2bf926c769487a2ad557e",
+          "source_world_index": 104177
+        },
+        {
+          "world": 2,
+          "geometry_sha256": "aa4a24a56b255e9ff2d484cb42278060bc34b01e28d768e4bf04e6cb2f959726",
+          "source_world_index": 104345
+        },
+        {
+          "world": 3,
+          "geometry_sha256": "852d2ccaea831c051917bdc0438b5c4396774f2b58f08ebb05805b4d1216bb55",
+          "source_world_index": 104516
+        },
+        {
+          "world": 4,
+          "geometry_sha256": "148b0447242af0ee79566ffc96ffb26faed95dc0a3d18cb47281b6c9e41b3937",
+          "source_world_index": 104696
+        },
+        {
+          "world": 5,
+          "geometry_sha256": "d462d74e35363dce587f38557b196ec8114f709156aa535992ed1aec9395bba4",
+          "source_world_index": 104864
+        }
+      ]
+    }
+  },
+  "total_episodes": 480,
+  "total_decisions": 67757,
+  "worlds": 24,
+  "stop_only_accuracy": 0.3,
+  "always_revisit_success_rate": 1,
+  "mean_extra_steps_always_revisit": 7.747916666666667
+}

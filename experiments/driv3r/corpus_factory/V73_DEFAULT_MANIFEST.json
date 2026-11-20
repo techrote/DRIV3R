@@ -1,0 +1,153 @@
+{
+  "schema": "driv3r/corpus_factory/endogenous-witness-v73/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "92cf463e1b09f902823e1d5522a415f3c226aa5d61169bbe93f8e5841c3fb82d",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "parent_v72_sha256": "3ef2235f86414349ab60b59a687667a0d2966aa109547407271392b1cc4c195a",
+  "design": "Optimal active physical coupon selected EX ANTE by uniform expectation over 2 hidden erosion histories and 2 hidden fault polarities; variable coupon pass costs are actual host-accepted PAINT/ERASE cycles. Cost tariff is in distant event history; current-only probe observations do not show it. Full synthetic game-like trajectories end in physically verified goal completion.",
+  "split_contract": "Only TRAIN_endogenous_witness_stream.jsonl is trainable. DEV and HELDOUT streams plus all certificates and oracle policy_means are evaluator-only. Prefix actions masked, first chosen intervention and recovery supervised; exact source manifest and deduplicated TRAIN repeated followups.",
+  "caveats": [
+    "Synthetic v44 host + added erosion, multichannel telemetry and coupon procedure, not native CyberSand ABI.",
+    "Expected cost prior is artificially balanced and known to the data-oracle; this experiment is a cost-aware teacher corpus, not autonomous neural policy.",
+    "No robot/tool uncertainty or test-time distribution shift in the witness pass tariff; cost labels computed from physical synthetic rollouts only."
+  ],
+  "files": {
+    "TRAIN_endogenous_witness_stream.jsonl": {
+      "rows": 512,
+      "bytes": 128281992,
+      "sha256": "c6fd11047975f941620797da4339f9a0d4d9e44958f070025c7bece24c121031"
+    },
+    "TRAIN_endogenous_witness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 665710,
+      "sha256": "e593ff9cc377d84332b4cd99c22bd8bd0a5b1007e797b8496d1e8d7f8f92fd21"
+    },
+    "DEV_EVALUATOR_ONLY_endogenous_witness_stream.jsonl": {
+      "rows": 256,
+      "bytes": 79829504,
+      "sha256": "5aa49e3322f0a2cad165926354532edc7b44d592207ee049a98e17c8da3fbaad"
+    },
+    "DEV_endogenous_witness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 256,
+      "bytes": 334786,
+      "sha256": "7dbd384f8a5d7494d5003039b57056a7ed06eaf2c71387fa1f0cd22256899ec9"
+    },
+    "HELDOUT_EVALUATOR_ONLY_endogenous_witness_stream.jsonl": {
+      "rows": 256,
+      "bytes": 96464488,
+      "sha256": "0e7c29fd43bfc40291f119704015f78eb117f125e19a823696a794d0ec6b3ec1"
+    },
+    "HELDOUT_endogenous_witness_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 256,
+      "bytes": 334722,
+      "sha256": "378cfd344d9119dfa25d3e84fe74785d087d9527184ed348e3aee673e342ecd5"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 284000,
+          "attempt": 0,
+          "seed": 4261090848,
+          "geometry_sha256": "4fb16b4b3ec229cd5b5f876edfc220a8a755eca852ddf7357f90cd2b90386598"
+        },
+        {
+          "index": 284170,
+          "attempt": 1,
+          "seed": 3472136216,
+          "geometry_sha256": "618147f7957563aac666f941713908e793d35a80051cad1c6dfa4195c854a793"
+        },
+        {
+          "index": 284334,
+          "attempt": 0,
+          "seed": 508362509,
+          "geometry_sha256": "03f5bcdf1a8e41bfb508bfadb1d5c8753f89216d292b99bfe8750be59d92c094"
+        },
+        {
+          "index": 284501,
+          "attempt": 0,
+          "seed": 667255059,
+          "geometry_sha256": "e8aafda4fa6409c89ef89c4844b85118acd0f0a567a8d134d8892d718cf12855"
+        }
+      ],
+      "episodes": 512,
+      "decisions": 74280,
+      "terminal_successes": 512,
+      "masked_train_followups": 3365,
+      "probe_choices": {
+        "NONE": 376,
+        "A": 24,
+        "B": 48,
+        "BOTH": 64
+      },
+      "counterfactual_expected_cost_groups": 128,
+      "groups_with_different_optimal_probe_across_cost_profiles": 16,
+      "mean_expected_actions_saved_vs_no_probe": 0.859375
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 294009,
+          "attempt": 3,
+          "seed": 1375549384,
+          "geometry_sha256": "ca5677d6c6f4543fe1e9535423ccb701da19428f19a14c4c7e020d27e8a5e5c1"
+        },
+        {
+          "index": 294167,
+          "attempt": 0,
+          "seed": 2727624680,
+          "geometry_sha256": "316ad4286559806735cfac791527d419d40c2157402a6f8c8a0d6b14c3a7d1ab"
+        }
+      ],
+      "episodes": 256,
+      "decisions": 39944,
+      "terminal_successes": 256,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 128,
+        "A": 48,
+        "B": 48,
+        "BOTH": 32
+      },
+      "counterfactual_expected_cost_groups": 64,
+      "groups_with_different_optimal_probe_across_cost_profiles": 8,
+      "mean_expected_actions_saved_vs_no_probe": 3.84375
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 304009,
+          "attempt": 3,
+          "seed": 3749457768,
+          "geometry_sha256": "2d1f21022035af8fa073e188967b67dcac46f37664eb4247233fa1af975a16fa"
+        },
+        {
+          "index": 304170,
+          "attempt": 1,
+          "seed": 1725292949,
+          "geometry_sha256": "0afe5e0bfa3417a253a6a949cbc02b9d4078f50f62a28ac3ea3c4f3f9fbc2e6f"
+        }
+      ],
+      "episodes": 256,
+      "decisions": 39552,
+      "terminal_successes": 256,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 176,
+        "A": 16,
+        "B": 16,
+        "BOTH": 48
+      },
+      "counterfactual_expected_cost_groups": 64,
+      "groups_with_different_optimal_probe_across_cost_profiles": 8,
+      "mean_expected_actions_saved_vs_no_probe": 2.125
+    }
+  },
+  "total_episodes": 1024,
+  "total_decisions": 153776,
+  "mean_expected_actions_saved_vs_no_probe": 1.921875
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "driv3r/corpus_factory/calibrated-decision-index-v79/1",
+  "parent_corpus_sha256": "8af1a832097d7d67cd8752e82def9d3d7a3c6b29839d499ee34c1d99428d788e",
+  "synthetic_not_native_CyberSand": true,
+  "model_input_contract": "History must be obtained solely from source episode inputs/actions up to (excluding) indexed decision, never certificates or future action outcomes.",
+  "files": {
+    "TRAIN_calibrated_decision_index.jsonl": {
+      "rows": 192,
+      "bytes": 73480,
+      "sha256": "e4eb644ba1ae8ad8d2948194bfe37931e24d6de3b71c3872c89aebf577c75ad6"
+    },
+    "DEV_EVALUATOR_ONLY_calibrated_decision_index.jsonl": {
+      "rows": 96,
+      "bytes": 36520,
+      "sha256": "261ce4a518d4ce1155441d231efbe5e73ea23a97c30f85917ad94c3b9186ce5a"
+    },
+    "HELDOUT_EVALUATOR_ONLY_calibrated_decision_index.jsonl": {
+      "rows": 96,
+      "bytes": 36904,
+      "sha256": "6fabe65704d11861b65bd556abf68ac4b27464509038921b8803862fac20db2f"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "raw_decisions": 768,
+      "deduplicated_decisions": 192,
+      "loss_masked_repeated_decisions": 576,
+      "stage1": 96,
+      "stage2": 96
+    },
+    "DEV": {
+      "raw_decisions": 384,
+      "deduplicated_decisions": 96,
+      "loss_masked_repeated_decisions": 288,
+      "stage1": 48,
+      "stage2": 48
+    },
+    "HELDOUT": {
+      "raw_decisions": 384,
+      "deduplicated_decisions": 96,
+      "loss_masked_repeated_decisions": 288,
+      "stage1": 48,
+      "stage2": 48
+    }
+  }
+}

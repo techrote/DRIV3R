@@ -1,0 +1,218 @@
+{
+  "schema": "driv3r/corpus_factory/physical-prior-shift-v75/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "risk_distribution_counts_per_8": {
+    "TRAIN": [
+      2,
+      6
+    ],
+    "DEV": [
+      3,
+      5
+    ],
+    "HELDOUT": [
+      1,
+      7
+    ]
+  },
+  "generator_sha256": "d4d36ee41cbc8229a56a11c1ecfacf9865e04d0d1c9bc0cf9869baea829b3c2b",
+  "host_sha256": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+  "parent_v70_sha256": "aa742b764b8ad05df3a252c6fc1dae9a9b1406959e0c94cdbe0fb312558a64b1",
+  "parent_v72_sha256": "3ef2235f86414349ab60b59a687667a0d2966aa109547407271392b1cc4c195a",
+  "design": "Split-specific shifted nonuniform erosion priors derived from eight physically enacted local stress tests. Select active witness EX ANTE using sample-frequency-weighted risk, without knowing the future remote abrasion or fault flip. Paired low/high observed risk histories have identical current-only state after >100 steps. No privileged risk scalar in model observations. World geometries are new and split-disjoint.",
+  "split_contract": "Only TRAIN_physical_prior_shift_stream.jsonl is trainable. DEV and HELDOUT streams plus all certificates and oracle policy_means are evaluator-only. Prefix actions masked, first chosen intervention and recovery supervised; exact source manifest and deduplicated TRAIN repeated followups.",
+  "caveats": [
+    "Synthetic v44 host + added erosion, multichannel telemetry and coupon procedure, not native CyberSand ABI.",
+    "The eight coupon trials are scripted synthetic physical evidence; an 8-sample empirical rate is not a calibrated real-world probability and is assumed to describe remote future abrasion.",
+    "Train/DEV/HELDOUT differ in local physical sample rate with deterministic split assignments. This evaluates input-conditioned shift, not autonomous neural performance."
+  ],
+  "files": {
+    "TRAIN_physical_prior_shift_stream.jsonl": {
+      "rows": 1024,
+      "bytes": 301199380,
+      "sha256": "1efc1628eb6f9f3821a2d820beb02bdbd17324edbfb227903017e233d47ec21a"
+    },
+    "TRAIN_physical_prior_shift_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 1024,
+      "bytes": 1428766,
+      "sha256": "d53a9c28e31c97eb633310c5f5dfe903b24231a37f37ffc6c37566f9920a3727"
+    },
+    "DEV_EVALUATOR_ONLY_physical_prior_shift_stream.jsonl": {
+      "rows": 512,
+      "bytes": 185419856,
+      "sha256": "fd56bd3aae599e1755f6a9610b263d33a93913a21444aa47c75e22cba923ca1b"
+    },
+    "DEV_physical_prior_shift_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 716606,
+      "sha256": "00b36445c2c2bec60d5f27c541dbd21918e9d67ea5efca78307d40d8eb3bf68a"
+    },
+    "HELDOUT_EVALUATOR_ONLY_physical_prior_shift_stream.jsonl": {
+      "rows": 512,
+      "bytes": 242510728,
+      "sha256": "2c91437c2550785df4715a335044a2ada0d35e4bd0f9c4f3cbe1a9049dbddcd1"
+    },
+    "HELDOUT_physical_prior_shift_certificates_EVALUATOR_ONLY.jsonl": {
+      "rows": 512,
+      "bytes": 717646,
+      "sha256": "90daebeeba55c80560cd912b8ff41a221d1398d030977664d47fd9bd8d4f4f23"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": [
+        {
+          "index": 344021,
+          "attempt": 7,
+          "seed": 1948801397,
+          "geometry_sha256": "f9b1c4ff2a9ef7c8ada3200dbbe964bf670206f78338a3033920aa0c6dcef59f"
+        },
+        {
+          "index": 344185,
+          "attempt": 6,
+          "seed": 2878717340,
+          "geometry_sha256": "14087ad0774d1540de7c8e6ff15caad08f475a5487e34491f6e469c0e82793d3"
+        },
+        {
+          "index": 344340,
+          "attempt": 2,
+          "seed": 3217848115,
+          "geometry_sha256": "4a1da94e4ba0d25e6c8ee0d488dd8d5221def27781ead25119f3a0249611c698"
+        },
+        {
+          "index": 344504,
+          "attempt": 1,
+          "seed": 1757733917,
+          "geometry_sha256": "0e93c085c41ce567a1be35804375d5b7fc4929f777d59f74cbc1c024c7086ce3"
+        },
+        {
+          "index": 344677,
+          "attempt": 3,
+          "seed": 2465223930,
+          "geometry_sha256": "064824e9bb769c199947c6039aba607c2a0923ee9f84bb5263a5131cce0e6b97"
+        },
+        {
+          "index": 344838,
+          "attempt": 1,
+          "seed": 1374158375,
+          "geometry_sha256": "fdf8f429f49c19fcaaabb5c628e8afd6eb34eb284aa17011e343bda287a5455a"
+        },
+        {
+          "index": 345005,
+          "attempt": 1,
+          "seed": 1691205266,
+          "geometry_sha256": "a27b0e07f4310b3e53b0f7236fe164f0d6137eb01fb86706a7f680dd15b8dae0"
+        },
+        {
+          "index": 345175,
+          "attempt": 2,
+          "seed": 2035768841,
+          "geometry_sha256": "427767af8e406adcf8f8cecff542c0ddbf099ebf944eae4e668d840496f014e1"
+        }
+      ],
+      "episodes": 1024,
+      "decisions": 176192,
+      "terminal_successes": 1024,
+      "masked_train_followups": 7374,
+      "probe_choices": {
+        "NONE": 656,
+        "A": 168,
+        "B": 128,
+        "BOTH": 72
+      },
+      "counterfactual_expected_cost_groups": 256,
+      "groups_with_different_optimal_probe_across_cost_profiles": 16,
+      "groups_with_different_optimal_probe_across_risk": 24,
+      "mean_expected_actions_saved_vs_no_probe": 2.15625
+    },
+    "DEV": {
+      "worlds": [
+        {
+          "index": 354000,
+          "attempt": 0,
+          "seed": 2602655843,
+          "geometry_sha256": "5764498500c06b2fac0a0e2fdcf680bbb239d091901385f23a658f4d580922cc"
+        },
+        {
+          "index": 354170,
+          "attempt": 1,
+          "seed": 4073251306,
+          "geometry_sha256": "224a5ccdae0d7f8b530522f22a039f76b3701b65d6c76034ff67a0725b1ac9a0"
+        },
+        {
+          "index": 354343,
+          "attempt": 3,
+          "seed": 1679590278,
+          "geometry_sha256": "53d5294c974b0f2869a06610c362c7d093a98ea80d12ecc3a1ae081bcf4f6b3d"
+        },
+        {
+          "index": 354516,
+          "attempt": 5,
+          "seed": 1255630416,
+          "geometry_sha256": "431031c233d38cf8dbc9807f057a3dc216de7c8272b2140522e88dc37c92081b"
+        }
+      ],
+      "episodes": 512,
+      "decisions": 91028,
+      "terminal_successes": 512,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 312,
+        "A": 40,
+        "B": 88,
+        "BOTH": 72
+      },
+      "counterfactual_expected_cost_groups": 128,
+      "groups_with_different_optimal_probe_across_cost_profiles": 8,
+      "groups_with_different_optimal_probe_across_risk": 4,
+      "mean_expected_actions_saved_vs_no_probe": 2.603515625
+    },
+    "HELDOUT": {
+      "worlds": [
+        {
+          "index": 364000,
+          "attempt": 0,
+          "seed": 2248632553,
+          "geometry_sha256": "8a8df5d3620ba2764c89d0e854ed2d2b03bcd57f427df1950351cc2f038522a9"
+        },
+        {
+          "index": 364167,
+          "attempt": 0,
+          "seed": 3072082247,
+          "geometry_sha256": "5003643a0400247774f6d78d760284444cc19b183d61a7c7f177d4e85bd92e2e"
+        },
+        {
+          "index": 364334,
+          "attempt": 0,
+          "seed": 2878963667,
+          "geometry_sha256": "ae514724170d257f9becdd548d6f81d738a175c46b5c5c025c3ab5610b50d707"
+        },
+        {
+          "index": 364501,
+          "attempt": 0,
+          "seed": 3521336999,
+          "geometry_sha256": "202c860a5cf4137c79f7cbd534d3490196c79da9183d7f1c3f5bd3402cc0b7c1"
+        }
+      ],
+      "episodes": 512,
+      "decisions": 95108,
+      "terminal_successes": 512,
+      "masked_train_followups": 0,
+      "probe_choices": {
+        "NONE": 328,
+        "A": 80,
+        "B": 48,
+        "BOTH": 56
+      },
+      "counterfactual_expected_cost_groups": 128,
+      "groups_with_different_optimal_probe_across_cost_profiles": 8,
+      "groups_with_different_optimal_probe_across_risk": 18,
+      "mean_expected_actions_saved_vs_no_probe": 3.470703125
+    }
+  },
+  "total_episodes": 2048,
+  "total_decisions": 362328,
+  "mean_expected_actions_saved_vs_no_probe": 2.5966796875
+}

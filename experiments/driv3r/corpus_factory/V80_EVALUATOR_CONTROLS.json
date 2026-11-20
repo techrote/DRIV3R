@@ -1,0 +1,109 @@
+{
+  "schema": "driv3r/corpus_factory/three-lane-controls-v80/1",
+  "synthetic_not_native_CyberSand": true,
+  "neural_results": false,
+  "splits": {
+    "TRAIN": {
+      "first_route": {
+        "total": 216,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 6,
+        "current_only_groups": 6,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "second_route": {
+        "total": 216,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 12,
+        "current_only_groups": 12,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "goal_memory": {
+        "total": 432,
+        "current_only_bayes_ceiling": 0.5,
+        "current_only_ambiguous_groups": 48,
+        "current_only_groups": 48,
+        "distinct_actions": [
+          "PAINT_A",
+          "PAINT_B"
+        ]
+      }
+    },
+    "DEV": {
+      "first_route": {
+        "total": 108,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 3,
+        "current_only_groups": 3,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "second_route": {
+        "total": 108,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 6,
+        "current_only_groups": 6,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "goal_memory": {
+        "total": 216,
+        "current_only_bayes_ceiling": 0.5,
+        "current_only_ambiguous_groups": 24,
+        "current_only_groups": 24,
+        "distinct_actions": [
+          "PAINT_A",
+          "PAINT_B"
+        ]
+      }
+    },
+    "HELDOUT": {
+      "first_route": {
+        "total": 108,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 3,
+        "current_only_groups": 3,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "second_route": {
+        "total": 108,
+        "current_only_bayes_ceiling": 0.3333333333333333,
+        "current_only_ambiguous_groups": 6,
+        "current_only_groups": 6,
+        "distinct_actions": [
+          "MOVE_E",
+          "MOVE_N",
+          "MOVE_S"
+        ]
+      },
+      "goal_memory": {
+        "total": 216,
+        "current_only_bayes_ceiling": 0.5,
+        "current_only_ambiguous_groups": 24,
+        "current_only_groups": 24,
+        "distinct_actions": [
+          "PAINT_A",
+          "PAINT_B"
+        ]
+      }
+    }
+  }
+}

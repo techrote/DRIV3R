@@ -1,0 +1,122 @@
+{
+  "schema": "driv3r/corpus_factory/last-valid-physical-probe-v61/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "source_generator_sha256": "3c7b55ff5d462173505c0e82b1c01697adf66c56a64b671aa5eb6a05856005ab",
+  "parent_shas": {
+    "deferred_surface_v53.js": "6e32668d6503e99479f10866fce06862283be0eccfac9a2baa69cbb6019976da",
+    "realert_v52.js": "5cfe7975fc2191f57320ee7d0da34b3e0b6242281f9f6b50ef4c2e4d537abbc9",
+    "active_probe_v51.js": "fe724fd7e607c1d82def7d5930c465ee3d1fa0468fe0149a95f4178df25a70ae",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+    "online_recovery_v50.js": "54a0b3f236251db1fbbeb749eefc0952d4ff174a1c16918b6985283098159fae",
+    "contextual_probe_v49.js": "efc3e805cab0bd76938b953146c056ecda3be2d4b333850c539fb47868cf2761",
+    "empirical_tool_v48.js": "4b9a130141b0362255a530d8981a3a04a485321c749375c0ffdfa889b4e578f3",
+    "mission_memory_v46.js": "6d0a3e954572e685452e71eb53993cf06b2d184b609010c46fb95989f3af548f",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "contract": {
+    "train": "TRAIN_last_probe_stream.jsonl only; DEV and HELDOUT evaluator-only.",
+    "model_visible": "Only ordered steps[].input and previous actions. Evaluator sidecar, surface-law booleans and certificates must NEVER be model inputs.",
+    "labels": "Every action accepted by synthetic host. Detour movements weight=0; second probe, safe erase and critical goal paint supervised.",
+    "challenge": "Independent OLD and NEW B law produces four matched causal arms; final current input identical; only latest physical calibration is valid after second alert.",
+    "split": "Group by geometry_sha256 and source_seed across releases; source v46 worlds indices 700+; no split cross-contamination.",
+    "metrics": "Report critical quartet accuracy, all-four-correct quartets, stale-first-only accuracy, autonomous completion, hidden-state ablation and neural CPU RSS/latency if trained.",
+    "causality": "Synthetic host executes both PAINT_A safe probes, erases both, then executes final goal paint. Second alert may change B law independent of prior law."
+  },
+  "limitations": [
+    "Synthetic graph host and externally injected second alert are NOT native CyberSand.",
+    "Forced long retraces are masked interventions, not learned navigation demonstrations.",
+    "A symbolic last-alert/last-probe receipt controller remains sufficient; no neural weights trained or native performance measured.",
+    "No immutable Actions data artifacts; consumers reproduce with pinned source and SHA256 manifests."
+  ],
+  "files": {
+    "TRAIN_last_probe_stream.jsonl": {
+      "sha256": "e03e107206df3ee872defefb5eaaa330f47893847bba5b75ba3ea88b7baa4ac4",
+      "bytes": 13358764,
+      "rows": 96
+    },
+    "TRAIN_last_probe_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "7373ef07f5ba943f27572f521ca57cb83ad37c28f33c111bdcd54444380516da",
+      "bytes": 51842,
+      "rows": 96
+    },
+    "DEV_EVALUATOR_ONLY_last_probe_stream.jsonl": {
+      "sha256": "0ab7dd16f1def4290bca2dfd641b32924374fefd2a9f1dd38940d78b9725bbc0",
+      "bytes": 11235984,
+      "rows": 48
+    },
+    "DEV_last_probe_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "2bd1a63192d3feb8ff84dc65e499766ecc90a2125fac29c302fb5e6bd7283c71",
+      "bytes": 25778,
+      "rows": 48
+    },
+    "HELDOUT_EVALUATOR_ONLY_last_probe_stream.jsonl": {
+      "sha256": "dce20a0df8adc7a165b6ed927a457c3ca9ec088a26c6651488ae0b9aa0b0de31",
+      "bytes": 20422808,
+      "rows": 48
+    },
+    "HELDOUT_last_probe_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "2762e5acca26a68f1884abe082f79e2d1ef76514e8e606d6eaaaa5b49c386b10",
+      "bytes": 26174,
+      "rows": 48
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 12,
+      "quartets": 24,
+      "episodes": 96,
+      "decisions": 9952,
+      "host_successes": 96,
+      "critical_command_A": 48,
+      "critical_command_B": 48,
+      "misleading_stale_first_probe": 48,
+      "detour_interventions_loss_masked": 6912,
+      "nontrivial_excursions": 856,
+      "duplicate_train_prefix_actions_loss_masked": 2516,
+      "delays": [
+        48,
+        96
+      ]
+    },
+    "DEV": {
+      "worlds": 6,
+      "quartets": 12,
+      "episodes": 48,
+      "decisions": 7680,
+      "host_successes": 48,
+      "critical_command_A": 24,
+      "critical_command_B": 24,
+      "misleading_stale_first_probe": 24,
+      "detour_interventions_loss_masked": 6144,
+      "nontrivial_excursions": 752,
+      "duplicate_train_prefix_actions_loss_masked": 0,
+      "delays": [
+        96,
+        160
+      ]
+    },
+    "HELDOUT": {
+      "worlds": 6,
+      "quartets": 12,
+      "episodes": 48,
+      "decisions": 13000,
+      "host_successes": 48,
+      "critical_command_A": 24,
+      "critical_command_B": 24,
+      "misleading_stale_first_probe": 24,
+      "detour_interventions_loss_masked": 10752,
+      "nontrivial_excursions": 1516,
+      "duplicate_train_prefix_actions_loss_masked": 0,
+      "delays": [
+        192,
+        256
+      ]
+    }
+  },
+  "total_decisions": 30632,
+  "total_quartets": 48,
+  "distinct_geometries": 24
+}

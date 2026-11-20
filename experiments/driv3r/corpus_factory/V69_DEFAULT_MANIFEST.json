@@ -1,0 +1,73 @@
+{
+  "schema": "driv3r/corpus_factory/default-stale-receipt-v69/1",
+  "date": "2026-11-19",
+  "model_trainable_only": "TRAIN_stale_receipt_stream.jsonl",
+  "evaluator_only": [
+    "DEV_EVALUATOR_ONLY_stale_receipt_stream.jsonl",
+    "HELDOUT_EVALUATOR_ONLY_stale_receipt_stream.jsonl",
+    "*_stale_receipt_certificates_EVALUATOR_ONLY.jsonl"
+  ],
+  "synthetic_not_native_CyberSand": true,
+  "source_sha256": {
+    "stale_receipt_v69.js": "355b7e49727baa99f8af3da4a2d405286195781da41b2cbd32a26e8cb14354e9",
+    "test_stale_receipt_v69.js": "a47dcfa808f15449037632505fee6ab1ac183dc532199863025754e89602d15b",
+    "reinspection_quality_v68.js": "c9d2cd11b8ae4de0ebb8ff96ead0b3de1d88b7810aa5f18675eca736ef7423db",
+    "remote_abrasion_v67.js": "ebac51b0be04ae2a05a1f8c7af8c7003152ef604031e2152342dd5f057dc85bd",
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6"
+  },
+  "corpus_manifest_sha256": "a3a33f5c3da33ed4d5e5c65e58f42bd2c3ae2463f9ad7a6a358ba403c40c2fdc",
+  "generative_contract": "node stale_receipt_v69.js NEW_OUTPUT_DIRECTORY; then node test_stale_receipt_v69.js OUTPUT_DIRECTORY",
+  "dataset": {
+    "total_episodes": 1536,
+    "legal_host_replayed_actions": 241832,
+    "splits": {
+      "TRAIN": {
+        "worlds": 4,
+        "episodes": 768,
+        "decisions": 119816,
+        "arrival_order_control_goal_failures": 96
+      },
+      "DEV": {
+        "worlds": 2,
+        "episodes": 384,
+        "decisions": 58328,
+        "arrival_order_control_goal_failures": 48
+      },
+      "HELDOUT": {
+        "worlds": 2,
+        "episodes": 384,
+        "decisions": 63688,
+        "arrival_order_control_goal_failures": 48
+      }
+    },
+    "mean_actions_saved_vs_always_reinspection": 4.140625,
+    "arrival_order_control_goal_failures": 192,
+    "groups": 8,
+    "geometry_split_disjoint_worlds": 8,
+    "reordered_arm_arrival_control_failures": 120,
+    "masked_train_followups": 9793
+  },
+  "file_sha256": {
+    "TRAIN_stale_receipt_stream.jsonl": "785789088eb31a2afa604bc2c0084b037371ddd19b17c606de4ab0abe983bc47",
+    "TRAIN_stale_receipt_certificates_EVALUATOR_ONLY.jsonl": "2689a5ce0e30803796125c9af0d1cb9c8963171772c73c2874d5e1bf073a9d57",
+    "DEV_EVALUATOR_ONLY_stale_receipt_stream.jsonl": "f1b01d3ce673cc8a33176b259ef060d08d41a6684fbc7ecb98316e9f47138d91",
+    "DEV_stale_receipt_certificates_EVALUATOR_ONLY.jsonl": "941e3690af42261cc69cf0229b47b3a4cc49ffe833e572fbfec9a8937803e975",
+    "HELDOUT_EVALUATOR_ONLY_stale_receipt_stream.jsonl": "72640d448ad090a81d6d1d93f4d6ae36b69004892a2a164b375e21934b6f7a96",
+    "HELDOUT_stale_receipt_certificates_EVALUATOR_ONLY.jsonl": "8b30306643af721104d06e03f7cc9a6de481025b1f5ea3150b0b9495336c55a9"
+  },
+  "protocol": "Source-time receipts may arrive late/out of order; monotone ERODED remains actionable, but earlier INTACT followed by unverified disturbance is unknown and prompts local reinspection.",
+  "verified": {
+    "independent_synthetic_host_replay": true,
+    "byte_identical_two_full_generations": true,
+    "tamper_rejected_with_updated_manifest_hash": true,
+    "no_native_CyberSand_tests": true,
+    "neural_model_training": false
+  },
+  "caveats": [
+    "Only eight distinct synthetic world geometries, though split exclusive.",
+    "Detour movement scripted and loss-masked: not autonomous policy learning.",
+    "Symbolic provenance-aware policy remains a strong solution.",
+    "Synthetic receipt/erosion not native CyberSand ABI.",
+    "Generated datasets must be retained as immutable artifacts, not Git blobs."
+  ]
+}

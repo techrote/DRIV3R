@@ -1,0 +1,35 @@
+{
+  "DEV": {
+    "A_specific_intervention_contrasts": 8,
+    "B_specific_intervention_contrasts": 0,
+    "complete_material_risk_counterfactual_groups": 128,
+    "current_input_only_action_accuracy_ceiling": 0.6875,
+    "decision_samples": 512,
+    "instantaneous_groups_with_conflicting_labels": 1,
+    "synthetic_not_native_CyberSand": true,
+    "uniform_half_prior_mean_regret": 0.05078125,
+    "uniform_half_prior_strict_mistakes": 8
+  },
+  "HELDOUT": {
+    "A_specific_intervention_contrasts": 8,
+    "B_specific_intervention_contrasts": 8,
+    "complete_material_risk_counterfactual_groups": 128,
+    "current_input_only_action_accuracy_ceiling": 0.78125,
+    "decision_samples": 512,
+    "instantaneous_groups_with_conflicting_labels": 1,
+    "synthetic_not_native_CyberSand": true,
+    "uniform_half_prior_mean_regret": 0.28857421875,
+    "uniform_half_prior_strict_mistakes": 14
+  },
+  "TRAIN": {
+    "A_specific_intervention_contrasts": 8,
+    "B_specific_intervention_contrasts": 16,
+    "complete_material_risk_counterfactual_groups": 256,
+    "current_input_only_action_accuracy_ceiling": 0.765625,
+    "decision_samples": 1024,
+    "instantaneous_groups_with_conflicting_labels": 2,
+    "synthetic_not_native_CyberSand": true,
+    "uniform_half_prior_mean_regret": 0.046875,
+    "uniform_half_prior_strict_mistakes": 14
+  }
+}

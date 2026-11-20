@@ -1,0 +1,114 @@
+{
+  "schema": "driv3r/corpus_factory/delayed-bulletin-v64/1",
+  "date": "2026-11-19",
+  "quick": false,
+  "synthetic_not_native_CyberSand": true,
+  "generator_sha256": "2f30a346d2a14969b6d28349987b668f7a6fb1f5770cc5c01e07fb0a45b17d20",
+  "source_module_sha256": {
+    "unseen_topology_v44.js": "14d27b999d5eee0a83fe7e5afd9e85ce29670bdd4320024d3465705f7b29f8b6",
+    "frontier_memory_v45.js": "8b6e8949f967a58a0e09702166bd8aa9d98b6ff7446079dbe007ee726d3702df",
+    "offpolicy_repair_v58.js": "ae219e203fdcb38deed35718602be0f1568af8233348c39ddefa3eafdb96f1f1",
+    "gate_revision_v63.js": "a96e1d03d5f01113beb15d719b52de31216cc1f7e5b39b08f53b86cb59b46f8f"
+  },
+  "scenario": "Counterfactual remote pivotal-vs-irrelevant graph obstruction; old authentic timestamped survey receipt is re-delivered before or after a newer physical gate-state change. False most-recent-arrival inference competes with correct highest-measurement-time inference after long masked branch detours.",
+  "input_contract": "Only steps[].input and preceding visible actions reach model; no durable replay, hidden gate state, evaluator certificate or split-arm names. EDGE_GATE tuple[0] is measurement timestamp, not receipt order. Every events_delta is delivered exactly once.",
+  "controls": "Pivotal memoryless-first and old-first 50% critical accuracy; most-recent-arrival 75% over both delivery orders, fails every stale-last true-revision case; highest-measurement-time 100% symbolic oracle. These are not neural-model measurements.",
+  "labels": "Detour host-executed but zero-weight intervention. Remaining oracle route is host-valid, observable-survey and measurement-time derivable. Critical decision weight 1 / focus 8.",
+  "integrity": "Split-distinct source geometries, 16-arm paired worlds. Evaluator certificates separated. No TRAIN examples from DEV/HELDOUT. TRAIN noncritical weights inherit v63 duplicate-mask; critical opposites remain.",
+  "limitations": [
+    "Synthetic graph host not native CyberSand; no target SLM optimizer updates, autonomous neural HELDOUT, CPU neural RSS/latency or immutable Actions artifacts.",
+    "Timestamp-aware symbolic event parser solves this benchmark; tests evidence admissible data causality, not learned planning.",
+    "Historical source survey and transient detour commands are scripted; 4 HELDOUT worlds are a focused diagnostic, not broad generalization."
+  ],
+  "files": {
+    "TRAIN_delayed_bulletin_stream.jsonl": {
+      "sha256": "67d6d08bbe4eee2f63a3dea929c8e4b5c3e173018ce9265ba366af478ff57877",
+      "bytes": 9364388,
+      "rows": 128
+    },
+    "TRAIN_delayed_bulletin_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "b694db761264bf197c82a3de3735e2afa16494842fac3c6b1b02a4ce19fe47d6",
+      "bytes": 78114,
+      "rows": 128
+    },
+    "DEV_EVALUATOR_ONLY_delayed_bulletin_stream.jsonl": {
+      "sha256": "0687645de0bff54fa20ce828522bf62cdad9ba067be4432fdaf93d5dd15d0e3b",
+      "bytes": 9451656,
+      "rows": 64
+    },
+    "DEV_delayed_bulletin_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "5e708b8276cfc0d1843dc7b6b9d0079b3f766f5fe4e53bd5e3cc3cc6606196c5",
+      "bytes": 38806,
+      "rows": 64
+    },
+    "HELDOUT_EVALUATOR_ONLY_delayed_bulletin_stream.jsonl": {
+      "sha256": "1fa30337254865bfd42177f4138ce88aeb9aab8e17eecf4597fb0052396ae6c7",
+      "bytes": 14850148,
+      "rows": 64
+    },
+    "HELDOUT_delayed_bulletin_certificates_EVALUATOR_ONLY.jsonl": {
+      "sha256": "e676430e200da40eb157837099a14545ccada8124a0dc77206b33d7d53307106",
+      "bytes": 39510,
+      "rows": 64
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "worlds": 8,
+      "groups": 8,
+      "episodes": 128,
+      "successful_host_episodes": 128,
+      "decisions": 8880,
+      "positive_pivotal_episodes": 64,
+      "irrelevant_gate_controls": 64,
+      "masked_detour_decisions": 6144,
+      "additional_duplicate_train_noncritical_masks": 2246,
+      "long_delay_actions": 48,
+      "late_stale_delivery_step": 36,
+      "current_only_accuracy": 0.5,
+      "latest_arrival_accuracy": 0.75,
+      "highest_measurement_time_accuracy": 1,
+      "stale_last_actual_revisions": 16
+    },
+    "DEV": {
+      "worlds": 4,
+      "groups": 4,
+      "episodes": 64,
+      "successful_host_episodes": 64,
+      "decisions": 7944,
+      "positive_pivotal_episodes": 32,
+      "irrelevant_gate_controls": 32,
+      "masked_detour_decisions": 6144,
+      "additional_duplicate_train_noncritical_masks": 0,
+      "long_delay_actions": 96,
+      "late_stale_delivery_step": 80,
+      "current_only_accuracy": 0.5,
+      "latest_arrival_accuracy": 0.75,
+      "highest_measurement_time_accuracy": 1,
+      "stale_last_actual_revisions": 8
+    },
+    "HELDOUT": {
+      "worlds": 4,
+      "groups": 4,
+      "episodes": 64,
+      "successful_host_episodes": 64,
+      "decisions": 12416,
+      "positive_pivotal_episodes": 32,
+      "irrelevant_gate_controls": 32,
+      "masked_detour_decisions": 10240,
+      "additional_duplicate_train_noncritical_masks": 0,
+      "long_delay_actions": 160,
+      "late_stale_delivery_step": 140,
+      "current_only_accuracy": 0.5,
+      "latest_arrival_accuracy": 0.75,
+      "highest_measurement_time_accuracy": 1,
+      "stale_last_actual_revisions": 8
+    }
+  },
+  "total_decisions": 29240,
+  "total_episodes": 256,
+  "distinct_world_geometries": 16,
+  "positive_pivotal_episodes": 128,
+  "irrelevant_gate_control_episodes": 128,
+  "stale_last_revision_failures_for_latest_arrival": 32
+}
