@@ -1,0 +1,25 @@
+{
+  "version": "postmerge-material-epoch-replay/1",
+  "merged_baseline_commit": "85df84666a8bad18f0092b930c08557b8010687f",
+  "original_archive_sha256": "e6514b747af8c271f110d2da50ff3570731cedf44d4f1f5f46ab922b64bd5fa0",
+  "verified_episodes": 320,
+  "verified_action_receipts": 16140,
+  "verified_neural_distributions": 8542,
+  "goal_completions": {
+    "neural": 32,
+    "fixed24": 47,
+    "fixed24_epoch": 47,
+    "event_only": 39,
+    "each_stage_epoch": 48
+  },
+  "tests_passed_with_archive": 6,
+  "elapsed_replay_s_first": 5.532,
+  "elapsed_replay_s_wrapper": 6.197,
+  "wrapper_wall_s": 6.237,
+  "peak_rss_kib": 134844,
+  "heldout_opened": false,
+  "native_receipts": 0,
+  "optimizer_updates": 0,
+  "archive_in_git": false,
+  "scientific_scope": "source-matched reconstructed modules, original DEVELOPMENT evidence only"
+}

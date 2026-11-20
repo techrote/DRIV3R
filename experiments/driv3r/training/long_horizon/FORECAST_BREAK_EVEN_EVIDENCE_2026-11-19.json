@@ -1,0 +1,972 @@
+{
+  "study": "FORECAST-BREAK-EVEN-003",
+  "version": "1",
+  "date": "2026-11-19",
+  "input_git_blob_sha1": "2be8ebbbce9da1b67b2bbfc36c801b5e5400a1b3",
+  "upstream_program_git_blob_sha1": "4ed7e4d2c11f15a3d3160fecb027eaefb2e2d873",
+  "prior_source_reexecuted_receipts": 82493,
+  "prior_source_reexecuted_episodes": 1344,
+  "prior_optimizer_updates": 720,
+  "new_optimizer_updates": 0,
+  "new_game_rollouts": 0,
+  "qualification": "Analytical sensitivity of previously exact-source-replayed DEVELOPMENT outcomes; not 7 new executed game sweeps",
+  "assumptions": "Early/late balanced, independent symmetric forecast errors exchangeable across seeds; reward = goal reward - 2*steps - 3*planner calls - backtracks",
+  "native_64_paint_censor_intact": true,
+  "shadow128_separately_identified": true,
+  "external_future_signal_not_current_host_observation": true,
+  "native_receipts": 0,
+  "structural_heldout_opened": false,
+  "frontier": [
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "reward": 0,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 10.25,
+      "negative_signal_break_even_reliability": 0.28275862,
+      "overlap_utility": -64.2083,
+      "oracle_utility": -55.5417,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": false,
+          "negative_replan": false,
+          "expected_utility": -58.9583,
+          "gain_vs_overlap": 5.25,
+          "regret_to_oracle": 3.4167
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -58.5625,
+          "gain_vs_overlap": 5.6458,
+          "regret_to_oracle": 3.0208
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -57.0521,
+          "gain_vs_overlap": 7.1562,
+          "regret_to_oracle": 1.5104
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -56.2969,
+          "gain_vs_overlap": 7.9115,
+          "regret_to_oracle": 0.7552
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -55.9193,
+          "gain_vs_overlap": 8.2891,
+          "regret_to_oracle": 0.3776
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -55.7305,
+          "gain_vs_overlap": 8.4779,
+          "regret_to_oracle": 0.1888
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -55.5417,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "reward": 200,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 210.25,
+      "negative_signal_break_even_reliability": 0.88994709,
+      "overlap_utility": 135.7917,
+      "oracle_utility": 144.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 135.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 135.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 135.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 139.5365,
+          "gain_vs_overlap": 3.7448,
+          "regret_to_oracle": 4.9219
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 141.9974,
+          "gain_vs_overlap": 6.2057,
+          "regret_to_oracle": 2.4609
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 143.2279,
+          "gain_vs_overlap": 7.4362,
+          "regret_to_oracle": 1.2305
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 144.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 36,
+      "reward": 1000,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 1010.25,
+      "negative_signal_break_even_reliability": 0.97490953,
+      "overlap_utility": 935.7917,
+      "oracle_utility": 944.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 935.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 935.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 935.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 935.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 935.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 939.0612,
+          "gain_vs_overlap": 3.2695,
+          "regret_to_oracle": 5.3971
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 944.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "reward": 0,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 42.25,
+      "negative_signal_break_even_reliability": 0.61904762,
+      "overlap_utility": -116.2083,
+      "oracle_utility": -107.5417,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -116.2083,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -113.2292,
+          "gain_vs_overlap": 2.9792,
+          "regret_to_oracle": 5.6875
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -110.3854,
+          "gain_vs_overlap": 5.8229,
+          "regret_to_oracle": 2.8438
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -108.9635,
+          "gain_vs_overlap": 7.2448,
+          "regret_to_oracle": 1.4219
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -108.2526,
+          "gain_vs_overlap": 7.9557,
+          "regret_to_oracle": 0.7109
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -107.8971,
+          "gain_vs_overlap": 8.3112,
+          "regret_to_oracle": 0.3555
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -107.5417,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "reward": 200,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 242.25,
+      "negative_signal_break_even_reliability": 0.90307549,
+      "overlap_utility": 83.7917,
+      "oracle_utility": 92.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 83.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 83.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 83.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 86.8698,
+          "gain_vs_overlap": 3.0781,
+          "regret_to_oracle": 5.5885
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 89.6641,
+          "gain_vs_overlap": 5.8724,
+          "regret_to_oracle": 2.7943
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 91.0612,
+          "gain_vs_overlap": 7.2695,
+          "regret_to_oracle": 1.3971
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 92.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 72,
+      "reward": 1000,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 1042.25,
+      "negative_signal_break_even_reliability": 0.97566113,
+      "overlap_utility": 883.7917,
+      "oracle_utility": 892.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 883.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 883.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 883.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 883.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 883.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 886.8945,
+          "gain_vs_overlap": 3.1029,
+          "regret_to_oracle": 5.5638
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 892.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "reward": 0,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 0,
+        "early_overlap": 0,
+        "late_lazy": 0,
+        "late_overlap": 0
+      },
+      "avoidable_early_cost": 6,
+      "late_intervention_benefit": 105.375,
+      "negative_signal_break_even_reliability": 0.94612795,
+      "overlap_utility": -135,
+      "oracle_utility": -133,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -134.1602,
+          "gain_vs_overlap": 0.8398,
+          "regret_to_oracle": 1.1602
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133.5801,
+          "gain_vs_overlap": 1.4199,
+          "regret_to_oracle": 0.5801
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133,
+          "gain_vs_overlap": 2,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "reward": 200,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 0,
+        "early_overlap": 0,
+        "late_lazy": 0,
+        "late_overlap": 0
+      },
+      "avoidable_early_cost": 6,
+      "late_intervention_benefit": 105.375,
+      "negative_signal_break_even_reliability": 0.94612795,
+      "overlap_utility": -135,
+      "oracle_utility": -133,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -134.1602,
+          "gain_vs_overlap": 0.8398,
+          "regret_to_oracle": 1.1602
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133.5801,
+          "gain_vs_overlap": 1.4199,
+          "regret_to_oracle": 0.5801
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133,
+          "gain_vs_overlap": 2,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "native64_proxy",
+      "horizon": 128,
+      "reward": 1000,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 0,
+        "early_overlap": 0,
+        "late_lazy": 0,
+        "late_overlap": 0
+      },
+      "avoidable_early_cost": 6,
+      "late_intervention_benefit": 105.375,
+      "negative_signal_break_even_reliability": 0.94612795,
+      "overlap_utility": -135,
+      "oracle_utility": -133,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -135,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 2
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -134.1602,
+          "gain_vs_overlap": 0.8398,
+          "regret_to_oracle": 1.1602
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133.5801,
+          "gain_vs_overlap": 1.4199,
+          "regret_to_oracle": 0.5801
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -133,
+          "gain_vs_overlap": 2,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "reward": 0,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 97.25,
+      "negative_signal_break_even_reliability": 0.78904665,
+      "overlap_utility": -192.2083,
+      "oracle_utility": -183.5417,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -192.2083,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": -192.2083,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -188.6771,
+          "gain_vs_overlap": 3.5313,
+          "regret_to_oracle": 5.1354
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -186.1094,
+          "gain_vs_overlap": 6.099,
+          "regret_to_oracle": 2.5677
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -184.8255,
+          "gain_vs_overlap": 7.3828,
+          "regret_to_oracle": 1.2839
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -184.1836,
+          "gain_vs_overlap": 8.0247,
+          "regret_to_oracle": 0.6419
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": -183.5417,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "reward": 200,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 297.25,
+      "negative_signal_break_even_reliability": 0.9195669,
+      "overlap_utility": 7.7917,
+      "oracle_utility": 16.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 7.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 7.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 7.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 9.724,
+          "gain_vs_overlap": 1.9323,
+          "regret_to_oracle": 6.7344
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 13.0911,
+          "gain_vs_overlap": 5.2995,
+          "regret_to_oracle": 3.3672
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 14.7747,
+          "gain_vs_overlap": 6.9831,
+          "regret_to_oracle": 1.6836
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 16.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    },
+    {
+      "cohort": "shadow128",
+      "horizon": 128,
+      "reward": 1000,
+      "original_n_per_mode": 16,
+      "original_goal_counts": {
+        "early_lazy": 16,
+        "early_overlap": 16,
+        "late_lazy": 0,
+        "late_overlap": 16
+      },
+      "avoidable_early_cost": 26,
+      "late_intervention_benefit": 1097.25,
+      "negative_signal_break_even_reliability": 0.97685288,
+      "overlap_utility": 807.7917,
+      "oracle_utility": 816.4583,
+      "sweep": [
+        {
+          "reliability": 0.5,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 807.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.75,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 807.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 807.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.9375,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 807.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.96875,
+          "positive_replan": true,
+          "negative_replan": true,
+          "expected_utility": 807.7917,
+          "gain_vs_overlap": 0,
+          "regret_to_oracle": 8.6667
+        },
+        {
+          "reliability": 0.984375,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 810.6081,
+          "gain_vs_overlap": 2.8164,
+          "regret_to_oracle": 5.8503
+        },
+        {
+          "reliability": 1,
+          "positive_replan": true,
+          "negative_replan": false,
+          "expected_utility": 816.4583,
+          "gain_vs_overlap": 8.6667,
+          "regret_to_oracle": 0
+        }
+      ]
+    }
+  ],
+  "combined": [
+    {
+      "reliability": 0.5,
+      "expected_utility": 623.0938,
+      "gain_vs_overlap": 0,
+      "oracle_regret": 7,
+      "cohorts_using_negative_signal": 0
+    },
+    {
+      "reliability": 0.75,
+      "expected_utility": 623.0938,
+      "gain_vs_overlap": 0,
+      "oracle_regret": 7,
+      "cohorts_using_negative_signal": 0
+    },
+    {
+      "reliability": 0.875,
+      "expected_utility": 623.0938,
+      "gain_vs_overlap": 0,
+      "oracle_regret": 7,
+      "cohorts_using_negative_signal": 0
+    },
+    {
+      "reliability": 0.9375,
+      "expected_utility": 623.0938,
+      "gain_vs_overlap": 0,
+      "oracle_regret": 7,
+      "cohorts_using_negative_signal": 0
+    },
+    {
+      "reliability": 0.96875,
+      "expected_utility": 623.3037,
+      "gain_vs_overlap": 0.2099,
+      "oracle_regret": 6.7901,
+      "cohorts_using_negative_signal": 1
+    },
+    {
+      "reliability": 0.984375,
+      "expected_utility": 625.7459,
+      "gain_vs_overlap": 2.6522,
+      "oracle_regret": 4.3478,
+      "cohorts_using_negative_signal": 4
+    },
+    {
+      "reliability": 1,
+      "expected_utility": 630.0937,
+      "gain_vs_overlap": 7,
+      "oracle_regret": 0,
+      "cohorts_using_negative_signal": 4
+    }
+  ]
+}

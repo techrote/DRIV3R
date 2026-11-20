@@ -1,0 +1,18 @@
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const {forecastBreakEven}=require("./forecast_break_even_lab");
+const evidence=JSON.parse(fs.readFileSync(path.join(__dirname,"FORECAST_UTILITY_EVIDENCE_2026-11-19.json")));
+const got=forecastBreakEven(evidence);
+assert.equal(got.frontier.length,12);
+assert.equal(got.combined.length,7);
+assert.equal(got.combined[1].cohorts_using_negative_signal,0);
+assert.equal(got.combined[5].cohorts_using_negative_signal,4);
+assert.equal(got.combined[6].oracle_regret,0);
+assert.equal(got.frontier.filter(x=>x.reward===1000).length,4);
+const tampered=structuredClone(evidence);tampered.action_receipts_replayed=2;
+assert.throws(()=>forecastBreakEven(tampered),/identity/);
+const missing=structuredClone(evidence);missing.aggregates=missing.aggregates.filter(x=>x.arm!=="overlap");
+assert.throws(()=>forecastBreakEven(missing),/aggregate/);
+const copied=forecastBreakEven(evidence);
+assert.deepEqual(got,copied);
+console.log("FORECAST-BREAK-EVEN-003: 9/9 deterministic/negative-control assertions PASS");

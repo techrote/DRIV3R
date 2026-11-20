@@ -1,0 +1,304 @@
+{
+  "study": "SIGNAL-CORRELATION-014",
+  "date": "2026-11-19",
+  "parent_sha": "1677482f451d106c1cb6598eb2a08da5f5cf3354",
+  "source_blob_sha": "3bc548bcd43cd52b9d24f7f4ad0c59a78e48509b",
+  "source_file": "signal_correlation_014.js",
+  "ledger_parts": [
+    {
+      "path": "SIGNAL_CORRELATION_014_EVIDENCE_A.json",
+      "git_blob_sha": "da1df50ac69645d2f9d9f64ce2a692c1c26268a8",
+      "modes": [
+        "single",
+        "independent",
+        "shift25",
+        "shift50"
+      ]
+    },
+    {
+      "path": "SIGNAL_CORRELATION_014_EVIDENCE_B.json",
+      "git_blob_sha": "c56920ce273cc0979825f3f8ace62a5f6f50be47",
+      "modes": [
+        "shift75",
+        "shift100",
+        "shared",
+        "perfect"
+      ]
+    }
+  ],
+  "development_world_seeds": [
+    15100,
+    15159
+  ],
+  "world_cluster_repeats_per_seed": 4,
+  "training_seed_range": [
+    12100,
+    12169
+  ],
+  "unique_development_seeds": 60,
+  "synthetic_episode_records": 1920,
+  "training_fit_count": 2240,
+  "optimizer_updates_total": 6800,
+  "dev_policy_rollouts": 11520,
+  "source_replayed_receipts": 428109,
+  "conditions": [
+    {
+      "mode": "single",
+      "goals": 193,
+      "planner": 1024,
+      "utility": 703.6833,
+      "cutoff": 0.005,
+      "channel": {
+        "primary": 213,
+        "secondary": 0
+      },
+      "failed_x": 4
+    },
+    {
+      "mode": "independent",
+      "goals": 197,
+      "planner": 1030,
+      "utility": 720.2708,
+      "cutoff": 0.02,
+      "channel": {
+        "primary": 213,
+        "secondary": 194
+      },
+      "failed_x": 0
+    },
+    {
+      "mode": "shift25",
+      "goals": 195,
+      "planner": 1025,
+      "utility": 712.3167,
+      "cutoff": 0.02,
+      "channel": {
+        "primary": 213,
+        "secondary": 190
+      },
+      "failed_x": 2
+    },
+    {
+      "mode": "shift50",
+      "goals": 193,
+      "planner": 1020,
+      "utility": 704.3625,
+      "cutoff": 0.02,
+      "channel": {
+        "primary": 213,
+        "secondary": 189
+      },
+      "failed_x": 4
+    },
+    {
+      "mode": "shift75",
+      "goals": 193,
+      "planner": 1020,
+      "utility": 704.3625,
+      "cutoff": 0.02,
+      "channel": {
+        "primary": 213,
+        "secondary": 189
+      },
+      "failed_x": 4
+    },
+    {
+      "mode": "shift100",
+      "goals": 193,
+      "planner": 1024,
+      "utility": 703.6833,
+      "cutoff": 0.02,
+      "channel": {
+        "primary": 213,
+        "secondary": 189
+      },
+      "failed_x": 4
+    },
+    {
+      "mode": "shared",
+      "goals": 191,
+      "planner": 1021,
+      "utility": 695.825,
+      "cutoff": 0.1,
+      "channel": {
+        "primary": 213,
+        "secondary": 189
+      },
+      "failed_x": 6
+    },
+    {
+      "mode": "perfect",
+      "goals": 197,
+      "planner": 1010,
+      "utility": 722.6,
+      "cutoff": 0.005,
+      "channel": {
+        "primary": 240,
+        "secondary": 0
+      },
+      "failed_x": 0
+    }
+  ],
+  "per_horizon": [
+    {
+      "mode": "single",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 30,
+        "trained": 45,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 30,
+        "trained": 45,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "independent",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 47,
+        "warning_both": 43,
+        "trained": 47,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 47,
+        "warning_both": 43,
+        "trained": 47,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "shift25",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 44,
+        "warning_both": 43,
+        "trained": 46,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 44,
+        "warning_both": 43,
+        "trained": 46,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "shift50",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "shift75",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "shift100",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "shared",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 45,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 43,
+        "warning_both": 43,
+        "trained": 43,
+        "oracle": 47
+      }
+    },
+    {
+      "mode": "perfect",
+      "censored": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 47,
+        "warning_both": 30,
+        "trained": 47,
+        "oracle": 47
+      },
+      "shadow": {
+        "never": 30,
+        "always": 47,
+        "warning_any": 47,
+        "warning_both": 30,
+        "trained": 47,
+        "oracle": 47
+      }
+    }
+  ],
+  "notes": [
+    "Source-executed V8, not native CyberSand, same-host replay with separate receipt algebra",
+    "Channels are hypothetical and were explicitly carried through delivered messages in 014",
+    "Train for shift conditions always independent; only DEV channel error-correlation varied",
+    "Censored 128/64 and shadow 128/128 separated",
+    "No heldout used, no real binary checkpoint",
+    "Original 013 artifacts untouched"
+  ]
+}

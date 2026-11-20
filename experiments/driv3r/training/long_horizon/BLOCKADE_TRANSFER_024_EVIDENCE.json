@@ -1,0 +1,1305 @@
+{
+  "experiment": "BLOCKADE_TRANSFER_024",
+  "method": "retrospective, four-mode exhaustive optimization over source-replayed 023 candidate trajectories",
+  "provenance": {
+    "sourceEvidenceGitBlob": "cf4dc3bcd96057c2dcf7fb6dd4446ea584ec45d4",
+    "train": "UNSEALED DEVELOPMENT 160100..160117",
+    "test": "UNSEALED DEVELOPMENT 160118..160129",
+    "structuralHELDOUT": "UNOPENED"
+  },
+  "mild": {
+    "objective": "maximize terminal goals on zero/one closure; then minimize planner calls",
+    "choice": {
+      "36/36": "guard",
+      "72/64": "guard",
+      "128/64": "early",
+      "128/128": "guard"
+    },
+    "scores": {
+      "36/36": [
+        {
+          "mode": "guard",
+          "minGoals": 30,
+          "totalGoals": 61,
+          "calls": 226,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 100
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 126
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 30,
+          "totalGoals": 61,
+          "calls": 246,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 136
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 30,
+          "totalGoals": 61,
+          "calls": 246,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 136
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 30,
+          "totalGoals": 61,
+          "calls": 250,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 140
+            }
+          }
+        }
+      ],
+      "72/64": [
+        {
+          "mode": "guard",
+          "minGoals": 36,
+          "totalGoals": 72,
+          "calls": 332,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 36,
+          "totalGoals": 72,
+          "calls": 332,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 36,
+          "totalGoals": 72,
+          "calls": 332,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 36,
+          "totalGoals": 72,
+          "calls": 332,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            }
+          }
+        }
+      ],
+      "128/64": [
+        {
+          "mode": "early",
+          "minGoals": 25,
+          "totalGoals": 50,
+          "calls": 940,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 25,
+              "calls": 434
+            },
+            "one": {
+              "n": 72,
+              "goals": 25,
+              "calls": 506
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 25,
+          "totalGoals": 50,
+          "calls": 992,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 25,
+              "calls": 460
+            },
+            "one": {
+              "n": 72,
+              "goals": 25,
+              "calls": 532
+            }
+          }
+        },
+        {
+          "mode": "guard",
+          "minGoals": 15,
+          "totalGoals": 33,
+          "calls": 792,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 18,
+              "calls": 360
+            },
+            "one": {
+              "n": 72,
+              "goals": 15,
+              "calls": 432
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 15,
+          "totalGoals": 33,
+          "calls": 924,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 18,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 15,
+              "calls": 492
+            }
+          }
+        }
+      ],
+      "128/128": [
+        {
+          "mode": "guard",
+          "minGoals": 72,
+          "totalGoals": 144,
+          "calls": 936,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 504
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 72,
+          "totalGoals": 144,
+          "calls": 936,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 504
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 72,
+          "totalGoals": 144,
+          "calls": 1084,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 506
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 578
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 36,
+          "totalGoals": 72,
+          "calls": 940,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 36,
+              "calls": 434
+            },
+            "one": {
+              "n": 72,
+              "goals": 36,
+              "calls": 506
+            }
+          }
+        }
+      ]
+    }
+  },
+  "robust": {
+    "objective": "maximize worst-condition goals over zero/one/two closures; then sum goals then minimize calls",
+    "choice": {
+      "36/36": "guard",
+      "72/64": "guard",
+      "128/64": "guard",
+      "128/128": "guard"
+    },
+    "scores": {
+      "36/36": [
+        {
+          "mode": "guard",
+          "minGoals": 30,
+          "totalGoals": 91,
+          "calls": 364,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 100
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 126
+            },
+            "two": {
+              "n": 36,
+              "goals": 30,
+              "calls": 138
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 30,
+          "totalGoals": 91,
+          "calls": 394,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 136
+            },
+            "two": {
+              "n": 36,
+              "goals": 30,
+              "calls": 148
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 30,
+          "totalGoals": 91,
+          "calls": 394,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 136
+            },
+            "two": {
+              "n": 36,
+              "goals": 30,
+              "calls": 148
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 30,
+          "totalGoals": 91,
+          "calls": 402,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 31,
+              "calls": 110
+            },
+            "one": {
+              "n": 36,
+              "goals": 30,
+              "calls": 140
+            },
+            "two": {
+              "n": 36,
+              "goals": 30,
+              "calls": 152
+            }
+          }
+        }
+      ],
+      "72/64": [
+        {
+          "mode": "guard",
+          "minGoals": 34,
+          "totalGoals": 106,
+          "calls": 552,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            },
+            "two": {
+              "n": 36,
+              "goals": 34,
+              "calls": 220
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 34,
+          "totalGoals": 106,
+          "calls": 552,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            },
+            "two": {
+              "n": 36,
+              "goals": 34,
+              "calls": 220
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 34,
+          "totalGoals": 106,
+          "calls": 552,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            },
+            "two": {
+              "n": 36,
+              "goals": 34,
+              "calls": 220
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 34,
+          "totalGoals": 106,
+          "calls": 560,
+          "byCondition": {
+            "control": {
+              "n": 36,
+              "goals": 36,
+              "calls": 148
+            },
+            "one": {
+              "n": 36,
+              "goals": 36,
+              "calls": 184
+            },
+            "two": {
+              "n": 36,
+              "goals": 34,
+              "calls": 228
+            }
+          }
+        }
+      ],
+      "128/64": [
+        {
+          "mode": "guard",
+          "minGoals": 8,
+          "totalGoals": 41,
+          "calls": 1288,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 18,
+              "calls": 360
+            },
+            "one": {
+              "n": 72,
+              "goals": 15,
+              "calls": 432
+            },
+            "two": {
+              "n": 72,
+              "goals": 8,
+              "calls": 496
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 8,
+          "totalGoals": 41,
+          "calls": 1452,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 18,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 15,
+              "calls": 492
+            },
+            "two": {
+              "n": 72,
+              "goals": 8,
+              "calls": 528
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 0,
+          "totalGoals": 50,
+          "calls": 1496,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 25,
+              "calls": 434
+            },
+            "one": {
+              "n": 72,
+              "goals": 25,
+              "calls": 506
+            },
+            "two": {
+              "n": 72,
+              "goals": 0,
+              "calls": 556
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 0,
+          "totalGoals": 50,
+          "calls": 1548,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 25,
+              "calls": 460
+            },
+            "one": {
+              "n": 72,
+              "goals": 25,
+              "calls": 532
+            },
+            "two": {
+              "n": 72,
+              "goals": 0,
+              "calls": 556
+            }
+          }
+        }
+      ],
+      "128/128": [
+        {
+          "mode": "guard",
+          "minGoals": 72,
+          "totalGoals": 216,
+          "calls": 1504,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 504
+            },
+            "two": {
+              "n": 72,
+              "goals": 72,
+              "calls": 568
+            }
+          }
+        },
+        {
+          "mode": "late",
+          "minGoals": 72,
+          "totalGoals": 216,
+          "calls": 1504,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 432
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 504
+            },
+            "two": {
+              "n": 72,
+              "goals": 72,
+              "calls": 568
+            }
+          }
+        },
+        {
+          "mode": "both",
+          "minGoals": 72,
+          "totalGoals": 216,
+          "calls": 1712,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 72,
+              "calls": 506
+            },
+            "one": {
+              "n": 72,
+              "goals": 72,
+              "calls": 578
+            },
+            "two": {
+              "n": 72,
+              "goals": 72,
+              "calls": 628
+            }
+          }
+        },
+        {
+          "mode": "early",
+          "minGoals": 36,
+          "totalGoals": 108,
+          "calls": 1496,
+          "byCondition": {
+            "control": {
+              "n": 72,
+              "goals": 36,
+              "calls": 434
+            },
+            "one": {
+              "n": 72,
+              "goals": 36,
+              "calls": 506
+            },
+            "two": {
+              "n": 72,
+              "goals": 36,
+              "calls": 556
+            }
+          }
+        }
+      ]
+    }
+  },
+  "testing": {
+    "control": {
+      "guard": {
+        "n": 144,
+        "goals": 104,
+        "calls": 690
+      },
+      "mild": {
+        "n": 144,
+        "goals": 107,
+        "calls": 740
+      },
+      "robust": {
+        "n": 144,
+        "goals": 104,
+        "calls": 690
+      },
+      "student021": {
+        "n": 144,
+        "goals": 104,
+        "calls": 702
+      }
+    },
+    "one": {
+      "guard": {
+        "n": 144,
+        "goals": 101,
+        "calls": 826
+      },
+      "mild": {
+        "n": 144,
+        "goals": 107,
+        "calls": 876
+      },
+      "robust": {
+        "n": 144,
+        "goals": 101,
+        "calls": 826
+      },
+      "student021": {
+        "n": 144,
+        "goals": 101,
+        "calls": 838
+      }
+    },
+    "two": {
+      "guard": {
+        "n": 144,
+        "goals": 97,
+        "calls": 948
+      },
+      "mild": {
+        "n": 144,
+        "goals": 91,
+        "calls": 984
+      },
+      "robust": {
+        "n": 144,
+        "goals": 97,
+        "calls": 948
+      },
+      "student021": {
+        "n": 144,
+        "goals": 97,
+        "calls": 948
+      }
+    },
+    "all": {
+      "guard": {
+        "n": 432,
+        "goals": 302,
+        "calls": 2464
+      },
+      "mild": {
+        "n": 432,
+        "goals": 305,
+        "calls": 2600
+      },
+      "robust": {
+        "n": 432,
+        "goals": 302,
+        "calls": 2464
+      },
+      "student021": {
+        "n": 432,
+        "goals": 302,
+        "calls": 2488
+      }
+    }
+  },
+  "byHorizon": {
+    "36/36": {
+      "control": {
+        "guard": {
+          "n": 24,
+          "goals": 20,
+          "calls": 64
+        },
+        "mild": {
+          "n": 24,
+          "goals": 20,
+          "calls": 64
+        },
+        "robust": {
+          "n": 24,
+          "goals": 20,
+          "calls": 64
+        }
+      },
+      "one": {
+        "guard": {
+          "n": 24,
+          "goals": 20,
+          "calls": 80
+        },
+        "mild": {
+          "n": 24,
+          "goals": 20,
+          "calls": 80
+        },
+        "robust": {
+          "n": 24,
+          "goals": 20,
+          "calls": 80
+        }
+      },
+      "two": {
+        "guard": {
+          "n": 24,
+          "goals": 20,
+          "calls": 90
+        },
+        "mild": {
+          "n": 24,
+          "goals": 20,
+          "calls": 90
+        },
+        "robust": {
+          "n": 24,
+          "goals": 20,
+          "calls": 90
+        }
+      }
+    },
+    "72/64": {
+      "control": {
+        "guard": {
+          "n": 24,
+          "goals": 24,
+          "calls": 98
+        },
+        "mild": {
+          "n": 24,
+          "goals": 24,
+          "calls": 98
+        },
+        "robust": {
+          "n": 24,
+          "goals": 24,
+          "calls": 98
+        }
+      },
+      "one": {
+        "guard": {
+          "n": 24,
+          "goals": 24,
+          "calls": 122
+        },
+        "mild": {
+          "n": 24,
+          "goals": 24,
+          "calls": 122
+        },
+        "robust": {
+          "n": 24,
+          "goals": 24,
+          "calls": 122
+        }
+      },
+      "two": {
+        "guard": {
+          "n": 24,
+          "goals": 23,
+          "calls": 146
+        },
+        "mild": {
+          "n": 24,
+          "goals": 23,
+          "calls": 146
+        },
+        "robust": {
+          "n": 24,
+          "goals": 23,
+          "calls": 146
+        }
+      }
+    },
+    "128/64": {
+      "control": {
+        "guard": {
+          "n": 48,
+          "goals": 12,
+          "calls": 240
+        },
+        "mild": {
+          "n": 48,
+          "goals": 15,
+          "calls": 290
+        },
+        "robust": {
+          "n": 48,
+          "goals": 12,
+          "calls": 240
+        }
+      },
+      "one": {
+        "guard": {
+          "n": 48,
+          "goals": 9,
+          "calls": 288
+        },
+        "mild": {
+          "n": 48,
+          "goals": 15,
+          "calls": 338
+        },
+        "robust": {
+          "n": 48,
+          "goals": 9,
+          "calls": 288
+        }
+      },
+      "two": {
+        "guard": {
+          "n": 48,
+          "goals": 6,
+          "calls": 332
+        },
+        "mild": {
+          "n": 48,
+          "goals": 0,
+          "calls": 368
+        },
+        "robust": {
+          "n": 48,
+          "goals": 6,
+          "calls": 332
+        }
+      }
+    },
+    "128/128": {
+      "control": {
+        "guard": {
+          "n": 48,
+          "goals": 48,
+          "calls": 288
+        },
+        "mild": {
+          "n": 48,
+          "goals": 48,
+          "calls": 288
+        },
+        "robust": {
+          "n": 48,
+          "goals": 48,
+          "calls": 288
+        }
+      },
+      "one": {
+        "guard": {
+          "n": 48,
+          "goals": 48,
+          "calls": 336
+        },
+        "mild": {
+          "n": 48,
+          "goals": 48,
+          "calls": 336
+        },
+        "robust": {
+          "n": 48,
+          "goals": 48,
+          "calls": 336
+        }
+      },
+      "two": {
+        "guard": {
+          "n": 48,
+          "goals": 48,
+          "calls": 380
+        },
+        "mild": {
+          "n": 48,
+          "goals": 48,
+          "calls": 380
+        },
+        "robust": {
+          "n": 48,
+          "goals": 48,
+          "calls": 380
+        }
+      }
+    }
+  },
+  "severe128_64": {
+    "n": 48,
+    "selected": "early",
+    "lost": 6,
+    "gained": 0,
+    "goalDelta": -6,
+    "bootstrap95": [
+      -9,
+      -3
+    ],
+    "bootstrapN": 4096,
+    "bootstrapUnit": "12 independent seed clusters, four correlated material forks per seed",
+    "seedDeltas": [
+      {
+        "seed": 160118,
+        "delta": 0,
+        "walls": [
+          "11,3",
+          "6,1"
+        ]
+      },
+      {
+        "seed": 160119,
+        "delta": -1,
+        "walls": [
+          "11,3",
+          "6,3"
+        ]
+      },
+      {
+        "seed": 160120,
+        "delta": 0,
+        "walls": [
+          "11,3",
+          "6,1"
+        ]
+      },
+      {
+        "seed": 160121,
+        "delta": 0,
+        "walls": [
+          "11,3",
+          "6,1"
+        ]
+      },
+      {
+        "seed": 160122,
+        "delta": -1,
+        "walls": [
+          "6,7",
+          "9,6"
+        ]
+      },
+      {
+        "seed": 160123,
+        "delta": 0,
+        "walls": [
+          "6,5",
+          "3,7"
+        ]
+      },
+      {
+        "seed": 160124,
+        "delta": -1,
+        "walls": [
+          "11,3",
+          "6,3"
+        ]
+      },
+      {
+        "seed": 160125,
+        "delta": 0,
+        "walls": [
+          "6,5",
+          "3,7"
+        ]
+      },
+      {
+        "seed": 160126,
+        "delta": -1,
+        "walls": [
+          "11,3",
+          "6,3"
+        ]
+      },
+      {
+        "seed": 160127,
+        "delta": -1,
+        "walls": [
+          "11,3",
+          "6,3"
+        ]
+      },
+      {
+        "seed": 160128,
+        "delta": 0,
+        "walls": [
+          "6,5",
+          "3,7"
+        ]
+      },
+      {
+        "seed": 160129,
+        "delta": -1,
+        "walls": [
+          "11,3",
+          "6,3"
+        ]
+      }
+    ],
+    "negativeCases": [
+      {
+        "seed": 160119,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "11,3",
+            "atTick": 26,
+            "pathIndex": 3
+          },
+          {
+            "cell": "6,3",
+            "atTick": 30,
+            "pathIndex": 8
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 7,
+          "hash": "ee6cf976"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 8,
+          "hash": "76fad815"
+        }
+      },
+      {
+        "seed": 160122,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "6,7",
+            "atTick": 34,
+            "pathIndex": 4
+          },
+          {
+            "cell": "9,6",
+            "atTick": 38,
+            "pathIndex": 17
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 6,
+          "hash": "8c2cf8b7"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 7,
+          "hash": "6a322c49"
+        }
+      },
+      {
+        "seed": 160124,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "11,3",
+            "atTick": 26,
+            "pathIndex": 3
+          },
+          {
+            "cell": "6,3",
+            "atTick": 30,
+            "pathIndex": 8
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 7,
+          "hash": "ee6cf976"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 8,
+          "hash": "b2e6365f"
+        }
+      },
+      {
+        "seed": 160126,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "11,3",
+            "atTick": 26,
+            "pathIndex": 3
+          },
+          {
+            "cell": "6,3",
+            "atTick": 30,
+            "pathIndex": 8
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 7,
+          "hash": "ee6cf976"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 8,
+          "hash": "b2e6365f"
+        }
+      },
+      {
+        "seed": 160127,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "11,3",
+            "atTick": 26,
+            "pathIndex": 3
+          },
+          {
+            "cell": "6,3",
+            "atTick": 30,
+            "pathIndex": 8
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 7,
+          "hash": "ee6cf976"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 8,
+          "hash": "b2e6365f"
+        }
+      },
+      {
+        "seed": 160129,
+        "firstDamage": 0,
+        "secondDamage": 0,
+        "events": [
+          {
+            "cell": "11,3",
+            "atTick": 26,
+            "pathIndex": 3
+          },
+          {
+            "cell": "6,3",
+            "atTick": 30,
+            "pathIndex": 8
+          }
+        ],
+        "guard": {
+          "mode": "feasible",
+          "goal": 1,
+          "calls": 7,
+          "hash": "ee6cf976"
+        },
+        "chosen": {
+          "mode": "early",
+          "goal": 0,
+          "calls": 8,
+          "hash": "76fad815"
+        }
+      }
+    ]
+  },
+  "audit": {
+    "sourceRows": 1080,
+    "matchedPairedConditions": 360,
+    "studentModeVerified": 1080,
+    "changedStudentReceiptHashes": 80,
+    "reconciledFields": 36,
+    "sourceHostReplayedReceipts": 253022,
+    "newHostReplays": 0
+  },
+  "limitations": "Posthoc reuse of previously inspected unsealed DEV; not prospective generalization. New 024 lookup optimizer is not a neural SLM. 023 same-source host-replayed records only, not independently verified native ABI. Synthetic STOP and dynamic walls are research assumptions."
+}

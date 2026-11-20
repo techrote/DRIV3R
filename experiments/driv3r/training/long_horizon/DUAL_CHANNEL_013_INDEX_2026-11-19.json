@@ -1,0 +1,54 @@
+{
+  "study": "DUAL-CHANNEL-013",
+  "date": "2026-11-19",
+  "source_git_blob": "f583a2446959bd5691819cdadd801806ce61777b",
+  "exact_source_commit": "145684f3fd80ca5a16caec8a9bc600b51cea22dc",
+  "mode_files": [
+    "DUAL_CHANNEL_013_single.json",
+    "DUAL_CHANNEL_013_independent.json",
+    "DUAL_CHANNEL_013_shared.json",
+    "DUAL_CHANNEL_013_perfect.json"
+  ],
+  "totals": {
+    "development_rollouts": 5760,
+    "replayed_action_receipts": 212385,
+    "optimizer_updates": 3400,
+    "train_rows": 1120,
+    "corruption_rejections": 8
+  },
+  "disclosure": "Source-replayed synthetic V8, not native CyberSand or independent game implementation. Mode-specific JSON includes trained coefficients, actions, trajectories, negative cases and paired development records; V8 wall time is not Node RSS or model inference latency. Structural HELDOUT unopened.",
+  "modes": [
+    {
+      "mode": "single",
+      "trained_goals": 193,
+      "always_goals": 197,
+      "trained_planner_calls": 1024,
+      "always_planner_calls": 1185,
+      "cutoff": 0.005
+    },
+    {
+      "mode": "independent",
+      "trained_goals": 197,
+      "always_goals": 197,
+      "trained_planner_calls": 1030,
+      "always_planner_calls": 1185,
+      "cutoff": 0.01
+    },
+    {
+      "mode": "shared",
+      "trained_goals": 191,
+      "always_goals": 197,
+      "trained_planner_calls": 1021,
+      "always_planner_calls": 1185,
+      "cutoff": 0.1
+    },
+    {
+      "mode": "perfect",
+      "trained_goals": 197,
+      "always_goals": 197,
+      "trained_planner_calls": 1010,
+      "always_planner_calls": 1185,
+      "cutoff": 0.005
+    }
+  ]
+}
