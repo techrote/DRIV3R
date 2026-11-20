@@ -1,0 +1,55 @@
+{
+  "schema": "driv3r/corpus_factory/material-law-decision-index-v81/1",
+  "source_manifest_sha256": "49e3d8126364f9618e9b8089a3571ebea1cc2e621e70e2d391f0de9a83ee8d83",
+  "synthetic_not_native_CyberSand": true,
+  "files": {
+    "TRAIN_material_law_decision_index.jsonl": {
+      "rows": 1008,
+      "bytes": 512236,
+      "sha256": "7334c9400ad2522f9f8257796dc155f5a16b22366293bea0a3b5ef060da5f91f"
+    },
+    "DEV_EVALUATOR_ONLY_material_law_decision_index.jsonl": {
+      "rows": 504,
+      "bytes": 262468,
+      "sha256": "af3c91f33f40807847dca604be45ca64c0338b63958eb8c40aa29dad1d833904"
+    },
+    "HELDOUT_EVALUATOR_ONLY_material_law_decision_index.jsonl": {
+      "rows": 504,
+      "bytes": 264484,
+      "sha256": "dddb0cb7925cd8dcc219450665d2e6d49104ba3264d2e015d790be0fa9972dd3"
+    }
+  },
+  "splits": {
+    "TRAIN": {
+      "indexed": 1008,
+      "unique_hashes": 1008,
+      "by_kind": {
+        "first_route": 288,
+        "second_route": 288,
+        "goal_memory": 432
+      },
+      "source_episodes": 576
+    },
+    "DEV": {
+      "indexed": 504,
+      "unique_hashes": 504,
+      "by_kind": {
+        "first_route": 144,
+        "second_route": 144,
+        "goal_memory": 216
+      },
+      "source_episodes": 288
+    },
+    "HELDOUT": {
+      "indexed": 504,
+      "unique_hashes": 504,
+      "by_kind": {
+        "first_route": 144,
+        "second_route": 144,
+        "goal_memory": 216
+      },
+      "source_episodes": 288
+    }
+  },
+  "consumer_contract": "Only TRAIN positive-weight model input/action pairs. DEV/HELDOUT evaluator-only. Reconstruct chronological past from stream rows [0,step) after excluding role/loss_weight/certificates. Early physical probe results and remote law-event receipts are legitimate past observations, not privileged law labels."
+}
